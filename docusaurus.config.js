@@ -27,12 +27,7 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -44,7 +39,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
           alt: 'Menditect',
           src: 'img/menditect-logo.svg',
