@@ -9,7 +9,7 @@ const config = {
   title: 'Menditect Documentation',
   tagline: 'Go test it!',
   url: 'https://menditect.github.io/',
-  baseUrl: '/documentation',
+  baseUrl: '/documentation/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -46,19 +46,18 @@ const config = {
       navbar: {
         title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Menditect',
+          src: 'img/menditect-logo.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/menditect/documentation',
             label: 'GitHub',
             position: 'right',
           },
