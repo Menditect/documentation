@@ -47,7 +47,7 @@ const config = {
         title: 'My Site',
         logo: {
           alt: 'Menditect',
-          src: 'img/menditect-logo.png',
+          src: 'img/menditect-logo.svg',
         },
         items: [
           {
