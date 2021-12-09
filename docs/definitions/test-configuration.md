@@ -24,8 +24,19 @@ A Testconfiguration is an executable test script that describes which testsuites
 - There can only be two Test Runs per Test Configuration with a flagged for save set to true.
 
 ## Actions on Test configuration
-- ==View testconfigurations==
-- ==Create a new testconfiguration==
-- ==Execute a testconfiguration==
-- ==Delete a testconfiguration==
-- ==Restore a deleted testconfiguration==
+
+### View testconfigurations
+Go to the Test design page in MTA to view a list of all the test configurations in MTA.
+
+### Create a new test configuration
+Go to the Test design page in MTA. Add a new test configuration and enter a Name and optional Description. Choose whether the test configuration should be Ci/Cd enabled. 
+For more about Ci/Cd, go to ...
+
+### Execute a test configuration
+...
+
+### Delete a test configuration
+...
+
+### Restore a deleted test configuration
+...

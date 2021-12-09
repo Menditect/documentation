@@ -28,9 +28,9 @@ A test suite is a collection of test cases that are intended to be used to test 
 - The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application.
 
 ## Actions on Test suite
-- ==Create a new test suite==
-- ==Configure a test suite==
-- ==Execute a test suite==
-- ==Copy a test suite==
-- ==Export a test suite to Word==
-- ==Delete a test suite==
+- Create a new test suite
+- Configure a test suite
+- Execute a test suite
+- Copy a test suite
+- Export a test suite to Word
+- Delete a test suite
