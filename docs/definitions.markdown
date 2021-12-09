@@ -1,6 +1,6 @@
 ---
 title: "MTA definitions"
-sidebar_position: 1
+
 ---
 # Definitions 
 
