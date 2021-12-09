@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Definitions 
+# Test suite 
 
 This page is meant to uniquely define terms used in MTA.
 
