@@ -24,3 +24,9 @@ The testrun contains the tests that can be/are executed according a testrunconfi
 - test run is mandatory for test run application environment
 - test run is mandatory for test suite run
 - There can only be two Test Runs per Test Configuration with a flagged for save set to true.
+
+## Actions on Test run
+- ==View test runs==
+- ==Create a new test run==
+- ==Delete a test run==
+- ==Pin a test run==

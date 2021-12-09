@@ -22,3 +22,10 @@ A Testconfiguration is an executable test script that describes which testsuites
 - Test configuration is mandatory for test suite
 - The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application.
 - There can only be two Test Runs per Test Configuration with a flagged for save set to true.
+
+## Actions on Test configuration
+- ==View testconfigurations==
+- ==Create a new testconfiguration==
+- ==Execute a testconfiguration==
+- ==Delete a testconfiguration==
+- ==Restore a deleted testconfiguration==
