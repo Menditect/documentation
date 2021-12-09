@@ -1,5 +1,4 @@
 ---
-title: "MTA definitions"
 slug: /
 sidebar_position: 1
 ---
