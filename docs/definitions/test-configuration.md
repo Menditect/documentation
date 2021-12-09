@@ -26,17 +26,40 @@ A Testconfiguration is an executable test script that describes which testsuites
 ## Actions on Test configuration
 
 ### View testconfigurations
-Go to the Test design page in MTA to view a list of all the test configurations in MTA.
+- Go to the Test design page in MTA to view a list of all the test configurations in MTA.
 
 ### Create a new test configuration
-Go to the Test design page in MTA. Add a new test configuration and enter a Name and optional Description. Choose whether the test configuration should be Ci/Cd enabled. 
-For more about Ci/Cd, go to ...
+- Go to the Test design page in MTA. 
+- Add a new test configuration and enter a Name and optional Description. 
+- Choose whether the test configuration should be Ci/Cd enabled. 
+- For more about Ci/Cd, go to [Ci/Cd configuration](../howtos/cicd)
 
 ### Execute a test configuration
-...
+There are multiple ways to execute a test configuration. 
+From the Test design page:
+- Go to the Test design page in MTA. 
+- Click on Execute on the test configuration you want to execute.
+
+From the Test run overview page:
+- Go to the Test run overview page in MTA. 
+- Click on Execute on the test configuration you want to execute.
+
+From a test suite:
+- Open a test suite.
+- Click on Execute and to to test run overview.
+- Click Proceed on the confirmation window.
+
+From a test run:
+- Click on Execute test configuration
+
 
 ### Delete a test configuration
-...
+- Go to the Test design page in MTA. 
+- Click on the recycle bin icon to delete the test configuration you want to delete.
+
+Note that Testers cannot delete test configurations.
 
 ### Restore a deleted test configuration
-...
+- Go to the Test design page in MTA. 
+- Go to Deleted configurations.
+- Click on recover on the test configuration you want to restore.
