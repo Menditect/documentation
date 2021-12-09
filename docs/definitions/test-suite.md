@@ -15,10 +15,7 @@ A test suite is a collection of test cases that are intended to be used to test 
 | Description | Description of the testsuite | 
 | Name | Name of the testsuite | 
 | ConstructionError | Indicates whether the test suite has a test case with a test step with a construction error | 
-| TestCasesType | Indication which kind of Test Cases are in the Test Suite: 
-  - Manual: Only Manual Test Cases;
-  - Automatic: At least one Automatic Test Case
-  | 
+| TestCasesType | Indication which kind of Test Cases are in the Test Suite: <br /> - Manual: Only Manual Test Cases <br />  - Automatic: At least one Automatic Test Case | 
   
 ## Business rules
 - Application revision of a test suite must have a contentstate which is loaded
