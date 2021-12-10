@@ -51,7 +51,7 @@ To read about configuring test suites, go to ...
 - Click Select and proceed to copy the test suite in the same test configuration, or expand the list of other test configurations and select one there.
 - Give the copy a name and Save.
 
-### Copy a test suite
+### Export a test suite to Word
 - Go to the Test design page in MTA and select the test configuration where you want to export a test suite to Word.
 - Click the Word icon on the test suite you want to export to Word.
 
