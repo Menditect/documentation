@@ -45,3 +45,7 @@ Read more at [Execute a test configuration](test-configuration#execute-a-test-co
 Pinning a test run will prevent it from being deleted overnight.
 - Go to the Test run overview in MTA under Test run.
 - Click on the pin icon next to the test run you want to keep.
+
+## Related topics
+- [Test suite](test-suite)
+- [Test run](test-run)

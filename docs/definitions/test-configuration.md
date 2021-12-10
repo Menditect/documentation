@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Definition
 
-A Testconfiguration is an executable test script that describes which testsuites and which test applications will be/are tested. 
+A test configuration is an executable test script that describes which testsuites and which test applications will be/are tested. 
 
 ## Properties
 | Name | Description |
@@ -63,3 +63,7 @@ Note that Testers cannot delete test configurations.
 - Go to the Test design page in MTA. 
 - Go to Deleted configurations.
 - Click on recover on the test configuration you want to restore.
+
+## Related topics
+- [Test suite](test-suite)
+- [Test run](test-run)
