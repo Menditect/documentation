@@ -60,3 +60,7 @@ To read about configuring test suites, go to ...
 - Click the Recycle bin icon on the test suite you want to delete.
 
 Note that deleting a test suite is permanent. Individual test suites cannot be recovered.
+
+## Related topics
+- [Test configuration](test-configuration)
+- [Test run](test-run)
