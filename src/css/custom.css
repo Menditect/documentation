@@ -71,3 +71,9 @@ table th {
   background-color: rgba(84, 168, 242, 0.35);
   color: var(--ifm-color-primary-dark);
 }
+
+@media screen and (min-width: 550px) {
+  .aa-DetachedSearchButton {
+    min-width: 300px;
+  }
+}
