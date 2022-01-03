@@ -26,7 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // routeBasePath: '/',
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: false,
         theme: {
@@ -71,11 +71,11 @@ const config = {
           // },
         ],
       },
-      footer: {
-        style: 'light',
-        links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
-      },
+    //  footer: {
+    //   style: 'light',
+    //   links: [],
+    //    copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
+    //  },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
