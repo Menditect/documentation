@@ -7,13 +7,15 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #54A8F2;
+  --ifm-color-primary: rgb(84, 168, 242);
   --ifm-color-primary-dark: #54A8F2;
   --ifm-color-primary-darker: #54A8F2;
   --ifm-color-primary-darkest: #54A8F2;
-  --ifm-color-primary-light: #54A8F2;
+  --ifm-color-primary-light: #a0d3ff;
   --ifm-color-primary-lighter: #54A8F2;
   --ifm-color-primary-lightest: #54A8F2;
   --ifm-code-font-size: 95%;
+  /* --ifm-color-primary: #54A8F2 !important; */
 }
 
 .docusaurus-highlight-code-line {
@@ -25,4 +27,19 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.aa-SubmitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aa-DetachedSearchButtonIcon, .aa-Label svg, .aa-LoadingIndicator svg {
+  color: var(--ifm-color-primary) !important;
+}
+
+.aa-DetachedSearchButton:focus, .aa-Form:focus-within {
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: rgb(84 168 242 / 20%) 0 0 0 3px, inset rgb(84 168 242 / 20%) 0 0 0 2px !important 
 }
