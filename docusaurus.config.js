@@ -71,11 +71,11 @@ const config = {
           // },
         ],
       },
-      footer: {
-        style: 'light',
-        links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
-      },
+    //  footer: {
+    //   style: 'light',
+    //   links: [],
+    //    copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
+    //  },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
