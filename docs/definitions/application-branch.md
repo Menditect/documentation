@@ -2,7 +2,7 @@
 
 ## Definition
 
-A branch on teamserver used by an application.
+A branch on teamserver used by an [Application](application).
 
 ## Properties
 | Name | Description |
@@ -10,8 +10,8 @@ A branch on teamserver used by an application.
 | Name | Name of the branch. |
 
 ## Business rules
-- Name is mandatory
-- Name should be unique per Application
+
+None, as application branches are created by MTA.
 
 ## Actions on Application branch
 

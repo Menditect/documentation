@@ -2,7 +2,7 @@
 
 ## Definition
 
-Data variation is used to execute the same test suite multiple times upon test configuration execution, but each time with different values for variant items, such as attribute values or input and output parameters. These variant items need to be explicitly included in the data variation to be able to vary them per test suite run. For each data variation of a test suite,  a test suite run will be created.
+Data variation is used to execute the same test suite multiple times upon [Test Configuration](test-configuration) execution, but each time with different values for variant items, such as [Attribute Values](attribute-value) or input and output parameters. These variant items need to be explicitly included in the data variation to be able to vary them per test suite run. For each data variation of a [Test Suite](test-suite), a [Test Run](test-run) will be created.
  
 Data variation consists of data variation items or variants.
 

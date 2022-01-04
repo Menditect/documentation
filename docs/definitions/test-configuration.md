@@ -2,7 +2,7 @@
 
 ## Definition
 
-A Test Configuration is an executable test script that describes which testsuites and which test applications will be/are tested. 
+A Test Configuration is an executable test script that describes which [Test Suites](test-suite) and which [Test Applications](test-application) will be/are tested. 
 
 ## Properties
 | Name | Description |

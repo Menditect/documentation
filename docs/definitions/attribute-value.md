@@ -2,7 +2,7 @@
 
 ## Definition
 
-The attribute value contains the attribute information that is used for specification of the input of an Object test step.
+The attribute value contains the attribute information that is used for specification of the input of an Object [Test Step](test-step).
 
 ## Properties
 | Name | Description |

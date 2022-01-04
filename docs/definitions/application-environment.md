@@ -2,7 +2,7 @@
 
 ## Definition
 
-An environment (instance) of a Mendix application. This could be hosted on the Mendix cloud, in Microsoft Azure, on premise, locally on a computer or otherwise. 
+An environment (instance) of a Mendix [Application](application). This could be hosted on the Mendix cloud, in Microsoft Azure, on premise, locally on a computer or otherwise. 
 
 ## Properties
 | Name | Description |

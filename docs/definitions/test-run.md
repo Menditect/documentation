@@ -2,17 +2,16 @@
 
 ## Definition
 
-The testrun contains the tests that can be/are executed according a testrunconfiguration.
+The testrun contains the tests that can be/are executed according a [Test Configuration](test-configuration).
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The test run name |
-| MicroflowDurationInS | Sum of the MicroflowDurationInS of all associated test suite runs |
-| FlaggedForDelete | Flagged for deletion |
-| FlaggedForSave | Flagged for save TRUNs are not deleted in the TRUNs cleanup. If a testrun is pinned by a user, the testrun.FlaggedForSave = true | 
-| ResultTest | The test result (pass or fail) |
-| StartDate |The moment when the test run starts | 
+| Name | The name of the test run |
+| Flagged for delete |Indicates if the test run is flagged for deletion by the user |
+| Pinned | If a testrun is pinned by a user it will not be deleted overnight | 
+| Result | The test result (pass or fail) |
+| Start date |The moment when the test run starts | 
 | Status | Running or Finished |
   
 ## Business rules

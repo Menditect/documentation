@@ -2,7 +2,7 @@
 
 ## Definition
 
-A test instruction is a descriptive counterpart of a Test step. A test instruction is always part of a test case that has the Manual type.
+A test instruction is a descriptive counterpart of a [Test step](test-step). A test instruction is always part of a [Test Case](test-case) that has the Manual type.
 
 ## Properties
 | Name | Description |

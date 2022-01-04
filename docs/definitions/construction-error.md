@@ -2,7 +2,7 @@
 
 ## Definition
 
-Test construction error contains an error message for an error that is detected during test design. A construction error can be associated with any element in MTA such as a test configuration or an attribute value.
+Test construction error contains an error message for an error that is detected during test design. A construction error can be associated with any element in MTA such as a [Test Configuration](test-configuration) or an [Attribute Value](attribute-value).
 
 ## Properties
 | Name | Description |

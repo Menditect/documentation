@@ -2,8 +2,8 @@
 
 ## Definition
 
-A test case is a collection of test steps that are assembled to test some specific aspect of system behaviour. A test case is part of a test suite.
-A test case is always executed on a test application and by an execution user. The name of the execution user must exactly match an existing, active and not blocked local user in the application environment that is tested.
+A test case is a collection of [Test Steps](test-step) that are assembled to test some specific aspect of system behaviour. A test case is part of a [Test Suite](test-suite).
+A test case is always executed on a [Test Application](test-application) and by an execution user. The name of the execution user must exactly match an existing, active and not blocked local user in the [Application environment](application-environment) that is tested.
 
 ## Properties
 | Name | Description |

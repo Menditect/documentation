@@ -2,7 +2,7 @@
 
 ## Definition
 
-The microflow parameter value contains the value for a Microflow input parameter on a Microflow test step.
+The microflow parameter value contains the value for a Microflow input parameter on a Microflow [Test Step](test-step).
 
 ## Properties
 | Name | Description |

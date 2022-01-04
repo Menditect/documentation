@@ -2,7 +2,7 @@
 
 ## Definition
 
-A test step tests some specific aspect of system behaviour. A test step is always part of a test case that has the Automatic type.
+A test step tests some specific aspect of system behaviour. A test step is always part of a [Test Case](test-case) that has the Automatic type.
 
 A test step must be one of the following types:
 - Object

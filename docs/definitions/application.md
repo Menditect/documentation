@@ -2,7 +2,7 @@
 
 ## Definition
 
-A Mendix project that is, or has been, accessed by someone using MTA, having access to that project through their Mendix API key. An Application always has one or more Application Environments, that may be used in a test configuration.
+A Mendix project that is, or has been, accessed by someone using MTA, having access to that project through their Mendix API key. An Application always has one or more [Application Environments](application-environment), that may be used in a [Test Configuration](test-configuration).
 
 ## Properties
 | Name | Description |

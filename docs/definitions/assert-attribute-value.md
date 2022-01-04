@@ -2,7 +2,7 @@
 
 ## Definition
 
-An assert on attribute value is defined on a test step and exists of a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that test step.
+An assert on [Attribute Value](attribute-value) is defined on a [Test Step](test-step) and exists of a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that test step.
 
 ## Properties
 | Name | Description |

@@ -2,7 +2,7 @@
 
 ## Definition
 
-A test suite is an executable part of a test configuration and consists of a collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours.
+A test suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
 
 ## Properties
 | Name | Description |
@@ -15,14 +15,7 @@ A test suite is an executable part of a test configuration and consists of a col
 | TestCasesType | Indication which kind of Test Cases are in the Test Suite: <br /> - Manual: Only Manual Test Cases <br />  - Automatic: At least one Automatic Test Case | 
   
 ## Business rules
-- Application revision of a test suite must have a contentstate which is loaded
-- ARVNStatus is mandatory
 - Name is mandatory
-- Test configuration is mandatory for test suite
-- test suite is mandatory for test case
-- Test suite variant item must have a link to a Test suite
-- Test suite variant must have a link to a Test suite with data variation = true
-- The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application.
 
 ## Actions on Test suite
 

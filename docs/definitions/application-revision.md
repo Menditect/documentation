@@ -2,7 +2,7 @@
 
 ## Definition
 
-A revision in a branch on teamserver used by an application. Revisions are generally created by someone committing their changes made in the Mendix modeler or Mendix studio. 
+A revision in a [branch](application-branch) on teamserver used by an [Application](application). Revisions are generally created by someone committing their changes made in the Mendix modeler or Mendix studio. 
 
 ## Properties
 | Name | Description |
@@ -18,7 +18,7 @@ A revision in a branch on teamserver used by an application. Revisions are gener
 | Total microflows | Total number of microflows in application revision |
 
 ## Business rules
-- The revision for a Test application should be identical to the revision in use by Test configurations in order to be able to execute the test configuration.
+- The revision for a [Test application](test-application) should be identical to the revision in use by [Test Configurations](test-configuration) in order to be able to execute the [Test Configuration](test-configuration).
 
 ## Actions on Application revision
 
