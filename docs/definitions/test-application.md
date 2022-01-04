@@ -19,5 +19,5 @@ A Test Application is an [Application environment](application-environment) that
 ...
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

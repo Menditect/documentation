@@ -1,8 +1,8 @@
-# Assert object count
+# Assert Object Count
 
 ## Definition
 
-An assert on object count is defined on a [Test Step](test-step) and exists of a comparison between the expected and actual list size of output objects of a test step upon test execution.
+An assert on object count is defined on a [Test Step](test-step) and exists of a comparison between the expected and actual list size of output objects of a Test Step upon test execution.
 
 ## Properties
 | Name | Description |
@@ -21,5 +21,5 @@ An assert on object count is defined on a [Test Step](test-step) and exists of a
 - ...
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

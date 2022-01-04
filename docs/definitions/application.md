@@ -19,5 +19,5 @@ A Mendix project that is, or has been, accessed by someone using MTA, having acc
 - Go to the Applications page to view all Applications that are used in MTA.
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

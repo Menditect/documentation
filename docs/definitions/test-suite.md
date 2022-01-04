@@ -1,55 +1,51 @@
-# Test suite 
+# Test Suite 
 
 ## Definition
 
-A test suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
+A Test Suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| ARVNStatus | Changing: MTA is updating the test suite with the next ARVN. Ready: otherwise | 
-| DataVariation | true: test suite has data variations. false: test suite has no data variations | 
-| Description | Description of the test suite | 
-| Name | Name of the test suite | 
-| ConstructionError | Indicates whether the test suite has a test case with a test step with a construction error | 
-| TestCasesType | Indication which kind of Test Cases are in the Test Suite: <br /> - Manual: Only Manual Test Cases <br />  - Automatic: At least one Automatic Test Case | 
+| Name | Name of the Test Suite | 
+| Description | Description of the Test Suite | 
+| Status | Either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision.   | 
+| Test Cases type | Indication which kind of Test Cases are in the Test Suite: <br /> - Manual: Only Manual Test Cases <br />  - Automatic: At least one Automatic Test Case | 
   
 ## Business rules
 - Name is mandatory
 
-## Actions on Test suite
+## Actions on Test Suite
 
-### Create a new test suite
-- Go to the Test design page in MTA and select the test configuration that you want to create the test suite in.
-- Click *+ Test suite* to create a new test suite.
+### Create a new Test Suite
+- Go to the Test design page in MTA and select the [Test Configuration](test-configuration) that you want to create the Test Suite in.
+- Click *+ Test Suite* to create a new Test Suite.
 - Enter a name and an optional description and choose Save.
 
-### Configure a test suite
-- Go to the Test design page in MTA and select the test configuration where you want to configure a test suite.
-- Select Configure on the test suite you want to configure.
+### Configure a Test Suite
+- Go to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to configure a Test Suite.
+- Select Configure on the Test Suite you want to configure.
 
-To read about configuring test suites, go to ...
-
-### Execute a test suite
-- Open a test suite.
-- Click on Execute and to to test run overview.
+### Execute a Test Suite
+- Open a Test Suite.
+- Click on Execute and to to [Test Run](test-run) overview.
 - Click Proceed on the confirmation window.
 
-### Copy a test suite
-- Go to the Test design page in MTA and select the test configuration where you want to copy a test suite.
-- Click the Copy icon on the test suite you want to copy.
-- Click Select and proceed to copy the test suite in the same test configuration, or expand the list of other test configurations and select one there.
+### Copy a Test Suite
+- Go to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to copy a Test Suite.
+- Click the Copy icon on the Test Suite you want to copy.
+- Click Select and proceed to copy the Test Suite in the same [Test Configuration](test-configuration), or expand the list of other [Test Configurations](test-configuration) and select one there.
 - Give the copy a name and Save.
 
-### Export a test suite to Word
-- Go to the Test design page in MTA and select the test configuration where you want to export a test suite to Word.
-- Click the Word icon on the test suite you want to export to Word.
+### Export a Test Suite to Word
+- Go to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to export a Test Suite to Word.
+- Click the Word icon on the Test Suite you want to export to Word.
 
-### Delete a test suite
-- Go to the Test design page in MTA and select the test configuration where you want to delete a test suite.
-- Click the Recycle bin icon on the test suite you want to delete.
+### Delete a Test Suite
+- Go to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to delete a Test Suite.
+- Click the Recycle bin icon on the Test Suite you want to delete.
 
-Note that deleting a test suite is permanent. Individual test suites cannot be recovered.
+Note that deleting a Test Suite is permanent. Individual Test Suites cannot be recovered.
 
 ## Related topics
 - [Test configuration](test-configuration)

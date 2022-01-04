@@ -1,4 +1,4 @@
-# Application branch
+# Application Branch
 
 ## Definition
 
@@ -11,7 +11,7 @@ A branch on teamserver used by an [Application](application).
 
 ## Business rules
 
-None, as application branches are created by MTA.
+None, as Application Branches are created by MTA.
 
 ## Actions on Application branch
 
@@ -20,5 +20,5 @@ None, as application branches are created by MTA.
 - Go to the Application branches & revisions tab to view the branches.
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

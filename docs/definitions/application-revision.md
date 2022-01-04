@@ -26,5 +26,5 @@ A revision in a [branch](application-branch) on teamserver used by an [Applicati
 - ...
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

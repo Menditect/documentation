@@ -1,50 +1,50 @@
-# Test run 
+# Test Run 
 
 ## Definition
 
-The testrun contains the tests that can be/are executed according a [Test Configuration](test-configuration).
+The Test Run contains the tests that can be/are executed according a [Test Configuration](test-configuration).
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The name of the test run |
-| Flagged for delete |Indicates if the test run is flagged for deletion by the user |
-| Pinned | If a testrun is pinned by a user it will not be deleted overnight | 
+| Name | The name of the Test Run |
+| Flagged for delete | Indicates if the Test Run is flagged for deletion by the user |
+| Pinned | If a Test Run is pinned by a user it will not be deleted overnight | 
 | Result | The test result (pass or fail) |
-| Start date |The moment when the test run starts | 
+| Start date |The moment when the Test Run starts | 
 | Status | Running or Finished |
   
 ## Business rules
 - There can only be two Test Runs per Test Configuration that are "Pinned"
 
-## Actions on Test run
+## Actions on Test Run
 
-### View test runs
-- Go to the Test run overview in MTA under Test run, to view a list of all the executed test runs in MTA.
+### View Test Runs
+- Go to the Test Run overview in MTA under Test Run, to view a list of all the executed Test Runs in MTA.
 
-### Create a new test run
-- To create a new test run, execute a test configuration.
+### Create a new Test Run
+- To create a new Test Run, execute a Test Configuration.
  
-Read more at [Execute a test configuration](test-configuration#execute-a-test-configuration).
+Read more at [Execute a Test Configuration](test-configuration#execute-a-test-configuration).
 
-### Delete a test run
-- Go to the Test run overview in MTA under Test run.
-- Click on the recycle bin icon to delete the test run you want to delete.
+### Delete a Test Run
+- Go to the Test Run overview in MTA under Test Run.
+- Click on the recycle bin icon to delete the Test Run you want to delete.
 
-Note that for each test configuration, only the last two executed test runs are persisted overnight, plus a maximum of two pinned test runs. The rest is cleaned up. Read the [Pin a test run](#pin-a-test-run) section in this page for more information.
-If a test run is cleaned up, the following information about the test run is stored for management purposes:
+Note that for each Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
+If a Test Run is cleaned up, the following information about the Test Run is stored for management purposes:
 - start date
 - result (Pas, Fail, Error)
 - number of testcaseruns OK
 - number of testcaseruns NOK
 - number of testcaseruns not executed
-- per test case run: test case name, application, environment, revision, test run result
+- per Test Case run: Test Case name, application, environment, revision, Test Run result
 
-### Pin a test run
-Pinning a test run will prevent it from being deleted overnight.
-- Go to the Test run overview in MTA under Test run.
-- Click on the pin icon next to the test run you want to keep.
+### Pin a Test Run
+Pinning a Test Run will prevent it from being deleted overnight.
+- Go to the Test Run overview in MTA under Test Run.
+- Click on the pin icon next to the Test Run you want to keep.
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

@@ -1,10 +1,10 @@
-# Data variation item
+# Data Variation Item
 
 ## Definition
 
-Data variation item or variant refers to an attribute that can be varied when executing a test suite. 
-Data variation items are always part of Data variation.
-The value of a data variation item is defined either in an [Attribute Value](attribute-value) or in an [Assert on attribute value](assert-attribute-value).
+Data Variation Item or variant refers to an attribute that can be varied when executing a [Test Suite](test-suite). 
+Data Variation Items are always part of [Data Variation](data-variation).
+The value of a Data Variation Item is defined either in an [Attribute Value](attribute-value) or in an [Assert on attribute value](assert-attribute-value).
 
 ## Properties
 | Name | Description |
@@ -22,5 +22,5 @@ The value of a data variation item is defined either in an [Attribute Value](att
 - ...
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

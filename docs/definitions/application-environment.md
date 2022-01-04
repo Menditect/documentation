@@ -1,4 +1,4 @@
-# Application environment
+# Application Environment
 
 ## Definition
 
@@ -28,5 +28,5 @@ An environment (instance) of a Mendix [Application](application). This could be 
 - Go to the Application environments & execution users tab to view the environments.
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

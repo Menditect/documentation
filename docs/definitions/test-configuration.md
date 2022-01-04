@@ -1,4 +1,4 @@
-# Test configuration 
+# Test Configuration 
 
 ## Definition
 
@@ -8,17 +8,12 @@ A Test Configuration is an executable test script that describes which [Test Sui
 | Name | Description |
 | ----------- | ----------- |
 | Name | The name of the Test Configuration |
-| CiCdEnabled | If true,  the Test Configuration will be runned if it is called via CiCd api, if false = the Test Configuration wil NOT be runne if it is called via CiCd api |
-| ConstructionError | Indicates whether the Test Configuration has a test suite with a test case with a test step with a construction error |
-| Error29 | If true, the revision of the Test Configuration is not the same as the revision of the selected application environment. If false, no error |
+| CiCd enabled | If true,  the Test Configuration will be runned if it is called via CiCd api, if false = the Test Configuration wil NOT be runne if it is called via CiCd api |
 
 ## Business rules
-- Construction error with element type TCNF must have a relation with Test Configuration. All other relations with other element types must be empty
 - Name is mandatory
-- Test Configuration is mandatory for test run
-- Test Configuration is mandatory for test suite
-- The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application.
-- There can only be two Test Runs per Test Configuration with a flagged for save set to true.
+- The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application in order to be able to execute the Test Configuration.
+- There can only be two Test Runs per Test Configuration that are Pinned.
 
 ## Actions on Test Configuration
 
@@ -37,18 +32,17 @@ From the Test design page:
 - Go to the Test design page in MTA. 
 - Click on Execute on the Test Configuration you want to execute.
 
-From the Test run overview page:
-- Go to the Test run overview page in MTA. 
+From the Test Run overview page:
+- Go to the Test Run](test-run) overview page in MTA. 
 - Click on Execute on the Test Configuration you want to execute.
 
-From a test suite:
-- Open a test suite.
-- Click on Execute and to to test run overview.
+From a Test Suite:
+- Open a Test Suite.
+- Click on Execute and to to Test Run overview.
 - Click Proceed on the confirmation window.
 
-From a test run:
+From a [Test Run](test-run):
 - Click on Execute Test Configuration
-
 
 ### Delete a Test Configuration
 - Go to the Test design page in MTA. 
@@ -62,5 +56,5 @@ Note that Testers cannot delete Test Configurations.
 - Click on recover on the Test Configuration you want to restore.
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)

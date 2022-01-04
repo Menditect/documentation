@@ -1,8 +1,8 @@
-# Assert attribute value
+# Assert Attribute Value
 
 ## Definition
 
-An assert on [Attribute Value](attribute-value) is defined on a [Test Step](test-step) and exists of a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that test step.
+An assert on [Attribute Value](attribute-value) is defined on a [Test Step](test-step) and exists of a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that Test Step.
 
 ## Properties
 | Name | Description |
@@ -22,5 +22,5 @@ An assert on [Attribute Value](attribute-value) is defined on a [Test Step](test
 - ...
 
 ## Related topics
-- [Test suite](test-suite)
-- [Test run](test-run)
+- [Test Suite](test-suite)
+- [Test Run](test-run)
