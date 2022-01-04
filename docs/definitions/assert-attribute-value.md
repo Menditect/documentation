@@ -2,12 +2,12 @@
 
 ## Definition
 
-An assert is defined on a test step and exists of a comparison between the expected and actual outcome value or value range, of an attribute in the entity that is used in that test step.
+An assert on attribute value is defined on a test step and exists of a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that test step.
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Compare type | The type of comparison to be made: either Equals, Higher-than or Lower-than (only applicable for numeric or date attributes |
+| Compare type | The type of comparison to be made: either Equals or Range (only applicable for numeric or date attributes |
 | Value | The expected value of the attribute when executing the test |
 | Min value | The expected lower boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
 | Max value | The expected higher boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
