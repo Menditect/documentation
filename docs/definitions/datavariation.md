@@ -9,7 +9,7 @@ Data Variation consists of Data Variation Items or variants.
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Number | The rank of the data variation in the execution order of the Test Suite. |
+| Number | The rank of the Data Variation in the execution order of the Test Suite. |
 
 ## Business rules
 

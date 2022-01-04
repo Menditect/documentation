@@ -1,4 +1,4 @@
-# Application revision
+# Application Revision
 
 ## Definition
 

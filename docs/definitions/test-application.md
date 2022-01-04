@@ -7,7 +7,7 @@ A Test Application is an [Application environment](application-environment) that
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The name of the [Test Configuration](test-configuration) |
+| Name | The name of the Test Configuration |
 
 
 ## Business rules
