@@ -8,18 +8,7 @@ Test construction error contains an error message for an error that is detected 
 | Name | Description |
 | ----------- | ----------- |
 | Message | The descriptive error message for the construction error |
-| Element type | The type of element that the error is associated with. Can be one of the following: <br>
-- test configuration<br>
-- test step<br>
-- attribute value<br>
-- selected object for create object step<br>
-- selected object for change object step<br>
-- selected object for retrieve object step<br>
-- selected object for associated object in an object step<br>
-- microflow parameter value<br>
-- selected object for microflow parameter value<br>
-- selected value for compare on an assert<br>
-- selected object for count on an object list assert<br> |
+| Element type | The type of element that the error is associated with. Can be one of the following: <br> - test configuration<br> - test step<br> - attribute value<br> - selected object for create object step<br> - selected object for change object step<br> - selected object for retrieve object step<br> - selected object for associated object in an object step<br> - microflow parameter value<br> - selected object for microflow parameter value<br> - selected value for compare on an assert<br> - selected object for count on an object list assert<br> |
 
 ## Business rules
 
