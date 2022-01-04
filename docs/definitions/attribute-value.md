@@ -7,6 +7,7 @@ The attribute value contains the attribute information that is used for specific
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
+| MxID | Mendix ID of the attribute (not shown in the application, but used to find the attribute when it has been changed after a revision update) |
 | Name | Name of the attribute |
 | Datatype | Datatype of the attribute |
 | Input type | Indicates how the value is specified; manually by the user, or through the output of a former test step |
