@@ -17,6 +17,7 @@ None, as Application Branches are created by MTA.
 
 ### View Application branches for an Application
 - Go to the Applications page to view all Applications that are used in MTA.
+- Select an [Application](application)
 - Go to the Application branches & revisions tab to view the branches.
 
 ## Related topics

@@ -9,7 +9,7 @@ A Test Case is always executed on a [Test Application](test-application) and by 
 | Name | Description |
 | ----------- | ----------- |
 | Name | Name of the Test Case |
-| Test Case type | Indicates wheter a Test Case is a manual or automatic Test Case: <br /> - Manual Test Cases are not included when a Test Configuration is executed <br /> - Automatic Test Cases are included when a Test Configuration is executed <br /> |
+| Test Case Type | Indicates wheter a Test Case is a manual or automatic Test Case: <br /> - Manual Test Cases are not included when a Test Configuration is executed <br /> - Automatic Test Cases are included when a Test Configuration is executed <br /> |
 | Objective | Objective of the testcase |
 | Preconditions | Description of the preconditions of a Test Case |
 | Expected result | Description of the expected result of a Test Case |
@@ -29,11 +29,48 @@ A Test Case is always executed on a [Test Application](test-application) and by 
 - Execution user is mandatory 
 - Test Case type is mandatory
 
-## Actions on ...
+## Actions on Test Case
 
-### View ...
-- ...
+### View Test Cases in a Test Suite
+- Go to the Test Suite that the Test Cases are in
+- Test Cases shown in the left pane
+
+### View Test Case details
+- Go to the Test Suite that the Test Cases are in
+- Click on the Test Case to select
+- Click on Test case details on top of the middle pane
+
+### Create a Test Case
+- Go to the Test Suite you want to create a Test Case in
+- Click *+ Test case* to create a Test Case
+- Select either Manual or Automatic for the Test Case Type (Testers can only create Manual Test Cases)
+- Enter a name and other optional information
+- Select a [Test Application](test-application) to execute the Test Case on
+- Select an Execution User to execute the Test Case with 
+- Optionally, change the Execution time-out and Execute with delay
+- Click Save
+
+### Change the order of a Test Case in a Test Suite
+- Click on the Up or Down arrow on the left of the name of the Test Case to move it up or down
+
+Note that it is possible that due to moving a Test Case and dependencies of Test Steps in the Test Case with Test Steps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
+
+Note that Testers can only move Manual Test Cases, but cannot move Automatic Test Cases.
+
+### Edit a Test Case
+- Click on the pencil icon next to the Test Case name to edit the Name or the Description, or to Highlight the Test Step
+
+Note that it not is possible to change the Test Case Type or associated [Test Application](test-application) after creation.
+
+### Delete a Test Case
+- Click the Recycle bin icon on the Test Case you want to delete.
+
+Note that it is possible that due to deleting a Test Case and dependencies of Test Steps in the Test Case with Test Steps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
+
+Note that Testers can only delete Manual Test Cases, but cannot delete Automatic Test Cases.
 
 ## Related topics
+- [Test Step](test-step)
+- [Test Instruction](test-instruction)
 - [Test Suite](test-suite)
-- [Test Run](test-run)
+- [Test Application](test-application)
