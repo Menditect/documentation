@@ -8,7 +8,7 @@ A Test Configuration is an executable test script that describes which [Test Sui
 | Name | Description |
 | ----------- | ----------- |
 | Name | The name of the Test Configuration |
-| CiCd enabled | If true,  the Test Configuration will be runned if it is called via CiCd api, if false = the Test Configuration wil NOT be runne if it is called via CiCd api |
+| CiCd enabled | If set to Yes, the Test Configuration will be executed if one of it's associated Test Applications is executed via CiCd api |
 
 ## Business rules
 - Name is mandatory
@@ -36,7 +36,7 @@ From the Test Run overview page:
 - Go to the Test Run](test-run) overview page in MTA. 
 - Click on Execute on the Test Configuration you want to execute.
 
-From a Test Suite:
+From a [Test Suite](test-suite):
 - Open a Test Suite.
 - Click on Execute and to to Test Run overview.
 - Click Proceed on the confirmation window.

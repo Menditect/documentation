@@ -38,11 +38,59 @@ A Microflow Test Step executes exactly one microflow (and all the activities in 
 - A Microflow Test Step must have a microflow selected in order to be able to execute the Test Configuration  
 - An Create, Change or Retrieve Object Test Step must have an entity selected in order to be able to execute the Test Configuration  
 
-## Actions on ...
+## Actions on Test Step
 
-### View ...
-- ...
+### View Test Steps in a Test Case
+- Go to the Test Suite that the Test Steps are in
+- Click on the Automatic Test Case to view the Test Steps
+- Test Steps are shown in the middle pane
+
+### View Test Step details
+- Go to the Test Suite that the Test Steps are in
+- Click on the Automatic Test Case to view the Test Steps
+- Select the Test Step to view
+- Details of the Test Step are shown on the right pane
+
+### Create an Object Test Step
+- Go to the Test Suite and select the Automatic Test Case that you want to create a Test Step in
+- Click *+ Object* to create an Object test step
+- Select the type of CRUD action you want to perform on the Object
+- Select an entity (only for actions other than Persist) 
+- Click Save
+- If neccesary, select additional options like [Attribute Values](attribute-value) or associations
+
+### Create an Microflow Test Step
+- Go to the Test Suite and select the Test Case that you want to create a Test Step in
+- Click *+ Microflow* to create an Microflow test step
+- Select the Microflow to execute
+- Click Save
+- If neccesary, select additional options like [Microflow Parameter Values](microflow-parameter-value) 
+
+### Change the order of a Test Step in a Test Case
+- Go to the Automatic Test Case that the Test Step is in
+- Click on the Up or Down arrow on the left of the name of the Test Step to move it up or down
+
+Note that it is possible that due to moving a Test Step and dependencies with another Test Step, an error will occur prohibiting the execution of the Test Configuration.
+
+### Edit a Test Step
+- Click on the pencil icon next to the Test Step name to edit the Name or the Description, or to Highlight the Test Step
+
+Note that it not is possible to change the action or type of Test Step after creation, or change the entity or microflow that it is associated with.
+
+### Configure a Test Step
+- Click on the cogwheel icon on the Test Step name to set the [Attribute Values](attribute-value) or Microflow Parameter Values](microflow-parameter-value) 
+
+Note that it not is possible to change the action or type of Test Step after creation, or change the entity or microflow that it is associated with.
+
+### Delete a Test Step
+- Go to the Automatic Test Case that the Test Step is in
+- Click the Recycle bin icon on the Test Step you want to delete.
+
+Note that it is possible that due to deleting a Test Step and dependencies with another Test Step, an error will occur prohibiting the execution of the Test Configuration.
 
 ## Related topics
-- [Test Suite](test-suite)
-- [Test Run](test-run)
+- [Assert Attribute Value](assert-attribute-value)
+- [Assert Object Count](assert-object-count)
+- [Data Variation](datavariation)
+- [Test Case](test-case)
+- [Test Instruction](test-instruction)

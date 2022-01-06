@@ -26,6 +26,10 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 - Go to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.
 
+### Change the order of a Test Suite in a Test Configuration
+- Go to the Test Configuration that the Test Suite is in
+- Click on the Up or Down arrow on the left of the title of the Test Suite to move it up or down
+
 ### Execute a Test Suite
 - Open a Test Suite.
 - Click on Execute and to to [Test Run](test-run) overview.
@@ -49,4 +53,5 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 
 ## Related topics
 - [Test configuration](test-configuration)
+- [Test case](test-case)
 - [Test run](test-run)
