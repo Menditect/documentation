@@ -38,7 +38,11 @@ From the Test Run overview page:
 
 From a [Test Suite](test-suite):
 - Open a Test Suite.
-- Click on Execute and to to Test Run overview.
+- Click on Execute and go to Test Run overview.
+- Click Proceed on the confirmation window.
+
+From a [Data Variation](data-variation):
+- Click on Execute and go to Test Run overview.
 - Click Proceed on the confirmation window.
 
 From a [Test Run](test-run):

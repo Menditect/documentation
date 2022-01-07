@@ -78,7 +78,7 @@ Note that it is possible that due to moving a Test Step and dependencies with an
 Note that it not is possible to change the action or type of Test Step after creation, or change the entity or microflow that it is associated with.
 
 ### Configure a Test Step
-- Click on the cogwheel icon on the Test Step name to set the [Attribute Values](attribute-value) or Microflow Parameter Values](microflow-parameter-value) 
+- Click on the cogwheel icon on the Test Step name, or click on *Configure* on top of the test step details pane on the right, to set the [Attribute Values](attribute-value) or Microflow Parameter Values](microflow-parameter-value).
 
 Note that it not is possible to change the action or type of Test Step after creation, or change the entity or microflow that it is associated with.
 
@@ -87,6 +87,11 @@ Note that it not is possible to change the action or type of Test Step after cre
 - Click the Recycle bin icon on the Test Step you want to delete.
 
 Note that it is possible that due to deleting a Test Step and dependencies with another Test Step, an error will occur prohibiting the execution of the Test Configuration.
+
+### Open the Microflow or Domain Model associated with a Test Step in Mendix Studio
+- Go to the Automatic Test Case that the Test Step is in
+- Select the Test Step
+- Click on *Mx Studio* on top of the test step details pane on the right
 
 ## Related topics
 - [Assert Attribute Value](assert-attribute-value)
