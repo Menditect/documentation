@@ -52,5 +52,7 @@ Note that this can take some time depending on the size of the Mendix project, t
 - Click on the recycle bin icon to delete the Application Revision. Note this is only possible when it is no longer in use by a [Test Configuration](test-configuration).
 
 ## Related topics
-- [Test Suite](test-suite)
-- [Test Run](test-run)
+- [Application](application)
+- [Application Environment](application-environment)
+- [Test Application](test-application)
+- [Application Branch](application-branch)

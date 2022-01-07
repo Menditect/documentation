@@ -21,3 +21,5 @@ A Mendix project that is, or has been, accessed by someone using MTA, having acc
 ## Related topics
 - [Application Environment](application-environment)
 - [Test Application](test-application)
+- [Application Branch](application-branch)
+- [Application Revision](application-revision)

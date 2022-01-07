@@ -47,4 +47,5 @@ If [Test Applications](test-application) exist for the respective Application En
 ## Related topics
 - [Application](application)
 - [Test Application](test-application)
-- [Test Configuration](test-configuration)
+- [Application Branch](application-branch)
+- [Application Revision](application-revision)
