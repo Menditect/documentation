@@ -41,7 +41,7 @@ From a [Test Suite](test-suite):
 - Click on Execute and go to Test Run overview.
 - Click Proceed on the confirmation window.
 
-From a [Data Variation](data-variation):
+From a [Data Variation](datavariation):
 - Click on Execute and go to Test Run overview.
 - Click Proceed on the confirmation window.
 
