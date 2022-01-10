@@ -15,7 +15,7 @@ Asserts on [Attribute Value](attribute-value) can be defined on Object [Test Ste
 | Value | The expected value of the attribute when executing the test |
 | Min value | The expected lower boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
 | Max value | The expected higher boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
-| Trim string values | Used to be able to apply a trim to the string values when comparing (only applicable for string attributes |
+| Trim string values | Used to be able to apply a trim to the string values when comparing (only applicable for string attributes) |
 
 ## Business rules
 - Compare type is mandatory
