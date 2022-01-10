@@ -44,6 +44,8 @@ Note that you cannot delete the first column labeled *# 1*.
 See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item)
 
 ## Related topics
-- [Data Variation Items](datavariation-item
+- [Data Variation Items](datavariation-item)
+- [Attribute Value](attribute-value)
+- [Assert Attribute Value](assert-attribute-value)
 - [Test Suite](test-suite)
 - [Test Run](test-run)

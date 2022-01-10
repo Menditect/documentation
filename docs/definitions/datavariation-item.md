@@ -46,7 +46,9 @@ There are two ways to edit values in a Data Variation.
 - From the data variation page, click on the respective attribute or assert name on the left.
 - Click *Delete*.
 
-
 ## Related topics
+- [Data Variation](datavariation)
+- [Attribute Value](attribute-value)
+- [Assert Attribute Value](assert-attribute-value)
 - [Test Suite](test-suite)
 - [Test Run](test-run)

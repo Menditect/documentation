@@ -11,6 +11,7 @@ For Retrieve Object [Test Steps](test-step), an Attribute Value will be used to 
 | ----------- | ----------- |
 | MxID | Mendix ID of the attribute (not shown in the application, but used to find the attribute when it has been changed after a revision update) |
 | Name | Name of the attribute |
+| Included | Indicates whether setting the value for the attribute is included in the test step |
 | Datatype | Datatype of the attribute |
 | Input type | Indicates how the value is specified; fixed, or through the output of a former Test Step |
 | Value | The value of the attribute |
