@@ -1,4 +1,4 @@
-# Ci/Cd configuration
+# Configure Ci/Cd pipeline
 
 ## Definition
 

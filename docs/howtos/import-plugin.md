@@ -1,4 +1,4 @@
-# Import the MTA Plugin Module
+# Import MTA Plugin
 
 Download the MTA plugin module from Github with the highest Mendix version possible for your project. Check the version that is displayed on the Plugin. It represents the lowest supported Mendix version, all higher Mendix versions are supported.
 
