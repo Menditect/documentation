@@ -17,8 +17,11 @@ There are JAR files in the Mendix project userlib directory that belong to an ol
 
 ### Conflicting Java parameter names
 
-In Mendix modeler 7, a known issue is that when a Java parameter name exactly matches an entity name somewhere in the project, Mendix will change the parameter name in the generated code of the JAVA file, but not in the Mendix project (and also not in the user code of the JAVA file). An example is the "Request" parameter of the "mtaPluginAction" Java file. If somewhere in the project an entity exists that is also called "Request", the project will not compile.
+In Mendix modeler 7, a known issue is that when a parameter name of a Java action exactly matches an entity name somewhere in the project, Mendix will change the parameter name in the generated code of the JAVA file, but not in the Mendix project (and also not in the user code of the JAVA file). 
 
 ** Resolution **
-There are multiple ways of resolving this issue. Follow one of the steps described below:
 
+There are multiple ways of resolving this issue. Follow one of the steps described below:
+1. Rename the entity if possible.
+2. Rename the parameter name in the Mendix project and in the user code of the JAVA file, to match what Mendix has generated.
+3. Upgrade your project to Mendix 8.
