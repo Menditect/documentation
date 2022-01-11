@@ -1,6 +1,3 @@
----
-sidebar_position: 2
----
 # SSO
 
 Menditect uses a username with each test case to indicate who is running it. This is basically the username of a local user account, but could also be the ID of an SSO user. This ID is a number that can be found in your mendix app when you log in as MxAdmin. Unfortunately, you won't be able to see which user is associated with this ID (but you can see which roles), you can only see this from the IAM application.

@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 # Ci/Cd configuration
 
 ## Definition
