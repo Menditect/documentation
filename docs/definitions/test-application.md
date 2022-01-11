@@ -28,9 +28,6 @@ Creating a Test Application means linking an [Application environment](applicati
 - Enter the details for the Mta Plugin User for the respective environment and optionally test if a connection can be established.
 - Click Save.
 
-### Edit Test Application 
-...
-
 ### Delete Test Application 
 - Click Test applications after selecting the Test Configuration that you want to delete the Test Application from.
 - Click on the recycle bin icon to delete the Test Application you want to delete.
