@@ -25,3 +25,7 @@ There are multiple ways of resolving this issue. Follow one of the steps describ
 1. Rename the entity if possible.
 2. Rename the parameter name in the Mendix project and in the user code of the JAVA file, to match what Mendix has generated.
 3. Upgrade your project to Mendix 8.
+
+### Changes made in the Plugin module 
+
+If changes are made to the Plugin module, or in the JAVA files used by the Plugin module, Menditect cannot guarantee that the Plugin module will work as expected. To fix any issues resulting from this, revert the changes made end follow the steps described in the Known Issues section. If the problem persists, contact Menditect support.
