@@ -15,6 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'menditect',
   projectName: 'documentation',
+  trailingSlash: false,
 
   presets: [
     [
