@@ -4,8 +4,6 @@
 
 A Test Suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
 
-test <i class="fas fa-baseball-ball"></i>
-
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
