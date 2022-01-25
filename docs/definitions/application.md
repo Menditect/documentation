@@ -2,18 +2,18 @@
 
 ## Definition
 
-A Mendix project that is, or has been, accessed by someone using MTA, having access to that project through their Mendix API key. An Application always has one or more [Application Environments](application-environment), that may be used in a [Test Configuration](test-configuration).
+A Mendix project that has been added to MTA for test purposes. An Application must have one or more [Application Environments](application-environment) before it can be used in a [Test Configuration](test-configuration).
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Project ID | The unique identifier for the corresponding project in the Mendix platform |
-| Name | The name of the corresponding project in the Mendix platform |
+| Project ID | The unique identifier of the corresponding project in Mendix Teamserver. |
+| Name | The name of the corresponding project in Mendix Teamserver |
 
 ## Business rules
-- Name is mandatory
+- An MTA user must have a Mendix API Key registered in MTA in order to get Application information from Mendix Teamserver.
 
-## Actions on Application
+## Actions on an Application
 
 ### View Applications in use by MTA
 - Go to the Applications page to view all Applications that are used in MTA.

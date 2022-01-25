@@ -1,49 +1,51 @@
-# Assert Attribute Value
+# Assert on Attribute Value
 
 ## Definition
 
-An assert on [Attribute Value](attribute-value) is defined on a [Test Step](test-step) and exists of making a comparison between the expected and actual outcome value or value range upon test execution, of an attribute in the entity that is used in that [Test Step](test-step).
+An Assert on Attribute Value formulates an expected result of an attribute in a [Test Step](test-step) upon execution. It is possible to either define the result to have a single value, or a range that the value should be in. A Test Step can have multiple Asserts on Attribute Value.
 
-Asserts on [Attribute Value](attribute-value) can be defined on Object [Test Steps](test-step) that perform either a Create, Retrieve or Change action. It is possible to add asserts on [Attribute Values](attribute-value) that are not actually included to be set. For Create and Change actions, the comparison will be made for the object that is created or changed. If an assert on [Attribute Value](attribute-value) is defined on a Retrieve Object [Test Step](test-step), the comparison will be made for all objects that are in the result list of the retrieve action.
+An Assert on Attribute Value can be added for:
+- an [Attribute Value](attribute-value) of a created or changed object;
+- an Attribute Value of a retrieved object. In that case the assert evaluates the Attribute Value of all retrieved objects;
+- the value of a primitive microflow output parameter like string, integer, etc.
 
-> Asserts on output parameters of a Microflow [Test Step](test-step) (either on the primitive output, on the object or on the list of objects) are currently under development.
+Note that there are also [Asserts on Object Count](assert-object-count), that are added on a retrieve object action, or on a microflow call action. 
+
+When a Test Step uses [Data Variation](datavariation) to manipulate Test Step input, the Assert can be applied as a [Data Variation Item](datavariation-item) for each defined variation.
+
+Each Assert is evaluated after the execution of a Test Step. A Test Step execution fails when the evaluated value does not match to the defined expectation. 
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Compare type | The type of comparison to be made: either Equals or Range (only applicable for numeric or date attributes |
-| Value | The expected value of the attribute when executing the test |
-| Min value | The expected lower boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
-| Max value | The expected higher boundary of the value of the attribute when executing the test (only applicable for numeric or date attributes |
-| Trim string values | Used to be able to apply a trim to the string values when comparing (only applicable for string attributes) |
+| Compare type | The type of comparison to be made. <br />The 'Equals' type means that a single value is evaluated. <br />The 'Range' type  means that the expected attribute value should be within the given boundaries. A 'Range' type is only applicable for numeric or date attributes. |
+| Value | The expected value of the attribute upon executing the test when the selected compare type is 'Equals'. If the asserted value is empty, the result must be empty in order for the assert to pass. |
+| Min value | The expected lower boundary of the attribute value if the selected compare type is 'Range' |
+| Max value | The expected higher boundary of the attribute value if the selected compare type is 'Range' |
+| Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes) |
 
 ## Business rules
 - Compare type is mandatory
+- If the compare type is 'Range', both Min and Max values are mandatory.
 
-## Actions on Assert Attribute Value
+## Actions on an Assert on Attribute Value
 
-### View Test Steps that have asserts 
-- All [Test Steps](test-step) in a [Test Case](test-case) that have one or more asserts added, are marked with a checklist icon in the list of [Test Steps](test-step).
+### View Test Steps that have Asserts 
+- All [Test Steps](test-step) in a [Test Case](test-case) with one or more Assert, are marked with a checklist icon in the list of [Test Steps](test-step).
 
-### View attributes that have asserts 
-- All attributes that have an assert added are highlighted in the Attributes tab in the Details of teststep pane on the right in the test suite overview page.
-- If an assert is included in [Data Variation](datavariation), the matrix icon is also shown.
+### View attributes that have Asserts 
+- All attributes with one or more Assert are highlighted in the Attributes tab in the Details of teststep pane on the right in the Test Suite overview page.
+- If an Assert is included in [Data Variation](datavariation), the matrix icon is also shown.
 
-### Add an assert on Attribute Value
-There are multiple ways to add an assert on Attribute Value:
-1. In the Attributes tab in the Details of teststep pane on the right in the test suite overview page, click on the matrix icon next to the attribute to add an assert on it.
-2. When hovering the mouse on the [Test Step](test-step), click on the matrix icon to open the page where asserts can be configured.
-3. After configuring the [Test Step](test-step), click on Save and configure asserts to open the page where asserts can be configured.
-After the page opens, go to the Attributes tab, click on *+ Assertion* to add the assert on the respective attribute.
+### Add an Assert on Attribute Value
+There are multiple ways to add an Assert on Attribute Value:
+1. Navigate to the 'Attributes' tab in the 'Details of teststep' pane on the right in the Test Suite overview page. Click on the matrix icon next to the attribute to add the Assert.
+2. Hover your mouse on a [Test Step](test-step) and click on the matrix icon to open the page where asserts can be configured.
+3. Click on 'Save and configure asserts' after configuring the [Test Step](test-step). This will show the page where Asserts can be configured. Navigate to the 'Attributes' tab, click on *+ Assertion* to add the Assert.
 
-### Configure an assert on Attribute Value
-Asserts on Attribute Value can be configured in bulk, or only for 1 attribute.
-For numeric and date values, either a fixed value, or a range of values can be set to compare against.
-For boolean, enumeration and string values, only a fixed value can be set. String values can be optionally trimmed (leading and trailing spaces removed) before the comparison is made.
-
-### Delete an assert on Attribute Value
+### Delete an Assert on Attribute Value
 - Open the assertion configuration page and go to the Attributes tab.
-- Click on the recycle bin icon on the attribute to delete the assert from.
+- Click on the recycle bin icon on the attribute to delete the Assert from.
 
 ## Related topics
 - [Attribute Value](attribute-value)
