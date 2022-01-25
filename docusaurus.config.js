@@ -17,6 +17,9 @@ const config = {
   projectName: 'documentation',
   trailingSlash: false,
 
+
+  scripts: [{ src: 'https://kit.fontawesome.com/56b32f0d6e.js', defer: true, crossorigin: 'anonymous' }],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -72,11 +75,11 @@ const config = {
           // },
         ],
       },
-    //  footer: {
-    //   style: 'light',
-    //   links: [],
-    //    copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
-    //  },
+      //  footer: {
+      //   style: 'light',
+      //   links: [],
+      //    copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
+      //  },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
