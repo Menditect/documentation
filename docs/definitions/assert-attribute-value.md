@@ -20,28 +20,28 @@ Each Assert is evaluated after the execution of a Test Step. A Test Step executi
 | ----------- | ----------- |
 | Compare type | The type of comparison to be made. <br />The 'Equals' type means that a single value is evaluated. <br />The 'Range' type  means that the expected attribute value should be within the given boundaries. A 'Range' type is only applicable for numeric or date attributes. |
 | Value | The expected value of the attribute upon executing the test when the selected compare type is 'Equals'. If the asserted value is empty, the result must be empty in order for the assert to pass. |
-| Min value | The expected lower boundary of the attribute value if the selected compare type is 'Range' |
-| Max value | The expected higher boundary of the attribute value if the selected compare type is 'Range' |
-| Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes) |
+| Min value | The expected lower boundary of the attribute value if the selected compare type is 'Range'. |
+| Max value | The expected higher boundary of the attribute value if the selected compare type is 'Range'. |
+| Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes). |
 
 ## Business rules
-- Compare type is mandatory
+- Compare type is mandatory.
 - If the compare type is 'Range', both Min and Max values are mandatory.
 
 ## Actions on an Assert on Attribute Value
 
 ### View Test Steps that have Asserts 
-- All [Test Steps](test-step) in a [Test Case](test-case) with one or more Assert, are marked with a checklist icon in the list of [Test Steps](test-step).
+- All Test Steps in a [Test Case](test-case) with one or more Assert, are marked with a checklist icon in the list of Test Steps.
 
 ### View attributes that have Asserts 
 - All attributes with one or more Assert are highlighted in the Attributes tab in the Details of teststep pane on the right in the Test Suite overview page.
-- If an Assert is included in [Data Variation](datavariation), the matrix icon is also shown.
+- If an Assert is included in Data Variation, the matrix icon is also shown.
 
 ### Add an Assert on Attribute Value
 There are multiple ways to add an Assert on Attribute Value:
-1. Navigate to the 'Attributes' tab in the 'Details of teststep' pane on the right in the Test Suite overview page. Click on the matrix icon next to the attribute to add the Assert.
-2. Hover your mouse on a [Test Step](test-step) and click on the matrix icon to open the page where asserts can be configured.
-3. Click on 'Save and configure asserts' after configuring the [Test Step](test-step). This will show the page where Asserts can be configured. Navigate to the 'Attributes' tab, click on *+ Assertion* to add the Assert.
+1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on the matrix icon next to the attribute to add the Assert.
+2. Hover your mouse on a Test Step and click on the matrix icon to open the page where asserts can be configured.
+3. Click on "Save and configure asserts" after configuring the Test Step. This will show the page where Asserts can be configured. Navigate to the "Attributes" tab, click on the "+ Assertion" button to add the Assert.
 
 ### Delete an Assert on Attribute Value
 - Open the assertion configuration page and go to the Attributes tab.
