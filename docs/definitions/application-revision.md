@@ -33,7 +33,7 @@ An Application revision is a development version of a Mendix application. A revi
 Add a new Application Revision to MTA by downloading it from teamserver.
 Depending on the [Application Environment](application-environment), there are two possible ways of achieving this:
 - For an MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix Teamserver and this revision is deployed to the Application Environment.
-- For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on the pencil icon next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
+- For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fas fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
 
 Note that downloading can take some time depending on the size of the Mendix project.
 
@@ -48,7 +48,7 @@ Note that this can take some time depending on the size of the Mendix project, t
 - Select an Application, MTA will show detailed Application information.
 - Navigate to the "Application branches & revisions" tab.
 - Select an Application Branch, MTA will show all Application Revisions on the right pane.
-- Click on the recycle bin icon to delete the Application Revision. Note this is only possible when the Application Revision is no longer in use by a Test Configuration. Application Revisions are only removed from MTA; not from the Mendix repository.
+- Click on <i class="fas fa-trash-alt"></i> to delete the Application Revision. Note this is only possible when the Application Revision is no longer in use by a Test Configuration. Application Revisions are only removed from MTA; not from the Mendix repository.
 
 ## Related topics
 - [Application](application)
