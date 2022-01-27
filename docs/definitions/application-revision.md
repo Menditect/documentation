@@ -33,7 +33,7 @@ An Application revision is a development version of a Mendix application. A revi
 Add a new Application Revision to MTA by downloading it from teamserver.
 Depending on the [Application Environment](application-environment), there are two possible ways of achieving this:
 - For an MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix Teamserver and this revision is deployed to the Application Environment.
-- For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fas fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
+- For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fa fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
 
 Note that downloading can take some time depending on the size of the Mendix project.
 
