@@ -48,6 +48,6 @@ There are multiple ways to add an Assert on Attribute Value:
 - Click on <i class="fas fa-trash-alt"></i> on the attribute to delete the Assert from.
 
 ## Related topics
+- [Assert Object Count](assert-object-count)
 - [Attribute Value](attribute-value)
 - [Test Step](test-step)
-- [Assert Object Count](assert-object-count)

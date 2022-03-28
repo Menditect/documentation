@@ -20,23 +20,23 @@ Note that it is possible to have a data variation that does not consist of data 
 
 ### Enable Data Variation
 There are two ways to enable Data Variation on a [Test Suite](test-suite):
-1. Click on the matrix icon on top of the right pane in the test suite page. The data variation page will open and the icon color will turn dark, meaning Data Variation is enabled.
-2. When configuring a [Test Step](test-step), click on the data variation icon next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
+1. Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open and the icon color will turn dark, meaning Data Variation is enabled.
+2. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
 
 ### Disable Data Variation
 To completely remove all [Data Variation Items](datavariation-item) and also remove all Data Variations:
-- Click on the matrix icon on top of the right pane in the test suite page.
-- Click on the recycle bin icon on top of the list of [Data Variation Items](datavariation-item).
+- Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page.
+- Click on <i class="fas fa-trash-alt"></i> on top of the list of [Data Variation Items](datavariation-item).
 
 ### Add a Data Variation
-- Click on the matrix icon on top of the right pane in the test suite page. The data variation page will open.
+- Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open.
 - Click on the column of the Data Variation you want to create a copy from, for instance the column labeled *# 1*. 
-- Click *Copy*
+- Click "*Copy*"
 
 ### Delete a Data Variation
-- Click on the matrix icon on top of the right pane in the test suite page. The data variation page will open.
+- Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open.
 - Click on the column of the Data Variation you want to delete, for instance the column labeled *# 2*. 
-- Click the recycle bin icon.
+- Click <i class="fas fa-trash-alt"></i>.
 
 Note that you cannot delete the first column labeled *# 1*.
 
@@ -44,8 +44,8 @@ Note that you cannot delete the first column labeled *# 1*.
 See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item)
 
 ## Related topics
-- [Data Variation Items](datavariation-item)
-- [Attribute Value](attribute-value)
 - [Assert Attribute Value](assert-attribute-value)
-- [Test Suite](test-suite)
+- [Attribute Value](attribute-value)
+- [Data Variation Items](datavariation-item)
 - [Test Run](test-run)
+- [Test Suite](test-suite)

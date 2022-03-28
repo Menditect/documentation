@@ -23,5 +23,5 @@ None, as Application Branches are created by MTA.
 ## Related topics
 - [Application](application)
 - [Application Environment](application-environment)
-- [Test Application](test-application)
 - [Application Revision](application-revision)
+- [Test Application](test-application)

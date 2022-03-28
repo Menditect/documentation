@@ -11,16 +11,16 @@ The purpose of an Attribute Value is:
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The name of the attribute |
-| Included | This indicates whether setting the value for the attribute is included in the test step |
-| Datatype | Datatype of the attribute |
+| Name | The name of the attribute. |
+| Included | This indicates whether setting the value for the attribute is included in the test step. |
+| Datatype | Datatype of the attribute. |
 | Input type | Indicates how the value is specified. The "Fixed" input type specifies a by the test automator given value. The "From former test step" input type specifies that the value is derived from a former test step. |
-| Value | The value of the attribute |
+| Value | The value of the attribute. |
 
 ## Business rules
 
-- A former Test Step must be selected if an Attribute Value has the input type "Former Test Step". The Test Configuration can not be executed as long as the Test Step is not selected. 
-- The offset of current date or a fixed date must be specified if an Attribute Value has the input type "Fixed value" and a datatype "Datetime".
+- A former Test Step must be selected if an Attribute Value has the input type 'Former Test Step'. The Test Configuration can not be executed as long as the Test Step is not selected. 
+- The offset of current date or a fixed date must be specified if an Attribute Value has the input type 'Fixed value' and a datatype 'Datetime'.
 
 ## Actions on Attribute Value
 
