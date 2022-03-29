@@ -21,7 +21,7 @@ Note that if a Value on Microflow Parameter Value is not set, this means the inp
 ## Actions on Microflow Parameter Value
 
 ### View Microflow Parameter Values
-- In the test suite page, select the Microflow [Test Step](test-step) to view the Microflow Parameter Values for.
+- In the Test Suite page, select the Microflow [Test Step](test-step) to view the Microflow Parameter Values for.
 - The Microflow Parameter Values are shown in the right pane under Input parameters of microflow.
 
 ### Set a fixed Microflow Parameter Value

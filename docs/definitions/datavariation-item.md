@@ -20,15 +20,15 @@ Note that not entering a value will be interpreted as 'Empty'.
 ## Actions on Data Variation Item
 
 ### View Data Variation Items in a Test Suite
-- Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. 
+- Click on <i class="fas fa-table"></i> on top of the right pane in the Test Suite page. 
 - The data variation page will be opened showing all the Data Variation Items in the [Test Suite](test-suite).
 
 ### View Data Variation Items in a Test Case
-- On the test suite page, click on the [Test Case](test-case) that has the dark coloured <i class="fas fa-table"></i> icon next to it.
+- On the Test Suite page, click on the [Test Case](test-case) that has the dark coloured <i class="fas fa-table"></i> icon next to it.
 - For each attribute and assert shown in the test step details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
 
 ### View the values of a Data Variation Item per Data Variation
-- On the test suite page, click on the Test Case that has the dark coloured <i class="fas fa-table"></i> icon next to it.
+- On the Test Suite page, click on the Test Case that has the dark coloured <i class="fas fa-table"></i> icon next to it.
 - For each attribute and assert shown in the test step details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
 - Click on this icon to show the values per [Data Variation](datavariation).
 

@@ -28,7 +28,7 @@ The purpose of an Attribute Value is:
 - Navigate to an Object [Test Step](test-step) in the Test Suite page. The Attribute Values of the object are shown in the "Attributes" tab.
 
 ### Include or exclude an Attribute Value
-- Navigate to an Object Test Step in the test suite page.
+- Navigate to an Object Test Step in the Test Suite page.
 - Toggle the checkbox value next to the attribute in the "Attributes" tab.
 
 Note that: 
@@ -36,14 +36,14 @@ Note that:
 - An Attribute Value is empty during test execution if the checkbox is ticked but an attribute value is not set.
 
 ### Set a fixed Attribute Value 
-- Navigate to an Object Test Step in the test suite page.
+- Navigate to an Object Test Step in the Test Suite page.
 - Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute.
 
 Note: For datetime values you can enter either a fixed date, the current datetime, or an offset of the current datetime.
 
 ### Use a former Test Step to set an Attribute Value
-- Navigate to an Object Test Step in the test suite page.
+- Navigate to an Object Test Step in the Test Suite page.
 - Click <svg role="img" viewBox="0 0 512 512" width="2%" height="2%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M235.3 132.7c-6.25-6.25-16.38-6.25-22.62 0s-6.25 16.38 0 22.62L313.4 256l-100.7 100.7c-6.25 6.25-6.25 16.38 0 22.62s16.38 6.25 22.62 0l112-112C350.4 264.2 352 260.1 352 256s-1.562-8.188-4.688-11.31L235.3 132.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 480c-123.5 0-224-100.5-224-224s100.5-224 224-224s224 100.5 224 224S379.5 480 256 480z" class=""></path></svg> on the right of the attribute, indicating a former Test Step should be used to set the value.
 - Select the Test Step that should provide the value.
 
