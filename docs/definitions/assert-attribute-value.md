@@ -39,8 +39,8 @@ Each Assert is evaluated after the execution of a Test Step. A Test Step executi
 
 ### Add an Assert on Attribute Value
 There are multiple ways to add an Assert on Attribute Value:
-1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on <i class="fas fa-table"></i> next to the attribute to add the Assert.
-2. Hover your mouse on a Test Step and click on <i class="fas fa-table"></i> to open the page where asserts can be configured.
+1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on <i class="fas fa-table"></i> next to the attribute to add the Assert;
+2. Hover your mouse on a Test Step and click on <i class="fas fa-table"></i> to open the page where asserts can be configured;
 3. Click on "Save and configure asserts" after configuring the Test Step. This will show the page where Asserts can be configured. Navigate to the "Attributes" tab, click on the "+ Assertion" button to add the Assert.
 
 ### Delete an Assert on Attribute Value

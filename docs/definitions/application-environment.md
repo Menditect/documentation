@@ -33,19 +33,19 @@ See Mendix documentation for more information about Application Environments.
 
 ### View Test Configurations that use an Application Environment
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an [Application](application).
+- Select an Application.
 - Navigate to the "Application environments & execution users" tab to view the Application Environments.
 - Click on <i class="fa fa-eye"></i> next to an Application Environment. MTA shows a popup page with [Test Configurations](test-configuration) that have a [Test Application](test-application) using this Application Environment.
 
-If no [Test Application](test-application) is associated, the <i class="fas fa-trash-alt"></i> icon is shown instead of the <i class="fa fa-eye"></i> icon.
+If no Test Application is associated, the <i class="fas fa-trash-alt"></i> icon is shown instead of the <i class="fa fa-eye"></i> icon.
 
 ### Delete Application Environment
 - Go to the "Applications" page to view all Applications that are used in MTA.
-- Select an [Application](application)
+- Select an Application.
 - Go to the "Application environments & execution users" tab to view the Application Environments.
-- Click on <i class="fas fa-trash-alt"></i> next to the respective Application Environment. MTA will delete all data regarding the Application Environment. Note that the actual Mendix app environment will not be deleted. The Application Environment data will automatically be added again when referenced by a [Test Configuration](test-configuration).
+- Click on <i class="fas fa-trash-alt"></i> next to the respective Application Environment. MTA will delete all data regarding the Application Environment. Note that the actual Mendix app environment will not be deleted. The Application Environment data will automatically be added again when referenced by a Test Configuration.
 
-If a [Test Application](test-application) is associated, the <i class="fa fa-eye"></i> icon is shown instead of the <i class="fas fa-trash-alt"></i> icon. 
+If a Test Application is associated, the <i class="fa fa-eye"></i> icon is shown instead of the <i class="fas fa-trash-alt"></i> icon. 
 
 ## Related topics
 - [Application](application)

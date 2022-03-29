@@ -32,9 +32,9 @@ If the Microflow Parameter Value is an object, a former Test Step must be used t
 - Enter or select a value for the attribute. 
 
 For each datatype, there is a different way of entering the value:
-1. String and numeric values can be entered in a text box.
-2. Boolean values need to be Yes or No (and cannot be 'Empty').
-3. Enumeration values can be selected from a dropdown.
+1. String and numeric values can be entered in a text box;
+2. Boolean values need to be Yes or No (and cannot be 'Empty');
+3. Enumeration values can be selected from a dropdown;
 4. Datetime values can be entered either fixed-date, or currentdatetime with an offset.
 
 Note that if the value is not set, this means it will be set to 'Empty' when executing the test. 

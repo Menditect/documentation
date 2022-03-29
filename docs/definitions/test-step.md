@@ -71,7 +71,7 @@ A Microflow Test Step executes exactly one microflow (and all the activities in 
 Note that it is possible that due to moving a Test Step and dependencies with another Test Step, an error will occur prohibiting the execution of the Test Configuration.
 
 ### Edit a Test Step
-- Click on <i class="fa fa-pencil"></i> next to the Test Step name to edit the Name or the Description, or to Highlight the Test Step
+- Click on <i class="fa fa-pencil"></i> next to the Test Step name to edit the Name or the Description, or to Highlight the Test Step.
 
 Note that it not is possible to change the action or type of Test Step after creation, or change the entity or microflow that it is associated with.
 

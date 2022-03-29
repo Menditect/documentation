@@ -9,7 +9,7 @@ The value of a Data Variation Item is defined either in an [Attribute Value](att
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Type | There are two types of variants: <br /> - Attribute value, where an attribute is given a value. <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br />  |
+| Type | There are two types of variants: <br /> - Attribute value, where an attribute is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br />  |
 | Attribute name | The name of the attribute. |
 | Value | The value of the attribute or assert. |
 
@@ -34,7 +34,7 @@ Note that not entering a value will be interpreted as 'Empty'.
 
 ### Create a Data Variation Item
 To add an [Attribute Value](attribute-value) or an [Assert on attribute value](assert-attribute-value) as a Data Variation Item, there are two ways:
-1. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item.
+1. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
 2. With Data Variation already enabled, go to the data variation page and click on "*+ Attribute*" or "*+ Assert*" to add an Attribute Value or an Assert on attribute value as a Data Variation Item.
 
 ### Edit a Data Variation Item

@@ -5,7 +5,7 @@
 The Attribute Value contains the information that specifies the input of an Object [Test Step](test-step).
 
 The purpose of an Attribute Value is:
-- to set the value of an object attribute in a Create and Change Attribute Object Test Steps. The value of the attribute of the object will be set or changed in-memory.
+- to set the value of an object attribute in a Create and Change Attribute Object Test Steps. The value of the attribute of the object will be set or changed in-memory;
 - to narrow the list of output objects in a Retrieve Object Test Step. The given attribute value behaves like an XPATH statement.
 
 ## Properties

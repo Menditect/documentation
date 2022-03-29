@@ -31,7 +31,7 @@ To completely remove all Data Variation Items and also remove all Data Variation
 ### Add a Data Variation
 - Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open.
 - Click on the column of the Data Variation you want to create a copy from, for instance the column labeled *# 1*. 
-- Click "*Copy*"
+- Click "*Copy*".
 
 ### Delete a Data Variation
 - Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open.
