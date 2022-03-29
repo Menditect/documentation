@@ -59,7 +59,7 @@ A Microflow Test Step executes exactly one microflow (and all the activities in 
 
 ### Create an Microflow Test Step
 - Navigate to the Test Suite and select the Test Case that you want to create a Test Step in.
-- Click "*+ Microflow*" to create an Microflow test step.
+- Click "*+ Microflow*" to create a Microflow test step.
 - Select the Microflow to execute.
 - Choose "Save".
 - If neccesary, select additional options like [Microflow Parameter Values](microflow-parameter-value).
