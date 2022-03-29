@@ -23,7 +23,7 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 - Enter a name and an optional description and choose "Save".
 
 ### Configure a Test Suite
-- Navigate to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to configure a Test Suite.
+- Navigate to the Test design page in MTA and select the Test Configuration where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.
 
 ### Change the order of a Test Suite in a Test Configuration
@@ -36,17 +36,17 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 - Click "Proceed on the confirmation window".
 
 ### Copy a Test Suite
-- Navigate to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to copy a Test Suite.
+- Navigate to the Test design page in MTA and select the Test Configuration where you want to copy a Test Suite.
 - Click <i class="fas fa-copy"></i> on the Test Suite you want to copy.
-- Click Select and proceed to copy the Test Suite in the same [Test Configuration](test-configuration), or expand the list of other [Test Configurations](test-configuration) and select one there.
+- Click Select and proceed to copy the Test Suite in the same Test Configuration, or expand the list of other Test Configuration and select one there.
 - Give the copy a name and choose "Save".
 
 ### Export a Test Suite to Word
-- Navigate to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to export a Test Suite to Word.
+- Navigate to the Test design page in MTA and select the Test Configuration where you want to export a Test Suite to Word.
 - Click <i class="fas fa-file-word"></i> on the Test Suite you want to export to Word.
 
 ### Delete a Test Suite
-- Navigate to the Test design page in MTA and select the [Test Configuration](test-configuration) where you want to delete a Test Suite.
+- Navigate to the Test design page in MTA and select the Test Configuration where you want to delete a Test Suite.
 - Click <i class="fas fa-trash-alt"></i> on the Test Suite you want to delete.
 
 Note that deleting a Test Suite is permanent. Individual Test Suites cannot be recovered.

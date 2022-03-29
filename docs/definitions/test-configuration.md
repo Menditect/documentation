@@ -7,13 +7,13 @@ A Test Configuration is an executable test script that describes which [Test Sui
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The name of the Test Configuration |
+| Name | The name of the Test Configuration. |
 | CiCd enabled | If set to Yes, the Test Configuration will be executed if one of it is associated Test Applications is executed via Ci/Cd API. |
 
 ## Business rules
 - Name is mandatory.
-- The application revision of the Test Suite must be equal to the application revision of the Test Configuration, with the same Application in order to be able to execute the Test Configuration.
-- There can only be two Test Runs per Test Configuration that are Pinned.
+- The application revision of the [Test Suite](test-suite) must be equal to the application revision of the Test Configuration, with the same [Application](application) in order to be able to execute the Test Configuration.
+- There can only be two [Test Runs](test-run) per Test Configuration that are Pinned.
 
 ## Actions on Test Configuration
 

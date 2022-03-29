@@ -15,7 +15,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 | Status | Running or Finished. |
   
 ## Business rules
-- There can only be two Test Runs per Test Configuration that are "Pinned".
+- There can only be two Test Runs per [Test Configuration](test-configuration) that are "Pinned".
 
 ## Actions on Test Run
 
@@ -23,7 +23,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 - Navigate to the Test Run overview in MTA under Test Run, to view a list of all the executed Test Runs in MTA.
 
 ### Create a new Test Run
-- To create a new Test Run, execute a Test Configuration.
+- To create a new Test Run, execute a [Test Configuration](test-configuration).
  
 Read more at [Execute a Test Configuration](test-configuration#execute-a-test-configuration).
 

@@ -14,7 +14,7 @@ Data Variation consists of [Data Variation Items](datavariation-item) or variant
 ## Business rules
 
 None. 
-Note that it is possible to have a data variation that does not consist of data variation items. This happens when all data variation items are deleted. The result is that the Test Suite will simply be ran multiple times but with the exact same data.
+Note that it is possible to have a data variation that does not consist of data variation items. This happens when all data variation items are deleted. The result is that the [Test Suite](test-suite) will simply be ran multiple times but with the exact same data.
 
 ## Actions on Data Variation
 
@@ -24,9 +24,9 @@ There are two ways to enable Data Variation on a [Test Suite](test-suite):
 2. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
 
 ### Disable Data Variation
-To completely remove all [Data Variation Items](datavariation-item) and also remove all Data Variations:
+To completely remove all Data Variation Items and also remove all Data Variations:
 - Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page.
-- Click on <i class="fas fa-trash-alt"></i> on top of the list of [Data Variation Items](datavariation-item).
+- Click on <i class="fas fa-trash-alt"></i> on top of the list of Data Variation Items.
 
 ### Add a Data Variation
 - Click on <i class="fas fa-table"></i> on top of the right pane in the test suite page. The data variation page will open.
@@ -41,7 +41,7 @@ To completely remove all [Data Variation Items](datavariation-item) and also rem
 Note that you cannot delete the first column labeled *# 1*.
 
 ### Edit a Data Variation
-See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item)
+See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item).
 
 ## Related topics
 - [Assert Attribute Value](assert-attribute-value)

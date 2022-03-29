@@ -20,7 +20,7 @@ A Test Instruction is a descriptive counterpart of a [Test Step](test-step). A T
 ## Actions on Test Instruction
 
 ### View Test Instructions in a Test Case
-- Navigate to the Test Suite that the Test Instructions are in.
+- Navigate to the [Test Suite](test-suite) that the Test Instructions are in.
 - Click on the Manual Test Case to view the Test Instructions.
 - Test Instructions are shown in the middle pane.
 

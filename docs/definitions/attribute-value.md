@@ -19,13 +19,13 @@ The purpose of an Attribute Value is:
 
 ## Business rules
 
-- A former Test Step must be selected if an Attribute Value has the input type 'Former Test Step'. The Test Configuration can not be executed as long as the Test Step is not selected. 
+- A former [Test Step](test-step) must be selected if an Attribute Value has the input type 'Former Test Step'. The [Test Configuration](test-configuration) can not be executed as long as the Test Step is not selected. 
 - The offset of current date or a fixed date must be specified if an Attribute Value has the input type 'Fixed value' and a datatype 'Datetime'.
 
 ## Actions on Attribute Value
 
 ### View Attribute Values
-- Navigate to an Object Test Step in the Test Suite page. The Attribute Values of the object are shown in the "Attributes" tab.
+- Navigate to an Object [Test Step](test-step) in the Test Suite page. The Attribute Values of the object are shown in the "Attributes" tab.
 
 ### Include or exclude an Attribute Value
 - Navigate to an Object Test Step in the test suite page.

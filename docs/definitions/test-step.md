@@ -33,14 +33,14 @@ A Microflow Test Step executes exactly one microflow (and all the activities in 
 
 ## Business rules
 - Name is mandatory.
-- A Microflow Test Step must have a microflow selected in order to be able to execute the Test Configuration.
+- A Microflow Test Step must have a microflow selected in order to be able to execute the [Test Configuration](test-configuration).
 - An 'Create', 'Change' or 'Retrieve' Object Test Step must have an entity selected in order to be able to execute the Test Configuration.
 
 ## Actions on Test Step
 
 ### View Test Steps in a Test Case
-- Navigate to the Test Suite that the Test Steps are in.
-- Click on the Automatic Test Case to view the Test Steps.
+- Navigate to the [Test Suite](test-suite) that the Test Steps are in.
+- Click on the Automatic [Test Case](test-case) to view the Test Steps.
 - Test Steps are shown in the middle pane.
 
 ### View Test Step details

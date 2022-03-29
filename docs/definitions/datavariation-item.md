@@ -28,14 +28,14 @@ Note that not entering a value will be interpreted as 'Empty'.
 - For each attribute and assert shown in the test step details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
 
 ### View the values of a Data Variation Item per Data Variation
-- On the test suite page, click on the [Test Case](test-case) that has the dark coloured <i class="fas fa-table"></i> icon next to it.
+- On the test suite page, click on the Test Case that has the dark coloured <i class="fas fa-table"></i> icon next to it.
 - For each attribute and assert shown in the test step details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
-- Click on this icon to show the values per Data Variation.
+- Click on this icon to show the values per [Data Variation](datavariation).
 
 ### Create a Data Variation Item
 To add an [Attribute Value](attribute-value) or an [Assert on attribute value](assert-attribute-value) as a Data Variation Item, there are two ways:
-1. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the [Data Variation](datavariation). [Data Variation](datavariation) will be enabled and the respective attribute or assert will be added as a Data Variation Item.
-2. With [Data Variation](datavariation) already enabled, go to the data variation page and click on "*+ Attribute*" or "*+ Assert*" to add an [Attribute Value](attribute-value) or an [Assert on attribute value](assert-attribute-value) as a Data Variation Item.
+1. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item.
+2. With Data Variation already enabled, go to the data variation page and click on "*+ Attribute*" or "*+ Assert*" to add an Attribute Value or an Assert on attribute value as a Data Variation Item.
 
 ### Edit a Data Variation Item
 There are two ways to edit values in a Data Variation. 
@@ -44,7 +44,6 @@ There are two ways to edit values in a Data Variation.
 
 ### Delete a Data Variation Item
 - From the data variation page, click on the respective attribute or assert name on the left.
-- Click "*Delete*".
 - Click "*Delete*".
 
 ## Related topics

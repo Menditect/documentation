@@ -32,7 +32,7 @@ A Test Case is always executed on a [Test Application](test-application) and by 
 ## Actions on Test Case
 
 ### View Test Cases in a Test Suite
-- Navigate to the Test Suite that the Test Cases are in.
+- Navigate to the [Test Suite](test-suite) that the Test Cases are in.
 - MTA will show the Test Cases in the left pane.
 
 ### View Test Case details
@@ -60,7 +60,7 @@ Note that Testers can only move 'Manual' Test Cases, but cannot move 'Automatic'
 ### Edit a Test Case
 - Click on <i class="fa fa-pencil"></i> next to the Test Case name to edit the Name or the Description, or to Highlight the Test Step
 
-Note that it not is possible to change the Test Case Type or associated [Test Application](test-application) after creation.
+Note that it not is possible to change the Test Case Type or associated Test Application after creation.
 
 ### Delete a Test Case
 - Click <i class="fas fa-trash-alt"></i> on the Test Case you want to delete.

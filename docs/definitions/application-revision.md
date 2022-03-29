@@ -24,21 +24,21 @@ An Application revision is a development version of a Mendix application. A revi
 
 ### View downloaded Application Revisions for an Application
 - Go to the "Applications" page to view all Applications that are used in MTA.
-- Select an Application.
+- Select an [Application](application).
 - Go to the "Application branches & revisions" tab.
-- Select an Application Branch.
+- Select an [Application Branch](application-branch).
 - The Application Revisions are shown on the right pane.
 
 ### Add an Application Revision
 Add a new Application Revision to MTA by downloading it from teamserver.
 Depending on the [Application Environment](application-environment), there are two possible ways of achieving this:
-- For a MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix Teamserver and this revision is deployed to the Application Environment.
+- For a MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the [Test Configuration](test-configuration).<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix Teamserver and this revision is deployed to the Application Environment.
 - For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fa fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
 
 Note that downloading can take some time depending on the size of the Mendix project.
 
 ### Apply a downloaded Application Revision to Test Suites in a Test Configuration
-A new Application Revision must be applied to the Test Suites in a Test Configuration, in order to be able to execute the Test Configuration.
+A new Application Revision must be applied to the [Test Suites](test-suite) in a Test Configuration, in order to be able to execute the Test Configuration.
 - Click the “Apply to Test Suites” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a consistency error will be shown.
 
 Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration].
