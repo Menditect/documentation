@@ -8,19 +8,19 @@ A Test Case is always executed on a [Test Application](test-application) and by 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | Name of the Test Case. |
-| Test Case Type | Indicates wheter a Test Case is a manual or automatic Test Case: <br /> - 'Manual' Test Cases are not included when a Test Configuration is executed. <br /> - 'Automatic' Test Cases are included when a Test Configuration is executed. |
-| Objective | Objective of the testcase. |
-| Preconditions | Description of the preconditions of a Test Case. |
-| Expected result | Description of the expected result of a Test Case. |
+| Name | The name of the Test Case. |
+| Test Case Type | This indicates wheter a Test Case is a manual or automatic Test Case: <br /> - 'Manual' Test Cases are not included when a Test Configuration is executed. <br /> - 'Automatic' Test Cases are included when a Test Configuration is executed. |
+| Objective | The objective of the testcase. |
+| Preconditions | A description of the preconditions of a Test Case. |
+| Expected result | A description of the expected result of a Test Case. |
 | Test application | The associated test application to execute the Test Case on. |
 | Execution user | The user to execute the Test Case with. |
-| Apply security | If set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). |
+| Apply security | If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). |
 | Execution time-out | The maximum number of seconds this Test Case is allowed to run. If the execution duration takes longer, the execution is aborted. |
 | Execute with delay | The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. |
 
 ## Business rules
-- Name is mandatory.
+- The name is mandatory.
 - Test application is mandatory. 
 - Execute with delay is mandatory.
 - Execute with delay must be greater than 0.
@@ -41,7 +41,7 @@ A Test Case is always executed on a [Test Application](test-application) and by 
 - Click on Test case details on top of the middle pane.
 
 ### Create a Test Case
-- Go to the Test Suite you want to create a Test Case in.
+- Navigate to the Test Suite you want to create a Test Case in.
 - Click "*+ Test case*" to create a Test Case.
 - Select either 'Manual' or 'Automatic' for the Test Case Type (Testers can only create 'Manual' Test Cases).
 - Enter a name and other optional information.

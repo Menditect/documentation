@@ -7,15 +7,15 @@ A Test Instruction is a descriptive counterpart of a [Test Step](test-step). A T
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Title | Title of the Test Instruction. |
-| Description | Description of a Test Instruction. |
-| Highlight | Indicates whether to visually highlight the Test Instruction in the Test Case to draw attention to it. |
-| Input data | Description of the input data for a Test Instruction. |
-| Expected result | Description of the expected result of a Test Instruction. |
+| Title | The title of the Test Instruction. |
+| Description | A description of a Test Instruction. |
+| Highlight | This indicates whether to visually highlight the Test Instruction in the Test Case to draw attention to it. |
+| Input data | A description of the input data for a Test Instruction. |
+| Expected result | A description of the expected result of a Test Instruction. |
 | Image | A descriptive image (for instance, png or jpg file) that shows the expected outcome of the Test Instruction. |
 
 ## Business rules
-- Title is mandatory.
+- The title is mandatory.
 
 ## Actions on Test Instruction
 

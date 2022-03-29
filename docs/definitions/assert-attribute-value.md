@@ -25,7 +25,7 @@ Each Assert is evaluated after the execution of a Test Step. A Test Step executi
 | Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes). |
 
 ## Business rules
-- Compare type is mandatory.
+- The compare type is mandatory.
 - If the compare type is 'Range', both Min and Max values are mandatory.
 
 ## Actions on an Assert on Attribute Value

@@ -10,19 +10,19 @@ See Mendix documentation for more information about Application Environments.
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | Name of environment. |
+| Name | The name of environment. |
 | Model version | The version number of the package deployed in your environment. |
 | URL | The Mendix URL of the environment. |
 | Plugin username | Username of the Plugin User in the environment of the application under test. |
 | Plugin password | Password of the Plugin User in the environment of the application under test. |
-| Show statistics | Indicates whether the application environment is displayed in the statistics overview (dashboard). |
+| Show statistics | This indicates whether the application environment is displayed in the statistics overview (dashboard). |
 
 ## Business rules
-- Name is mandatory.
-- URL is mandatory.
-- URL should start with http of https and not end with a slash.
-- Plugin username is mandatory.
-- Plugin password is mandatory.
+- The name is mandatory.
+- The URL is mandatory.
+- The URL should start with http of https and not end with a slash.
+- The Plugin username is mandatory.
+- The Plugin password is mandatory.
 
 ## Actions on an Application Environment
 

@@ -7,15 +7,15 @@ An Application revision is a development version of a Mendix application. A revi
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Author | Creator of the revision (committer). |
-| Commit message | Description added to the commit action. Typically this contains information about the model changes. |
-| Create revision date  | Date when the revision is created (or the commit is done). |
-| Mendix version | Version of Mendix Studio (Pro) in which the [Application](application) is developed. |
-| Progress | Indication of the download progression of the Application revision. |
+| Author | The creator of the revision (committer). |
+| Commit message | The description added to the commit action. Typically this contains information about the model changes. |
+| Create revision date  | The date when the revision is created (or the commit is done). |
+| Mendix version | The version of Mendix Studio (Pro) in which the [Application](application) is developed. |
+| Progress | An indication of the download progression of the Application revision. |
 | Revision number | The revision number of the model of the Mendix application. |
-| Total modules | Total number of modules in application revision. |
-| Total entities | Total number of entities in application revision. |
-| Total microflows | Total number of microflows in application revision. |
+| Total modules | The total number of modules in application revision. |
+| Total entities | The total number of entities in application revision. |
+| Total microflows | The total number of microflows in application revision. |
 
 ## Business rules
 - The revision for a [Test Application](test-application) should be identical to the revision in use by [Test Configurations](test-configuration) in order to be able to execute the Test Configuration. This can be achieved by downloading the revision and applying it to the [Test Suites](test-suite) in a Test Configuration.
@@ -23,9 +23,9 @@ An Application revision is a development version of a Mendix application. A revi
 ## Actions on an Application Revision
 
 ### View downloaded Application Revisions for an Application
-- Go to the "Applications" page to view all Applications that are used in MTA.
+- Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application).
-- Go to the "Application branches & revisions" tab.
+- Navigate to the "Application branches & revisions" tab.
 - Select an [Application Branch](application-branch).
 - The Application Revisions are shown on the right pane.
 

@@ -13,7 +13,7 @@ Asserts on object count can be defined either on Retrieve Object Test Steps or o
 | Expected object count | The expected value of the attribute when executing the test. |
 
 ## Business rules
-- Compare type is mandatory.
+- The compare type is mandatory.
 - Expected object count is mandatory.
 - Expected object count must be equal to or greater than 0.
 

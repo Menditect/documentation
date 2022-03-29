@@ -7,9 +7,9 @@ The Microflow Parameter Value contains the value for a Microflow input parameter
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | Name of the input parameter. |
-| Datatype | Datatype of the input parameter |
-| Input type | Indicates how the value is specified; manually by the user, or through the output of a former Test Step. |
+| Name | The name of the input parameter. |
+| Datatype | The datatype of the input parameter. |
+| Input type | This indicates how the value is specified; manually by the user, or through the output of a former Test Step. |
 | Value | The value of the input parameter. |
 
 ## Business rules

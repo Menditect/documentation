@@ -7,7 +7,7 @@ A copy of an [Application](application) codeline, managed with Mendix teamserver
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | Name of the branch. |
+| Name | The name of the branch. |
 
 ## Business rules
 

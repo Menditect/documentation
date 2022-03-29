@@ -22,17 +22,17 @@ A Microflow Test Step executes exactly one microflow (and all the activities in 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | Name of the Test Step. |
-| Description | Description of the Test Step. |
-| Highlight | Indicates whether to visually highlight the Test Step in the Test Case to draw attention to it. |
-| Category | Either 'Object' or 'Microflow'. |
+| Name | The name of the Test Step. |
+| Description | A description of the Test Step. |
+| Highlight | This indicates whether to visually highlight the Test Step in the Test Case to draw attention to it. |
+| Category | Can be either 'Object' or 'Microflow'. |
 | Action | Only for Object Test Steps; either 'Create', 'Retrieve', 'Change', 'Delete' or 'Persist'. |
 | Retrieve set | Only for Retrieve Object Test Steps; either 'All objects', or 'Only First object'. |
 | Retrieve option | Only for Retrieve Object Test Steps; either 'From database', 'From former Test Step', or 'By association' (from memory). |
 | Microflow Name | Only for Microflow Test Steps; Name of the microflow to be executed. |
 
 ## Business rules
-- Name is mandatory.
+- The name is mandatory.
 - A Microflow Test Step must have a microflow selected in order to be able to execute the [Test Configuration](test-configuration).
 - An 'Create', 'Change' or 'Retrieve' Object Test Step must have an entity selected in order to be able to execute the Test Configuration.
 
