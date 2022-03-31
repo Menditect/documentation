@@ -7,11 +7,13 @@ A Mendix project that has been added to MTA for test purposes. An Application mu
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Project ID | The unique identifier of the corresponding project in Mendix Teamserver. |
-| Name | The name of the corresponding project in Mendix Teamserver. |
+| Project ID | The unique identifier of the corresponding project in Mendix teamserver. This information can be found under the App's General Settings in Mendix Sprintr. |
+| Name | The name of the corresponding project in Mendix reamserver. |
 
 ## Business rules
-- An MTA user must have a Mendix API Key registered in MTA in order to get Application information from Mendix Teamserver.
+- An MTA user must have a Mendix API Key registered in MTA in order to get Application information from Mendix teamserver. 
+
+To learn more about configuring an MTA user, go to [howtos/access-mendix-model](Access Mendix model).
 
 ## Actions on an Application
 

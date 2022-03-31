@@ -4,6 +4,8 @@
 
 An Application revision is a development version of a Mendix application. A revision belongs to an [Application Branch](application-branch). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
 
+See [Mendix documentation](https://docs.mendix.com) for more information about revisions.
+
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
@@ -19,6 +21,7 @@ An Application revision is a development version of a Mendix application. A revi
 
 ## Business rules
 - The revision for a [Test Application](test-application) should be identical to the revision in use by [Test Configurations](test-configuration) in order to be able to execute the Test Configuration. This can be achieved by downloading the revision and applying it to the [Test Suites](test-suite) in a Test Configuration.
+- The Application Revision information cannot be deleted from MTA if a Test Configuration is using the Application Revision.
 
 ## Actions on an Application Revision
 
@@ -32,7 +35,7 @@ An Application revision is a development version of a Mendix application. A revi
 ### Add an Application Revision
 Add a new Application Revision to MTA by downloading it from teamserver.
 Depending on the [Application Environment](application-environment), there are two possible ways of achieving this:
-- For a MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the [Test Configuration](test-configuration).<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix Teamserver and this revision is deployed to the Application Environment.
+- For a MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the [Test Configuration](test-configuration).<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix teamserver and this revision is deployed to the Application Environment.
 - For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fa fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
 
 Note that downloading can take some time depending on the size of the Mendix project.

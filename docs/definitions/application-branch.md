@@ -2,16 +2,18 @@
 
 ## Definition
 
-A copy of an [Application](application) codeline, managed with Mendix teamserver. Branches are imported from teamserver by MTA. See Mendix documentation for more information about branches. 
+A copy of an [Application](application) codeline, managed with Mendix teamserver. Information about an Application Branch is imported from teamserver by MTA. 
+
+See [Mendix documentation](https://docs.mendix.com) for more information about branches. 
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Name | The name of the branch. |
+| Name | The name of the Application Branch. |
 
 ## Business rules
 
-None, as Application Branches are created by MTA.
+- The Application Branch information cannot be deleted from MTA if [Application Revision](application-revision) information still exists in the branch.
 
 ## Actions on Application branch
 
@@ -19,6 +21,10 @@ None, as Application Branches are created by MTA.
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application).
 - Navigate to the "Application branches & revisions" tab to view the Application Branches.
+
+### Delete an Application branch for an Application
+- Navigate to the "Application branches & revisions" tab to view the Application Branches.
+- Click <i class="fas fa-trash-alt"></i> next to the Application Branch name to delete the information about it from MTA.
 
 ## Related topics
 - [Application](application)
