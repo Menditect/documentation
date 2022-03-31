@@ -2,22 +2,27 @@
 
 ## Definition
 
-A Test Case is a collection of [Test Steps](test-step) that are assembled to test some specific aspect of system behaviour. A Test Case is part of a [Test Suite](test-suite).
-A Test Case is always executed on a [Test Application](test-application) and by an execution user. The name of the execution user must exactly match an existing, active and not blocked local user in the [Application environment](application-environment) that is tested.
+A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. A Test Case is part of a [Test Suite](test-suite).
+
+A Test Case can be either 'Manual' or 'Automatic'. Manual Test Cases contain [Test Instructions](test-instruction), do not run any Mendix code and subsequently do not appear whenever the Test Suite is executed. Automatic Test Cases are executable, and contain [Test Steps](test-step) that run the underlying Mendix code.
+
+A Test Case is always executed on a Test Application and by an execution user. The name of the execution user must exactly match an existing, active and not blocked local user in the [Application environment](application-environment) that is tested. 
+
+Note that this is not the same user as the Mta Plugin User that is used to communicate between the Application environment and MTA. 
 
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
 | Name | The name of the Test Case. |
-| Test Case Type | This indicates wheter a Test Case is a manual or automatic Test Case: <br /> - 'Manual' Test Cases are not included when a Test Configuration is executed. <br /> - 'Automatic' Test Cases are included when a Test Configuration is executed. |
+| Test Case Type | This indicates if a Test Case is executable, can be either 'Manual' or 'Automatic'. |
 | Objective | The objective of the testcase. |
 | Preconditions | A description of the preconditions of a Test Case. |
 | Expected result | A description of the expected result of a Test Case. |
 | Test application | The associated test application to execute the Test Case on. |
-| Execution user | The user to execute the Test Case with. |
+| Execution user | The username to execute the Test Case with. |
 | Apply security | If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). |
 | Execution time-out | The maximum number of seconds this Test Case is allowed to run. If the execution duration takes longer, the execution is aborted. |
-| Execute with delay | The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. |
+| Execute with delay | The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. This is particularly useful when some Mendix code is executed asyncronously in a previous Test Case, and you want to prevent the two Test Cases to run simultaneously. |
 
 ## Business rules
 - The name is mandatory.
