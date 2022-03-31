@@ -18,7 +18,7 @@ Each Assert is evaluated after the execution of a Test Step. A Test Step executi
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Compare type | The type of comparison to be made. <br />The 'Equals' type means that a single value is evaluated. <br />The 'Range' type  means that the expected attribute value should be within the given boundaries. A 'Range' type is only applicable for numeric or date attributes. |
+| Compare type | The type of comparison to be made. <br />  - The 'Equals' / 'Not equals' type means that the attribute value should exactly match (or not match, respectively) a single given value. <br />   - The 'Range' / 'Not range' type  means that the attribute value should be within (or outside, respectively) the given boundaries. A 'Range' type is only applicable for numeric or date attributes.  <br />   - The 'Greater than' / 'Greater than or equal to' means that the attribute value should be higher than (or include, respectively) the given value.  <br />   - The 'Less than' / 'Less than or equal to' means that the attribute value should be lower than (or include, respectively) the given value.  <br />  |
 | Value | The expected value of the attribute upon executing the test when the selected compare type is 'Equals'. If the asserted value is empty, the result must be empty in order for the assert to pass. |
 | Min value | The expected lower boundary of the attribute value if the selected compare type is 'Range'. |
 | Max value | The expected higher boundary of the attribute value if the selected compare type is 'Range'. |

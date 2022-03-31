@@ -4,9 +4,9 @@
 
 The Attribute Value contains the information that specifies the input of an Object [Test Step](test-step).
 
-The purpose of an Attribute Value is:
-- to set the value of an object attribute in a Create and Change Attribute Object Test Steps. The value of the attribute of the object will be set or changed in-memory;
-- to narrow the list of output objects in a Retrieve Object Test Step. The given attribute value behaves like an XPATH statement.
+The purpose of an Attribute Value is either:
+- to set the value of an object attribute in a Create and Change Attribute Object Test Steps, the value of the attribute of the object will be set or changed in-memory;
+- to narrow the list of output objects in a Retrieve Object Test Step, the given attribute value behaves like an XPATH statement.
 
 ## Properties
 | Name | Description |
@@ -19,7 +19,7 @@ The purpose of an Attribute Value is:
 
 ## Business rules
 
-- A former [Test Step](test-step) must be selected if an Attribute Value has the input type 'Former Test Step'. The [Test Configuration](test-configuration) can not be executed as long as the Test Step is not selected. 
+- A former [Test Step](test-step) must be selected if an Attribute Value has the input type 'Former Test Step'. The [Test Configuration](test-configuration) that contains the Test Step can not be executed as long as the former Test Step is not selected. 
 - The offset of current date or a fixed date must be specified if an Attribute Value has the input type 'Fixed value' and a datatype 'Datetime'.
 
 ## Actions on Attribute Value
@@ -29,11 +29,11 @@ The purpose of an Attribute Value is:
 
 ### Include or exclude an Attribute Value
 - Navigate to an Object Test Step in the Test Suite page.
-- Toggle the checkbox value next to the attribute in the "Attributes" tab.
+- Toggle the checkbox value next to the attribute in the "Attributes" tab to include or exclude it.
 
 Note that: 
-- All Attribute Values are enabled by default after creating an Object Test Step.
-- An Attribute Value is empty during test execution if the checkbox is ticked but an attribute value is not set.
+- After creating an Object Test Step, all Attribute Values are included by default.
+- If an attribute is included but an Attribute Value is not set, the value will be empty during test execution.
 
 ### Set a fixed Attribute Value 
 - Navigate to an Object Test Step in the Test Suite page.

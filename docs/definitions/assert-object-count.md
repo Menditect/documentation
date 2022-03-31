@@ -9,7 +9,7 @@ Asserts on object count can be defined either on Retrieve Object Test Steps or o
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Compare type | The type of comparison to be made: either Equals, Greater-than or Less-than. |
+| Compare type | The type of comparison to be made: either 'Equals', 'Greater-than' / 'Greater-than or equal to' or 'Less-than' / 'Less-than or equal to'. |
 | Expected object count | The expected value of the attribute when executing the test. |
 
 ## Business rules
