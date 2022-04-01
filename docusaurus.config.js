@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Menditect Documentation',
   tagline: 'Go test it!',
-  url: 'https://menditect.github.io/',
+  url: 'https://documentation.menditect.com/',
   baseUrl: '/documentation/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
