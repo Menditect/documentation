@@ -9,7 +9,7 @@ const config = {
   title: 'Menditect Documentation',
   tagline: 'Go test it!',
   url: 'https://documentation.menditect.com/',
-  baseUrl: '/documentation/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
