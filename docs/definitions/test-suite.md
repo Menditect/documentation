@@ -9,8 +9,7 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 | ----------- | ----------- |
 | Name | The name of the Test Suite. | 
 | Description | The description of the Test Suite. | 
-| Status | Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. | 
-| Test Cases type | This is an indication which kind of Test Cases are in the Test Suite: <br /> - 'Manual': Only Manual Test Cases; <br />  - 'Automatic': At least one Automatic Test Case. | 
+| Status | Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured. | 
   
 ## Business rules
 - The name is mandatory.
