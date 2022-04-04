@@ -17,7 +17,7 @@ Select the following roles for user role 'MTAPluginUser':
 
 - 'MTAPluginUser' from MTAPlugin module
 - 'User' from System module
-- 'User' from Administration module
+'- User' from Administration module
 
 Go to navigation and create a role-based home page for MTAPluginUser for the primary navigation layout:
 
