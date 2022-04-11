@@ -106,7 +106,7 @@ To view the detailed results of a testrun that is executed from CiCd, login on M
 Using the Details button it is possible to view the results of the testrun.
 
 Note that CiCd testruns are also listed on the Test Run overview page, recognizable by the infinity ∞ icon. 
-Go to [Test run](../definitions/test-run) for more information about test runs.
+Go to [Test run](../refguide/test-run) for more information about test runs.
 
 ## Testrun cleanup
 Currently, every night a scheduled event cleans up Ci/Cd test runs. MTA only persists Ci/Cd test runs associated with the last two executions for a single test application. 
