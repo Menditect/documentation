@@ -8,7 +8,7 @@ A Mendix project that has been added to MTA for test purposes. An Application mu
 | Name | Description |
 | ----------- | ----------- |
 | Project ID | The unique identifier of the corresponding project in Mendix teamserver. This information can be found under the App's General Settings in Mendix Sprintr. |
-| Name | The name of the corresponding project in Mendix reamserver. |
+| Name | The name of the corresponding project in Mendix teamserver. |
 
 ## Business rules
 - An MTA user must have a Mendix API Key registered in MTA in order to get Application information from Mendix teamserver. 
