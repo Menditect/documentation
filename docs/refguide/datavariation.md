@@ -21,7 +21,7 @@ Note that it is possible to have a data variation that does not consist of data 
 ### Enable Data Variation
 There are two ways to enable Data Variation on a [Test Suite](test-suite):
 1. Click on <i class="fas fa-table"></i> on top of the right pane in the Test Suite page. The data variation page will open and the icon color will turn dark, meaning Data Variation is enabled.
-2. When configuring a [Test Step](test-step), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
+2. When configuring a [Teststep](teststep), click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
 
 ### Disable Data Variation
 To completely remove all Data Variation Items and also remove all Data Variations:

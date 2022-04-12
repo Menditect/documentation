@@ -2,7 +2,7 @@
 
 ## Definition
 
-A Test Instruction is a descriptive counterpart of a [Test Step](test-step). A Test Instruction is always part of a [Test Case](test-case) that has the Manual type.
+A Test Instruction is a descriptive counterpart of a [Teststep](teststep). A Test Instruction is always part of a [Test Case](test-case) that has the Manual type.
 
 ## Properties
 | Name | Description |
@@ -49,5 +49,5 @@ A Test Instruction is a descriptive counterpart of a [Test Step](test-step). A T
 
 ## Related topics
 - [Test Run](test-run)
-- [Test Step](test-step)
+- [Teststep](teststep)
 - [Test Suite](test-suite)

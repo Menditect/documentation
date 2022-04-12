@@ -4,7 +4,7 @@
 
 A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. A Test Case is part of a [Test Suite](test-suite).
 
-A Test Case can be either 'Manual' or 'Automatic'. Manual Test Cases contain [Test Instructions](test-instruction), do not run any Mendix code and subsequently do not appear whenever the Test Suite is executed. Automatic Test Cases are executable, and contain [Test Steps](test-step) that run the underlying Mendix code.
+A Test Case can be either 'Manual' or 'Automatic'. Manual Test Cases contain [Test Instructions](test-instruction), do not run any Mendix code and subsequently do not appear whenever the Test Suite is executed. Automatic Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
 
 A Test Case is always executed on a Test Application and by an execution user. The name of the execution user must exactly match an existing, active and not blocked local user in the [Application environment](application-environment) that is tested. 
 
@@ -58,24 +58,24 @@ Note that this is not the same user as the Mta Plugin User that is used to commu
 ### Change the order of a Test Case in a Test Suite
 - Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the name of the Test Case to move it up or down.
 
-Note that it is possible that due to moving a Test Case and dependencies of Test Steps in the Test Case with Test Steps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
+Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
 Note that Testers can only move 'Manual' Test Cases, but cannot move 'Automatic' Test Cases.
 
 ### Edit a Test Case
-- Click on <i class="fa fa-pencil"></i> next to the Test Case name to edit the Name or the Description, or to Highlight the Test Step
+- Click on <i class="fa fa-pencil"></i> next to the Test Case name to edit the Name or the Description, or to Highlight the Teststep
 
 Note that it not is possible to change the Test Case Type or associated Test Application after creation.
 
 ### Delete a Test Case
 - Click <i class="fas fa-trash-alt"></i> on the Test Case you want to delete.
 
-Note that it is possible that due to deleting a Test Case and dependencies of Test Steps in the Test Case with Test Steps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
+Note that it is possible that due to deleting a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
 Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automatic' Test Cases.
 
 ## Related topics
 - [Test Application](test-application)
 - [Test Instruction](test-instruction)
-- [Test Step](test-step)
+- [Teststep](teststep)
 - [Test Suite](test-suite)
