@@ -28,6 +28,21 @@ Each Assert is evaluated after the execution of a Teststep. A Teststep execution
 - The compare type is mandatory.
 - If the compare type is 'Range', both Min and Max values are mandatory.
 
+The following Assert Compare types are supported for the Mendix data types:
+
+|   | String | Integer | Decimal | Boolean | Datetime | Enumeration | 
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| Equals | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | 
+| Does not equal | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | 
+| Contains | <i class="fas fa-check"></i> |  |  |  |  |  | 
+| Does not Contain | <i class="fas fa-check"></i> |  |  |  |  |  | 
+| Within Range |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
+| Outside of Range |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
+| Greater than |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
+| Greater than or Equal to |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
+| Less than |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
+| Less than or Equal to |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
+
 ## Actions on an Assert on Attribute Value
 
 ### View Teststeps that have Asserts 
