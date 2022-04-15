@@ -66,3 +66,6 @@ There are multiple ways to add an Assert on Attribute Value:
 - [Assert Object Count](assert-object-count)
 - [Attribute Value](attribute-value)
 - [Teststep](teststep)
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
