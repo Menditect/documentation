@@ -4,8 +4,6 @@
 
 MTA Service Level Agreement 2021-1
 
-![Menditect logo](https://menditect.com/media/2021/04/menditec-logo-aangepast.png)
-
 ## 1 General
 
 ### 1.1 Introduction
