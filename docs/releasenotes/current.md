@@ -1,4 +1,4 @@
-# Release 1.5
+# Current release
 
 ## Release 1.5
 
