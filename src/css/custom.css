@@ -10,6 +10,7 @@
 
 :root {
   --ifm-font-family-base: 'Exo';
+  --ifm-font-size-base: 90%;
   --ifm-color-primary: #54A8F2;
   --ifm-color-primary-dark: #317bbd;
   --ifm-color-primary-darker: #54A8F2;
