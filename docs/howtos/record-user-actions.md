@@ -31,6 +31,8 @@ Depending on the Mendix model, it may be necessary to manually review the config
 An existing object that is subsequently used in a Change Object Teststep or passed as a parameter in a Microflow Teststep, can be retrieved using a Retrieve Object Teststep. However it is not always possible to determine which members are used as constraints in that Teststep. 
 - Such Teststeps will be marked in a separate color to indicate they need to be reviewed.
 
+Note that only constraining members that are also visible in the Client are included in the created Teststeps.
+
 ### Selecting objects using association constraints
 
 It is also possible that the constraint to retrieve an object is not on the object itself, but on an associated object. The associated object needs to be retrieved by a previous teststep, that will not be created by the recorder. 
