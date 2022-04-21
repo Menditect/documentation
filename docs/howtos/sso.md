@@ -9,3 +9,8 @@ What could possibly be done for API users with SSO is that an app-specific user/
 
 MTA can be used to test connectivity by calling an API. The error handling of the API must be given as an output parameter to the microflow otherwise MTA cannot display the possible errors.
 If you want to use MTA to periodically poll an interface you will have to create the schedule for this via the CI/CD APIs of MTA. MTA itself does not (yet) contain a scheduling mechanism that allows you to periodically run a test.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

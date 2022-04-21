@@ -36,3 +36,8 @@ The output of this microflow is an httpresponse.
 Finally the steps in MTA to test are:
 1. execute above microflow with the necessary parameters;
 2. retrieve object, with the output of test step 1 (httpresponse), and one or more asserts on the attributes of the httpresponse, for example “StatusCode = 200”.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

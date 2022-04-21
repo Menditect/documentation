@@ -17,3 +17,8 @@ Now fill in the fields under 'Mendix credentials'
 To test if this step was successful, try to add a new Test Application. 
 
 The Mendix projects associated with the given Mendix user should be visible.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

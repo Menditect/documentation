@@ -110,3 +110,8 @@ Go to [Test run](../refguide/test-run) for more information about test runs.
 
 ## Testrun cleanup
 Currently, every night a scheduled event cleans up Ci/Cd test runs. MTA only persists Ci/Cd test runs associated with the last two executions for a single test application. 
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

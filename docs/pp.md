@@ -1,4 +1,4 @@
-# Menditect Privacy Policy
+# Privacy Policy
 
 ## Version 2021-1
 

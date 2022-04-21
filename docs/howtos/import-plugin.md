@@ -29,3 +29,8 @@ Go to navigation and create a role-based home page for MTAPluginUser for the pri
 Repeat this step for all other navigation layouts in use (tablet, phone, hybrid)
 
 Start the test application and login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with the role 'MTAPluginUser'. Give the user a name and note it for later.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

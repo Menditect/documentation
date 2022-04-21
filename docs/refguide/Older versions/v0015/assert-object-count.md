@@ -1,6 +1,6 @@
 # Assert on Object Count
 
-This document is based on MTA version 1.6.
+This document is based on MTA version 1.5.
 
 ## Definition
 

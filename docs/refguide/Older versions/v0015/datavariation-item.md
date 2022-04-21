@@ -1,6 +1,6 @@
 # Data Variation Item
 
-This document is based on MTA version 1.6.
+This document is based on MTA version 1.5.
 
 ## Definition
 
@@ -11,7 +11,7 @@ The value of a Data Variation Item is defined either in an [Attribute Value](att
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
-| Type | There are two types of variants: <br /> - Attribute value, where an attribute is assigned a value, or a microflow parameter is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br />  |
+| Type | There are two types of variants: <br /> - Attribute value, where an attribute is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br />  |
 | Attribute name | The name of the attribute. |
 | Value | The value of the attribute or assert. |
 

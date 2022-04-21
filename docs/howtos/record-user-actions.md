@@ -65,3 +65,8 @@ If an object is created and subsequently rolled back by the page and not by a mi
 
 Deletes are not yet part of the recorder. 
 - If an object is deleted either in a microflow or in a page, manually include a Delete Object Teststep, and a subsequent Persist Object Teststep to finalize the delete.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022

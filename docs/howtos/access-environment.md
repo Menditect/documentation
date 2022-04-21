@@ -6,3 +6,8 @@ After MTA can access the projects linked to the Mendix user, the Mendix model ca
 - In the Mendix application under test, a local user has been created with the “MTA Plugin” role. Enter the username and password in this page: <br />![Edit plugin user](edit-plugin-user-2.png) 
 - Click “Check plugin” to make sure a connection can be made.
 Note: If this check is performed three times unsuccessfully because the password is incorrect, Mendix can temporarily block the user.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 21 april 2022
