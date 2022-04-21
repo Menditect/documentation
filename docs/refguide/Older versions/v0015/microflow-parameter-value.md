@@ -16,7 +16,7 @@ The Microflow Parameter Value contains the value for a Microflow input parameter
 
 ## Business rules
 
-- If the input type is Former Test Step, a former [Test Step](test-step) must be selected in order to be able to execute the Test Configuration.    
+- If the input type is Former Teststep, a former [Teststep](teststep) must be selected in order to be able to execute the Test Configuration.    
 
 Note that if a Value on Microflow Parameter Value is not set, this means the input parameter will be set to 'Empty' when executing the test. 
 
