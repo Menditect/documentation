@@ -27,7 +27,7 @@ A Test Configuration is an executable test script that describes which [Test Sui
 - Add a new Test Configuration and enter a Name and optional Description. 
 - Choose whether the Test Configuration should be Ci/Cd enabled. 
 
-For more about Ci/Cd, go to [Ci/Cd configuration](../howtos/cicd).
+For more about Ci/Cd, read the How To section.
 
 ### Execute a Test Configuration
 There are multiple ways to execute a Test Configuration. 

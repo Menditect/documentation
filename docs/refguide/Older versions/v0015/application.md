@@ -15,7 +15,7 @@ A Mendix project that has been added to MTA for test purposes. An Application mu
 ## Business rules
 - An MTA user must have a Mendix API Key registered in MTA in order to get Application information from Mendix teamserver. 
 
-To learn more about configuring an MTA user, go to [Access Mendix model](../howtos/access-mendix-model).
+To learn more about configuring an MTA user, read the How To section.
 
 ## Actions on an Application
 
