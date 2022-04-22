@@ -2,10 +2,13 @@
 
 In MTA it is possible to test a small piece of Mendix code, like a single microflow, following some simple rules for the tested Mendix code, and using powerful features from MTA like asserts and data variation.
 
-A unit test typically exists of only one testcase and looks like this:
-- one test step creating an object (or calling a microflow, which creates the object);
-- one or more test step(s) calling a microflow, with the object as a parameter;
-- one test step retrieving the results and containing asserts.
+A unit test generally does not leave traces in the Mendix app being tested, which means the result cannot be visually inspected there.
+
+A unit test in MTA typically looks like this:
+- only one Test Case, where either Security is set to Off (because it's about testing the algorithm and not the User) or multiple copies of the same Test Case with different Execution Users;
+- one or more Teststep(s) creating objects (or microflow calls creating objects);
+- one or more Teststep(s) calling a microflow where some algorithm is performed, with the object(s) as a parameter;
+- one Teststep retrieving the results and containing asserts.
 
 Below steps are optional, not mandatory, but will make it much easier to unit test.
 
