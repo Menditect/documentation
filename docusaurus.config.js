@@ -27,7 +27,7 @@ const config = {
       ({
         docs: {
           routeBasePath: '/',
-          exclude: [ 'bestpractice' ],                              //exclude directories that are WORK IN PROGRESS here
+          //exclude: [ 'bestpractice' ],                              //exclude directories that are WORK IN PROGRESS here
           sidebarPath: require.resolve('./sidebars.js'),
           // routeBasePath: '/',
           // Please change this to your repo.
