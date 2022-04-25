@@ -4,11 +4,13 @@ For many user actions performed in the [Test Application](../refguide/test-appli
 
 ## Prepare project for recording
 
-Before starting the recording, please note these prerequisites:
-- prepare the microflows for recording, following the the steps in [this section](prepare-mendix-project);
-- select an appropriate [Test Case](../refguide/test-case), preferably one without existing Teststeps;
-- make sure the Execution User for the selected Test Case exists, is active and not blocked;
-- login to the Test Application using the Execution User for the selected Test Case.
+Before starting the recording, it is useful to follow these guidelines first.
+- Create a draft first, either using [Test Instructions](../refguide/test-instruction) in MTA or a simple text tool like notepad.
+- Prepare the microflows for recording, following the the steps in [this section](prepare-mendix-project).
+- Select an appropriate [Test Case](../refguide/test-case), preferably one without existing Teststeps.
+- Make sure the Execution User for the selected Test Case exists, is active and not blocked.
+- Login to the Test Application using the Execution User for the selected Test Case.
+- Create separate recordings for each transaction, each in their own Test Case. 
 
 ## Create a recording
 
