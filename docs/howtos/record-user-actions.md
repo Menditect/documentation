@@ -17,7 +17,7 @@ Before starting the recording, it is useful to follow these guidelines first.
 - Click on <i class="fas fa-video"></i> ("Create a recording") in the Test Case to open the recording page.
 - Click "Start recording".
 - In the browser, navigate to the Test Application.
-- Perform the actions to be recorded there. Make sure to include navigating to the page where the actions are performed in the recording.
+- Perform the actions to be recorded there. Make sure to start the recorder before opening the page where the first record action takes place.
 - In the browser, navigate back to MTA.
 - Click "Stop recording".
 
