@@ -14,14 +14,7 @@ Before starting the recording, it is useful to follow these guidelines first.
 
 ## Create a recording
 
-- Click on <i class="fas fa-video"></i> ("Create a recording") in the Test Case to open the recording page.
-- Click "Start recording".
-- In the browser, navigate to the Test Application.
-- Perform the actions to be recorded there. Make sure to start the recorder before opening the page where the first record action takes place.
-- In the browser, navigate back to MTA.
-- Click "Stop recording".
-
-The recording page will close and the Teststeps created by the recorder will appear automatically. 
+Please read the reference guide for [Recording](../refguide/recording#create-a-recording) for this.
 
 ## Finalize a recording
 
@@ -71,4 +64,4 @@ Deletes are not yet part of the recorder.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 april 2022
+Last updated 1 may 2022
