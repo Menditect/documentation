@@ -2,7 +2,7 @@
 
 To prepare the Mendix project for MTA, it is advisable to check for microflows that open a page. If you want to test a microflow that opens a page, you must include an output parameter in that microflow, returning the exact same object that is passed to the page.
 
-To find all microflows that have a “show page” activity, open Mendix Studio Progo to Edit→ Find Advanced and select the following options:  
+To find all microflows that have a “show page” activity, open Mendix Studio Pro, go to Edit→ Find Advanced and select the following options:  
 
 ![Find microflows](find-microflows.png)
 

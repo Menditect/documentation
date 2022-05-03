@@ -61,6 +61,22 @@ If an object is created and subsequently rolled back by the page and not by a mi
 Deletes are not yet part of the recorder. 
 - If an object is deleted either in a microflow or in a page, manually include a Delete Object Teststep, and a subsequent Persist Object Teststep to finalize the delete.
 
+## Troubleshooting
+
+| A recording results in many (often identical) teststeps | 
+| ----------- | 
+| In some cases MTA creates many teststeps after finishing the recording or gives a message that the maximum amount of recorded user actions is exceeded. The reason could be that a microflow is executed many times, for instance for each row in a datagrid or listview, or for each change on a page element like a textbox or radiobutton. Ideally, the recorded page(s) or microflow(s) are optimized to prevent this, but this may not always be achievable. In that case it is advisable to limit the amount of test data to only a few test records. | 
+
+
+| MTA is unable to set enumeration value | 
+| ----------- | 
+| In some cases the recorder is not able to determine an enumeration value. This happens when an enumeration value is deleted from Mendix, but not yet from the database, because a migration script has not yet been executed on the table where the enumeration is used.  | 
+
+## Important notes
+- Only actions performed by the user that is set as the execution user will be recorded.
+- No other users should login under the same username on the test environment while recording.
+- Microflows used as datasource will not result in a Microflow Teststep, but in a Retrieve Object Teststep, and only if the object is used.
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
