@@ -17,7 +17,6 @@ To test locally:
 9. Open MTA
 10. Navigate to the Test Configuration and select the "Test applications" tab.
 11. Use the <i class="fa fa-exchange"></i> button to switch environments.
-12. Select the MendixCloud environment that you are currently using, for instance "Acceptance".
 13. Create a new Custom environment, and name it accordingly, for instance "Local [your name]".
 14. Paste the URL in the URL box and fill in the Plugin User's credentials.
 15. Hit Save; you will now see <i class="fa fa-pencil"></i> button next to the revision number, allowing you to select the revision that you just created.
