@@ -27,7 +27,6 @@ const config = {
       ({
         docs: {
           routeBasePath: '/',
-          showLastUpdateTime: true,
           //exclude: [ 'bestpractice' ],                              //exclude directories that are WORK IN PROGRESS here
           sidebarPath: require.resolve('./sidebars.js'),
           // routeBasePath: '/',
