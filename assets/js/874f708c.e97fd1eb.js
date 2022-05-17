@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9972],{1378:function(e){e.exports=JSON.parse('{"name":"Test run","permalink":"/tags/test-run","docs":[{"id":"refguide/test-run","title":"Test Run","description":"This document is based on MTA version 1.6.","permalink":"/refguide/test-run"}],"allTagsPath":"/tags"}')}}]);
