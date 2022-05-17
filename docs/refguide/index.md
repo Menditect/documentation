@@ -1,5 +1,5 @@
 # Reference guide
 
-This document is based on MTA version 1.6.
+Here you can find the definitions for the most important terminology used in MTA.
 
-## This is the reference guide for MTA 
+
