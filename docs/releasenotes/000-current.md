@@ -1,10 +1,10 @@
 # Current release
 
-## Release 1.6
+## Release 1.6.2
 
 #### Release date
 
-5 may 2022
+19 may 2022
 
 #### Supported Mendix versions
 
@@ -122,3 +122,47 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 | __Release actions__ | None. | 
 
 <br/>
+
+## Hot fixes in this release
+
+### 1.6.1
+
+| ID  |  n/a |
+| ----------- | ----------- |
+| __Problem__ | Recorded microflow without return value was selected as microflow for input parameter.  |
+| __Solution__ | Correct recorded microflow is now selected when selecting microflow for input parameter. | 
+| __Release actions__ | None. | 
+
+<br/>
+
+### 1.6.2
+
+| ID  |  n/a |
+| ----------- | ----------- |
+| __Problem__ | Recorded retrieve actions incorrectly count towards number of recorded actions.  |
+| __Solution__ | Recorded retrieve actions are no longer included when counting amount of recorded actions.  |
+| __Release actions__ | None. | 
+
+<br/>
+
+| ID  |  n/a |
+| ----------- | ----------- |
+| __Problem__ | Sometimes recorded attributes from different objects were mixed. |
+| __Solution__ | Attributes from different objects are no longer mixed.  |
+| __Release actions__ | None. | 
+
+<br/>
+
+| ID  |  n/a |
+| ----------- | ----------- |
+| __Problem__ | When deleting a test application from a test configuration, the results were not deleted making it difficult to delete a test application. |
+| __Solution__ | When deleting a test application from a test configuration, the results are now also deleted. |
+| __Release actions__ | None. | 
+
+<br/>
+
+| ID  |  n/a |
+| ----------- | ----------- |
+| __Problem__ | When executing a test configuration, Plugin Users from all associated Test Applications needed to be valid. |
+| __Solution__ | When executing a test configuration, only Plugin Users that are actually used in Test Cases are checked if they are valid. |
+| __Release actions__ | None. | 
