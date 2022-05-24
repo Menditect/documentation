@@ -19,7 +19,7 @@ A draft unit test in MTA typically looks like this:
 
 A final unit test in MTA typically looks like this:
 - many Test Cases, completely independent from each other (not using "from previous teststep" across Test Cases);
-- many Test Suites that represents a certain part of the software (for instance 'CRM').
+- many Test Suites that each represents a certain part of the software (for instance 'CRM').
 
 ### Finalizing a Unit Test
 

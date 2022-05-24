@@ -1,42 +1,89 @@
 # Test and debug locally
 
-It is possible to have MTA test against a Mendix App running on a developer's computer instead of in the cloud. This means that the Mendix runtime is using the trial license that expires after a couple hours, so this should not be used for a long period of time. However to avoid waiting for a deployment to complete, it can be very efficient to test during development. 
+It is possible to have MTA test against a Mendix App running on a developer's computer instead of an app in the cloud. Testing MTA on local environments saves considerable time because app deployment on a cloud environment is time consuming and users that execute tests might interfere with each other.
 
+When running tests on a local machine, be aware that you need to restart your machine in time because the Mendix trial license is shutting down after a couple of hours.
 
-## Test before deploying
+## Architecture for local testing
 
-To test locally:
-1. Make sure the computer is connected to the internet, and not behind a proxy or VPN. 
-2. Download a (third party) tunnel sofware tool, like [cloudflared](https://github.com/cloudflare/cloudflared/releases) or [ngrok](https://ngrok.com/download). These need to be executed in an (elevated) command prompt window. Please consult the respective tool documentation to learn the syntax. 
-3. Open the Mendix modeler and commit the changes to teamserver
-4. Run the project
-5. Open the homepage (using View App button in Mendix), make sure that a Plugin User exists
-6. Copy the URL of the homepage (for instance, "http://localhost:8080")
-7. Configure and run the tunnel sofware with that URL
-8. Copy the resulting URL that the tunnel software has created to the clipboard (<code>Ctrl+C</code>) 
-9. Open MTA
-10. Navigate to the Test Configuration and select the "Test applications" tab.
-11. Use the <i class="fa fa-exchange"></i> button to switch environments.
-13. Create a new Custom environment, and name it accordingly, for instance "Local [your name]".
-14. Paste the URL in the URL box and fill in the Plugin User's credentials.
-15. Hit Save; you will now see <i class="fa fa-pencil"></i> button next to the revision number, allowing you to select the revision that you just created.
+In order to let MTA communicate with your local environment you need to make your local
+application accessible from the internet. This is possible by creating a 'tunnel'. This 'How to'
+assumes you use open source CloudFlared software to create one but you can pick another tool of
+choice like NGROK.
 
-## Test before committing
+The CloudFlared software on your local machine generates a URL and publishes that URL to the
+CloudFlared server. When messages are sent to this published URL, the Cloudflared server will
+redirect that message via the tunnel to the defined port on your local machine.
 
-Although not recommended, in some situations it is even possible to test before committing the changes to teamserver. 
+You need to configure MTA to use this URL for sending commands to the application under test on
+your local machine. When you execute a test for a local environment, MTA will fire the request to
+CloudFlared which which redirected the request to your local machine. On your local machine the
+MTA Plugin is listening to incoming messages and will execute actions on your local Mendix
+application.
 
-What needs to be the same, when testing without committing changes?
-- Microflow names
-- Microflow input parameters
-- Microflow output parameters (return value)
-- Entity names
-- Entity attributes and data types
-- Enumerations and Constants
+![Tunnel architecture](tunnel.png)
 
-What can be different?
-- The content of microflows
-- Anything frontend, like Pages, Widgets, Snippets and Nanoflows
-- Entity access
+In order to execute test locally, the following preparations need to be done:
+
+- Setup your local machine.
+- Setup the system under test.
+- Install and configure a CloudFlared tunnel so the local copy can be accessed by MTA.
+- Configure MTA.
+
+## Setup your local machine
+
+- Make sure the computer is connected to the internet, and not behind a proxy or VPN.
+- Add 'trycloudflare.com' to the list of trusted sites on your firewall or virus scanner if this is necessary.
+
+## Setup app under test
+
+- Open the Mendix modeler and commit the changes to teamserver.
+- Check that you have installed the MTA plugin. If not, follow the procedure as described in [Import MTA Plugin](import-plugin).
+- Make sure that a Plugin User exists with the user role MTAPluginUser.
+- Navigate to project settings to check the configured runtime port where the CloudFlared tunnel should refer to.
+
+![Port number](port.png)
+
+## Configure CloudFlared
+
+- Download and install the CloudFlared tunnel sofware from [https://github.com/cloudflare/cloudflared/releases](https://github.com/cloudflare/cloudflared/releases).
+- Execute CloudFlared in an (elevated) command prompt window. Please consult the respective tool documentation to learn the syntax. If you want to create a tunnel for your system under test on local host port 8083 you can use the command:
+
+```
+start cloudflared tunnel --url=http://localhost:8083
+```
+
+## Configure MTA
+In order to test your application locally, you need to have a 'Custom environment' in MTA.
+
+1. Copy the resulting URL that the tunnel software has created to the clipboard (<code>Ctrl+C</code>) .
+2. Open MTA.
+3. Navigate to the Test Configuration and select the "Test applications" tab.
+4. Use the <i class="fa fa-exchange"></i> button to switch environments.
+5. Create a new Custom environment, and name it accordingly, for instance "Local [your name]".
+6. Paste the URL in the URL box and fill in the Plugin User's credentials.
+7. Hit Save; you will now see <i class="fa fa-pencil"></i> button next to the revision number, allowing you to select the revision that you just created.
+
+## Execute tests
+
+Now that your MTA environment can access your local environment, you can execute all tests locally.
+Normal test execution assumes that you run the test after you commit your changes to the teamserver and run the app. However, it is possible to execute tests before committing the changes.
+
+**Be aware** that this procedure is not recommended because MTA is not capable of checking the consistency of test definitions with the Mendix model. 
+
+At least these model elements must not have changed when testing an uncommitted model:
+
+- Microflow names;
+- Microflow input parameters;
+- Microflow output parameters (return value);
+- Entity names;
+- Entity attributes and data types;
+- Enumerations and Constants.
+
+These model elements can have changed without causing problems:
+- The content of microflows;
+- Anything frontend, like Pages, Widgets, Snippets and Nanoflows;
+- Entity access.
 
 ## Debugging
 
