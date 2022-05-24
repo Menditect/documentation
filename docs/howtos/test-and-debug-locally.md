@@ -35,7 +35,7 @@ In order to execute test locally, the following preparations need to be done:
 - Make sure the computer is connected to the internet, and not behind a proxy or VPN.
 - Add 'trycloudflare.com' to the list of trusted sites on your firewall or virus scanner if this is necessary.
 
-## Setup app under test
+## Setup system under test
 
 - Open the Mendix modeler and commit the changes to teamserver.
 - Check that you have installed the MTA plugin. If not, follow the procedure as described in [Import MTA Plugin](import-plugin).
@@ -92,4 +92,4 @@ It is possible to create breakpoints to debug locally. Or, connect the debugger 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 13 may 2022
+Last updated 24 may 2022

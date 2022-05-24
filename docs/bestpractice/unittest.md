@@ -23,7 +23,11 @@ A final unit test in MTA typically looks like this:
 
 ### Finalizing a Unit Test
 
-Finalizing a Unit Test means moving it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected.
+Finalizing a Unit Test means moving it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected. The process is basically copying the Test Suite into an existing Test Configuration, and subsequently copying the Test Case into an existing Test Suite.
+
+![Finalizing a Unit Test](unit-copy.png)
+
+More in detail:
 
 1. Navigate to the Test Design (home)page and select the Test Configuration containing the draft unit test
 2. Use the <i class="fa fa-copy" ></i> button on the Test Suite to copy the Test Suite
