@@ -8,7 +8,7 @@ A unit test generally does not leave traces in the Mendix app being tested, whic
 
 ## Structure
 
-Recommended best practice is create a draft version of a unit test that can be executed without testing other functions in the same Test Configuration. When the unit test becomes final, it is best to move it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected. The Test Configuration can then be easily used in a regression test. This is described below.
+Recommended best practice is create a draft version of a unit test that can be executed without testing other functions in the same Test Configuration. When the unit test becomes final, it is best to move it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected. This is described below. The Test Configuration can then be easily used in a regression test. 
 
 A draft unit test in MTA typically looks like this:
 - only one Test Suite;
