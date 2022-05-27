@@ -10,9 +10,29 @@ A process test generally creates data that can be visually inspected in the Mend
 
 ## Structure
 
-Recommended best practice is create a draft version of a process test when first creating it. Sometimes when executing the Test Configuration it could stop halfway because of a technical error. In that scenario it is possible to restore the data, by executing just one of the Test Suites (or one Test Case) in the Test Configuration. This is described below.
+Recommended best practice is to structure a Process test into 3 parts:
+1. Cleanup data, that is the result from a previous run, to ensure repeatability of the test script; 
+2. Create data, that is necessary to run the test;
+3. The actual process test.
 
-A process test in MTA typically looks like this:
+Before choosing whether to create a separate Test Suite or Test Case for each part, some aspects need to be considered:
+
+*Test characteristics*
+The type of process that needs to be tested will determine much of the structure in MTA. For instance, does the test represent a user flow in the Mendix frontend? Or is it testing a REST service? Or is the entire test executed in the backend? If the process follows a user flow, it is best to use the Recorder function to create a draft version, first. If multiple users are involved, make sure to use a new Test Case for each one, and to use the right username for the Test Cases.
+
+*Datavariation*
+Datavariation is defined on the Test Suite level. If the cleanup part only has to be executed once, but the other parts need to be executed multiple times using datavariation, it is wise to keep the two apart in separate Test Suites.
+
+*In-memory data*
+All the teststeps within a single Test Case can use data from a previous teststep without the need to save the data to the database. As soon as teststeps use data from a previous Test Case, the data needs to be saved. This means that when running in-memory is an important aspect, the parts sharing data should be in the same Test Case.
+
+*Reusability* 
+Test Suites can be copied to other Test Configurations, and Test Cases to other Test Suites. When keeping Test Cases small, it is easier to reuse them across MTA.
+
+*Troubleshooting*
+Sometimes when executing the Test Configuration it could stop halfway because of a technical error. In that scenario it is possible to restore the data, by executing just one of the Test Suites (or one Test Case) in the Test Configuration. This is described in the [Howto: Run a single Test Case](../howtos/run-single-test-case).
+
+Above aspects taken into consideration, a process test in MTA typically looks like this:
 - multiple Test Suites in one Test Configuration;
 - the first Test Suite cleans up both masterdata and process data generated from the previous run of the Test Configuration;
 - the second Test Suite creates masterdata;
@@ -21,31 +41,6 @@ A process test in MTA typically looks like this:
 - in these Test Cases, alternating Object and Microflow Teststeps, each using data from the previous one;
 - continuous usage of asserts for checking the results;
 - Data Variation to drive different scenario's of the process.
-
-### Run a single Test Case
-
-Running a single Test Case can be useful to restore data if a process test has stopped halfway. The process is basically copying the Test Case into an empty test Suite, and subsequently copying the Test Suite into an empty Test Configuration.
-
-![Run a single Test Case](process-copy.png)
-
-More in detail:
-
-1. Edit the Test Case in MTA that needs to be single-tested using the <i class="fa fa-pencil" ></i> button;
-2. Note the Test application that is selected for the Test Case;
-3. Navigate to the Test Design (home)page;
-4. Create a Test Configuration, and add the Test application that was noted in step 2;
-5. Navigate back to the Test Configuration that contains the Test Case to be single-tested;
-6. Create a Test Suite in this Test Configuration;
-7. Navigate back to the Test Suite that contains the Test Case to be single-tested;
-8. Select that Test Case;
-9. Use the <i class="fa fa-copy" ></i> button on the Test Case to copy the Test Case;
-10. Expand the "Choose another test suite, if the test case should not be copied to the current test suite:" groupbox, and select the Test Suite that was created in step 6 as target;
-11. Navigate back to the Test Configuration (tip: use the breadcrumb feature on top of the Test Cases list, and click on "Test design overview");
-12. Move the mouse over the Test Suite containing the single Test Case, to make the action buttons visible;
-13. Use the <i class="fa fa-copy" ></i> button on the Test Suite to copy the Test Suite;
-14. Expand the "Choose another test configuration, if the test suite should not be copied to the current test configuration:" groupbox, and select the empty Test Configuration that was created in step 4 as target;
-15. Delete the Test Suite that was created in step 6 using the <i class="fa fa-trash-alt" ></i> button (since the actual intention was to move it, not to copy it);
-16. Now it is possible to Execute the new Test Configuration that was created in step 4, with only one Test Suite, with only one Test Case.
 
 ## Tips and tricks
 

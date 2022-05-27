@@ -17,26 +17,11 @@ A draft unit test in MTA typically looks like this:
 - one or more Teststep(s) calling a microflow where some algorithm is performed, with the object(s) as a parameter;
 - one Teststep retrieving the results and containing asserts.
 
+Finalizing a Unit Test means moving it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected. The process is basically copying the Test Suite into an existing Test Configuration, and subsequently copying the Test Case into an existing Test Suite. This is described in the [Howto: Store Test Case to collection](../howtos/store-test-case-to-collection).
+
 A final unit test in MTA typically looks like this:
 - many Test Cases, completely independent from each other (not using "from previous teststep" across Test Cases);
 - many Test Suites that each represents a certain part of the software (for instance 'CRM').
-
-### Finalizing a Unit Test
-
-Finalizing a Unit Test means moving it into a 'container' Test Configuration where all the unit tests for a certain Test Application are collected. The process is basically copying the Test Suite into an existing Test Configuration, and subsequently copying the Test Case into an existing Test Suite.
-
-![Finalizing a Unit Test](unit-copy.png)
-
-More in detail:
-
-1. Navigate to the Test Design (home)page and select the Test Configuration containing the draft unit test
-2. Use the <i class="fa fa-copy" ></i> button on the Test Suite to copy the Test Suite
-3. Expand the "Choose another test configuration, if the test suite should not be copied to the current test configuration:" groupbox, and select the container Test Configuration as target
-4. Navigate to the container Test Configuration and open the Test Suite copy
-5. Use the <i class="fa fa-copy" ></i> button on the Test Case to copy the Test Case
-6. Expand the "Choose another test suite, if the test case should not be copied to the current test suite:" groupbox, and select an existing relevant Test Suite as target
-7. Navigate to the Test Design (home)page 
-8. Delete the Test Configuration from step 1 using the <i class="fa fa-trash-alt" ></i> button (since the actual intention was to move it, not to copy it)
 
 ## Tips and tricks
 
