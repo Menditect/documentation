@@ -10,7 +10,8 @@ https://github.com/Menditect/MENDITECT-MTA-Plugin/releases
 
 Import the MTA plugin module package in your test application as a new module. If you have imported it before, delete it first, and make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
-The MTA Plugin is regularly updated. For receiving automatic updates about new releases, choose the Github notification setting in the repository, using the "<i class="fa fa-eye"></i> Watch" function on the top right. Select "Custom" and only select "Releases". 
+<i class="fa fa-exclamation-triangle"></i> Do not attempt to import it as a Marketplace module. The MTA Plugin is regularly updated, but not always compatible with every running version of MTA. This is why the MTA Plugin is currently not in the public marketplace. For receiving automatic updates about new releases, choose the Github notification setting in the repository, using the "<i class="fa fa-eye"></i> Watch" function on the top right. Select "Custom" and only select "Releases". 
+<br/><br/>
 
 *Below steps are only applicable if you have not imported the MTA Plugin before.*
 
