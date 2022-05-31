@@ -1,8 +1,8 @@
-# Run a single Test Case
+# Isolate a Test Case
 
 ## Definition
 
-This document describes how to test a single Test Case.
+This document describes how to extract a single Test Case so it can be executed separately.
 
 In MTA, the level where the test script is executed is the highest level in the hierarchy, being the Test Configuration. It is currently not possible to exclude Test Suites in a Test Configuration or exclude Test Cases in a Test Suite from being executed. 
 

@@ -1,4 +1,4 @@
-# Store a Test Case to a collection Test Configuration
+# Transfer a Test Case to another Test Configuration
 
 ## Definition
 
