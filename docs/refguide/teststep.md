@@ -15,7 +15,7 @@ An Object Teststep can execute the following actions:
 - Retrieve: retrieve object(s) from the database.
 - Change: change an object (without committing it to the database).
 - Delete: mark an object to be deleted.
-- Persist: commit all the objects to the database that are created or changed and delete all the objects that are marked as deleted, since the previously executed persist Teststep in the same Test Case, or since the start of the Test Case.
+- Persist: commit all the objects to the database that are created or changed. Delete all the objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. When deleting, always make sure to have the Delete teststeps in the right order, to make sure domain model Delete Constraints don't prevent deletion of the object(s).
 
 Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
 
@@ -81,6 +81,10 @@ Note that it not is possible to change the action or type of Teststep after crea
 
 ### Configure a Teststep
 - Click on <i class="fas fa-cog"></i> on the Teststep name, or click on "*Configure*" on top of the Teststep details pane on the right, to set the [Attribute Values](attribute-value) or Microflow Parameter Values](microflow-parameter-value).
+
+When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
+- For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
+- For a Retrieve Object action, the resulting set of objects will be *filtered* by the entered value, and 'empty' if checked, but left blank.
 
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 

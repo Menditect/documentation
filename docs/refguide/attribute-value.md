@@ -6,9 +6,9 @@ This document is based on MTA version 1.6.
 
 The Attribute Value contains the information that specifies the input of an Object [Teststep](teststep).
 
-The purpose of an Attribute Value is either:
-- to set the value of an object attribute in a Create and Change Attribute Object Teststeps, the value of the attribute of the object will be set or changed in-memory;
-- to narrow the list of output objects in a Retrieve Object Teststep, the given attribute value behaves like an XPATH statement.
+When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
+- For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
+- For a Retrieve Object action, the resulting set of objects will be *filtered* by the entered value, and 'empty' if checked, but left blank.
 
 ## Properties
 | Name | Description |
