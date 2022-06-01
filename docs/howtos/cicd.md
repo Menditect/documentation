@@ -5,7 +5,9 @@
 This document describes the guidelines to use the CiCd api of MTA in a pipeline.
 
 ## How to prepare MTA
-In order to prepare MTA for integration with your Ci/Cd pipeline you need to create a user in MTA with only the Testautomator and CiCdApiUser roles:
+In order to prepare MTA for integration with your Ci/Cd pipeline you need to create a user in MTA with *only* the Testautomator and CiCdApiUser roles. First, login as an MTA Manager. Do not login with an account that has Administrator rights!
+Navigate to MTA management and then to MTA Users. Create a New local MTA user.
+Then, fill in the form like this:
 
 ![Create Ci Cd user](cicd-create-account.png)
 
