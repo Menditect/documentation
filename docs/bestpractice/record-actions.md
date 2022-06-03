@@ -37,7 +37,7 @@ Before starting the recording, it is useful to follow these guidelines first.
 
 ### Microflow page calls
 
-To prepare microflows with "Show page" activities, read [this section](prepare-mendix-project).
+To prepare microflows with "Show page" activities, read [this section](../howtos/prepare-mendix-project).
 
 ### Recurring patterns
 
