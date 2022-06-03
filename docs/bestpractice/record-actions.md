@@ -16,7 +16,7 @@ Despite these advantages, there can be scenario's that creating teststeps by han
 This document describes what aspects to consider when creating such a recording.
 Other documents about this topic are:
 - [Recorder](../refguide/recording) in the reference guide.
-- [Complete recorded actions](../howtos/complete-recorded-actions) in the How to section.
+- [Complete recorded actions](../howtos/record-user-actions) in the How to section.
  
 ## Guidelines
 
