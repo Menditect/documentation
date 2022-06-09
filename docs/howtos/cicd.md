@@ -2,9 +2,9 @@
 
 ## Definition
 
-This document describes the guidelines to use the CiCd api of MTA in a pipeline.
+This document describes the guidelines to use the CiCd API of MTA in a pipeline.
 
-## How to prepare MTA
+## Configure MTA
 In order to prepare MTA for integration with your Ci/Cd pipeline you need to create a user in MTA with *only* the Testautomator and CiCdApiUser roles. First, login as an MTA Manager. Do not login with an account that has Administrator rights!
 Navigate to MTA management and then to MTA Users. Create a New local MTA user.
 Then, fill in the form like this:
@@ -13,13 +13,18 @@ Then, fill in the form like this:
 
 This is the username and password you will connect with to the API. 
 
-## How to include a Test configuration in Ci/Cd
+## Configure the Test Application
+
+### Enable Ci/Cd
 Where regular test runs are executed on the Test Configuration level, Ci/Cd enabled test runs are executed on the Test Application level. When testing a Test Application, all Test Configurations that are Ci/Cd enabled, are executed.
 
 If you want to include a Test configuration in testing, you need to enable it by editing it from the Test design page. 
 Edit the respective test configuration and set "Ci/Cd enabled" to TRUE.
 
-## How to execute a testrun from Ci/Cd
+### Check App status
+The Ci/Cd API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. Before executing a Ci/Cd testrun however, it is important to check that the deployment must be complete and the status of the application should be "Running". If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
+
+## Execute a testrun from Ci/Cd
 
 The base URL for the Ci/Cd API is:
 ```
@@ -103,14 +108,14 @@ The contents of these requests are described next.
 
 *Example: {"Result":"Pass"}*
 
-## How to view results of a Ci/Cd testrun 
+## View results of a Ci/Cd testrun 
 To view the detailed results of a testrun that is executed from CiCd, login on MTA, and go to the “Test run”/”Ci/Cd test runs (beta)” page. All the executed CiCd testruns are listed here with their respective Execution Id, also the ones that were not successful. 
 Using the Details button it is possible to view the results of the testrun.
 
 Note that CiCd testruns are also listed on the Test Run overview page, recognizable by the infinity ∞ icon. 
 Go to [Test run](../refguide/test-run) for more information about test runs.
 
-## Testrun cleanup
+## Cleanup testruns
 Currently, every night a scheduled event cleans up Ci/Cd test runs. MTA only persists Ci/Cd test runs associated with the last two executions for a single test application. 
 
 ## Feedback?
