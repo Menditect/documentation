@@ -121,4 +121,4 @@ Currently, every night a scheduled event cleans up Ci/Cd test runs. MTA only per
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 april 2022
+Last updated 9 june 2022
