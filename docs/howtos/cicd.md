@@ -22,7 +22,11 @@ If you want to include a Test configuration in testing, you need to enable it by
 Edit the respective test configuration and set "Ci/Cd enabled" to TRUE.
 
 ### Check App status
-The Ci/Cd API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. Before executing a Ci/Cd testrun however, it is important to check that the deployment must be complete and the status of the application should be "Running". If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
+The Ci/Cd API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. 
+
+<i class="fa fa-exclamation-triangle"></i> Before executing a Ci/Cd testrun however, it is important to check that the deployment must be complete and the status of the application should be "Running". 
+<br/><br/>
+If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
 
 ## Execute a testrun from Ci/Cd
 
