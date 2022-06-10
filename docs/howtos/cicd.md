@@ -26,7 +26,6 @@ The Ci/Cd API can be used in a pipeline that always performs a deployment of the
 
 <i class="fa fa-exclamation-triangle"></i> Before executing a Ci/Cd testrun however, it is important to check that the deployment must be complete and the status of the application should be "Running". 
 <br/><br/>
-If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
 
 ## Execute a testrun from Ci/Cd
 
@@ -42,6 +41,12 @@ The Ci/Cd API knows two REST requests.
 The contents of these requests are described next.
 
 ### POST testruns
+Executes a new Ci/Cd testrun. 
+
+If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
+
+<i class="fa fa-exclamation-triangle"></i> If the Ci/Cd pipeline results in an error, check the timeout setting. Most tools default to 300 seconds, but if another revision needs to be downloaded this may not be long enough.
+
 **URL**
 
 `/rest/cicdservice/v1/CiCd/testruns`
