@@ -38,7 +38,7 @@ Note that one recorded action can lead to zero or many Teststeps, and that the '
 
 The recording page will close and the Teststeps created by the recorder will appear automatically. 
 
-Learn more about creating Recordings in the How To section.
+Learn more about creating Recordings in the Best Practice section.
 
 ## Related topics
 - [Application Environment](application-environment)

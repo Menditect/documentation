@@ -42,10 +42,6 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 - Click Select and proceed to copy the Test Suite in the same Test Configuration, or expand the list of other Test Configuration and select one there.
 - Give the copy a name and choose "Save".
 
-### Export a Test Suite to Word
-- Navigate to the Test design page in MTA and select the Test Configuration where you want to export a Test Suite to Word.
-- Click <i class="fas fa-file-word"></i> on the Test Suite you want to export to Word.
-
 ### Delete a Test Suite
 - Navigate to the Test design page in MTA and select the Test Configuration where you want to delete a Test Suite.
 - Click <i class="fas fa-trash-alt"></i> on the Test Suite you want to delete.
