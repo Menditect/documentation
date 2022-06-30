@@ -6,6 +6,8 @@ With this Teststep type, all the objects are stored to the database that are cre
 
 ## Actions
 
+### Add a Persist Teststep
+
 To add a Persist step, select Persist as the Action when creating an Object Teststep. Note that when selecting Persist, the name of the Teststep will be set to "Persist" automatically.
 
 Make sure to always insert the Persist Teststep after the Teststeps that perform other Object actions. 
