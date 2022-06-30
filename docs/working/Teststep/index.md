@@ -7,15 +7,15 @@ This document is based on MTA version 1.6.
 A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case) that has the 'Automatic' type.
 
 A Teststep must be one of the following types:
+- [Microflow call](Teststep/microflow)
 - Object
-- Microflow
 
 An Object Teststep can execute the following actions:
-- Create: create an object (without committing it to the database).
-- Retrieve: retrieve object(s) from the database.
-- Change: change an object (without committing it to the database).
-- Delete: mark an object to be deleted.
-- Persist: commit all the objects to the database that are created or changed. Delete all the objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. When deleting, always make sure to have the Delete teststeps in the right order, to make sure domain model Delete Constraints don't prevent deletion of the object(s).
+- [Create](Teststep/create): create an object (without committing it to the database).
+- [Retrieve](Teststep/retrieve): retrieve object(s) from memory or database.
+- [Change](Teststep/change): change an object (without committing it to the database).
+- [Delete](Teststep/delete): mark an object to be deleted. When deleting, always make sure to have the Delete teststeps in the right order, to make sure domain model Delete Constraints don't prevent deletion of the object(s).
+- [Persist](Teststep/persist): finalizes above Object teststeps. 
 
 Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
 
@@ -109,4 +109,4 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 april 2022
+Last updated 30 june 2022
