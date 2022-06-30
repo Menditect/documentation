@@ -19,9 +19,9 @@ An Object Teststep can execute the following actions:
 
 Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
 
-An Object Teststep can contain [Attribute Values](attribute-value). 
+An Object Teststep can contain [Attribute Values](../attribute-value). 
 
-A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](microflow-parameter-value).
+A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](../microflow-parameter-value).
 
 ## Properties
 | Name | Description |
@@ -37,14 +37,14 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 
 ## Business rules
 - The name is mandatory.
-- A Microflow Teststep must have a microflow selected in order to be able to execute the [Test Configuration](test-configuration).
+- A Microflow Teststep must have a microflow selected in order to be able to execute the [Test Configuration](../test-configuration).
 - An 'Create', 'Change' or 'Retrieve' Object Teststep must have an entity selected in order to be able to execute the Test Configuration.
 
 ## Actions on Teststep
 
 ### View Teststeps in a Test Case
-- Navigate to the [Test Suite](test-suite) that the Teststeps are in.
-- Click on the Automatic [Test Case](test-case) to view the Teststeps.
+- Navigate to the [Test Suite](../test-suite) that the Teststeps are in.
+- Click on the Automatic [Test Case](../test-case) to view the Teststeps.
 - Teststeps are shown in the middle pane.
 
 ### View Teststep details
@@ -59,14 +59,14 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 - Select the type of CRUD action you want to perform on the Object.
 - Select an entity (only for actions other than Persist).
 - Choose "Save".
-- If neccesary, select additional options like [Attribute Values](attribute-value) or associations.
+- If neccesary, select additional options like [Attribute Values](../attribute-value) or associations.
 
 ### Create an Microflow Teststep
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
 - Click "*+ Microflow*" to create a Microflow Teststep.
 - Select the Microflow to execute.
 - Choose "Save".
-- If neccesary, select additional options like [Microflow Parameter Values](microflow-parameter-value).
+- If neccesary, select additional options like [Microflow Parameter Values](../microflow-parameter-value).
 
 ### Change the order of a Teststep in a Test Case
 - Navigate to the Automatic Test Case that the Teststep is in.
@@ -80,7 +80,7 @@ Note that it is possible that due to moving a Teststep and dependencies with ano
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
 ### Configure a Teststep
-- Click on <i class="fas fa-cog"></i> on the Teststep name, or click on "*Configure*" on top of the Teststep details pane on the right, to set the [Attribute Values](attribute-value) or Microflow Parameter Values](microflow-parameter-value).
+- Click on <i class="fas fa-cog"></i> on the Teststep name, or click on "*Configure*" on top of the Teststep details pane on the right, to set the Attribute Values or Microflow Parameter Values.
 
 When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
 - For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
@@ -100,11 +100,11 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 - Click on "*Mx Studio*" on top of the Teststep details pane on the right.
 
 ## Related topics
-- [Assert Attribute Value](assert-attribute-value)
-- [Assert Object Count](assert-object-count)
-- [Data Variation](datavariation)
-- [Test Case](test-case)
-- [Test Instruction](test-instruction)
+- [Assert Attribute Value](../assert-attribute-value)
+- [Assert Object Count](../assert-object-count)
+- [Data Variation](../datavariation)
+- [Test Case](../test-case)
+- [Test Instruction](../test-instruction)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
