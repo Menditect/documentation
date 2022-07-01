@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [Teststep](Teststep) type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 
+With this [../Teststep](.) type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 
 
 ## Actions
 

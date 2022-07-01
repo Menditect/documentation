@@ -4,7 +4,7 @@ This document is based on MTA version 1.6.
 
 ## Definition
 
-A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](../refguide/test-case) that has the 'Automatic' type.
+A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case) that has the 'Automatic' type.
 
 A Teststep must be one of the following types:
 - [Microflow call](Teststep/microflow)
@@ -19,9 +19,9 @@ An Object Teststep can execute the following actions:
 
 Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
 
-An Object Teststep can contain [Attribute Values](../refguide/attribute-value). 
+An Object Teststep can contain [Attribute Values](attribute-value). 
 
-A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](../refguide/microflow-parameter-value).
+A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](microflow-parameter-value).
 
 ## Properties
 | Name | Description |
@@ -37,14 +37,14 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 
 ## Business rules
 - The name is mandatory.
-- A Microflow Teststep must have a microflow selected in order to be able to execute the [Test Configuration](../refguide/test-configuration).
+- A Microflow Teststep must have a microflow selected in order to be able to execute the [Test Configuration](test-configuration).
 - An 'Create', 'Change' or 'Retrieve' Object Teststep must have an entity selected in order to be able to execute the Test Configuration.
 
 ## Actions on Teststep
 
 ### View Teststeps in a Test Case
-- Navigate to the [Test Suite](../refguide/test-suite) that the Teststeps are in.
-- Click on the Automatic [Test Case](../refguide/test-case) to view the Teststeps.
+- Navigate to the [Test Suite](test-suite) that the Teststeps are in.
+- Click on the Automatic [Test Case](test-case) to view the Teststeps.
 - Teststeps are shown in the middle pane.
 
 ### View Teststep details
@@ -88,11 +88,11 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 - Click on "*Mx Studio*" on top of the Teststep details pane on the right.
 
 ## Related topics
-- [Assert Attribute Value](../refguide/assert-attribute-value)
-- [Assert Object Count](../refguide/assert-object-count)
-- [Data Variation](../refguide/datavariation)
-- [Test Case](../refguide/test-case)
-- [Test Instruction](../refguide/test-instruction)
+- [Assert Attribute Value](assert-attribute-value)
+- [Assert Object Count](assert-object-count)
+- [Data Variation](datavariation)
+- [Test Case](test-case)
+- [Test Instruction](test-instruction)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
