@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [Teststep](../refguide/teststep) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 
+With this [Teststep](Teststep) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 
 
 ## Actions
 
@@ -19,12 +19,12 @@ With this [Teststep](../refguide/teststep) type, objects can be retrieved from d
 #### Retrieve from database
 
 - Select "Retrieve from database" in the Retrieve options.
-- Select [Attribute Values](../refguide/attribute-value) and associations.
+- Select [Attribute Values](attribute-value) and associations.
 
 #### Retrieve by association
 
 - Select "Retrieve by association" in the Retrieve options.
-- Select [Attribute Values](../refguide/attribute-value) and associations.
+- Select [Attribute Values](attribute-value) and associations.
 
 Note that when retrieving by association, data needs to exist either in database, or have been created in the same Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
 
@@ -32,6 +32,6 @@ Note that when retrieving by association, data needs to exist either in database
 
 - Select "Retrieve using output from former test step" in the Retrieve options.
 - Now, select the object that needs to be changed, from a previous Teststep. This could be a Create or Retrieve Teststep but also a Microflow Teststep that returns an object.
-- Select [Attribute Values](../refguide/attribute-value) and associations.
+- Select [Attribute Values](attribute-value) and associations.
 
 Note that when retrieving from a former Teststep in a previous Test Case, data needs to be saved to the database in that Test Case. Data created in a previous Test Case that is not saved to the database will be lost.

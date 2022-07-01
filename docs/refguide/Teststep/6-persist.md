@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [Teststep](../refguide/teststep) type, all the objects are stored to the database that are created or changed by a Create or Change Object Teststep in the same Test Case. Also, all the objects that are marked as deleted, are deleted. 
+With this [Teststep](Teststep) type, all the objects are stored to the database that are created or changed by a Create or Change Object Teststep in the same Test Case. Also, all the objects that are marked as deleted, are deleted. 
 
 ## Actions
 
