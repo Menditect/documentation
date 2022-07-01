@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [../Teststep](.) type, an object is changed in-memory and put on the list for objects to be committed using a [Persist](persist) step.
+With this [Teststep](../Teststep) type, an object is changed in-memory and put on the list for objects to be committed using a [Persist](persist) step.
 
 ## Actions
 

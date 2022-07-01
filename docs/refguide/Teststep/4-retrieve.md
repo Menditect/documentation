@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [../Teststep](.) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 
+With this [Teststep](../Teststep) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 
 
 ## Actions
 
