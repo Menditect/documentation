@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this Teststep type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 
+With this [Teststep](../refguide/teststep) type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 
 
 ## Actions
 
@@ -11,7 +11,7 @@ With this Teststep type, an object or objects will be put on the list for object
 - Navigate to the Test Suite and select the Automatic Test Case that you want to create a Teststep in.
 - Click "*+ Object*" to create an Object Teststep.
 - Enter a name and Select 'Delete' for the Action.
-- Select an entity 
+- Select an entity.
 - Click "Insert before selected" to add the Teststep before the selected one, or "Insert after selected" to add the Teststep after the selected one. If there are no Teststeps in the Test Case yet, it does not matter.
 - Now, select the object that needs to be deleted, from a previous Teststep. This could be a Create or Retrieve Teststep but also a Microflow Teststep that returns an object.
 
