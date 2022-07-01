@@ -15,9 +15,7 @@ An Object Teststep can execute the following actions:
 - Retrieve: retrieve object(s) from the database.
 - Change: change an object (without committing it to the database).
 - Delete: mark an object to be deleted.
-- Persist: commit all the objects to the database that are created or changed. Delete all the objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. When deleting, always make sure to have the Delete teststeps in the right order, to make sure domain model Delete Constraints don't prevent deletion of the object(s).
-
-Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
+- Persist: commit all the objects to the database that are created or changed. 
 
 An Object Teststep can contain [Attribute Values](attribute-value). 
 

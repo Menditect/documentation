@@ -12,6 +12,8 @@ To add a Persist step, select Persist as the Action when creating an Object Test
 
 Make sure to always insert the Persist Teststep after the Teststeps that perform other Object actions. 
 
+A persist step will delete all the objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. 
+
 It is possible to have multiple Persist Teststeps in the same Test Case. However, if there is a technical error while executing the Test Case, the entire transaction for that Test Case is always rolled back.
 
 _Note_: an object that is created by a microflow (as the output parameter), is not committed to the database by a Persist action. To achieve this, put a [Change Object](change) Teststep before the Persist Teststep, that changes the object created by the Microflow Teststep (without actually changing any of the members).
