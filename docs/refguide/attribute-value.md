@@ -6,10 +6,6 @@ This document is based on MTA version 1.6.
 
 The Attribute Value contains the information that specifies the input of an Object [Teststep](teststep).
 
-When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
-- For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
-- For a Retrieve Object action, the resulting set of objects will be *filtered* by the entered value, and 'empty' if checked, but left blank.
-
 ## Properties
 | Name | Description |
 | ----------- | ----------- |

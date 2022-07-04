@@ -4,6 +4,8 @@
 
 With this [Teststep](../Teststep) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 
 
+When setting Attribute Values for a Retrieve Object action, the resulting set of objects will be *filtered* by the entered value, and 'empty' if checked, but left blank.
+
 ## Actions
 
 ### Add a Retrieve Object Teststep

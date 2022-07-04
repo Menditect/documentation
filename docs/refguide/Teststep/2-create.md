@@ -4,6 +4,8 @@
 
 With this [Teststep](../Teststep) type, an object is created in-memory and put on the list for objects to be committed using a [Persist](persist) step.
 
+When setting Attribute Values for a Create Object action, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
+
 ## Actions
 
 ### Add a Create Object Teststep
