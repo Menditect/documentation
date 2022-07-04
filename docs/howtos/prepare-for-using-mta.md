@@ -1,4 +1,4 @@
-# Prepare for using MTA for first time use
+# Prepare for using MTA for the first time
 
 ## Purpose
 
