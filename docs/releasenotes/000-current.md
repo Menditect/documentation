@@ -33,6 +33,10 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 <li>No need to delete data created in your Unit Test anymore. </li>
 </ul>
 </ul>
+<br/>
+<i class="fas fa-exclamation-triangle"></i> Make sure to <a href="../howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
+<br/>
+
 
 ## New functionality 
 
