@@ -16,8 +16,7 @@ When setting Attribute Values for a Change Object action, the Attribute will be 
 - Select an entity.
 - Click "Insert before selected" to add the Teststep before the selected one, or "Insert after selected" to add the Teststep after the selected one. If there are no Teststeps in the Test Case yet, it does not matter.
 - Now, select the object that needs to be changed, from a previous Teststep. This could be a Create or Retrieve Teststep but also a Microflow Teststep that returns an object.
-- Select [Attribute Values](../attribute-value) that you want to use and enter a value.
-- Click '+Add' for each association that you want to set. Use the <i class="fa-empty-set"></i> "Set empty" button to clear the association. Note that multiple values can only be set for both way reference set (* to *) associations.
+- Select [Attribute Values](../attribute-value) and associations.
 
 Note that not checking an Attribute Value in a Change Object Teststep will leave the value unchanged for that attribute.
 Checking an Attribute Value but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 

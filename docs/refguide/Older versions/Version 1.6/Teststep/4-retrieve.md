@@ -21,14 +21,12 @@ When setting Attribute Values for a Retrieve Object action, the resulting set of
 #### Retrieve from database
 
 - Select "Retrieve from database" in the Retrieve options.
-- Select [Attribute Values](../attribute-value) that you want to filter on and enter a value.
-- Click '+Add' for each association that you want to filter on. Use the <i class="fa-empty-set"></i> "Set empty" button to indicate the association must be empty. 
+- Select [Attribute Values](../attribute-value) and associations.
 
 #### Retrieve by association
 
 - Select "Retrieve by association" in the Retrieve options.
-- Select [Attribute Values](../attribute-value) that you want to filter on and enter a value.
-- Click '+Add' for each association that you want to filter on. Use the <i class="fa-empty-set"></i> "Set empty" button to indicate the association must be empty. 
+- Select [Attribute Values](../attribute-value) and associations.
 
 Note that when retrieving by association, data needs to exist either in database, or have been created in the same Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
 

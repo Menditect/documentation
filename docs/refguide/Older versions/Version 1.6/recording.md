@@ -1,6 +1,6 @@
 # Recording
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 
 <table bgcolor="orange">
@@ -48,4 +48,4 @@ Learn more about creating Recordings in the Best Practice section.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 1 may 2022

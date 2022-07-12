@@ -1,6 +1,6 @@
 # Assert on Object Count
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -46,4 +46,4 @@ After the page opens, go to the Teststep output tab, and click on "*+ Assert*" t
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022

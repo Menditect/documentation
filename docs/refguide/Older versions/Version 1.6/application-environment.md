@@ -1,6 +1,6 @@
 # Application Environment
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -54,4 +54,4 @@ If a Test Application is associated, the <i class="fa fa-eye"></i> icon is shown
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022

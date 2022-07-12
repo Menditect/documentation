@@ -14,9 +14,11 @@ Now fill in the fields under 'Mendix credentials'
 - An API key created for this Mendix profile. Go to [API keys](https://sprintr.home.mendix.com/link/profilesettings/apikeys) (links to Mendix site) to create an API key for your Mendix profile.
 - Choose "Save".
 
-To test if this step was successful, try to add a new Test Application. 
+To test if this step was successful, try to add a new Test Application to a Test Configuration. The Mendix projects associated with the given Mendix user should be visible.
 
-The Mendix projects associated with the given Mendix user should be visible.
+<i class="fa fa-exclamation-triangle"></i> Always test if you can add a Test Application, to make sure the fields are saved correctly. We have noticed that Chromium browsers sometimes autofill the username and API key fields with your MTA username and password. Make sure to overwrite these fields even if the MTA username matches the Mendix username, because otherwise the username may not be saved correctly. 
+
+
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

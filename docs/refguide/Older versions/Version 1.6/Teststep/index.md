@@ -1,6 +1,6 @@
 # Teststep
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 

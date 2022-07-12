@@ -1,6 +1,6 @@
 # Test Case
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -25,7 +25,6 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 | Apply security | If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). |
 | Execution time-out | The maximum number of seconds this Test Case is allowed to run. If the execution duration takes longer, the execution is aborted. |
 | Execute with delay | The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. This is particularly useful when some Mendix code is executed asyncronously in a previous Test Case, and you want to prevent the two Test Cases to run simultaneously. |
-| Rollback after execution | Indicates if all database transactions executed in this Test Case should be rolled back. This enables for unittesting without changing anything in the database. Note that when starting or stopping additional transactions in an executed microflow, this property will not work as expected. Setting this property to Yes will lead to [Construction Errors](construction-error) if subsequent Test Cases depend on this Test Case. |
 
 ## Business rules
 - The name is mandatory.
@@ -39,18 +38,12 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 ## Actions on Test Case
 
-### Run a single Test Case
-- Navigate to the Test Suite that the Test Case is in.
-- Click on the <i class="fa fa-play"></i> button on the Test Case to execute it.
-
-Note that executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
-
 ### View Test Cases in a Test Suite
 - Navigate to the [Test Suite](test-suite) that the Test Cases are in.
 - MTA will show the Test Cases in the left pane.
 
 ### View Test Case details
-- Navigate to the Test Suite that the Test Case is in.
+- Navigate to the Test Suite that the Test Cases are in.
 - Click on the Test Case to select it.
 - Click on Test case details on top of the middle pane.
 
@@ -92,4 +85,4 @@ Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automa
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022

@@ -37,7 +37,7 @@ To ensure the data that is created in the recording matches expectations, have M
 
 ## Handle date and time values
 
-All datetime values are set as fixed instead of current datetime with an offset.
+All datetime values are set as "Specified date" instead of current datetime with an offset.
 - Check datetime attribute values and make sure to change them to current datetime with an offset where necessary. 
 
 ## Handle objects in pages

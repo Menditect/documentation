@@ -1,6 +1,6 @@
 # Application Revision
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -64,4 +64,4 @@ Note that this can take some time depending on the size of the Mendix project, t
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022

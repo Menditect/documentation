@@ -1,6 +1,6 @@
 # Application Branch
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -37,4 +37,4 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022

@@ -1,6 +1,6 @@
 # Attribute Value
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.6.
 
 ## Definition
 
@@ -18,7 +18,7 @@ The Attribute Value contains the information that specifies the input of an Obje
 ## Business rules
 
 - A former [Teststep](teststep) must be selected if an Attribute Value has the input type 'Former Teststep'. The [Test Configuration](test-configuration) that contains the Teststep can not be executed as long as the former Teststep is not selected. 
-- The offset of current date or a pre-set date must be specified if an Attribute Value has the input type 'Specified' and a datatype 'Datetime'.
+- The offset of current date or a fixed date must be specified if an Attribute Value has the input type 'Fixed value' and a datatype 'Datetime'.
 
 ## Actions on Attribute Value
 
@@ -38,7 +38,7 @@ Note that:
 - Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute.
 
-Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
+Note: For datetime values you can enter either a fixed date, the current datetime, or an offset of the current datetime.
 
 ### Use a former Teststep to set an Attribute Value
 - Navigate to an Object Teststep in the Test Suite page.
@@ -52,4 +52,4 @@ Note: For datetime values you can either specify a date, or calculate the date w
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 21 april 2022
