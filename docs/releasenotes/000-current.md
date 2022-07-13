@@ -17,20 +17,20 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 <li>You can now buy an MTA "bring your own cloud" license. </li>
 <li>Keep your data safe on your own private or public cloud. </li>
 <li>Or, just install it on-premise. </li>
-<li><a href="../howtos/prepare-for-using-mta">Prepare for using MTA right now!</a> </li>
 <li>Contact <a href="mailto:sales@menditect.com">sales@menditect.com</a> for more information.</li>
 </ul>
 </ul>
-<ul><i class="fas fa-fire"></i>  Execute a single Test Case!
+<ul><i class="fas fa-fire"></i>  Run a single Test Case!
 <ul>
-<li>Create Unit Tests much easier. </li>
-<li>No longer needed to copy or move a Test Case. </li>
+<li>Execute a Unit Test with one click. </li>
+<li>No longer needed to isolate a Test Case. </li>
 </ul>
 </ul>
 <ul><i class="fas fa-fire"></i>  Rollback transactions in a Test Case!
 <ul>
 <li>All the data committed and deleted in both Object and Microflow teststeps is undone. </li>
 <li>No need to delete data created in your Unit Test anymore. </li>
+<li>Dependencies with other Test Cases are automatically checked. </li>
 </ul>
 </ul>
 <br/>
@@ -57,6 +57,13 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 | ID  |  MTA-707 |
 | ----------- | ----------- |
 | __New functionality__ | It is now possible to execute a single Test Case as long as it does not use any data from previous Test Cases. |
+| __Release actions__ | None. | 
+
+<br/>
+
+| ID  |  N/A |
+| ----------- | ----------- |
+| __New functionality__ | MTA now contains context sensitive help buttons that guide you directly to the right place in the Reference Guide. |
 | __Release actions__ | None. | 
 
 <br/>
