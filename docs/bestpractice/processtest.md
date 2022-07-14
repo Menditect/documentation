@@ -30,7 +30,7 @@ All the teststeps within a single Test Case can use data from a previous testste
 Test Suites can be copied to other Test Configurations, and Test Cases to other Test Suites. When keeping Test Cases small, it is easier to reuse them across MTA.
 
 *Troubleshooting*
-Sometimes when executing the Test Configuration it could stop halfway because of a technical error. In that scenario it is possible to restore the data, by executing just one of the Test Suites (or one Test Case) in the Test Configuration. This is described in the [Howto: Run a single Test Case](../howtos/run-single-test-case).
+Sometimes when executing the Test Configuration it could stop halfway because of a technical error. In that scenario it is possible to restore the data, by executing just one of the Test Suites (or one Test Case) in the Test Configuration. This is described in the [Howto: Run a single Test Case](../howtos/isolate-test-case).
 
 Above aspects taken into consideration, a process test in MTA typically looks like this:
 - multiple Test Suites in one Test Configuration;
