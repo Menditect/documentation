@@ -63,7 +63,7 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 
 | ID  |  N/A |
 | ----------- | ----------- |
-| __New functionality__ | MTA now contains context sensitive help buttons that guide you directly to the right place in the Reference Guide. |
+| __New functionality__ | MTA now contains context sensitive help buttons that guide you directly to the related page in the Reference Guide. |
 | __Release actions__ | None. | 
 
 <br/>
