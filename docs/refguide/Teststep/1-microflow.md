@@ -16,3 +16,5 @@ The microflow is executed using the credentials of the Execution User that is co
 - If neccesary, select additional options like [Microflow Parameter Values](../microflow-parameter-value).
 
 Note that it is possible to save the Microflow Teststep without providing a value for any of the input parameters, but this will result in MTA showing a [construction error](../construction-error).
+
+To prepare a Mendix app for Microflow Teststeps, follow [these steps](../../howtos/prepare-mendix-project).
