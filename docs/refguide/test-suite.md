@@ -6,6 +6,8 @@ This document is based on MTA version 1.7.
 
 A Test Suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
 
+The Test Suite is the second level of the 4-layer framework that is used in MTA. It allows for a Test Configurations to be split up into different functional or technical aspects of the tested software, but it is also the level where [Data Variation](datavariation) is defined. 
+
 ## Properties
 | Name | Description |
 | ----------- | ----------- |

@@ -6,6 +6,8 @@ This document is based on MTA version 1.7.
 
 A Test Instruction is a descriptive counterpart of a [Teststep](teststep). A Test Instruction is always part of a [Test Case](test-case) that has the Manual type.
 
+The Test Instruction is the lowest or fourth level of the 4-layer framework that is used in MTA. It describes the actual operating functions. 
+
 ## Properties
 | Name | Description |
 | ----------- | ----------- |

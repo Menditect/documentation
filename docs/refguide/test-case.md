@@ -4,7 +4,9 @@ This document is based on MTA version 1.7.
 
 ## Definition
 
-A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. A Test Case is part of a [Test Suite](test-suite).
+A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. 
+
+The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. 
 
 A Test Case can be either 'Manual' or 'Automatic'. Manual Test Cases contain [Test Instructions](test-instruction), do not run any Mendix code and subsequently do not appear whenever the Test Suite is executed. Automatic Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
 

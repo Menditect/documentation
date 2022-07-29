@@ -6,6 +6,8 @@ This document is based on MTA version 1.7.
 
 A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case) that has the 'Automatic' type.
 
+The Teststep is the lowest or fourth level of the 4-layer framework that is used in MTA. It describes the actual operating functions. 
+
 A Teststep must be one of the following types:
 - [Microflow call](Teststep/microflow)
 - Object

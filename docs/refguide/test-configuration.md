@@ -6,6 +6,8 @@ This document is based on MTA version 1.7.
 
 A Test Configuration is an executable test script that describes which [Test Suites](test-suite) and which [Test Applications](test-application) will be/are tested. 
 
+The Test Configuration is the highest or first level of the 4-layer framework that is used in MTA. 
+
 ## Properties
 | Name | Description |
 | ----------- | ----------- |
