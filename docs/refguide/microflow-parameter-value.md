@@ -50,6 +50,11 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 - If the Microflow Parameter Value is a primitive, first click <svg role="img" viewBox="0 0 512 512" width="2%" height="2%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M235.3 132.7c-6.25-6.25-16.38-6.25-22.62 0s-6.25 16.38 0 22.62L313.4 256l-100.7 100.7c-6.25 6.25-6.25 16.38 0 22.62s16.38 6.25 22.62 0l112-112C350.4 264.2 352 260.1 352 256s-1.562-8.188-4.688-11.31L235.3 132.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 480c-123.5 0-224-100.5-224-224s100.5-224 224-224s224 100.5 224 224S379.5 480 256 480z" class=""></path></svg> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep that should provide the value.
 
+### Fill a Microflow Parameter List
+If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "+ Another input teststep" to accomplish this.
+
+Note that it is possible to select different objects from previous teststeps or to select the same previous teststep multiple times.
+
 ### Include a Microflow Parameter Value as a Data Variation Item
 - In the Test Suite page, select the Microflow Teststep to view the Microflow Parameter Values for.
 - Select the <i class="fas fa-table"></i> button for the parameter that you want to include in [Data Variation](datavariation).
