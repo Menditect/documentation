@@ -53,7 +53,7 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 ### Fill a Microflow Parameter List
 If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "+ Another input teststep" to accomplish this.
 
-Note that it is possible to select different objects from previous teststeps or to select the same previous teststep multiple times.
+Note that it is not possible to select the same previous teststep multiple times.
 
 ### Include a Microflow Parameter Value as a Data Variation Item
 - In the Test Suite page, select the Microflow Teststep to view the Microflow Parameter Values for.
