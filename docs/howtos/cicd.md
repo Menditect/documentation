@@ -15,8 +15,10 @@ This is the username and password you will connect with to the API.
 
 ## Configure the Test Application
 
+Calling the Ci/Cd API in MTA can result in zero, one or many Test Configurations to be executed. The reason is that the Ci/Cd API does not take a Test Configuration, but a Test Application as the parameter. 
+
 ### Enable Ci/Cd
-Where regular test runs are executed on the Test Configuration level, Ci/Cd enabled test runs are executed on the Test Application level. When testing a Test Application, all Test Configurations that are Ci/Cd enabled, are executed.
+Where regular test runs are executed on the Test Configuration level, Ci/Cd enabled test runs are executed on the Test Application level. When testing a Test Application, all Test Configurations that use that Test Application, that are Ci/Cd enabled, and where the environment matches the provided parameters, are executed. This means that also other Test Applications could be affected, if one of those Test Configurations use more than one.
 
 If you want to include a Test configuration in testing, you need to enable it by editing it from the Test design page. 
 Edit the respective test configuration and set "Ci/Cd enabled" to TRUE.
@@ -43,7 +45,7 @@ The contents of these requests are described next.
 ### POST testruns
 Executes a new Ci/Cd testrun. 
 
-If another revision is deployed to the environment, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
+If another revision is deployed to the environment than the one defined on the Test Configuration, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
 
 <i class="fa fa-exclamation-triangle"></i> If the Ci/Cd pipeline results in an error, check the timeout setting. Most tools default to 300 seconds, but if another revision needs to be downloaded this may not be long enough.
 <br/><br/><br/>
