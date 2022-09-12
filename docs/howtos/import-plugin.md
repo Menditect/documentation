@@ -13,7 +13,12 @@ Import the MTA plugin module package in your test application as a new module. I
 <i class="fa fa-exclamation-triangle"></i> Do not attempt to import it as a Marketplace module. The MTA Plugin is regularly updated, but not always compatible with every running version of MTA. This is why the MTA Plugin is currently not in the public marketplace. For receiving automatic updates about new releases, choose the Github notification setting in the repository, using the "<i class="fa fa-eye"></i> Watch" function on the top right. Select "Custom" and only select "Releases". 
 <br/><br/>
 
-*Below steps are only applicable if you have not imported the MTA Plugin before.*
+## Upgrading a Mendix App to a newer runtime version
+
+To upgrade the major version of your Mendix App, you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
+
+
+## First time configuration
 
 Create a user role 'MTAPluginUser' and make sure not to select any modules in this step.
 
