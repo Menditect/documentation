@@ -1,4 +1,4 @@
-# Current release
+# Release notes
 
 ## Release 1.7.0
 
