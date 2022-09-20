@@ -15,7 +15,7 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 
 ## Business rules
 
-- The Application Branch information cannot be deleted from MTA if [Application Commit](application-commit) information still exists in the branch.
+- The Application Branch information cannot be deleted from MTA if [Application Commit](application-revision) information still exists in the branch.
 
 ## Actions on Application branch
 
@@ -31,7 +31,7 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 ## Related topics
 - [Application](application)
 - [Application Environment](application-environment)
-- [Application Commit](application-commit)
+- [Application Commit](application-revision)
 - [Test Application](test-application)
 
 ## Feedback?
