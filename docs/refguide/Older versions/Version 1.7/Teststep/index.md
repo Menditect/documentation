@@ -1,12 +1,6 @@
 # Teststep
 
-This document is based on MTA version 1.8.
-
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
-  </td>
-</table>
+This document is based on MTA version 1.7.
 
 ## Definition
 
@@ -105,4 +99,4 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 30 june 2022

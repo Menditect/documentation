@@ -1,6 +1,6 @@
 # Teststep
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.8.
 
 ## Definition
 
@@ -99,4 +99,4 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 30 june 2022
+Last updated 20 september 2022
