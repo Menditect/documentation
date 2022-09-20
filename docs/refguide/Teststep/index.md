@@ -74,7 +74,7 @@ First, navigate to the Automatic Test Case that the Teststep is in.
 - Review and correct any resulting configuration errors.
 
 **Option 2: Move a Teststep inside a Test Case.** 
-- Click on "<i class="fal fa-pencil"> Edit".
+- Click on "<i class="fal fa-pencil"></i> Edit".
 - Use drag and drop to position the Teststep.
 - Review any configuration errors and save your changes.
 
