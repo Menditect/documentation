@@ -18,4 +18,4 @@ It is possible to have multiple Persist Teststeps in the same Test Case. However
 
 _Note_: an object that is created by a microflow (as the output parameter), is not committed to the database by a Persist action. To achieve this, put a [Change Object](change) Teststep before the Persist Teststep, that changes the object created by the Microflow Teststep (without actually changing any of the members).
 
-When encountering problems, also consult the [Known issues](../../../knownissues/persist-step-fails).
+When encountering problems, also consult the [Known issues](../../../../knownissues/persist-step-fails).
