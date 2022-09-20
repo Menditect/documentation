@@ -69,18 +69,18 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 First, navigate to the Automatic Test Case that the Teststep is in.
 
 **Option 1: Move a teststep 1 position up or down.** 
-- Click on the <i class="fas fa-ellipsis"></i> button to show the Quick Menu.
+- Click on the <i class="fa fa-ellipsis"></i> button to show the Quick Menu.
 - Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> to move the Teststep up or down.
 - Review and correct any resulting configuration errors.
 
 **Option 2: Move a Teststep inside a Test Case.** 
-- Click on "<i class="fal fa-pencil"></i> Edit".
+- Click on "<i class="fa fa-pencil"></i> Edit".
 - Use drag and drop to position the Teststep.
 - Review any configuration errors and save your changes.
 
 **Option 2: Move a Teststep to another Test Case.** 
-- Click on the <i class="fas fa-ellipsis"></i> button to show the Quick Menu.
-- Click on "<i class="fal fa-arrow-right-arrow-left"></i> Another test case".
+- Click on the <i class="fa fa-ellipsis"></i> button to show the Quick Menu.
+- Click on "<i class="fa fa-arrow-right-arrow-left"></i> Another test case".
 - Use drag and drop to move the Teststep.
 - Review any configuration errors and save your changes.
 
