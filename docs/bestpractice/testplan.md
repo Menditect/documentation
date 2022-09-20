@@ -1,4 +1,4 @@
-# Write a test plan
+# Test plan
 
 ## Definition
 
