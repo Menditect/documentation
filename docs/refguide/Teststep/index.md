@@ -2,6 +2,12 @@
 
 This document is based on MTA version 1.8.
 
+<table bgcolor="orange">
+  <td width="25%">
+    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
+  </td>
+</table>
+
 ## Definition
 
 A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case) that has the 'Automatic' type.
