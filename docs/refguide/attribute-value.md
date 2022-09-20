@@ -58,4 +58,4 @@ Note: For datetime values you can either specify a date, or calculate the date w
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022
