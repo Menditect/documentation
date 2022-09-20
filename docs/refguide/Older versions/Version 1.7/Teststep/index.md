@@ -1,6 +1,12 @@
 # Teststep
 
-This document is based on MTA version 1.7.
+This document is based on MTA version 1.8.
+
+<table bgcolor="orange">
+  <td width="25%">
+    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
+  </td>
+</table>
 
 ## Definition
 
