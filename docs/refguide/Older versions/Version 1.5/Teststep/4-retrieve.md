@@ -1,11 +1,5 @@
 # Retrieve Object
 
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
-  </td>
-</table>
-
 ## Definition
 
 With this [Teststep](../Teststep) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Also objects that are output from previous teststeps can be filtered. 

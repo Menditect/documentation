@@ -1,11 +1,5 @@
 # Delete Object
 
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
-  </td>
-</table>
-
 ## Definition
 
 With this [Teststep](../Teststep) type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 

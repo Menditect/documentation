@@ -13,4 +13,5 @@ This could be result of importing the MTA Plugin Module as a (private) marketpla
 The MTA Plugin Module should be imported as a normal project module. 
 
 ** Resolution **
+
 Follow [these steps](../howtos/import-plugin) to correctly import the plugin module.

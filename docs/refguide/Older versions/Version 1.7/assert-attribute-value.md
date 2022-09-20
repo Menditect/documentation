@@ -1,6 +1,6 @@
 # Assert on Attribute Value
 
-This document is based on MTA version 1.8.
+This document is based on MTA version 1.7.
 
 ## Definition
 
@@ -72,4 +72,4 @@ There are multiple ways to add an Assert on Attribute Value:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 12 july 2022

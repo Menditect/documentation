@@ -1,6 +1,6 @@
 # Data Variation Item
 
-This document is based on MTA version 1.8.
+This document is based on MTA version 1.7.
 
 ## Definition
 
@@ -58,4 +58,4 @@ There are two ways to edit values in a Data Variation.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 12 july 2022
