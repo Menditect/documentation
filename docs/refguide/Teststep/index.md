@@ -64,11 +64,26 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 ### Create a Teststep
 - Please consult the documentation for the respective Teststep type: [Microflow call](Teststep/microflow), [Create](Teststep/create), [Retrieve](Teststep/retrieve), [Change](Teststep/change), [Delete](Teststep/delete) or [Persist](Teststep/persist).
 
-### Change the order of a Teststep in a Test Case
-- Navigate to the Automatic Test Case that the Teststep is in.
-- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the name of the Teststep to move it up or down.
+### Move a Teststep
 
-Note that it is possible that due to moving a Teststep and dependencies with another Teststep, an error will occur prohibiting the execution of the Test Configuration.
+First, navigate to the Automatic Test Case that the Teststep is in.
+
+**Option 1: Move a teststep 1 position up or down.** 
+- Click on the <i class="fas fa-ellipsis"></i> button to show the Quick Menu.
+- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> to move the Teststep up or down.
+- Review and correct any resulting configuration errors.
+
+**Option 2: Move a Teststep inside a Test Case.** 
+- Click on "<i class="fal fa-pencil"> Edit".
+- Use drag and drop to position the Teststep.
+- Review any configuration errors and save your changes.
+
+**Option 2: Move a Teststep to another Test Case.** 
+- Click on the <i class="fas fa-ellipsis"></i> button to show the Quick Menu.
+- Click on "<i class="fal fa-arrow-right-arrow-left"></i> Another test case".
+- Use drag and drop to move the Teststep.
+- Review any configuration errors and save your changes.
+
 
 ### Edit a Teststep
 - Click on <i class="fa fa-pencil"></i> next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
@@ -76,7 +91,7 @@ Note that it is possible that due to moving a Teststep and dependencies with ano
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
 ### Configure a Teststep
-- Click on <i class="fas fa-cog"></i> on the Teststep name, or click on "*Configure*" on top of the Teststep details pane on the right, to set the Attribute Values or Microflow Parameter Values.
+- Click on <i class="fas fa-cog"></i> on the Teststep name to set the Attribute Values or Microflow Parameter Values.
 
 When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
 - For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
@@ -86,7 +101,8 @@ Note that it not is possible to change the action or type of Teststep after crea
 
 ### Delete a Teststep
 - Navigate to the Automatic Test Case that the Teststep is in.
-- Click <i class="fas fa-trash-alt"></i> on the Teststep you want to delete.
+- Click on the <i class="fas fa-ellipsis"></i> button to show the Quick Menu.
+- Click on "<i class="fas fa-trash-alt"></i> Test step".
 
 Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, an error will occur prohibiting the execution of the Test Configuration.
 
