@@ -1,12 +1,6 @@
 # Microflow Parameter Value
 
-This document is based on MTA version 1.7.
-
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> This document is currently being updated for the upcoming MTA release. </b></font>
-  </td>
-</table>
+This document is based on MTA version 1.8.
 
 ## Definition
 
@@ -53,8 +47,14 @@ For each datatype, there is a different way of entering the value:
 Note that if the value is not set, this means it will be set to 'Empty' when executing the test. 
 
 ### Use a former Teststep to set an Attribute Value
-- If the Microflow Parameter Value is a primitive, first click <svg role="img" viewBox="0 0 512 512" width="2%" height="2%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M235.3 132.7c-6.25-6.25-16.38-6.25-22.62 0s-6.25 16.38 0 22.62L313.4 256l-100.7 100.7c-6.25 6.25-6.25 16.38 0 22.62s16.38 6.25 22.62 0l112-112C350.4 264.2 352 260.1 352 256s-1.562-8.188-4.688-11.31L235.3 132.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 480c-123.5 0-224-100.5-224-224s100.5-224 224-224s224 100.5 224 224S379.5 480 256 480z" class=""></path></svg> on the right of the attribute, indicating a former Teststep should be used to set the value.
+
+** Setting a primitive (String, Integer, Datetime, etc) value **
+- First click <svg role="img" viewBox="0 0 512 512" width="2%" height="2%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M235.3 132.7c-6.25-6.25-16.38-6.25-22.62 0s-6.25 16.38 0 22.62L313.4 256l-100.7 100.7c-6.25 6.25-6.25 16.38 0 22.62s16.38 6.25 22.62 0l112-112C350.4 264.2 352 260.1 352 256s-1.562-8.188-4.688-11.31L235.3 132.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 480c-123.5 0-224-100.5-224-224s100.5-224 224-224s224 100.5 224 224S379.5 480 256 480z" class=""></path></svg> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep that should provide the value.
+
+** Setting an object value **
+- Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](create) the value or [Retrieves](retrieve) the value from database.
+- Select or Save the Teststep that should provide the value.
 
 ### Fill a Microflow Parameter List
 If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "+ Another input teststep" to accomplish this.
@@ -72,4 +72,4 @@ Note that it is not possible to select the same previous teststep multiple times
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 22 september 2022

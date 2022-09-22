@@ -16,14 +16,16 @@ When setting Attribute Values for a Change Object action, the Attribute will be 
 
 ### Add a Change Object Teststep
 
-- Navigate to the Test Suite and select the Automatic Test Case that you want to create a Teststep in.
-- Click "*+ Object*" to create an Object Teststep.
-- Enter a name and Select 'Change' for the Action.
-- Select an entity.
-- Click "Insert before selected" to add the Teststep before the selected one, or "Insert after selected" to add the Teststep after the selected one. If there are no Teststeps in the Test Case yet, it does not matter.
-- Now, select the object that needs to be changed, from a previous Teststep. This could be a Create or Retrieve Teststep but also a Microflow Teststep that returns an object.
+There are two ways to add a Change Object teststep. The first one is quicker:
+
+1. Click on the "..." button on the Teststep that returns the object that you want to change, and choose "*+ Change output*".
+2. - Select the Test Case that you want to create a Teststep in<br/>- Click "*+ Teststep*" and Click "*+ Change*" to add a Change Object Teststep.<br/>- Select an entity. You can search by name.<br/>- Select the previous Teststep that returns the object that needs to be changed. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
+
+From there:
 - Select [Attribute Values](../attribute-value) that you want to use and enter a value.
 - Click '+Add' for each association that you want to set. Use the <i class="fa-empty-set"></i> "Set empty" button to clear the association. Note that multiple values can only be set for both way reference set (many to many) associations.
+- *Alternatively* you can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill with values from database"!
+- Click on the "Save" button. 
 
 Note that not checking an Attribute Value in a Change Object Teststep will leave the value unchanged for that attribute.
 Checking an Attribute Value but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
