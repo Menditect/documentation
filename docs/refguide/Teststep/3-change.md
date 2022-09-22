@@ -18,8 +18,16 @@ When setting Attribute Values for a Change Object action, the Attribute will be 
 
 There are two ways to add a Change Object teststep. The first one is quicker:
 
-1. Click on the "..." button on the Teststep that returns the object that you want to change, and choose "*+ Change output*".
-2. - Select the Test Case that you want to create a Teststep in<br/>- Click "*+ Teststep*" and Click "*+ Change*" to add a Change Object Teststep.<br/>- Select an entity. You can search by name.<br/>- Select the previous Teststep that returns the object that needs to be changed. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
+The new way: 
+
+- Click on the "..." button on the Teststep that returns the object that you want to change, and choose "*+ Change output*".
+
+The legacy way:
+
+1. Select the Test Case that you want to create a Teststep in.
+2. Click "*+ Teststep*" and Click "*+ Change*" to add a Change Object Teststep.
+3. Select an entity. You can search by name.
+4. Select the previous Teststep that returns the object that needs to be changed. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
 
 From there:
 - Select [Attribute Values](../attribute-value) that you want to use and enter a value.
