@@ -17,6 +17,7 @@ When setting Attribute Values for a Retrieve Object action, the resulting set of
 - Select "Retrieve from database" in the Retrieve options.
 - Select [Attribute Values](../attribute-value) that you want to filter on and enter a value.
 - Click '+Add' for each association that you want to filter on. Use the <i class="fa-empty-set"></i> "Set empty" button to indicate the association must be empty. 
+- *Alternatively* you can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill with values from database"!
 - Click on the "Save" button. 
 
 ### Retrieve by association
@@ -28,6 +29,7 @@ When setting Attribute Values for a Retrieve Object action, the resulting set of
 - Select "Retrieve by association" in the Retrieve options.
 - Select [Attribute Values](../attribute-value) that you want to filter on and enter a value.
 - Click '+Add' for each association that you want to filter on. Use the <i class="fa-empty-set"></i> "Set empty" button to indicate the association must be empty. 
+- *Alternatively* you can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill with values from database"!
 - Click on the "Save" button. 
 
 Note that when retrieving by association, data needs to exist either in database, or have been created in the same Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
@@ -38,20 +40,21 @@ There are two ways to Retrieve from former Teststep. The first one is quicker:
 
 The new way: 
 
-- Click on the "..." button on the Teststep that returns the object that you want to change, and choose "*+ Retrieve output*".
+- Click on the "..." button on the Teststep that returns the object that you want to retrieve, and choose "*+ Retrieve output*".
 
 The legacy way:
 
 1. Select the Test Case that you want to create a Teststep in.
 2. Click "*+ Teststep*" and Click "*+ Retrieve*" to add a Retrieve Object Teststep.
 3. Select an entity. You can search by name.
-4. Select the previous Teststep that returns the object that needs to be changed. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
+4. Select the previous Teststep that returns the object that needs to be retrieved. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
 5. Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in an error, even if only retrieving the first object.
 6. Select "Retrieve using output from former test step" in the Retrieve options.
 
 From there:
 - Select [Attribute Values](../attribute-value) that you want to filter on and enter a value.
 - Click '+Add' for each association that you want to filter on. Use the <i class="fa-empty-set"></i> "Set empty" button to indicate the association must be empty. 
+- *Alternatively* you can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill with values from database"!
 - Click on the "Save" button. 
 
 Note that when retrieving from a former Teststep in a previous Test Case, data needs to be saved to the database in that Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
