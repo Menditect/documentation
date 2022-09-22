@@ -53,7 +53,7 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 - Select the Teststep that should provide the value.
 
 ** Setting an object value **
-- Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](create) the value or [Retrieves](retrieve) the value from database.
+- Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](Teststep/create) the value or [Retrieves](Teststep/retrieve) the value from database.
 - Select or Save the Teststep that should provide the value.
 
 ### Fill a Microflow Parameter List
