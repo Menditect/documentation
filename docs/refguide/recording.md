@@ -2,13 +2,6 @@
 
 This document is based on MTA version 1.8.
 
-
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> In this version, this functionality is in Beta. </b></font>
-  </td>
-</table>
-
 ## Definition
 
 A Recording is meant to speedup test scripting and should be used as the starting point of a Test Case. A Recording is created by MTA and consists of one or more [Teststeps](teststep) in a single [Test Case](test-case). MTA bases these Teststeps on intercepted user actions that are executed on an [Application Environment](application-environment).
@@ -48,4 +41,4 @@ Learn more about creating Recordings in the Best Practice section.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 22 september 2022
