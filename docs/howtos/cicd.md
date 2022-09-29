@@ -47,7 +47,7 @@ Executes a new Ci/Cd testrun.
 
 If another revision is deployed to the environment than the one defined on the Test Configuration, and the environment is running on the Mendix Cloud, MTA will detect the new revision, start downloading the model changes, and apply the changes to the Test Configuration, before executing.
 
-<i class="fa fa-exclamation-triangle"></i> If the Ci/Cd pipeline results in an error, check the timeout setting. Most tools default to 300 seconds, but if another revision needs to be downloaded this may not be long enough.
+<i class="fa fa-exclamation-triangle"></i> If your Ci/Cd pipeline results in an error, check the timeout setting. Most tools default to 300 seconds, but if another revision needs to be downloaded this may not be long enough.
 <br/><br/><br/>
 
 
@@ -61,16 +61,16 @@ If another revision is deployed to the environment than the one defined on the T
 
 | Authorization | Basic |
 | ----------- | ----------- |
-| Username: | `{the CiCd username in MTA}` |
-| Password: | `{the CiCd password in MTA}`|
+| Username: | `[the CiCd username in MTA]` |
+| Password: | `[the CiCd password in MTA]`|
 
 **Input body**
 
 | Parameter |   |
 | ----------- | ----------- |
-| ProjectId | `{the Mendix project ID for the Mendix App you want to execute, which can be found under the Applications page in MTA}` |
-| EnvironmentName | `{the exact name of the application environment you want to test on}` |
-| EnvironmentType | `{either “Custom” or “MendixCloud”}` |
+| ProjectId | `[the Mendix project ID for the Mendix App you want to execute, which can be found under the Applications page in MTA]` |
+| EnvironmentName | `[the exact name of the application environment you want to test on]` |
+| EnvironmentType | `[either “Custom” or “MendixCloud”]` |
 
 *Example:* 
 
@@ -86,14 +86,14 @@ If another revision is deployed to the environment than the one defined on the T
 
 | Parameter |   |
 | ----------- | ----------- |
-| ExecutionId | `{an incremented integer representing an ID for the created CiCd testrun}` |
+| ExecutionId | `[an incremented integer representing an ID for the created CiCd testrun]` |
 
 *Example: {"ExecutionId":123}*
 
 
 ### GET testrunsresult
 
-Returns the result for a previously executed Ci/Cd testrun.
+Returns the result for a previously executed Ci/Cd testrun. After a CiCd execute, use this request to poll MTA to check if the testrun is finished, for instance every 10 seconds until the result is not empty. 
 
 **URL**
 
@@ -105,14 +105,14 @@ Returns the result for a previously executed Ci/Cd testrun.
 
 | Authorization | Basic |
 | ----------- | ----------- |
-| Username: | `{the CiCd username in MTA}` |
-| Password: | `{the CiCd password in MTA}`|
+| Username: | `[the CiCd username in MTA]` |
+| Password: | `[the CiCd password in MTA]`|
 
 **Input parameters**
 
 | Parameter |   |
 | ----------- | ----------- |
-| ExecutionId | `{the ID for a previously created CiCd testrun}` |
+| ExecutionId | `[the ID for a previously created CiCd testrun]` |
 
 *Example: https://mta-menditect-9fo2p/rest/cicdservice/v1/CiCd/testrunsresult?ExecutionId=123*
 
@@ -120,7 +120,7 @@ Returns the result for a previously executed Ci/Cd testrun.
 
 | Parameter |   |
 | ----------- | ----------- |
-| Result | `{either "Pass" or "Fail"}` |
+| Result | `[either {"Pass"}, {"Fail"} or {} if the test is still running]` |
 
 *Example: {"Result":"Pass"}*
 
