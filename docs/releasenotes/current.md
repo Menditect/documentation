@@ -1,39 +1,42 @@
 # Release notes
 
-## Release 1.7.0
+## Release 1.8.0
 
 #### Release date
 
-14 july 2022
+29 september 2022
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.15. For support levels on MTS/LTS and monthly releases, read the [SLA](../sla).
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.17. For support levels on MTS/LTS and monthly releases, read the [SLA](../sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
 
-<ul><i class="fas fa-fire"></i>  Bring MTA to your workplace! 
+<ul><i class="fas fa-fire"></i>  Design teststeps much quicker!
 <ul>
-<li>You can now buy an MTA "bring your own cloud" license. </li>
-<li>Keep your data safe on your own private or public cloud. </li>
-<li>Or, just install it on-premise. </li>
-<li>Contact <a href="mailto:sales@menditect.com">sales@menditect.com</a> for more information.</li>
+<li>Reuse definitions for change, retrieve and delete teststeps, based on existing teststeps </li>
+<li>Teststeps for associated objects are also automatically created </li>
+<li>Create teststeps to fill microflow parameters on the fly! </li>
 </ul>
 </ul>
-<ul><i class="fas fa-fire"></i>  Run a single Test Case!
+
+<ul><i class="fas fa-fire"></i>  Drag and drop teststeps! 
 <ul>
-<li>Execute a Unit Test with one click. </li>
-<li>No longer needed to isolate a Test Case. </li>
+<li>Use drag&drop to position teststeps or move them to another test case </li>
+<li>View and fix resulting constrution errors realtime </li>
 </ul>
 </ul>
-<ul><i class="fas fa-fire"></i>  Rollback transactions in a Test Case!
+
+<ul><i class="fas fa-fire"></i>  Use real data when designing teststeps!
 <ul>
-<li>All the data committed and deleted in both Object and Microflow teststeps is undone. </li>
-<li>No need to delete data created in your Unit Test anymore. </li>
-<li>Dependencies with other Test Cases are automatically checked. </li>
+<li>Build create or retrieve teststeps based on actual objects in the database </li>
+<li>The object's attributes and associations are used in the teststep </li>
+<li>Design-time select which database to use </li>
+<li>Feeling lucky? Use the single-click microflow test button and MTA will randomly insert values for all attributes! </li>
 </ul>
 </ul>
+
 <br/>
 <i class="fas fa-exclamation-triangle"></i> Make sure to <a href="../howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
 <br/>
@@ -41,130 +44,180 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## New functionality 
 
-| ID  |  MTA-593 |
+
+| ID  |  MTA-824 |
 | ----------- | ----------- |
-| __New functionality__ | It is now possible to buy an MTA "bring your own cloud" license and implement MTA on your own environment. Additionally, MTA will now also work if the database is implemented on Microsoft SQL Server. |
+| __New functionality__ | It is now possible to fill attributes with user-selected values from the database on a Create or Retrieve object teststep. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-598 |
+
+| ID  |  MTA-850 |
 | ----------- | ----------- |
-| __New functionality__ | It is now possible to rollback all database transactions performed in a single Test Case. <br/><br/>This includes all commits that have been done in microflows. |
+| __New functionality__ | It is now possible to randomly fill attributes with values from the database on a Create or Retrieve object teststep. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-707 |
+
+| ID  |  MTA-811 |
 | ----------- | ----------- |
-| __New functionality__ | It is now possible to execute a single Test Case as long as it does not use any data from previous Test Cases. |
+| __New functionality__ | It is now possible to create a Retrieve, Change or Delete teststep, using the output of an existing teststep, using the menu under the "..." button on that teststep. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  N/A |
+
+| ID  |  MTA-812 |
 | ----------- | ----------- |
-| __New functionality__ | MTA now contains context sensitive help buttons that guide you directly to the related page in the Reference Guide. |
+| __New functionality__ | If an MTA user logs in without having an API key or Personal Access Token (PAT) filled in, a popup window will show allowing the user to enter this information. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  N/A |
+
+| ID  |  MTA-856 |
 | ----------- | ----------- |
-| __New functionality__ | Several improvements were made in the Recorder functionality. |
+| __New functionality__ |  When adding a new Create Object teststep, all attributes are now unselected by default (this was already the case for Change Object teststeps). |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  N/A |
+
+| ID  |  MTA-366 |
 | ----------- | ----------- |
-| __New functionality__ | Several improvements were made in the user interface. <br/><br/>What are your top 10 user interface improvements? <a href="mailto:support@menditect.com">Let us know!</a>|
+| __New functionality__ | It is now possible to use drag and drop to reorder teststeps in a test case, in a separate Edit page. The option for deleting and renaming teststeps has also moved to this page. Resulting construction errors are shown in realtime, but the operation can now be made undone to prevent these errors from happening. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-531 |
+
+| ID  |  MTA-779 |
 | ----------- | ----------- |
-| __New functionality__ | It is now possible to select a specialization of the entity when selecting an object for a microflow parameter. |
+| __New functionality__ |  When selecting an entity from the domain model while adding a Create/Change/Retrieve/Delete object teststep, the name of the teststep is now auto generated and the popup window to enter the name is skipped. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-600 |
+
+| ID  |  MTA-780 |
 | ----------- | ----------- |
-| __New functionality__ | It is now possible to select 'empty' for an association in an object teststep. |
+| __New functionality__ |  When selecting a microflow while adding a Microflow teststep, the name of the teststep is now auto generated and the popup window to enter the name is skipped. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-665 |
+
+| ID  |  MTA-617 |
 | ----------- | ----------- |
-| __New functionality__ | When executing a Test Configuration, only the Test Applications that are actually used in Test Cases in the Test Configuration, are checked for availablilty. |
+| __New functionality__ | It is now possible to test a Mendix project where Git is selected for the source control. The result of this is that Application Branches are no longer part of MTA. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-655 |
+
+| ID  |  MTA-792 |
 | ----------- | ----------- |
-| __New functionality__ | When selecting a Date value and choosing to either enter a date or calculate the date based on the current date, the first option is now called "Specified date" instead of "Fixed date". |
+| __New functionality__ | When executing a Ci/Cd Test Run using the MTA Ci/Cd API, and MTA detects that the application commit (revision) number of the Test Configuration does not match that of the Application Environment, MTA will download the new application commit asynchronously, so that the API consumer will get a result immediately and not have to wait or handle a time-out. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-549 |
+
+| ID  |  MTA-793 |
 | ----------- | ----------- |
-| __New functionality__ | Running into a validation error upon execution of a Test Case no longer leads to the Test Case Run result being Failed. <br/><br/>We are also working on being able to assert on a validation error. This will be implemented in a future release!  |
+| __New functionality__ | If a Ci/Cd API call yields an error message, this error message is now formatted as a JSON string. |
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-651 |
+
+| ID  |  MTA-827 |
 | ----------- | ----------- |
-| __New functionality__ | If an attribute or assert is used in datavariation it is no longer possible to change the value from the Test Suite page, but only in the datavariation page. |
+| __New functionality__ | Creating a teststep is now done from the menu under the + Teststep button instead of choosing the teststep type in a popup window. |
 | __Release actions__ | None. | 
 
 <br/>
+
+
+| ID  |  MTA-843 |
+| ----------- | ----------- |
+| __New functionality__ | Moving a teststep up and down is now done from the menu under the "..." button on the teststep. Note that moving the top teststep Up, will make it move all the way down, and moving the bottom teststep Down, will make it move all the way up! |
+| __Release actions__ | None. | 
+
+<br/>
+
+
+| ID  |  MTA-847 |
+| ----------- | ----------- |
+| __New functionality__ | Moving a teststep to another Test Case can now be done from the menu under the "..." button on the teststep. |
+| __Release actions__ | None. | 
+
+<br/>
+
+
 
 
 
 ## Bug fixes
 
-| ID  |  MTA-731 |
+| ID  |  MTA-762 |
 | ----------- | ----------- |
-| __Problem__ | When entering the Mendix username and API key on the My Account page sometimes the username was not saved correctly, due to Chromium browsers autofilling the field. This resulted in the MTA user not being able to download any Mendix models but also not being alerted about the fact that the username was not saved. |
-| __Solution__ | Alert the user when the username is not correctly filled in upon entering Mendix username and API key. | 
-| __Release actions__ | Some MTA nodes currently have Mendix users where the username is unknown. A migration script will be executed on these MTA nodes where the username will be set to "user unknown". Please check the My Account page when not being able to download any Mendix models in MTA. | 
-
-<br/>
-
-| ID  |  MTA-726 |
-| ----------- | ----------- |
-| __Problem__ | When enabling "Trim value" for assert on a String attribute the result would always be Passed if the attribute is of type "String unlimited".  |
-| __Solution__ | "Trim value" for assert on a String attribute now works as expected. | 
+| __Problem__ | The max range of a saved date time assert is not saved correctly leading to errors. |
+| __Solution__ | Saving an assert on a date time attribute now works as expected. | 
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-715 |
+
+| ID  |  MTA-781 |
 | ----------- | ----------- |
-| __Problem__ | When using a list of objects that is returned from a microflow teststep, an error would occur if the microflow returned 'empty' (instead of a list with 0 objects).  |
-| __Solution__ | Using a list returned from a microflow no longer results in an error. | 
+| __Problem__ | Only the first 100 attributes of an object were shown in a Create/Change/Retrieve object teststep. |
+| __Solution__ | All attributes are now shown in a Create/Change/Retrieve object teststep. | 
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-661 |
+
+| ID  |  MTA-785 |
 | ----------- | ----------- |
-| __Problem__ | Test configurations not-executed were not correctly displayed on the Dashboard.  |
-| __Solution__ | The Dashboard now displays Test Configurations executed and not-executed correctly. | 
+| __Problem__ | When recording a list view with a reference selector, MTA is not able to determine which entity to retrieve for the input change object. |
+| __Solution__ | Recording a list view with a reference selector now works as expected. | 
 | __Release actions__ | None. | 
 
 <br/>
 
-| ID  |  MTA-662 |
+
+| ID  |  MTA-809 |
 | ----------- | ----------- |
-| __Problem__ | In some cases it was not possible to delete an Application, even if all associated Test Configurations and Test Runs were deleted.  |
-| __Solution__ | Applications can now be deleted when all associated data is deleted. | 
+| __Problem__ | The Copy Test Suite popup only shows the first 10 target Test Configurations. |
+| __Solution__ | All target Test Configurations are now shown in the Copy Test Suite popup. | 
 | __Release actions__ | None. | 
 
 <br/>
+
+
+| ID  |  MTA-810 |
+| ----------- | ----------- |
+| __Problem__ | When trying to update a revision but the MTA user associated Mendix user does not have access to the Mendix App, the user will get the message that their credentials are not valid. |
+| __Solution__ | When trying to update a revision but the MTA user associated Mendix user does not have access to the Mendix App, the user will get an appropriate error message. | 
+| __Release actions__ | None. | 
+
+<br/>
+
+
+| ID  |  MTA-631 |
+| ----------- | ----------- |
+| __Problem__ | Chromium browsers consistenly ignore the Do Not Autocomplete setting in Mendix, leading to MTA usernames and passwords showing in the respective associated Mendix username and API key fields. |
+| __Solution__ | When entering the associated Mendix username and API key, an extra action needs to be performed to show these fields, preventing Chromium browsers from autofilling them with incorrect values. | 
+| __Release actions__ | None. | 
+
+<br/>
+
+
+
+
+
+
+
