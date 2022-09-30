@@ -19,14 +19,7 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 
 ## Actions on Application branch
 
-### View Application branches for an Application
-- Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an [Application](application).
-- Navigate to the "Application revisions" tab to view the Application Branches.
-
-### Delete an Application branch for an Application
-- Navigate to the "Application revisions" tab to view the Application Branches.
-- Click <i class="fas fa-trash-alt"></i> next to the Application Branch name to delete the information about it from MTA.
+In MTA version 1.8, there are no actions on Application Branches.
 
 ## Related topics
 - [Application](application)
