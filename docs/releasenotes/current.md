@@ -156,6 +156,13 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <br/>
 
+| ID  |  MTA-878 |
+| ----------- | ----------- |
+| __New functionality__ | When a construction error is shown due to a microflow being deleted, the name of the microflow is now included in the error. |
+| __Release actions__ | None. | 
+
+<br/>
+
 
 
 
