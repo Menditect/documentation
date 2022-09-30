@@ -4,7 +4,7 @@ This document is based on MTA version 1.8.
 
 ## Definition
 
-An Application Revision (formerly known as Application Revision) is a development version of a Mendix application. A revision belongs to an [Application Branch](application-branch). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
+An Application Revision is a development version of a Mendix application. A revision belongs to an [Application Branch](application-branch). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
 
 See [Mendix documentation](https://docs.mendix.com) for more information about revisions.
 
