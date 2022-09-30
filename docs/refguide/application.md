@@ -25,7 +25,7 @@ To learn more about configuring an MTA user, read the How To section.
 ## Related topics
 - [Application Branch](application-branch)
 - [Application Environment](application-environment)
-- [Application Commit](application-revision)
+- [Application Revision](application-revision)
 - [Test Application](test-application)
 
 ## Feedback?

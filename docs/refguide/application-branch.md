@@ -15,23 +15,23 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 
 ## Business rules
 
-- The Application Branch information cannot be deleted from MTA if [Application Commit](application-revision) information still exists in the branch.
+- The Application Branch information cannot be deleted from MTA if [Application Revision](application-revision) information still exists in the branch.
 
 ## Actions on Application branch
 
 ### View Application branches for an Application
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application).
-- Navigate to the "Application branches & commits" tab to view the Application Branches.
+- Navigate to the "Application revisions" tab to view the Application Branches.
 
 ### Delete an Application branch for an Application
-- Navigate to the "Application branches & commits" tab to view the Application Branches.
+- Navigate to the "Application revisions" tab to view the Application Branches.
 - Click <i class="fas fa-trash-alt"></i> next to the Application Branch name to delete the information about it from MTA.
 
 ## Related topics
 - [Application](application)
 - [Application Environment](application-environment)
-- [Application Commit](application-revision)
+- [Application Revision](application-revision)
 - [Test Application](test-application)
 
 ## Feedback?
