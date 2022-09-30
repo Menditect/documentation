@@ -47,7 +47,6 @@ If a Test Application is associated, the <i class="fa fa-eye"></i> icon is shown
 
 ## Related topics
 - [Application](application)
-- [Application Branch](application-branch)
 - [Application Revision](application-revision)
 - [Test Application](test-application)
 

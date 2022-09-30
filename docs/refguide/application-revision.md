@@ -4,7 +4,7 @@ This document is based on MTA version 1.8.
 
 ## Definition
 
-An Application Revision is a development version of a Mendix application. A revision belongs to an [Application Branch](application-branch). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
+An Application Revision is a development version of a Mendix application. Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
 
 See [Mendix documentation](https://docs.mendix.com) for more information about revisions.
 
@@ -31,7 +31,6 @@ See [Mendix documentation](https://docs.mendix.com) for more information about r
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application).
 - Navigate to the "Application revisions" tab.
-- Select an [Application Branch](application-branch).
 - The Application revisions are shown on the right pane.
 
 ### Add an Application revision
@@ -52,12 +51,11 @@ Note that this can take some time depending on the size of the Mendix project, t
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application, MTA will show detailed Application information.
 - Navigate to the "Application revisions" tab.
-- Select an Application Branch, MTA will show all Application revisions on the right pane.
+- MTA will show all Application revisions on the right pane.
 - Click on <i class="fas fa-trash-alt"></i> to delete the Application revision. Note this is only possible when the Application revision is no longer in use by a Test Configuration. Application revisions are only removed from MTA; not from the Mendix repository.
 
 ## Related topics
 - [Application](application)
-- [Application Branch](application-branch)
 - [Application Environment](application-environment)
 - [Test Application](test-application)
 
