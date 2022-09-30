@@ -166,7 +166,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 
 
-
 ## Bug fixes
 
 | ID  |  MTA-762 |
