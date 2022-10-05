@@ -1,0 +1,69 @@
+name: Notify Slack Deployed
+
+on:
+  workflow_call:
+    secrets:
+      SLACK_BOT_TOKEN:
+        required: true
+      SLACK_CHANNEL_ID:
+        required: true
+
+jobs:
+  notify-slack-deployed:
+    runs-on: ubuntu-latest
+    steps:
+      - id: get-commit-message-step
+        name: Get Commit Message
+        run: |
+          COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          echo "::set-output name=commit-message::$COMMIT_MESSAGE"
+      - name: Slack Deployed Notification
+        uses: slackapi/slack-github-action@v1.22.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          channel-id: ${{ secrets.SLACK_CHANNEL_ID }}
+          payload: |
+            {
+              "attachments": [
+                {
+                  "color": "#2EB67D",
+                  "blocks": [
+                    {
+                      "type": "header",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "Successfully deployed MTA documentation :tada:",
+                        "emoji": true
+                      }
+                    },
+                    {
+                      "type": "section",
+                      "fields": [
+                        {
+                          "type": "mrkdwn",
+                          "text": "*Repository*\n<${{ github.server_url }}/${{ github.repository }} | ${{ github.repository }}>"
+                        },
+                        {
+                          "type": "mrkdwn",
+                          "text": "*Commit*\n<${{ github.event.head_commit.url }} | ${{ steps.get-commit-message-step.outputs.commit-message }}>"
+                        },
+                        {
+                          "type": "mrkdwn",
+                          "text": "*URL*\n<documentation.menditect.com>"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "context",
+                      "elements": [
+                        {
+                          "type": "mrkdwn",
+                          "text": "*Actor* _${{ github.actor }}_ has triggered this run"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
