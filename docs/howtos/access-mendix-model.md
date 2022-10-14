@@ -12,6 +12,7 @@ The following popup will appear:
 Now fill in the fields under 'Mendix credentials'
 - The Mendix account username;
 - An API key created for this Mendix profile. Go to [API keys](https://sprintr.home.mendix.com/link/profilesettings/apikeys) (links to Mendix site) to create an API key for your Mendix profile.
+- A Personal access token (PAT) for this Mendix profile. Go to https://warden.mendix.com to add it and select only this scope: mx:modelrepository:repo:read.
 - Choose "Save".
 
 To test if this step was successful, try to add a new Test Application to a Test Configuration. The Mendix projects associated with the given Mendix user should be visible.
