@@ -46,7 +46,7 @@ const config = {
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
         indexBlog: false,
-        indexDocSidebarParentCategories: 0,
+        indexDocSidebarParentCategories: 3,
         titleBoost: 10,
       },
     ],
