@@ -45,12 +45,11 @@ const config = {
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
+        indexDocs: false,
         indexBlog: false,
-        indexDocSidebarParentCategories: 3,
         lunr: {
             titleBoost: 9,
             contentBoost: 1,
-            parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
         },
       },
     ],
