@@ -48,7 +48,7 @@ const config = {
         indexBlog: false,
         indexDocSidebarParentCategories: 3,
         lunr: {
-            titleBoost: 10,
+            titleBoost: 9,
             contentBoost: 1,
             parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
         },
