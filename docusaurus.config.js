@@ -50,7 +50,6 @@ const config = {
         lunr: {
             titleBoost: 10,
             contentBoost: 1,
-            tagsBoost: 3,
             parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
         },
       },
