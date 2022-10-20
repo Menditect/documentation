@@ -46,11 +46,6 @@ const config = {
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
         indexBlog: false,
-        indexPages: true,
-        lunr: {
-            titleBoost: 9,
-            contentBoost: 0,
-        },
       },
     ],
   ],
