@@ -1,6 +1,6 @@
 # Application Branch
 
-This document is based on MTA version 1.6.
+
 
 ## Definition
 

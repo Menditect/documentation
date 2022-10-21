@@ -1,4 +1,4 @@
-# Release 1.6.2
+# Release 1.6.0
 
 #### Release date
 

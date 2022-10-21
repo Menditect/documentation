@@ -1,6 +1,6 @@
 # Test Configuration 
 
-This document is based on MTA version 1.7.
+
 
 ## Definition
 

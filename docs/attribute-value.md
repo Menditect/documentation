@@ -1,6 +1,6 @@
 # Attribute Value
 
-This document is based on MTA version 1.8.
+
 
 ## Definition
 
