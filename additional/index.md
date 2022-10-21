@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Documentation
 
 This is the home page for the Menditect Documentation site.

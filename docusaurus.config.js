@@ -89,7 +89,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Reference Guide',
+            label: 'Documentation',
           },
           {
             to: 'additional',
@@ -97,9 +97,21 @@ const config = {
             position: 'left',
             items: [
               {
+                to: 'additional/howtos/access-environment',
+                label: 'How to?'
+              },
+              {
+                to: 'additional/knownissues/java-action-not-implemented',
+                label: 'Known Issues',
+              },
+              {
+                to: 'additional/explanatory/direct-model-testing',
+                label: 'Explanatory',
+              },
+              {
                 to: 'additional/bestpractice/processtest',
                 label: 'Best Practice',
-              }
+              },
             ],
           },
           {
