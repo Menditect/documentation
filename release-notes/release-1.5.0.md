@@ -1,12 +1,4 @@
-# Release 1.5
-
-<table bgcolor="orange">
-  <td width="25%">
-    <font color="black"><b> These release notes are from a version that is no longer used. </b></font>
-  </td>
-</table>
-
-## Release 1.5
+# Release 1.5.0
 
 #### Release date
 

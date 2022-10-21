@@ -6,6 +6,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 // @ts-ignore
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const sortReleaseNotesSideBar = require('./release-notes/sidebar');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Menditect Documentation',
@@ -56,6 +58,19 @@ const config = {
         routeBasePath: 'additional',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
+    ],
+    [
+      require.resolve("@docusaurus/plugin-content-docs"),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'release-notes',
+        path: 'release-notes',
+        routeBasePath: 'release-notes',
+        async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return sortReleaseNotesSideBar(sidebarItems);
+        }
+      }),
     ]
   ],
 
@@ -90,6 +105,11 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Documentation',
+          },
+          {
+            to: 'release-notes',
+            label: 'Release notes',
+            position: 'left'
           },
           {
             to: 'additional',

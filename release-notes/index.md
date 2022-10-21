@@ -1,6 +1,4 @@
-# Release notes
-
-## Release 1.8.0
+# Release 1.8.0
 
 #### Release date
 
