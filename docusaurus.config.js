@@ -71,7 +71,17 @@ const config = {
           return sortReleaseNotesSideBar(sidebarItems);
         }
       }),
-    ]
+    ],
+    [
+      require.resolve("@docusaurus/plugin-content-docs"),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'terms-of-use',
+        path: 'terms-of-use',
+        routeBasePath: 'terms-of-use',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
   ],
 
   themes: [
@@ -112,7 +122,6 @@ const config = {
             position: 'left'
           },
           {
-            to: 'additional/',
             label: 'Additional',
             position: 'left',
             items: [
@@ -137,6 +146,24 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'right',
+          },
+          {
+            label: 'Terms of Use',
+            position: 'right',
+            items: [
+              {
+                to: 'terms-of-use/eula',
+                label: 'End User License Agreement',
+              },
+              {
+                to: 'terms-of-use/pp',
+                label: 'Privacy Policy',
+              },
+              {
+                to: 'terms-of-use/sla',
+                label: 'Service Level Agreement',
+              },
+            ],
           },
           {
             href: 'https://github.com/menditect/documentation',
