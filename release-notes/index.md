@@ -6,7 +6,7 @@
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.17. For support levels on MTS/LTS and monthly releases, read the [SLA](../sla).
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.17. For support levels on MTS/LTS and monthly releases, read the [SLA](../additional/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
@@ -36,7 +36,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 </ul>
 
 <br/>
-<i class="fas fa-exclamation-triangle"></i> Make sure to <a href="../howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
+<i class="fas fa-exclamation-triangle"></i> Make sure to <a href="../additional/howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
 <br/>
 
 

@@ -14,18 +14,14 @@ function sortReleaseNotesSideBar(items) {
         return item;
     });
 
-    console.log(result);
     const index = [];
     const rest = [];
     items.forEach(item => (item.id === 'index' ? index : rest).push(item));
-    console.log(index, rest)
     const sortedRest = sortVersions(rest);
-    console.log(sortedRest)
     const newResult = [
         ...index,
         ...sortedRest,
     ]
-    console.log(newResult);
 
     return newResult;
 }

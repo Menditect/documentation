@@ -4,7 +4,7 @@
 
 This document describes how to complete the created teststeps after recording.
 Other documents about this topic are:
-- [Recorder](../refguide/recording) in the reference guide.
+- [Recorder](../../recording) in the reference guide.
 - [Record actions](../bestpractice/record-actions) in the Best practice section.
 
 ## Fix warnings on retrieve steps
