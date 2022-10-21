@@ -1,11 +1,28 @@
 # Documentation
 
-The documentation can be viewed at: [documentation](https://menditect.github.io/documentation).
+The documentation can be viewed at [documentation](https://menditect.github.io/documentation).
+
+## How to create a new release
+1. Create a copy of the content in the `docs` folder by using the command
+```powershell
+yarn run docusaurus docs:version <CURRENT_VERSION>
+```
+2. Change the current version to the new version in `docusaurus.config.js`
+```javascript
+versions: {
+    current: {
+        label: <NEW_VERSION>,
+        path: '/',
+    }
+}
+```
+
+## How to use
 
 ### Installation
 
 ```
-$ yarn
+$ yarn install
 ```
 
 ### Local Development
@@ -23,11 +40,3 @@ $ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
