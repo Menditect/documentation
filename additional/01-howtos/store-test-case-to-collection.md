@@ -6,7 +6,7 @@ This document describes how to move and store a single Test Case into a 'contain
 
 First the Test Suite is moved into the collection, then the Test Case is moved into an existing Test Suite.
 
-![Copy Test Case to collection Test Configuration](unit-copy.png)
+![Copy Test Case to collection Test Configuration](images/unit-copy.png)
 
 More in detail:
 

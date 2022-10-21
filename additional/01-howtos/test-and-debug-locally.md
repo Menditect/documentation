@@ -21,7 +21,7 @@ CloudFlared which which redirected the request to your local machine. On your lo
 MTA Plugin is listening to incoming messages and will execute actions on your local Mendix
 application.
 
-![Tunnel architecture](tunnel.png)
+![Tunnel architecture](images/tunnel.png)
 
 In order to execute test locally, the following preparations need to be done:
 
@@ -42,7 +42,7 @@ In order to execute test locally, the following preparations need to be done:
 - Make sure that a Plugin User exists with the user role MTAPluginUser.
 - Navigate to project settings to check the configured runtime port where the CloudFlared tunnel should refer to.
 
-![Port number](port.png)
+![Port number](images/port.png)
 
 ## Configure CloudFlared
 

@@ -11,7 +11,7 @@ If you need to change this information later, follow the steps below.
 
 The following popup will appear:
 
-![Mendix credentials](mx-credentials-new.png)
+![Mendix credentials](images/mx-credentials-new.png)
 
 Now fill in the fields under 'Mendix credentials'
 - The Mendix account username;

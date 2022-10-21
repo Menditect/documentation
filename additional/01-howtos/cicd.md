@@ -9,7 +9,7 @@ In order to prepare MTA for integration with your Ci/Cd pipeline you need to cre
 Navigate to MTA management and then to MTA Users. Create a New local MTA user.
 Then, fill in the form like this:
 
-![Create Ci Cd user](cicd-create-account.png)
+![Create Ci Cd user](images/cicd-create-account.png)
 
 This is the username and password you will connect with to the API. 
 

@@ -6,11 +6,11 @@ If a Test Configuration was executed, there are two reasons the Test Run can fai
 
 *An example of a functional error: Value was different from the Assert value *
 
-![A functional error](func-error-example.png)
+![A functional error](images/func-error-example.png)
 
 *An example of a technical error: Execution user does not have access to a certain resource*
 
-![A technical error](tech-error-example.png)
+![A technical error](images/tech-error-example.png)
 
 This document covers the second reason; for Asserts, please read the reference guide.
 
@@ -18,7 +18,7 @@ The icons on a Teststep showing the different possible outcomes are as follows:
 
 | A successful test | Functionally failed | Technically failed |
 | --------- | --------- | --------- | 
-| ![A successful test](success.png)  | ![Functionally failed](func-failed.png)  | ![Technically failed](tech-failed.png)   |
+| ![A successful test](images/success.png)  | ![Functionally failed](images/func-failed.png)  | ![Technically failed](images/tech-failed.png)   |
 
 An important difference between a functional error and a technical error during a Test Run, is that when MTA encounters a functional error, it will continue the Test Run; when MTA encounters a technical error, it will abort the Test Run.
 

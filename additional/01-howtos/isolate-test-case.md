@@ -7,7 +7,7 @@ This document describes how to isolate or extract a single Test Case.
 <i class="fa fa-exclamation-triangle"></i>  From MTA version 1.7 if you want to Run a single Test Case it is no longer necessary to isolate it.<br/><br/>
 To isolate a single test case, copy it into an empty Test Suite, in another Test Configuration, containing only that Test Suite.
 
-![Run a single Test Case](process-copy.png)
+![Run a single Test Case](images/process-copy.png)
 
 More in detail:
 

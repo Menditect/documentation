@@ -11,7 +11,7 @@ An example to illustrate:
 
 Given these parameters there are already 10 test variations to consider:
 
-![Scenarios](scenarios.png)
+![Scenarios](images/scenarios.png)
 
 To achieve a 100% test coverage on this microflow at least 10 tests are needed, and even this is only considering data; without defining any expected error messages that should or should not occur. 
 

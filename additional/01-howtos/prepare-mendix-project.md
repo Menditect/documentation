@@ -4,7 +4,7 @@ To prepare the Mendix project for MTA, it is advisable to check for microflows t
 
 To find all microflows that have a “show page” activity, open Mendix Studio Pro, go to Edit→ Find Advanced and select the following options:  
 
-![Find microflows](find-microflows.png)
+![Find microflows](images/find-microflows.png)
 
 Choose an optional layout that is used in the project and Mendix will give you a list of “find results”. Filter the find results by only showing results of the type “microflows”. Check all the microflows of the “find results” and add return types for microflows you want to include in testing. Repeat this for all page layouts in use. This process will save you a lot of time if completed before configuring MTA.
 

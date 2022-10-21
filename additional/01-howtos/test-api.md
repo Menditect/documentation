@@ -11,7 +11,7 @@ To test app **(A)**, a microflow that performs the REST call can be used. This m
 4. executing the submicroflow containing any custom logic;
 5. optionally any output parameters to be used in following test steps in MTA.
 
-![Microflow with REST call](microflow-with-rest-call.png)
+![Microflow with REST call](images/microflow-with-rest-call.png)
 
 Alternatively, only the submicroflow containing the logic could be used for unit testing. This means however the JSON string must be manually entered in MTA, using a Create Object test step.
 
@@ -25,11 +25,11 @@ a retrieve object, with the output of test step 1, containing an assert (either 
 To test app **(B)**, the microflow is executed that is part of the REST operation. 
 To find this microflow, open the Published REST service in Mendix Studio Pro en select Show for that REST operation:
 
-![REST call](rest-call-details.png)
+![REST call](images/rest-call-details.png)
 
 This microflow will contain the same input parameter data as the microflow executing the REST call for app **(A)**, but the parameters are typed. For example:
 
-![Microflow parameters](microflow-parameters.png)
+![Microflow parameters](images/microflow-parameters.png)
 
 The output of this microflow is an httpresponse.
 
