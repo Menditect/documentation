@@ -112,7 +112,7 @@ const config = {
             position: 'left'
           },
           {
-            to: 'additional',
+            to: 'additional/',
             label: 'Additional',
             position: 'left',
             items: [
@@ -121,16 +121,16 @@ const config = {
                 label: 'How to?'
               },
               {
-                to: 'additional/knownissues/java-action-not-implemented',
-                label: 'Known Issues',
-              },
-              {
-                to: 'additional/explanatory/direct-model-testing',
-                label: 'Explanatory',
-              },
-              {
                 to: 'additional/bestpractice/processtest',
                 label: 'Best Practice',
+              },
+              {
+                to: 'additional/blogs/direct-model-testing',
+                label: 'Blogs',
+              },
+              {
+                to: 'additional/knownissues/java-action-not-implemented',
+                label: 'Known Issues',
               },
             ],
           },
