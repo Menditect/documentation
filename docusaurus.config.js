@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').Config} */
+// /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Menditect Documentation',
   tagline: 'Go test it!',
@@ -27,11 +27,7 @@ const config = {
       ({
         docs: {
           routeBasePath: '/',
-       //   exclude: [ 'working' ],                  //exclude directories that are WORK IN PROGRESS here
           sidebarPath: require.resolve('./sidebars.js'),
-          // routeBasePath: '/',
-          // Please change this to your repo.
-          // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: false,
         theme: {
@@ -41,12 +37,17 @@ const config = {
     ],
   ],
 
-  plugins: [
+  themes: [
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
         indexBlog: false,
-      },
+        docsRouteBasePath: '/',
+        explicitSearchResultPath: true,
+      }),
     ],
   ],
 
@@ -71,16 +72,8 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          // {
-          //   type: 'docsVersionDropdown',
-          // },
         ],
       },
-      //  footer: {
-      //   style: 'light',
-      //   links: [],
-      //    copyright: `Copyright © ${new Date().getFullYear()} Menditect`,
-      //  },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
