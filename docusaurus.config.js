@@ -50,6 +50,14 @@ const config = {
 
   plugins: [
     [
+      require.resolve('./plugins/page-linker'),
+      ({
+        links: [
+          { id: 'test', content: '@site/versioned_docs/version-1.5.0/intro.md' }
+        ]
+      })
+    ],
+    [
       require.resolve("@docusaurus/plugin-content-docs"),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
