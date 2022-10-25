@@ -51,9 +51,14 @@ const config = {
   plugins: [
     [
       require.resolve('./plugins/page-linker'),
+      /** @type {import('./plugins/page-linker').PageLinkerOptions} */
       ({
-        links: [
-          { id: 'test', content: '@site/versioned_docs/version-1.5.0/intro.md' }
+        nonVersionedLinks: [
+          { id: 'test', content: '@site/additional/01-howtos/import-plugin.md' }
+        ],
+        versionedLinks: [
+          { id: 'application-revision', version: '1.7.0', content: 'application-revision.md' },
+          { id: 'application-environment', version: '1.7.0', content: 'application-environment.md' }
         ]
       })
     ],
