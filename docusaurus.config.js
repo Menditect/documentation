@@ -37,8 +37,8 @@ const config = {
             current: {
               label: '1.8.0',
               path: '/',
-            }
-          }
+            },
+          },
         },
         blog: false,
         theme: {
@@ -53,17 +53,15 @@ const config = {
       require.resolve('./plugins/page-linker'),
       /** @type {import('./plugins/page-linker').PageLinkerOptions} */
       ({
-        nonVersionedLinks: [
-          { id: 'test', content: '@site/additional/01-howtos/import-plugin.md' }
-        ],
+        nonVersionedLinks: [{ id: 'test', content: '@site/additional/01-howtos/import-plugin.md' }],
         versionedLinks: [
-          { id: 'application-revision', version: '1.7.0', content: 'application-revision.md' },
-          { id: 'application-environment', version: '1.7.0', content: 'application-environment.md' }
-        ]
-      })
+          { id: 'application-revision', versions: ['1.7.0', '1.8.0'], content: 'application-revision.md' },
+          { id: 'application-environment', versions: 'ALL', content: 'application-environment.md' },
+        ],
+      }),
     ],
     [
-      require.resolve("@docusaurus/plugin-content-docs"),
+      require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'additional',
@@ -73,20 +71,20 @@ const config = {
       }),
     ],
     [
-      require.resolve("@docusaurus/plugin-content-docs"),
+      require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'release-notes',
         path: 'release-notes',
         routeBasePath: 'release-notes',
-        async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
           const sidebarItems = await defaultSidebarItemsGenerator(args);
           return sortReleaseNotesSideBar(sidebarItems);
-        }
+        },
       }),
     ],
     [
-      require.resolve("@docusaurus/plugin-content-docs"),
+      require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'terms-of-use',
@@ -100,7 +98,7 @@ const config = {
   themes: [
     [
       // @ts-ignore
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       // @ts-ignore
       ({
@@ -132,7 +130,7 @@ const config = {
           {
             to: 'release-notes',
             label: 'Release notes',
-            position: 'left'
+            position: 'left',
           },
           {
             label: 'Additional',
@@ -140,7 +138,7 @@ const config = {
             items: [
               {
                 to: 'additional/howtos/access-environment',
-                label: 'How to?'
+                label: 'How to?',
               },
               {
                 to: 'additional/bestpractice/processtest',
