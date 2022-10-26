@@ -1,28 +1,4 @@
-import Joi from 'joi';
-import { PageLinkerOptions } from './options';
-
-/* JOI SCHEMA - OPTIONS */
-const nonVersionedLinkOptionsSchema = Joi.object({
-  id: Joi.string(),
-  // Content should end with a .md file extension
-  content: Joi.string().pattern(/(.*?)\.(md)$/),
-});
-
-const versionedLinkOptionsSchema = Joi.object({
-  id: Joi.string(),
-  // Content should end with a .md file extension
-  content: Joi.string().pattern(/(.*?)\.(md)$/),
-  versions: Joi.alternatives().try(
-    Joi.string().valid('ALL'),
-    // Should be a valid version, e.g.: 1.8.0
-    Joi.array().items(Joi.string().pattern(/^([1-9]\d*|0)(\.(([1-9]\d*)|0)){2}$/)),
-  ),
-});
-
-const pageLinkerOptionsSchema = Joi.object({
-  versionedLinks: Joi.array().items(versionedLinkOptionsSchema),
-  nonVersionedLinks: Joi.array().items(nonVersionedLinkOptionsSchema),
-});
+import { PageLinkerOptions, pageLinkerOptionsSchema } from './options';
 
 /* VALIDATE OPTIONS */
 function hasDuplicates<T>(input: Array<T>) {
