@@ -53,10 +53,20 @@ const config = {
       require.resolve('./plugins/page-linker'),
       /** @type {import('./plugins/page-linker/options').PageLinkerOptions} */
       ({
-        nonVersionedLinks: [{ id: 'test', content: '@site/additional/01-howtos/import-plugin.md' }],
+        nonVersionedLinks: [
+          { id: 'record-user-actions', content: '@site/additional/01-howtos/record-user-actions.md' },
+        ],
         versionedLinks: [
-          { id: 'application-revision', versions: ['1.7.0', '1.8.0'], content: 'application-revision.md' },
-          { id: 'application-environment', versions: 'ALL', content: 'application-environment.md' },
+          { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
+          { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
+          { id: 'test-suite', content: 'test-suite.md', versions: 'ALL' },
+          { id: 'test-run', content: 'test-run.md', versions: 'ALL' },
+          { id: 'assert-attribute-value', content: 'assert-attribute-value.md', versions: 'ALL' },
+          { id: 'assert-object-count', content: 'assert-object-count.md', versions: 'ALL' },
+          { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
+          { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
+          { id: 'test-instruction', content: 'test-case.md', versions: 'ALL' },
+          { id: 'teststep', content: 'Teststep/index.md', versions: 'ALL' },
         ],
       }),
     ],
