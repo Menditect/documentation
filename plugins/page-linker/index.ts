@@ -47,7 +47,7 @@ function getPathForVersion(
   version: Version,
   content: Content,
   id: Id,
-) {
+): Record<Version, Record<Id, Path>> {
   const path = mappedContentToPath.get(`${mappedVersionToContent[version]}/${content}`);
 
   return {
@@ -64,7 +64,7 @@ function mapVersionLinks(
   mappedContentToPath: Map<Content, Path>,
   mappedVersionToContent: Record<Version, Content>,
   loadedVersionLabels: Version[],
-) {
+): Record<Version, Record<Id, Path>> {
   return options.versionedLinks?.reduce((prev, cur) => {
     const versions = cur.versions === 'ALL' ? loadedVersionLabels : cur.versions;
     for (const version of versions) {
@@ -74,7 +74,10 @@ function mapVersionLinks(
   }, {});
 }
 
-function mapNonVersionLinks(options: PageLinkerOptions, mappedContentToPath: Map<Content, Path>) {
+function mapNonVersionLinks(
+  options: PageLinkerOptions,
+  mappedContentToPath: Map<Content, Path>,
+): Record<Version, Record<Id, Path>> {
   return options.nonVersionedLinks?.reduce((prev, cur) => {
     const path = mappedContentToPath.get(cur.content);
 
