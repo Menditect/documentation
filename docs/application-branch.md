@@ -1,6 +1,8 @@
+---
+sidebar_position: 5
+---
+
 # Application Branch
-
-
 
 ## Definition
 
@@ -9,8 +11,8 @@ A copy of an [Application](application) codeline, managed with Mendix teamserver
 See [Mendix documentation](https://docs.mendix.com) for more information about branches. 
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
+| Name | Description                         |
+| ---- | ----------------------------------- |
 | Name | The name of the Application Branch. |
 
 ## Business rules

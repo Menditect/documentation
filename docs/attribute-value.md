@@ -1,19 +1,21 @@
+---
+sidebar_position: 10
+---
+
 # Attribute Value
-
-
 
 ## Definition
 
 The Attribute Value contains the information that specifies the input of an Object [Teststep](teststep).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Name | The name of the attribute. |
-| Included | This indicates whether setting the value for the attribute is included in the Teststep. |
-| Datatype | Datatype of the attribute. |
+| Name       | Description                                                                                                                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name       | The name of the attribute.                                                                                                                                                                                    |
+| Included   | This indicates whether setting the value for the attribute is included in the Teststep.                                                                                                                       |
+| Datatype   | Datatype of the attribute.                                                                                                                                                                                    |
 | Input type | Indicates how the value is specified. The "Fixed" input type specifies a by the test automator given value. The "From former Teststep" input type specifies that the value is derived from a former Teststep. |
-| Value | The value of the attribute. |
+| Value      | The value of the attribute.                                                                                                                                                                                   |
 
 ## Business rules
 

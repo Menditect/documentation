@@ -1,6 +1,9 @@
+---
+sidebar_position: 13
+---
+
+
 # Data Variation
-
-
 
 ## Definition
 
@@ -9,8 +12,8 @@ Data Variation is used to execute the same [Test Suite](test-suite) multiple tim
 Data Variation consists of [Data Variation Items](datavariation-item) or variants.
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
+| Name   | Description                                                              |
+| ------ | ------------------------------------------------------------------------ |
 | Number | The rank of the Data Variation in the execution order of the Test Suite. |
 
 ## Business rules

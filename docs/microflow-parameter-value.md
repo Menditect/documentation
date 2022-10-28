@@ -1,18 +1,21 @@
+---
+sidebar_position: 14
+---
+
+
 # Microflow Parameter Value
-
-
 
 ## Definition
 
 The Microflow Parameter Value contains the value for a Microflow input parameter on a Microflow [Teststep](teststep).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Name | The name of the input parameter. |
-| Datatype | The datatype of the input parameter. |
+| Name       | Description                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| Name       | The name of the input parameter.                                                                             |
+| Datatype   | The datatype of the input parameter.                                                                         |
 | Input type | This indicates how the value is specified; manually by the user, or through the output of a former Teststep. |
-| Value | The value of the input parameter. |
+| Value      | The value of the input parameter.                                                                            |
 
 ## Business rules
 

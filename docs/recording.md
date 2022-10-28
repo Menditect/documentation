@@ -1,16 +1,19 @@
+---
+sidebar_position: 15
+---
+
+
 # Recording
-
-
 
 ## Definition
 
 A Recording is meant to speedup test scripting and should be used as the starting point of a Test Case. A Recording is created by MTA and consists of one or more [Teststeps](teststep) in a single [Test Case](test-case). MTA bases these Teststeps on intercepted user actions that are executed on an [Application Environment](application-environment).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Max. duration recording (s) | The number of seconds that MTA will intercept user actions before the recording times out. |
-| Max. number of recorded actions | The maximum number of intercepted user actions to store in MTA. |
+| Name                            | Description                                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------------ |
+| Max. duration recording (s)     | The number of seconds that MTA will intercept user actions before the recording times out. |
+| Max. number of recorded actions | The maximum number of intercepted user actions to store in MTA.                            |
 
 ## Business rules
 - If the recording times out, no Teststeps will be created. 

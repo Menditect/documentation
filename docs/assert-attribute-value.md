@@ -1,6 +1,8 @@
+---
+sidebar_position: 8
+---
+
 # Assert on Attribute Value
-
-
 
 ## Definition
 
@@ -18,13 +20,13 @@ When a Teststep uses [Data Variation](datavariation) to manipulate Teststep inpu
 Each Assert is evaluated after the execution of a Teststep. A Teststep execution fails when the evaluated value does not match to the defined expectation. 
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Compare type | The type of comparison to be made. <br />  - The 'Equals' / 'Not equals' type means that the attribute value should exactly match (or not match, respectively) a single given value. <br />   - The 'Range' / 'Not range' type  means that the attribute value should be within (or outside, respectively) the given boundaries. A 'Range' type is only applicable for numeric or date attributes.  <br />   - The 'Greater than' / 'Greater than or equal to' means that the attribute value should be higher than (or include, respectively) the given value.  <br />   - The 'Less than' / 'Less than or equal to' means that the attribute value should be lower than (or include, respectively) the given value.  <br />  |
-| Value | The expected value of the attribute upon executing the test when the selected compare type is 'Equals'. If the asserted value is empty, the result must be empty in order for the assert to pass. |
-| Min value | The expected lower boundary of the attribute value if the selected compare type is 'Range'. |
-| Max value | The expected higher boundary of the attribute value if the selected compare type is 'Range'. |
-| Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes). |
+| Name               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Compare type       | The type of comparison to be made. <br />  - The 'Equals' / 'Not equals' type means that the attribute value should exactly match (or not match, respectively) a single given value. <br />   - The 'Range' / 'Not range' type  means that the attribute value should be within (or outside, respectively) the given boundaries. A 'Range' type is only applicable for numeric or date attributes.  <br />   - The 'Greater than' / 'Greater than or equal to' means that the attribute value should be higher than (or include, respectively) the given value.  <br />   - The 'Less than' / 'Less than or equal to' means that the attribute value should be lower than (or include, respectively) the given value.  <br /> |
+| Value              | The expected value of the attribute upon executing the test when the selected compare type is 'Equals'. If the asserted value is empty, the result must be empty in order for the assert to pass.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Min value          | The expected lower boundary of the attribute value if the selected compare type is 'Range'.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Max value          | The expected higher boundary of the attribute value if the selected compare type is 'Range'.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Business rules
 - The compare type is mandatory.
@@ -32,18 +34,18 @@ Each Assert is evaluated after the execution of a Teststep. A Teststep execution
 
 The following Assert Compare types are supported for the Mendix data types:
 
-|   | String | Integer | Decimal | Boolean | Datetime | Enumeration | 
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Equals | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | 
-| Does not equal | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | 
-| Contains | <i class="fas fa-check"></i> |  |  |  |  |  | 
-| Does not Contain | <i class="fas fa-check"></i> |  |  |  |  |  | 
-| Within Range |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
-| Outside of Range |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
-| Greater than |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
-| Greater than or Equal to |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |  
-| Less than |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
-| Less than or Equal to |  | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |  | <i class="fas fa-check"></i> |   
+|                          | String                       | Integer                      | Decimal                      | Boolean                      | Datetime                     | Enumeration                  |
+| ------------------------ | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| Equals                   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
+| Does not equal           | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
+| Contains                 | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
+| Does not Contain         | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
+| Within Range             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
+| Outside of Range         |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
+| Greater than             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
+| Greater than or Equal to |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
+| Less than                |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
+| Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
 
 ## Actions on an Assert on Attribute Value
 

@@ -7,6 +7,17 @@ slug: /
 
 This is the home page for the Menditect Documentation site.
 
-Click on a topic or select the menu with <svg width="15" height="15" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg> to browse through the site.
+## Structure
 
-Click on the Menditect logo op top to return to this page.
+- Use the [Reference guide](../reference-guide) to gain knowledge about topics in MTA. 
+- Read [Release notes](../release-notes) to know what has changed since the last release. <br/>They are published together with every new version of MTA and describe all new features and fixed bugs. 
+- The Additional section contains How to's for when you're stuck in MTA. 
+
+Click on a topic or, on mobile devices, select the <svg width="15" height="15" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg> menu to browse through the site.
+
+Click on the Menditect logo anytime to return to this page.
+
+## Getting started
+- If your organisation is not yet using MTA but wants to [prepare for using MTA](../additional/howtos/prepare-for-using-mta).
+- If MTA has been implemented by your MTA Manager and you want to [setup your account](../additional/howtos/access-mendix-model).
+- If you're all ready to go and want to [run your first test in MTA](../additional/howtos/run-first-test).

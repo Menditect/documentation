@@ -1,6 +1,9 @@
+---
+sidebar_position: 16
+---
+
+
 # Test Application 
-
-
 
 ## Definition
 
@@ -8,8 +11,8 @@ A Test Application is an [Application environment](application-environment) that
 
 ## Properties
 
-| Name | Description |
-| ----------- | ----------- |
+| Name | Description                              |
+| ---- | ---------------------------------------- |
 | Name | The name of the Application environment. |
 
 ## Business rules

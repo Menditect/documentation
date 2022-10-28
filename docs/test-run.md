@@ -1,20 +1,23 @@
+---
+sidebar_position: 20
+---
+
+
 # Test Run 
-
-
 
 ## Definition
 
 The Test Run contains the tests that can be/are executed according a [Test Configuration](test-configuration).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Name | The name of the Test Run. |
-| Flagged for delete | This indicates if the Test Run is flagged for deletion by the user. |
-| Pinned | If a Test Run is pinned by a user it will not be deleted overnight. | 
-| Result | The test result ('Pass' or 'Fail'). |
-| Start date | The moment when the Test Run starts. | 
-| Status | This indicates if the test is running or not; can be 'Running' or 'Finished'. |
+| Name               | Description                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| Name               | The name of the Test Run.                                                     |
+| Flagged for delete | This indicates if the Test Run is flagged for deletion by the user.           |
+| Pinned             | If a Test Run is pinned by a user it will not be deleted overnight.           |
+| Result             | The test result ('Pass' or 'Fail').                                           |
+| Start date         | The moment when the Test Run starts.                                          |
+| Status             | This indicates if the test is running or not; can be 'Running' or 'Finished'. |
   
 ## Business rules
 - There can only be two Test Runs per [Test Configuration](test-configuration) that are "Pinned".

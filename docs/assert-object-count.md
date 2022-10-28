@@ -1,6 +1,8 @@
+---
+sidebar_position: 9
+---
+
 # Assert on Object Count
-
-
 
 ## Definition
 
@@ -9,10 +11,10 @@ An assert on object count is defined on a [Teststep](teststep) and exists of mak
 Asserts on object count can be defined either on Retrieve Object Teststeps or on Microflow Teststeps that return a list of objects. 
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Compare type | The type of comparison to be made: either 'Equals', 'Greater-than' / 'Greater-than or equal to' or 'Less-than' / 'Less-than or equal to'. |
-| Expected object count | The expected value of the attribute when executing the test. |
+| Name                  | Description                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Compare type          | The type of comparison to be made: either 'Equals', 'Greater-than' / 'Greater-than or equal to' or 'Less-than' / 'Less-than or equal to'. |
+| Expected object count | The expected value of the attribute when executing the test.                                                                              |
 
 ## Business rules
 - The compare type is mandatory.

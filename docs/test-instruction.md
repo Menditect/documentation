@@ -1,5 +1,9 @@
-# Test Instruction
+---
+sidebar_position: 19
+---
 
+
+# Test Instructio
 
 
 ## Definition
@@ -9,14 +13,14 @@ A Test Instruction is a descriptive counterpart of a [Teststep](teststep). A Tes
 The Test Instruction is the lowest or fourth level of the 4-layer framework that is used in MTA. It describes the actual operating functions. 
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Title | The title of the Test Instruction. |
-| Description | A description of a Test Instruction. |
-| Highlight | This indicates whether to visually highlight the Test Instruction in the Test Case to draw attention to it. |
-| Input data | A description of the input data for a Test Instruction. |
-| Expected result | A description of the expected result of a Test Instruction. |
-| Image | A descriptive image (for instance, png or jpg file) that shows the expected outcome of the Test Instruction. |
+| Name            | Description                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------ |
+| Title           | The title of the Test Instruction.                                                                           |
+| Description     | A description of a Test Instruction.                                                                         |
+| Highlight       | This indicates whether to visually highlight the Test Instruction in the Test Case to draw attention to it.  |
+| Input data      | A description of the input data for a Test Instruction.                                                      |
+| Expected result | A description of the expected result of a Test Instruction.                                                  |
+| Image           | A descriptive image (for instance, png or jpg file) that shows the expected outcome of the Test Instruction. |
 
 ## Business rules
 - The title is mandatory.

@@ -1,6 +1,9 @@
+---
+sidebar_position: 6
+---
+
+
 # Application Environment
-
-
 
 ## Definition
 
@@ -10,13 +13,13 @@ An Application Environment can be hosted on the Mendix Cloud, a third party clou
 See [Mendix documentation](https://docs.mendix.com) for more information about application environments.
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Name | The name of environment. |
-| Model version | The version number of the package deployed in your environment. |
-| URL | The Mendix URL of the environment. |
-| Plugin username | Username of the Plugin User in the environment of the application under test. |
-| Plugin password | Password of the Plugin User in the environment of the application under test. |
+| Name            | Description                                                                                             |
+| --------------- | ------------------------------------------------------------------------------------------------------- |
+| Name            | The name of environment.                                                                                |
+| Model version   | The version number of the package deployed in your environment.                                         |
+| URL             | The Mendix URL of the environment.                                                                      |
+| Plugin username | Username of the Plugin User in the environment of the application under test.                           |
+| Plugin password | Password of the Plugin User in the environment of the application under test.                           |
 | Show statistics | This indicates whether the application environment is displayed in the statistics overview (dashboard). |
 
 ## Business rules

@@ -1,4 +1,4 @@
-# Deal with technically failed Test Run
+# Deal with a failed Test Run
 
 If a Test Configuration was executed, there are two reasons the Test Run can fail:
 1. A functional error like a failed assert or validation feedback.
@@ -16,9 +16,9 @@ This document covers the second reason; for Asserts, please read the reference g
 
 The icons on a Teststep showing the different possible outcomes are as follows:
 
-| A successful test | Functionally failed | Technically failed |
-| --------- | --------- | --------- | 
-| ![A successful test](images/success.png)  | ![Functionally failed](images/func-failed.png)  | ![Technically failed](images/tech-failed.png)   |
+| A successful test                        | Functionally failed                            | Technically failed                            |
+| ---------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
+| ![A successful test](images/success.png) | ![Functionally failed](images/func-failed.png) | ![Technically failed](images/tech-failed.png) |
 
 An important difference between a functional error and a technical error during a Test Run, is that when MTA encounters a functional error, it will continue the Test Run; when MTA encounters a technical error, it will abort the Test Run.
 

@@ -1,5 +1,9 @@
-# Data Variation Item
+---
+sidebar_position: 12
+---
 
+
+# Data Variation Item
 
 
 ## Definition
@@ -9,11 +13,11 @@ Data Variation Items are always part of [Data Variation](datavariation).
 The value of a Data Variation Item is defined either in an [Attribute Value](attribute-value) or in an [Assert on attribute value](assert-attribute-value).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Type | There are two types of variants: <br /> - Attribute value, where an attribute is assigned a value, or a microflow parameter is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br />  |
-| Attribute name | The name of the attribute. |
-| Value | The value of the attribute or assert. |
+| Name           | Description                                                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type           | There are two types of variants: <br /> - Attribute value, where an attribute is assigned a value, or a microflow parameter is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Data variation page.<br /> |
+| Attribute name | The name of the attribute.                                                                                                                                                                                                                                                            |
+| Value          | The value of the attribute or assert.                                                                                                                                                                                                                                                 |
 
 ## Business rules
 None.
