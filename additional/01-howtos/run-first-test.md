@@ -2,6 +2,8 @@
 
 These step-by-step instructions will help new MTA users add and execute their first test on a single Mendix App.
 
+The test will execute a single microflow and check that the return value is not empty.
+
 ## 1. Add an Application
 
 Your very first stop is the 'Applications' tab. 
@@ -16,7 +18,7 @@ Click on the '+ Application' button to add an Application.
 ![Add application](images/run_first_test/01.png)
 
 - Click the '+ Execution user' button.
-- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.
+- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.
 - Save. 
 
 ## 2. Add a Test Configuration
@@ -62,7 +64,7 @@ Save the setup of your Test Configuration.
 Use the '...' button on your Test Configuration to show the quick menu and choose 'Test design'.
 ![Add test configuration](images/run_first_test/08.png)
 
-MTA will show the Test Design page but with your Test Configuration preselected.
+MTA will show the Test Design page and with your Test Configuration preselected.
 - Click the '+ Test suite' button to add a Test Suite to your Test Configuration.
 - Give it a name and optional description.
 - Save.
@@ -78,6 +80,22 @@ MTA will show the Test Design page but with your Test Configuration preselected.
 - MTA will select the Test Case that you just added.
 
 ### Add a Teststep
-- 
+Next you will choose a microflow to test.
+- Click '+ Microflow test'.
+- Choose a microflow with a String or Integer/Long return value. <br/>Don't know which microflow to choose? Choose 'Read_enum_mtapluginversion'. 
+- MTA will create a teststep for executing the microflow, and teststeps to fill the parameters of the microflow. <br/>Note: you have to create nonpersistable objects yourself. 
+- Click <i class="fal fa-ballot-check"></i> and then '+ Assert' to add an Assert.
+- Change 'Assert' to "Not equals". This will check that the output is not empty.
+- Save.
 
-## `eof (todo)`
+## 4. Execute and evaluate your test
+
+- Click '<i class="fas fa-play"></i> Execute and go to test run overview' to Execute the Test Configuration.<br/>You can also only run your Test Case with the <i class="fas fa-play"></i> button.
+- Click 'Proceed' when asked if you want to execute all Test Suites in the Test Configuration.
+- Click on 'Details' to view your test results.
+- Click on 'Results' to view the test suite run results.
+- MTA will open the Test suite run results. This page looks familiar, but is not the same as the page where you configure your Test Suite. You can go back with the '<i class="fas fa-cog"></i> Configure test suite' button.
+
+Did your test pass? Congratulations! <br/>
+If not, you can try setting the 'Apply security' to 'Off' on your Test Case. <br/>
+Additionally, you may want to read [this page](deal-with-failed-testrun).
