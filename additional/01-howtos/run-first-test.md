@@ -7,10 +7,13 @@ The test will execute a single microflow and check that the return value is not 
 ## 1. Add an Application
 
 Your very first stop is the 'Applications' tab. 
+
+You will start by adding an Application to MTA and adding the username of an account in that Application, so MTA can login with that user to execute your test.
 Click on the '+ Application' button to add an Application.
 
 ![Add application](images/run_first_test/00.png)
 
+- MTA should show the Mendix projects associated with the given Mendix user for your MTA account.
 - Add the application that you want to test from the list.
 - Now select the application that you just added.
 - Navigate to the 'Execution users' tab.
@@ -20,6 +23,8 @@ Click on the '+ Application' button to add an Application.
 - Click the '+ Execution user' button.
 - Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.
 - Save. 
+
+
 
 ## 2. Add a Test Configuration
 
@@ -87,11 +92,17 @@ Next you will choose a microflow to test.
 - Click <i class="fal fa-ballot-check"></i> and then '+ Assert' to add an Assert.
 - Change 'Assert' to "Not equals". This will check that the output is not empty.
 - Save.
+<br/><br/><br/>
 
 ## 4. Execute and evaluate your test
 
-- Click '<i class="fas fa-play"></i> Execute and go to test run overview' to Execute the Test Configuration.<br/>You can also only run your Test Case with the <i class="fas fa-play"></i> button.
-- Click 'Proceed' when asked if you want to execute all Test Suites in the Test Configuration.
+You have two options to execute your test:
+1. Click '<i class="fas fa-play"></i> Execute and go to test run overview' to Execute the Test Configuration.<br/>
+2. You can also only run your Test Case with the <i class="fas fa-play"></i> button.
+
+![Add test configuration](images/run_first_test/09.png)
+
+After executing:
 - Click on 'Details' to view your test results.
 - Click on 'Results' to view the test suite run results.
 - MTA will open the Test suite run results. This page looks familiar, but is not the same as the page where you configure your Test Suite. You can go back with the '<i class="fas fa-cog"></i> Configure test suite' button.

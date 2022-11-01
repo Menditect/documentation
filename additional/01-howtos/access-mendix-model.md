@@ -18,7 +18,7 @@ Now fill in the fields under 'Mendix credentials'
 - A Personal access token (PAT) for this Mendix profile. Go to https://warden.mendix.com to add it and select only this scope: `mx:modelrepository:repo:read`.
 - Choose "Save".
 
-To test if this step was successful, try to add a new Test Application to a Test Configuration. The Mendix projects associated with the given Mendix user should be visible.
+To test if this step was successful, try to [Add an Application](run-first-test). The Mendix projects associated with the given Mendix user should be visible.
 
 
 ## Feedback?
