@@ -18,6 +18,11 @@ Click on a topic or, on mobile devices, select the <svg width="15" height="15" v
 Click on the Menditect logo anytime to return to this page.
 
 ## Getting started
-- If your organisation is not yet using MTA but wants to [prepare for using MTA](../additional/howtos/prepare-for-using-mta).
-- If MTA has been implemented by your MTA Manager and you want to [setup your account](../additional/howtos/access-mendix-model).
-- If you're all ready to go and want to [run your first test in MTA](../additional/howtos/run-first-test).
+[Prepare for using MTA](../additional/howtos/prepare-for-using-mta)
+> If your organisation wants to use MTA but it is not yet implemented.
+
+[Setup your account](../additional/howtos/access-mendix-model).
+> If MTA has been implemented by your MTA Manager and you want to use it.
+
+[Run your first test in MTA](../additional/howtos/run-first-test).
+> If you're all ready to go! 
