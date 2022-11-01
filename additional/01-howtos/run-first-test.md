@@ -2,6 +2,20 @@
 
 These step-by-step instructions will help new MTA users add and execute their first test on a single Mendix App.
 
+## Prerequisites
+
+To go through these steps, you need
+- to have access to Mendix App which is published somewhere (Mendix cloud licensed, Sandbox, or other cloud node),
+- to know the username of an Account on this Mendix App,
+- to have finished the previous 2 walkthroughs: [prepare for using MTA](prepare-for-using-mta) and [access a Mendix model](access-mendix-model).
+
+If you walk through these instructions, you will have 
+- registered one of your Mendix Apps in MTA, so you can test it,
+- selected an instance (environment) of this Mendix App,  
+- registered an existing Account on this instance to be tested with,
+- created a simple microflow (unit) test with an assert,
+- executed and evaluated this test.
+
 The test will execute a single microflow and check that the return value is not empty.
 
 ## 1. Add an Application
