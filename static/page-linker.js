@@ -1,5 +1,3 @@
-// @ts-check
-
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     const versionLinks = data.versions[version];
@@ -11,24 +9,30 @@ function findCorrectPath(data, version, tag) {
   }
 }
 
-(async () => {
+async function getPageLinkerIndex() {
+  const indexUrl = `${document.location.origin}/page-linker-index.json`;
+  const res = await fetch(indexUrl);
+  const data = await res.json();
+  return data;
+}
+
+async function getRedirectURL() {
   const params = new URL(`${document.location}`).searchParams;
   const tag = params.get('tag');
   const version = params.get('version');
 
-  console.log('tag', tag);
-  console.log('version', version);
-
-  const indexUrl = `${document.location.origin}/page-linker-index.json`;
-  console.log(indexUrl);
-  const res = await fetch(indexUrl);
-  const data = await res.json();
-  console.log(data);
-
+  const data = await getPageLinkerIndex();
   const path = findCorrectPath(data, version, tag);
-  console.log(path);
-  const url = `${document.location.origin}/${path}`;
-  console.log(url);
+  const url = path ? `${document.location.origin}/${path}` : `${document.location.origin}/404`;
 
-  location.replace(url);
+  return url;
+}
+
+(async () => {
+  try {
+    const url = await getRedirectURL();
+    location.replace(url);
+  } catch (err) {
+    location.replace(`${document.location.origin}/404`);
+  }
 })();
