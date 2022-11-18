@@ -1,4 +1,4 @@
-# Complete recorded actions
+# Recorder post actions
 
 ## Definition
 
@@ -7,7 +7,11 @@ Other documents about this topic are:
 - [Recorder](../../recording) in the reference guide.
 - [Record actions](../bestpractice/record-actions) in the Best practice section.
 
-## Fix warnings on retrieve steps
+## Retrieve teststeps
+
+By default, all created retrieve teststeps are set to 'From Database'.
+
+- Make sure that retrieve actions are done By Association if retrieving a non-persistable object or an object that is not (yet) committed to the database.
 
 An existing object that is subsequently used in a Change Object Teststep or passed as a parameter in a Microflow Teststep, can be retrieved using a Retrieve Object Teststep. However it is not always possible to determine which members are used as constraints in that Teststep. Such Teststeps will be marked in a separate color to indicate they need to be reviewed. 
 
@@ -49,16 +53,16 @@ If an object is created by the page and not by a microflow (for instance using a
 
 ## Troubleshoot issues
 
-| A recording results in errors |
-| ----------- | 
+| A recording results in errors                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Construction errors are most likely result of starting the recording too late. An object that is subject to change or passed as a microflow parameter, can not be found. <br/><br/> There are two possible fixes: <br/> 1. Delete the created teststeps and retry the recording, and this time login to the Test application, after starting the recording. <br/>  2. Create the necessary teststep that returns the object, place it before the created teststep, and fix the 'from former test step' error. |
 
 
-| A recording results in many (often identical) teststeps | 
-| ----------- | 
-| In some cases MTA creates many teststeps after finishing the recording or gives a message that the maximum amount of recorded user actions is exceeded. The reason could be that a microflow is executed many times, for instance for each row in a datagrid or listview, or for each change on a page element like a textbox or radiobutton. Ideally, the recorded page(s) or microflow(s) are optimized to prevent this, but this may not always be achievable. In that case it is advisable to limit the amount of test data to only a few test records. | 
+| A recording results in many (often identical) teststeps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| In some cases MTA creates many teststeps after finishing the recording or gives a message that the maximum amount of recorded user actions is exceeded. The reason could be that a microflow is executed many times, for instance for each row in a datagrid or listview, or for each change on a page element like a textbox or radiobutton. Ideally, the recorded page(s) or microflow(s) are optimized to prevent this, but this may not always be achievable. In that case it is advisable to limit the amount of test data to only a few test records. |
 
 
-| MTA is unable to set enumeration value | 
-| ----------- | 
-| In some cases the recorder is not able to determine an enumeration value. This happens when an enumeration value is deleted from Mendix, but not yet from the database, because a migration script has not yet been executed on the table where the enumeration is used.  | 
+| MTA is unable to set enumeration value                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| In some cases the recorder is not able to determine an enumeration value. This happens when an enumeration value is deleted from Mendix, but not yet from the database, because a migration script has not yet been executed on the table where the enumeration is used. |

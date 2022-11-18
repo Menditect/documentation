@@ -1,27 +1,72 @@
-# Import MTA Plugin
+# Import plugin
+
+In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
+
+<table bgcolor="orange"><td width="25%"><font color="black">
+Disclaimer: in no case should you make changes to elements inside the MtaPluginModule. <br/> Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.</font>
+</td></table>
+
+## Importing MTA Plugin
 
 Download the MTA plugin module from Github:
-- download the 7-xx.xxx file for Mendix 7;
-- download the 8-xx.xxx file for Mendix 8;
-- download the 9-xx.xxx file for Mendix 9;
-- make sure to download the right release. The MTA version supported by the release is listed in the description on Github, as well as in MTA. 
 
 https://github.com/Menditect/MENDITECT-MTA-Plugin/releases   
 
-Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in errors. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
+Each release comes with 3 files, each corresponding with one of the supported Mendix runtime versions: 
+- download the 7-xx.xxx file for Mendix 7;
+- download the 8-xx.xxx file for Mendix 8;
+- download the 9-xx.xxx file for Mendix 9;
+
+Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github, as well as in MTA. 
+
+Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
 <i class="fa fa-exclamation-triangle"></i> You can create Module content containing the MTA Plugin in your Company marketplace (https://marketplace.mendix.com/link/mymarketplace), so you import the MTA Plugin module from the appstore. We are currently working on publishing it to the public Mendix marketplace. 
 <br/>
 
-## Upgrading a Mendix App to a newer runtime version
+### Upgrading to a newer runtime version
 
-To upgrade the major version of your Mendix App, you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
+To upgrade the major version of your Mendix App (for example, from Mendix 8.18 to 9.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
 
-## First time configuration
+## Configuring MTA Plugin
 
-Create a user role 'MTAPluginUser' and make sure not to select any modules in this step.
+### Including After startup microflow
 
-Select the following roles for user role 'MTAPluginUser':
+After you have downloaded the MTA Plugin, open the App Settings window in the Mendix modeler and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
+
+If there is no existing After startup microflow, just select the "At_Startup_Setup_Connection" in the popup window.
+
+### Setting Constants
+
+To configure the MTA Plugin, there are 5 constants that you have to assign a value. If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
+
+#### `ApplicationInstanceToken`
+This corresponds with an ID that MTA has generated for an Application Instance. 
+You can set this constant after you have [added an Application Instance](add-application-instance) in MTA.
+
+#### `ConnectionMethod`
+This will determine if your app will try to connect to MTA, either
+- 'AfterStartup': After deployment the app will try to connect to MTA using the provided token and Connection User's credentials.
+- 'Manual': You have to establish the connection to MTA manually, logging in as the [Plugin User](#configuring-mta-plugin-user) on the app.
+- 'None': This will disable the connection to MTA.
+
+#### `MTAConnectionPassword`
+This is the password that is set for the [Connection User](add-connection-user) in MTA.
+
+#### `MTAConnectionUsername`
+This is the username that is set for the [Connection User](add-connection-user) in MTA.
+
+#### `MTAWebSocketURL`
+This is the URL that the app will use to connect to MTA. The URL is setup as follows:<br/>
+*wss://{URL to MTA}/plugin*<br/>
+To get the URL to MTA, navigate to MTA in your browser, copy the part between `https://` and `/login.html`.
+
+Example: wss://mta-mtatraining.mendixcloud.com/plugin
+
+### Configuring MTA Plugin user
+
+<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, configuring the MTA Plugin user is no longer mandatory. <br/><br/>
+Create a user role 'MTAPluginUser' and make sure not to select any modules in this step. Select the following roles for user role 'MTAPluginUser':
 
 - 'MTAPluginUser' from MTAPlugin module
 - 'User' from System module
@@ -34,7 +79,7 @@ Go to navigation and create a role-based home page for MTAPluginUser for the pri
 - Select user role 'MTAPluginUser'
 - Select target and select page HomepageMTAPluginModule
 
-Start the test application and login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with the role 'MTAPluginUser'. Give the user a name and note it for later.
+Commit the changes to teamserver and deploy to the environment that is going to be used as Test application. After deployment, login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with only the role 'MTAPluginUser'. Give the user a name, and note the Username and Password for later.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

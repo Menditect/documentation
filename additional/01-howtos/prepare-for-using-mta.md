@@ -12,19 +12,13 @@ This can be useful to prepare for a first time implementation, a deep dive, or a
 
 Follow the steps described [here](import-plugin) to complete this action.
 
-## 2. Create an MTA Plugin User 
-
-*For each individual environment and for each Mendix App to be tested in MTA, this action needs to be performed. *
-
-Open the environment that is going to be used as Test application, and login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with only the role 'MTAPluginUser'. Give the user a name, and note the Username and Password for later.
-
-## 3. Enable microflow testing for page calls
+## 2. Enable microflow testing for page calls
 
 *For each Mendix App to be tested in MTA, this action needs to be performed.  *
 
 Follow the steps described [here](prepare-mendix-project) to complete this action.
 
-## 4. Create an API key and PAT for your Mendix account
+## 3. Create an API key and PAT for your Mendix account
 
 *This action needs to be performed by each Mendix developer who wishes to test their Mendix Apps in MTA.*
 

@@ -3,7 +3,7 @@ sidebar_position: 6
 ---
 
 
-# Application Environment
+# Application Instance
 
 ## Definition
 
