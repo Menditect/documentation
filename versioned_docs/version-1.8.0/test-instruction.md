@@ -1,7 +1,5 @@
 # Test Instruction
 
-
-
 ## Definition
 
 A Test Instruction is a descriptive counterpart of a [Teststep](teststep). A Test Instruction is always part of a [Test Case](test-case) that has the Manual type.
@@ -59,4 +57,4 @@ The Test Instruction is the lowest or fourth level of the 4-layer framework that
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

@@ -1,7 +1,5 @@
 # Test Run 
 
-
-
 ## Definition
 
 The Test Run contains the tests that can be/are executed according a [Test Configuration](test-configuration).
@@ -54,4 +52,4 @@ Pinning a Test Run will prevent it from being cleaned up overnight.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

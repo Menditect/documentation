@@ -1,7 +1,5 @@
 # Test Case
 
-
-
 ## Definition
 
 A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. 
@@ -96,4 +94,4 @@ Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automa
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

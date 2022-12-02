@@ -8,7 +8,7 @@ With this [Teststep](../Teststep) type, all the objects are stored to the databa
 
 ### Add a Persist Teststep
 
-To add a Persist step, select Persist as the Action when creating an Object Teststep. Note that when selecting Persist, the name of the Teststep will be set to "Persist" automatically.
+To add a Persist step, select Persist as the Action when creating a Teststep. Note that when selecting Persist, the name of the Teststep will be set to "Persist" automatically.
 
 Make sure to always insert the Persist Teststep after the Teststeps that perform other Object actions. 
 
@@ -18,4 +18,4 @@ It is possible to have multiple Persist Teststeps in the same Test Case. However
 
 _Note_: an object that is created by a microflow (as the output parameter), is not committed to the database by a Persist action. To achieve this, put a [Change Object](change) Teststep before the Persist Teststep, that changes the object created by the Microflow Teststep (without actually changing any of the members).
 
-When encountering problems, also consult the [Known issues](../../../../additional/knownissues/persist-step-fails).
+When encountering problems, also consult the [Known issues](../../knownissues/persist-step-fails).

@@ -1,7 +1,5 @@
 # Test Configuration 
 
-
-
 ## Definition
 
 A Test Configuration is an executable test script that describes which [Test Suites](test-suite) and which [Test Applications](test-application) will be/are tested. 
@@ -69,4 +67,4 @@ Note that Testers cannot delete Test Configurations.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

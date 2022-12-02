@@ -47,11 +47,10 @@ If a Test Application is associated, the <i class="fa fa-eye"></i> icon is shown
 
 ## Related topics
 - [Application](application)
-- [Application Branch](application-branch)
 - [Application Revision](application-revision)
 - [Test Application](test-application)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

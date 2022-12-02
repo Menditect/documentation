@@ -1,7 +1,5 @@
 # Application
 
-
-
 ## Definition
 
 A Mendix project that has been added to MTA for test purposes. An Application must have one or more [Application Environments](application-environment) before it can be used in a [Test Configuration](test-configuration).
@@ -23,7 +21,6 @@ To learn more about configuring an MTA user, read the How To section.
 - Go to the "Applications" page to view all Applications that are used in MTA.
 
 ## Related topics
-- [Application Branch](application-branch)
 - [Application Environment](application-environment)
 - [Application Revision](application-revision)
 - [Test Application](test-application)
@@ -31,4 +28,4 @@ To learn more about configuring an MTA user, read the How To section.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

@@ -1,7 +1,5 @@
 # Assert on Attribute Value
 
-
-
 ## Definition
 
 An Assert on Attribute Value formulates an expected result of an attribute in a [Teststep](teststep) upon execution. It is possible to either define the result to have a single value, or a range that the value should be in. A Teststep can have multiple Asserts on Attribute Value.
@@ -72,4 +70,4 @@ There are multiple ways to add an Assert on Attribute Value:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

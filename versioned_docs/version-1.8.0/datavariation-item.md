@@ -1,7 +1,5 @@
 # Data Variation Item
 
-
-
 ## Definition
 
 Data Variation Item or variant refers to an attribute that can be varied when executing a [Test Suite](test-suite). 
@@ -58,4 +56,4 @@ There are two ways to edit values in a Data Variation.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

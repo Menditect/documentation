@@ -1,7 +1,5 @@
 # Test Suite 
 
-
-
 ## Definition
 
 A Test Suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
@@ -58,4 +56,4 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022

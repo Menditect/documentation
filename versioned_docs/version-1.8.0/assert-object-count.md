@@ -1,7 +1,5 @@
 # Assert on Object Count
 
-
-
 ## Definition
 
 An assert on object count is defined on a [Teststep](teststep) and exists of making a comparison between the expected and actual list size of output objects of a Teststep upon test execution.
@@ -46,4 +44,4 @@ After the page opens, go to the Teststep output tab, and click on "*+ Assert*" t
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 july 2022
+Last updated 20 september 2022
