@@ -50,6 +50,8 @@ This will determine if your app will try to connect to MTA, either
 - 'Manual': You have to establish the connection to MTA manually, logging in as the [Plugin User](#configuring-mta-plugin-user) on the app.
 - 'None': This will disable the connection to MTA.
 
+Any other value will result in an error message when attempting to establish the connection to MTA.
+
 #### `MTAConnectionPassword`
 This is the password that is set for the [Connection User](add-connection-user) in MTA.
 
@@ -80,6 +82,10 @@ Go to navigation and create a role-based home page for MTAPluginUser for the pri
 - Select target and select page HomepageMTAPluginModule
 
 Commit the changes to teamserver and deploy to the environment that is going to be used as Test application. After deployment, login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with only the role 'MTAPluginUser'. Give the user a name, and note the Username and Password for later.
+
+## Troubleshooting
+
+
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
