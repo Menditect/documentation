@@ -55,6 +55,9 @@ const config = {
       ({
         nonVersionedLinks: [
           { id: 'record-user-actions', content: '@site/additional/01-howtos/record-user-actions.md' },
+          { id: 'privacy-policy', content: '@site/terms-of-use/pp.md' },
+          { id: 'eula', content: '@site/terms-of-use/eula.md' },
+          { id: 'sla', content: '@site/terms-of-use/sla.md' },
         ],
         versionedLinks: [
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
