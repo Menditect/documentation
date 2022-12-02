@@ -1,8 +1,6 @@
----
-sidebar_position: 5
----
-
 # Application Branch
+
+
 
 ## Definition
 
@@ -11,8 +9,8 @@ A copy of an [Application](application) codeline, managed with Mendix teamserver
 See [Mendix documentation](https://docs.mendix.com) for more information about branches. 
 
 ## Properties
-| Name | Description                         |
-| ---- | ----------------------------------- |
+| Name | Description |
+| ----------- | ----------- |
 | Name | The name of the Application Branch. |
 
 ## Business rules
@@ -21,7 +19,14 @@ See [Mendix documentation](https://docs.mendix.com) for more information about b
 
 ## Actions on Application branch
 
-In MTA version 2.0, Application Branches are only used to select an [Application Revision](application-revision) for a [Test Configuration](test-configuration).
+### View Application branches for an Application
+- Navigate to the "Applications" page to view all Applications that are used in MTA.
+- Select an [Application](application).
+- Navigate to the "Application branches & revisions" tab to view the Application Branches.
+
+### Delete an Application branch for an Application
+- Navigate to the "Application branches & revisions" tab to view the Application Branches.
+- Click <i class="fas fa-trash-alt"></i> next to the Application Branch name to delete the information about it from MTA.
 
 ## Related topics
 - [Application](application)
@@ -32,4 +37,4 @@ In MTA version 2.0, Application Branches are only used to select an [Application
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 2 december 2022
+Last updated 12 july 2022

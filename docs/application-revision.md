@@ -7,7 +7,7 @@ sidebar_position: 7
 
 ## Definition
 
-An Application Revision is a development version of a Mendix application. Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
+An Application Revision is a development version of a Mendix [Application](application). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
 
 See [Mendix documentation](https://docs.mendix.com) for more information about revisions.
 
@@ -17,7 +17,7 @@ See [Mendix documentation](https://docs.mendix.com) for more information about r
 | Author             | The creator of the revision (committer).                                                                 |
 | Commit message     | The description added to the commit action. Typically this contains information about the model changes. |
 | Create commit date | The date when the revision is created (or the commit is done).                                           |
-| Mendix version     | The version of Mendix Studio (Pro) in which the [Application](application) is developed.                 |
+| Mendix version     | The version of Mendix Studio (Pro) in which the Application is developed.                                |
 | Progress           | An indication of the download progression of the Application revision.                                   |
 | Revision number    | The commit number of the model of the Mendix application.                                                |
 | Total modules      | The total number of modules in application revision.                                                     |
@@ -32,17 +32,21 @@ See [Mendix documentation](https://docs.mendix.com) for more information about r
 
 ### View downloaded Application revisions for an Application
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an [Application](application).
-- Navigate to the "Application revisions" tab.
-- The Application revisions are shown on the right pane.
+- Select an Application by clicking on the tile.
+- Navigate to "App revisions" to view the Application revisions.
 
 ### Add an Application revision
-Add a new Application revision to MTA by downloading it from teamserver.
-Depending on the [Application Environment](application-environment), there are two possible ways of achieving this:
-- For a MendixCloud Application Environment:<br /> - Navigate to the "Test applications" tab of the [Test Configuration](test-configuration).<br /> - Click on <i class="fas fa-sync"></i> next to the revision number. The download will start automatically if a new revision is available on Mendix teamserver and this revision is deployed to the Application Environment.
-- For a Custom Application Environment:<br /> - Navigate to the "Test applications" tab of the Test Configuration.<br /> - Click on <i class="fa fa-pencil"></i> next to the revision number. A selection page is shown.<br /> - Select an Application Branch and a revision to download. The download starts automatically.
+Add a new Application revision to MTA by downloading it from teamserver. The only way to download a revision, is if you select this revision to be used in a Test Configuration.
+
+There are two possible ways of achieving this:
+
+- [Add a new Test Configuration](test-configuration#create-a-new-test-configuration)
+- [Change the Application revision for a Test Configuration](#change-the-application-revision-for-a-test-configuration)
 
 Note that downloading can take some time depending on the size of the Mendix project.
+
+### Change the Application revision for a Test Configuration
+
 
 ### Apply a downloaded Application revision to Test Suites in a Test Configuration
 A new Application revision must be applied to the [Test Suites](test-suite) in a Test Configuration, in order to be able to execute the Test Configuration.
