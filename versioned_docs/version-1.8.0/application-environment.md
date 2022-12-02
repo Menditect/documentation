@@ -1,7 +1,5 @@
 # Application Environment
 
-
-
 ## Definition
 
 A resource container on which exactly one Mendix application can be deployed i.e. Test, Acceptance and Production. 
