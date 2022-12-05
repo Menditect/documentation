@@ -25,7 +25,7 @@ In MTA version 2.0, Application Branches are only used to select an [Application
 
 ## Related topics
 - [Application](application)
-- [Application Environment](application-environment)
+- [Application Instance](application-instance)
 - [Application Revision](application-revision)
 - [Test Application](test-application)
 

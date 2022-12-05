@@ -14,7 +14,7 @@ It is possible to select a previous version on the top right of the page.
 
 - [Application](application)
 - [Application Branch](application-branch)
-- [Application Instance](application-environment)
+- [Application Instance](application-instance)
 - [Application Revision](application-revision)
 - [Assert on Attribute Value](assert-attribute-value)
 - [Assert on Object Count](assert-object-count)

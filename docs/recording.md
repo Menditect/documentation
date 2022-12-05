@@ -7,7 +7,7 @@ sidebar_position: 15
 
 ## Definition
 
-A Recording is meant to speedup test scripting and should be used as the starting point of a Test Case. A Recording is created by MTA and consists of one or more [Teststeps](teststep) in a single [Test Case](test-case). MTA bases these Teststeps on intercepted user actions that are executed on an [Application Environment](application-environment).
+A Recording is meant to speedup test scripting and should be used as the starting point of a Test Case. A Recording is created by MTA and consists of one or more [Teststeps](teststep) in a single [Test Case](test-case). MTA bases these Teststeps on intercepted user actions that are executed on an [Application Instance](application-instance).
 
 ## Properties
 | Name                            | Description                                                                                |
@@ -37,7 +37,7 @@ The recording page will close and the Teststeps created by the recorder will app
 Learn more about creating Recordings in the Best Practice section.
 
 ## Related topics
-- [Application Environment](application-environment)
+- [Application Instance](application-instance)
 - [Test Case](test-case)
 - [Teststep](teststep)
 

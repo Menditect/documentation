@@ -7,7 +7,7 @@ sidebar_position: 16
 
 ## Definition
 
-A Test Application is an [Application environment](application-environment) that is linked with a certain [Test Configuration](test-configuration) and can be used to execute the [Test Configuration](test-configuration) on. 
+A Test Application is an [Application Instance](application-instance) that is linked with a certain [Test Configuration](test-configuration) and can be used to execute the [Test Configuration](test-configuration) on. 
 
 ## Properties
 
@@ -25,7 +25,7 @@ None.
 - To view the Test Applications for a [Test Configuration](test-configuration), click "Test applications" after selecting the respective Test Configuration.
 
 ### Create Test Application 
-Creating a Test Application means linking an [Application environment](application-environment) to a [Test Configuration](test-configuration).
+Creating a Test Application means linking an [Application Instance](application-instance) to a [Test Configuration](test-configuration).
 - First, create or select a Test Configuration.
 - Click "*+ Test application*".
 - Select the Mendix [Application](application) that you want to test.

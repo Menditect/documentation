@@ -25,7 +25,7 @@ To learn more about configuring an MTA user, read the How To section.
 - Go to the "Applications" page to view all Applications that are used in MTA.
 
 ## Related topics
-- [Application Environment](application-environment)
+- [Application Instance](application-instance)
 - [Application Revision](application-revision)
 - [Test Application](test-application)
 

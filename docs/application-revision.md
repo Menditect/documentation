@@ -63,7 +63,7 @@ Note that this can take some time depending on the size of the Mendix project, t
 
 ## Related topics
 - [Application](application)
-- [Application Environment](application-environment)
+- [Application Instance](application-instance)
 - [Test Application](test-application)
 
 ## Feedback?
