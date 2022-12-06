@@ -17,5 +17,3 @@ A persist step will delete all the objects that are marked as deleted after the 
 It is possible to have multiple Persist Teststeps in the same Test Case. However, if there is a technical error while executing the Test Case, the entire transaction for that Test Case is always rolled back.
 
 _Note_: an object that is created by a microflow (as the output parameter), is not committed to the database by a Persist action. To achieve this, put a [Change Object](change) Teststep before the Persist Teststep, that changes the object created by the Microflow Teststep (without actually changing any of the members).
-
-When encountering problems, also consult the [Known issues](../../knownissues/persist-step-fails).
