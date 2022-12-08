@@ -3,10 +3,19 @@ sidebar_position: 1
 slug: /
 ---
 
-# Documentation
+# Getting started
 
-This is the home page for the Menditect Documentation site.
+Click on any of the links below to get started.
 
+### [Prepare for using MTA](../additional/howtos/prepare-for-using-mta).
+> If your organisation wants to use MTA but it is not yet implemented.
+
+### [Setup your account](../additional/howtos/access-mendix-model).
+> If MTA has been implemented by your MTA Manager and you want to use it.
+
+### [Run your first test in MTA](../additional/howtos/run-first-test).
+> If you're all ready to go!
+ 
 ## Structure
 
 - Use the [Reference guide](../reference-guide) to gain knowledge about topics in MTA. 
@@ -17,15 +26,3 @@ Click on a topic or, on mobile devices, select the <svg width="15" height="15" v
 
 Click on the Menditect logo anytime to return to this page.
 
-## Getting started
-
-Click on any of the links below to get started.
-
-### [Prepare for using MTA](../additional/howtos/prepare-for-using-mta)
-> If your organisation wants to use MTA but it is not yet implemented.
-
-### [Setup your account](../additional/howtos/access-mendix-model).
-> If MTA has been implemented by your MTA Manager and you want to use it.
-
-### [Run your first test in MTA](../additional/howtos/run-first-test).
-> If you're all ready to go! 

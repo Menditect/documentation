@@ -21,7 +21,7 @@ const config = {
   projectName: 'documentation',
   trailingSlash: false,
 
-  scripts: [{ src: 'https://kit.fontawesome.com/56b32f0d6e.js', defer: true, crossorigin: 'anonymous' }],
+  scripts: [{ src: 'https://kit.fontawesome.com/1558fb2e32.js', crossorigin: 'anonymous' }],
 
   presets: [
     [
@@ -146,13 +146,14 @@ const config = {
             position: 'left',
           },
           {
+            to: 'additional/howtos/access-environment',
+            label: 'How to?',
+            position: 'left',
+          },
+          {
             label: 'Additional',
             position: 'left',
             items: [
-              {
-                to: 'additional/howtos/access-environment',
-                label: 'How to?',
-              },
               {
                 to: 'additional/bestpractice/processtest',
                 label: 'Best Practice',
