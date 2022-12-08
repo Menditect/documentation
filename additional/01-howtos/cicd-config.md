@@ -129,7 +129,7 @@ This request returns the result for a previously executed CI/CD testrun, in a hi
 | --------- | ----------------------------------------------------------------------- |
 | Result    | `{} if the test is still running, otherwise a JSON containing results]` |
 
-*Example:* [click here to download example JSON file](images/example_testrun_result.js)
+*Example:* [click here to download example JSON file](images/example_testrun_result.js.txt)
 
 
 

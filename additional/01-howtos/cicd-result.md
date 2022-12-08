@@ -25,7 +25,7 @@ Note that both fields are optional, but to make use of this functionality, both 
 
 ### Receiving results
 
-To handle results, you should host a published REST service that allows anonymous access and contains a POST request on the location provided above, and is able to deal with [this payload (JSON)](images/example_testcaserun_result.js).
+To handle results, you should host a published REST service that allows anonymous access and contains a POST request on the location provided above, and is able to deal with [this payload (JSON)](images/example_testcaserun_result.js.txt).
 
 <i class="fa fa-exclamation-triangle"></i> The Timeout of the call to this Endpoint is set at 300 seconds. MTA will however not wait to continue the rest of the testrun. This means that results of the Test Cases may not be pushed in the right order. You can use the TestCaseSequence variable in the payload to adjust for this.
 <br/><br/>
