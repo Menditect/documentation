@@ -19,7 +19,7 @@ In order to prepare MTA for integration with your CI/CD pipeline you need to cre
 This is the username and password you will connect with to the API. 
 
 - Save and logout.
-- Then, login with the CI/CD user, and make sure to [fill in the API key and PAT](access-mendix-model).
+- Then, login with the CI/CD user, click the <i class="fal fa-user-circle"></i> user icon on the top right and [fill in the API key and PAT](access-mendix-model).
 - Finally, if you also want MTA to push CI/CD testrun results to your own API endpoint, enter the Endpoint and Secret key.<br/>Read more about it on the [CI/CD result handling page](cicd-result).
 
 ### Enable CI/CD
@@ -30,9 +30,9 @@ If you want to include a Test configuration in testing, you need to enable it by
 - Now open the [Test Settings](../../test-setting) for the Test Configuration and set a Test Setting as My Preference.
 
 ### Check App status
-The CI/CDd API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. 
+The CI/CD API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. 
 
-<i class="fa fa-exclamation-triangle"></i> Before executing a CI/CD testrun however, it is important to check that the deployment must be complete and the status of the application should be "Running". 
+<i class="fa fa-exclamation-triangle"></i> Before executing a CI/CD testrun however, it is important to check that the deployment must be complete and the status of the <a href="../../application-instance">Application Instance</a> should be "Running". 
 <br/><br/>
 
 ## Execute a testrun from CI/CD
@@ -53,7 +53,7 @@ Executes a new CI/CD testrun asynchronously and immediately returns an Execution
 
 To use this request you need a Project ID for your Mendix App. You can find this by navigating to Applications and clicking on the <i class="fal fa-circle-info"></i> icon for the respective app.
 
-<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, MTA will no longer detect and download a matching revision from Teamserver. MTA will execute the testrun, and only if elements from the model that are used in the Test Configuration cannot be found in the deployed revision, the testrun will stop and raise an error. Therefore it is advisable to always download the revision in the MTA frontend, before the CI/CD run starts.
+<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, MTA will no longer detect and download a matching revision from Teamserver. Therefore it is advisable to always download the revision in the MTA frontend, before the CI/CD run starts.
 
 <br/><br/>
 
@@ -62,7 +62,7 @@ To use this request you need a Project ID for your Mendix App. You can find this
 
 `/rest/cicdservice/v1/CiCd/testruns`
 
-*Example: https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testruns*
+Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testruns`
 
 **Authorization**
 
@@ -98,15 +98,15 @@ To use this request you need a Project ID for your Mendix App. You can find this
 
 <i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, this request will also show detailed information and not just whether the run has passed or failed.
 
-After a CiCd execute, use this request to poll MTA to check if the testrun is finished, for instance every 10 seconds until the result is not empty. 
+After a CiCd execute, use this request to poll MTA to check if the testrun is finished.
 
-This request returns the result for a previously executed CI/CD testrun, in a hierarchical JSON file, containing details until the Test Case level. To view results for the Teststep level, login to MTA. 
+This request returns the result for a previously executed CI/CD testrun, in a JSON format. 
 
 **URL**
 
 `/rest/cicdservice/v1/CiCd/testrunsresult`
 
-*Example: https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testrunsresult*
+Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testrunsresult`
 
 **Authorization**
 
@@ -134,7 +134,7 @@ This request returns the result for a previously executed CI/CD testrun, in a hi
 
 
 ## Cleanup testruns
-Currently, every night a scheduled event cleans up CI/CD test runs. MTA only persists CI/CD test runs associated with the last two executions for a single test application. 
+Currently, every night a scheduled event cleans CI/CD test runs. MTA only keeps CI/CD test runs associated with the last two executions for a single Application. 
 
 ## Troubleshooting
 
@@ -148,4 +148,4 @@ Currently, every night a scheduled event cleans up CI/CD test runs. MTA only per
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 9 june 2022
+Last updated 9 december 2022
