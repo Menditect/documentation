@@ -23,14 +23,14 @@ This is the username and password you will connect with to the API.
 - Finally, if you also want MTA to push CI/CD testrun results to your own API endpoint, enter the Endpoint and Secret key.<br/>Read more about it on the [CI/CD result handling page](cicd-result).
 
 ### Enable CI/CD
-Where regular test runs are executed on the Test Configuration level, CI/CD enabled test runs are executed on the Test Application level. When testing a Test Application, all Test Configurations that use that Test Application, that are CI/CD enabled, and where the environment matches the provided parameters, are executed. This means that also other Test Applications could be affected, if one of those Test Configurations use more than one.
+Where regular test runs are executed on the Test Configuration level, CI/CD enabled test runs are executed on the Application level. When testing an Application, all Test Configurations that use that Application, and are CI/CD enabled are executed. Keep in mind, that also other Test Applications could be affected, if one of those Test Configurations use more than one.
 
 If you want to include a Test configuration in testing, you need to enable it by editing it from the Test design page. 
 - Edit the Test Configuration that you want to execute and set "CI/CD enabled" to TRUE.
 - Now open the [Test Settings](../../test-setting) for the Test Configuration and set a Test Setting as My Preference.
 
 ### Check App status
-The CI/CD API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. 
+The CI/CD API can be used in a pipeline that performs deployments of a Mendix Application. But the CI/CD API does not check if the deployment is done.
 
 :::info 
 Before executing a CI/CD testrun, check that the deployment is completed and the status of the <a href="../../application-instance">Application Instance</a> is "Running".
@@ -84,6 +84,9 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
    "ProjectId":"48224593-2187-448d-abe9-9202e1b3a870"
 }
 ```
+:::info 
+As of MTA version 2.0, you only have to provide the Project ID. MTA will determine which Application Instance to execute on, by the Test Setting that is set as Preferred by the provided CI/CD user.
+:::
 
 **Output (if http response = 200/OK)**
 
@@ -168,8 +171,8 @@ Currently, every night a scheduled event cleans CI/CD test runs. MTA only keeps 
 
 ## Troubleshooting
 
-- Problem: the CI/CD run does not execute or raises an error message.
-- Solution: make sure that the Test Application Instance is running and that the provided CI/CD user credentials are correct.
+- Problem: I have configured everything but the CI/CD run does not execute or raises an error message.
+- Solution: make sure that the Test Application Instance is running and that the provided CI/CD user credentials are correct. Also make sure that the CI/CD user has both roles as desribed (CI/CD user and TestAutomator).
 
 
 - Problem: the CI/CD run executes with an ExecutionID, but also raises an error message.
