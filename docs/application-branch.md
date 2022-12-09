@@ -8,7 +8,7 @@ sidebar_position: 5
 
 A copy of an [Application](application) codeline, managed with Mendix teamserver. Information about an Application Branch is imported from teamserver by MTA. 
 
-See [Mendix documentation](https://docs.mendix.com) for more information about branches. 
+See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#branches) for more information about branches. 
 
 ## Properties
 | Name | Description                         |
@@ -27,9 +27,9 @@ In MTA version 2.0, Application Branches are only used to select an [Application
 - [Application](application)
 - [Application Instance](application-instance)
 - [Application Revision](application-revision)
-- [Test Application](test-application)
+- [Test Setting](test-setting)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 2 december 2022
+Last updated 8 december 2022

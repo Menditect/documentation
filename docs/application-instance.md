@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## Definition
 
-Previously: Application Environment.
+Previously: *Application Environment*.<br/>
 A single Mendix Application or 'app' that is deployed on a computer, for instance: Test, Acceptance or Production. 
 To enable communication between MTA and this deployed app, the Application Instance's token that is generated upon creation must be entered in a Constant of this app.
 The associated Execution setting on a Test Configuration determines which Application Instance is used to test on.
@@ -57,9 +57,9 @@ Note that if a Test Configuration is using the Application Instance, this will r
 ## Related topics
 - [Application](application)
 - [Application Revision](application-revision)
-- [Test Application](test-application)
+- [Test Setting](test-setting)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 2 december 2022
+Last updated 8 december 2022

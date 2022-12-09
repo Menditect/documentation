@@ -1,5 +1,5 @@
 ---
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 
@@ -9,7 +9,7 @@ sidebar_position: 17
 
 ## Definition
 
-A Test Case is a collection of operations to execute in a [Test Application](test-application), that are assembled to test some specific aspect of system behaviour. 
+A Test Case is a collection of operations to execute on an [Application Instance](application-instance), that are assembled to test some specific aspect of system behaviour. 
 
 The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. 
 
@@ -68,7 +68,7 @@ Note that [datavariation](datavariation) still applies when executing a single T
 - Click "*+ Test case*" to create a Test Case.
 - Select either 'Manual' or 'Automatic' for the Test Case Type (Testers can only create 'Manual' Test Cases).
 - Enter a name and other optional information.
-- Select a [Test Application](test-application) to execute the Test Case on.
+- Select an [Application Instance](application-instance) to execute the Test Case on.
 - Select an Execution User to execute the Test Case with.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose "Save".
@@ -93,7 +93,7 @@ Note that it is possible that due to deleting a Test Case and dependencies of Te
 Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automatic' Test Cases.
 
 ## Related topics
-- [Test Application](test-application)
+- [Test Setting](test-setting)
 - [Test Instruction](test-instruction)
 - [Teststep](teststep)
 - [Test Suite](test-suite)

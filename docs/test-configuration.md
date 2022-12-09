@@ -1,5 +1,5 @@
 ---
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 
@@ -9,7 +9,7 @@ sidebar_position: 18
 
 ## Definition
 
-A Test Configuration is an executable test script that describes which [Test Suites](test-suite) and which [Test Applications](test-application) will be/are tested. 
+A Test Configuration is an executable test script that describes which [Test Suites](test-suite) and which [Applications](application) will be/are tested. 
 
 The Test Configuration is the highest or first level of the 4-layer framework that is used in MTA. 
 
