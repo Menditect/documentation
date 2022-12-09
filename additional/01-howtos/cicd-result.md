@@ -26,10 +26,29 @@ Note that both fields are optional, but to make use of this functionality, both 
 
 ### Receiving results
 
-To handle results, you should host a published REST service that allows anonymous access and contains a POST request on the location provided above, and is able to deal with [this payload (JSON)](images/example_testcaserun_result.js.txt).
+To handle results, you should host a published REST service that allows anonymous access and contains a POST request on the location provided above, and is able to deal with this payload (JSON):
 
-<i class="fa fa-exclamation-triangle"></i> The Timeout of the call to this Endpoint is set at 300 seconds. MTA will however not wait to continue the rest of the testrun. This means that results of the Test Cases may not be pushed in the right order. You can use the Sequences of the Test Suite and Test Case in the payload to adjust for this.
-<br/><br/>
+```json
+{
+    "ExecutionId": "2d0e47f7-f664-4d12-a27a-19ff4da319a5",
+    "TestConfigurationName": "Test",
+    "TestSuiteSequence": 1,
+    "TestSuiteName": "Test",
+    "TestCaseSequence": 1,
+    "TestCaseName": "Test",
+    "TestCaseRunResult": "Pass",
+    "TestCaseRunResultMessage": "",
+    "TestCaseRunUrl": "http://mta-menditect-9fo2p.mendixcloud.com/link/testcaserun/7",
+    "MtaUrl": "http://mta-menditect-9fo2p.mendixcloud.com/",
+    "ApplicationName": "MTA_Training_CarRental",
+    "ProjectId": "48224593-2187-448d-abe9-9202e1b3a870"
+}
+```
+
+:::note
+The Timeout of the call to this Endpoint is set at 300 seconds. MTA will however not wait to continue the rest of the testrun. This means that results of the Test Cases may not be pushed in the right order. You can use the Sequences of the Test Suite and Test Case in the payload to adjust for this.
+:::
+
 Additionally, to make sure that you have all the results of a single CI/CD testrun <i>and</i> also that the testrun is finished, always use the MTA Get testruns result API as well.
 
 ### Securing the connection
@@ -37,6 +56,7 @@ Additionally, to make sure that you have all the results of a single CI/CD testr
 When Using the Endpoint and Secret key, for each payload that gets pushed to the Endpoint, an HMAC will be generated, which then gets passed along as a header “Signature” with the request. The value of header “Signature” is Base64 encoded. The algorithm for generating a MAC is HMAC with SHA256. When comparing both signatures if they are equal, it is advisable to use a comparison function which is constant time to prevent time attacks (in Java, the function MessageDigest.isEqual is in constant time).
 
 You should write your own logic to compare the Signature against the Secret key, but if you are using Mendix, below is a Java code snippet that you can use.
+
  ```java
 import java.lang.*;
 import com.mendix.systemwideinterfaces.core.IContext;

@@ -67,8 +67,10 @@ Example: wss://mta-mtatraining.mendixcloud.com/plugin
 
 ### Configuring MTA Plugin user
 
-<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, configuring the MTA Plugin user is no longer mandatory. <br/><br/>
+:::note
+As of MTA version 2.0, configuring the MTA Plugin user is no longer mandatory. 
 Create a user role 'MTAPluginUser' and make sure not to select any modules in this step. Select the following roles for user role 'MTAPluginUser':
+:::
 
 - 'MTAPluginUser' from MTAPlugin module
 - 'User' from System module

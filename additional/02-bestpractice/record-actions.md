@@ -2,7 +2,7 @@
 
 ## Definition
 
-For many user actions performed in the [Test Application](../../test-application), it is possible to record these actions in MTA, and have MTA convert them to either Object [Teststeps](../../teststep) or Microflow Teststeps, using the Recorder function. 
+For many user actions performed in the [Application](../../application), it is possible to record these actions in MTA, and have MTA convert them to either Object [Teststeps](../../teststep) or Microflow Teststeps, using the Recorder function. 
 
 There are multiple advantages to using the Recording over creating teststeps by hand:
 - Speed;

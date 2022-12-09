@@ -32,8 +32,9 @@ If you want to include a Test configuration in testing, you need to enable it by
 ### Check App status
 The CI/CD API can be used in a pipeline that always performs a deployment of the latest revision to the Test Application. 
 
-<i class="fa fa-exclamation-triangle"></i> Before executing a CI/CD testrun however, it is important to check that the deployment must be complete and the status of the <a href="../../application-instance">Application Instance</a> should be "Running". 
-<br/><br/>
+:::info 
+Before executing a CI/CD testrun, check that the deployment is completed and the status of the <a href="../../application-instance">Application Instance</a> is "Running".
+:::
 
 ## Execute a testrun from CI/CD
 
@@ -53,10 +54,9 @@ Executes a new CI/CD testrun asynchronously and immediately returns an Execution
 
 To use this request you need a Project ID for your Mendix App. You can find this by navigating to Applications and clicking on the <i class="fal fa-circle-info"></i> icon for the respective app.
 
-<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, MTA will no longer detect and download a matching revision from Teamserver. Therefore it is advisable to always download the revision in the MTA frontend, before the CI/CD run starts.
-
-<br/><br/>
-
+:::info 
+As of MTA version 2.0, MTA will no longer detect and download a matching revision from Teamserver. Therefore it is advisable to always download the revision in the MTA frontend, before the CI/CD run starts.
+:::
 
 **URL**
 
@@ -96,7 +96,9 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
 
 ### GET testrunsresult
 
-<i class="fa fa-exclamation-triangle"></i> As of MTA version 2.0, this request will also show detailed information and not just whether the run has passed or failed.
+:::info 
+As of MTA version 2.0, this request will also show detailed information and not just whether the run has passed or failed.
+:::
 
 After a CiCd execute, use this request to poll MTA to check if the testrun is finished.
 
@@ -129,7 +131,35 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
 | --------- | ----------------------------------------------------------------------- |
 | Result    | `{} if the test is still running, otherwise a JSON containing results]` |
 
-*Example:* [click here to download example JSON file](images/example_testrun_result.js.txt)
+*Example:* 
+
+```json
+{
+    "ExecutionId": "53138dae-3f52-462a-8c29-03868fedca9a",
+    "Result": "Pass",
+    "TestRunResults": [{
+            "TestConfigurationName": "Test",
+            "TestRunResult": "Pass",
+            "TestRunUrl": "http://mta-menditect-9fo2p.mendixcloud.com/link/testrun/3",
+            "TestSuiteRunResults": [{
+                    "TestSuiteSequence": 1,
+                    "TestSuiteName": "Test",
+                    "TestSuiteRunResult": "Pass",
+                    "TestsuiteRunUrl": "http://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/3",
+                    "TestCaseRunResults": [{
+                            "TestCaseSequence": 1,
+                            "TestCaseName": "Test",
+                            "TestCaseRunResult": "Pass",
+                            "TestCaseRunResultMessage": "",
+                            "TestCaseRunUrl": "http://mta-menditect-9fo2p.mendixcloud.com/link/testcaserun/3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
 
 
 

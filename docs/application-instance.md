@@ -30,11 +30,11 @@ The associated Execution setting on a Test Configuration determines which Applic
 - Select an [Application](application) by clicking on the tile.
 - Navigate to "App instances" to view the Application Instances.
 
-### View Execution settings and Test Configurations that use an Application Instance
+### View Test settings and Test Configurations that use an Application Instance
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application by clicking on the tile.
 - Navigate to "App instances" to view the Application Instances.
-- [Execution settings](execution-setting) and [Test Configurations](test-configuration) are shown in the block 'Used in the following test execution settings'.
+- [Test settings](test-setting) and [Test Configurations](test-configuration) are shown in the block 'Used in the following test execution settings'.
 
 ### Create an Application Instance
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
