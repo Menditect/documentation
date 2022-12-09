@@ -2,9 +2,11 @@
 
 In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
 
-<table bgcolor="orange"><td width="25%"><font color="black">
-Disclaimer: in no case should you make changes to elements inside the MtaPluginModule. <br/> Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.</font>
-</td></table>
+:::caution
+Disclaimer: in no case should you make changes to elements inside the MtaPluginModule. 
+
+Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.
+:::
 
 ## Importing MTA Plugin
 
@@ -21,8 +23,9 @@ Always make sure to download the right release. The MTA version supported by the
 
 Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
-<i class="fa fa-exclamation-triangle"></i> You can create Module content containing the MTA Plugin in your Company marketplace (https://marketplace.mendix.com/link/mymarketplace), so you import the MTA Plugin module from the appstore. We are currently working on publishing it to the public Mendix marketplace. 
-<br/>
+:::info
+You can create Module content containing the MTA Plugin in your Company marketplace (https://marketplace.mendix.com/link/mymarketplace), so you import the MTA Plugin module from the appstore. We are currently working on publishing it to the public Mendix marketplace. 
+:::
 
 ### Upgrading to a newer runtime version
 
@@ -59,15 +62,19 @@ This is the password that is set for the [Connection User](add-connection-user) 
 This is the username that is set for the [Connection User](add-connection-user) in MTA.
 
 #### `MTAWebSocketURL`
-This is the URL that the app will use to connect to MTA. The URL is setup as follows:<br/>
-*wss://{URL to MTA}/plugin*<br/>
+This is the URL that the app will use to connect to MTA. The URL is setup as follows:
+
+*wss://{URL to MTA}*
+
+Example: wss://mta-mtatraining.mendixcloud.com
+
 To get the URL to MTA, navigate to MTA in your browser, copy the part between `https://` and `/login.html`.
 
-Example: wss://mta-mtatraining.mendixcloud.com/plugin
+
 
 ### Configuring MTA Plugin user
 
-:::note
+:::info
 As of MTA version 2.0, configuring the MTA Plugin user is no longer mandatory. 
 Create a user role 'MTAPluginUser' and make sure not to select any modules in this step. Select the following roles for user role 'MTAPluginUser':
 :::

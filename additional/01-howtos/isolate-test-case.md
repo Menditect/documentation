@@ -4,7 +4,7 @@
 
 This document describes how to isolate or extract a single Test Case.
 
-:::note
+:::info
 From MTA version 1.7 if you want to Run a single Test Case it is no longer necessary to isolate it.
 :::
 

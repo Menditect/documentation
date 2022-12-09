@@ -45,7 +45,7 @@ To handle results, you should host a published REST service that allows anonymou
 }
 ```
 
-:::note
+:::info
 The Timeout of the call to this Endpoint is set at 300 seconds. MTA will however not wait to continue the rest of the testrun. This means that results of the Test Cases may not be pushed in the right order. You can use the Sequences of the Test Suite and Test Case in the payload to adjust for this.
 :::
 
