@@ -27,44 +27,30 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 ## Actions on Test Configuration
 
 ### View Test Configurations
-- Navigate to the "Test design" page in MTA to view a list of all the Test Configurations in MTA.
+- Navigate to the "Test configurations" page to view a list of all the Test Configurations in MTA.
 
 ### Create a new Test Configuration
-- Navigate to the "Test design" page in MTA. 
+- Navigate to the "Test configurations" page. 
 - Add a new Test Configuration and enter a Name and optional Description. 
 - Choose whether the Test Configuration should be Ci/Cd enabled. 
 
-For more about Ci/Cd, read the How To section.
+For the full explanation on how to add a Test Configuration, read the [How To](additional/howtos/run-first-test#2-add-a-test-configuration).
 
 ### Execute a Test Configuration
-There are multiple ways to execute a Test Configuration. 
 
-From the "Test design" page:
-- Click on Execute on the Test Configuration you want to execute.
-
-From the Test Run overview page:
-- Click on Execute on the Test Configuration you want to execute.
-
-From a [Test Suite](test-suite):
-- Click on "Execute" and go to "Test Run overview".
-- Click "Proceed on the confirmation window".
-
-From a [Data Variation](datavariation):
-- Click on "Execute and go to Test Run overview".
-- Click "Proceed on the confirmation window".
-
-From a [Test Run](test-run):
-- Click on "Execute Test Configuration"
+- Navigate to the "Test configurations" page.
+- Select the Test Configuration you want to execute.
+- Click on "Execute".
 
 ### Delete a Test Configuration
-- Go to the "Test design" page in MTA. 
-- Click on <i class="fas fa-trash-alt"></i> to delete the Test Configuration you want to delete.
+- Navigate to the "Test configurations" page.
+- Click on "..." and select "Delete" on the Test Configuration you want to delete.
 
 Note that Testers cannot delete Test Configurations.
 
 ### Restore a deleted Test Configuration
-- Go to the "Test design" page in MTA. 
-- Go to "Deleted configurations".
+- Navigate to the "Test configurations" page.
+- Go to "Deleted".
 - Click on "Recover" on the Test Configuration you want to restore.
 
 ## Related topics
@@ -74,4 +60,4 @@ Note that Testers cannot delete Test Configurations.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 16 december 2022

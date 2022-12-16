@@ -25,12 +25,12 @@ The Test Suite is the second level of the 4-layer framework that is used in MTA.
 ## Actions on Test Suite
 
 ### Create a new Test Suite
-- Navigate to the Test design page in MTA and select the [Test Configuration](test-configuration) that you want to create the Test Suite in.
+- Navigate to the Test configurations page in MTA and select the [Test Configuration](test-configuration) that you want to create the Test Suite in.
 - Click "*+ Test Suite*" to create a new Test Suite.
 - Enter a name and an optional description and choose "Save".
 
 ### Configure a Test Suite
-- Navigate to the Test design page in MTA and select the Test Configuration where you want to configure a Test Suite.
+- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.
 
 ### Change the order of a Test Suite in a Test Configuration
@@ -43,13 +43,13 @@ The Test Suite is the second level of the 4-layer framework that is used in MTA.
 - Click "Proceed on the confirmation window".
 
 ### Copy a Test Suite
-- Navigate to the Test design page in MTA and select the Test Configuration where you want to copy a Test Suite.
+- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to copy a Test Suite.
 - Click <i class="fas fa-copy"></i> on the Test Suite you want to copy.
 - Click Select and proceed to copy the Test Suite in the same Test Configuration, or expand the list of other Test Configuration and select one there.
 - Give the copy a name and choose "Save".
 
 ### Delete a Test Suite
-- Navigate to the Test design page in MTA and select the Test Configuration where you want to delete a Test Suite.
+- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to delete a Test Suite.
 - Click <i class="fas fa-trash-alt"></i> on the Test Suite you want to delete.
 
 Note that deleting a Test Suite is permanent. Individual Test Suites cannot be recovered.
@@ -62,4 +62,4 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 16 december 2022

@@ -25,16 +25,19 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 ## Actions on Test Run
 
 ### View Test Runs
-- Navigate to the Test Run overview in MTA under Test Run, to view a list of all the executed Test Runs in MTA.
+- Navigate to the "Test configurations" page.
+- Select the Test Configuration you want to view Test Runs for.
+- Navigate to "Test runs".
 
 ### Create a new Test Run
-- To create a new Test Run, execute a [Test Configuration](test-configuration).
- 
-Read more at [Execute a Test Configuration](test-configuration#execute-a-test-configuration).
+- To create a new Test Run, [Execute a Test Configuration](test-configuration#execute-a-test-configuration).
 
 ### Delete a Test Run
-- Navigate to the Test Run overview in MTA under Test Run.
-- Click on <i class="fas fa-trash-alt"></i> to delete the Test Run you want to delete.
+- Navigate to the "Test configurations" page.
+- Select the Test Configuration you want to view Test Runs for.
+- Navigate to "Test runs".
+- Click <i class="fal fa-trash-can"></i>  for the Test run you want to delete.
+
 
 Note that for each Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
 If a Test Run is cleaned up, the following information about the Test Run is stored for the statistics on the dashboard page:
@@ -57,4 +60,4 @@ Pinning a Test Run will prevent it from being cleaned up overnight.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 16 december 2022
