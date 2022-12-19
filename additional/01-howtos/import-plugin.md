@@ -3,9 +3,7 @@
 In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
 
 :::caution
-Disclaimer: in no case should you make changes to elements inside the MtaPluginModule. 
-
-Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.
+In no case should you make changes to elements inside the MtaPluginModule. <br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.
 :::
 
 ## Importing MTA Plugin
@@ -19,7 +17,7 @@ Each release comes with 3 files, each corresponding with one of the supported Me
 - download the 8-xx.xxx file for Mendix 8;
 - download the 9-xx.xxx file for Mendix 9;
 
-Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github, as well as in MTA. 
+Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
 Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
@@ -39,13 +37,27 @@ After you have downloaded the MTA Plugin, open the App Settings window in the Me
 
 If there is no existing After startup microflow, just select the "At_Startup_Setup_Connection" in the popup window.
 
+### Configuring Connection user in MTA
+
+After MTA has started up for the first time, it will create a Connection user. 
+
+In order to allow a Mendix App to connect to MTA you need to set the password for this Connection user. There is only one Connection user per MTA node so the password is the same for all Mendix Apps that you want to test in MTA.
+
+If you have already set the password previously for another App, use that password. Otherwise follow these steps. 
+
+- Login to MTA as MTA Manager.
+- Navigate to MTA management, MTA Users.
+- Edit the 'MTAConnectionUser' account.
+- Set the password. 
+- Save the password in a password manager that you can share with your colleagues.
+
 ### Setting Constants
 
 To configure the MTA Plugin, there are 5 constants that you have to assign a value. If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
 
 #### `ApplicationInstanceToken`
 This corresponds with an ID that MTA has generated for an Application Instance. 
-You can set this constant after you have [added an Application Instance](add-application-instance) in MTA.
+You can set this constant after you have [added an Application Instance](../../application-instance#create-an-application-instance) in MTA.
 
 #### `ConnectionMethod`
 This will determine if your app will try to connect to MTA, either
@@ -55,11 +67,11 @@ This will determine if your app will try to connect to MTA, either
 
 Any other value will result in an error message when attempting to establish the connection to MTA.
 
-#### `MTAConnectionPassword`
-This is the password that is set for the [Connection User](add-connection-user) in MTA.
-
 #### `MTAConnectionUsername`
-This is the username that is set for the [Connection User](add-connection-user) in MTA.
+This is the username that is set for the Connection user in MTA. The default value is 'MTAConnectionUser'.
+
+#### `MTAConnectionPassword`
+This is the password that is set for the Connection user in MTA [in the previous step](#configuring-connection-user-in-mta).
 
 #### `MTAWebSocketURL`
 This is the URL that the app will use to connect to MTA. The URL is setup as follows:
