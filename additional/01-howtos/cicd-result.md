@@ -1,4 +1,4 @@
-# CI/CD result handling
+# CI/CD handle results
 
 ## Definition
 

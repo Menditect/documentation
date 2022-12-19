@@ -1,4 +1,4 @@
-# CI/CD configuration
+# CI/CD configure
 
 ## Definition
 
