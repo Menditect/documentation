@@ -10,7 +10,7 @@ This could be any custom cloud environment like Clound Foundry or an on-premise 
 When installing MTA for the first time, always clean up your existing environment first (both the database and the Mendix model).
 :::
 
-## Cloud deployment and configuration
+## Configuring a new MTA implementation
 
 Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD container, see [Mendix Cloud Container resources](https://docs.mendix.com/developerportal/deploy/mendix-cloud-deploy/#resource-pack).
 
@@ -73,6 +73,24 @@ fontawesome.com
 - Change the MxAdmin password of the environment to your own MxAdmin password.
 - Create a database backup.
 - DONE!
+
+## Upgrading an existing MTA implementation
+
+### MTA actions
+
+- Always create a backup of your database before bringing MTA down and upgrading.
+- During deployment, make sure that you check all the values of the Constants for the Mendix model.
+- After upgrading with the provided MDA file in this directory, make sure to login using the admin account (usually MxAdmin).
+- Run all the migrations from the top menu in MTA, from old to new. 
+- Wait for all of the migrations to be done. 
+- When running into errors, contact Menditect support (support@menditect.com), and do not proceed with test scripting.
+- Logout.
+- Login with a TestAutomator account and check if the test configurations can be executed.
+
+### Test application actions
+
+After updating MTA, make sure that all the test applications have the newest version of the Mta Plugin module installed. Official releases of the Mta Plugin module are downloadable at:
+https://github.com/Menditect/MENDITECT-MTA-Plugin/releases
 
 
 ## Feedback?
