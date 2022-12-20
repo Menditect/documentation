@@ -59,11 +59,12 @@ Below steps are important and MTA will not work if these steps are skipped.
 - Make sure that any firewalls applicable have whitelisted these URLs, on ports 80 and 443:
 
 ```
-*.mendix.com
-*.sprintr.com
-mtasdkapi-ws.menditect.com
-hsforms.com
-fontawesome.com
+*.mendix.com/*
+*.sprintr.com/*
+*.fontawesome.com/*
+mtasdkapi-ws.menditect.com/*
+fonts.googleapis.com/*
+hsforms.com/*
 ```
 
 - Make sure the /rest path allows all access (in Mendix: Environment details -> Network -> Path Based Access Restrictions and set the path /rest/ on allow access).
