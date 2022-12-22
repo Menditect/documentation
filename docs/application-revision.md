@@ -18,8 +18,7 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 | Commit message     | The description added to the commit action. Typically this contains information about the model changes. |
 | Create commit date | The date when the revision is created (or the commit is done).                                           |
 | Mendix version     | The version of Mendix Studio (Pro) in which the Application is developed.                                |
-| Progress           | An indication of the download progression of the Application revision.                                   |
-| Revision number    | The commit number of the model of the Mendix application.                                                |
+| Commit id          | The commit number of the model of the Mendix application.                                                |
 | Total modules      | The total number of modules in application revision.                                                     |
 | Total entities     | The total number of entities in application revision.                                                    |
 | Total microflows   | The total number of microflows in application revision.                                                  |
@@ -53,8 +52,8 @@ Note that downloading can take some time depending on the size of the Mendix pro
 ### Change the Application revision for a Test Configuration
 
 
-### Apply a downloaded Application revision to Test Suites in a Test Configuration
-A new Application revision must be applied to the [Test Suites](test-suite) in a Test Configuration, in order to be able to execute the Test Configuration.
+### Adapt Test Suites in a Test Configuration to a downloaded Application revision
+[Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
 - Click the “Apply to Test Suites” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a consistency error will be shown.
 
 Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration].

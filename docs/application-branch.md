@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Definition
 
-A copy of an [Application](application) codeline, managed with Mendix teamserver. Information about an Application Branch is imported from teamserver by MTA. 
+A copy of an [Application](application) codeline, managed with the Mendix teamserver. Information about an Application Branch is imported from teamserver by MTA. 
 
 See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#branches) for more information about branches. 
 
@@ -17,7 +17,7 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#bra
 
 ## Business rules
 
-- The Application Branch information cannot be deleted from MTA if [Application Revision](application-revision) information still exists in the branch.
+None.
 
 ## Actions on Application branch
 
