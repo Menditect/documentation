@@ -40,7 +40,7 @@ There are two ways to Retrieve from former Teststep. The first one is quicker:
 
 The new way: 
 
-- Click on the "..." button on the Teststep that returns the object that you want to retrieve, and choose "*+ Retrieve output*".
+- Click on the '<i class="fal fa-ellipsis"></i>' button on the Teststep that returns the object that you want to retrieve, and choose "*+ Retrieve output*".
 
 The legacy way:
 

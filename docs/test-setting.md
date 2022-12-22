@@ -42,13 +42,13 @@ None.
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration.
 - Navigate to "Test settings".
-- Click "..." and choose "Edit".
+- Click on the '<i class="fal fa-ellipsis"></i>' button and choose "Edit".
 
 ### Delete a Test Setting
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration.
 - Navigate to "Test settings".
-- Click "..." and choose "Delete".
+- Click on the '<i class="fal fa-ellipsis"></i>' button and choose "Delete".
 
 ### Associate an Application Instance to a Test Setting
 - Navigate to the "Test configurations" page.
