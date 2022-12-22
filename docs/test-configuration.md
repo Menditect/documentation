@@ -44,7 +44,7 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 ### Delete a Test Configuration
 - Navigate to the "Test configurations" page.
-- Click on "..." and select "Delete" on the Test Configuration you want to delete.
+- Click on the '<i class="fal fa-ellipsis"></i>' button and select "Delete" on the Test Configuration you want to delete.
 
 Note that Testers cannot delete Test Configurations.
 
