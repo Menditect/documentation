@@ -21,13 +21,13 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 
 | Environment variable                                             | value                                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------ |
-| ApiMendixModule.WebsocketStage                                   | release-1-8                                            |
+| ApiMendixModule.WebsocketStage                                   | production                                             |
 | Atlas_Core.Atlas_Core_Version                                    | 3.0.7                                                  |
 | Atlas_Web_Content.Atlas_Web_Content_Version                      | 3.0.6                                                  |
 | BeheerModule.DeleteObjectBatchSize                               | 500                                                    |
 | BeheerModule.InternalToken                                       |                                                        |
 | BeheerModule.NodeRevision                                        | 0                                                      |
-| BeheerModule.NumberOfThreadsParallel                             | 12                                                     |
+| BeheerModule.NumberOfThreadsParallel                             | 6                                                      |
 | BeheerModule.UrlBaseDocumentation                                | https://documentation.menditect.com                    |
 | BeheerModule.UrlReleaseNotes                                     | releasenotes                                           |
 | BeheerModule.UrlSupportForm                                      | https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri |
@@ -37,8 +37,8 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | DeepLink.RequestHandlerName                                      | link                                                   |
 | DeepLink.DeepLink.SSOHandlerLocation                             |                                                        |
 | EgalitConfigModule.EsaMultiInstanceMode                          | False                                                  |
-| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | 5                                                      |
 | MtaDataValidationModule.DataValidationAccessGuid                 |                                                        |
+| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | 5                                                      |
 | PluginRecordModule.RecordingSupportRequestUrl                    | https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | 20                                                     |
 
