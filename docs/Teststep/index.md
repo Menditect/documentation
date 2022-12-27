@@ -107,8 +107,7 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 - Click on "*Mx Studio*" on top of the Teststep details pane on the right.
 
 ## Related topics
-- [Assert Attribute Value](assert-attribute-value)
-- [Assert Object Count](assert-object-count)
+- [Assert](Assert/)
 - [Data Variation](datavariation)
 - [Test Case](test-case)
 - [Test Instruction](test-instruction)

@@ -39,7 +39,7 @@ AANPASSEN, VERHUIZEN NAAR ASSERT
 - Click on "<i class="fas fa-trash-alt"></i>" to delete the assert.
 
 ## Related topics
-- [Assert Attribute Value](../assert-attribute-value)
+- [Assert Attribute Value](assert-attribute-value)
 - [Teststep](../teststep)
 
 ## Feedback?
