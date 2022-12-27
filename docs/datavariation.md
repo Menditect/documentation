@@ -49,7 +49,7 @@ Note that you cannot delete the first column labeled *# 1*.
 See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item).
 
 ## Related topics
-- [Assert Attribute Value](assert-attribute-value)
+- [Assert](Assert)
 - [Attribute Value](attribute-value)
 - [Data Variation Items](datavariation-item)
 - [Test Run](test-run)

@@ -2,16 +2,16 @@
 
 ## Definition
 
-An Assert on Attribute Value formulates an expected result of an attribute in a [Teststep](teststep) upon execution. It is possible to either define the result to have a single value, or a range that the value should be in. A Teststep can have multiple Asserts on Attribute Value.
+An Assert on Attribute Value formulates an expected result of an attribute in a [Teststep](../Teststep) upon execution. It is possible to either define the result to have a single value, or a range that the value should be in. A Teststep can have multiple Asserts on Attribute Value.
 
 An Assert on Attribute Value can be added for:
-- an [Attribute Value](attribute-value) of a created or changed object;
+- an [Attribute Value](../attribute-value) of a created or changed object;
 - an Attribute Value of a retrieved object. In that case the assert evaluates the Attribute Value of all retrieved objects;
 ~~- the value of a primitive microflow output parameter like string, integer, etc.~~
 
 Note that there are also [Asserts on Object Count](assert-object-count), that are added on a retrieve object action, or on a microflow call action. 
 
-When a Teststep uses [Data Variation](datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](datavariation-item) for each defined variation.
+When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item) for each defined variation.
 
 Each Assert is evaluated after the execution of a Teststep. A Teststep execution fails when the evaluated value does not match to the defined expectation. 
 
@@ -48,7 +48,7 @@ The following Assert Compare types are supported for the Mendix data types:
 ## Actions on an Assert on Attribute Value
 
 ### View Teststeps that have Asserts 
-- All Teststeps in a [Test Case](test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
+- All Teststeps in a [Test Case](../test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
 
 ### View attributes that have Asserts 
 - All attributes with one or more Assert are highlighted in the Attributes tab in the Details of teststep pane on the right in the Test Suite overview page.
@@ -65,9 +65,9 @@ There are multiple ways to add an Assert on Attribute Value:
 - Click on "<i class="fas fa-ballot-check"></i>" on the attribute to delete the Assert from.
 
 ## Related topics
-- [Assert Object Count](assert-object-count)
-- [Attribute Value](attribute-value)
-- [Teststep](teststep)
+- [Assert Object Count](../assert-object-count)
+- [Attribute Value](../attribute-value)
+- [Teststep](../Teststep)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

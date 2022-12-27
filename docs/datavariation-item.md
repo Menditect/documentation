@@ -53,7 +53,7 @@ There are two ways to edit values in a Data Variation.
 - Click "*Delete*".
 
 ## Related topics
-- [Assert Attribute Value](assert-attribute-value)
+- [Assert](Assert)
 - [Attribute Value](attribute-value)
 - [Data Variation](datavariation)
 - [Test Run](test-run)

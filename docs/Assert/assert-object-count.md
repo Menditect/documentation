@@ -2,7 +2,7 @@
 
 ## Definition
 
-An assert on object count is defined on a [Teststep](teststep) and exists of making a comparison between the expected and actual list size of output objects of a Teststep upon test execution.
+An assert on object count is defined on a [Teststep](../Teststep) and exists of making a comparison between the expected and actual list size of output objects of a Teststep upon test execution.
 
 
 ## Properties
@@ -18,7 +18,7 @@ Asserts on object count can be defined either on Retrieve Object Teststeps or on
 ## Actions on Assert Object Count
 
 ### View Teststeps that have asserts 
-- All [Teststeps](teststep) in a [Test Case](test-case) that have one or more asserts added, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
+- All [Teststeps](../Teststep) in a [Test Case](../test-case) that have one or more asserts added, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
 
 
 AANPASSEN, VERHUIZEN NAAR ASSERT 
@@ -39,8 +39,8 @@ AANPASSEN, VERHUIZEN NAAR ASSERT
 - Click on "<i class="fas fa-trash-alt"></i>" to delete the assert.
 
 ## Related topics
-- [Assert Attribute Value](assert-attribute-value)
-- [Teststep](teststep)
+- [Assert Attribute Value](../assert-attribute-value)
+- [Teststep](../teststep)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
