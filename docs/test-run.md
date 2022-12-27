@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 16
 ---
 
 
@@ -20,7 +20,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 | Status             | This indicates if the test is running or not; can be 'Running' or 'Finished'. |
   
 ## Business rules
-- There can only be two Test Runs per [Test Configuration](test-configuration) that are "Pinned".
+- You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).
 
 ## Actions on Test Run
 
@@ -36,7 +36,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration you want to view Test Runs for.
 - Navigate to "Test runs".
-- Click <i class="fal fa-trash-can"></i>  for the Test run you want to delete.
+- Click "<i class="fal fa-trash-can"></i>" for the Test run you want to delete.
 
 
 Note that for each Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
@@ -51,7 +51,7 @@ If a Test Run is cleaned up, the following information about the Test Run is sto
 ### Pin a Test Run
 Pinning a Test Run will prevent it from being cleaned up overnight.
 - Navigate to the Test Run overview in MTA under Test Run.
-- Click on <i class="fas fa-thumbtack"></i> next to the Test Run you want to keep.
+- Click on "<i class="fas fa-thumbtack"></i>" next to the Test Run you want to keep.
 
 ## Related topics
 - [Test Run](test-run)
@@ -60,4 +60,4 @@ Pinning a Test Run will prevent it from being cleaned up overnight.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 16 december 2022
+Last updated 27 december 2022

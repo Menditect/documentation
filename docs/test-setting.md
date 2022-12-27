@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 17
 ---
 
 
@@ -7,7 +7,7 @@ sidebar_position: 20
 
 ## Definition
 
-A Test Setting describes on a [Test Configuration](test-configuration) which combination of [Application Instances](application-instance) are to be tested.
+A Test Setting can be chosen to run a [Test Configuration](test-configuration). The Test Setting defines which [Application Instance(s)](application-instance) will be used during a [Test Run](test-run).
 The user that is logged in determines which Test Setting is to be selected when Executing the Test Configuration, by setting one as a Preference.
 
 ## Properties
@@ -19,10 +19,7 @@ The user that is logged in determines which Test Setting is to be selected when 
 
 ## Business rules
 
-None.
-
 - There must be at least one Test Setting per Test Configuration.
-- The Name of the Test Setting is mandatory.
 - A Test Setting must be associated to exacly one Application Instance in order to Execute the Test Configuration.
 
 ## Actions on Test Setting 
@@ -42,13 +39,13 @@ None.
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration.
 - Navigate to "Test settings".
-- Click on the '<i class="fal fa-ellipsis"></i>' button and choose "Edit".
+- Click on the '<i class="fas fa-ellipsis"></i>' button and choose "Edit".
 
 ### Delete a Test Setting
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration.
 - Navigate to "Test settings".
-- Click on the '<i class="fal fa-ellipsis"></i>' button and choose "Delete".
+- Click on the '<i class="fas fa-ellipsis"></i>' button and choose "Delete".
 
 ### Associate an Application Instance to a Test Setting
 - Navigate to the "Test configurations" page.
@@ -71,4 +68,4 @@ None.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 27 december 2022

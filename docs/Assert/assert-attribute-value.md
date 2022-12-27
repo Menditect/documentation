@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # Assert on Attribute Value
 
 ## Definition
@@ -11,7 +7,7 @@ An Assert on Attribute Value formulates an expected result of an attribute in a 
 An Assert on Attribute Value can be added for:
 - an [Attribute Value](attribute-value) of a created or changed object;
 - an Attribute Value of a retrieved object. In that case the assert evaluates the Attribute Value of all retrieved objects;
-- the value of a primitive microflow output parameter like string, integer, etc.
+~~- the value of a primitive microflow output parameter like string, integer, etc.~~
 
 Note that there are also [Asserts on Object Count](assert-object-count), that are added on a retrieve object action, or on a microflow call action. 
 
@@ -29,10 +25,11 @@ Each Assert is evaluated after the execution of a Teststep. A Teststep execution
 | Trim string values | Used to be able trim string values for leading and trailing space characters before evaluating the result (only applicable for string attributes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Business rules
-- The compare type is mandatory.
-- If the compare type is 'Range', both Min and Max values are mandatory.
+~~- The compare type is mandatory.~~
+~~- If the compare type is 'Range', both Min and Max values are mandatory.~~
 
 The following Assert Compare types are supported for the Mendix data types:
+
 
 |                          | String                       | Integer                      | Decimal                      | Boolean                      | Datetime                     | Enumeration                  |
 | ------------------------ | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
@@ -47,24 +44,25 @@ The following Assert Compare types are supported for the Mendix data types:
 | Less than                |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
 | Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |
 
+
 ## Actions on an Assert on Attribute Value
 
 ### View Teststeps that have Asserts 
-- All Teststeps in a [Test Case](test-case) with one or more Assert, are marked with <i class="fas fa-ballot-check"></i> in the list of Teststeps.
+- All Teststeps in a [Test Case](test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
 
 ### View attributes that have Asserts 
 - All attributes with one or more Assert are highlighted in the Attributes tab in the Details of teststep pane on the right in the Test Suite overview page.
-- If an Assert is included in Data Variation, <i class="fas fa-table"></i> is also shown.
+- If an Assert is included in Data Variation, "<i class="fas fa-table"></i>" is also shown.
 
 ### Add an Assert on Attribute Value
 There are multiple ways to add an Assert on Attribute Value:
-1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on <i class="fas fa-table"></i> next to the attribute to add the Assert;
-2. Hover your mouse on a Teststep and click on <i class="fal fa-ballot-check"></i> to open the page where asserts can be configured;
-3. Click on "Save and configure asserts" after configuring the Teststep. This will show the page where Asserts can be configured. Navigate to the "Attributes" tab, click on the "+ Assertion" button to add the Assert.
+1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on "<i class="fas fa-table"></i>" next to the attribute to add the Assert;
+2. Hover your mouse on a Teststep and click on "<i class="fal fa-ballot-check"></i>" to open the page where asserts can be configured;
+3. Click on "Save and configure asserts" after configuring the Teststep. This will show the page where Asserts can be configured. Navigate to the "Attributes" tab, click on the "<i class="fal fa-info-circle"></i> Assertion" button to add the Assert.
 
 ### Delete an Assert on Attribute Value
-- Open the assertion configuration page and go to the Attributes tab.
-- Click on <i class="fas fa-ballot-check"></i> on the attribute to delete the Assert from.
+~~- Open the assertion configuration page and go to the Attributes tab.~~ AANPASSEN
+- Click on "<i class="fas fa-ballot-check"></i>" on the attribute to delete the Assert from.
 
 ## Related topics
 - [Assert Object Count](assert-object-count)
@@ -74,4 +72,4 @@ There are multiple ways to add an Assert on Attribute Value:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 27 december 2022

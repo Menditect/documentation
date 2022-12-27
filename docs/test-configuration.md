@@ -1,5 +1,5 @@
 ---
-sidebar_position: 17
+sidebar_position: 14
 ---
 
 
@@ -20,9 +20,9 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 | CiCd enabled | If set to Yes, the Test Configuration will be executed if one of it is associated Test Applications is executed via Ci/Cd API. |
 
 ## Business rules
-- The name is mandatory.
+
 - The application revision of the [Test Suite](test-suite) must be equal to the application revision of the Test Configuration, with the same [Application](application) in order to be able to execute the Test Configuration.
-- There can only be two [Test Runs](test-run) per Test Configuration that are Pinned.
+- You can [pin](#pin-a-test-run) a maximum of two [Test Runs](test-run) per Test Configuration.
 
 ## Actions on Test Configuration
 
@@ -44,14 +44,21 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 ### Delete a Test Configuration
 - Navigate to the "Test configurations" page.
-- Click on the '<i class="fal fa-ellipsis"></i>' button and select "Delete" on the Test Configuration you want to delete.
+- Click on the "<i class="fas fa-ellipsis"></i>" button and select "Delete" on the Test Configuration you want to delete.
 
 Note that Testers cannot delete Test Configurations.
 
 ### Restore a deleted Test Configuration
 - Navigate to the "Test configurations" page.
-- Go to "Deleted".
-- Click on "Recover" on the Test Configuration you want to restore.
+- Go to "<i class="fal fa-eye"></i> Deleted". 
+- Click on "<i class="fal fa-check-double"></i> Recover" on the Test Configuration you want to restore.
+
+Note that deleted Test Configuration will automatically be deleted permanently when 20 days are passed after the moment of deletion.
+
+### Delete a Test Configuration permanently
+- Navigate to the "Test configurations" page.
+- Go to "<i class="fal fa-eye"></i> Deleted". 
+- Click on "<i class="fal fa-trash-alt"></i> Delete" on the Test Configuration you want to permanently delete.
 
 ## Related topics
 - [Test Run](test-run)
@@ -60,4 +67,4 @@ Note that Testers cannot delete Test Configurations.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 16 december 2022
+Last updated 27 december 2022

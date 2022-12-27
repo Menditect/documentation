@@ -19,7 +19,7 @@ It is possible to select a previous version on the top right of the page.
 - [Assert on Attribute Value](assert-attribute-value)
 - [Assert on Object Count](assert-object-count)
 - [Attribute Value](attribute-value)
-- [Construction Error](construction-error)
+- [Error](error)
 - [Data Variation](datavariation)
 - [Data Variation Item](datavariation-item)
 - [Microflow Parameter Value](microflow-parameter-value)

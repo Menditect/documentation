@@ -2,7 +2,7 @@
 
 ## Definition
 
-With this [Teststep](../Teststep) type, all the objects are stored to the database that are created or changed by a Create or Change Object Teststep in the same Test Case. Also, all the objects that are marked as deleted, are deleted. 
+With this [Teststep](../Teststep), objects are stored to the database or permanently deleted. Objects are stored from a Create or Change Object Teststep that is positioned previously in the same Test Case. Objects are deleted from a Delete Object Teststep that is positioned previously in the same Test Case.
 
 ## Actions
 
@@ -12,7 +12,9 @@ To add a Persist step, select Persist as the Action when creating a Teststep. No
 
 Make sure to always insert the Persist Teststep after the Teststeps that perform other Object actions. 
 
-A persist step will delete all the objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. 
+A persist step will store all objects created or changed after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. 
+
+A persist step will delete all objects that are marked as deleted after the previous Persist Teststep in the same Test Case, or since the start of the Test Case. 
 
 It is possible to have multiple Persist Teststeps in the same Test Case. However, if there is a technical error while executing the Test Case, the entire transaction for that Test Case is always rolled back.
 

@@ -1,8 +1,9 @@
----
-sidebar_position: 10
----
 
 # Attribute Value
+
+:::danger
+VERHUIZEN NAAR OACT PAGINA'S
+:::
 
 ## Definition
 
@@ -37,14 +38,14 @@ Note that:
 
 ### Set a fixed Attribute Value 
 - Navigate to an Object Teststep in the Test Suite page.
-- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
+- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute.
 
 Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
 ### Use a former Teststep to set an Attribute Value
 - Navigate to an Object Teststep in the Test Suite page.
-- Click <i class="fal fa-chevron-circle-right"></i>  on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep that should provide the value.
 
 ## Related topics
@@ -54,4 +55,4 @@ Note: For datetime values you can either specify a date, or calculate the date w
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 27 december 2022

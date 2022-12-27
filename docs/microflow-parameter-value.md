@@ -1,9 +1,9 @@
----
-sidebar_position: 14
----
-
 
 # Microflow Parameter Value
+
+:::danger
+VERHUIZEN NAAR MICROFLOW CALL TESTSTEP 
+:::
 
 ## Definition
 
@@ -19,7 +19,7 @@ The Microflow Parameter Value contains the value for a Microflow input parameter
 
 ## Business rules
 
-- If the Datatype is an Object, either the value must be set to 'Empty' using the <i class="fal fa-empty-set"></i> button, or a former [Teststep](teststep) must be selected in order to be able to execute the Test Configuration.  
+- If the Datatype is an Object, either the value must be set to 'Empty' using the "<i class="fal fa-empty-set"></i>" button, or a former [Teststep](teststep) must be selected in order to be able to execute the Test Configuration.  
 - If the Datatype is not an Object and the input type is Former Teststep, a former [Teststep](teststep) must be selected in order to be able to execute the Test Configuration.  
 
 Note that if a Value on Microflow Parameter Value is not set, this means the input parameter will be set to 'Empty' when executing the test. 
@@ -32,13 +32,13 @@ Note that if a Value on Microflow Parameter Value is not set, this means the inp
 
 ### Use an Empty object for the Microflow Parameter Value
 - In the Test Suite page, select the Microflow Teststep to view the Microflow Parameter Values for.
-- Select the <i class="fal fa-empty-set"></i> button for the parameter to set it to 'Empty'.
+- Select the "<i class="fal fa-empty-set"></i>" button for the parameter to set it to 'Empty'.
 
 ### Set a fixed Microflow Parameter Value
 Note that Microflow Parameter Values can be either objects or primitives like String, Integer, etc.
 If the Microflow Parameter Value is an object, a former Teststep must be used to provide the value.
 
-- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
+- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute. 
 
 For each datatype, there is a different way of entering the value:
@@ -52,7 +52,7 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 ### Use a former Teststep to set an Attribute Value
 
 ** Setting a primitive (String, Integer, Datetime, etc) value **
-- First click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
+- First click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep that should provide the value.
 
 ** Setting an object value **
@@ -60,13 +60,13 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 - Select or Save the Teststep that should provide the value.
 
 ### Fill a Microflow Parameter List
-If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "+ Another input teststep" to accomplish this.
+If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "<i class="fal fa-info-circle"></i>" Another input teststep" to accomplish this.
 
 Note that it is not possible to select the same previous teststep multiple times.
 
 ### Include a Microflow Parameter Value as a Data Variation Item
 - In the Test Suite page, select the Microflow Teststep to view the Microflow Parameter Values for.
-- Select the <i class="fas fa-table"></i> button for the parameter that you want to include in [Data Variation](datavariation).
+- Select the "<i class="fas fa-table"></i>" button for the parameter that you want to include in [Data Variation](datavariation).
 
 ## Related topics
 - [Attribute Value](attribute-value)
@@ -75,4 +75,4 @@ Note that it is not possible to select the same previous teststep multiple times
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 september 2022
+Last updated 27 december 2022

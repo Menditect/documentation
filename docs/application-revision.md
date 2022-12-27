@@ -37,7 +37,7 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application by clicking on the tile.
 - Navigate to "App revisions" to view the Application revisions.
-- Click on <i class="fal fa-info-circle"></i> to view Modules, Entities and Microflows in this revision.
+- Click on "<i class="fal fa-info-circle"></i>" to view Modules, Entities and Microflows in this revision.
 
 ### Add an Application revision
 Add a new Application revision to MTA by downloading it from teamserver. The only way to download a revision, is if you select this revision to be used in a Test Configuration.
@@ -58,17 +58,24 @@ Note that downloading can take some time depending on the size of the Mendix pro
 - MTA will download the revision if it is not yet downloaded.
 
 ### Adapt Test Suites in a Test Configuration to a downloaded Application revision
-[Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
-- Click the “Apply to Test Suites” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a consistency error will be shown.
 
-Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration].
+:::info
+MTA will no longer check if the revision of a Test Configuration matches the one that is running on the Application Instance.
+:::
+
+[Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
+- Click the “Apply to Test Suites” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant an [Error](error) will be shown.
+
+Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration.
 
 ### Delete a downloaded Application revision
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application, MTA will show detailed Application information.
 - Navigate to the "Application revisions" tab.
 - MTA will show all Application revisions on the right pane.
-- Click on <i class="fas fa-trash-alt"></i> to delete the Application revision. Note this is only possible when the Application revision is no longer in use by a Test Configuration. Application revisions are only removed from MTA; not from the Mendix repository.
+- Click on "<i class="fas fa-trash-alt"></i>" to delete the Application revision. Note this is only possible when the Application revision is no longer in use by a Test Configuration.
+
+Note that Application revisions are only removed from MTA; not from the Mendix teamserver.
 
 ## Related topics
 - [Application](application)
@@ -78,4 +85,4 @@ Note that this can take some time depending on the size of the Mendix project, t
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 8 december 2022
+Last updated 27 december 2022

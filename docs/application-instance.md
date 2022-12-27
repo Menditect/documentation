@@ -20,8 +20,7 @@ The associated [Test setting](test-setting) on a Test Configuration determines w
 | Connectiond Id  | A globally unique id (GUID) that is generated each time a connection is made to the instance.                |
 
 ## Business rules
-- The Name is mandatory.
-- The URL, if filled in, should start with http of https and not end with a slash.
+- A Test Setting must be associated to exacly one Application Instance in order to Execute the Test Configuration.
 
 ## Actions on an Application Instance
 
@@ -50,9 +49,9 @@ Note that each time an Application is added, a Default Application Instance is a
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application by clicking on the tile.
 - Navigate to "App instances" to view the Application Instances.
-- Click <i class="fas fa-trash-alt"></i> on the Application Instance to delete it.
+- Click "<i class="fas fa-trash-alt"></i>" on the Application Instance to delete it.
 
-Note that if a Test Configuration was using the Application Instance, this will result in an error on the Test Configurations page. 
+Note that if a Test Configuration was using the Application Instance, this will result in an [Error](error) on the Test Configurations page. 
 
 ## Related topics
 - [Application](application)
@@ -62,4 +61,4 @@ Note that if a Test Configuration was using the Application Instance, this will 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 8 december 2022
+Last updated 27 december 2022

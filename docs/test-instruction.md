@@ -1,5 +1,5 @@
 ---
-sidebar_position: 18
+sidebar_position: 15
 ---
 
 
@@ -23,7 +23,8 @@ The Test Instruction is the lowest or fourth level of the 4-layer framework that
 | Image           | A descriptive image (for instance, png or jpg file) that shows the expected outcome of the Test Instruction. |
 
 ## Business rules
-- The title is mandatory.
+
+None.
 
 ## Actions on Test Instruction
 
@@ -40,20 +41,22 @@ The Test Instruction is the lowest or fourth level of the 4-layer framework that
 
 ### Create a Test Instruction 
 - Navigate to the Test Suite and select the Manual Test Case that you want to create a Test Instruction in.
-- Click "*+ Test Instruction*" to create a Test Instruction.
+- Click "<i class="fal fa-info-circle"></i> Test Instruction" to create a Test Instruction.
 - Enter the Title and some optional information and select an optional Image.
 - Choose "Save".
 
 ### Change the order of a Test Instruction in a Test Case
-- Go to the Manual Test Case that the Test Instruction is in.
-- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the name of the Test Instruction to move it up or down.
+- Navigate to the Manual Test Case that the Test Instruction is in.
+- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the "<i class="fas fa-ellipsis"></i>" menu of the Test Instruction to move it up or down.
 
 ### Edit a Test Instruction
-- Click on <i class="fa fa-pencil"></i> next to the Test Instruction name to edit the Title or other information, or to Highlight the Test Instruction.
+- Navigate to the Manual Test Case that the Test Instruction is in.
+- Click on "<i class="fa fa-pencil"></i>" under the "<i class="fas fa-ellipsis"></i>" menu in the Test Case to edit it.
+- Click on "<i class="fa fa-pencil"></i>" next to the Test Instruction name to edit the Title or other information, or to Highlight the Test Instruction.
 
 ### Delete a Test Instruction
 - Go to the Manual Test Case that the Test Instruction is in.
-- Click <i class="fas fa-trash-alt"></i> on the Test Instruction you want to delete.
+- Click "<i class="fas fa-trash-alt"></i> Delete" under the "<i class="fas fa-ellipsis"></i>" menu of the Test Instruction you want to delete.
 
 ## Related topics
 - [Test Run](test-run)
@@ -63,4 +66,4 @@ The Test Instruction is the lowest or fourth level of the 4-layer framework that
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 september 2022
+Last updated 27 december 2022

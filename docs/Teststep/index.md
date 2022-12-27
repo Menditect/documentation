@@ -10,7 +10,7 @@ The Teststep is the lowest or fourth level of the 4-layer framework that is used
 
 A Teststep must be one of the following types:
 - [Microflow call](Teststep/microflow)
-- Object
+- Object Action
 
 An Object Teststep can execute the following actions:
 - [Create](Teststep/create): create an object (without committing it to the database).
@@ -26,16 +26,16 @@ An Object Teststep can contain [Attribute Values](attribute-value). When setting
 A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](microflow-parameter-value).
 
 ## Properties
-| Name | Description |
-| ----------- | ----------- |
-| Name | The name of the Teststep. |
-| Description | A description of the Teststep. |
-| Highlight | This indicates whether to visually highlight the Teststep in the Test Case to draw attention to it. |
-| Category | Can be either 'Object' or 'Microflow'. |
-| Action | Only for Object Teststeps; either 'Create', 'Retrieve', 'Change', 'Delete' or 'Persist'. |
-| Retrieve set | Only for Retrieve Object Teststeps; either 'All objects', or 'Only First object'. |
+| Name            | Description                                                                                                            |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Name            | The name of the Teststep.                                                                                              |
+| Description     | A description of the Teststep.                                                                                         |
+| Highlight       | This indicates whether to visually highlight the Teststep in the Test Case to draw attention to it.                    |
+| Category        | Can be either 'Object' or 'Microflow'.                                                                                 |
+| Action          | Only for Object Teststeps; either 'Create', 'Retrieve', 'Change', 'Delete' or 'Persist'.                               |
+| Retrieve set    | Only for Retrieve Object Teststeps; either 'All objects', or 'Only First object'.                                      |
 | Retrieve option | Only for Retrieve Object Teststeps; either 'From database', 'From former Teststep', or 'By association' (from memory). |
-| Microflow Name | Only for Microflow Teststeps; Name of the microflow to be executed. |
+| Microflow Name  | Only for Microflow Teststeps; Name of the microflow to be executed.                                                    |
 
 ## Business rules
 - The name is mandatory.
@@ -63,30 +63,30 @@ A Microflow Teststep executes exactly one microflow (and all the activities in i
 First, navigate to the Automatic Test Case that the Teststep is in.
 
 **Option 1: Move a teststep 1 position up or down.** 
-- Click on the '<i class="fal fa-ellipsis"></i>' button on the Teststep.
-- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> to move the Teststep up or down.
-- Review and correct any resulting configuration errors.
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
+- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" to move the Teststep up or down.
+- Review and correct any resulting configuration [Errors](error).
 
 **Option 2: Move a Teststep inside a Test Case.** 
 - Click on "<i class="fa fa-pencil"></i> Edit".
 - Use drag and drop to position the Teststep.
-- Review any configuration errors and save your changes.
+- Review any configuration [Errors](error) and save your changes.
 
-**Option 2: Move a Teststep to another Test Case.** 
-- Click on the '<i class="fal fa-ellipsis"></i>' button on the Teststep.
+**Option 3: Move a Teststep to another Test Case.** 
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
 - Click on "-> Another test case".
 - Use drag and drop to move the Teststep.
-- Review any configuration errors and save your changes.
+- Review any configuration [Errors](error) and save your changes.
 
 
 ### Edit a Teststep
-- Click on "<i class="fa fa-pencil"></i> Edit".
-- Click on <i class="fa fa-pencil"></i> next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
+- Click on "<i class="fa fa-pencil"></i>" Edit".
+- Click on "<i class="fa fa-pencil"></i>" next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
 
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
 ### Configure a Teststep
-- Click on <i class="fas fa-cog"></i> on the Teststep name to set the Attribute Values or Microflow Parameter Values.
+- Click on "<i class="fas fa-cog"></i>" on the Teststep name to set the Attribute Values or Microflow Parameter Values.
 
 When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
 - For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
@@ -96,10 +96,10 @@ Note that it not is possible to change the action or type of Teststep after crea
 
 ### Delete a Teststep
 - Navigate to the Automatic Test Case that the Teststep is in.
-- Click on the '<i class="fal fa-ellipsis"></i>' button on the Teststep.
-- Click on "<i class="fas fa-trash-alt"></i> Test step".
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
+- Click on "<i class="fas fa-trash-alt"></i>" Test step".
 
-Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, an error will occur prohibiting the execution of the Test Configuration.
+Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 
 ### Open the Microflow or Domain Model associated with a Teststep in Mendix Studio
 - Navigate to the Automatic Test Case that the Teststep is in.
