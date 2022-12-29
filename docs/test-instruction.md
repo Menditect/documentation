@@ -41,7 +41,7 @@ None.
 
 ### Create a Test Instruction 
 - Navigate to the Test Suite and select the Manual Test Case that you want to create a Test Instruction in.
-- Click "<i class="fal fa-info-circle"></i> Test Instruction" to create a Test Instruction.
+- Click "<i class="fal fa-plus-circle"></i> Test Instruction" to create a Test Instruction.
 - Enter the Title and some optional information and select an optional Image.
 - Choose "Save".
 

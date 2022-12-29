@@ -5,7 +5,7 @@
 An Assert on Attribute Value formulates an expected result of an attribute in a [Teststep](../Teststep) upon execution. It is possible to either define the result to have a single value, or a range that the value should be in. A Teststep can have multiple Asserts on Attribute Value.
 
 An Assert on Attribute Value can be added for:
-- an [Attribute Value](../attribute-value) of a created or changed object;
+- an value of an attribute in a [Created](../Teststep/create) or [Changed](../Teststep/change) Object;
 - an Attribute Value of a retrieved object. In that case the assert evaluates the Attribute Value of all retrieved objects;
 ~~- the value of a primitive microflow output parameter like string, integer, etc.~~
 
@@ -66,7 +66,6 @@ There are multiple ways to add an Assert on Attribute Value:
 
 ## Related topics
 - [Assert Object Count](assert-object-count)
-- [Attribute Value](../attribute-value)
 - [Teststep](../Teststep)
 
 ## Feedback?

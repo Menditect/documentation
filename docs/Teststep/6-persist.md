@@ -2,7 +2,11 @@
 
 ## Definition
 
-With this [Teststep](../Teststep), objects are stored to the database or permanently deleted. Objects are stored from a Create or Change Object Teststep that is positioned previously in the same Test Case. Objects are deleted from a Delete Object Teststep that is positioned previously in the same Test Case.
+With this [Teststep](.), Objects from a Create or Change Object Teststep that is positioned previously in the same Test Case, are **committed** to the database, and Objects from a Delete Object Teststep that is positioned previously in the same Test Case, are **deleted** from the database.
+
+Domain model events (Before and After Commit), if configured, are triggered for Objects that are committed.
+
+Domain model events (Before and After Delete), if configured, are triggered for Objects that are deleted.
 
 ## Actions
 

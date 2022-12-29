@@ -59,7 +59,7 @@ Note that [datavariation](datavariation) still applies when executing a single T
 
 ### Create a Test Case
 - Navigate to the Test Suite you want to create a Test Case in.
-- Click "<i class="fal fa-info-circle"></i> Test case" to create a Test Case.
+- Click "<i class="fal fa-plus-circle"></i> Test case" to create a Test Case.
 - Select either 'Manual' or 'Automatic' for the Test Case Type (Testers can only create 'Manual' Test Cases).
 - Enter a name and other optional information.
 - Select an [Application Instance](application-instance) to execute the Test Case on.

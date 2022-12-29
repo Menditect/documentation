@@ -2,7 +2,9 @@
 
 ## Definition
 
-With this [Teststep](../Teststep) type, an object or objects will be put on the list for objects to be deleted using a [Persist](persist) step. 
+With this [Teststep](.) type, an object or objects from a previous [Teststep](.) is marked for deletion.
+
+To delete it from the database, add a [Persist](persist) step.
 
 ## Actions
 
@@ -12,12 +14,12 @@ There are two options to Delete an Object. The first option is quicker:
 
 **Option 1:**
 
-- Click on the '<i class="fas fa-ellipsis"></i>' button on the Teststep that returns the object that you want to delete, and choose "<i class="fal fa-info-circle"></i> Delete output".
+- Click on the '<i class="fas fa-ellipsis"></i>' button on the Teststep that returns the object that you want to delete, and choose "<i class="fal fa-plus-circle"></i> Delete output".
 
 **Option 2:**
 
 1. Select the Test Case that you want to create a Teststep in.
-2. Click "<i class="fal fa-info-circle"></i> Teststep" and Click "<i class="fal fa-info-circle"></i> Delete" to add a Delete Object Teststep.
+2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Delete teststep" to add a Delete Object Teststep.
 3. Select an entity. You can search by name.
 4. Select the previous Teststep that returns the object that needs to be deleted. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
 5. Click on the "Save" button. 

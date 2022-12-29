@@ -21,9 +21,6 @@ An Object Teststep can execute the following actions:
 
 Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, and afterwards changed in another Teststep, MTA will not give a warning during test design, but give a runtime error on test execution because the object to be changed is no longer available.
 
-An Object Teststep can contain [Attribute Values](attribute-value). When setting Attribute Values, always keep in mind that the meaning of the value is different for the Retrieve action than for the Create/Change actions. 
-
-A Microflow Teststep executes exactly one microflow (and all the activities in it) and can contain [Microflow Parameter Values](microflow-parameter-value).
 
 ## Properties
 | Name            | Description                                                                                                            |
