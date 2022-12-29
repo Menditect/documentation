@@ -10,7 +10,7 @@ sidebar_position: 10
 
 Data Variation Item or variant refers to an attribute that can be varied when executing a [Test Suite](test-suite). 
 Data Variation Items are always part of [Data Variation](datavariation).
-The value of a Data Variation Item is defined either in an the value of an attribute or in an [Assert on attribute value](Assert/assert-attribute-value).
+The value of a Data Variation Item is defined either in an the value of an attribute or in an [Assert on attribute](Assert/assert-attribute).
 
 ## Properties
 | Name           | Description                                                                                                                                                                                                                                                                           |
@@ -39,9 +39,9 @@ Note that not entering a value will be interpreted as 'Empty'.
 - Click on this icon to show the values per [Data Variation](datavariation).
 
 ### Create a Data Variation Item
-To add an attribute or an [Assert on attribute value](Assert/assert-attribute-value) as a Data Variation Item, there are two ways:
+To add an attribute or an [Assert on attribute](Assert/assert-attribute) as a Data Variation Item, there are two ways:
 1. When configuring a [Teststep](teststep), click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
-2. With Data Variation already enabled, go to the data variation page and click on "<i class="fal fa-info-circle"></i> Attribute" or "<i class="fal fa-info-circle"></i> Assert" to add an Attribute Value or an Assert on attribute value as a Data Variation Item.
+2. With Data Variation already enabled, go to the data variation page and click on "<i class="fal fa-info-circle"></i> Attribute" or "<i class="fal fa-info-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
 
 ### Edit a Data Variation Item
 There are two ways to edit values in a Data Variation. 
