@@ -35,7 +35,7 @@ To upgrade the major version of your Mendix App (for example, from Mendix 8.18 t
 
 After you have downloaded the MTA Plugin, open the App Settings window in the Mendix modeler and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
 
-If there is no existing After startup microflow, just select the "At_Startup_Setup_Connection" in the popup window.
+If there is no existing After startup microflow, just select the "ASU_Setup_Connection_MTA" in the popup window.
 
 ### Configuring Connection user in MTA
 
@@ -62,7 +62,7 @@ You can set this constant after you have [added an Application Instance](../../a
 #### `ConnectionMethod`
 This will determine if your app will try to connect to MTA, either
 - 'AfterStartup': After deployment the app will try to connect to MTA using the provided token and Connection User's credentials.
-- 'Manual': You have to establish the connection to MTA manually, logging in as the [Plugin User](#configuring-mta-plugin-user) on the app.
+- 'Manual': You have to establish the connection to MTA manually, with the [Plugin Home page](#configuring-plugin-home-page) in the app.
 - 'None': This will disable the connection to MTA.
 
 Any other value will result in an error message when attempting to establish the connection to MTA.
@@ -84,28 +84,19 @@ To get the URL to MTA, navigate to MTA in your browser, copy the part between `h
 
 
 
-### Configuring MTA Plugin user
+### Configuring Plugin Home page
 
 :::info
-As of MTA version 2.0, configuring the MTA Plugin user is no longer mandatory. 
-Create a user role 'MTAPluginUser' and make sure not to select any modules in this step. Select the following roles for user role 'MTAPluginUser':
+As of MTA version 2.0, configuring the MTA Plugin Home page is only necessary if you want to manually connect to MTA. 
 :::
 
-- 'MTAPluginUser' from MTAPlugin module
-- 'User' from System module
-- 'User' from Administration module
+- Create a Page with a Responsive layout.
+- Insert the "MTAPluginPage" snippet from the MTA Plugin Module.
+- Add Project User Roles to the Page.
+- Add the "MTAPluginUser" Module role from the MTA Plugin Module to all of these Project User Roles.
+- Include the new Page in the Navigation.
 
-Go to navigation and create a role-based home page for MTAPluginUser for the primary navigation layout (usually 'Responsive'):
-
-- Select Edit. Mendix shows page 'Role-based home pages'
-- Select New. Mendix shows page 'Select user role'
-- Select user role 'MTAPluginUser'
-- Select target and select page HomepageMTAPluginModule
-
-Commit the changes to teamserver and deploy to the environment that is going to be used as Test application. After deployment, login with a user role that has Create rights on Account (like an Administrator). Create a local user (not a web service user) with only the role 'MTAPluginUser'. Give the user a name, and note the Username and Password for later.
-
-## Troubleshooting
-
+You can now view connection details and manually connect to MTA, with accounts having the Project User Roles that you specified.
 
 
 ## Feedback?
