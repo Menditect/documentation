@@ -28,6 +28,7 @@ The associated [Test setting](test-setting) on a Test Configuration determines w
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application) by clicking on the tile.
 - Navigate to "App instances" to view the Application Instances.
+- MTA will show details of the Application Instance on the right. Click on Copy of any of the values if you need to use them to configure your MTA plugin.
 
 ### View Test settings and Test Configurations that use an Application Instance
 - Navigate to the "Applications" page to view all Applications that are used in MTA.

@@ -21,7 +21,7 @@ Always make sure to download the right release. The MTA version supported by the
 
 Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
-:::info
+:::note
 You can create Module content containing the MTA Plugin in your Company marketplace (https://marketplace.mendix.com/link/mymarketplace), so you import the MTA Plugin module from the appstore. We are currently working on publishing it to the public Mendix marketplace. 
 :::
 
@@ -55,6 +55,10 @@ If you have already set the password previously for another App, use that passwo
 
 To configure the MTA Plugin, there are 5 constants that you have to assign a value. If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
 
+:::info
+To find the values for any of these Constants, simply [open the details of the Application Instance](../../application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
+:::
+
 #### `ApplicationInstanceToken`
 This corresponds with an ID that MTA has generated for an Application Instance. 
 You can set this constant after you have [added an Application Instance](../../application-instance#create-an-application-instance) in MTA.
@@ -79,8 +83,6 @@ This is the URL that the app will use to connect to MTA. The URL is setup as fol
 *wss://{URL to MTA}*
 
 Example: wss://mta-mtatraining.mendixcloud.com
-
-To get the URL to MTA, navigate to MTA in your browser, copy the part between `https://` and `/login.html`.
 
 
 
