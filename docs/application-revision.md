@@ -69,13 +69,9 @@ MTA will no longer check if the revision of a Test Configuration matches the one
 Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration.
 
 ### Delete a downloaded Application revision
-- Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an Application, MTA will show detailed Application information.
-- Navigate to the "Application revisions" tab.
-- MTA will show all Application revisions on the right pane.
-- Click on "<i class="fas fa-trash-alt"></i>" to delete the Application revision. Note this is only possible when the Application revision is no longer in use by a Test Configuration.
 
-Note that Application revisions are only removed from MTA; not from the Mendix teamserver.
+It is no longer possible to delete downloaded revisions manually.
+Application revisions are cleaned up nightly by MTA if they are no longer in use.
 
 ## Related topics
 - [Application](application)

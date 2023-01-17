@@ -48,14 +48,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-0744                                                                                                                                       |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to execute a test on an Application that is running on your local computer (without having to install third party tooling). |
 | __Release actions__   | None.                                                                                                                                          |
 
 <br/>
-
 
 | ID                    | MTA-0965                                                                                                                                                                                                  |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,14 +62,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-0975                                                                                                                                                                                                                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | The MTA Plugin User and the MTA Plugin Homepage are no longer required to be included in the Application under test. The MTA Plugin Homepage is now included in the Plugin Module as a Snippet and no longer as a Page. |
 | __Release actions__   | Please read the [Configure Plugin Home Page](../additional/howtos/import-plugin#configuring-plugin-home-page) page.                                                                                                     |
 
 <br/>
-
 
 | ID                    | MTA-1006                                                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -80,15 +76,6 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
-| ID                    | MTA-1056                                                                                                                                                           |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Execution users are no longer registered on an Application Instance (previously: Application Environment) but on the combination Application / Test Configuration. |
-| __Release actions__   | None: Menditect will migrate existing execution users and copy them to every Test Configuration that uses the Application.                                         |
-
-<br/>
-
-
 | ID                    | MTA-0986                                                                                                                                  |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Application Environments are now migrated to Application Instances. Instances are no longer automatically detected from the Mendix Cloud. |
@@ -96,6 +83,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
+| ID                    | MTA-1056                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Execution users are no longer registered on an Application Instance (previously: Application Environment) but on the combination Application / Test Configuration. This is because in a future release, Execution users will be generated based on the available User Roles in the revision of the Test Configuration. |
+| __Release actions__   | None: Menditect will migrate existing execution users and copy them to every Test Configuration that uses that Application.                                                                                                                                                                                            |
+
+<br/>
 
 | ID                    | MTA-1019                                                                                                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,14 +97,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-0961                                                                                     |
 | --------------------- | -------------------------------------------------------------------------------------------- |
 | __New functionality__ | When creating a Recording it is now possible to select which Application Instance to record. |
 | __Release actions__   | None.                                                                                        |
 
 <br/>
-
 
 | ID                    | MTA-0786                                                                                                         |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -120,22 +111,19 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
-| ID                    | MTA-1037                                       |
-| --------------------- | ---------------------------------------------- |
-| __New functionality__ | It is now possible to stop a running Test Run. |
-| __Release actions__   | None.                                          |
-
-<br/>
-
-
-| ID                    | MTA-1066                                                                                                                                    |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to view results while a Test Run is running; which Teststeps are running and which Teststeps are waiting to be executed. |
-| __Release actions__   | None.                                                                                                                                       |
+| ID                    | MTA-1037                                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to stop a running Test Run. Manually stopped Test Runs can be recognized as such in the Test Run overview. |
+| __Release actions__   | None.                                                                                                                         |
 
 <br/>
 
+| ID                    | MTA-1066                                                                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to view results while a Test Run is running; which Test Suites have been executed and which Test Suites are waiting to be executed. You can also view details of the results within the Test Suite. |
+| __Release actions__   | None.                                                                                                                                                                                                                  |
+
+<br/>
 
 | ID                    | MTA-1033                                                                                                                                                             |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -144,14 +132,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-1111                                                                                                                                    |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | When creating a Test Case, both the Application to test and the Execution User are automatically selected if there is only one in the list. |
 | __Release actions__   | None.                                                                                                                                       |
 
 <br/>
-
 
 | ID                    | MTA-0984                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -160,14 +146,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-0939                                                                                                                                       |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: The results of the Test Run (on Test Configuration, Test Suite and Test Case level) are now also included in the "get results" API. |
 | __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                               |
 
 <br/>
-
 
 | ID                    | MTA-1029                                                                                                                                                                                             |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -176,7 +160,6 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-1037                                                                                                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: When executing with CI/CD, you can no longer specify which Application Instance to run on, because that is determined by the Test Setting for the CI/CD user in MTA. |
@@ -184,16 +167,12 @@ There is a breaking change in this MTA version that requires you to download, im
 
 <br/>
 
-
 | ID                    | MTA-0938                                                                                                                   |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice.                   |
 | __Release actions__   | Please read the [CI/CD results](../../additional/howtos/cicd-result#3-get-realtime-results-in-your-own-api-endpoint) page. |
 
 <br/>
-
-
-
 
 
 ## Bug fixes
