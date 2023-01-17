@@ -13,13 +13,22 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <ul><i class="fas fa-gift"></i>  Local testing!
 <ul>
-<li>bla bla bla </li>
+<li>It is now possible to execute a test on an Application that is running on your local computer. </li>
+<li>No need to install third party tooling anymore. </li>
 </ul>
 </ul>
 
 <ul><i class="fas fa-gift"></i>  Completely redesigned user interface!
 <ul>
-<li>bla bla bla </li>
+<li>MTA's user interface is completely renewed. </li>
+<li>No need to select your Test Configuration each time after running your tests. </li>
+</ul>
+</ul>
+
+<ul><i class="fas fa-gift"></i>  Improved CI/CD capabilities!
+<ul>
+<li>Results are now included in the get results API so you don't have to login to MTA anymore.   </li>
+<li>When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice!   </li>
 </ul>
 </ul>
 
@@ -160,10 +169,10 @@ There is a breaking change in this MTA version that requires you to download, im
 <br/>
 
 
-| ID                    | MTA-1029                                                                                                                                                                                      |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | CI/CD API: When executing with CI/CD, MTA will no detect if there is a new revision deployed on the Application under test and consequentually no longer download or adapt to a new revision. |
-| __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                                                                              |
+| ID                    | MTA-1029                                                                                                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | CI/CD API: When executing with CI/CD, MTA will no longer detect if there is a new revision deployed on the Application under test and consequentually no longer download or adapt to a new revision. |
+| __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                                                                                     |
 
 <br/>
 
@@ -176,10 +185,10 @@ There is a breaking change in this MTA version that requires you to download, im
 <br/>
 
 
-| ID                    | MTA-0938                                                                                                 |
-| --------------------- | -------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | CI/CD API: When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice. |
-| __Release actions__   | Please read the [CI/CD results](../../additional/howtos/cicd-result) page.                               |
+| ID                    | MTA-0938                                                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | CI/CD API: When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice.                   |
+| __Release actions__   | Please read the [CI/CD results](../../additional/howtos/cicd-result#3-get-realtime-results-in-your-own-api-endpoint) page. |
 
 <br/>
 
@@ -189,10 +198,66 @@ There is a breaking change in this MTA version that requires you to download, im
 
 ## Bug fixes
 
-| ID                  | MTA-xxx |
-| ------------------- | ------- |
-| __Problem__         | yyy.    |
-| __Solution__        | zzz.    |
-| __Release actions__ | None.   |
+| ID                  | MTA-1011                                                                                  |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| __Problem__         | When using drag and drop to move Teststeps, Errors are sometimes not correctly generated. |
+| __Solution__        | Errors are now correctly generated when using drag and drop to move Teststeps.            |
+| __Release actions__ | None.                                                                                     |
+
+<br/>
+
+| ID                  | MTA-0977                                                                                                       |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When generatating Teststeps using Microflow ends in an error, all subsequent user actions lead to more errors. |
+| __Solution__        | Errors shown after generatating Teststeps using Microflow no longer lead to more errors.                       |
+| __Release actions__ | None.                                                                                                          |
+
+<br/>
+
+| ID                  | MTA-0589                                                                                                    |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| __Problem__         | If a microflow is used in a Teststep but deleted in the new revision, MTA does not show the microflow name. |
+| __Solution__        | If a microflow is used in a Teststep but deleted in the new revision, MTA also shows the microflow name.    |
+| __Release actions__ | None.                                                                                                       |
+
+<br/>
+
+| ID                  | MTA-1039                                                                                                                                                                                                                                                             |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When creating or editing an Object action Teststep and setting associations with a * - * cardinality, it is not clear to the user that an operation (set/add/remove) must be selected because the page where this happens can be closed without validation feedback. |
+| __Solution__        | When creating or editing an Object action Teststep and setting associations with a * - * cardinality, the user will receive validation feedback that an operation (set/add/remove) must be selected.                                                                 |
+| __Release actions__ | None.                                                                                                                                                                                                                                                                |
+
+<br/>
+
+| ID                  | MTA-1049                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | If the last test run of a Test configuration is deleted then it remains visible and selected in the overview. |
+| __Solution__        | Deleting the last test run of a Test configuration now works as expected.                                     |
+| __Release actions__ | None.                                                                                                         |
+
+<br/>
+
+| ID                  | MTA-1072                                                                                                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | When generatating Teststeps using Microflow cannot be completed because there are no objects in the database to generate parameters from, the user will not receieve a clear message about this. |
+| __Solution__        | When generatating Teststeps using Microflow cannot be completed because there are no objects in the database to generate parameters from, the user will be presented clear message about this.   |
+| __Release actions__ | None.                                                                                                                                                                                            |
+
+<br/>
+
+| ID                  | MTA-1073                                                                                                        |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When using previous Teststeps to fill associations the same Teststep would be shown also if it is already used. |
+| __Solution__        | When using previous Teststeps to fill associations the same Teststep is not shown again if it is already used.  |
+| __Release actions__ | None.                                                                                                           |
+
+<br/>
+
+| ID                  | MTA-1080                                                       |
+| ------------------- | -------------------------------------------------------------- |
+| __Problem__         | On pages where tabs are used scrolling issues sometimes occur. |
+| __Solution__        | Scrolling issues are fixed on pages where tabs are used.       |
+| __Release actions__ | None.                                                          |
 
 <br/>

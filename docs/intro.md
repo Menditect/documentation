@@ -26,3 +26,11 @@ Click on a topic or, on mobile devices, select the <svg width="15" height="15" v
 
 Click on the Menditect logo anytime to return to this page.
 
+## System requirements
+
+To use MTA to test your Mendix Apps, you need to have 
+- a desktop or laptop computer;
+- a monitor running on HD resolution (1920x1080 pixels); 
+- an up-to-date browser, recommended are Chromium-based like Chrome, Edge, Opera or Brave. Using other browsers like Firefox or Safari may negatively impact user experience;
+- configured your browser to run at 100% zoom level;
+- Mendix Studio Pro installed, if you need to configure your Apps.
