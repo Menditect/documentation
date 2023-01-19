@@ -100,9 +100,9 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'terms-of-use',
-        path: 'terms-of-use',
-        routeBasePath: 'terms-of-use',
+        id: 'legal',
+        path: 'legal',
+        routeBasePath: 'legal',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
@@ -173,19 +173,19 @@ const config = {
             position: 'right',
           },
           {
-            label: 'Terms of Use',
+            label: 'Legal',
             position: 'right',
             items: [
               {
-                to: 'terms-of-use/eula',
+                to: 'legal/eula',
                 label: 'End User License Agreement',
               },
               {
-                to: 'terms-of-use/pp',
+                to: 'legal/pp',
                 label: 'Privacy Policy',
               },
               {
-                to: 'terms-of-use/sla',
+                to: 'legal/sla',
                 label: 'Service Level Agreement',
               },
             ],
