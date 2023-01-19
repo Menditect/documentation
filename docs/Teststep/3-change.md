@@ -2,9 +2,13 @@
 
 ## Definition
 
-With this [Teststep](.) type, an object from a previous [Teststep](.) is changed in-memory.
+With this [Teststep](.) type, objects from a previous [Teststep](.) are changed in-memory.
 
-To save it to the database, add a [Persist](persist) step.
+:::note
+Note that a Change teststep can be used on a single object or on a list of objects, and that attribute values and associations specified in the teststep, will be applied to *all* objects!
+:::
+
+To save the changes to the database, add a [Persist](persist) step.
 
 ## Add a Change Object Teststep
 
@@ -13,14 +17,14 @@ There are two options to add a Change Object teststep. The first option is quick
 **Option 1:**
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep that returns the object that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
 
 **Option 2:**
 
 1. Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
 2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Change teststep" to add a Change Object Teststep.
 3. Select an entity. You can search by name.
-4. Select the previous Teststep that returns the object that needs to be changed. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
+4. Select the previous Teststep that returns the object(s) that you want to change. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object or a list of objects.
 
 ## Setting values
 
