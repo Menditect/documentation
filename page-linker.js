@@ -23,7 +23,7 @@ async function getRedirectURL() {
 
   const data = await getPageLinkerIndex();
   const path = findCorrectPath(data, version, tag);
-  const url = path ? `${document.location.origin}/${path}` : `${document.location.origin}/404`;
+  const url = path ? `${document.location.origin}${path}` : `${document.location.origin}/404`;
 
   return url;
 }
