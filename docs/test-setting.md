@@ -68,4 +68,4 @@ The user that is logged in determines which Test Setting is to be selected when 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 december 2022
+Last updated: 19 january 2023
