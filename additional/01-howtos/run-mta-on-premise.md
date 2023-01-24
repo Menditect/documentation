@@ -4,7 +4,7 @@
 
 This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted.
 
-This could be any custom cloud environment like Clound Foundry or an on-premise installation. The main difference with hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
+This could be any custom cloud environment like Clound Foundry or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
 
 :::note
 When installing MTA for the first time, always clean up your existing environment first (both the database and the Mendix model).
