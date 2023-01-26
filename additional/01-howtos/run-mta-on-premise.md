@@ -44,6 +44,10 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | PluginRecordModule.RecordingSupportRequestUrl                    | https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | 20                                                     |
 
+:::note
+You may notice that MTA also contains environment variables from the MTA Plugin Module. This is because Menditect regression-tests MTA with MTA. 
+Menditect on-premise customers and partners **do not** have to set these values.
+:::
 
 Toggle these scheduled events to Currently Enabled:
 
