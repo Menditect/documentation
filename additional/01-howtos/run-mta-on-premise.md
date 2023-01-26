@@ -4,7 +4,7 @@
 
 This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted.
 
-This could be any custom cloud environment like Clound Foundry or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
+This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
 
 :::note
 When installing MTA for the first time, always clean up your existing environment first (both the database and the Mendix model).
@@ -16,8 +16,9 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 
 ### Actions
 
-- Deploy and transport it to the environment in your cloud
-- Check the content of the following environment variables:
+- You will receive information from Menditect on how to download the MDA file that you need to set up MTA.
+- Deploy and transport it to the environment in your cloud.
+- Check the content of the following environment variables for the MTA application:
 
 | Environment variable                                             | value                                                  |
 | ---------------------------------------------------------------- | ------------------------------------------------------ |

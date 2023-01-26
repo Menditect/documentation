@@ -2,6 +2,8 @@
 
 In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
 
+If you are [running MTA on Premise](run-mta-on-premise), you may notice that MTA also contains an MTA Plugin module. This is because Menditect regression-tests MTA with MTA. The information in this page is regarding the customer Application to test. For Menditect on-premise customers and partners: please don't import the MTA Plugin module into MTA.
+
 :::caution
 In no case should you make changes to elements inside the MtaPluginModule. <br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.
 :::
@@ -19,7 +21,7 @@ Each release comes with 3 files, each corresponding with one of the supported Me
 
 Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
-Import the MTA plugin module package in your test application as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
+Import the MTA plugin module package **in your test application** as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
 
 :::note
 You can create Module content containing the MTA Plugin in your Company marketplace (https://marketplace.mendix.com/link/mymarketplace), so you import the MTA Plugin module from the appstore. We are currently working on publishing it to the public Mendix marketplace. 
@@ -33,7 +35,8 @@ To upgrade the major version of your Mendix App (for example, from Mendix 8.18 t
 
 ### Including After startup microflow
 
-After you have downloaded the MTA Plugin, open the App Settings window in the Mendix modeler and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
+After you have downloaded the MTA Plugin, you need to configure your Application under test.
+Open the App Settings window in Mendix Studio Pro and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
 
 If there is no existing After startup microflow, just select the "ASU_Setup_Connection_MTA" in the popup window.
 
