@@ -206,7 +206,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'json', 'ps1'],
+        additionalLanguages: ['java', 'json', 'powershell'],
       },
     }),
 };
