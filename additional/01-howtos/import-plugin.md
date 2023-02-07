@@ -107,4 +107,4 @@ You can now view connection details and manually connect to MTA, with accounts h
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 april 2022
+Last updated 7 february 2023
