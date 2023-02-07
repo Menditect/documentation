@@ -168,7 +168,7 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
 It is possible to invoke the CI/CD REST service via a Powershell script in Windows if you have local Administrative privileges.
 That script looks like this:
 
-```ps1
+```powershell
 $Body = @{
     ProjectId = "48224593-2187-448d-abe9-9202e1b3a870"
 }
@@ -187,7 +187,7 @@ $Cred = New-Object System.Management.Automation.PSCredential ('Username', $Pass)
 Invoke-RestMethod @Parameters -Credential $Cred
 ```
 
-To execute above script, replace the ProjectId, Uri and Username/Password variables and save it as as .ps1 file.
+To execute above script, replace the ProjectId, Uri and Username/Password variables and save it as a .ps1 file.
 Windows will then recognize it as an executable file.
 
 ## Cleanup testruns
