@@ -1,0 +1,16 @@
+$Body = @{
+    ProjectId = "48224593-2187-448d-abe9-9202e1b3a870"
+}
+ 
+$Parameters = @{
+    Method = "POST"
+    Uri =  "https://mta-mtatraining.mendixcloud.com/rest/cicdservice/v1/CiCd/testruns"
+    Body = ($Body | ConvertTo-Json)
+    ContentType = "application/json"
+}
+
+$Pass = ConvertTo-SecureString '%PASSWORD%' -AsPlainText -Force
+
+$Cred = New-Object System.Management.Automation.PSCredential ('%USERNAME%', $Pass)
+
+Invoke-RestMethod @Parameters -Credential $Cred
