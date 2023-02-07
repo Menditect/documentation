@@ -164,7 +164,31 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
 }
 ```
 
+## Powershell script
+It is possible to invoke the CI/CD REST service via a Powershell script in Windows if you have local Administrative privileges.
+That script looks like this:
 
+```ps1
+$Body = @{
+    ProjectId = "48224593-2187-448d-abe9-9202e1b3a870"
+}
+ 
+$Parameters = @{
+    Method = "POST"
+    Uri =  "https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testruns"
+    Body = ($Body | ConvertTo-Json)
+    ContentType = "application/json"
+}
+
+$Pass = ConvertTo-SecureString 'Password' -AsPlainText -Force
+
+$Cred = New-Object System.Management.Automation.PSCredential ('Username', $Pass)
+
+Invoke-RestMethod @Parameters -Credential $Cred
+```
+
+To execute above script, replace the ProjectId, Uri and Username/Password variables and save it as as .ps1 file.
+Windows will then recognize it as an executable file.
 
 ## Cleanup testruns
 Currently, every night a scheduled event cleans CI/CD test runs. MTA only keeps CI/CD test runs associated with the last two executions for a single Application. 
