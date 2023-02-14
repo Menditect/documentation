@@ -9,11 +9,11 @@ An API key and PAT need to be created to make communication possible with MTA an
 
 ### API key
 
-Navigate to [API keys](https://sprintr.home.mendix.com/link/profilesettings/apikeys) (links to Mendix site) to create an API key for your Mendix profile.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/mendix-profile/#api-key
+Navigate to [API keys](https://sprintr.home.mendix.com/link/personalapikeys) (links to Mendix site) to create an API key for your Mendix profile.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/mendix-profile/#api-keys
 
 ### PAT (Personal Access Token)
 
-Navigate to https://warden.mendix.com to add a PAT. When adding, provide a name, and select only this scope: `mx:modelrepository:repo:read`.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/warden/
+Navigate to https://warden.mendix.com to add a PAT. When adding, provide a name, and select only this scope: `mx:modelrepository:repo:read`.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/mendix-profile/#pat
 
 ### Enter API key and PAT in MTA
 
