@@ -25,29 +25,19 @@ The test will execute a single microflow and check that the return value is not 
 Your very first stop is the 'Applications' tab. 
 
 You will start by adding an Application to MTA and adding the username of an account in that Application, so MTA can login with that user to execute your test.
-Click on the '+ Application' button to add an Application.
+Click on the '+ Add' button to add an Application.
 
 ![Add application](images/run_first_test/00.png)
 
 - MTA should show the Mendix projects associated with the given Mendix user for your MTA account.
 - Add the application that you want to test from the list.
-- Now select the application that you just added.
-- Navigate to the 'Execution users' tab.
-
-![Add application](images/run_first_test/01.png)
-
-- Click the '+ Execution user' button.
-- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.
-- Save. 
-
-
+- MTA will open the details of the Application so you can add a Test configuration. 
 
 ## 2. Add a Test Configuration
 
-Now navigate to the 'Test settings' tab.
-Click on the '+ Test configuration' button to start the wizard for adding a Test Configuration.
+- Navigate to "Test configurations" in the left menu.
+- Click on the '+ Add' button to start the wizard for adding a Test Configuration.
 
-![Add test configuration](images/run_first_test/02.png)
 
 The Wizard consists of 4 steps. 
 
@@ -98,7 +88,20 @@ After you have selected an Application instance, you will see the name and UID s
 
 Save the setup of your Test Configuration.
 
-## 3. Design your test
+## 3. Execution user
+
+Next is configuring execution users. This is the Account that you would normally use to login to the Application and test the frontend. 
+
+- Navigate to "Execution users" in the left menu.
+
+![Add application](images/run_first_test/01.png)
+
+- Click the '+ Add' button.
+- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.
+- Save. 
+
+
+## 4. Design your test
 
 Now you can start designing your first test. 
 The structure of a test script in MTA looks like this:
@@ -120,8 +123,7 @@ MTA will show the Test Design page and with your Test Configuration preselected.
 - Click the '+ Test case' button to add a Test Case to your Test Suite.
 - Give it a name.
 - Leave the type at 'Automatic'.
-- Select the (only) Test application.
-- Select the (only) Execution user.
+- Test application and Execution user will be preselelected if you have completed above steps.
 - Save.
 - MTA will select the Test Case that you just added.
 
@@ -135,7 +137,7 @@ Next you will choose a microflow to test.
 - Save.
 <br/>
 
-## 4. Execute and evaluate your test
+## 5. Execute and evaluate your test
 
 You have two options to execute your test:
 1. Click '<i class="fas fa-play"></i> Execute and go to test run overview' to Execute the Test Configuration.<br/>
