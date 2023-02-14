@@ -24,7 +24,7 @@ Follow the steps described [here](prepare-mendix-project) to complete this actio
 
 An API key needs to be created to make communication possible with MTA and the Mendix platform. Make sure to store the API key in a password manager after creation.
 Follow the steps described on the Mendix documentation site to complete this action:
-https://docs.mendix.com/developerportal/community-tools/mendix-profile/#api-key
+https://docs.mendix.com/developerportal/community-tools/mendix-profile/#api-keys
 
 Now also create a Personal Access Token (PAT).
 Go to https://warden.mendix.com to add it and select only this scope: `mx:modelrepository:repo:read`.
