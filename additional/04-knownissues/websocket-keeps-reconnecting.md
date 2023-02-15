@@ -21,7 +21,7 @@ Some more information is provided below.
 ## Additional resources
 
 ### Mendix Private Cloud
-— [Kubernetes - NGINX Ingress - Websocket](https://kubernetes.github.io/ingress-nginx/user-guide/miscellaneous/#websockets)
+- [Kubernetes - NGINX Ingress - Websocket](https://kubernetes.github.io/ingress-nginx/user-guide/miscellaneous/#websockets)
 - [Endpoint (network) configuration](https://docs.mendix.com/developerportal/deploy/private-cloud-cluster/#advanced-network-settings)
 - [Editing the CR](https://docs.mendix.com/developerportal/deploy/private-cloud-operator/#edit-cr)
 
