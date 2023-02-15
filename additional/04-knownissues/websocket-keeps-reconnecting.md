@@ -9,8 +9,11 @@ Also Test Automators in MTA will notice that the connection to their Mendix App 
 ## Possible causes and resolutions
 
 The issue is due to a default timeout setting on the container orchestration software like Kubernetes. The result will be that any connection will be dropped after a certain amount of time like for example 30 or 60 seconds.
+The resolution is to extend this setting (the WebSocket Gateway Default Timeout for Mendix Private Cloud). 
+How or where to adjust this setting depends on the software being used.
 
-The resolution is to extend the WebSocket Gateway Default Timeout for Mendix Private Cloud. How or where to adjust this setting depends on the software being used.
+The setting should be adjusted to an adequate time period, higher than the highest expected execution time of a Test Run. 
+For example: one hour (3600 sec).
 
 Some more information is provided below.
 
