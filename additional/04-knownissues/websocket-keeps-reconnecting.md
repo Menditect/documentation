@@ -14,15 +14,11 @@ The resolution is to extend the WebSocket Gateway Default Timeout for Mendix Pri
 
 Some more information is provided below.
 
-> The default value of this settings is 60 seconds (*30 seconds for GCP*).
-> 
-> A more adequate value to support websockets is a value higher than one hour (3600).
-> 
-> — [Kubernetes - NGINX Ingress - Websocket](https://kubernetes.github.io/ingress-nginx/user-guide/miscellaneous/#websockets)
 
 ## Additional resources
 
 ### Mendix Private Cloud
+— [Kubernetes - NGINX Ingress - Websocket](https://kubernetes.github.io/ingress-nginx/user-guide/miscellaneous/#websockets)
 - [Endpoint (network) configuration](https://docs.mendix.com/developerportal/deploy/private-cloud-cluster/#advanced-network-settings)
 - [Editing the CR](https://docs.mendix.com/developerportal/deploy/private-cloud-operator/#edit-cr)
 
