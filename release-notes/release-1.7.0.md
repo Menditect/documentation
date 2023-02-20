@@ -39,7 +39,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 </ul>
 </ul>
 <br/>
-<i class="fas fa-exclamation-triangle"></i> Make sure to <a href="../howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
+<i class="fas fa-exclamation-triangle"></i> Make sure to download the latest MTA Plugin Module version before using this version of MTA.
 <br/>
 
 

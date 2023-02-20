@@ -16,24 +16,24 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 
 ## Highlights in this release
 
-<ul><i class="fas fa-fire"></i>  We have made significant improvements in the <a href="../refguide/recording">Recorder</a> functionality. 
+<ul><i class="fas fa-fire"></i>  We have made significant improvements in the Recorder functionality. 
 <ul>
 <li>It is now possible to record microflows but also record create, change and retrieve object actions, and have MTA create Teststeps from these actions. </li>
 <li>When creating a new Recording, it is no longer necessary to choose which steps to create. </li>
 <li>All the detected user actions will automatically result in one or more Teststeps in the Test Case. </li>
 <li>In this version, the Recording is also given two parameters that can be set; the maximum duration of the recording, and the maximum amount of detected user actions. This is to prevent long running of recordings as a result of an unefficent flow in the Mendix code. </li>
-<li>Read more about recordings in the <a href="../howtos/record-user-actions">How to</a> section!</li>
+<li>Read more about recordings in the How to? section!</li>
 <li>Because Recording is still in Beta, we have included a separate support form just for enthousiasts using this brand new feature. <br/>We welcome your feedback!</li>
 </ul>
 </ul>
-<ul><i class="fas fa-fire"></i>  It is now possible to add a <a href="../refguide/teststep">Teststep</a> between existing Teststeps!
+<ul><i class="fas fa-fire"></i>  It is now possible to add a Teststep between existing Teststeps!
 <ul>
 <li>Choose if you want to create the Teststep before, or after the selected Teststep.</li>
 <li>This is a much requested feature especially when you need to set your associations.</li>
 </ul>
 </ul>
-<ul><i class="fas fa-fire"></i>  When a <a href="../refguide/microflow-parameter-value">Microflow input parameter</a> is an Object, it is now possible to set the value to Empty using the <svg role="img" viewBox="0 0 512 512" width="2%" height="2%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M491.3 20.69c-6.25-6.25-16.38-6.25-22.62 0L391.2 98.15C354.8 66.96 307.7 48 256 48C141.1 48 48 141.1 48 256c0 51.68 18.96 98.85 50.15 135.2l-77.46 77.46c-6.25 6.25-6.25 16.38 0 22.62C23.81 494.4 27.91 496 32 496s8.188-1.562 11.31-4.688l77.46-77.46C157.2 445 204.3 464 256 464c114.9 0 208-93.13 208-208c0-51.68-18.96-98.85-50.15-135.2l77.46-77.46C497.6 37.06 497.6 26.94 491.3 20.69zM80 256c0-97.05 78.95-176 176-176c42.78 0 82.01 15.37 112.5 40.83L120.8 368.5C95.37 338 80 298.8 80 256zM432 256c0 97.05-78.95 176-176 176c-42.78 0-82.01-15.37-112.5-40.83l247.7-247.7C416.6 173.1 432 213.2 432 256z" class=""></path></svg> button.</ul>
-<ul><i class="fas fa-fire"></i>  Microflow input parameters can now be added as an item in the <a href="../refguide/datavariation">Datavariation</a>.</ul>
+<ul><i class="fas fa-fire"></i>  When a Microflow input parameter is an Object, it is now possible to set the value to Empty.</ul>
+<ul><i class="fas fa-fire"></i>  Microflow input parameters can now be added as an item in the Datavariation.</ul>
 <ul><i class="fas fa-fire"></i>  A List of objects can now be filled with objects from the output of multiple Teststeps.</ul>
 <ul><i class="fas fa-fire"></i>  The documentation site is enriched with much more content.
 <ul>
@@ -50,10 +50,10 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 
 ## New functionality 
 
-| ID                    | MTA-437                                                                                                                                                                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Asserts have been explanded with the option to compare using Greater-than or Smaller-than syntax.<br/><br/>For a full list of compare types, see the [Business rules in Assert on Attribute Value](../refguide/assert-attribute-value#business-rules). |
-| __Release actions__   | None.                                                                                                                                                                                                                                                  |
+| ID                    | MTA-437                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Asserts have been explanded with the option to compare using Greater-than or Smaller-than syntax.<br/>. |
+| __Release actions__   | None.                                                                                                   |
 
 <br/>
 
