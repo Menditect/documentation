@@ -165,30 +165,48 @@ Example: `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/t
 ```
 
 ## Powershell script
-It is possible to invoke the CI/CD REST service via a Powershell script in Windows if you have local Administrative privileges.
+It is possible to invoke the CI/CD REST service via a Powershell script in Windows if you have local Administrative privileges.<br/>
 That script looks like this:
 
 ```powershell
+# --------------- Configuration ------------------
+#
+# ALTER PARAMETERS BELOW FOR YOUR CI/CD CONFIGURATION
+
+$TestAppProjectId = "yourprojectidhere"
+$MtaUrl = "yourmtaurlhere"
+$MtaCiCdUser = "yourusernamehere"
+$MtaCiCdUserPassword = "yourpasswordhere$"
+
+#  --------------- Script ---------------
+#
+# DO NOT ALTER CODE BELOW
+
 $Body = @{
-    ProjectId = "48224593-2187-448d-abe9-9202e1b3a870"
+    ProjectId = $TestAppProjectId
 }
  
 $Parameters = @{
     Method = "POST"
-    Uri =  "https://mta-menditect-9fo2p.mendixcloud.com/rest/cicdservice/v1/CiCd/testruns"
+    Uri =  $MtaUrl + "/rest/cicdservice/v1/CiCd/testruns"
     Body = ($Body | ConvertTo-Json)
     ContentType = "application/json"
 }
 
-$Pass = ConvertTo-SecureString 'Password' -AsPlainText -Force
+$Pass = ConvertTo-SecureString $MtaCiCdUserPassword -AsPlainText -Force
 
-$Cred = New-Object System.Management.Automation.PSCredential ('Username', $Pass)
+$Cred = New-Object System.Management.Automation.PSCredential ($MtaCiCdUser, $Pass)
 
 Invoke-RestMethod @Parameters -Credential $Cred
 ```
 
-To execute above script, replace the ProjectId, Uri and Username/Password variables and save it as a .ps1 file.
-Windows will then recognize it as an executable file.
+To use above script:
+1. open Notepad or another text exitor
+2. copy above script with the copy button on the top right, and paste it into the text editor
+3. replace the 4 parameters with your own settings
+4. save the file as `cicd.ps1`
+5. open Windows Powershell to the folder that you saved the file to
+6. execute the file using this command `powershell -ExecutionPolicy Bypass -File cicd.ps1`
 
 ## Cleanup testruns
 Currently, every night a scheduled event cleans CI/CD test runs. MTA only keeps CI/CD test runs associated with the last two executions for a single Application. 
