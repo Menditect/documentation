@@ -130,7 +130,7 @@ MTA will show the Test Design page and with your Test Configuration preselected.
 ### Add a Teststep
 Next you will choose a microflow to test.
 - Click '+ Microflow test'.
-- Choose a microflow with a String or Integer/Long return value. <br/>Don't know which microflow to choose? Choose 'Read_enum_mtapluginversion'. 
+- Choose a microflow with a String or Integer/Long return value.  
 - MTA will create a teststep for executing the microflow, and teststeps to fill the parameters of the microflow. <br/>Note: you have to create nonpersistable objects yourself. 
 - Click <i class="fal fa-ballot-check"></i> and then '+ Assert' to add an Assert.
 - Change 'Assert' to "Not equals". This will check that the output is not empty.
@@ -140,8 +140,8 @@ Next you will choose a microflow to test.
 ## 5. Execute and evaluate your test
 
 You have two options to execute your test:
-1. Click '<i class="fas fa-play"></i> Execute and go to test run overview' to Execute the Test Configuration.<br/>
-2. You can also only run your Test Case with the <i class="fas fa-play"></i> button.
+1. Click '<i class="fas fa-play"></i> Execute' to Execute the Test Configuration (shown at "1" in the image).
+2. You can also only run your Test Case with the <i class="fas fa-play"></i> button (shown at "2" in the image).
 
 ![Add test configuration](images/run_first_test/09.png)
 
