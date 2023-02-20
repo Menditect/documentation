@@ -12,7 +12,7 @@ These release notes are from a version that is no longer being actively maintain
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.15. For support levels on MTS/LTS and monthly releases, read the [SLA](../sla).
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest monthly release that can be downloaded is 9.15. For support levels on MTS/LTS and monthly releases, read the SLA.
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
