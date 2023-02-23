@@ -21,7 +21,7 @@ There are multiple ways to add an assert on Object Count:
 1. Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep where you want to add an assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 2. After configuring the Teststep, click on "Save and configure asserts" to open the page where asserts can be configured. 
 
-After the page opens, go to the "Teststep output" tab, and click on "<i class="fal fa-info-circle"></i> Assert" to add the assert.
+After the page opens, go to the "Teststep output" tab, and click on "<i class="fal fa-plus-circle"></i> Assert" to add the assert.
 
 ### Configure an assert on Object Count
 - Select a compare type; 'Equals', 'Greater-than' or 'Less-than'.
