@@ -13,7 +13,7 @@ Domain model events (Before and After Create), if configured, are triggered.
 ## Add a Create Object Teststep
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Teststep" and Click "<i class="fal fa-info-circle"></i> Create teststep" to add a Create Object Teststep.
+- Click "<i class="fal fa-plus-circle"></i> Teststep" and Click "<i class="fal fa-plus-circle"></i> Create teststep" to add a Create Object Teststep.
 - Select an entity. You can search by name.
 - [Set values](#setting-values).
 - Click on the "Save" button. 

@@ -41,7 +41,7 @@ Note that not entering a value will be interpreted as 'Empty'.
 ### Create a Data Variation Item
 To add an attribute or an [Assert on attribute](Assert/assert-attribute) as a Data Variation Item, there are two ways:
 1. When configuring a [Teststep](teststep), click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
-2. With Data Variation already enabled, go to the data variation page and click on "<i class="fal fa-info-circle"></i> Attribute" or "<i class="fal fa-info-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
+2. With Data Variation already enabled, go to the data variation page and click on "<i class="fal fa-plus-circle"></i> Attribute" or "<i class="fal fa-plus-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
 
 ### Edit a Data Variation Item
 There are two ways to edit values in a Data Variation. 

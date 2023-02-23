@@ -9,7 +9,7 @@ The object is retrieved only if the Execution user is allowed to based on the do
 ## Retrieve from database
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-info-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
+- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 - Select an entity. You can search by name.
 - Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in an [Error](error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve from database" in the Retrieve options.
@@ -19,7 +19,7 @@ The object is retrieved only if the Execution user is allowed to based on the do
 ## Retrieve by association
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-info-circle"></i> Add" and Click "<i class="fal fa-info-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
+- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 - Select an entity. You can search by name.
 - Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in an [Error](error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve by association" in the Retrieve options.
@@ -40,7 +40,7 @@ There are two options to Retrieve from former Teststep. The first option is quic
 **Option 2:**
 
 1. Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-info-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
+2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 3. Select an entity. You can search by name.
 4. Select the previous Teststep that returns the object that needs to be retrieved. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
 5. Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in an [Error](error), even if only retrieving the first object.
