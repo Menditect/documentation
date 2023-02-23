@@ -142,9 +142,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'reference-guide',
             position: 'left',
-            label: 'Documentation',
+            label: 'Reference guide',
           },
           {
             to: 'release-notes',
@@ -152,7 +152,7 @@ const config = {
             position: 'left',
           },
           {
-            to: 'additional/howtos/access-environment',
+            to: 'additional/howtos',
             label: 'How to?',
             position: 'left',
           },
