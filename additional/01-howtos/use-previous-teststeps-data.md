@@ -10,20 +10,20 @@ In MTA it is possible to use the output of one teststep, to pass data to another
 
 Let's assume there is a generic teststep "A" and another teststep "B". B uses the data from A. A returns either a primitive or an object. Primitive values are either a String, Integer, Long, Decimal, Datetime or Boolean. There are a couple scenarios how B can use A's data:
 
-| Scenario | Teststep A is a                             | Returns a   | Teststep B is a                            | Uses data to                                               |
-| -------- | ------------------------------------------- | ----------- | ------------------------------------------ | ---------------------------------------------------------- |
-| 1        | Microflow teststep                          | Primitive   | Microflow teststep                         | Fill primitive input parameter                             |
-| 2        | Microflow teststep                          | Primitive   | Create, Change or Retrieve Object teststep | Fill attribute value                                       |
-| 3        | Microflow teststep                          | Enumeration | Microflow teststep                         | Fill enumeration input parameter                           |
-| 4        | Microflow teststep                          | Enumeration | Create, Change or Retrieve Object teststep | Fill attribute value                                       |
-| 5        | Microflow teststep                          | Object      | Microflow teststep                         | Fill object input parameter                                |
-| 6        | Microflow teststep                          | Object      | Change, Delete or Retrieve Object teststep | Perform Change, Delete or Retrieve on                      |
-| 7        | Microflow teststep                          | Object      | Create, Change or Retrieve Object teststep | Fill association                                           |
-| 8        | Create, Change or Retrieve Object teststep  | Object      | Change, Delete or Retrieve Object teststep | Perform Change, Delete or Retrieve on                      |
-| 9        | Create, Change or Retrieve Object teststep  | Object      | Create, Change or Retrieve Object teststep | Fill association                                           |
-| 10 (N/A) | Microflow teststep                          | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object                    |
-| 11 (N/A) | Microflow teststep                          | Object      | Microflow teststep                         | Fill primitive/enum input parameter from within object     |
-| 12 (N/A) | Create, Change or Retrieve Object teststep  | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object from within object |
+| Scenario | Teststep A is a                            | Returns a   | Teststep B is a                            | Uses data to                                               |
+| -------- | ------------------------------------------ | ----------- | ------------------------------------------ | ---------------------------------------------------------- |
+| 1        | Microflow teststep                         | Primitive   | Microflow teststep                         | Fill primitive input parameter                             |
+| 2        | Microflow teststep                         | Primitive   | Create, Change or Retrieve Object teststep | Fill attribute value                                       |
+| 3        | Microflow teststep                         | Enumeration | Microflow teststep                         | Fill enumeration input parameter                           |
+| 4        | Microflow teststep                         | Enumeration | Create, Change or Retrieve Object teststep | Fill attribute value                                       |
+| 5        | Microflow teststep                         | Object      | Microflow teststep                         | Fill object input parameter                                |
+| 6        | Microflow teststep                         | Object      | Change, Delete or Retrieve Object teststep | Perform Change, Delete or Retrieve on                      |
+| 7        | Microflow teststep                         | Object      | Create, Change or Retrieve Object teststep | Fill association                                           |
+| 8        | Create, Change or Retrieve Object teststep | Object      | Change, Delete or Retrieve Object teststep | Perform Change, Delete or Retrieve on                      |
+| 9        | Create, Change or Retrieve Object teststep | Object      | Create, Change or Retrieve Object teststep | Fill association                                           |
+| 10 (N/A) | Microflow teststep                         | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object                    |
+| 11 (N/A) | Microflow teststep                         | Object      | Microflow teststep                         | Fill primitive/enum input parameter from within object     |
+| 12 (N/A) | Create, Change or Retrieve Object teststep | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object from within object |
 | 13 (N/A) | Create, Change or Retrieve Object teststep | Object      | Microflow teststep                         | Fill primitive/enum input parameter                        |
 
 ## Usage
