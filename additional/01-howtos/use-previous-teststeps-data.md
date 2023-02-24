@@ -24,7 +24,7 @@ Let's assume there is a generic teststep "A" and another teststep "B". B uses th
 | 10 (N/A) | Microflow teststep                          | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object                    |
 | 11 (N/A) | Microflow teststep                          | Object      | Microflow teststep                         | Fill primitive/enum input parameter from within object     |
 | 12 (N/A) | Create, Change or Retrieve Object teststep  | Object      | Create, Change or Retrieve Object teststep | Fill attribute value from within object from within object |
-| 13 (N/A) | MCreate, Change or Retrieve Object teststep | Object      | Microflow teststep                         | Fill primitive/enum input parameter                        |
+| 13 (N/A) | Create, Change or Retrieve Object teststep | Object      | Microflow teststep                         | Fill primitive/enum input parameter                        |
 
 ## Usage
 
@@ -35,7 +35,7 @@ Furthermore, because primitives are the same for all Mendix Apps, it is possible
 
 ### Using Enumerations
 
-For Scenarios 3 and 4, the data is also copied copied to MTA whenever executing the test. However Enumerations are App-specific. This means that it is possible to have teststep "A" in one Test Case, and "B" in the next Test Case, but both Test Cases need to test the same Application.
+For Scenarios 3 and 4, the data is also copied to MTA whenever executing the test. However Enumerations are App-specific. This means that it is possible to have teststep "A" in one Test Case, and "B" in the next Test Case, but both Test Cases need to test the same Application.
 
 ### Using Objects
 
