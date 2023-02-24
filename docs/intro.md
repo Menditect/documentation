@@ -5,7 +5,7 @@ slug: /
  
 # MTA documentation
 
-Welcome to Menditect Test Automation Documentation site.
+Welcome to the [Menditect ®](https://menditect.com) Test Automation Documentation site.
 
 Browse through the different topics in the reference guide, read the latest release notes or use the how-to if you want to get started with MTA.
 Use the menu buttons to continue in one of the sections.
