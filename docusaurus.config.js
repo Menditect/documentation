@@ -54,7 +54,6 @@ const config = {
       /** @type {import('./plugins/page-linker/options').PageLinkerOptions} */
       ({
         nonVersionedLinks: [
-          { id: 'record-user-actions', content: '@site/additional/01-howtos/record-user-actions.md' },
           { id: 'privacy-policy', content: '@site/legal/pp.md' },
           { id: 'eula', content: '@site/legal/eula.md' },
           { id: 'sla', content: '@site/legal/sla.md' },
@@ -83,9 +82,29 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'additional',
-        path: 'additional',
-        routeBasePath: 'additional',
+        id: 'howto',
+        path: 'additional/01-howtos',
+        routeBasePath: 'additional/howtos',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      require.resolve('@docusaurus/plugin-content-docs'),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'bestpractice',
+        path: 'additional/02-bestpractice',
+        routeBasePath: 'additional/bestpractice',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      require.resolve('@docusaurus/plugin-content-docs'),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'knownissues',
+        path: 'additional/04-knownissues',
+        routeBasePath: 'additional/knownissues',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
@@ -157,22 +176,14 @@ const config = {
             position: 'left',
           },
           {
-            label: 'Additional',
+            to: 'additional/bestpractice',
+            label: 'Best Practice',
             position: 'left',
-            items: [
-              {
-                to: 'additional/bestpractice/processtest',
-                label: 'Best Practice',
-              },
-              {
-                to: 'additional/blogs/direct-model-testing',
-                label: 'Blogs',
-              },
-              {
-                to: 'additional/knownissues/java-action-not-implemented',
-                label: 'Known Issues',
-              },
-            ],
+          },
+          {
+            to: 'additional/knownissues',
+            label: 'Known Issues',
+            position: 'left',
           },
           {
             type: 'docsVersionDropdown',
