@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+slug: /
+---
+
 # How to?
 
 First time user? Or looking to setup your CI/CD pipeline?
