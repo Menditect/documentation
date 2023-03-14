@@ -11,3 +11,9 @@ Call that microflow using a Microflow Teststep, and you can then use the output 
 Example of this microflow:
 
 ![Passthrough String microflow](images/passthrough.png)
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 23 february 2023
