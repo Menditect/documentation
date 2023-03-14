@@ -48,3 +48,8 @@ In most scenarios it is not necessary to adapt to a next revision in order to Ex
 | Any other model change            | N/A   | <i class="fal fa-check"></i>                 |
 
 
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 23 february 2023
