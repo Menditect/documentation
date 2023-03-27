@@ -7,13 +7,16 @@ First time you login as a Test Automator, you will be provided a page where you 
 
 An API key and PAT need to be created to make communication possible with MTA and the Mendix platform.<br/>Make sure to store both in a password manager after creation. 
 
-### API key
-
-Navigate to [API keys](https://sprintr.home.mendix.com/link/personalapikeys) (links to Mendix site) to create an API key for your Mendix profile.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/mendix-profile/#api-keys
-
-### PAT (Personal Access Token)
-
-Navigate to https://warden.mendix.com to add a PAT. When adding, provide a name, and select only this scope: `mx:modelrepository:repo:read`.<br/>Mendix documentation is here: https://docs.mendix.com/developerportal/community-tools/mendix-profile/#pat
+Create your PAT and personal API key in your Mendix account. Go to:
+- https://user-settings.mendix.com/link/developersettings
+- Click "New token". Name it 'MTA Test'.
+- Select only `mx:modelrepository:repo:read`
+- Click "Create".
+- Store it in the password manager so you don't lose it.
+- Now click "Configure API Keys".
+- Create a new API key. Description 'MTA Test'.
+- Click "Generate API key".
+- Store it in the password manager so you don't lose it.
 
 ### Enter API key and PAT in MTA
 
