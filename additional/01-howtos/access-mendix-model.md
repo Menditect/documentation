@@ -5,7 +5,7 @@ First time you login as a Test Automator, you will be provided a page where you 
 
 ## API key and PAT
 
-An API key and PAT need to be created to make communication possible with MTA and the Mendix platform.<br/>Make sure to store both in a password manager after creation. 
+An API key and Personal Access Token (PAT) need to be created to make communication possible with MTA and the Mendix platform.<br/>Make sure to store both in a password manager after creation. 
 
 Create your PAT and personal API key in your Mendix account. Go to:
 - https://user-settings.mendix.com/link/developersettings
@@ -40,4 +40,4 @@ To test if this step was successful, try to [Add an Application](run-first-test)
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 april 2022
+Last updated 27 march 2023
