@@ -15,11 +15,6 @@ To vary the value of an Attribute or Assert when running a test, it needs to be 
 
 For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
  
-## Business rules
-
-None. 
-Note that it is possible to have a data variation that does not consist of data variation items. This happens when all data variation items are deleted. The result is that the [Test Suite](test-suite) will simply be ran multiple times but with the exact same data.
-
 ## Actions on Data Variation
 
 ### Enable Data Variation
