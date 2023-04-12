@@ -17,5 +17,14 @@ There are four types of Asserts, that are described in detail in separate pages:
 
 ## Actions on Assert
 
-### View Teststeps that have Asserts 
-- All Teststeps in a [Test Case](../test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
+Some actions are described in the pages shown above.
+
+### View Asserts on Attribute, Microflow output or Object count  
+- Open the Test Configuration and [Test Suite](../test-suite) that you want to design.
+- Teststeps in a [Test Case](../test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
+
+### View Asserts on Validation feedback
+- Open the Test Configuration and Test Suite that you want to design.
+- Test Cases in a Test Suite with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Test Cases.
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
