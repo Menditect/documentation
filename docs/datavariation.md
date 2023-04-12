@@ -7,15 +7,14 @@ sidebar_position: 9
 
 ## Definition
 
-Data Variation is used to execute the same [Test Suite](test-suite) multiple times upon [Test Configuration](test-configuration) execution, but each time with different values for variant items, such as attribute values or input and output parameters. These variant items need to be explicitly included in the Data Variation to be able to vary them per [Test Run](test-run). For each data variation of a [Test Suite](test-suite), a [Test Run](test-run) will be created.
+Data Variation is used to execute the same test multiple times, but each time with different values for Attributes and Asserts. 
+
+Data Variation can be defined on the [Test Suite](test-suite) or [Test Case](test-case) level. 
+
+To vary the value of an Attribute or Assert when running a test, it needs to be explicitly included in the Data Variation. It is possible to combine Test Suite datavariation and Test Case variation in the same Test Suite, but on the Test Case level, a choice has to be made between the two when including an Attribute or Assert. An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).
+
+For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
  
-Data Variation consists of [Data Variation Items](datavariation-item) or variants.
-
-## Properties
-| Name   | Description                                                              |
-| ------ | ------------------------------------------------------------------------ |
-| Number | The rank of the Data Variation in the execution order of the Test Suite. |
-
 ## Business rules
 
 None. 
