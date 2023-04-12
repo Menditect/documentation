@@ -10,7 +10,7 @@ const sortReleaseNotesSideBar = require('./release-notes/sidebar');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Menditect Documentation',
+  title: 'MTA', //title is used when viewing older versions
   tagline: 'Go test it!',
   url: 'https://documentation.menditect.com/',
   baseUrl: '/',
