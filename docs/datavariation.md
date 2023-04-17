@@ -11,7 +11,14 @@ Data Variation is used to execute the same test multiple times, but each time wi
 
 Data Variation can be defined on the [Test Suite](test-suite) or [Test Case](test-case) level. 
 
-To vary the value of an Attribute or Assert when running a test, it needs to be explicitly included in the Data Variation. It is possible to combine Test Suite datavariation and Test Case variation in the same Test Suite, but on the Test Case level, a choice has to be made between the two when including an Attribute or Assert. An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).
+To change the value of an Attribute or Assert per Test Run, it needs to be explicitly included in the Data Variation. 
+It is possible to combine Test Suite datavariation and Test Case variation in the same Test Suite. 
+
+:::note
+On the Test Case level, a choice has to be made between the two when including an Attribute or Assert. 
+:::
+
+An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).
 
 For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
  

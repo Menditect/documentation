@@ -49,7 +49,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | ID                    | MTA-801                                                                                                                |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | On both datavariation pages, it is now possible to add multiple values and asserts without having to reopen the popup. |
-| __Release actions__   | yyy.                                                                                                                   |
+| __Release actions__   | None.                                                                                                                  |
 
 <br/>
 
@@ -114,11 +114,11 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <br/>
 
-| ID                  | MTA-1257                                                                                                                                                                           |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID                  | MTA-1257                                                                                                                                                                                 |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | When a many-to-many association's owner is changed from "Both" to "Single" in a revision, an error would be shown during adapting Test Suites if that association is used in a teststep. |
 | __Solution__        | MTA is able to adapt Test Suites with many-to-many associations being changed in a revision.                                                                                             |
-| __Release actions__ | None.                                                                                                                                                                              |
+| __Release actions__ | None.                                                                                                                                                                                    |
 
 <br/>
 
