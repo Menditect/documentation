@@ -8,7 +8,7 @@ sidebar_position: 10
 
 ## Definition
 
-Data Variation Item or variant refers to an attribute that can be varied when executing a [Test Suite](test-suite). 
+Data Variation Item or variant refers to an attribute value or assert value that can be varied when executing test. 
 Data Variation Items are always part of [Data Variation](datavariation).
 The value of a Data Variation Item is defined either in an the value of an attribute or in an [Assert on attribute](Assert/assert-attribute).
 
@@ -26,30 +26,36 @@ Note that not entering a value will be interpreted as 'Empty'.
 ## Actions on Data Variation Item
 
 ### View Data Variation Items in a Test Suite
-- Click on "<i class="fas fa-table"></i>" on top of the right pane in the Test Suite page. 
-- The data variation page will be opened showing all the Data Variation Items in the [Test Suite](test-suite).
+
+Test Suite Datavariation is marked as <i class="fas fa-table"></i>.
+
+[Open the Test Suite Data Variation page.](datavariation#view-test-suite-data-variation)
 
 ### View Data Variation Items in a Test Case
-- On the Test Suite page, click on the [Test Case](test-case) that has the dark coloured "<i class="fas fa-table"></i>" icon next to it.
-- For each attribute and assert shown in the Teststep details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
 
-### View the values of a Data Variation Item per Data Variation
-- On the Test Suite page, click on the Test Case that has the dark coloured "<i class="fas fa-table"></i>" icon next to it.
-- For each attribute and assert shown in the Teststep details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
-- Click on this icon to show the values per [Data Variation](datavariation).
+Test Case Datavariation is marked as <i class="fas fa-table-rows"></i>.
+
+[Open the Test Case Data Variation page.](datavariation#view-test-case-data-variation)
 
 ### Create a Data Variation Item
 To add an attribute or an [Assert on attribute](Assert/assert-attribute) as a Data Variation Item, there are two ways:
-1. When configuring a [Teststep](teststep), click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the [Data Variation](datavariation). Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
-2. With Data Variation already enabled, go to the data variation page and click on "<i class="fal fa-plus-circle"></i> Attribute" or "<i class="fal fa-plus-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
+1. When configuring a [Teststep](teststep), <br/>- click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the **Test Suite** Data Variation or <br/>- click on "<i class="fas fa-table-rows"></i>" next to the attribute or assert to add it to the **Test Case** Data Variation.<br/>Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
+2. From the Data Variation page or popup, click on "<i class="fal fa-plus-circle"></i> Attribute" or "<i class="fal fa-plus-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
 
-### Edit a Data Variation Item
-There are two ways to edit values in a Data Variation. 
-1. From the data variation page, to edit all attributes and asserts in a Data Variation at once, click on the column you want to edit, then click on "*Edit*".
-2. From the data variation page, to edit a single attribute or assert in a Data Variation, simply click on the attribute or assert in the respective column.
+If only one of the icons is shown, this means the choice to use data variation on either the Test Case or Test Suite level was already made. 
+
+
+### Edit a Data Variation Item from the Test Suite page
+- On the Test Suite page, select the Test Case that has either the "<i class="fas fa-table"></i>" or the "<i class="fas fa-table-rows"></i>" icon next to it.
+- For each attribute and assert shown in the Teststep details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
+- Click on this icon to show the values per Data Variation.
+ 
+### Edit a Data Variation Item from the Data Variation page or popup 
+
+From the data variation page or popup, to edit a single attribute or assert in a Data Variation, simply click on the attribute or assert in the respective column.
 
 ### Delete a Data Variation Item
-- From the data variation page, click on the respective attribute or assert name on the left.
+- From the data variation page or popup, click on the respective attribute or assert name on the left.
 - Click "*Delete*".
 
 ## Related topics

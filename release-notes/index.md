@@ -23,7 +23,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <ul>
 <li>Check frontend validation feedback messages that occur during test execution! </li>
 <li>Just pick a message and create an assert based on a previous Test Run. </li>
-<li>Be as generic as 'any message' or specify message text and object member. </li>
+<li>Assert on any message or specify message text and object member. </li>
 </ul>
 </ul>
 
