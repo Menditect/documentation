@@ -54,10 +54,10 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <br/>
 
 
-| ID                    | MTA-1189                                                                                                                                                                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | When executing a test, if MTA encounters an attribute which datatype was changed in the revision running on the app instance, but the test suites were not yet adapted to that revision, MTA will show a user friendly error instead of a generic one. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                  |
+| ID                    | MTA-1189                                                                                                                                                                                                                                           |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Fixed known issue: If MTA encounters an attribute which datatype was changed in the revision running on the app instance, but the test suites were not yet adapted to that revision, MTA will show a user friendly error instead of a generic one. |
+| __Release actions__   | None.                                                                                                                                                                                                                                              |
 
 <br/>
 
@@ -89,11 +89,11 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <br/>
 
 
-| ID                  | MTA-1239                                                                                    |
-| ------------------- | ------------------------------------------------------------------------------------------- |
-| __Problem__         | The connection from the Plugin to MTA degrades after a few days, preventing test execution. |
-| __Solution__        | The connection from the Plugin to MTA is renewed occasionally, except if a test is running. |
-| __Release actions__ | None.                                                                                       |
+| ID                  | MTA-1239                                                                                                       |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Known issue: The connection from the Plugin to MTA degrades after a few days, preventing test execution.       |
+| __Solution__        | Fixed known issue: The connection from the Plugin to MTA is renewed occasionally, except if a test is running. |
+| __Release actions__ | None.                                                                                                          |
 
 <br/>
 
