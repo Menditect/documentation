@@ -2,7 +2,7 @@
 
 ## Definition
 
-An Assert on Validation feedback is used to evaluate messages shown as a result of "Validation feedback" actions in Microflows that are executed during a Test Run.
+An Assert on Validation feedback is used to evaluate [messages](../feedback-message) shown as a result of "Validation feedback" actions in Microflows that are executed during a Test Run.
 It is possible to evaluate the message text and/or the member that the message is shown on.  
 
 Asserts on Validation feedback are defined on the [Test Case](../test-case) level. Test Cases can have zero, one or multiple Asserts on validation feedback.
@@ -63,12 +63,9 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 
 ### Generate an Assert on Validation feedback 
 
-It is possible to have MTA generate an Attribute-member or All-members Assert, based on a Validation feedback message that was shown during a Test Run.
+It is possible to have MTA generate an Attribute-member or All-members Assert, based on a Validation [feedback message](../feedback-message)) that was shown during a Test Run.
 
-- Open the Test Run.
-- Open the Test Suite Run by clicking on "<i class="fal fa-eye"></i> Results".
-- Click on the orange <font color="orange"> <i class="fal fa-message-check"></i> </font> icon on the Test Case, which indicates that there were Validation feedback messages.
-- Click "Show validation feedback messages".
+- [View feedback messages](../feedback-message#view-feedback-messages).
 - Click "Generate design assert".
 - Click "Generate assert".
 - Choose the Assert type. If you choose Attribute-member, the Entity and Attribute will be automatically selected.

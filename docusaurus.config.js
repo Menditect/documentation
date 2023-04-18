@@ -74,6 +74,7 @@ const config = {
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
+          { id: 'feedback-message', content: 'feedback-message.md', versions: ['2.1.0'] },
           { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
         ],
       }),
