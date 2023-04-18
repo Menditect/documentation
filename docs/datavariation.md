@@ -24,30 +24,48 @@ For each data variation of a Test Suite, a Test Suite Run will be created. For e
  
 ## Actions on Data Variation
 
-### Enable Data Variation
-There are two ways to enable Data Variation on a [Test Suite](test-suite):
-1. Click on "<i class="fas fa-table"></i>" on top of the right pane in the Test Suite page. The data variation page will open and the icon color will turn dark, meaning Data Variation is enabled.
-2. When configuring a [Teststep](teststep), click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the Data Variation. Data Variation will be enabled and the respective attribute or assert will be added as a [Data Variation Item](datavariation-item).
+### View Test Suite Data Variation
+- Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
+- Navigate to "<i class="fal fa-table"></i> Data variation" in the left menu.
 
-### Disable Data Variation
+### Remove all Test Suite Data Variation
 To completely remove all Data Variation Items and also remove all Data Variations:
-- Click on "<i class="fas fa-table"></i>" on top of the right pane in the Test Suite page.
-- Click on "<i class="fas fa-trash-alt"></i>" on top of the list of Data Variation Items.
+- Click on "<i class="fas fa-ellipsis"></i>" on top right pane of the Data Variaton page.
+- Click on "<i class="fas fa-trash-alt"></i> Delete test suite data variation".
+
+### View Test Case Data Variation
+- Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
+- Click on "<i class="fas fa-ellipsis"></i>" on the Test Case.
+- Click on "<i class="fa-light fa-table-rows"></i> View data variation".
+  
+### Remove all Test Case Data Variation
+To completely remove all Data Variation Items and also remove all Data Variations:
+- Click on "<i class="fas fa-ellipsis"></i>" on top right pane of the Data Variaton popup.
+- Click on "<i class="fas fa-trash-alt"></i> Delete test case data variation".
+
+The page will close.
 
 ### Add a Data Variation
-- Click on "<i class="fas fa-table"></i>" on top of the right pane in the Test Suite page. The data variation page will open.
+- Open the Test Suite data variation page or Test Case data variation popup.
 - Click on the column of the Data Variation you want to create a copy from, for instance the column labeled *# 1*. 
 - Click "*Copy*".
 
 ### Delete a Data Variation
-- Click on "<i class="fas fa-table"></i>" on top of the right pane in the Test Suite page. The data variation page will open.
+- Open the Test Suite data variation page or Test Case data variation popup.
 - Click on the column of the Data Variation you want to delete, for instance the column labeled *# 2*. 
 - Click "<i class="fas fa-trash-alt"></i>".
 
 Note that you cannot delete the first column labeled *# 1*.
 
-### Edit a Data Variation
-See [Edit a Data Variation Item](datavariation-item#edit-a-data-variation-item).
+### Edit Data Variation values
+- Open the Test Suite data variation page or Test Case data variation popup.
+- Click on the column of the Data Variation you want to edit, for instance the column labeled *# 2*. 
+- Click "<i class="fas fa-pencil"></i> Edit values".
+
+### Edit Data Variation description
+- Open the Test Suite data variation page or Test Case data variation popup.
+- Click on the column of the Data Variation you want to describe, for instance the column labeled *# 2*. 
+- Click "<i class="fas fa-pencil"></i> Edit description".
 
 ## Related topics
 - [Assert](Assert)
