@@ -78,6 +78,16 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <br/>
 
 
+| ID                    | MTA-942                                                                                            |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The latest production version of the Mta Plugin can now be downloaded from the Mendix Marketplace. |
+| __Release actions__   | None.                                                                                              |
+
+<br/>
+
+
+
+
 ## Bug fixes
 
 | ID                  | MTA-1225                                                                               |
