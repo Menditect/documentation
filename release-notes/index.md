@@ -6,7 +6,8 @@
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.18.4. For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.0. 
+For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
@@ -22,7 +23,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <ul><i class="fas fa-fire"></i>  And: Asserts on Validation messages!
 <ul>
 <li>Check frontend validation feedback messages that occur during test execution! </li>
-<li>Just pick a message and create an assert based on a previous Test Run. </li>
 <li>Assert on any message or specify message text and object member. </li>
 </ul>
 </ul>
@@ -41,7 +41,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | ID                    | MTA-1144                                                                                                                                                                                                                                                                                             |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to add an Attribute value or an Assert to Data variation on the Test Case level. Attributes and Asserts within the same Test Case can be added to either Test Case datavariation or Test Suite datavariation. <br/><br/>It is also possible to switch after they have been added. |
-| __Release actions__   | It is possible to migrate existing Test Suite datavariation items using the switch option.                                                                                                                                                                                                           |
+| __Release actions__   | It is possible to migrate existing Test Suite datavariation items using the move option.                                                                                                                                                                                                             |
 
 <br/>
 

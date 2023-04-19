@@ -61,17 +61,6 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Select the Quantifier, Comparison operator and fill in the Comparison string.
 - Save.
 
-### Generate an Assert on Validation feedback 
-
-It is possible to have MTA generate an Attribute-member or All-members Assert, based on a Validation [feedback message](../feedback-message)) that was shown during a Test Run.
-
-- [View feedback messages](../feedback-message#view-feedback-messages).
-- Click "Generate design assert".
-- Click "Generate assert".
-- Choose the Assert type. If you choose Attribute-member, the Entity and Attribute will be automatically selected.
-- Select the Quantifier and Comparison operator; the Comparison string will be automatically filled in, but can be overwritten.
-- Save.
-
 ### Delete an Assert on Validation feedback 
 
 - Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
