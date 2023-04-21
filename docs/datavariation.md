@@ -23,6 +23,14 @@ An included Attribute or Assert is referred to in the MTA Documentation as a [Da
 
 For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
  
+## Business rules
+
+None. 
+
+Note that it is possible to have a data variation that does not consist of data variation items. This happens when all data variation items are deleted. The result is that the Test Suite or Test Case will simply be ran multiple times but with the exact same data. 
+
+To resolve this, use below guide to remove all Data Variation.
+
 ## Actions on Data Variation
 
 ### View Test Suite Data Variation

@@ -6,7 +6,7 @@
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.0. 
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.1. 
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
@@ -95,6 +95,15 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | __Problem__         | When deleting an MTA account that has never logged in before, an error would be shown. |
 | __Solution__        | It is possible to delete an MTA account that has never logged in before.               |
 | __Release actions__ | None.                                                                                  |
+
+<br/>
+
+
+| ID                  | MTA-1174                                                                                                                   |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Known issue: When adapting multiple test configurations to the same revision simultaneously, test data may become corrupt. |
+| __Solution__        | Fixed known issue: when adapting multiple configurations to the same revision simultaneously, test data will remain valid. |
+| __Release actions__ | None.                                                                                                                      |
 
 <br/>
 
