@@ -10,21 +10,20 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
-## Highlights in this release
+## Highlights in this release!
 
-<ul><i class="fas fa-fire"></i>  Presenting...Test Case datavariation!
+### <i class="fas fa-fire"></i> Test Case datavariation
+
 <ul>
 <li>More options to perform TDD by varying your data points on Test Case level! </li>
 <li>Use Test Case datavariation in conjunction with Test Suite datavariation...</li>
 <li>...or simply migrate your existing datavariation to Test Case level using the 'Move' option.</li>
 </ul>
-</ul>
 
-<ul><i class="fas fa-fire"></i>  And: Asserts on Validation messages!
+### <i class="fas fa-fire"></i> Asserts on Validation messages
 <ul>
 <li>Check frontend validation feedback messages that occur during test execution! </li>
 <li>Assert on any message or specify message text and object member. </li>
-</ul>
 </ul>
 
 
