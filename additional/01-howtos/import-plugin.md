@@ -10,14 +10,21 @@ In no case should you make changes to elements inside the MtaPluginModule. <br/>
 
 ## Importing MTA Plugin
 
-Download the MTA plugin module from Github:
+Download the MTA plugin module from Mendix Marketplace:
 
-https://github.com/Menditect/MENDITECT-MTA-Plugin/releases   
+| Mendix Version            | Url                                                  |
+| ------------------------- | ---------------------------------------------------- |
+| Mendix 9.0 - Mendix 9.24  | https://marketplace.mendix.com/link/component/206637 |
+| Mendix 8.12 - Mendix 8.18 | https://marketplace.mendix.com/link/component/210123 |
+| Mendix 7.23 - Mendix 8.11 | https://marketplace.mendix.com/link/component/210126 |
 
-Each release comes with 3 files, each corresponding with one of the supported Mendix runtime versions: 
-- download the 7-xx.xxx file for Mendix 7;
-- download the 8-xx.xxx file for Mendix 8;
-- download the 9-xx.xxx file for Mendix 9;
+:::note
+Converting the existing MTA plugins from GitHub to the Marketplace module list can be done by downloading it from the Mendix Marketplace. It automatically moves the existing MtaPluginModule to the Marketplace module list.
+:::
+
+:::note
+Legacy versions of the MTA Plugin can be found at https://github.com/Menditect/MENDITECT-MTA-Plugin/releases
+:::
 
 Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
@@ -87,7 +94,9 @@ This is the URL that the app will use to connect to MTA. The URL is setup as fol
 
 Example: wss://mta-mtatraining.mendixcloud.com
 
-
+:::caution
+The constant `NoAssociationResponse` is experimental. This feature is not supported. Use at your own risk.
+:::
 
 ### Configuring Plugin Home page
 

@@ -22,6 +22,9 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 - Check frontend validation feedback messages that occur during test execution! 
 - Assert on any message or specify message text and object member. 
 
+#### <i class="fas fa-fire"></i> Release MTA Plugin on Mendix Marketplace
+- The MTA plugin is now available per supported Mendix major release on the Mendix Marketplace
+
 ## New functionality 
 
 | ID                    | MTA-717                                                                                                                                                                                                                                                                                                                                                                             |
@@ -79,10 +82,24 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <br/>
 
+| ID                    | MTA-1174                                                       |
+| --------------------- | -------------------------------------------------------------- |
+| __New functionality__ | The adapt of a test configuration runs as a background process |
+| __Release actions__   | None.                                                          |
+
+<br />
 
 
 
 ## Bug fixes
+
+| ID                  | MTA-1110                                                                     |
+| ------------------- | ---------------------------------------------------------------------------- |
+| __Problem__         | For Mendix 9.20 and higher the MTA recorder failed to record Microflows      |
+| __Solution__        | In MTA 2.1 the recording is supported for the Mendix version 9.21 and higher |
+| __Release actions__ | Update application to Mendix 9.21 or higher (preferred Mendix 9.24)          |
+
+<br />
 
 | ID                  | MTA-1225                                                                               |
 | ------------------- | -------------------------------------------------------------------------------------- |
