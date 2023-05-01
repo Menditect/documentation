@@ -15,8 +15,7 @@ To change the value of an Attribute or Assert per Test Run, it needs to be expli
 It is possible to combine Test Suite datavariation and Test Case variation in the same Test Suite. 
 
 :::note
-On the Test Case level, a choice has to be made between the two when including an Attribute or Assert. 
-<br/>Once the choice is made, it can only be undone by excluding the Attributes and Asserts again.
+On the Test Case level, a choice has to be made between the Test Suite / Test Case datavariation when varying on an Attribute or Assert. Once the choice is made, it can only be undone by excluding the varied Attributes and Asserts.
 :::
 
 An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).

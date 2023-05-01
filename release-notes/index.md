@@ -2,7 +2,7 @@
 
 #### Release date
 
-4 May 2023
+3 May 2023
 
 #### Supported Mendix versions
 
@@ -12,20 +12,15 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## Highlights in this release!
 
-### <i class="fas fa-fire"></i> Test Case datavariation
+#### <i class="fas fa-fire"></i> Test Case datavariation
 
-<ul>
-<li>More options to perform TDD by varying your data points on Test Case level! </li>
-<li>Use Test Case datavariation in conjunction with Test Suite datavariation...</li>
-<li>...or simply migrate your existing datavariation to Test Case level using the 'Move' option.</li>
-</ul>
+- More options to perform TDD by varying your data points on Test Case level!
+- Use Test Case datavariation in conjunction with Test Suite datavariation...
+- ...or simply migrate your existing datavariation to Test Case level using the `Move`  option.
 
-### <i class="fas fa-fire"></i> Asserts on Validation messages
-<ul>
-<li>Check frontend validation feedback messages that occur during test execution! </li>
-<li>Assert on any message or specify message text and object member. </li>
-</ul>
-
+#### <i class="fas fa-fire"></i> Asserts on Validation messages
+- Check frontend validation feedback messages that occur during test execution! 
+- Assert on any message or specify message text and object member. 
 
 ## New functionality 
 

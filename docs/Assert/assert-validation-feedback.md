@@ -2,7 +2,7 @@
 
 ## Definition
 
-An Assert on Validation feedback is used to evaluate [messages](../feedback-message) shown as a result of "Validation feedback" actions in Microflows that are executed during a Test Run.
+An Assert on Validation feedback is used to evaluate [feedback messages](../feedback-message) shown as a result of "Validation feedback" actions in Microflows that are executed during a Test Run.
 It is possible to evaluate the message text and/or the member that the message is shown on.  
 
 Asserts on Validation feedback are defined on the [Test Case](../test-case) level. Test Cases can have zero, one or multiple Asserts on validation feedback.
