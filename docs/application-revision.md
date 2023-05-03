@@ -66,11 +66,8 @@ MTA will no longer check if the revision of a Test Configuration matches the one
 [Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
 - Click the Adapt to next revision” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant an [Error](error) will be shown.
 
-Note that this can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration.
-
-:::caution
-If one Test Configuration is adapting to a revision and you need to adapt another Test Configuration to that revision as well, please make sure to wait until the adapt process is finished.
-If two Test Configurations are being updated to the same downloaded revision simultaneously, MTA will raise an error during this process.
+:::note
+This can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration. The adapt is running as a background process, you can continue using MTA. However, you cannot edit a configuration for which the adapt is running (A limited view of the configuration is possible during the adapt).
 :::
 
 ### Delete a downloaded Application revision

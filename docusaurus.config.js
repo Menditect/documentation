@@ -10,7 +10,7 @@ const sortReleaseNotesSideBar = require('./release-notes/sidebar');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Menditect Documentation',
+  title: 'MTA', //title is used when viewing older versions
   tagline: 'Go test it!',
   url: 'https://documentation.menditect.com/',
   baseUrl: '/',
@@ -74,6 +74,7 @@ const config = {
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
+          { id: 'feedback-message', content: 'feedback-message.md', versions: ['2.1.0'] },
           { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
         ],
       }),

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 18
+sidebar_position: 19
 ---
 
 
@@ -21,8 +21,7 @@ The Test Suite is the second level of the 4-layer framework that is used in MTA.
   
 ## Business rules
 
-AANPASSSEN: revisies moeten matchen met test configuratie
-kan over meerdere  applicaties gaan
+The [revision](application-revision) of all Applications used in the Test Suite must match the ones used in the Test Configuration.
 
 ## Actions on Test Suite
 

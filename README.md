@@ -16,6 +16,7 @@ versions: {
     }
 }
 ```
+3. Add the previous version to the `versions.json` file and remove the existing one.
 
 ## How to use
 
