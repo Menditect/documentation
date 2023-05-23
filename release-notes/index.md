@@ -17,10 +17,10 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## New functionality 
 
-| ID                    | MTA-xxx |
-| --------------------- | ------- |
-| __New functionality__ | yyyy    |
-| __Release actions__   | None.   |
+| ID                    | MTA-1147    |
+| --------------------- | ----------- |
+| __New functionality__ | Audit trail |
+| __Release actions__   | None.       |
 
 <br/>
 

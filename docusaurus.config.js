@@ -63,6 +63,7 @@ const config = {
           { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
+          { id: 'archive', content: 'archive.md', versions: ['2.2.0'] },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-suite', content: 'test-suite.md', versions: 'ALL' },
           { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
