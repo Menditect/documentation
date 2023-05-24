@@ -12,8 +12,8 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## Highlights in this release
 
- - <i class="fas fa-fire"></i> Archiving function for Test Runs
- - <i class="fas fa-fire"></i> New and improved plugin
+ - <i class="fas fa-fire"></i> Archiving function for Test Runs!
+ - <i class="fas fa-fire"></i> New and improved plugin!
 
 ## New functionality 
 
@@ -40,10 +40,18 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <br/>
 
-- 1103 ?
-- 1318 ?
-- 1333 ?
-- 1207 ?
-- 1228 ?
-- 1337 ?
-- 1221 ?
+
+| ID                    | MTA-1207                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Made the error messages more user friendly when an Entity could not be found in a downloaded Revision. |
+| __Release actions__   | None.                                                                                                  |
+
+<br/>
+
+
+| ID                    | MTA-1221                                                                 |
+| --------------------- | ------------------------------------------------------------------------ |
+| __New functionality__ | Empty values for Enumeration attributes were not always shown correctly. |
+| __Release actions__   | None.                                                                    |
+
+<br/>
