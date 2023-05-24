@@ -17,21 +17,33 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## New functionality 
 
-| ID                    | MTA-1147    |
-| --------------------- | ----------- |
-| __New functionality__ | Audit trail |
-| __Release actions__   | None.       |
+| ID                    | MTA-1147                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added an archive function that allows Test Runs to be stored in MTA, up to one year after execution, in a JSON string. |
+| __Release actions__   | None.                                                                                                                  |
 
 <br/>
 
 
+| ID                    | MTA-1203                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | User friendly error when entity or association in the current revision does not match with the one in the test application. |
+| __Release actions__   | None.                                                                                                                       |
 
-## Bug fixes
+<br/>
 
-| ID                  | MTA-xxxx |
-| ------------------- | -------- |
-| __Problem__         | aaaa     |
-| __Solution__        | bbbb     |
-| __Release actions__ | cccc     |
 
-<br />
+| ID                    | MTA-1315                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Generating a teststep will use random values for attributes when there are no objects found in the database. |
+| __Release actions__   | None.                                                                                                        |
+
+<br/>
+
+- 1103 ?
+- 1318 ?
+- 1333 ?
+- 1207 ?
+- 1228 ?
+- 1337 ?
+- 1221 ?
