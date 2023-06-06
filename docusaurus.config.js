@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.1.0',
+              label: '2.2.0',
               path: '/',
             },
           },
@@ -63,6 +63,7 @@ const config = {
           { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
+          { id: 'archive', content: 'archive.md', versions: ['2.2.0'] },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-suite', content: 'test-suite.md', versions: 'ALL' },
           { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
@@ -74,7 +75,7 @@ const config = {
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
-          { id: 'feedback-message', content: 'feedback-message.md', versions: ['2.1.0'] },
+          { id: 'feedback-message', content: 'feedback-message.md', versions: 'ALL' },
           { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
         ],
       }),

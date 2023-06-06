@@ -1,161 +1,57 @@
-# Release 2.1.0
+# Release 2.2.0
 
 #### Release date
 
-3 May 2023
+24 May 2023
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.1. 
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.2. 
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
-## Highlights in this release!
+## Highlights in this release
 
-#### <i class="fas fa-fire"></i> Test Case datavariation
-
-- More options to perform TDD by varying your data points on Test Case level!
-- Use Test Case datavariation in conjunction with Test Suite datavariation...
-- ...or simply migrate your existing datavariation to Test Case level using the `Move`  option.
-
-#### <i class="fas fa-fire"></i> Asserts on Validation messages
-- Check frontend validation feedback messages that occur during test execution! 
-- Assert on any message or specify message text and object member. 
-
-#### <i class="fas fa-fire"></i> Release MTA Plugin on Mendix Marketplace
-- The MTA plugin is now available per supported Mendix major release on the Mendix Marketplace
+ - <i class="fas fa-fire"></i> Archiving function for Test Runs!
+ - <i class="fas fa-fire"></i> New and improved plugin!
 
 ## New functionality 
 
-| ID                    | MTA-717                                                                                                                                                                                                                                                                                                                                                                             |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to add one or more Asserts on frontend validation feedback messages for a Test Case. During execution the Asserts are evaluated against validation feedback messages. Asserts can be added from scratch, or created based on actual validation feedback messages that were shown during a Test Run. <br/><br/>Read the reference guide for detailed information. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                               |
-
-<br/>
-
-
-| ID                    | MTA-1144                                                                                                                                                                                                                                                                                             |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to add an Attribute value or an Assert to Data variation on the Test Case level. Attributes and Asserts within the same Test Case can be added to either Test Case datavariation or Test Suite datavariation. <br/><br/>It is also possible to switch after they have been added. |
-| __Release actions__   | It is possible to migrate existing Test Suite datavariation items using the move option.                                                                                                                                                                                                             |
-
-<br/>
-
-
-| ID                    | MTA-801                                                                                                                |
+| ID                    | MTA-1147                                                                                                               |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | On both datavariation pages, it is now possible to add multiple values and asserts without having to reopen the popup. |
+| __New functionality__ | Added an archive function that allows Test Runs to be stored in MTA, up to one year after execution, in a JSON string. |
 | __Release actions__   | None.                                                                                                                  |
 
 <br/>
 
 
-| ID                    | MTA-1189                                                                                                                                                                                                                                           |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Fixed known issue: If MTA encounters an attribute which datatype was changed in the revision running on the app instance, but the test suites were not yet adapted to that revision, MTA will show a user friendly error instead of a generic one. |
-| __Release actions__   | None.                                                                                                                                                                                                                                              |
+| ID                    | MTA-1203                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | User friendly error when entity or association in the current revision does not match with the one in the test application. |
+| __Release actions__   | None.                                                                                                                       |
 
 <br/>
 
 
-| ID                    | MTA-1017                                                                                            |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The datavariation pages now use an improved widget which uses paging and therefore performs better. |
-| __Release actions__   | None.                                                                                               |
+| ID                    | MTA-1315                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Generating a teststep will use random values for attributes when there are no objects found in the database. |
+| __Release actions__   | None.                                                                                                        |
 
 <br/>
 
 
-| ID                    | MTA-1154                                                                                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is possible to show an attribute value or assert from Test Suite design or Test run in the datavariation page. The item will be highlighted in the datavariation page. |
-| __Release actions__   | None.                                                                                                                                                                     |
+| ID                    | MTA-1207                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Made the error messages more user friendly when an Entity could not be found in a downloaded Revision. |
+| __Release actions__   | None.                                                                                                  |
 
 <br/>
 
 
-| ID                    | MTA-942                                                                                            |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The latest production version of the Mta Plugin can now be downloaded from the Mendix Marketplace. |
-| __Release actions__   | None.                                                                                              |
-
-<br/>
-
-| ID                    | MTA-1174                                                       |
-| --------------------- | -------------------------------------------------------------- |
-| __New functionality__ | The adapt of a test configuration runs as a background process |
-| __Release actions__   | None.                                                          |
-
-<br />
-
-
-
-## Bug fixes
-
-| ID                  | MTA-1110                                                                     |
-| ------------------- | ---------------------------------------------------------------------------- |
-| __Problem__         | For Mendix 9.20 and higher the MTA recorder failed to record Microflows      |
-| __Solution__        | In MTA 2.1 the recording is supported for the Mendix version 9.21 and higher |
-| __Release actions__ | Update application to Mendix 9.21 or higher (preferred Mendix 9.24)          |
-
-<br />
-
-| ID                  | MTA-1225                                                                               |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| __Problem__         | When deleting an MTA account that has never logged in before, an error would be shown. |
-| __Solution__        | It is possible to delete an MTA account that has never logged in before.               |
-| __Release actions__ | None.                                                                                  |
-
-<br/>
-
-
-| ID                  | MTA-1174                                                                                                                   |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Known issue: When adapting multiple test configurations to the same revision simultaneously, test data may become corrupt. |
-| __Solution__        | Fixed known issue: when adapting multiple configurations to the same revision simultaneously, test data will remain valid. |
-| __Release actions__ | None.                                                                                                                      |
-
-<br/>
-
-
-| ID                  | MTA-1239                                                                                                       |
-| ------------------- | -------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Known issue: The connection from the Plugin to MTA degrades after a few days, preventing test execution.       |
-| __Solution__        | Fixed known issue: The connection from the Plugin to MTA is renewed occasionally, except if a test is running. |
-| __Release actions__ | None.                                                                                                          |
-
-<br/>
-
-
-| ID                  | MTA-1194                                                                                           |
-| ------------------- | -------------------------------------------------------------------------------------------------- |
-| __Problem__         | MTA was not able to process a validation message on an association member if that member is empty. |
-| __Solution__        | MTA is now able to process a validation message on an association member even if it is empty.      |
-| __Release actions__ | None.                                                                                              |
-
-<br/>
-
-| ID                  | MTA-1186                                                                                                          |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | When association an empty object from a previous teststep an error would be shown on the teststep when executing. |
-| __Solution__        | An Object from a teststep that is empty during execution can be associated in a create/retrieve/change teststep.  |
-| __Release actions__ | None.                                                                                                             |
-
-<br/>
-
-| ID                  | MTA-1257                                                                                                                                                                                 |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | When a many-to-many association's owner is changed from "Both" to "Single" in a revision, an error would be shown during adapting Test Suites if that association is used in a teststep. |
-| __Solution__        | MTA is able to adapt Test Suites with many-to-many associations being changed in a revision.                                                                                             |
-| __Release actions__ | None.                                                                                                                                                                                    |
-
-<br/>
-
-| ID                  | MTA-1270                                                                                                                                                                                                                    |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | For a project using Git, Mendix sometimes creates a revision that is 'empty' (without any changes in files or in the model). When downloading this revision MTA would raise an error because the MendixVersion was missing. |
-| __Solution__        | MTA is able to download these 'empty' revisions.                                                                                                                                                                            |
-| __Release actions__ | None.                                                                                                                                                                                                                       |
+| ID                    | MTA-1221                                                                 |
+| --------------------- | ------------------------------------------------------------------------ |
+| __New functionality__ | Empty values for Enumeration attributes were not always shown correctly. |
+| __Release actions__   | None.                                                                    |
 
 <br/>

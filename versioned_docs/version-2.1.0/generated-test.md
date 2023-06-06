@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 
@@ -8,8 +8,8 @@ sidebar_position: 14
 Test generation is meant to speedup test scripting and can be used as a starting point for building any Test Case. 
 
 There are two types of generated tests, the result of both being a set of Teststeps in a single Test Case:
-1. Generated test by *Recording*;
-2. Generated test by *Microflow*. 
+1. Generated test by recording;
+2. Generated test by microflow. 
 
 **Recording**<br/>
 It is possible to automatically generate Teststeps by creating a recording. MTA bases these Teststeps on intercepted user actions that are executed on an [Application Instance](application-instance). 
@@ -17,13 +17,13 @@ It is possible to automatically generate Teststeps by creating a recording. MTA 
 **Microflow**<br/>
 It is possible to automatically generate Teststeps by selecting a microflow. Teststeps will be generated to fill the input parameters of the microflow and the last teststep generated will call the microflow.
 
-## Properties (Recording)
+## Properties (recording)
 | Name                            | Description                                                                                |
 | ------------------------------- | ------------------------------------------------------------------------------------------ |
 | Max. duration recording (s)     | The number of seconds that MTA will intercept user actions before the recording times out. |
 | Max. number of recorded actions | The maximum number of intercepted user actions to store in MTA.                            |
 
-## Business rules (Recording)
+## Business rules (recording)
 - If the recording times out, no Teststeps will be created. 
 - If more user actions are intercepted than the set maximum, Teststeps will be created based until the maximum is reached.
 
