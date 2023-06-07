@@ -13,13 +13,14 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 ## Highlights in this release
 
  - <i class="fas fa-fire"></i> Archiving function for Test Runs!
+ - <i class="fas fa-fire"></i> Reporting function for Test Runs!
  - <i class="fas fa-fire"></i> New and improved plugin!
 
 ## New functionality 
 
 | ID                    | MTA-1147                                                                                                               |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added an archive function that allows Test Runs to be stored in MTA, up to one year after execution, in a JSON string. |
+| __New functionality__ | Added an archive function that allows Test Runs to be stored in MTA, up to one year after execution, in a JSON string. <br/> Additionally, added a function that allows an archived Test Run to be exported to a Test Run Report in PDF format. |
 | __Release actions__   | None.                                                                                                                  |
 
 <br/>
