@@ -1,4 +1,4 @@
-# Recorder fails in Mendix 9.20
+# Recorder fails
 
 ## Issue summary
 
