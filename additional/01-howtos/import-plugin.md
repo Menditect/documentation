@@ -18,17 +18,14 @@ Download the MTA plugin module from Mendix Marketplace:
 | Mendix 8.12 - Mendix 8.18 | https://marketplace.mendix.com/link/component/210123 |
 | Mendix 7.23 - Mendix 8.11 | https://marketplace.mendix.com/link/component/210126 |
 
-:::note
-Converting the existing MTA plugins from GitHub to the Marketplace module list can be done by downloading it from the Mendix Marketplace. It automatically moves the existing MtaPluginModule to the Marketplace module list.
-:::
-
-:::note
-Legacy versions of the MTA Plugin can be found at https://github.com/Menditect/MENDITECT-MTA-Plugin/releases
-:::
-
 Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
-Import the MTA plugin module package **in your test application** as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
+Import the MTA plugin module package **in your test application** as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. 
+
+:::info
+After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. <br/>
+If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
+:::
 
 ### Upgrading to a newer runtime version
 
@@ -96,7 +93,7 @@ The constant `NoAssociationResponse` is experimental. This feature is not suppor
 
 ### Configuring Plugin Home page
 
-:::info
+:::note
 As of MTA version 2.0, configuring the MTA Plugin Home page is only necessary if you want to manually connect to MTA. 
 :::
 
