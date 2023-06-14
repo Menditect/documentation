@@ -44,4 +44,8 @@ Note: For datetime values you can either specify a date, or calculate the date w
 Note that multiple values can only be set for both way reference set (many to many) associations.
 
 ### Generate assignments from database
-You can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill with values from database". This will fill the attributes with values based on a random Object retrieved from the database, and fill associations where the that Object is the owner.
+You can choose to fill all the attributes and associations using existing values in the database, by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill with stored data". This will fill the attributes with values based on a random Object retrieved from the database, and fill associations where the that Object is the owner.
+
+### Generate random values
+You can choose to fill attributes with random data, by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill attributes with random values". 
+
