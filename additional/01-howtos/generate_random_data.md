@@ -6,8 +6,8 @@ This document describes how to generate random values for attributes in a testst
 
 ### Use MTA option for Create and Change teststeps
 
-- For Create teststeps, see [Reference guide for Create teststep](../../docs/Teststep/2-create#generate-random-values) 
-- For Change teststeps, see [Reference guide for Change teststep](../../docs/Teststep/3-change#generate-random-values)
+- For Create teststeps, see [Reference guide for Create teststep](../../Teststep/2-create#generate-random-values) 
+- For Change teststeps, see [Reference guide for Change teststep](../../Teststep/3-change#generate-random-values)
 
 ### Use the MTA Utility Module for String attributes
 
