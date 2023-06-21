@@ -17,7 +17,7 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 ### Actions
 
 - You will receive information from Menditect on how to download the MDA file that you need to set up MTA.
-- Deploy and transport it to the environment in your cloud.
+- Deploy and transport it to the environment in your cloud. <br/>When deploying MTA on the Mendix Cloud, you need to use **at least an S21 Resource Pack.** <br/>When deploying MTA on another Cloud provider, you need to have **at least 2 GB of RAM for the App and 1/2 CPU core** available.
 - Check the content of the following environment variables for the MTA application:
 
 | Environment variable                                             | value                                                  |
