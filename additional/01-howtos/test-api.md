@@ -34,6 +34,8 @@ As shown the Constant defaults to the localhost. The stubbed REST service is ind
 
 ![Test API localhost](test-api-localhost.png)
 
+The stub REST service microflow (highlighted in the image) will always return the same result.
+
 To use the stub, simply do not change the value of the Constant when running the App.<br/>
 To use a production REST service, set the value of the Constant when deploying.
 
