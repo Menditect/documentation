@@ -1,6 +1,6 @@
 # Test an API
 
-Testing an API means creating an integration test where two apps communicate. One hypothetical app **(A)** executes a REST call and does something with the result. The other app **(B)** hosts the REST service. 
+Testing a (REST) API means creating an integration test where two apps communicate. One hypothetical app **(A)** executes a REST call and does something with the result. The other app **(B)** hosts the REST service. 
 
 In MTA it is not possible to directly execute a REST call or host a REST service, but it is possible to call the microflows where the REST call or service depend on. 
 
@@ -26,13 +26,16 @@ Finally, add the teststeps in MTA:
 
 If testing the REST service is not so much the goal, rather than testing if the expected result is handled correctly, it is useful to build a stub. 
 
-Prerequisite for using a stubbed REST service is, that the URL to the REST service is contained within a Constant.
+Prerequisite for using a stubbed REST service, is that the URL to the REST service is contained within a Constant.
 
 ![Constant for REST service URL](test-api-constant.png)
 
 As shown the Constant defaults to the localhost. The stubbed REST service is indeed part of the App itself:
 
 ![Test API localhost](test-api-localhost.png)
+
+To use the stub, simply do not change the value of the Constant when running the App.<br/>
+To use a production REST service, set the value of the Constant when deploying.
 
 
 ## Test logic without calling a REST service
