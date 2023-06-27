@@ -52,9 +52,9 @@ https://docs.mendix.com/refguide/published-odata-resource/#capabilities
 
 ### Handling errors
 
-Errors as a result of restrictions (such as Access restrictions or Domain model Validation Rules) in the publishing App are shown on the details of the Teststep run when executing the Test Case in MTA.
+Errors as a result of restrictions (such as Access restrictions or Domain model Validation Rules) in the publishing App are shown on the details of the Teststep run when executing the Test Case in MTA. 
 
-If the publishing App is not running, the error will be `The OData endpoint returned 503 Service Unavailable.`
+If the publishing App is not running, the error will be `The OData endpoint returned 503 Service Unavailable.` This error will be shown either upon a Retrieve teststep, or upon committing or deleting in the external database (using abovementioned microflow actions).
 
 
 
