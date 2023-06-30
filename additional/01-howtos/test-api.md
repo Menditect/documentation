@@ -16,28 +16,61 @@ This microflow that calls the REST service is executed from MTA, and will contai
 4. executing the submicroflow containing any custom logic;
 5. optionally any output parameters to be used in following test steps in MTA.
 
-![Microflow with REST call](images/microflow-with-rest-call.png)
+![Microflow with REST call](images/test-api-1.png)
 
 Finally, add the teststeps in MTA:
 - a microflow teststep with the necessary parameters;
 - a retrieve object teststep, with the output of the first teststep, containing an assert (either on object count, or on attribute, depending on the expected result).
 
-## Test logic by calling a stubbed REST service
 
-If testing the REST service is not so much the goal, rather than testing if the expected result is handled correctly, it is useful to build a stub. 
+## Stub a REST API for Unit testing
 
-Prerequisite for using a stubbed REST service, is that the URL to the REST service is contained within a Constant.
+There are some options to use stubbing an API, to bypass the actual REST service. The first option is the simplest but allows no flexibility. The second and third options work best in conjunction with MTA. These options require downloading a seperate Menditect module from the marketplace. 
 
-![Constant for REST service URL](test-api-constant.png)
+### OPTION 1 - Simplest way. Fixed response, no variations, useful if your App has only a single integration with a external API.
 
-As shown the Constant defaults to the localhost. The stubbed REST service is indeed part of the App itself:
+1. isolate your REST call action in a microflow and make it return the JSON Response, like this:
+![Isolated REST call](images/test-api-2.png)
+2. create (if not yet exists) a Constant where you can store if the current environment is a Production environment, like this:
+![Constant](images/test-api-constant.png)
+3. use the value of the Constant in a Decision to either call the REST API or return a stubbed JSON string, like this:
+![Decision](images/test-api-3.png)
 
-![Test API localhost](test-api-localhost.png)
+### OPTION 2 - Include variation in your stubbed JSON string, useful in situations with multiple integrations. 
 
-The stub REST service microflow (highlighted in the image) will always return the same result.
+There is an example microflow included in the module for this option.
 
-To use the stub, simply do not change the value of the Constant when running the App.<br/>
-To use a production REST service, set the value of the Constant when deploying.
+1. Download the **Menditect Api Stub module for Unit Testing** from the Marketplace. You already need to have the CommunityCommons module in your project.
+2. Set the Const_Environment to 'T' for testing, 'P' for Production.
+3. Include the Snippet_Configure in a page to allow configuring your stubbed JSON string per REST call.
+4. Deploy to your environment. Open the configuration page. Look for REST calls in your project that you want to test, include a unique Key and stubbed JSON for each one.  
+5. In the microflows calling REST services, instead of using a String variable like in OPTION 1, call the GET_stub_by_key microflow. 
+6. Place the Key that you also used when configuring in step 4.
+7. The result should look like this:
+![Option with variable text](images/test-api-5.png)
+
+### OPTION 3 - Replace the actual REST service by a stubbed REST service published in the test application, useful if performance metrics should be included in the test. 
+
+There is an example microflow included in the module for this option.
+
+1. Download the **Menditect Api Stub module for Unit Testing** from the Marketplace. You already need to have the CommunityCommons module in your project.
+2. Set the Const_Environment to 'T' for testing, 'P' for Production.
+3. Include the Snippet_Configure in a page to allow configuring your stubbed JSON string per REST call.
+4. Deploy to your environment. Open the configuration page. Look for REST calls in your project that you want to test, include a unique Key and stubbed JSON for each one.  
+5. In the microflows calling REST services, place an action that calls the API_get_URL_and_activate microflow before each REST call.
+6. Place the Key that you also used when configuring in step 4.
+7. Cut the Location string from the REST call action and paste it into the ProductionURL parameter.
+8. The microflow could throw an Exception. Place an error handler that shows the error message. 
+9. The result should look like this:
+![Option with actual REST API](images/test-api-6.png)
+
+### Using MTA to set stubbed JSON instead of the configuration page
+
+You can perform the configuration in steps 4 for options 2 and 3 in MTA, instead of in a configuration page in the test app. 
+
+The best way is to create a [Test Case](../../test-case) that creates the configuration objects and uses Test Case [Datavariation](../../datavariation) to allow for the variation of the stubbed JSON string:
+
+![Using MTA](images/test-api-MTA.png)
 
 
 ## Test logic without calling a REST service
