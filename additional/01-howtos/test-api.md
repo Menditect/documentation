@@ -25,7 +25,7 @@ Finally, add the teststeps in MTA:
 
 ## Stub a REST API for Unit testing
 
-There are some options to use stubbing an API, to bypass the actual REST service. The first option is the simplest but allows no flexibility. The second and third options work best in conjunction with MTA. These options require downloading a seperate Menditect module from the marketplace. 
+There are some options to use stubbing an API, to bypass the actual REST service. The first option is the simplest but allows no flexibility. The second and third options work best in conjunction with MTA. These options require downloading a seperate [Api Stub module](https://marketplace.mendix.com/link/component/212962) from the Mendix Marketplace. 
 
 ### OPTION 1 - Fixed response
 
@@ -46,7 +46,7 @@ Characteristics: include variation in your stubbed JSON string, useful in situat
 
 There is an example microflow included in the module for this option.
 
-1. Download the **Menditect Api Stub module for Unit Testing** from the Marketplace. You already need to have the CommunityCommons module in your project.
+1. Download the [Menditect Api Stub module for Unit Testing](https://marketplace.mendix.com/link/component/212962) from the Marketplace. You already need to have the CommunityCommons module in your project.
 2. Set the Const_Environment to 'T' for testing, 'P' for Production.
 3. Include the Snippet_Configure in a page to allow configuring your stubbed JSON string per REST call.
 4. Deploy to your environment. Open the configuration page. Look for REST calls in your project that you want to test, include a unique Key and stubbed JSON for each one.  
@@ -55,13 +55,13 @@ There is an example microflow included in the module for this option.
 7. The result should look like this:<br/>
 ![Option with variable text](images/test-api-5.png)
 
-### OPTION 3 - Stubbed the REST service
+### OPTION 3 - Stubbed REST service
 
 Characteristics: replace the actual REST service by a stubbed REST service published in the test application, useful if performance metrics should be included in the test. 
 
 There is an example microflow included in the module for this option.
 
-1. Download the **Menditect Api Stub module for Unit Testing** from the Marketplace. You already need to have the CommunityCommons module in your project.
+1. Download the [Menditect Api Stub module for Unit Testing](https://marketplace.mendix.com/link/component/212962) from the Marketplace. You already need to have the CommunityCommons module in your project.
 2. Set the Const_Environment to 'T' for testing, 'P' for Production.
 3. Include the Snippet_Configure in a page to allow configuring your stubbed JSON string per REST call.
 4. Deploy to your environment. Open the configuration page. Look for REST calls in your project that you want to test, include a unique Key and stubbed JSON for each one.  
