@@ -71,7 +71,7 @@ First, navigate to the Automatic Test Case that the Teststep is in.
 
 **Option 3: Move a Teststep to another Test Case.** 
 - Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
-- Click on "-> Another test case".
+- Click on "<i class="fas fa-arrow-right"></i> Another test case".
 - Use drag and drop to move the Teststep.
 - Review any configuration [Errors](error) and save your changes.
 
