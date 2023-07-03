@@ -18,7 +18,7 @@ It is possible to use a regular [Retrieve teststep](../../Teststep/retrieve). Do
 
 Creating data from a Dataset that is exposed as an Entity in a Mendix App can be done by a [Create teststep](../../Teststep/create), but saving the data to the database of the publishing App cannot be done by using [Persist](../../Teststep/persist). This must be handled by a Microflow call, where the microflow contains a "Send external object" action. Only a single object can be committed by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
 
-![Send external object](commit-odata-object.png)
+![Send external object](images/commit-odata-object.png)
 
 Domain model access must be configured for the Entity, allowing the Execution user Create and Write Access. 
 
