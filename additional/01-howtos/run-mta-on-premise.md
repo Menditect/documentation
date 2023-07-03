@@ -97,9 +97,9 @@ hsforms.com/*
 
 ### Test application actions
 
-After updating MTA, make sure that all the test applications have the newest version of the Mta Plugin module installed. Official releases of the Mta Plugin module are downloadable at:
-https://github.com/Menditect/MENDITECT-MTA-Plugin/releases
+After updating MTA, make sure that all the test applications have the newest version of the MTA Plugin module installed. 
 
+[Read how to import and configure the Plugin here](import-plugin)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
