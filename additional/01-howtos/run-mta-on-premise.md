@@ -27,7 +27,7 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | Atlas_Web_Content.Atlas_Web_Content_Version                      | 3.0.6                                                  |
 | BeheerModule.DeleteObjectBatchSize                               | 500                                                    |
 | BeheerModule.InternalToken                                       |                                                        |
-| BeheerModule.MtaDocVersion                                       | 2.0.0                                                  |
+| BeheerModule.MtaDocVersion                                       | 2.2.0                                                  |
 | BeheerModule.NodeRevision                                        | 0                                                      |
 | BeheerModule.NumberOfThreadsParallel                             | 4                                                      |
 | BeheerModule.UrlBaseDocumentation                                | https://documentation.menditect.com                    |
