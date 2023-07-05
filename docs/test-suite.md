@@ -10,7 +10,7 @@ sidebar_position: 20
 
 A Test Suite is an executable part of a [Test Configuration](test-configuration) and consists of a collection of [Test Cases](test-case) that are intended to be used to test a software program to show that it has some specified set of behaviours.
 
-The Test Suite is the second level of the 4-layer framework that is used in MTA. It allows for a Test Configurations to be split up into different functional or technical aspects of the tested software, but it is also the level where [Data Variation](datavariation) is defined. 
+The Test Suite is the second level of the 4-layer framework that is used in MTA. It allows for a Test Configurations to be split up into different functional or technical aspects of the tested software. It is possible to define [Data Variation](datavariation) on the Test Suite level. 
 
 ## Properties
 | Name        | Description                                                                                                                                                                             |
@@ -63,4 +63,4 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated: 5 july 2023
