@@ -47,7 +47,7 @@ Note that a String value that is converted into other another datatype could lea
 
 | To set value for **attribute** that's a… | Use attribute that's a…                            | Or microflow return value that's a…          |
 | ---------------------------------------- | -------------------------------------------------- | -------------------------------------------- |
-| AutoNumber (only for Retrieve teststep)  | AutoNumber/Integer/Long/String                     | IntegerLong/String                           |
+| AutoNumber (only for Retrieve teststep)  | AutoNumber/Integer/Long/String (converted)         | IntegerLong/String (converted)               |
 | Boolean                                  | Boolean                                            | Boolean                                      |
 | DateTime                                 | DateTime                                           | DateTime                                     |
 | Decimal                                  | AutoNumber/Decimal/Integer/Long/String (converted) | Decimal/Float/IntegerLong/String (converted) |
