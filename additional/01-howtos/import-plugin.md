@@ -14,9 +14,10 @@ Download the MTA plugin module from Mendix Marketplace:
 
 | Mendix Version            | Url                                                  |
 | ------------------------- | ---------------------------------------------------- |
+| Mendix 10                 | Will be released soon!                               |
 | Mendix 9.0 - Mendix 9.24  | https://marketplace.mendix.com/link/component/206637 |
 | Mendix 8.12 - Mendix 8.18 | https://marketplace.mendix.com/link/component/210123 |
-| Mendix 7.23 - Mendix 8.11 | https://marketplace.mendix.com/link/component/210126 |
+| Mendix 7.23 - Mendix 8.11 | [Contact Menditect Support](support@menditect.com)   |
 
 Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
