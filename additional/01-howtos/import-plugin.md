@@ -1,5 +1,8 @@
 # Import plugin
 
+**NEW: Watch the video instead!**
+<iframe src="https://player.vimeo.com/video/846213936?h=494a93fd4f" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
 
 If you are [running MTA on Premise](run-mta-on-premise), you may notice that MTA also contains an MTA Plugin module. This is because Menditect regression-tests MTA with MTA. The information in this page is regarding the customer Application to test. For Menditect on-premise customers and partners: please don't import the MTA Plugin module into MTA.
