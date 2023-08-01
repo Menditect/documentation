@@ -1,58 +1,123 @@
-# Release 2.2.0
+# Release 2.3.0
 
 #### Release date
 
-7 June 2023
+1 August 2023
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.2. 
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.24.
+**Mendix 10 support is still in Beta.**
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
 
- - <i class="fas fa-fire"></i> Archiving function for Test Runs!
- - <i class="fas fa-fire"></i> Reporting function for Test Runs!
- - <i class="fas fa-fire"></i> New and improved plugin!
+ - Extended capibilities based on user feedback! 
+ - No more need to use microflows for complex retrieve actions, we've added advanced retrieve filters! 
+ - Requested often: use values from objects in other objects!
 
 ## New functionality 
 
-| ID                    | MTA-1147                                                                                                               |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added an archive function that allows Test Runs to be stored in MTA, up to one year after execution, in a JSON string. <br/> Additionally, added a function that allows an archived Test Run to be exported to a Test Run Report in PDF format. |
-| __Release actions__   | None.                                                                                                                  |
+| ID                    | MTA-711                                                                                                                                                                                                                            |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to use the attribute value from the object output of a previous teststep. The attribute value from the object can be used to fill values in Create, Change and Retrieve teststeps, and on Microflow parameters. |
+| __Release actions__   | None.                                                                                                                                                                                                                              |
 
 <br/>
 
 
-| ID                    | MTA-1203                                                                                                                    |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | User friendly error when entity or association in the current revision does not match with the one in the test application. |
-| __Release actions__   | None.                                                                                                                       |
+| ID                    | MTA-1311                                                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | It is now possible to use extended filter operators on Retrieve teststeps, including "Contains" on String attributes, "Greater/Smaller than" on Numeric attributes and "Range" on Numeric and Datetime attributes. |
+| __Release actions__   | None.                                                                                                                                                                                                              |
 
 <br/>
 
 
-| ID                    | MTA-1315                                                                                                     |
-| --------------------- | ------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Generating a teststep will use random values for attributes when there are no objects found in the database. |
-| __Release actions__   | None.                                                                                                        |
+| ID                    | MTA-1214                                                                                                                           |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When a revision has been selected in the New Test Configuration Wizard, the "Select revision" button changes to "Change revision". |
+| __Release actions__   | None.                                                                                                                              |
 
 <br/>
 
 
-| ID                    | MTA-1207                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Made the error messages more user friendly when an Entity could not be found in a downloaded Revision. |
-| __Release actions__   | None.                                                                                                  |
+| ID                    | MTA-1215                                                                                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When an application instance has been selected in the New Test Configuration Wizard, the "Select instance" button changes to "Change instance". |
+| __Release actions__   | None.                                                                                                                                           |
 
 <br/>
 
 
-| ID                    | MTA-1221                                                                 |
-| --------------------- | ------------------------------------------------------------------------ |
-| __New functionality__ | Empty values for Enumeration attributes were not always shown correctly. |
-| __Release actions__   | None.                                                                    |
+| ID                    | MTA-1224                                                                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Removed the Connect button from the Application Instances page, because it was confusing for the user as connections are made from the Test App to MTA and not the other way around. |
+| __Release actions__   | None.                                                                                                                                                                                |
 
 <br/>
+
+
+| ID                    | MTA-1418                                                                      |
+| --------------------- | ----------------------------------------------------------------------------- |
+| __New functionality__ | Applications migrating from SVN to Git are now also showing correctly in MTA. |
+| __Release actions__   | None.                                                                         |
+
+<br/>
+
+
+| ID                    | MTA-1437                                                                                                                                                                                                                                                        |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | While making changes in the Configure Teststep pages, entered values for attributes are preserved also if the attribute is unselected. This makes it easier to undo a change on the page. Only when saving, the values for unselected attributes are discarded. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                           |
+
+<br/>
+
+
+| ID                    | MTA-1463                                                                                                                                                       |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The Sequence Number is no longer displayed on the Edit page where Teststeps can be dragged and dropped, because it is calculated after the sequences is saved. |
+| __Release actions__   | None.                                                                                                                                                          |
+
+<br/>
+
+
+| ID                    | MTA-1465                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The nightly cleanup processes that run as Scheduled Events are now executed before the Data validation Scheduled Event is executed, to prevent unnessesary data being checked. This change could have significant impact on the performance of MTA environments that are heavily used, especially on JVM memory usage. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                  |
+
+<br/>
+
+
+| ID                    | MTA-1419                                                                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When choosing to fill values from Database on a Retrieve teststep, only values are filled that are included to be used as a filter. |
+| __Release actions__   | None.                                                                                                                               |
+
+<br/>
+
+
+
+
+## Bug fixes
+
+| ID                  | MTA-1438                                                                                                                                                              |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When a Teststep uses a "Retrieve from former Teststep", on a Teststep that also uses a "Retrieve from former Teststep", an error occurs when executing the Test Case. |
+| __Solution__        | Using consecutive "Retrieve from former Teststep" no longer results in an Error.                                                                                      |
+| __Release actions__ | None.                                                                                                                                                                 |
+
+<br/>
+
+
+| ID                  | MTA-1423                                                                                                                                                 |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Adapting a Test Suite fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision.           |
+| __Solution__        | Adapting a Test Suite no longer fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision. |
+| __Release actions__ | None.                                                                                                                                                    |
+
+<br/>
+
+ 
