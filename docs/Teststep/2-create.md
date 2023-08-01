@@ -35,7 +35,7 @@ Note: For datetime values you can either specify a date, or calculate the date w
 
 ### Use a former Teststep to set an Attribute Value
 - Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
-- Select the Teststep that should provide the value.
+- Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 ### Assign associations
 - Click "<i class="fal fa-plus-circle"></i> Add" for each association that you want to set. 
