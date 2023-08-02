@@ -7,22 +7,21 @@
 #### Supported Mendix versions
 
 Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.24.
-**Mendix 10 support is still in Beta.**
-For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla).
+For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). **Mendix 10 support is monthly release based.**
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
 
  - Extended capibilities based on user feedback! 
  - No more need to use microflows for complex retrieve actions, we've added advanced retrieve filters! 
- - Requested often: use values from objects in other objects!
+ - Use values from objects in other objects!
 
 ## New functionality 
 
-| ID                    | MTA-711                                                                                                                                                                                                                            |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to use the attribute value from the object output of a previous teststep. The attribute value from the object can be used to fill values in Create, Change and Retrieve teststeps, and on Microflow parameters. |
-| __Release actions__   | None.                                                                                                                                                                                                                              |
+| ID                    | MTA-711                                                                                                                                                                                                                                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to use the attribute value from the object output of a previous teststep. This was already possible for values that are the output of microflow teststeps. The attribute value from the object can be used to fill values in Create, Change and Retrieve teststeps, and on Microflow parameters. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                               |
 
 <br/>
 
@@ -83,10 +82,10 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <br/>
 
 
-| ID                    | MTA-1465                                                                                                                                                                                                                                                                                                               |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The nightly cleanup processes that run as Scheduled Events are now executed before the Data validation Scheduled Event is executed, to prevent unnessesary data being checked. This change could have significant impact on the performance of MTA environments that are heavily used, especially on JVM memory usage. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                  |
+| ID                    | MTA-1465                                                                                                                                                                                                                                                                               |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The nightly cleanup processes that run as Scheduled Events are now executed before the Data validation Scheduled Event is executed, to prevent unnessesary data being checked. This will improve performance of MTA environments that are heavily used, and minimize JVM memory usage. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                  |
 
 <br/>
 
