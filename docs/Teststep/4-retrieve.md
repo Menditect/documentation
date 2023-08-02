@@ -64,18 +64,18 @@ Note: For datetime values you can either specify a date, or calculate the date w
 
 The following Operators are supported for the Mendix data types:
 
-|                          | String                       | Integer                      | Decimal                      | Boolean   | Datetime                     | Enumeration                  |
-| ------------------------ | ---------------------------- | ---------------------------- | ---------------------------- | --------- | ---------------------------- | ---------------------------- |
-| Equals                   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | (Implied) | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
-| Does not equal           | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
-| Contains                 | <i class="fas fa-check"></i> |                              |                              |           |                              |                              |
-| Does not Contain         | <i class="fas fa-check"></i> |                              |                              |           |                              |                              |
-| Within Range             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | <i class="fas fa-check"></i> |                              |
-| Outside of Range         |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | <i class="fas fa-check"></i> |                              |
-| Greater than             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | (Use Range)                  |                              |
-| Greater than or Equal to |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | (Use Range)                  |                              |
-| Less than                |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | (Use Range)                  |                              |
-| Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |           | (Use Range)                  |                              |
+|                          | String                       | Integer                      | Decimal                      | Boolean                      | Datetime                     | Enumeration                  |
+| ------------------------ | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| Equals                   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
+| Does not equal           | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
+| Contains                 | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
+| Does not Contain         | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
+| Within Range             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |                              |
+| Outside of Range         |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |                              |
+| Greater than             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
+| Greater than or Equal to |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
+| Less than                |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
+| Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
 
 
 
