@@ -99,18 +99,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 
 
-
-## Bug fixes
-
-| ID                  | MTA-1438                                                                                                                                                              |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | When a Teststep uses a "Retrieve from former Teststep", on a Teststep that also uses a "Retrieve from former Teststep", an error occurs when executing the Test Case. |
-| __Solution__        | Using consecutive "Retrieve from former Teststep" no longer results in an Error.                                                                                      |
-| __Release actions__ | None.                                                                                                                                                                 |
-
-<br/>
-
-
 | ID                  | MTA-1423                                                                                                                                                 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Adapting a Test Suite fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision.           |
