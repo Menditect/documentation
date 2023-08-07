@@ -22,20 +22,7 @@ Follow the steps described [here](prepare-mendix-project) to complete this actio
 
 *This action needs to be performed by each Mendix developer who wishes to test their Mendix Apps in MTA.*
 
-An API key and Personal Access Token (PAT) need to be created to make communication possible with MTA and the Mendix platform.<br/>Make sure to store both in a password manager after creation. 
-
-Create your PAT and personal API key in your Mendix account. Go to:
-- https://user-settings.mendix.com/link/developersettings
-- Click "New token". Name it 'MTA Test'.
-- Select only `mx:modelrepository:repo:read`
-- Click "Create".
-- Store it in the password manager so you don't lose it.
-- Now click "Configure API Keys".
-- Create a new API key. Description 'MTA Test'.
-- Click "Generate API key".
-- Store it in the password manager so you don't lose it.
-
-Finally, follow [these steps](access-mendix-model) to finish the setup after MTA is up and running.
+Follow the steps described [here](access-mendix-model) to complete this action.
 
 
 ## Feedback?

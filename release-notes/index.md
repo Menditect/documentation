@@ -14,7 +14,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
  - Extended capibilities based on user feedback! 
  - No more need to use microflows for complex retrieve actions, we've added advanced retrieve filters! 
- - Use values from objects in other objects!
+ - Use output values as a variable to fill an attribute's value!
 
 ## New functionality 
 
