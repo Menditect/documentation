@@ -1,5 +1,9 @@
 # Run your first test in MTA
 
+**NEW: Watch the video instead!**
+<iframe src="https://player.vimeo.com/video/852636928?h=601d67c079" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
+
 These step-by-step instructions will help new MTA users add and execute their first test on a single Mendix App.
 
 ## Prerequisites
