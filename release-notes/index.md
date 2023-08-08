@@ -2,7 +2,7 @@
 
 #### Release date
 
-1 August 2023
+8 August 2023
 
 #### Supported Mendix versions
 
