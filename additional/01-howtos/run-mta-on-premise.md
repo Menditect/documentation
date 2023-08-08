@@ -25,14 +25,14 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | ApiMendixModule.WebsocketStage                                   | production                                             |
 | Atlas_Core.Atlas_Core_Version                                    | 3.0.7                                                  |
 | Atlas_Web_Content.Atlas_Web_Content_Version                      | 3.0.6                                                  |
-| BeheerModule.DeleteObjectBatchSize                               | 500                                                    |
-| BeheerModule.InternalToken                                       |                                                        |
-| BeheerModule.MtaDocVersion                                       | 2.2.0                                                  |
-| BeheerModule.NodeRevision                                        | 0                                                      |
-| BeheerModule.NumberOfThreadsParallel                             | 4                                                      |
-| BeheerModule.UrlBaseDocumentation                                | https://documentation.menditect.com                    |
-| BeheerModule.UrlReleaseNotes                                     | releasenotes                                           |
-| BeheerModule.UrlSupportForm                                      | https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri |
+| MtaUtils.DeleteObjectBatchSize                                   | 500                                                    |
+| MtaUtils.InternalToken                                           |                                                        |
+| MtaUtils.MtaDocVersion                                           | 2.2.0                                                  |
+| MtaUtils.NodeRevision                                            | 0                                                      |
+| MtaUtils.NumberOfThreadsParallel                                 | 4                                                      |
+| MtaUtils.UrlBaseDocumentation                                    | https://documentation.menditect.com                    |
+| MtaUtils.UrlReleaseNotes                                         | releasenotes                                           |
+| MtaUtils.UrlSupportForm                                          | https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri |
 | DeepLink.EnableLeadingSlash                                      | True                                                   |
 | DeepLink.IndexPage                                               | index.html                                             |
 | DeepLink.LoginLocation                                           |                                                        |

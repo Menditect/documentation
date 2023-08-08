@@ -1,31 +1,38 @@
-# Create Object
+# Change Object
 
 ## Definition
 
-With this [Teststep](.) type, an object is created in-memory. 
+With this [Teststep](.) type, objects from a previous [Teststep](.) are changed in-memory.
 
-To save it to the database, add a [Persist](persist) step.
+:::note
+Note that a Change teststep can be used on a single object or on a list of objects, and that attribute values and associations specified in the teststep, will be applied to *all* objects!
+:::
 
-The object is created only if the Execution user is allowed to based on the domain model access rules in the Mendix model.
+To save the changes to the database, add a [Persist](persist) step.
 
-Domain model events (Before and After Create), if configured, are triggered.
+## Add a Change Object Teststep
 
-## Add a Create Object Teststep
+There are two options to add a Change Object teststep. The first option is quicker:
+
+**Option 1:**
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Teststep" and Click "<i class="fal fa-plus-circle"></i> Create teststep" to add a Create Object Teststep.
-- Select an entity. You can search by name.
-- [Set values](#setting-values).
-- Click on the "Save" button. 
+- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
 
+**Option 2:**
+
+1. Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
+2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Change teststep" to add a Change Object Teststep.
+3. Select an entity. You can search by name.
+4. Select the previous Teststep that returns the object(s) that you want to change. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object or a list of objects.
 
 ## Setting values
 
 ### Include or exclude an Attribute Value
 - Toggle the checkbox next to the attribute to include or exclude it.
 
-Note that not including an Attribute Value in a Create Object Teststep will make the value default to what has been configured in the Mendix domain model (usually empty).
-Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
+Note that not including an Attribute Value in a Change Object Teststep will leave the value unchanged for that attribute.
+Including an Attribute Value but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
 
 ### Set a fixed Attribute Value 
 - Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
@@ -35,7 +42,7 @@ Note: For datetime values you can either specify a date, or calculate the date w
 
 ### Use a former Teststep to set an Attribute Value
 - Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
-- Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
+- Select the Teststep that should provide the value.
 
 ### Assign associations
 - Click "<i class="fal fa-plus-circle"></i> Add" for each association that you want to set. 

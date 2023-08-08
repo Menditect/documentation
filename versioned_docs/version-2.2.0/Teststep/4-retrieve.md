@@ -52,38 +52,18 @@ Note that when retrieving from a former Teststep in a previous Test Case, data n
 
 ## Set filter values
 
-### Include or exclude an Attribute filter
+### Include or exclude an Attribute Value
 - Toggle the <i class="fal fa-filter"></i> button next to the attribute to include or exclude it.
 
-### Manually set an Attribute filter
-- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, which indicates that a filter operation and value(s) will be entered manually.
-- Choose an Operator (see below for the complete list).
-- Enter or select value(s) to be used as a filter on the attribute.
+### Set a fixed Attribute Value 
+- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
+- Enter or select a value for the attribute.
 
 Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
-The following Operators are supported for the Mendix data types:
-
-|                          | String                       | Integer                      | Decimal                      | Boolean                      | Datetime                     | Enumeration                  |
-| ------------------------ | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
-| Equals                   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
-| Does not equal           | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
-| Contains                 | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
-| Does not Contain         | <i class="fas fa-check"></i> |                              |                              |                              |                              |                              |
-| Within Range             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |                              |
-| Outside of Range         |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |                              |
-| Greater than             |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
-| Greater than or Equal to |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
-| Less than                |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
-| Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
-
-
-
-### Use the value from a former Teststep to set the Attribute filter
+### Use a former Teststep to set an Attribute Value
 - Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
-- Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
-
-Note: you cannot choose to have a former Teststep set the value if you want to specify a Range of values. 
+- Select the Teststep that should provide the value.
 
 ### Assign associations
 - Click "<i class="fal fa-plus-circle"></i> Add" for each association that you want to set. 

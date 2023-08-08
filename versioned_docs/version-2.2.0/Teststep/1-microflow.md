@@ -43,7 +43,7 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 
 ** Setting a primitive value **
 - First click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
-- Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
+- Select the Teststep that should provide the value.
 
 ** Setting an Object value **
 - Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](Teststep/create) the value or [Retrieves](Teststep/retrieve) the value from database.
