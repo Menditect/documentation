@@ -24,7 +24,6 @@ It is possible to select a previous version on the top right of the page.
 - [Generated test](generated-test)
 - [Test Case](test-case)
 - [Test Configuration](test-configuration)
-- [Test Instruction](test-instruction)
 - [Test Run](test-run)
 - [Test Setting](test-setting)
 - [Test Suite](test-suite)

@@ -11,9 +11,7 @@ sidebar_position: 15
 
 A Test Case is a collection of operations to execute on an [Application Instance](application-instance), that are assembled to test some specific aspect of system behaviour. 
 
-The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level.
-
-A Test Case can be either 'Manual' or 'Automatic'. Manual Test Cases contain [Test Instructions](test-instruction), do not run any Mendix code and subsequently do not appear whenever the Test Suite is executed. Automatic Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
+The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
 
 An 'Automatic' Test Case is always executed on a Test Application and by an execution user. The name of the execution user that is configured for the Test Case, must exactly match an existing, active and not blocked local user in the [Application Instance](application-instance) that is tested. Note that this is not the same user as the Mta Connection User that is used to communicate between the Application environment and MTA. 
 
@@ -23,7 +21,6 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 | Name                     | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Name                     | The name of the Test Case.                                                                                                                                                                                                                                                                                                                                                                                   |
-| Test Case Type           | This indicates if a Test Case is executable, can be either 'Manual' or 'Automatic'.                                                                                                                                                                                                                                                                                                                          |
 | Test application         | The associated test application to execute the Test Case on.                                                                                                                                                                                                                                                                                                                                                 |
 | Execution user           | The username to execute the Test Case with.                                                                                                                                                                                                                                                                                                                                                                  |
 | Apply security           | If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data).                                                                                                                                                                                                                    |
@@ -60,7 +57,6 @@ Note that [datavariation](datavariation) still applies when executing a single T
 ### Create a Test Case
 - Navigate to the Test Suite you want to create a Test Case in.
 - Click "<i class="fal fa-plus-circle"></i> Test case" to create a Test Case.
-- Select either 'Manual' or 'Automatic' for the Test Case Type (Testers can only create 'Manual' Test Cases).
 - Enter a name and other optional information.
 - Select an [Application Instance](application-instance) to execute the Test Case on.
 - Select an Execution User to execute the Test Case with.
@@ -72,7 +68,7 @@ Note that [datavariation](datavariation) still applies when executing a single T
 
 Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
-Note that Testers can only move 'Manual' Test Cases, but cannot move 'Automatic' Test Cases.
+Note that Testers cannot move Test Cases.
 
 ### Edit a Test Case 
 
@@ -90,7 +86,6 @@ Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automa
 
 ## Related topics
 - [Test Setting](test-setting)
-- [Test Instruction](test-instruction)
 - [Teststep](teststep)
 - [Test Suite](test-suite)
 
