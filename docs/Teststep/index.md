@@ -107,7 +107,6 @@ Note that it is possible that due to deleting a Teststep and dependencies with a
 - [Assert](Assert/)
 - [Data Variation](datavariation)
 - [Test Case](test-case)
-- [Test Instruction](test-instruction)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
