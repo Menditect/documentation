@@ -126,7 +126,6 @@ MTA will show the Test Design page and with your Test Configuration preselected.
 ### Add a Test Case
 - Click the '+ Test case' button to add a Test Case to your Test Suite.
 - Give it a name.
-- Leave the type at 'Automatic'.
 - Test application and Execution user will be preselelected if you have completed above steps.
 - Save.
 - MTA will select the Test Case that you just added.
