@@ -12,7 +12,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## Highlights in this release
 
- - Extended capibilities based on user feedback! 
+ - Extended capabilities based on user feedback! 
  - No more need to use microflows for complex retrieve actions, we've added advanced retrieve filters! 
  - Use output values as a variable to fill an attribute's value!
 
