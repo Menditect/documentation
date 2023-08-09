@@ -4,7 +4,7 @@
 
 ## Definition
 
-A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case) that has the 'Automatic' type.
+A Teststep tests some specific aspect of system behaviour. A Teststep is always part of a [Test Case](test-case).
 
 The Teststep is the lowest or fourth level of the 4-layer framework that is used in MTA. It describes the actual operating functions. 
 
@@ -43,12 +43,12 @@ Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, a
 
 ### View Teststeps in a Test Case
 - Navigate to the [Test Suite](test-suite) that the Teststeps are in.
-- Click on the Automatic [Test Case](test-case) to view the Teststeps.
+- Click on the [Test Case](test-case) to view the Teststeps.
 - Teststeps are shown in the middle pane.
 
 ### View Teststep details
 - Navigate to the Test Suite that the Teststeps are in.
-- Click on the Automatic Test Case to view the Teststeps.
+- Click on the Test Case to view the Teststeps.
 - Select the Teststep to view.
 - Details of the Teststep are shown on the right pane.
 
@@ -57,7 +57,7 @@ Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, a
 
 ### Move a Teststep
 
-First, navigate to the Automatic Test Case that the Teststep is in.
+First, navigate to the Test Case that the Teststep is in.
 
 **Option 1: Move a teststep 1 position up or down.** 
 - Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
@@ -92,14 +92,14 @@ When setting Attribute Values, always keep in mind that the meaning of the value
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
 ### Delete a Teststep
-- Navigate to the Automatic Test Case that the Teststep is in.
+- Navigate to the Test Case that the Teststep is in.
 - Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
 - Click on "<i class="fas fa-trash-alt"></i>" Test step".
 
 Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 
 ### Open the Microflow or Domain Model associated with a Teststep in Mendix Studio
-- Navigate to the Automatic Test Case that the Teststep is in.
+- Navigate to the Test Case that the Teststep is in.
 - Select the Teststep.
 - Click on "*Mx Studio*" on top of the Teststep details pane on the right.
 

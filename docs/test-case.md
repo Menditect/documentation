@@ -13,7 +13,7 @@ A Test Case is a collection of operations to execute on an [Application Instance
 
 The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
 
-An 'Automatic' Test Case is always executed on a Test Application and by an execution user. The name of the execution user that is configured for the Test Case, must exactly match an existing, active and not blocked local user in the [Application Instance](application-instance) that is tested. Note that this is not the same user as the Mta Connection User that is used to communicate between the Application environment and MTA. 
+A Test Case is always executed on a Test Application and by an execution user. The name of the execution user that is configured for the Test Case, must exactly match an existing, active and not blocked local user in the [Application Instance](application-instance) that is tested. Note that this is not the same user as the Mta Connection User that is used to communicate between the Application environment and MTA. 
 
 When the Test Suite execution hits the Test Case, the Test Case's Execution User is used to login to the Test Case's Test application. When the Test Case is finished executing, the Execution user will be logged out again. The consequence of this, is that all data that was not saved to the database (either by a Persist Object Teststep or a Commit action in a Microflow), will be permanently lost. This is important to realize during test scripting, because if a subsequent Test Case retrieves data from a Teststep in this Test Case, this action will fail if the data was not saved to the database.
 
@@ -82,7 +82,7 @@ Note that it not is possible to change the Test Case Type or associated Test App
 
 Note that it is possible that due to deleting a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 
-Note that Testers can only delete 'Manual' Test Cases, but cannot delete 'Automatic' Test Cases.
+Note that Testers cannot delete Test Cases.
 
 ## Related topics
 - [Test Setting](test-setting)
