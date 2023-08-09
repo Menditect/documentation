@@ -21,7 +21,7 @@ Other documents about this topic are:
 ## Guidelines
 
 Before starting the recording, it is useful to follow these guidelines first.
-- Create a draft first, either using [Test Instructions](../../test-instruction) in MTA or a simple text tool like notepad. Keep the transaction that you want to record as small as possible, that way there is a higher chance that the Recorder will get it right in one try. Use a numbered list to describe each step the user takes. Take double the amount of steps as the "Max. number of recorded actions" for the recording.
+- Create a draft first using a simple text tool like notepad. Keep the transaction that you want to record as small as possible, that way there is a higher chance that the Recorder will get it right in one try. Use a numbered list to describe each step the user takes. Take double the amount of steps as the "Max. number of recorded actions" for the recording.
 - Prepare your project for recording, following the the steps below.
 - Select an appropriate [Test Case](../../test-case). You can choose to create multiple recordings and merge them in the same Test Case. This is described further in the How to section.
 - Make sure the Execution User for the selected Test Case exists, is active and not blocked.
