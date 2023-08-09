@@ -17,7 +17,6 @@ automated tests repeatable and maintainable you will learn how to manage test da
 ### Topics covered
 
 - Preparation of MTA and your test application
-- Design your test cases with manual test cases
 - Structure your test cases in the MTA test framework
 - Automate your test cases and learn how to optimally use the MTA features
 - Cascaded or independent test cases
@@ -31,7 +30,6 @@ automated tests repeatable and maintainable you will learn how to manage test da
 
 We aim to give our participants a good understanding of the capabilities of MTA for automating tests of Mendix apps. After attending the course you should be able to answer the following questions:
 
-- What is the difference between manual and automated test cases?
 - How can you set up test cases different test levels?
 - How can you structure test cases in MTA and re-use test logic for fast execution and optimal maintenance?
 - How can you create automated tests and make them technically consistent (with the Mendix app)?
