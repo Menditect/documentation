@@ -1,8 +1,8 @@
-# Release 2.3.0
+# Release 2.3.1
 
 #### Release date
 
-8 August 2023
+15 August 2023
 
 #### Supported Mendix versions
 
@@ -98,12 +98,23 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 <br/>
 
 
+## Bug fixes
+
 
 | ID                  | MTA-1423                                                                                                                                                 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Adapting a Test Suite fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision.           |
 | __Solution__        | Adapting a Test Suite no longer fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision. |
 | __Release actions__ | None.                                                                                                                                                    |
+
+<br/>
+
+ 
+| ID                  | N/A                                                                                                                                          |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Internal MTA data checker found an inconsistency after consecutive adapts on excluded attributes that have been removed in a revision.       |
+| __Solution__        | A patch (2.3.1) has been released to customers using MTA to fix inconsistencies on excluded attributes that have been removed in a revision. |
+| __Release actions__ | None.                                                                                                                                        |
 
 <br/>
 
