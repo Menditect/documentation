@@ -8,7 +8,7 @@ If it is necessary to test a process that includes or requires uploading a file,
 - Create (if not yet exists) an MTA extension module in the tested App.
 - Add an entity that inherits from FileDocument.
 - Add an attribute that can be used to uniquely identify an uploaded file.
-- Buld a page to upload files into this entity.
+- Build a page to upload files into this entity.
 - Create a microflow with only a single (Java) Duplicate File Document action from the Community Commons module. It should look like this:
 ![Duplicate File Document microflow](images/duplicate-filedoc.png)
 
