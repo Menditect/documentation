@@ -16,7 +16,7 @@ Now, it is possible to use this pattern in a Test Case, to test processes that r
 1. Teststep that Creates an empty filedocument as used in the tested process (for example, a 'TemplateDocument' as is used in the Excel Importer).
 2. Persist (to ensure the object is saved to the database, otherwise the Java action won't work).
 3. Teststep that Retrieves the filedocument from the MTA extension module's entity.
-4. Microflow call to the abovementioned microflow with the teststep from step 1 as target, and the teststep from step 3 as source.
+4. Microflow call to the abovementioned microflow with parameters: teststep 1 as Target, and teststep 3 as Source.
 5. Other logic to perform the actual test.
 6. Optional delete logic to clean up.
 
