@@ -28,6 +28,10 @@ There are two options to add a Change Object teststep. The first option is quick
 
 ## Setting values
 
+:::info
+Binary attributes are not supported by MTA.
+:::
+
 ### Include or exclude an Attribute Value
 - Toggle the checkbox next to the attribute to include or exclude it.
 
