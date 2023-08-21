@@ -21,6 +21,10 @@ Domain model events (Before and After Create), if configured, are triggered.
 
 ## Setting values
 
+:::info
+Binary attributes are not supported by MTA.
+:::
+
 ### Include or exclude an Attribute Value
 - Toggle the checkbox next to the attribute to include or exclude it.
 

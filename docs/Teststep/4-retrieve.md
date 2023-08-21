@@ -52,6 +52,10 @@ Note that when retrieving from a former Teststep in a previous Test Case, data n
 
 ## Set filter values
 
+:::info
+Binary attributes are not supported by MTA.
+:::
+
 ### Include or exclude an Attribute filter
 - Toggle the <i class="fal fa-filter"></i> button next to the attribute to include or exclude it.
 
