@@ -14,7 +14,7 @@ Upon executing a Delete teststep, MTA will evaluate the Execution user's *Delete
 
 If the necessary rights are not found in the Domain Model, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
-Note that when deleting the same object through a Microflow teststep, this check would not be performed.
+To circumvent domain model access rights it is possible to use a [Microflow teststep](microflow).
 
 ## Actions
 

@@ -12,7 +12,7 @@ Upon executing a Retrieve teststep, MTA will evaluate the Execution user's *Retr
 
 Only objects that pass this evaluation will be included in the results in the [Test Run](../test-run).
 
-Note that, other than for [Create](create) and [Change](change) teststeps, when retrieving the same object in a microflow and returning it, **this evaluation will also be performed.**
+To circumvent domain model access rights it is **not** possible to use a [Microflow teststep](microflow); above evaluations will also be performed for the object(s) returned by the microflow.
 
 ## Retrieve from database
 

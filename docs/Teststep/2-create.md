@@ -18,7 +18,7 @@ Upon executing a Create teststep, MTA will check if the Execution user has *Crea
 
 If the necessary rights are not found in the Domain Model, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
-Note that when creating the same object through a [Microflow teststep](microflow), this check would not be performed, *even* if the microflow returns the object.
+To circumvent domain model access rights it is possible to use a [Microflow teststep](microflow).
 
 ## Add a Create Object Teststep
 
