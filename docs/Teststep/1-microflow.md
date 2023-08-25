@@ -4,7 +4,15 @@
 
 With this [Teststep](.) type, a Microflow is executed. 
 
-The microflow is executed regardless if the Execution user is allowed to, according to the selected Allowed Roles on the microflow. However, if "Apply entity access" is on for the microflow, the access on the domain model will be applied.
+## Allowed roles
+
+Microflows configured in a Microflow teststep are always executed regardless of the "Allowed roles" setting in Mendix.
+
+## Domain model Access
+
+Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+
+Domain model access rights only apply for microflows that have "Apply entity access" set to "Yes". MTA will not perform any checks; Mendix will check the entity access just like when executing the microflow through the frontend. 
 
 ## Add a Microflow Teststep
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.

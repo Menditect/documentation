@@ -10,6 +10,16 @@ The object is created only if the Execution user is allowed to based on the doma
 
 Domain model events (Before and After Create), if configured, are triggered.
 
+## Domain model Access
+
+Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+
+Upon executing a Create teststep, MTA will check if the Execution user has *Create* rights on the Domain Model through the configured User Roles. 
+
+If the necessary rights are not found in the Domain Model, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+
+Note that when creating the same object through a [Microflow teststep](microflow), this check would not be performed, *even* if the microflow returns the object.
+
 ## Add a Create Object Teststep
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
