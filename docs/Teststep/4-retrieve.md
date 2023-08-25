@@ -4,7 +4,15 @@
 
 With this [Teststep](.) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Values entered for attributes and associations will be converted into an XPATH expression and subsequently filter the list of objects retrieved. Also objects that are output from previous teststeps can be filtered. 
 
-The object is retrieved only if the Execution user is allowed to based on the domain model access rules in the Mendix model.
+## Domain model Access
+
+Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+
+Upon executing a Retrieve teststep, MTA will evaluate the Execution user's *Retrieve* rights on the Domain Model through the configured User Roles. 
+
+Only objects that pass this evaluation will be included in the results in the [Test Run](../test-run).
+
+Note that, other than for [Create](create) and [Change](change) teststeps, when retrieving the same object in a microflow and returning it, **this evaluation will also be performed.**
 
 ## Retrieve from database
 

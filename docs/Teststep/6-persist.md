@@ -8,6 +8,10 @@ Domain model events (Before and After Commit), if configured, are triggered for 
 
 Domain model events (Before and After Delete), if configured, are triggered for Objects that are deleted.
 
+## Domain model Access
+
+Domain model access rights are not checked during Persist, but in the other teststep types.
+
 ## Actions
 
 ### Add a Persist Teststep

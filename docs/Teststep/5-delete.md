@@ -6,6 +6,16 @@ With this [Teststep](.) type, an object or objects from a previous [Teststep](.)
 
 To delete it from the database, add a [Persist](persist) step.
 
+## Domain model Access
+
+Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+
+Upon executing a Delete teststep, MTA will evaluate the Execution user's *Delete* rights on the Domain Model through the configured User Roles. 
+
+If the necessary rights are not found in the Domain Model, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+
+Note that when deleting the same object through a Microflow teststep, this check would not be performed.
+
 ## Actions
 
 ### Add a Delete Object Teststep
