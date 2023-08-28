@@ -8,7 +8,7 @@ With this [Teststep](.) type, objects can be retrieved from database or memory a
 
 Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
 
-Upon executing a Retrieve teststep, MTA will evaluate the Execution user's *Retrieve* rights on the Domain Model through the configured User Roles. 
+Upon executing a Retrieve teststep, MTA will evaluate the Execution user's *Read* rights on the Domain Model through the configured User Roles. 
 
 Only objects that pass this evaluation will be included in the results in the [Test Run](../test-run).
 
