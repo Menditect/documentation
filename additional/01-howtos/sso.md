@@ -42,11 +42,22 @@ In this example, the password is not returned as an output parameter and therefo
 
 The second Test Suite has Test Cases that use the Account(s) created in the first Test Suite as the Execution User, and has the Apply Security setting to "Yes".
 
+If any objects are associated to the Account entity, make sure to delete these objects in this Test Suite, otherwise the last Test Suite will fail.
+
 ### Delete local Accounts
 
 The last Test Suite contains one Test Case that delete the Account(s) that were created in the first Test Suite. It uses MxAdmin as the Execution User, and has the Apply Security setting to "No".
 
-Assuming there are no other Accounts in the database (note that MxAdmin is a *User*, not an *Account*) the simplest way is to just retrieve all Account objects from database, and use Delete + Persist teststeps to wipe them from the database.
+Assuming there are no other Accounts in the database (note that MxAdmin is a *User*, not an *Account*) the simplest way is to:
+1. [Retrieve](../../Teststep/retrieve) All Account object(s)
+2. [Delete](../../Teststep/delete) the objects from teststep 1
+5. [Persist](../../Teststep/persist)
+
+This will wipe all Accounts from the database. 
+
+### Sequence diagram
+
+![Sequence diagram of on-the-fly Account creation](images/sequence.png)
 
 ## Connectivity tests
 
