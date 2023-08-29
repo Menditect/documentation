@@ -18,6 +18,8 @@ Create a Test Configuration with at least 3 Test Suites:
 2. Run tests (in 1 or more Test Suites)
 3. Delete local Accounts
 
+At least make sure to put the Delete local Accounts logic in it's own Test Suite, because if a previous Test Suite fails, it will stop executing that one and continue with the next.
+
 ### Create local Accounts
 
 The first Test Suite contains one Test Case for each Account that should be created.
