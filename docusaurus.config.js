@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.3.1',
+              label: '2.4.0',
               path: '/',
             },
           },
@@ -64,6 +64,7 @@ const config = {
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
           { id: 'archive', content: 'archive.md', versions: 'ALL' },
+          { id: 'cicd', content: 'cicd.md', versions: 'ALL' },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-suite', content: 'test-suite.md', versions: 'ALL' },
           { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
