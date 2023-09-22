@@ -186,7 +186,7 @@ Any of below status descriptors:
 - *Requesting download*
 - *Downloading*
 - *Downloaded*
-- *Cancelled*: download has been cancelled by an user
+- *Cancelled*: download has been cancelled by a user
 - *Error*: an error has occured while trying to download a revision
 - *Deleting*: revision is being deleted in MTA
 
