@@ -6,11 +6,11 @@ This document describes the how to obtain results from an executed CI/CD testrun
 There are 3 ways to view results of a CI/CD testrun.
 
 ## 1. View results in MTA 
-To view the detailed results of a testrun that is executed from CI/CD, login on MTA, and navigate to "Ci/Cd runs". All the executed CI/CD testruns are listed here with their respective Execution ID, also the ones that were not successful. 
-Using the Details button it is possible to view the results of the testrun.
+To view the detailed results of a testrun that is executed from CI/CD Version 1, login on MTA, and navigate to "Ci/Cd runs". All the executed CI/CD testruns are listed here with their respective Execution ID, also the ones that were not successful. 
+Using the Details button it is possible to view the results of the testrun. Also testruns executed from CI/CD Version 2 are visible here.
 
 ## 2. Download results in CI/CD API
-With the [Get testruns result](cicd-config#get-testrunsresult) request in the CI/CD API it is possible to use your CI/CD pipeline or Test Management system to get the results, after the execution has finished.
+With the [Get testruns result](../../cicd#get-testrun-details) request in the CI/CD API it is possible to use your CI/CD pipeline or Test Management system to get the results, after the execution has finished.
 
 ## 3. Get realtime results in your own API endpoint
 As of MTA version 2.0, it is possible to have MTA push the results after each Test Case run to your own hosted REST service. You need to tell MTA where to push the results, and provide a secret key that you should use to verify the source (MTA) upon receiving this push message.  
