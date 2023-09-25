@@ -70,6 +70,13 @@ MTA will no longer check if the revision of a Test Configuration matches the one
 This can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration. The adapt is running as a background process, you can continue using MTA. However, you cannot edit a configuration for which the adapt is running (A limited view of the configuration is possible during the adapt).
 :::
 
+### Restore previous revision of Test Suites in a Test Configuration
+
+After running the "Adapt" process as described above, the result may be that [Errors](error) are shown on Teststeps in the Test Configuration. This could be because the Test Configuration was adapted accidentally, or adapted to the wrong [Application Revision](application-revision). Solving the errors before Adapting again is time consuming. Therefore MTA allows to restore the Test Configuration to the previously used revision. The result of this action will be:
+- the orinal Test Configuration is [deleted](test-configuration#delete-a-test-configuration).
+- a new (restored) Test Configuration is created with the name "Restored" - {timestamp} - {Original name}. [Edit](test-configuration#edit-a-test-configuration) the Test Configuration to change the name.
+- this Test Configuration will not have any of the executed Test Runs. To view the executed Test Runs, [recover](test-configuration#recover-a-deleted-test-configuration) the original Test Configuration.
+
 ### Delete a downloaded Application revision
 
 It is no longer possible to delete downloaded revisions manually.
