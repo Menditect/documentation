@@ -25,14 +25,6 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | ApiMendixModule.WebsocketStage                                   | production                                             |
 | Atlas_Core.Atlas_Core_Version                                    | 3.0.7                                                  |
 | Atlas_Web_Content.Atlas_Web_Content_Version                      | 3.0.6                                                  |
-| MtaUtils.DeleteObjectBatchSize                                   | 500                                                    |
-| MtaUtils.InternalToken                                           |                                                        |
-| MtaUtils.MtaDocVersion                                           | 2.2.0                                                  |
-| MtaUtils.NodeRevision                                            | 0                                                      |
-| MtaUtils.NumberOfThreadsParallel                                 | 4                                                      |
-| MtaUtils.UrlBaseDocumentation                                    | https://documentation.menditect.com                    |
-| MtaUtils.UrlReleaseNotes                                         | releasenotes                                           |
-| MtaUtils.UrlSupportForm                                          | https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri |
 | DeepLink.EnableLeadingSlash                                      | True                                                   |
 | DeepLink.IndexPage                                               | index.html                                             |
 | DeepLink.LoginLocation                                           |                                                        |
@@ -41,6 +33,13 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | EgalitConfigModule.EsaMultiInstanceMode                          | False                                                  |
 | MtaDataValidationModule.DataValidationAccessGuid                 |                                                        |
 | MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | 5                                                      |
+| MtaUtils.DeleteObjectBatchSize                                   | 500                                                    |
+| MtaUtils.InternalToken                                           |                                                        |
+| MtaUtils.MtaDocVersion                                           | 2.4.0                                                  |
+| MtaUtils.NodeRevision                                            | 0                                                      |
+| MtaUtils.UrlBaseDocumentation                                    | https://documentation.menditect.com                    |
+| MtaUtils.UrlReleaseNotes                                         | releasenotes                                           |
+| MtaUtils.UrlSupportForm                                          | https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri |
 | PluginRecordModule.RecordingSupportRequestUrl                    | https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | 20                                                     |
 
@@ -68,9 +67,7 @@ Below steps are important and MTA will not work if these steps are skipped.
 ```
 *.mendix.com/*
 *.sprintr.com/*
-*.fontawesome.com/*
 mtasdkapi-ws.menditect.com/*
-fonts.googleapis.com/*
 hsforms.com/*
 ```
 
@@ -104,4 +101,4 @@ After updating MTA, make sure that all the test applications have the newest ver
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 december 2022
+Last updated 25 september 2023
