@@ -6,14 +6,14 @@
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.8.
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.9.
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). **Mendix 10 support is monthly release based.**
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
 
- - CI/CD Version 2 is here! 
- - Recover a Test Configuration to a previous revision, if an Adapt has resulted in many errors.
+ - Implemented CI/CD Version!
+ - Restore a Test Configuration to a previous revision!
 
 ## New functionality 
 
@@ -23,10 +23,10 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | __Release actions__   | None.                                                         |
 
 
-| ID                    | MTA-1537                                                      |
-| --------------------- | ------------------------------------------------------------- |
-| __New functionality__ | Recover a Test Configuration to the previously used revision. |
-| __Release actions__   | None.                                                         |
+| ID                    | MTA-1537                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Recover a Test Configuration to the previously used revision. This allows to undo the Adapt of Test Suites to the revision. |
+| __Release actions__   | None.                                                                                                                       |
 
 
 | ID                    | MTA-1484                                                           |

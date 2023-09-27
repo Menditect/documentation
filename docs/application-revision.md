@@ -72,10 +72,9 @@ This can take some time depending on the size of the Mendix project, the number 
 
 ### Restore previous revision of Test Suites in a Test Configuration
 
-After running the "Adapt" process as described above, the result may be that [Errors](error) are shown on Teststeps in the Test Configuration. This could be because the Test Configuration was adapted accidentally, or adapted to the wrong [Application Revision](application-revision). Solving the errors before Adapting again is time consuming. Therefore MTA allows to restore the Test Configuration to the previously used revision. The result of this action will be:
-- the orinal Test Configuration is [deleted](test-configuration#delete-a-test-configuration).
-- a new (restored) Test Configuration is created with the name "Restored" - {timestamp} - {Original name}. [Edit](test-configuration#edit-a-test-configuration) the Test Configuration to change the name.
-- this Test Configuration will not have any of the executed Test Runs. To view the executed Test Runs, [recover](test-configuration#recover-a-deleted-test-configuration) the original Test Configuration.
+Every time before running [an Adapt process](#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) as described above, a "snapshot" is created of the Test Configuration. It is possible to restore the Design of a Test Configuration using that snapshot. This will allow to **undo the Adapt**. The result of this action will be:
+- **A new Test Configuration** is created with the name "Restored" - {timestamp} - {Original name}. It is based upon a previously selected Application Revision. MTA will open the Test Configuration. To change the name, [Edit](test-configuration#edit-a-test-configuration) the Test Configuration.
+- **The original Test Configuration** will contain the executed Test Runs. To view the executed Test Runs, open that Test Configuration.
 
 ### Delete a downloaded Application revision
 
