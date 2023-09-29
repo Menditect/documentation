@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Definition
 
-A Mendix project that you can add to MTA for test purposes. 
+A Mendix project that can be added to MTA for test purposes. 
 
 ## Properties
 | Name       | Description                                                |

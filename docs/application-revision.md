@@ -72,9 +72,7 @@ This can take some time depending on the size of the Mendix project, the number 
 
 ### Restore previous revision of Test Suites in a Test Configuration
 
-Every time before running [an Adapt process](#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) as described above, a "snapshot" is created of the Test Configuration. It is possible to restore the Design of a Test Configuration using that snapshot. This will allow to **undo the Adapt**. The result of this action will be:
-- **A new Test Configuration** is created with the name "Restored" - {timestamp} - {Original name}. It is based upon a previously selected Application Revision. MTA will open the Test Configuration. To change the name, [Edit](test-configuration#edit-a-test-configuration) the Test Configuration.
-- **The original Test Configuration** will contain the executed Test Runs. To view the executed Test Runs, open that Test Configuration.
+See [Snapshot](snapshot).
 
 ### Delete a downloaded Application revision
 
@@ -89,4 +87,4 @@ Application revisions are cleaned up nightly by MTA if they are no longer in use
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated: 29 september 2023
