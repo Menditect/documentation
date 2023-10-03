@@ -36,16 +36,10 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 
 For the full explanation on how to add a Test Configuration, read the [How To](additional/howtos/run-first-test#2-add-a-test-configuration).
 
-### Edit a Test Configuration
-
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to edit.
-- Click on "Edit".
-
 ### Execute a Test Configuration
 
 - Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to execute.
+- Select the Test Configuration you want to execute.
 - Click on "Execute".
 
 ### Delete a Test Configuration
@@ -54,7 +48,7 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 Note that Testers cannot delete Test Configurations.
 
-### Recover a deleted Test Configuration
+### Restore a deleted Test Configuration
 - Navigate to the "Test configurations" page.
 - Go to "<i class="fal fa-eye"></i> Deleted". 
 - Click on "<i class="fal fa-check-double"></i> Recover" on the Test Configuration you want to restore.

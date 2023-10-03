@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 
@@ -70,10 +70,6 @@ MTA will no longer check if the revision of a Test Configuration matches the one
 This can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration. The adapt is running as a background process, you can continue using MTA. However, you cannot edit a configuration for which the adapt is running (A limited view of the configuration is possible during the adapt).
 :::
 
-### Restore previous revision of Test Suites in a Test Configuration
-
-See [Snapshot](snapshot).
-
 ### Delete a downloaded Application revision
 
 It is no longer possible to delete downloaded revisions manually.
@@ -87,4 +83,4 @@ Application revisions are cleaned up nightly by MTA if they are no longer in use
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 29 september 2023
+Last updated: 19 january 2023

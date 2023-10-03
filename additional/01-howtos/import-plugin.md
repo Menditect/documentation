@@ -16,12 +16,13 @@ In no case should you make changes to elements inside the MtaPluginModule. <br/>
 
 Download the MTA plugin module from Mendix Marketplace:
 
-| Mendix Version            | Url                                                       |
-| ------------------------- | --------------------------------------------------------- |
-| Mendix 9.24 - Mendix 10   | Will be released soon!                                    |
-| Mendix 9.0 - Mendix 9.24  | https://marketplace.mendix.com/link/component/206637      |
-| Mendix 8.12 - Mendix 8.18 | https://marketplace.mendix.com/link/component/210123      |
-| Mendix 7.23 - Mendix 8.11 | [Contact Menditect Support](mailto:support@menditect.com) |
+| Mendix Version                 | Url                                                       |
+| ------------------------------ | --------------------------------------------------------- |
+| Mendix 10                      | https://marketplace.mendix.com/link/component/214764      |
+| Mendix 9.24.4 - Mendix 9.24.9  | https://marketplace.mendix.com/link/component/214717      |
+| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637      |
+| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123      |
+| Mendix 7                       | [Contact Menditect Support](mailto:support@menditect.com) |
 
 Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 

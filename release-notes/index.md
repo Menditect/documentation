@@ -1,120 +1,103 @@
-# Release 2.3.1
+# Release 2.4.0
 
 #### Release date
 
-15 August 2023
+4 October 2023
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.4.
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.9.
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). **Mendix 10 support is monthly release based.**
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
 
 ## Highlights in this release
 
- - Extended capabilities based on user feedback! 
- - No more need to use microflows for complex retrieve actions, we've added advanced retrieve filters! 
- - Use output values as a variable to fill an attribute's value!
+ - Implemented CI/CD Version!
+ - Restore a Test Configuration to a previous revision!
 
 ## New functionality 
 
-| ID                    | MTA-711                                                                                                                                                                                                                                                                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to use the attribute value from the object output of a previous teststep. This was already possible for values that are the output of microflow teststeps. The attribute value from the object can be used to fill values in Create, Change and Retrieve teststeps, and on Microflow parameters. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                               |
-
-<br/>
-
-
-| ID                    | MTA-1311                                                                                                                                                                                                           |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | It is now possible to use extended filter operators on Retrieve teststeps, including "Contains" on String attributes, "Greater/Smaller than" on Numeric attributes and "Range" on Numeric and Datetime attributes. |
-| __Release actions__   | None.                                                                                                                                                                                                              |
-
-<br/>
-
-
-| ID                    | MTA-1214                                                                                                                           |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When a revision has been selected in the New Test Configuration Wizard, the "Select revision" button changes to "Change revision". |
-| __Release actions__   | None.                                                                                                                              |
-
-<br/>
-
-
-| ID                    | MTA-1215                                                                                                                                        |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When an application instance has been selected in the New Test Configuration Wizard, the "Select instance" button changes to "Change instance". |
-| __Release actions__   | None.                                                                                                                                           |
-
-<br/>
-
-
-| ID                    | MTA-1224                                                                                                                                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Removed the Connect button from the Application Instances page, because it was confusing for the user as connections are made from the Test App to MTA and not the other way around. |
-| __Release actions__   | None.                                                                                                                                                                                |
-
-<br/>
-
-
-| ID                    | MTA-1418                                                                      |
-| --------------------- | ----------------------------------------------------------------------------- |
-| __New functionality__ | Applications migrating from SVN to Git are now also showing correctly in MTA. |
-| __Release actions__   | None.                                                                         |
-
-<br/>
-
-
-| ID                    | MTA-1437                                                                                                                                                                                                                                                        |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | While making changes in the Configure Teststep pages, entered values for attributes are preserved also if the attribute is unselected. This makes it easier to undo a change on the page. Only when saving, the values for unselected attributes are discarded. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                           |
-
-<br/>
-
-
-| ID                    | MTA-1463                                                                                                                                                       |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The Sequence Number is no longer displayed on the Edit page where Teststeps can be dragged and dropped, because it is calculated after the sequences is saved. |
-| __Release actions__   | None.                                                                                                                                                          |
-
-<br/>
-
-
-| ID                    | MTA-1465                                                                                                                                                                                                                                                                               |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The nightly cleanup processes that run as Scheduled Events are now executed before the Data validation Scheduled Event is executed, to prevent unnessesary data being checked. This will improve performance of MTA environments that are heavily used, and minimize JVM memory usage. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                  |
-
-<br/>
-
-
-| ID                    | MTA-1419                                                                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When choosing to fill values from Database on a Retrieve teststep, only values are filled that are included to be used as a filter. |
-| __Release actions__   | None.                                                                                                                               |
-
-<br/>
-
-
-## Bug fixes
-
-
-| ID                  | MTA-1423                                                                                                                                                 |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Adapting a Test Suite fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision.           |
-| __Solution__        | Adapting a Test Suite no longer fails if a teststep contains a microflow parameter that has been changed from a String to Datetime in the next revision. |
-| __Release actions__ | None.                                                                                                                                                    |
+| ID                    | MTA-1034                                                      |
+| --------------------- | ------------------------------------------------------------- |
+| __New functionality__ | Implemented CI/CD Version 2. See reference guide for details. |
+| __Release actions__   | None.                                                         |
 
 <br/>
 
  
-| ID                  | N/A                                                                                                                                          |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Internal MTA data checker found an inconsistency after consecutive adapts on excluded attributes that have been removed in a revision.       |
-| __Solution__        | A patch (2.3.1) has been released to customers using MTA to fix inconsistencies on excluded attributes that have been removed in a revision. |
-| __Release actions__ | None.                                                                                                                                        |
+| ID                    | MTA-1537                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Recover a Test Configuration to the previously used revision. This allows to undo the Adapt of Test Suites to the revision. |
+| __Release actions__   | None.                                                                                                                       |
+
+<br/>
+
+ 
+| ID                    | MTA-1484                                                           |
+| --------------------- | ------------------------------------------------------------------ |
+| __New functionality__ | Show the delay on a Test Case or Teststep in the Test Run results. |
+| __Release actions__   | None.                                                              |
+
+<br/>
+
+ 
+| ID                    | MTA-1561                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Changed asynchronous microflow execution management to use separate threadpools per microflow, instead of one threadpool for the whole application. Therefore the "NumberOfThreadsParallel" MTA constant is no longer used. |
+| __Release actions__   | None.                                                                                                                                                                                                                       |
+
+<br/>
+ 
+
+| ID                    | MTA-1482                                                                                                        |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Implemented a more user-friendly message when constants in the MTA Plugin module are not correctly initialized. |
+| __Release actions__   | None.                                                                                                           |
+
+<br/>
+ 
+
+| ID                    | N/A                                                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Included Google Exo Font package and Font Awesome package in the MTA delivery package to prevent MTA from becoming unusable when Google.com or Fontawesome.com are down. |
+| __Release actions__   | None.                                                                                                                                                                    |
+
+<br/>
+ 
+
+
+## Bug fixes
+
+| ID                  | MTA-1515                                                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | MTA switches microflows when adapting to a revision containing 2 microflows with the same name (in different modules). |
+| __Solution__        | MTA uses the fully qualified name of the microflow in a revision so using the same name twice is no longer a problem.  |
+| __Release actions__ | None.                                                                                                                  |
+
+<br/>
+ 
+| ID                  | MTA-1498                                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Retrieve teststep by association with "Equals" filter on decimal attribute does not return any objects. |
+| __Solution__        | Retrieve teststep by association with "Equals" filter returns the correct objects.                      |
+| __Release actions__ | None.                                                                                                   |
+
+<br/>
+ 
+| ID                  | MTA-1553                                                                                                 |
+| ------------------- | -------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Excluding an attribute after it was first included in datavariation leads to an error on Save.           |
+| __Solution__        | Excluding an attribute after it was first included in datavariation no longer leads to an error on Save. |
+| __Release actions__ | None.                                                                                                    |
+
+<br/>
+
+  
+| ID                  | MTA-1474                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Due to a breaking change in Mendix 9.24.4, the Recorder function was broken in Runtime versions 9.24.4 and higher.  |
+| __Solution__        | After a fix implemented by Mendix in 9.24.8, the Recorder function is working again in LTS Mendix 9 minor versions. |
+| __Release actions__ | None.                                                                                                               |
 
 <br/>
 
