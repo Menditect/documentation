@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 toc_max_heading_level: 2
 ---
 
@@ -10,10 +10,6 @@ toc_max_heading_level: 2
 This document describes the structure of the published REST service `MTA public API's version 2.0.0 for CI/CD` and it's endpoints.
 
 To understand **how to use** the CI/CD interface, read the HowTo section.
-
-:::info
-To read the documentation for version 1, use the version switcher on top of this page.
-:::
 
 ## GET application instances
 
