@@ -1,12 +1,16 @@
 ---
-sidebar_position: 10
+sidebar_position: 9
 ---
 
-# CI/CD 
+# CI/CD API (Old)
 
 ## Version 1
 
 This document describes the guidelines to use Version 1 of the CI/CD API of MTA in a pipeline.
+
+:::info
+Version 1 of the CI/CD API is be deprecated, please use [Version 2](cicd).
+:::
 
 ### Enable CI/CD
 Where regular test runs are executed on the Test Configuration level, CI/CD enabled test runs are executed on the Application level. When testing an Application, all Test Configurations that use that Application, and are CI/CD enabled are executed. Keep in mind, that also other Test Applications could be affected, if one of those Test Configurations use more than one.
