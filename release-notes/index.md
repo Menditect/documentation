@@ -63,7 +63,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | __Release actions__   | None.                                                                                                                                                                    |
 
 <br/>
- 
 
 
 ## Bug fixes
@@ -75,7 +74,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | __Release actions__ | None.                                                                                                                  |
 
 <br/>
- 
+
 | ID                  | MTA-1498                                                                                                |
 | ------------------- | ------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Retrieve teststep by association with "Equals" filter on decimal attribute does not return any objects. |
@@ -83,7 +82,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | __Release actions__ | None.                                                                                                   |
 
 <br/>
- 
+
 | ID                  | MTA-1553                                                                                                 |
 | ------------------- | -------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Excluding an attribute after it was first included in datavariation leads to an error on Save.           |
@@ -92,13 +91,10 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 <br/>
 
-  
 | ID                  | MTA-1474                                                                                                            |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Due to a breaking change in Mendix 9.24.4, the Recorder function was broken in Runtime versions 9.24.4 and higher.  |
 | __Solution__        | After a fix implemented by Mendix in 9.24.8, the Recorder function is working again in LTS Mendix 9 minor versions. |
 | __Release actions__ | None.                                                                                                               |
 
-<br/>
-
- 
+<br/> 
