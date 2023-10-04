@@ -12,7 +12,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## Highlights in this release
 
- - Implemented CI/CD Version!
+ - Implemented CI/CD Version 2!
  - Restore a Test Configuration to a previous revision!
 
 ## New functionality 
