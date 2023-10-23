@@ -38,11 +38,6 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Navigate to the Test Configuration that the Test Suite is in.
 - Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the title of the Test Suite to move it up or down.
 
-### Execute a Test Suite
-- Open a Test Suite.
-- Click on "Execute and to to [Test Run](test-run) overview".
-- Click "Proceed on the confirmation window".
-
 ### Copy a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to copy a Test Suite.
 - Click "<i class="fas fa-copy"></i>" on the Test Suite you want to copy.

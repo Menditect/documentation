@@ -37,14 +37,6 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 ## Actions on Test Case
 
-### Run a single Test Case
-- Navigate to the Test Suite that the Test Case is in.
-- Click on the "<i class="fa fa-play"></i>" button on the Test Case to execute it.
-
-Executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
-
-Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation.
-
 ### View Test Cases in a Test Suite
 - Navigate to the [Test Suite](test-suite) that the Test Cases are in.
 - MTA will show the Test Cases in the left pane.
@@ -62,6 +54,14 @@ Note that [datavariation](datavariation) still applies when executing a single T
 - Select an Execution User to execute the Test Case with.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose "Save".
+
+### Execute Test Case
+- Navigate to the Test Suite that the Test Case is in.
+- Click on the "<i class="fa fa-play"></i>" button on the Test Case to execute it.
+
+Executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
+
+Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation.
 
 ### Change the order of a Test Case in a Test Suite
 - Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the name of the Test Case to move it up or down.
