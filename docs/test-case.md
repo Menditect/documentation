@@ -61,7 +61,7 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 Executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
 
-Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation.
+Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation. This applies to both Test Suite datavariation as Test Case datavariation.
 
 ### Change the order of a Test Case in a Test Suite
 - Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the name of the Test Case to move it up or down.
