@@ -1,4 +1,4 @@
-# Run MTA on premise
+# Run MTA on premises
 
 ## Purpose
 
@@ -34,6 +34,7 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | MtaDataValidationModule.DataValidationAccessGuid                 |                                                        |
 | MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | 5                                                      |
 | MtaUtils.DeleteObjectBatchSize                                   | 500                                                    |
+| MtaUtils.DeploymentType                                          | On-Premises                                            |
 | MtaUtils.InternalToken                                           |                                                        |
 | MtaUtils.MtaDocVersion                                           | 2.4.0                                                  |
 | MtaUtils.NodeRevision                                            | 0                                                      |

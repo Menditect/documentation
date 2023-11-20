@@ -27,7 +27,7 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 
 ### Create a new Test Suite
 - Navigate to the Test configurations page in MTA and select the [Test Configuration](test-configuration) that you want to create the Test Suite in.
-- Click "<i class="fal fa-plus-circle"></i> Test Suite" to create a new Test Suite.
+- Use the Add Test Suite button to create a new Test Suite.
 - Enter a name and an optional description and choose "Save".
 
 ### Configure a Test Suite

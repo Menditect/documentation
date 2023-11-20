@@ -30,7 +30,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 - Navigate to "Test runs".
 
 ### Create a new Test Run
-- To create a new Test Run, [Execute a Test Configuration](test-configuration#execute-a-test-configuration).
+- To create a new Test Run, execute a [Test Case](test-case), [Test Suite](test-suite) or [Test Configuration](test-configuration).
 
 ### Delete a Test Run
 - Navigate to the "Test configurations" page.
@@ -55,7 +55,9 @@ Pinning a Test Run will prevent it from being cleaned up overnight.
 
 ## Related topics
 - [Test Run](test-run)
+- [Test Case](test-case)
 - [Test Suite](test-suite)
+- [Test Configuration](test-configuration)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

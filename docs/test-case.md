@@ -48,7 +48,7 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 ### Create a Test Case
 - Navigate to the Test Suite you want to create a Test Case in.
-- Click "<i class="fal fa-plus-circle"></i> Test case" to create a Test Case.
+- Use the Add button to create a Test Case.
 - Enter a name and other optional information.
 - Select an [Application Instance](application-instance) to execute the Test Case on.
 - Select an Execution User to execute the Test Case with.
@@ -64,7 +64,7 @@ Executing a single Test Case is only possible if it does not depend on previous 
 Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation. This applies to both Test Suite datavariation as Test Case datavariation.
 
 ### Change the order of a Test Case in a Test Suite
-- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the name of the Test Case to move it up or down.
+- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" under the "<i class="fas fa-ellipsis"></i>" menu of the Test Case to move it up or down.
 
 Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 

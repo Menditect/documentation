@@ -38,19 +38,16 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 ### Edit a Test Configuration
 
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to edit.
-- Click on "Edit".
+- Open or Select the Test Configuration that you want to edit.
+- Use the "<i class="fal fa-pencil"></i>" button to edit the Test Configuration.
 
 ### Execute a Test Configuration
 
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to execute.
-- Click on "Execute".
+- Use the Execute Test Configuration button anywhere within the context of a Test Configuration, to start a new [Test Run](test-run).
 
 ### Delete a Test Configuration
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button and select "Delete" on the Test Configuration you want to delete.
+- Select the Test Configuration that you want to delete.
+- Use the "<i class="fal fa-trash-alt"></i>" button to delete the Test Configuration.
 
 Note that Testers cannot delete Test Configurations.
 
