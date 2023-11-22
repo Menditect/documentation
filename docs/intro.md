@@ -20,3 +20,10 @@ Below are the system requirements in order use MTA to test your Mendix Apps.
 - An up-to-date browser, recommended are Chromium-based like Chrome, Edge, Opera or Brave. Using other browsers like Firefox or Safari may negatively impact user experience.
 - Browser configuration set to run at 100% zoom level.
 - Mendix Studio Pro installation if you need to configure your Apps.
+
+
+## Need help now?
+
+*Contact Menditect Support*
+- [+3185 – 4010494](tel:+31854010494)
+- [support@menditect.com](mailto:support@menditect.com)
