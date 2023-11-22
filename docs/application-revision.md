@@ -87,4 +87,4 @@ Application revisions are cleaned up nightly by MTA if they are no longer in use
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 29 september 2023
+Last updated 22 November 2023

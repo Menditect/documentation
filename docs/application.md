@@ -46,4 +46,4 @@ To learn more about configuring an MTA user, read the How To section.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated 22 November 2023

@@ -70,4 +70,4 @@ Note that deleted Test Configuration will automatically be deleted permanently w
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated 22 November 2023

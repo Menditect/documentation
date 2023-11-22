@@ -25,18 +25,13 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | ApiMendixModule.WebsocketStage                                   | production                                             |
 | Atlas_Core.Atlas_Core_Version                                    | 3.0.7                                                  |
 | Atlas_Web_Content.Atlas_Web_Content_Version                      | 3.0.6                                                  |
-| DeepLink.EnableLeadingSlash                                      | True                                                   |
-| DeepLink.IndexPage                                               | index.html                                             |
-| DeepLink.LoginLocation                                           |                                                        |
-| DeepLink.RequestHandlerName                                      | link                                                   |
-| DeepLink.DeepLink.SSOHandlerLocation                             |                                                        |
 | EgalitConfigModule.EsaMultiInstanceMode                          | False                                                  |
 | MtaDataValidationModule.DataValidationAccessGuid                 |                                                        |
 | MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | 5                                                      |
 | MtaUtils.DeleteObjectBatchSize                                   | 500                                                    |
 | MtaUtils.DeploymentType                                          | On-Premises                                            |
 | MtaUtils.InternalToken                                           |                                                        |
-| MtaUtils.MtaDocVersion                                           | 2.4.0                                                  |
+| MtaUtils.MtaDocVersion                                           | 2.5.0                                                  |
 | MtaUtils.NodeRevision                                            | 0                                                      |
 | MtaUtils.UrlBaseDocumentation                                    | https://documentation.menditect.com                    |
 | MtaUtils.UrlReleaseNotes                                         | releasenotes                                           |
@@ -44,16 +39,30 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | PluginRecordModule.RecordingSupportRequestUrl                    | https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | 20                                                     |
 
+
 :::note
 You may notice that MTA also contains environment variables from the MTA Plugin Module. This is because Menditect regression-tests MTA with MTA. 
 Menditect on-premise customers and partners **do not** have to set these values.
 :::
 
-Toggle these scheduled events to Currently Enabled:
+
+#### SAML SSO
+
+- If MTA will be configured to use SAML SSO, additionally set these values (otherwise, use the default value):
+
+| Environment variable        | value                   |
+| --------------------------- | ----------------------- |
+| DeepLink.EnableLeadingSlash | False                   |
+| DeepLink.IndexPage          | index.html              |
+| DeepLink.LoginLocation      | /SSO/login?f=true&cont= |
+
+
+- Toggle these scheduled events to Currently Enabled:
 
 ```
 ApiCiCdModule.RunCtresCleanup
 ApplicationModule.RunARVNsContentCleanUp
+Deeplink.Cleanup
 MtaDataValidationModule.RunInterval
 TestconfigurationModule.RunTrunsCleanup
 TestconfigurationModule.RunTcnfsCleanup
@@ -102,4 +111,4 @@ After updating MTA, make sure that all the test applications have the newest ver
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 25 september 2023
+Last updated 22 November 2023

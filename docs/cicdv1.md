@@ -8,8 +8,10 @@ sidebar_position: 9
 
 This document describes the guidelines to use Version 1 of the CI/CD API of MTA in a pipeline.
 
-:::info
-Version 1 of the CI/CD API is be deprecated, please use [Version 2](cicd).
+:::caution
+Version 1 of the CI/CD API is deprecated and will be discontinued in the next release.
+
+Please use [Version 2](cicd).
 :::
 
 ### Enable CI/CD
