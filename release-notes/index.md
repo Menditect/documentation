@@ -18,10 +18,20 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## New functionality 
 
-| ID                    | MTA-1493                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to execute only a single Test Suite. This change was also reflected in the CI/CD API |
-| __Release actions__   | None.                                                                                                   |
+
+
+| ID                    | MTA-1600                                                                                                                                                                                                                                                                                                              |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The menu structure that is used to navigate and configure a Test Configuration has been changed. Buttons to navigate from the Test Run to test design have changed. Apart from the Test Suite page containing all the Test Cases, there is now also a Test Case page, alowing more focus while working on Unit Tests. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                 |
+
+<br/>
+
+
+| ID                    | MTA-1493                                                                                                 |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to execute only a single Test Suite. This change was also reflected in the CI/CD API. |
+| __Release actions__   | None.                                                                                                    |
 
 <br/>
 
@@ -54,14 +64,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ---------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Whenever executing a single Test Case, other Test Cases that it depends on, are also executed in sequence. |
 | __Release actions__   | None.                                                                                                      |
-
-<br/>
-
-
-| ID                    | MTA-1600                                                                                         |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
-| __New functionality__ | The menu structure that is used to navigate and configure a Test Configuration has been changed. |
-| __Release actions__   | None.                                                                                            |
 
 <br/>
 
