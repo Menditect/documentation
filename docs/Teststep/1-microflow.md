@@ -29,14 +29,14 @@ Note that if the microflow contains input parameters, it is possible to save the
 
 ### Assign Empty 
 
-- Select the "<i class="fal fa-empty-set"></i>" button for the parameter to set it to 'Empty'.
+- Select the <i class="fal fa-empty-set"></i> button for the parameter to set it to 'Empty'.
 
 ### Assign fixed value
 
 You can only assign fixed values to primitive types. 
 Assigning values to an Object must be done [from former Teststep](#assign-value-from-former-teststep).
 
-- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
+- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute. 
 
 For each datatype, there is a different way of entering the value:
@@ -50,7 +50,7 @@ Note that if the value is not set, this means it will be set to 'Empty' when exe
 ### Assign value from former Teststep
 
 ** Setting a primitive value **
-- First click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
+- First click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 ** Setting an Object value **
@@ -63,4 +63,4 @@ If a Microflow Parameter is a List instead of a single Object, it is possible to
 Note that it is not possible to select the same previous teststep multiple times.
 
 ### Include a Microflow Parameter Value as a Data Variation Item
-- Select the "<i class="fas fa-table"></i>" button for the parameter that you want to include in [Data Variation](datavariation).
+- Select the <i class="fas fa-table"></i> button for the parameter that you want to include in [Data Variation](datavariation).

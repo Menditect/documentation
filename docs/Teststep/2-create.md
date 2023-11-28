@@ -42,13 +42,13 @@ Note that not including an Attribute Value in a Create Object Teststep will make
 Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
 
 ### Set a fixed Attribute Value 
-- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
+- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute.
 
 Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
 ### Use a former Teststep to set an Attribute Value
-- Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 ### Assign associations

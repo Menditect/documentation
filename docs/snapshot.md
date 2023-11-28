@@ -22,6 +22,9 @@ A Snapshot is created automatically before the [Test Suites](test-suite) in a [T
 
 Restoring the Design of a Test Configuration using a snapshot will allow to **undo an Adapt**. 
 
+- Navigate to "Test Configurations" in the top menu.
+- Click <i class="fas fa-ellipsis"></i> and then <i class="fa-light fa-clock-rotate-left"></i> to restore a test configuration.
+
 The result of this action will be:
 - **A new [Test Configuration](test-configuration)** that is based on a previously selected [Application Revision](application-revision) is created and opened. <br/>It will be named `"Restored" - {timestamp} - {Original name}`. To change the name, [Edit](test-configuration#edit-a-test-configuration) the Test Configuration.
 - **The original Test Configuration** will contain the executed [Test Runs](test-run). To view the executed Test Runs, open that Test Configuration.

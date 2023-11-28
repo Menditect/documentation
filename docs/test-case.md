@@ -57,14 +57,14 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 ### Execute Test Case
 - Navigate to the Test Suite that the Test Case is in.
-- Click on the "<i class="fa fa-play"></i>" button on the Test Case to execute it.
+- Click on the <i class="fa fa-play"></i> button on the Test Case to execute it.
 
 Executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
 
 Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation. This applies to both Test Suite datavariation as Test Case datavariation.
 
 ### Change the order of a Test Case in a Test Suite
-- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" under the "<i class="fas fa-ellipsis"></i>" menu of the Test Case to move it up or down.
+- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> under the <i class="fas fa-ellipsis"></i> menu of the Test Case to move it up or down.
 
 Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
@@ -72,13 +72,13 @@ Note that Testers cannot move Test Cases.
 
 ### Edit a Test Case 
 
-- Click on "<i class="fa fa-pencil"></i>" under the "<i class="fas fa-ellipsis"></i>" menu in the Test Case to edit it.
+- Click on <i class="fa fa-pencil"></i> under the <i class="fas fa-ellipsis"></i> menu in the Test Case to edit it.
 
 Note that it not is possible to change the Test Case Type or associated Test Application after creation.
 
 ### Delete a Test Case
 
-- Click on "<i class="fas fa-trash-alt"></i>" under the "<i class="fas fa-ellipsis"></i>" menu on the Test Case you want to delete.
+- Click on <i class="fas fa-trash-alt"></i> under the <i class="fas fa-ellipsis"></i> menu on the Test Case you want to delete.
 
 Note that it is possible that due to deleting a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 

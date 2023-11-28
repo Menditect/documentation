@@ -12,18 +12,20 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 ## Highlights in this release
 
- - xxx
- - yyy
- - zzz
+- New Test Configuration menu structure!
+- Generate Test Cases from scratch by using the Mendix Model menu!
+- Option to use SAML SSO instead of local accounts.
+- Function to run a single Test Suite.
+- Option to stop a test run when an assert fails.
 
 ## New functionality 
 
 
 
-| ID                    | MTA-1600                                                                                                                                                                                                                                                                                                              |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The menu structure that is used to navigate and configure a Test Configuration has been changed. Buttons to navigate from the Test Run to test design have changed. Apart from the Test Suite page containing all the Test Cases, there is now also a Test Case page, alowing more focus while working on Unit Tests. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                 |
+| ID                    | MTA-1600                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The menu structure and navigation to configure a Test Configuration has been changed. Clicking a Test Suite in the list will now open it. Buttons to navigate from the Test Run to test design have changed. Apart from the Test Suite page containing all the Test Cases, there is now also a Test Case page, alowing more focus while working on Unit Tests. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                          |
 
 <br/>
 
@@ -88,6 +90,14 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ----------------------------------------------------------------------------- |
 | __New functionality__ | Keys that need to be used in the CI/CD API are now shown whenever applicable. |
 | __Release actions__   | None.                                                                         |
+
+<br/>
+
+
+| ID                    | N/A                                                                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | We have automated the execution of the migration scripts when upgrading an MTA version. This is especially useful for our on-premises customers. |
+| __Release actions__   | None.                                                                                                                                            |
 
 <br/>
 

@@ -43,7 +43,7 @@ There are two options to Retrieve from former Teststep. The first option is quic
 **Option 1:**
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep that returns the object that you want to retrieve, and choose "<i class="fal fa-plus-circle"></i> Retrieve output".
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object that you want to retrieve, and choose "<i class="fal fa-plus-circle"></i> Retrieve output".
 
 **Option 2:**
 
@@ -68,7 +68,7 @@ Binary attributes are not supported by MTA.
 - Toggle the <i class="fal fa-filter"></i> button next to the attribute to include or exclude it.
 
 ### Manually set an Attribute filter
-- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, which indicates that a filter operation and value(s) will be entered manually.
+- Click <i class="fas fa-keyboard"></i> on the right of the attribute, which indicates that a filter operation and value(s) will be entered manually.
 - Choose an Operator (see below for the complete list).
 - Enter or select value(s) to be used as a filter on the attribute.
 
@@ -92,7 +92,7 @@ The following Operators are supported for the Mendix data types:
 
 
 ### Use the value from a former Teststep to set the Attribute filter
-- Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 Note: you cannot choose to have a former Teststep set the value if you want to specify a Range of values. 

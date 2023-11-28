@@ -36,17 +36,17 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 
 ### Change the order of a Test Suite in a Test Configuration
 - Navigate to the Test Configuration that the Test Suite is in.
-- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the title of the Test Suite to move it up or down.
+- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the title of the Test Suite to move it up or down.
 
 ### Copy a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to copy a Test Suite.
-- Click "<i class="fas fa-copy"></i>" on the Test Suite you want to copy.
+- Click <i class="fas fa-copy"></i> on the Test Suite you want to copy.
 - Click Select and proceed to copy the Test Suite in the same Test Configuration, or expand the list of other Test Configuration and select one there.
 - Give the copy a name and choose "Save".
 
 ### Delete a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to delete a Test Suite.
-- Click "<i class="fas fa-trash-alt"></i>" on the Test Suite you want to delete.
+- Click <i class="fas fa-trash-alt"></i> on the Test Suite you want to delete.
 
 Note that deleting a Test Suite is permanent. Individual Test Suites cannot be recovered.
 

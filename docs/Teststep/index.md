@@ -60,8 +60,8 @@ Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, a
 First, navigate to the Test Case that the Teststep is in.
 
 **Option 1: Move a teststep 1 position up or down.** 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
-- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" to move the Teststep up or down.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
+- Click on <i class="fas fa-arrow-up"></i> or "<i class="fas fa-arrow-down"></i>" to move the Teststep up or down.
 - Review and correct any resulting configuration [Errors](error).
 
 **Option 2: Move a Teststep inside a Test Case.** 
@@ -70,20 +70,20 @@ First, navigate to the Test Case that the Teststep is in.
 - Review any configuration [Errors](error) and save your changes.
 
 **Option 3: Move a Teststep to another Test Case.** 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
 - Click on "<i class="fas fa-arrow-right"></i> Another test case".
 - Use drag and drop to move the Teststep.
 - Review any configuration [Errors](error) and save your changes.
 
 
 ### Edit a Teststep
-- Click on "<i class="fa fa-pencil"></i>" Edit".
-- Click on "<i class="fa fa-pencil"></i>" next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
+- Click on "<i class="fa fa-pencil"></i> Edit".
+- Click on <i class="fa fa-pencil"></i> next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
 
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
 ### Configure a Teststep
-- Click on "<i class="fas fa-cog"></i>" on the Teststep name to set the Attribute Values or Microflow Parameter Values.
+- Click on <i class="fas fa-cog"></i> on the Teststep name to set the Attribute Values or Microflow Parameter Values.
 
 When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
 - For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
@@ -93,8 +93,8 @@ Note that it not is possible to change the action or type of Teststep after crea
 
 ### Delete a Teststep
 - Navigate to the Test Case that the Teststep is in.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep.
-- Click on "<i class="fas fa-trash-alt"></i>" Test step".
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
+- Click on "<i class="fas fa-trash-alt"></i> Test step".
 
 Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 

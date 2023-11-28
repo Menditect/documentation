@@ -39,7 +39,7 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 ### Edit a Test Configuration
 
 - Open or Select the Test Configuration that you want to edit.
-- Use the "<i class="fal fa-pencil"></i>" button to edit the Test Configuration.
+- Use the <i class="fal fa-pencil"></i> button to edit the Test Configuration.
 
 ### Execute a Test Configuration
 
@@ -47,7 +47,7 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 ### Delete a Test Configuration
 - Select the Test Configuration that you want to delete.
-- Use the "<i class="fal fa-trash-alt"></i>" button to delete the Test Configuration.
+- Use the <i class="fal fa-trash-alt"></i> button to delete the Test Configuration.
 
 Note that Testers cannot delete Test Configurations.
 
@@ -62,6 +62,10 @@ Note that deleted Test Configuration will automatically be deleted permanently w
 - Navigate to the "Test configurations" page.
 - Go to "<i class="fal fa-eye"></i> Deleted". 
 - Click on "<i class="fal fa-trash-alt"></i> Delete" on the Test Configuration you want to permanently delete.
+
+### Restore previous revision of Test Suites in a Test Configuration
+
+See [Snapshot](snapshot).
 
 ## Related topics
 - [Test Run](test-run)

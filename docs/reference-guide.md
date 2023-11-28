@@ -14,7 +14,7 @@ It is possible to select a previous version on the top right of the page.
 # How to use
 
 A page in the reference guide will always reference some element in MTA with that name.
-Elements that occur in MTA, are usually accompanied by a "<i class="fal fa-question-circle"></i>" button, that links to the relevant page in the documentation.
+Elements that occur in MTA, are usually accompanied by a <i class="fal fa-question-circle"></i> button, that links to the relevant page in the documentation.
 
 Pages are structured in 4 segments:
 - Definition: a description defining the element, why it exists and what it does.

@@ -27,7 +27,7 @@ There are two options to add a Change Object teststep. The first option is quick
 **Option 1:**
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
 
 **Option 2:**
 
@@ -49,13 +49,13 @@ Note that not including an Attribute Value in a Change Object Teststep will leav
 Including an Attribute Value but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
 
 ### Set a fixed Attribute Value 
-- Click "<i class="fas fa-keyboard"></i>" on the right of the attribute, indicating a fixed value should be set.
+- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute.
 
 Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
 ### Use a former Teststep to set an Attribute Value
-- Click "<i class="fal fa-chevron-circle-right"></i>" on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 ### Assign associations

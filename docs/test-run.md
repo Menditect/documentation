@@ -36,7 +36,7 @@ The Test Run contains the tests that can be/are executed according a [Test Confi
 - Navigate to the "Test configurations" page.
 - Select the Test Configuration you want to view Test Runs for.
 - Navigate to "Test runs".
-- Click "<i class="fal fa-trash-can"></i>" for the Test run you want to delete.
+- Click <i class="fal fa-trash-can"></i> for the Test run you want to delete.
 
 
 Note that for each Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
@@ -51,7 +51,7 @@ If a Test Run is cleaned up, the following information about the Test Run is sto
 ### Pin a Test Run
 Pinning a Test Run will prevent it from being cleaned up overnight.
 - Navigate to the Test Run overview in MTA under Test Run.
-- Click on "<i class="fas fa-thumbtack"></i>" next to the Test Run you want to keep.
+- Click on <i class="fas fa-thumbtack"></i> next to the Test Run you want to keep.
 
 ## Related topics
 - [Test Run](test-run)
