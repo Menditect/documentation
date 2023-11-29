@@ -75,7 +75,7 @@ When generating multiple test cases, best practice is to create a container [tes
 
 ### Execute Test Case
 
-- Use the Execute test case button from the <i class="fal fa-link-simple"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
+- Use the Execute test case button from the <i class="fal fa-share-nodes"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
 
 Executing a single Test Case will also execute previous Test Cases that the Test Case depends on. 
 

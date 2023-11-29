@@ -51,7 +51,7 @@ You can copy the URL to open a Test Configuration directly from your browser's a
 
 - Find the Test Configuration you want to share.
 - Use the <i class="fas fa-ellipsis"></i> button to open the menu.
-- Click <i class="fal fa-link-simple"></i> to copy the URL to the Test Configuration to your clipboard.
+- Click <i class="fal fa-share-nodes"></i> to copy the URL to the Test Configuration to your clipboard.
 - Paste `Ctrl+V` the URL anywhere to share it.
 
 Note that after using a URL to open the Test Configuration, each time you hit `F5` or `Ctrl+R` on your browser, you will end up on the same page, until you log out.
