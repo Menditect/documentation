@@ -34,6 +34,20 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.
 
+### Execute a Test Suite
+- Use the Execute test suite button from the <i class="fal fa-link-simple"></i> menu or inside a Test Suite, to start a new [Test Run](test-run).
+
+### Share a Test Suite
+
+You can copy the URL to open a Test Suite directly from your browser's address bar. 
+
+- Find the Test Suite you want to share.
+- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
+- Click <i class="fal fa-link-simple"></i> to copy the URL to the Test Suite to your clipboard.
+- Paste `Ctrl+V` the URL anywhere to share it.
+
+Note that after using a URL to open the Test Suite, each time you hit `F5` or `Ctrl+R` on your browser, you will end up on the same page, until you log out.
+
 ### Change the order of a Test Suite in a Test Configuration
 - Navigate to the Test Configuration that the Test Suite is in.
 - Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the title of the Test Suite to move it up or down.
