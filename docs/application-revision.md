@@ -37,7 +37,7 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application by clicking on the tile.
 - Navigate to "App revisions" to view the Application revisions.
-- Click on "<i class="fal fa-info-circle"></i>" to view Modules, Entities and Microflows in this revision.
+- Click on <i class="fal fa-info-circle"></i> to view Modules, Entities and Microflows in this revision.
 
 ### Add an Application revision
 Add a new Application revision to MTA by downloading it from teamserver. The only way to download a revision, is if you select this revision to be used in a Test Configuration.
@@ -87,4 +87,4 @@ Application revisions are cleaned up nightly by MTA if they are no longer in use
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 29 september 2023
+Last updated 22 November 2023

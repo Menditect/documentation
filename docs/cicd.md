@@ -11,6 +11,181 @@ This document describes the structure of the published REST service `MTA public 
 
 To understand **how to use** the CI/CD interface, read the HowTo section.
 
+
+
+## GET testconfigurations
+
+Retrieve all test configurations in MTA, which are not deleted. 
+
+### Request
+
+**URL**
+
+`/rest/cicd/v2/testconfigurations`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+A list of Test Configurations with their Key and Name:
+
+
+#### 200 example:
+```json
+[
+  {
+    "Key": "28",
+    "Name": "Test Configuration #1"
+  },
+  {
+    "Key": "29",
+    "Name": "Test Configuration #2"
+  },
+  {
+    "Key": "30",
+    "Name": "Test Configuration #3"
+  }
+]
+```
+
+
+## GET testconfiguration
+
+Retrieve the details of a test configuration specified by Key.
+
+### Request
+
+**URL**
+
+`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+A list of all Test Suites and Test Cases in the Test Configuration, to allow the execution of a single Test Case.
+
+#### 200 example:
+```json
+{
+  "Key": "28",
+  "Name": "Test Configuration #1",
+  "TestSuites": [
+    {
+      "Key": "32",
+      "Name": "Test Suite #1",
+      "TestCases": [
+        {
+          "Key": "96",
+          "Name": "Test Case #1"
+        },
+        {
+          "Key": "97",
+          "Name": "Test Case #2"
+        },
+        {
+          "Key": "98",
+          "Name": "Test Case #3"
+        }
+      ]
+    },
+    {
+      "Key": "33",
+      "Name": "Test Suite #2",
+      "TestCases": [
+        {
+          "Key": "99",
+          "Name": "Test Case #1"
+        },
+        {
+          "Key": "100",
+          "Name": "Test Case #2"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### 400: InvalidInput: 
+- TestConfigurationKey is missing.
+
+#### 500: Internal Server Error: 
+- See message for more details.
+
+
+## GET applications in testconfiguration
+
+Retrieve all applications of a test configuration, including the currently selected revision.
+
+### Request
+
+**URL**
+
+`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28/applications`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+A list of all Applications that are used in the Test Configuration, to allow downloading and adapting to another revision of that Application.
+
+#### 200 example:
+```json
+[
+    {
+        "Key": "15",
+        "Name": "FirstTestApp",
+        "BranchName": "branchDev",
+        "CommitDate": "2023-08-29T09:31:13.000Z",
+        "CommitId": "247",
+        "CommitMessage": "DataType change of an attribute"
+    },
+    {
+        "Key": "16",
+        "Name": "SecondTestApp",
+        "BranchName": "trunk",
+        "CommitDate": "2023-08-22T11:09:38.000Z",
+        "CommitId": "173",
+        "CommitMessage": "Added an entity"
+    }
+]
+```
+
+#### 400: InvalidInput: 
+- TestConfigurationKey is missing.
+
+#### 500: Internal Server Error: 
+- See message for more details.
+
+
 ## GET application instances
 
 Retrieve all application instances of an application.
@@ -204,9 +379,159 @@ Any of below status descriptors:
 - See message for more details.
 
 
+## POST adapt testconfiguration to revision
+
+Adapt a test configuration to specified revision. Define revision by application, branch and revisionnumber/commitId.
+
+### Request
+
+**URL**
+
+`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/12/applications/1/adapt?branchname=trunk&commitid=4532`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+#### 200:
+- No content
+
+#### 400: InvalidInput: 
+- TestConfigurationKey is missing.
+- ApplicationKey is missing.
+- branchname is missing.
+- commitid is missing.
+
+#### 500: Internal Server Error: 
+- See message for more details.
+
+
+
+
+## POST execute testconfiguration
+
+Initiate the execution of a test configuration for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
+
+### Request
+
+**URL**
+
+The request for this endpoint is made up of both a URL and a JSON body.
+
+`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/execute`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/12/execute`
+
+```json
+[
+    {
+        "Key": "8"
+    },
+    {
+        "Key": "12"
+    }
+]
+```
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+
+#### 200 example:
+```json
+{
+    "TestRunExecutionId": "5552275f-0733-4afa-b109-7dee0cf1eda9"
+}
+```
+
+#### 400: InvalidInput: 
+- TestConfigurationKey cannot be empty.
+
+#### 403: Access denied: 
+- See message for more details.
+
+#### 500: Internal Server Error: 
+- See message for more details.
+
+
+
+
+
+## POST execute test suite
+
+Initiate the execution of a test suite for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
+
+### Request
+
+**URL**
+
+The request for this endpoint is made up of both a URL and a JSON body.
+
+`/rest/cicd/v2/testsuites/{TestSuiteKey}/execute`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testsuites/33/execute`
+
+```json
+[
+    {
+        "Key": "8"
+    },
+    {
+        "Key": "12"
+    }
+]
+```
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+
+#### 200 example:
+```json
+{
+    "TestRunExecutionId": "5552275f-0733-4afa-b109-7dee0cf1eda9"
+}
+```
+
+#### 400: InvalidInput: 
+- TestSuiteKey cannot be empty.
+
+#### 403: Access denied: 
+- See message for more details.
+
+#### 500: Internal Server Error: 
+- See message for more details.
+
+
+
 ## POST execute test case
 
-Initiate the execution of a single test case for a specified application instance. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
+Initiate the execution of a single test case for a specified application instance in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
 ### Request
 
@@ -245,270 +570,10 @@ A unique execution ID of the Test Run:
 ```
 
 #### 400: InvalidInput: 
-- TestCaseKey is missing.
-- ApplicationInstanceKey is missing.
+- TestCaseKey cannot be empty.
 
-#### 500: Internal Server Error: 
+#### 403: Access denied: 
 - See message for more details.
-
-
-
-## GET testconfigurations
-
-Retrieve all test configurations in MTA, which are not deleted. 
-
-### Request
-
-**URL**
-
-`/rest/cicd/v2/testconfigurations`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations`
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
-### Responses
-
-A list of Test Configurations with their Key and Name:
-
-
-#### 200 example:
-```json
-[
-  {
-    "Key": "28",
-    "Name": "Test Configuration #1"
-  },
-  {
-    "Key": "29",
-    "Name": "Test Configuration #2"
-  },
-  {
-    "Key": "30",
-    "Name": "Test Configuration #3"
-  }
-]
-```
-
-
-## GET testconfiguration
-
-Retrieve the details of a test configuration specified by Key.
-
-### Request
-
-**URL**
-
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28`
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
-### Responses
-
-A list of all Test Suites and Test Cases in the Test Configuration, to allow the execution of a single Test Case.
-
-#### 200 example:
-```json
-{
-  "Key": "28",
-  "Name": "Test Configuration #1",
-  "TestSuites": [
-    {
-      "Key": "32",
-      "Name": "Test Suite #1",
-      "TestCases": [
-        {
-          "Key": "96",
-          "Name": "Test Case #1"
-        },
-        {
-          "Key": "97",
-          "Name": "Test Case #2"
-        },
-        {
-          "Key": "98",
-          "Name": "Test Case #3"
-        }
-      ]
-    },
-    {
-      "Key": "33",
-      "Name": "Test Suite #2",
-      "TestCases": [
-        {
-          "Key": "99",
-          "Name": "Test Case #1"
-        },
-        {
-          "Key": "100",
-          "Name": "Test Case #2"
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
-## GET applications in testconfiguration
-
-Retrieve all applications of a test configuration, including the currently selected revision.
-
-### Request
-
-**URL**
-
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28/applications`
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
-### Responses
-
-A list of all Applications that are used in the Test Configuration, to allow downloading and adapting to another revision of that Application.
-
-#### 200 example:
-```json
-[
-    {
-        "Key": "15",
-        "Name": "FirstTestApp",
-        "BranchName": "branchDev",
-        "CommitDate": "2023-08-29T09:31:13.000Z",
-        "CommitId": "247",
-        "CommitMessage": "DataType change of an attribute"
-    },
-    {
-        "Key": "16",
-        "Name": "SecondTestApp",
-        "BranchName": "trunk",
-        "CommitDate": "2023-08-22T11:09:38.000Z",
-        "CommitId": "173",
-        "CommitMessage": "Added an entity"
-    }
-]
-```
-
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
-## POST adapt testconfiguration to revision
-
-Adapt a test configuration to specified revision. Define revision by application, branch and revisionnumber/commitId.
-
-### Request
-
-**URL**
-
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
-### Responses
-
-#### 200:
-- No content
-
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-- ApplicationKey is missing.
-- branchname is missing.
-- commitid is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
-## POST execute testconfiguration
-
-Initiate the execution of a test configuration for the specified application instance(s). The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
-
-### Request
-
-**URL**
-
-The request for this endpoint is made up of both a URL and a JSON body.
-
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/execute`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/execute`
-
-```json
-[
-    {
-        "Key": "8"
-    },
-    {
-        "Key": "12"
-    }
-]
-```
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
-### Responses
-
-
-#### 200 example:
-```json
-{
-    "TestRunExecutionId": "5552275f-0733-4afa-b109-7dee0cf1eda9"
-}
-```
-
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-- applicationinstancekeys is missing. 
 
 #### 500: Internal Server Error: 
 - See message for more details.
@@ -526,7 +591,7 @@ Retrieve a summary of a test run to allow checking if the test run is either Run
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/{testrunexecutionid}`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15`
 
 **Authorization**
 
@@ -567,7 +632,7 @@ Retrieve the details of a test run.
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/{testrunexecutionid}/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
 
 **Authorization**
 
@@ -625,7 +690,7 @@ Cancel a running test run. This is only possible in the *Running* stage.
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/{testrunexecutionid}/cancel`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/cancel`
 
 **Authorization**
 
@@ -657,4 +722,4 @@ Example:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 september 2023
+Last updated: 19 November 2023

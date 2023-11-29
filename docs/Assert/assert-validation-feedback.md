@@ -26,7 +26,7 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 ## Actions on an Assert on Validation feedback 
 
 ### Add Count Assert 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
 - Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Count assert" for the Assert type.
@@ -34,7 +34,7 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Save.
  
 ### Add Attribute-member Assert 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
 - Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Attribute-member" for the Assert type.
@@ -44,7 +44,7 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Save.
 
 ### Add Association-member Assert 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
 - Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Association-member" for the Assert type.
@@ -54,7 +54,7 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Save.
 
 ### Add All-members Assert 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
 - Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "All-members" for the Assert type.
@@ -63,9 +63,9 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 
 ### Delete an Assert on Validation feedback 
 
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case. 
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
 - Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
-- Click on "<i class="fas fa-trash-alt"></i>" to delete the assert.
+- Click on <i class="fas fa-trash-alt"></i> to delete the assert.
 
 ## Related topics
 - [Assert](../Assert/)

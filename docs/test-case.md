@@ -48,23 +48,52 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 ### Create a Test Case
 - Navigate to the Test Suite you want to create a Test Case in.
-- Click "<i class="fal fa-plus-circle"></i> Test case" to create a Test Case.
+- Use the Add button to create a Test Case.
 - Enter a name and other optional information.
 - Select an [Application Instance](application-instance) to execute the Test Case on.
 - Select an Execution User to execute the Test Case with.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose "Save".
 
+### Generate a Test Case to test a Microflow
+
+This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
+
+Different then when [generating from inside the test suite](generated-test), you can choose to generate based on random data, or to use from existing data from a database.
+
+:::info
+Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
+:::
+
+- Navigate to "Mendix Model" after opening a [Test Configuration](test-configuration).
+- Select the microflow(s) to generate a Test Case for.
+- Choose to either generate a Test Case with random data, or from database.
+- When choosing from database, select the [application instance](application-instance).
+- Optionally open and configure (one of) the test case(s) from here.
+
+When generating multiple test cases, best practice is to create a container [test suite](test-suite) to create 'draft' versions first, and move them to a 'production' test suite later.
+
 ### Execute Test Case
-- Navigate to the Test Suite that the Test Case is in.
-- Click on the "<i class="fa fa-play"></i>" button on the Test Case to execute it.
 
-Executing a single Test Case is only possible if it does not depend on previous Test Cases. If you still want to execute it, make sure to remove the dependencies.
+- Use the Execute test case button from the <i class="fal fa-share-nodes"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
 
-Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation. This applies to both Test Suite datavariation as Test Case datavariation.
+Executing a single Test Case will also execute previous Test Cases that the Test Case depends on. 
+
+Note that [datavariation](datavariation) still applies when executing a single Test Case. This means that even if there are no variations on attributes or asserts from the Test Case in the datavariation, it will still be executed as many times as there are columns in the datavariation. This applies to both Test Suite datavariation as Test Case datavariation!
+
+### Share a Test Case
+
+You can copy the URL to open a Test Case directly from your browser's address bar. 
+
+- Find the Test Case you want to share.
+- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
+- Click <i class="fal fa-link-simple"></i> to copy the URL to the Test Case to your clipboard.
+- Paste `Ctrl+V` the URL anywhere to share it.
+
+Note that after using a URL to open the Test Case, each time you hit `F5` or `Ctrl+R` on your browser, you will end up on the same page, until you log out.
 
 ### Change the order of a Test Case in a Test Suite
-- Click on "<i class="fas fa-arrow-up"></i>" or "<i class="fas fa-arrow-down"></i>" on the left of the name of the Test Case to move it up or down.
+- Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> under the <i class="fas fa-ellipsis"></i> menu of the Test Case to move it up or down.
 
 Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
@@ -72,13 +101,13 @@ Note that Testers cannot move Test Cases.
 
 ### Edit a Test Case 
 
-- Click on "<i class="fa fa-pencil"></i>" under the "<i class="fas fa-ellipsis"></i>" menu in the Test Case to edit it.
+- Click on <i class="fa fa-pencil"></i> under the <i class="fas fa-ellipsis"></i> menu in the Test Case to edit it.
 
 Note that it not is possible to change the Test Case Type or associated Test Application after creation.
 
 ### Delete a Test Case
 
-- Click on "<i class="fas fa-trash-alt"></i>" under the "<i class="fas fa-ellipsis"></i>" menu on the Test Case you want to delete.
+- Click on <i class="fas fa-trash-alt"></i> under the <i class="fas fa-ellipsis"></i> menu on the Test Case you want to delete.
 
 Note that it is possible that due to deleting a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an [Error](error) will occur prohibiting the execution of the Test Configuration.
 
@@ -89,7 +118,8 @@ Note that Testers cannot delete Test Cases.
 - [Teststep](teststep)
 - [Test Suite](test-suite)
 
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 5 july 2023
+Last updated 22 November 2023

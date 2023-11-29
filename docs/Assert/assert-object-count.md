@@ -18,7 +18,7 @@ Asserts on object count can be defined either on Retrieve Object Teststeps or on
 
 ### Add an Assert on Object Count
 There are multiple ways to add an assert on Object Count:
-1. Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep where you want to add an assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+1. Click on the <i class="fas fa-ellipsis"></i> button on the Teststep where you want to add an assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
 2. After configuring the Teststep, click on "Save and configure asserts" to open the page where asserts can be configured. 
 
 After the page opens, go to the "Teststep output" tab, and click on "<i class="fal fa-plus-circle"></i> Assert" to add the assert.
@@ -30,7 +30,7 @@ After the page opens, go to the "Teststep output" tab, and click on "<i class="f
 
 ### Delete an assert on Object Count
 - Open the Assert configuration page and go to the "Teststep output" tab.
-- Click on "<i class="fas fa-trash-alt"></i>" to delete the assert.
+- Click on <i class="fas fa-trash-alt"></i> to delete the assert.
 
 ## Related topics
 - [Assert Attribute](assert-attribute)

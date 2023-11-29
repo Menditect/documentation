@@ -38,19 +38,27 @@ For the full explanation on how to add a Test Configuration, read the [How To](a
 
 ### Edit a Test Configuration
 
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to edit.
-- Click on "Edit".
+- Open or Select the Test Configuration that you want to edit.
+- Use the <i class="fal fa-pencil"></i> button to edit the Test Configuration.
 
 ### Execute a Test Configuration
 
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Configuration you want to execute.
-- Click on "Execute".
+- Use the Execute test configuration button on the bottom left, to start a new [Test Run](test-run).
+
+### Share a Test Configuration
+
+You can copy the URL to open a Test Configuration directly from your browser's address bar. 
+
+- Find the Test Configuration you want to share.
+- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
+- Click <i class="fal fa-share-nodes"></i> to copy the URL to the Test Configuration to your clipboard.
+- Paste `Ctrl+V` the URL anywhere to share it.
+
+Note that after using a URL to open the Test Configuration, each time you hit `F5` or `Ctrl+R` on your browser, you will end up on the same page, until you log out.
 
 ### Delete a Test Configuration
-- Navigate to the "Test configurations" page.
-- Click on the "<i class="fas fa-ellipsis"></i>" button and select "Delete" on the Test Configuration you want to delete.
+- Select the Test Configuration that you want to delete.
+- Use the <i class="fal fa-trash-alt"></i> button to delete the Test Configuration.
 
 Note that Testers cannot delete Test Configurations.
 
@@ -66,6 +74,10 @@ Note that deleted Test Configuration will automatically be deleted permanently w
 - Go to "<i class="fal fa-eye"></i> Deleted". 
 - Click on "<i class="fal fa-trash-alt"></i> Delete" on the Test Configuration you want to permanently delete.
 
+### Restore previous revision of Test Suites in a Test Configuration
+
+See [Snapshot](snapshot).
+
 ## Related topics
 - [Test Run](test-run)
 - [Test Suite](test-suite)
@@ -73,4 +85,4 @@ Note that deleted Test Configuration will automatically be deleted permanently w
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated 22 November 2023

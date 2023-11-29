@@ -39,14 +39,14 @@ Test Case Datavariation is marked as <i class="fas fa-table-rows"></i>.
 
 ### Create a Data Variation Item
 To add an attribute or an [Assert on attribute](Assert/assert-attribute) as a Data Variation Item, there are two ways:
-1. When configuring a [Teststep](teststep), <br/>- click on "<i class="fas fa-table"></i>" next to the attribute or assert to add it to the **Test Suite** Data Variation or <br/>- click on "<i class="fas fa-table-rows"></i>" next to the attribute or assert to add it to the **Test Case** Data Variation.<br/>Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
+1. When configuring a [Teststep](teststep), <br/>- click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the **Test Suite** Data Variation or <br/>- click on "<i class="fas fa-table-rows"></i>" next to the attribute or assert to add it to the **Test Case** Data Variation.<br/>Data Variation will be enabled and the respective attribute or assert will be added as a Data Variation Item;
 2. From the Data Variation page or popup, click on "<i class="fal fa-plus-circle"></i> Attribute" or "<i class="fal fa-plus-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Data Variation Item.
 
 If only one of the icons is shown, this means the choice to use data variation on either the Test Case or Test Suite level was already made. 
 
 
 ### Edit a Data Variation Item from the Test Suite page
-- On the Test Suite page, select the Test Case that has either the "<i class="fas fa-table"></i>" or the "<i class="fas fa-table-rows"></i>" icon next to it.
+- On the Test Suite page, select the Test Case that has either the <i class="fas fa-table"></i> or the "<i class="fas fa-table-rows"></i>" icon next to it.
 - For each attribute and assert shown in the Teststep details pane on the right, if it has this same icon next to it, it indicates that they are included as a Data Variation Item.
 - Click on this icon to show the values per Data Variation.
  

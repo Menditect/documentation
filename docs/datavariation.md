@@ -37,28 +37,28 @@ To resolve this, use below guide to remove all Data Variation.
 - Navigate to "<i class="fal fa-table"></i> Data variation" in the left menu.
 
 ### Migrate Test Suite Data Variation to Test Case Data Variation
-- Click on "<i class="fas fa-ellipsis"></i>" on the top right of the Data Variaton page.
+- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
 - Click on "<i class="fa-light fa-arrow-right"></i> Move to test case data variation".
 - Select the Test Case that you want to migrate from Test Suite Data Variation to Test Case Data Variation.
 
 ### Remove all Test Suite Data Variation
 To completely remove all Data Variation Items and also remove all Data Variations:
-- Click on "<i class="fas fa-ellipsis"></i>" on the top right of the Data Variaton page.
+- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
 - Click on "<i class="fas fa-trash-alt"></i> Delete test suite data variation".
 
 ### View Test Case Data Variation
 - Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
-- Click on "<i class="fas fa-ellipsis"></i>" on the Test Case.
+- Click on <i class="fas fa-ellipsis"></i> on the Test Case.
 - Click on "<i class="fa-light fa-table-rows"></i> View data variation".
 
 ### Migrate Test Case Data Variation to Test Suite Data Variation
-- Click on "<i class="fas fa-ellipsis"></i>" on the top right of the Data Variaton popup.
+- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton popup.
 - Click on "<i class="fa-light fa-arrow-right"></i> Move to test suite data variation".
 - Confirm.
   
 ### Remove all Test Case Data Variation
 To completely remove all Data Variation Items and also remove all Data Variations:
-- Click on "<i class="fas fa-ellipsis"></i>" on the top right of the Data Variaton popup.
+- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton popup.
 - Click on "<i class="fas fa-trash-alt"></i> Delete test case data variation".
 
 The page will close.
@@ -75,7 +75,7 @@ The page will close.
 ### Delete a Data Variation run
 - Open the Test Suite data variation page or Test Case data variation popup.
 - Click on the column of the Data Variation run you want to delete, for instance the column labeled *# 2*. 
-- Click "<i class="fas fa-trash-alt"></i>".
+- Click <i class="fas fa-trash-alt"></i>.
 
 Note that you cannot delete the first column labeled *# 1*.
 

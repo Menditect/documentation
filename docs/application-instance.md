@@ -50,7 +50,7 @@ Note that each time an Application is added, a Default Application Instance is a
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an Application by clicking on the tile.
 - Navigate to "App instances" to view the Application Instances.
-- Click "<i class="fas fa-trash-alt"></i>" on the Application Instance to delete it.
+- Click <i class="fas fa-trash-alt"></i> on the Application Instance to delete it.
 
 Note that if a Test Configuration was using the Application Instance, this will result in an [Error](error) on the Test Configurations page. 
 
@@ -62,4 +62,4 @@ Note that if a Test Configuration was using the Application Instance, this will 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated 22 November 2023

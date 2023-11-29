@@ -1,3 +1,4 @@
+
 # Assert
 
 ## Definition
@@ -21,10 +22,33 @@ Some actions are described in the pages shown above.
 
 ### View Asserts on Attribute, Microflow output or Object count  
 - Open the Test Configuration and [Test Suite](../test-suite) that you want to design.
-- Teststeps in a [Test Case](../test-case) with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Teststeps.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Teststep and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
+- Teststeps in a [Test Case](../test-case) with one or more Assert, are marked with <i class="fas fa-ballot-check"></i> in the list of Teststeps.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
 
 ### View Asserts on Validation feedback
 - Open the Test Configuration and Test Suite that you want to design.
-- Test Cases in a Test Suite with one or more Assert, are marked with "<i class="fas fa-ballot-check"></i>" in the list of Test Cases.
-- Click on the "<i class="fas fa-ellipsis"></i>" button on the Test Case and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
+- Test Cases in a Test Suite with one or more Assert, are marked with <i class="fas fa-ballot-check"></i> in the list of Test Cases.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured.   
+
+### Add an Assert
+
+Read one of the mentioned detail pages above to learn how to add asserts.
+
+### Stop a Test Run when an assert fails
+
+To indicate to have MTA stop the rest of the Test Run when an assert fails, select "Stop the test run" from the "When the assert fails:" dropdown on the respective Assert, whenever adding or editing the Assert.
+
+:::info
+When an assert fails, remaining teststeps in the same Test Case will always be executed. 
+
+Only when "Stop the test run" is selected, any next Test Cases will not be executed.
+:::
+
+## Related topics
+- [Data Variation](datavariation)
+- [Test Run](test-run)
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated: 29 November 2023

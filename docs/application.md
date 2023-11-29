@@ -31,11 +31,11 @@ To learn more about configuring an MTA user, read the How To section.
 
 ### View Project ID
 - Navigate to the "Applications" page.
-- Click on "<i class="fal fa-info-circle"></i>" to view the Project ID.
+- Click on <i class="fal fa-info-circle"></i> to view the Project ID.
 
 ### Unregister Application from MTA
 - Navigate to the "Applications" page .
-- Click on the "<i class="fas fa-ellipsis"></i>" button for the Application you want to unregister.
+- Click on the <i class="fas fa-ellipsis"></i> button for the Application you want to unregister.
 - Click "<i class="fal fa-trash-can"></i> Delete".
 
 ## Related topics
@@ -46,4 +46,4 @@ To learn more about configuring an MTA user, read the How To section.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated 22 November 2023

@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.4.0',
+              label: '2.5.0',
               path: '/',
             },
           },
@@ -69,7 +69,7 @@ const config = {
           { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
           { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
-          { id: 'snapshot', content: 'snapshot.md', versions: ['2.4.0'] },
+          { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
