@@ -2,13 +2,18 @@
 
 #### Release date
 
-29 November 2023
+30 November 2023
 
 #### Supported Mendix versions
 
 Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.12.
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). **Mendix 10 support is monthly release based.**
 Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
+
+
+**See what's new!**
+<iframe src="https://player.vimeo.com/video/889179420?h=4fdd5af8a4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
 
 ## Highlights in this release
 
