@@ -12,7 +12,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 
 
 **See what's new!**
-<iframe src="https://player.vimeo.com/video/889179420?h=4fdd5af8a4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/889179420?h=4fdd5af8a4" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
 
 ## Highlights in this release
