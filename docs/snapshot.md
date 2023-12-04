@@ -6,11 +6,11 @@ sidebar_position: 16
 
 ## Definition
 
-A Snapshot is the condition of the Test design in a [Test Configuration](test-configuration) that has been adapted to a certain [Application Revision](application-revision).
+A Snapshot is the condition of a [Test Configuration](test-configuration) that has been adapted to a certain [Application Revision](application-revision).
 
-Every time a Test Configuration is adapted, a Snapshot is created, to allow restoring the Test design to the condition before the adapt.
+Before a Test Configuration is adapted, a Snapshot is created, to allow restoring to the condition before the adapt.
 
-Restoring a Snapshot will only restore the Test design, the [Test Runs](test-run) will remain in the original Test Configuration.
+Restoring a Snapshot will only restore [Test Suites](test-suite), the [Test Runs](test-run) will remain in the original Test Configuration.
 
 ## Actions on Snapshot
 
@@ -20,7 +20,7 @@ A Snapshot is created automatically before the [Test Suites](test-suite) in a [T
 
 ### Restore a Snapshot
 
-Restoring the Design of a Test Configuration using a snapshot will allow to **undo an Adapt**. 
+Restoring a Test Configuration using a snapshot will allow to **undo an Adapt**. 
 
 - Navigate to "Test Configurations" in the top menu.
 - Click <i class="fas fa-ellipsis"></i> and then <i class="fa-light fa-clock-rotate-left"></i> to restore a test configuration.
