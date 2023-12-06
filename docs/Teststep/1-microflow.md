@@ -25,7 +25,7 @@ Domain model access rights only apply for microflows that have "Apply entity acc
 
 A microflow parameter can be an Object or any of the primitive types: String, Enumeration, Datetime, Integer, Decimal, Boolean.
 
-Note that if the microflow contains input parameters, it is possible to save the Microflow Teststep without providing a value for these, but this may result in MTA showing an [Error](../error).
+Note that if the microflow contains input parameters, it is possible to save the Microflow Teststep without providing a value for these, but this may result in MTA showing a [Construction Error](../construction-error).
 
 ### Assign Empty 
 
