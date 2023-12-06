@@ -4,7 +4,7 @@
 
 This is an issue that occurs specifically when Menditect customers have an "On premise" or "Bring your own cloud" license, where MTA is not hosted and managed by Menditect in the Mendix cloud, but by the customer.
 When hosting MTA in a private cloud, like Google Cloud Platform (GCP) or Amazon Web Services (AWS), system administrators may notice that the Websocket communication between a Mendix App under test and MTA keeps dropping and reconnecting.
-Also Test Automators in MTA will notice that the connection to their Mendix App under test appears stable but whenever they execute a test it will fail with an error. 
+Also Testers in MTA will notice that the connection to their Mendix App under test appears stable but whenever they execute a test it will fail with an error. 
 
 ## Possible causes and resolutions
 

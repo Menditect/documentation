@@ -60,8 +60,6 @@ Note that after using a URL to open the Test Configuration, each time you hit `F
 - Select the Test Configuration that you want to delete.
 - Use the <i class="fal fa-trash-alt"></i> button to delete the Test Configuration.
 
-Note that Testers cannot delete Test Configurations.
-
 ### Recover a deleted Test Configuration
 - Navigate to the "Test configurations" page.
 - Go to "<i class="fal fa-eye"></i> Deleted". 

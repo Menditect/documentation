@@ -1,7 +1,7 @@
 # Access Mendix model
 
 To access Mendix projects, the user who logs in to MTA must be linked to a Mendix user.
-First time you login as a Test Automator, you will be provided a page where you can enter the necessary information to create this link.
+First time you login as a Tester, you will be provided a page where you can enter the necessary information to create this link.
 
 ## API key and PAT
 

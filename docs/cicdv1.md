@@ -206,7 +206,7 @@ Currently, every night a scheduled event cleans CI/CD test runs. MTA only keeps 
 ## Troubleshooting
 
 - Problem: I have configured everything but the CI/CD run does not execute or raises an error message.
-- Solution: make sure that the Test Application Instance is running and that the provided CI/CD user credentials are correct. Also make sure that the CI/CD user has both roles as desribed (CI/CD user and TestAutomator).
+- Solution: make sure that the Test Application Instance is running and that the provided CI/CD user credentials are correct. Also make sure that the CI/CD user has both roles as desribed (CI/CD user and Test).
 
 
 - Problem: the CI/CD run executes with an ExecutionID, but also raises an error message.

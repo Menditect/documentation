@@ -8,7 +8,7 @@ This document describes how to configure MTA to use the CI/CD API.
 
 ## Create CI/CD user
 
-In order to prepare MTA for integration with your CI/CD pipeline you need to create a user in MTA with *only* the Testautomator and CiCdApiUser roles. 
+In order to prepare MTA for integration with your CI/CD pipeline you need to create a user in MTA with *only* the Tester and CiCdApiUser roles. 
 
 - First, login as an MTA Manager. Do not login with an account that has Administrator rights!
 - Navigate to MTA management and then to MTA Users. Create a New local MTA user.
