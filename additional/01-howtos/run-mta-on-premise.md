@@ -99,7 +99,7 @@ hsforms.com/*
 - Wait for all of the migrations to be done. 
 - When running into errors, contact Menditect support (support@menditect.com), and do not proceed with test scripting.
 - Logout.
-- Login with a TestAutomator account and check if the test configurations can be executed.
+- Login with a Tester account and check if the test configurations can be executed.
 
 ### Test application actions
 

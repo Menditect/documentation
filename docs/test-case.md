@@ -97,8 +97,6 @@ Note that after using a URL to open the Test Case, each time you hit `F5` or `Ct
 
 Note that it is possible that due to moving a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an error will occur prohibiting the execution of the Test Configuration.
 
-Note that Testers cannot move Test Cases.
-
 ### Edit a Test Case 
 
 - Click on <i class="fa fa-pencil"></i> under the <i class="fas fa-ellipsis"></i> menu in the Test Case to edit it.
@@ -110,8 +108,6 @@ Note that it not is possible to change the Test Case Type or associated Test App
 - Click on <i class="fas fa-trash-alt"></i> under the <i class="fas fa-ellipsis"></i> menu on the Test Case you want to delete.
 
 Note that it is possible that due to deleting a Test Case and dependencies of Teststeps in the Test Case with Teststeps in previous Test Cases, an [Error](error) will occur prohibiting the execution of the Test Configuration.
-
-Note that Testers cannot delete Test Cases.
 
 ## Related topics
 - [Test Setting](test-setting)
