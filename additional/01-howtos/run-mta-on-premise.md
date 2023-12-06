@@ -47,7 +47,7 @@ Menditect on-premise customers and partners **do not** have to set these values.
 
 #### SAML SSO
 
-- If MTA will be configured to use SAML SSO, additionally set these values (otherwise, use the default value):
+- If MTA will be [configured to use SAML SSO](configure-mta-saml), additionally set these values (otherwise, use the default value):
 
 | Environment variable        | value                   |
 | --------------------------- | ----------------------- |
