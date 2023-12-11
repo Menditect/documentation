@@ -44,15 +44,13 @@ Use this settings:
 
 The SAML20 module will create an Account if a user can be authenticated by the IdP. However, by default, the Account will have no UserRoles.
 
-In order to have MTA assign the desired roles to created Accounts, you must configure your IdP to use assertion attributes.
-
-The rules for that, are as follows:
+In order to have MTA assign the desired roles to created Accounts, you must configure your IdP to use assertion attributes, as follows.
 
 ```
-- If there are Assertions in the AssertionAttributeList List with 'Keys' which contain 'MTA' and 'userrole'; 
-- and the value is 'Tester', then assign 'Tester' role;
-- and the value is 'MTAManager', then assign the 'MTAManager' role;
-- and the value is 'CiCdApiUser', then assign the 'CiCdApiUser' role;
+- There must be at least one assertion attribute with the name "MTA_UserRole"
+- if the value is 'Tester', then the 'Tester' role will be assigned;
+- if the value is 'MTAManager', then the 'MTAManager' role will be assigned;
+- if the value is 'CiCdApiUser', then the 'CiCdApiUser' role will be assigned;
 ```
 
 
