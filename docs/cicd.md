@@ -531,7 +531,7 @@ Example:
 
 ## POST execute test case
 
-Initiate the execution of a single test case for a specified application instance in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
+Initiate the execution of a single test case for a specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
 ### Request
 
@@ -546,9 +546,14 @@ Example:
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testcases/54321/execute`
 
 ```json
-{
-    "Key": "111"
-}
+[
+    {
+        "Key": "8"
+    },
+    {
+        "Key": "12"
+    }
+]
 ```
 
 **Authorization**
