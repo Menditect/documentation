@@ -218,10 +218,6 @@ A list of Applications, to allow downloading and adapting to another revision of
 ]
 ```
 
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-
-
 ## GET application instances
 
 Retrieve all application instances of an application.
@@ -230,11 +226,11 @@ Retrieve all application instances of an application.
 
 **URL**
 
-`/rest/cicd/v2/applications/{ApplicationKey}/application-instances`
+`/rest/mta/api/applicationinstances?applicationKey={applicationKey}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/applications/123/application-instances`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applicationinstances?applicationKey=123`
 
 
 **Authorization**
@@ -271,13 +267,6 @@ A list of Application Instances with their respective Key, Name and Token to be 
 ]
 ```
 
-#### 400: InvalidInput: 
-- ApplicationKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
 ## POST download revision
 
 Initiate the download of a revision in MTA. The download process will be started asynchronously. The progress can be polled using the [Get revision download status](#get-revision-download-status) endpoint.
@@ -287,7 +276,7 @@ Initiate the download of a revision in MTA. The download process will be started
 
 **URL**
 
-`/rest/cicd/v2/revisions/download?applicationkey={applicationkey}&branchname={branchname}&commitid={commitid}`
+`/rest/mta/api/revisions/download?applicationKey={applicationKey}&branchName={branchName}&commitId={commitId}`
 
 :::info
 - For Apps stored in SVN, the mainline is named 'trunk';
@@ -296,7 +285,7 @@ Initiate the download of a revision in MTA. The download process will be started
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/revisions/download?applicationkey=123&branchname=main&commitid=582670e77da6ac294e37fbc2d141c2113e911abd`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/download?applicationKey=123&branchName=main&commitId=582670e77da6ac294e37fbc2d141c2113e911abd`
 
 
 **Authorization**
@@ -319,14 +308,6 @@ An Application Revision with the CommitId and resulting Key.
 }
 ```
 
-#### 400: InvalidInput: 
-- ApplicationKey is missing.
-- BranchName is missing.
-- CommitId is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
 
 ## POST cancel revision download
 
@@ -336,11 +317,11 @@ Cancel the download of a revision. This is only possible in the *requesting down
 
 **URL**
 
-`/rest/cicd/v2/revisions/{RevisionKey}/download-cancel`
+`/rest/mta/api/revisions/{revisionKey}/download-cancel`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/revisions/456/download-cancel`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/456/download-cancel`
 
 
 **Authorization**
@@ -353,14 +334,7 @@ Example:
 
 ### Responses
 
-#### 200:
-- No content
-
-#### 400: InvalidInput: 
-- RevisionKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
+Empty.
 
 
 ## GET revision download status
@@ -371,11 +345,11 @@ Retrieve the download status of a revision in MTA.
 
 **URL**
 
-`/rest/cicd/v2/revisions/{RevisionKey}/download-status`
+`/rest/mta/api/revisions/{revisionKey}/download-status`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/revisions/456/download-status`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/456/download-status`
 
 
 **Authorization**
@@ -408,13 +382,6 @@ Any of below status descriptors:
 }
 ```
 
-#### 400: InvalidInput: 
-- RevisionKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
 ## POST adapt testconfiguration to revision
 
 Adapt a test configuration to specified revision. Define revision by application, branch and revisionnumber/commitId.
@@ -423,11 +390,11 @@ Adapt a test configuration to specified revision. Define revision by application
 
 **URL**
 
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
+`/rest/mta/api/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/12/applications/1/adapt?branchname=trunk&commitid=4532`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/applications/1/adapt?branchname=trunk&commitid=4532`
 
 **Authorization**
 
@@ -441,16 +408,6 @@ Example:
 #### 200:
 - No content
 
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
-- ApplicationKey is missing.
-- branchname is missing.
-- commitid is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
 
 
 ## POST execute testconfiguration
@@ -463,11 +420,11 @@ Initiate the execution of a test configuration for the specified application ins
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/execute`
+`/rest/mta/api/testconfigurations/{TestConfigurationKey}/execute`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/12/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/execute`
 
 ```json
 [
@@ -496,16 +453,6 @@ Example:
     "TestRunExecutionId": "5552275f-0733-4afa-b109-7dee0cf1eda9"
 }
 ```
-
-#### 400: InvalidInput: 
-- TestConfigurationKey cannot be empty.
-
-#### 403: Access denied: 
-- See message for more details.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
 
 
 
@@ -520,11 +467,11 @@ Initiate the execution of a test suite for the specified application instance(s)
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/cicd/v2/testsuites/{TestSuiteKey}/execute`
+`/rest/mta/api/testsuites/{TestSuiteKey}/execute`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testsuites/33/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites/33/execute`
 
 ```json
 [
@@ -554,15 +501,6 @@ Example:
 }
 ```
 
-#### 400: InvalidInput: 
-- TestSuiteKey cannot be empty.
-
-#### 403: Access denied: 
-- See message for more details.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
 
 
 ## POST execute test case
@@ -575,11 +513,11 @@ Initiate the execution of a single test case for a specified application instanc
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/cicd/v2/testcases/{TestCaseKey}/execute`
+`/rest/mta/api/testcases/{TestCaseKey}/execute`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testcases/54321/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases/54321/execute`
 
 ```json
 [
@@ -610,15 +548,6 @@ A unique execution ID of the Test Run:
 }
 ```
 
-#### 400: InvalidInput: 
-- TestCaseKey cannot be empty.
-
-#### 403: Access denied: 
-- See message for more details.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
 
 ## GET testrun
 
@@ -628,11 +557,11 @@ Retrieve a summary of a test run to allow checking if the test run is either Run
 
 **URL**
 
-`/rest/cicd/v2/testruns/{testrunexecutionid}`
+`/rest/mta/api/testruns/{testrunexecutionid}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15`
 
 **Authorization**
 
@@ -654,13 +583,6 @@ Example:
 }
 ```
 
-#### 400: InvalidInput: 
-- TestRunExecutionId is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
 ## GET testrun details
 
 Retrieve the details of a test run.
@@ -669,11 +591,11 @@ Retrieve the details of a test run.
 
 **URL**
 
-`/rest/cicd/v2/testruns/{testrunexecutionid}/details`
+`/rest/mta/api/testruns/{testrunexecutionid}/details`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
 
 **Authorization**
 
@@ -712,13 +634,6 @@ Example:
 }
 ```
 
-#### 400: InvalidInput: 
-- TestRunExecutionId is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
 ## POST cancel testrun
 
 Cancel a running test run. This is only possible in the *Running* stage.
@@ -727,11 +642,11 @@ Cancel a running test run. This is only possible in the *Running* stage.
 
 **URL**
 
-`/rest/cicd/v2/testruns/{testrunexecutionid}/cancel`
+`/rest/mta/api/testruns/{testrunexecutionid}/cancel`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/cancel`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/cancel`
 
 **Authorization**
 
@@ -742,16 +657,7 @@ Example:
 
 ### Responses
 
-#### 200:
-- No content
-
-#### 400: InvalidInput: 
-- TestRunExecutionId is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
+Empty.
 
 ## Related topics
 - [Application](application)
