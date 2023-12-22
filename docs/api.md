@@ -56,17 +56,17 @@ A list of Test Configurations with their Key and Name:
   {
     "Key": "28",
     "Name": "Test Configuration #1",
-    "Url": "http://localhost:8081/link/testconfiguration/28"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/28"
   },
   {
     "Key": "29",
     "Name": "Test Configuration #2",
-    "Url": "http://localhost:8081/link/testconfiguration/29"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/29"
   },
   {
     "Key": "30",
     "Name": "Test Configuration #3",
-    "Url": "http://localhost:8081/link/testconfiguration/30"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/30"
   }
 ]
 ```
@@ -104,12 +104,12 @@ A list of all Test Suites in the Test Configuration, to allow the execution of a
     {
       "Key": "32",
       "Name": "Test Suite #1",
-      "Url": "http://localhost:8081/link/testsuite/32"
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32"
     },
     {
       "Key": "33",
       "Name": "Test Suite #2",
-      "Url": "http://localhost:8081/link/testsuite/33"
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33"
     }
   ]
 }
@@ -155,17 +155,17 @@ A list of all Test Cases in the Test Configuration or Test Suite, to allow the e
     {
         "Key": "96",
         "Name": "Test Case #1",
-        "Url": "http://localhost:8081/link/testcase/96"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/96"
     },
     {   
         "Key": "97",
         "Name": "Test Case #2",
-        "Url": "http://localhost:8081/link/testcase/97"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/97"
     },
     {
         "Key": "98",
         "Name": "Test Case #3",
-        "Url": "http://localhost:8081/link/testcase/98"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/98"
     }
 ]
 ```
@@ -390,11 +390,11 @@ Adapt a test configuration to specified revision. Define revision by application
 
 **URL**
 
-`/rest/mta/api/testconfigurations/{TestConfigurationKey}/applications/{ApplicationKey}/adapt?branchname={branchname}&commitid={commitid}`
+`/rest/mta/api/testconfigurations/{testconfigurationKey}/applications/{applicationKey}/adapt?branchName={branchName}&commitId={commitId}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/applications/1/adapt?branchname=trunk&commitid=4532`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/applications/1/adapt?branchName=trunk&commitId=4532`
 
 **Authorization**
 
@@ -405,9 +405,7 @@ Example:
 
 ### Responses
 
-#### 200:
-- No content
-
+Empty.
 
 
 ## POST execute testconfiguration
@@ -420,7 +418,7 @@ Initiate the execution of a test configuration for the specified application ins
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testconfigurations/{TestConfigurationKey}/execute`
+`/rest/mta/api/testconfigurations/{testconfigurationKey}/execute`
 
 Example: 
 
@@ -467,7 +465,7 @@ Initiate the execution of a test suite for the specified application instance(s)
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testsuites/{TestSuiteKey}/execute`
+`/rest/mta/api/testsuites/{testsuiteKey}/execute`
 
 Example: 
 
@@ -513,7 +511,7 @@ Initiate the execution of a single test case for a specified application instanc
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testcases/{TestCaseKey}/execute`
+`/rest/mta/api/testcases/{testcaseKey}/execute`
 
 Example: 
 
@@ -557,7 +555,7 @@ Retrieve a summary of a test run to allow checking if the test run is either Run
 
 **URL**
 
-`/rest/mta/api/testruns/{testrunexecutionid}`
+`/rest/mta/api/testruns/{executionId}`
 
 Example: 
 
@@ -579,23 +577,23 @@ Example:
     "StartDate": "2023-08-22T08:06:31.182Z",
     "Result": "Pass",
     "TestConfigurationName": "My First Testconfiguration",
-    "TestRunUrl": "http://localhost:8081/link/testrun/45"
+    "TestRunUrl": "https://mta-menditect-9fo2p.mendixcloud.com/link/testrun/45"
 }
 ```
 
-## GET testrun details
+## GET testsuiteruns
 
-Retrieve the details of a test run.
+Retrieve the test suite runs inside a test run.
 
 ### Request
 
 **URL**
 
-`/rest/mta/api/testruns/{testrunexecutionid}/details`
+`/rest/mta/api/testsuiteruns/{executionId}/details`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuiteruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
 
 **Authorization**
 
@@ -608,31 +606,69 @@ Example:
 
 #### 200 example:
 ```json
-{
-    "TestRunExecutionId": "9724158a-a002-49a2-b4b7-79f18fbc9b15",
-    "StartDate": "2023-08-22T08:06:31.182Z",
-    "Result": "Pass",
-    "TestConfigurationName": "My First Testconfiguration",
-    "TestRunUrl": "http://localhost:8081/link/testrun/45",
-    "TestSuiteRuns": [
-        {
-            "TestSuiteSequence": 1,
-            "TestSuiteName": "My First Test Suite",
-            "TestSuiteRunResult": "Pass",
-            "TestsuiteRunUrl": "http://localhost:8081/link/testsuiterun/44",
-            "TestCaseRuns": [
-                {
-                    "TestCaseSequence": 1,
-                    "TestCaseName": "My First Test Case",
-                    "TestCaseRunResult": "Pass",
-                    "TestCaseRunResultMessage": "",
-                    "TestCaseRunUrl": "http://localhost:8081/link/testcaserun/119"
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "Key": 42,
+        "Sequence": 1,
+        "Name": "Test Suite #1",
+        "Result": "ERROR",
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/42"
+    },
+    {
+        "Key": 43,
+        "Sequence": 2,
+        "Name": "Test Suite #2",
+        "Result": "Pass",
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/43"
+    }
+]
 ```
+
+
+
+## GET testcaseruns
+
+Retrieve the test suite runs inside a test run.
+
+### Request
+
+**URL**
+
+`/rest/mta/api/testcaseruns/{testsuiterunKey}/details`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcaseruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+#### 200 example:
+```json
+[
+    {
+        "Key": 42,
+        "Sequence": 1,
+        "Name": "Test Suite #1",
+        "Result": "ERROR",
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/42"
+    },
+    {
+        "Key": 43,
+        "Sequence": 2,
+        "Name": "Test Suite #2",
+        "Result": "Pass",
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/43"
+    }
+]
+```
+
 
 ## POST cancel testrun
 
@@ -669,4 +705,4 @@ Empty.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 November 2023
+Last updated: 22 December 2023
