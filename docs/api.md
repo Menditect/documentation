@@ -19,11 +19,11 @@ Retrieve all test configurations in MTA, which are not deleted.
 
 **URL**
 
-`/rest/cicd/v2/testconfigurations`
+`/rest/mta/api/testconfigurations`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations`
 
 **Authorization**
 
@@ -31,6 +31,19 @@ Example:
 | ------------- | ---------------------------- |
 | Username:     | `[the CiCd username in MTA]` |
 | Password:     | `[the CiCd password in MTA]` |
+
+### Optional parameters
+
+Either one of below parameters can be provided. If both are provided, they should point to the same application.
+
+| Parameter      | Explanation                                                                  |
+| -------------- | ---------------------------------------------------------------------------- |
+| applicationKey | `The Key of the application that is linked to the test configuration`        |
+| mxProjectId    | `The project ID of the application that is linked to the test configuration` |
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations?applicationKey=15&mxProjectId=18ef9972-501b-4806-8f89-ef8aaddb97a0`
 
 ### Responses
 
@@ -42,33 +55,36 @@ A list of Test Configurations with their Key and Name:
 [
   {
     "Key": "28",
-    "Name": "Test Configuration #1"
+    "Name": "Test Configuration #1",
+    "Url": "http://localhost:8081/link/testconfiguration/28"
   },
   {
     "Key": "29",
-    "Name": "Test Configuration #2"
+    "Name": "Test Configuration #2",
+    "Url": "http://localhost:8081/link/testconfiguration/29"
   },
   {
     "Key": "30",
-    "Name": "Test Configuration #3"
+    "Name": "Test Configuration #3",
+    "Url": "http://localhost:8081/link/testconfiguration/30"
   }
 ]
 ```
 
 
-## GET testconfiguration
+## GET testsuites
 
-Retrieve the details of a test configuration specified by Key.
+Retrieve the test suites in a test configuration specified by Key.
 
 ### Request
 
 **URL**
 
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}`
+`/rest/mta/api/testsuites?testconfigurationKey={testconfigurationKey}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites?testconfigurationKey=28`
 
 **Authorization**
 
@@ -79,70 +95,48 @@ Example:
 
 ### Responses
 
-A list of all Test Suites and Test Cases in the Test Configuration, to allow the execution of a single Test Case.
+A list of all Test Suites in the Test Configuration, to allow the execution of a single Test Suite.
 
 #### 200 example:
 ```json
 {
-  "Key": "28",
-  "Name": "Test Configuration #1",
-  "TestSuites": [
+ [
     {
       "Key": "32",
       "Name": "Test Suite #1",
-      "TestCases": [
-        {
-          "Key": "96",
-          "Name": "Test Case #1"
-        },
-        {
-          "Key": "97",
-          "Name": "Test Case #2"
-        },
-        {
-          "Key": "98",
-          "Name": "Test Case #3"
-        }
-      ]
+      "Url": "http://localhost:8081/link/testsuite/32"
     },
     {
       "Key": "33",
       "Name": "Test Suite #2",
-      "TestCases": [
-        {
-          "Key": "99",
-          "Name": "Test Case #1"
-        },
-        {
-          "Key": "100",
-          "Name": "Test Case #2"
-        }
-      ]
+      "Url": "http://localhost:8081/link/testsuite/33"
     }
   ]
 }
 ```
 
-#### 400: InvalidInput: 
-- TestConfigurationKey is missing.
+## GET testcases
 
-#### 500: Internal Server Error: 
-- See message for more details.
-
-
-## GET applications in testconfiguration
-
-Retrieve all applications of a test configuration, including the currently selected revision.
+Retrieve the test cases in a test configuration or test suite specified by Key.
 
 ### Request
 
 **URL**
 
-`/rest/cicd/v2/testconfigurations/{TestConfigurationKey}/applications`
+`/rest/mta/api/testcases?testconfigurationKey={testconfigurationKey}`
+
+or:
+
+`/rest/mta/api/testcases?testsuiteKey={testsuiteKey}`
 
 Example: 
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/cicd/v2/testconfigurations/28/applications`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases?testconfigurationKey=28`
+
+or: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases?testsuiteKey=33`
+
 
 **Authorization**
 
@@ -153,7 +147,62 @@ Example:
 
 ### Responses
 
-A list of all Applications that are used in the Test Configuration, to allow downloading and adapting to another revision of that Application.
+A list of all Test Cases in the Test Configuration or Test Suite, to allow the execution of a single Test Case.
+
+#### 200 example:
+```json
+[
+    {
+        "Key": "96",
+        "Name": "Test Case #1",
+        "Url": "http://localhost:8081/link/testcase/96"
+    },
+    {   
+        "Key": "97",
+        "Name": "Test Case #2",
+        "Url": "http://localhost:8081/link/testcase/97"
+    },
+    {
+        "Key": "98",
+        "Name": "Test Case #3",
+        "Url": "http://localhost:8081/link/testcase/98"
+    }
+]
+```
+
+
+## GET applications
+
+Retrieve all applications, or applications in a test configuration specified by Key.
+
+### Request
+
+**URL**
+
+`/rest/mta/api/applications`
+
+or:
+
+`/rest/mta/api/applications?testconfigurationKey={testconfigurationKey}`
+
+Example: 
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applications`
+
+or:
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applications?testconfigurationKey=28`
+
+**Authorization**
+
+| Authorization | Basic                        |
+| ------------- | ---------------------------- |
+| Username:     | `[the CiCd username in MTA]` |
+| Password:     | `[the CiCd password in MTA]` |
+
+### Responses
+
+A list of Applications, to allow downloading and adapting to another revision of that Application.
 
 #### 200 example:
 ```json
@@ -161,27 +210,16 @@ A list of all Applications that are used in the Test Configuration, to allow dow
     {
         "Key": "15",
         "Name": "FirstTestApp",
-        "BranchName": "branchDev",
-        "CommitDate": "2023-08-29T09:31:13.000Z",
-        "CommitId": "247",
-        "CommitMessage": "DataType change of an attribute"
     },
     {
         "Key": "16",
         "Name": "SecondTestApp",
-        "BranchName": "trunk",
-        "CommitDate": "2023-08-22T11:09:38.000Z",
-        "CommitId": "173",
-        "CommitMessage": "Added an entity"
     }
 ]
 ```
 
 #### 400: InvalidInput: 
 - TestConfigurationKey is missing.
-
-#### 500: Internal Server Error: 
-- See message for more details.
 
 
 ## GET application instances
