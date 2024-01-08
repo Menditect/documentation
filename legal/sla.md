@@ -44,11 +44,11 @@ Priority levels are determined based on impact and urgency, as attributable to M
 - (ii) Medium: operational functionality is limited disrupted
 - (iii) Low: operational functionality is not/hardly disrupted
 
-|   | High impact | Medium impact | Low impact |
-| ----------- | ----------- | ----------- | ----------- |
-| __High urgency__ | Critical priority | High priority | Medium priority |
-| __Medium urgency__ | High priority | Medium priority | Low priority |
-| __Low urgency__ | Medium priority | Low priority | Low priority |
+|                    | High impact       | Medium impact   | Low impact      |
+| ------------------ | ----------------- | --------------- | --------------- |
+| __High urgency__   | Critical priority | High priority   | Medium priority |
+| __Medium urgency__ | High priority     | Medium priority | Low priority    |
+| __Low urgency__    | Medium priority   | Low priority    | Low priority    |
 
 If and where Menditect provides for a workaround solution the priority level can never be higher than Medium. If incidents arise as a consequence of newer versions of the Mendix platform or Mendix Modeler the priority level is always Low.
 
@@ -56,9 +56,9 @@ If and where Menditect provides for a workaround solution the priority level can
 
 Support via email and/or Support Phone is limited to the support hours as set forth below.
 
-|   | Standard | Custom | 
-| ----------- | ----------- | ----------- |
-| __Support hours__ | Office Hours<br/>Monday – Friday<br/>8:00 – 18:00 Local Time<br/>(excluding national holidays) | To be determined | 
+|                   | Standard                                                                                       | Custom           |
+| ----------------- | ---------------------------------------------------------------------------------------------- | ---------------- |
+| __Support hours__ | Office Hours<br/>Monday – Friday<br/>8:00 – 18:00 Local Time<br/>(excluding national holidays) | To be determined |
 
 For purposes of this SLA, “Local Time” means the time zone for the location of the Menditect entity Customer is contracting with under the Agreement; Menditect observes the national and/or public holidays for the same location:
 
@@ -67,18 +67,21 @@ Menditect Services B.V. CET (Central European Time) The Netherlands
 ### 1.8 Response Time and Resolution Time Objectives
 For solving incidents in MTA software, Menditect offers the following response time and resolution time objectives:
 
-|   | Standard Response Time | Custom Response Time | Standard Response Time | Custom Response Time |
-| ----------- | ----------- | ----------- | ----------- | ----------- | 
-| __Critical__ | < 2 office hours | t.b.d. | < 8 office hours | t.b.d. |
-| __High__ | < 8 office hours | t.b.d. | Next Business Day | t.b.d. |
-| __Medium__ | Next Business Day | t.b.d. | Reasonable effort | t.b.d. |
-| __Low__ | Reasonable effort | t.b.d. | At Menditect discretion | t.b.d. |
+|              | Standard Response Time | Custom Response Time | Standard Response Time  | Custom Response Time |
+| ------------ | ---------------------- | -------------------- | ----------------------- | -------------------- |
+| __Critical__ | < 2 office hours       | t.b.d.               | < 8 office hours        | t.b.d.               |
+| __High__     | < 8 office hours       | t.b.d.               | Next Business Day       | t.b.d.               |
+| __Medium__   | Next Business Day      | t.b.d.               | Reasonable effort       | t.b.d.               |
+| __Low__      | Reasonable effort      | t.b.d.               | At Menditect discretion | t.b.d.               |
 
 ## 2 Mendix App Platform
 
 ### 2.1 Software Lifecycle
+Menditect will only support MTA software for the current major release and the two (2) prior major releases of the Mendix App Platform. This SLA is valid for all Long Term and Medium Term Stable releases of the Mendix platform as defined in https://docs.mendix.com/releasenotes/studio-pro/lts-mts. For monthly releases of the Mendix platform the Menditect support level is by default set to “Low”.
 
-Menditect will only support MTA software for the current major release and the two (2) prior major releases of the Mendix App Platform. This SLA is valid for all Long Term and Medium Term Stable releases of the Mendix platform as defined in https://docs.mendix.com/releasenotes/studio-pro/lts-mts. For monthly releases of the Mendix platform the Menditect  support level is by default set to “Low”.
+The MTA release numbers use the following format. X.Y.Z where X = Major version nr, Y = minor version nr, Z = patch nr. Menditect only supports the last two minor releases (including patches) of the MTA software as published in the release notes page (https://documentation.menditect.com/release-notes).  Customers that run older versions of MTA than the last two minor releases need to upgrade first to one of the supported releases in order to get support according to this SLA.
+
+Upgrading to a higher minor release is only supported for the next minor release (e.g. upgrading from MTA 2.2 to 2.3 is fully supported. In order to upgrade from MTA 2.1 to MTA 2.3 you need to upgrade from MTA 2.1 to MTA 2.2 and then upgrade from MTA 2.2 to MTA 2.3)
 
 ### 2.2 Support of Mendix Applications
 
