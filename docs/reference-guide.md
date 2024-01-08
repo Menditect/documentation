@@ -26,12 +26,12 @@ Actions are described with as few literal descriptions to page elements as possi
 
 ## Contents
 
+- [API](api.md)
 - [Application](application)
 - [Application Instance](application-instance)
 - [Application Revision](application-revision)
 - [Archive](archive.md/)
 - [Assert](Assert/)
-- [CI/CD](cicd.md)
 - [Construction Error](construction-error)
 - [Data Variation](datavariation)
 - [Data Variation Item](datavariation-item)

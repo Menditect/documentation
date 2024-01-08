@@ -2,7 +2,7 @@
 
 ## Definition
 
-This document visualizes the order of MTA's [CI/CD endpoints](../../cicd) to use, to make optimal use of the CI/CD API in an automated pipeline.
+This document visualizes the order of MTA's [API endpoints](../../api), to optimize in an automated pipeline.
 
 ## Flow
 

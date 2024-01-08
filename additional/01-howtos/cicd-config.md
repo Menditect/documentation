@@ -4,7 +4,7 @@
 
 This document describes how to configure MTA to use the CI/CD API.
 
-**Looking for the CI/CD API docs?** These were moved to the [reference guide](../../cicd).
+**Looking for the CI/CD API docs?** These were moved to the [reference guide](../../api).
 
 ## Create CI/CD user
 
