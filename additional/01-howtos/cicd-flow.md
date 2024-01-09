@@ -42,6 +42,67 @@ Otherwise use this step to get a list of Application Instance Keys for each Appl
 
 ### 6: get revisions
 
+Use this step to determine if the Test Configuration is adapted to the Application Revision(s) that you want to use.
+
+### 7: download revision
+
+If the Test Configuration is adapted to the Application Revision(s) that you want to use, you can skip this step. 
+
+Otherwise use this step to download the Application Revision(s) in MTA so you can adapt the Test Configuration accordingly.
+
+### 8: get revision status
+
+If the Application Revision(s) that you want to use for the Test Configuration are downloaded in MTA, you can skip this step.
+
+Otherwise use this step (preferably in a loop statement) to poll if the download revision action from the previous step is done, to determine if the Application Revision(s) that you want to use for the Test Configuration are downloaded in MTA.
+
+### 9: adapt test configuration to revision
+
+If the Test Configuration is adapted to the Application Revision(s) that you want to use, you can skip this step.
+
+Otherwise use this step to adapt the Test Configuration to a downloaded Application Revision.
+
+### 10: get adapt status
+
+If the Test Configuration is adapted to the Application Revision(s) that you want to use, you can skip this step. 
+
+Otherwise use this step (preferably in a loop statement) to poll if the adapt revision action from the previous step is done, to determine if the Test Configuration is adapted to the Application Revision(s) that you want to use.
+
+### 11: execute test configuration
+
+If you want to execute a single Test Suite, you can skip this step.
+
+If you want to execute a single Test Case, you can skip this step.
+
+Otherwise use this step to execute the Test Configuration, and determine the resulting Execution ID.
+
+### 12: execute test suite
+
+If you want to execute a single Test Configuration, you can skip this step.
+
+If you want to execute a single Test Case, you can skip this step.
+
+Otherwise use this step to execute the Test Suite, and determine the resulting Execution ID.
+
+### 13: execute test case
+
+If you want to execute a single Test Configuration, you can skip this step.
+
+If you want to execute a single Test Suite, you can skip this step.
+
+Otherwise use this step to execute the Test Case, and determine the resulting Execution ID.
+
+### 14: get testrun
+
+Use this step (preferably in a loop statement) to poll if the testrun triggered by the previous steps is finished.
+
+### 15: get testsuiteruns
+
+Use this step to get the results of the executed test suites inside the testrun from the previous step.
+
+### 16: get testcaseruns
+
+Use this step to get the results of the executed test cases inside the executed test suites from the previous step.
 
 
 ## Feedback?
