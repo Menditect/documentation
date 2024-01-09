@@ -9,39 +9,29 @@ This document describes the endpoints of MTA's public API.
 
 To learn **how to** implement the API's in a CI/CD pipeline, read the how-to section.
 
-
-
-## GET testconfigurations
-
-Retrieve all test configurations in MTA, which are not deleted. 
-
-### Request
-
-**URL**
-
-`/rest/mta/api/testconfigurations`
-
-Example: 
-
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations`
-
 **Authorization**
+
+To authorize a session for MTA's public API:
 
 | Authorization | Basic                        |
 | ------------- | ---------------------------- |
 | Username:     | `[the CiCd username in MTA]` |
 | Password:     | `[the CiCd password in MTA]` |
 
-### Optional parameters
 
-Either one of below parameters can be provided. If both are provided, they should point to the same application.
+## GET testconfigurations
 
-| Parameter      | Explanation                                                                  |
-| -------------- | ---------------------------------------------------------------------------- |
-| applicationKey | `The Key of the application that is linked to the test configuration`        |
-| mxProjectId    | `The project ID of the application that is linked to the test configuration` |
+Retrieve all test configurations in MTA, which are not deleted. Optionally filter the list of test configurations by associated application or Mendix project ID.
 
-Example: 
+### Request
+
+**URL**
+
+`/rest/mta/api/testconfigurations?applicationKey={applicationKey}}&mxProjectId={mxProjectId}}`
+
+Note: either one of these parameters can be provided. If both are provided, they should point to the same application.
+
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations?applicationKey=15&mxProjectId=18ef9972-501b-4806-8f89-ef8aaddb97a0`
 
@@ -82,16 +72,10 @@ Retrieve the test suites in a test configuration specified by Key.
 
 `/rest/mta/api/testsuites?testconfigurationKey={testconfigurationKey}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites?testconfigurationKey=28`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -129,7 +113,7 @@ or:
 
 `/rest/mta/api/testcases?testsuiteKey={testsuiteKey}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases?testconfigurationKey=28`
 
@@ -137,13 +121,6 @@ or:
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases?testsuiteKey=33`
 
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -185,7 +162,7 @@ or:
 
 `/rest/mta/api/applications?testconfigurationKey={testconfigurationKey}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applications`
 
@@ -193,12 +170,6 @@ or:
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applications?testconfigurationKey=28`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -218,6 +189,7 @@ A list of Applications, to allow downloading and adapting to another revision of
 ]
 ```
 
+
 ## GET application instances
 
 Retrieve all application instances of an application.
@@ -228,17 +200,10 @@ Retrieve all application instances of an application.
 
 `/rest/mta/api/applicationinstances?applicationKey={applicationKey}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/applicationinstances?applicationKey=123`
 
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 
 ### Responses
@@ -267,6 +232,67 @@ A list of Application Instances with their respective Key, Name and Token to be 
 ]
 ```
 
+
+## GET revisions
+
+Retrieve all revisions of an Application, or revisions in use by a Test Configuration, that are known in MTA.
+
+### Request
+
+**URL**
+
+`/rest/mta/api/revisions?applicationKey={applicationKey}`
+
+or
+
+`/rest/mta/api/revisions?testconfigurationKey={testconfigurationKey}`
+
+**Example:**
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions?applicationKey=123`
+
+or
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions?testconfigurationKey=28`
+
+
+### Responses
+
+#### 200 example:
+
+A list of revisions with their respective Key, Application and Commit information, to determine if downloading and adapting a revision is necessary in order to execute a Test Configuration.
+
+```json
+[
+    {
+        "Key": "15",
+        "Application": "FirstTestApp",
+        "CommitDate": "2023-08-29T09:31:13.000Z",
+        "CommitId": "247",
+        "CommitMessage": "DataType change of an attribute"
+        "Branches": [
+               {
+                      "Name": "branchDev"
+               }
+        ]
+    },
+    {
+        "Key": "16",
+        "Application": "SecondTestApp",
+        "CommitDate": "2023-08-22T11:09:38.000Z",
+        "CommitId": "173",
+        "CommitMessage": "Added an entity"
+        "Branches": [
+               {
+                     "Name": "trunk"
+               }
+        ]
+    }
+]
+```
+
+
+
 ## POST download revision
 
 Initiate the download of a revision in MTA. The download process will be started asynchronously. The progress can be polled using the [Get revision download status](#get-revision-download-status) endpoint.
@@ -283,17 +309,9 @@ Initiate the download of a revision in MTA. The download process will be started
 - For Apps stored in Git, the mainline is named 'main'.
 :::
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/download?applicationKey=123&branchName=main&commitId=582670e77da6ac294e37fbc2d141c2113e911abd`
-
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 
 ### Responses
@@ -319,17 +337,10 @@ Cancel the download of a revision. This is only possible in the *requesting down
 
 `/rest/mta/api/revisions/{revisionKey}/download-cancel`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/456/download-cancel`
 
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 
 ### Responses
@@ -347,17 +358,10 @@ Retrieve the download status of a revision in MTA.
 
 `/rest/mta/api/revisions/{revisionKey}/download-status`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/revisions/456/download-status`
 
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -392,21 +396,49 @@ Adapt a test configuration to specified revision. Define revision by application
 
 `/rest/mta/api/testconfigurations/{testconfigurationKey}/applications/{applicationKey}/adapt?branchName={branchName}&commitId={commitId}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/applications/1/adapt?branchName=trunk&commitId=4532`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
 Empty.
 
+
+
+## GET testconfiguration adapt status
+
+Retrieve the adapt status of a test configuration in MTA to determine if it can be executed yet.
+
+### Request
+
+**URL**
+
+`/rest/mta/api/testconfigurations/{testconfigurationKey}/adapt-status`
+
+**Example:**
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/adapt-status`
+
+
+### Responses
+
+Any of below status descriptors:
+
+- *Open*: test configuration is not currently adapting or last adapt was successfull
+- *In progress* test configuration is currently adapting
+- *Error* an error occured during adapt
+
+
+#### 200 example:
+```json
+{
+    "Key": "17",
+    "Name": "TestApp",
+    "AdaptStatus": "Open"
+}
+```
 
 ## POST execute testconfiguration
 
@@ -420,7 +452,7 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 `/rest/mta/api/testconfigurations/{testconfigurationKey}/execute`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/execute`
 
@@ -434,13 +466,6 @@ Example:
     }
 ]
 ```
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -467,7 +492,7 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 `/rest/mta/api/testsuites/{testsuiteKey}/execute`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites/33/execute`
 
@@ -481,13 +506,6 @@ Example:
     }
 ]
 ```
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -513,7 +531,7 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 `/rest/mta/api/testcases/{testcaseKey}/execute`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases/54321/execute`
 
@@ -527,13 +545,6 @@ Example:
     }
 ]
 ```
-
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -555,18 +566,12 @@ Retrieve a summary of a test run to allow checking if the test run is either Run
 
 **URL**
 
-`/rest/mta/api/testruns/{executionId}`
+`/rest/mta/api/testruns/{testrunexecutionid}`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -589,18 +594,12 @@ Retrieve the test suite runs inside a test run.
 
 **URL**
 
-`/rest/mta/api/testsuiteruns/{executionId}/details`
+`/rest/mta/api/testsuiteruns/{testrunexecutionid}/details`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuiteruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -628,7 +627,7 @@ Example:
 
 ## GET testcaseruns
 
-Retrieve the test suite runs inside a test run.
+Retrieve the test case runs inside a test suite run.
 
 ### Request
 
@@ -636,16 +635,10 @@ Retrieve the test suite runs inside a test run.
 
 `/rest/mta/api/testcaseruns/{testsuiterunKey}/details`
 
-Example: 
+**Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcaseruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcaseruns/42/details`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
@@ -653,18 +646,27 @@ Example:
 ```json
 [
     {
-        "Key": 42,
+        "Key": 119,
         "Sequence": 1,
-        "Name": "Test Suite #1",
-        "Result": "ERROR",
-        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/42"
+        "Name": "Test Case #1",
+        "Result": "Pass",
+        "ResultMessage": "",
+        "Url": "http://localhost:8081/link/testcaserun/119"
     },
     {
-        "Key": 43,
+        "Key": 120,
         "Sequence": 2,
-        "Name": "Test Suite #2",
-        "Result": "Pass",
-        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuiterun/43"
+        "Name": "Test Case #2",
+        "Result": "ERROR",
+        "ResultMessage": "- TestCase: System error: missing parameters\n- TestStep [3]: Read access denied for member 'BerekendeKosten' of object 'PakketDienst.Pakket'",
+        "Url": "http://localhost:8081/link/testcaserun/120"
+    },
+    {
+        "Key": 121,
+        "Sequence": 3,
+        "Name": "Test Case #3",
+        "ResultMessage": "",
+        "Url": "http://localhost:8081/link/testcaserun/121"
     }
 ]
 ```
@@ -680,20 +682,42 @@ Cancel a running test run. This is only possible in the *Running* stage.
 
 `/rest/mta/api/testruns/{testrunexecutionid}/cancel`
 
-Example: 
+**Example:**
 
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/cancel`
 
-**Authorization**
-
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
 
 ### Responses
 
 Empty.
+
+
+
+## GET testrun archive
+
+Retrieve the [archived test run content](archive) (only available if Test Run Archiving is enabled).
+
+### Request
+
+**URL**
+
+`/rest/mta/api/testruns/{testrunexecutionid}/archive`
+
+**Example:**
+
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/archive`
+
+
+### Responses
+
+#### 200 example:
+```json
+{
+    "ExecutionId": "9724158a-a002-49a2-b4b7-79f18fbc9b15",
+    "TestRunInJson": [JSON CONTENT]
+}
+```
+
 
 ## Related topics
 - [Application](application)
