@@ -104,6 +104,9 @@ Use this step to get the results of the executed test suites inside the testrun 
 
 Use this step to get the results of the executed test cases inside the executed test suites from the previous step.
 
+## Visualized
+
+![CI/CD flow](images/cicdflow.png)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
