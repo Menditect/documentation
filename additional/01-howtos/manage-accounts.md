@@ -31,7 +31,7 @@ This role can manage [Applications](../../application), build [Test Configuratio
 ### CiCdApiUser
 This role can call endpoints in the [CI/CD API](cicd-config). 
 
-## MTAConnectionUser
+### MTAConnectionUser
 This role should **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](import-plugin#configuring-connection-user-in-mta).
 
 ## Feedback?
