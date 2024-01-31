@@ -19,7 +19,7 @@ When assigning user roles, these are the possibilities:
 Below are the roles that can be assigned when logged in as MTA Manager.
 
 :::note
-Logging in as **Administrator** will only allow you to create other Administrator Accounts, or MTA Manager Accounts. <br>Logging in as Administrator is only applicable [when MTA is hosted on-premises](run-mta-on-premise).
+Logging in as **Administrator** will only allow you to create other Administrator Accounts, or MTA Manager Accounts. <br/>Logging in as Administrator is only applicable [when MTA is hosted on-premises](run-mta-on-premise).
 :::
 
 ### MTAManager

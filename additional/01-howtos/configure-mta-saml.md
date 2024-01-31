@@ -40,9 +40,15 @@ Use this settings:
 | Encryption settings                          | *[Choose your preference, uploading a keypair is not required to enable this setting.]* |
 
 
-### Additional configuration 
+## User provisioning
 
-The SAML20 module will create an Account if a user can be authenticated by the IdP. However, by default, the Account will have no UserRoles.
+MTA uses user provisioning logic like any other Mendix App implementing SAML. It is not possible to change this logic.
+
+The SAML20 module will create an Account if a user can be authenticated by the IdP. However, by default, the Account will have no User Roles. 
+
+:::caution
+Currently, it is not possible to assign user roles from MTA (after the user has signed in) when implementing SAML. If user roles are assigned in MTA they will be reset from the IdP. The only way to assign user roles is using below logic.  
+:::
 
 In order to have MTA assign the desired roles to created Accounts, you must configure your IdP to use assertion attributes, as follows.
 
@@ -53,9 +59,10 @@ In order to have MTA assign the desired roles to created Accounts, you must conf
 - if the value is 'CiCdApiUser', then the 'CiCdApiUser' role will be assigned;
 ```
 
+More about User Roles can be found in the [Manage Accounts howto](manage-accounts#mta-user-roles).
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 29 November 2023
+Last updated 31 January 2024
 
