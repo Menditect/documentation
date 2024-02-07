@@ -127,7 +127,7 @@ All capitalized terms used in this Agreement that are not otherwise defined here
 
 | If Licensee is domiciled in: | Licensee is contracting with: | Notices should be addressed to: | The governing law is: | The courts having exclusive |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| A country in the European Union | Menditect B.V. | Databankweg 12G, 3821 AL, Amersfoort, The Netherlands | Dutch laws | Utrecht, The Netherlands |
+| Any country | Menditect B.V. | Databankweg 12G, 3821 AL, Amersfoort, The Netherlands | Dutch laws | Utrecht, The Netherlands |
 
 9.7. *Notices*. Any notice, approval, request, authorization, direction or other communication under this Agreement shall be given in writing and will be effective upon (a) personal delivery, (b) the second business day after mailing, or (c), except for notices of termination or an indemnifiable claim (“Legal Notices”), which shall clearly be identifiable as Legal Notices, the day of sending by email. Billing-related notices to Licensee will be addressed to the relevant billing contact designated by Licensee. All other notices to Licensee will be addressed to the relevant contact person / administrator designated by Licensee at the address stated at the beginning of this Agreement.
 
