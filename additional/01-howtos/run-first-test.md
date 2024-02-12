@@ -101,7 +101,7 @@ Next is configuring execution users. This is the Account that you would normally
 ![Add application](images/run_first_test/01.png)
 
 - Click the '+ Add' button.
-- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.
+- Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.<br/>Do NOT use the MTA Plugin User account.
 - Save. 
 
 
