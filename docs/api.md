@@ -192,7 +192,7 @@ A list of Applications, to allow downloading and adapting to another revision of
 
 ## GET application instances
 
-Retrieve all application instances of an application.
+Retrieve all application instances of an application, allowing the Application Instance Key to be specified in the Execute endpoints.
 
 ### Request
 
@@ -444,6 +444,10 @@ Any of below status descriptors:
 
 Initiate the execution of a test configuration for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+:::note
+The Key values in the body are those of the Application Instances. Please make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.
+:::
+
 ### Request
 
 **URL**
@@ -484,6 +488,10 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 Initiate the execution of a test suite for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+:::note
+The Key values in the body are those of the Application Instances. Please make sure to include the Instance Keys in the body for *all* Applications used by the Test Cases in the specified Test Suite.
+:::
+
 ### Request
 
 **URL**
@@ -522,6 +530,10 @@ The request for this endpoint is made up of both a URL and a JSON body.
 ## POST execute test case
 
 Initiate the execution of a single test case for a specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
+
+:::note
+The Key values in the body are those of the Application Instances. Please make sure to include the Instance Key in the body for the Application used by the specified Test Case, but also *all* Instance Keys of the Test Cases that the specified Test Case depends on.
+:::
 
 ### Request
 
