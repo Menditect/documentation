@@ -58,7 +58,7 @@ const config = {
           { id: 'eula', content: '@site/legal/eula.md' },
           { id: 'sla', content: '@site/legal/sla.md' },
           {
-            id: 'menditect-microflow-call-hierarchy-extension',
+            id: 'microflow-call-hierarchy-extension',
             content: '@site/additional/01-howtos/use-menditect-extension.md',
           },
         ],
