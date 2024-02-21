@@ -57,6 +57,10 @@ const config = {
           { id: 'privacy-policy', content: '@site/legal/pp.md' },
           { id: 'eula', content: '@site/legal/eula.md' },
           { id: 'sla', content: '@site/legal/sla.md' },
+          {
+            id: 'menditect-microflow-call-hierarchy-extension',
+            content: '@site/additional/01-howtos/use-menditect-extension.md',
+          },
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
