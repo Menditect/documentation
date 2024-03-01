@@ -30,6 +30,7 @@ Maintaining unit tests will have a different frequency than maintaining process 
 - During product refinement, determine whether a feature is **unit testable**.
 - **Test without security.** 
 - **Test using rollback.**
+- Use MTA's **test generation by microflow** feature as a starting point.
 - **Prevent reliance on the database.** Do not retrieve objects from database, and do not commit objects to database.
 - **Include asserts** to have MTA check the results automatically instead of manually inspecting them. 
 - **Use datavariation on relevant attributes**, to achieve higher test coverage. 
