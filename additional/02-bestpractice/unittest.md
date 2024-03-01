@@ -6,18 +6,21 @@ A unit test in MTA is a test that executes a single microflow, and creates the n
 
 ## Characteristics
 
-- A unit test generally does not leave traces in the Mendix app being tested, which means the result cannot be visually inspected there.
-- Unit tests are a direct prove that your code works.
-- Unit tests provide immediate time savings.
-- Unit tests are quick to build into MTA and thus a way to get to know MTA.
+- A unit test is executed on a single Mendix App, in a single session by a single user.
+- A unit test is quick to build into MTA and thus a good way to get to know MTA.
+- A unit test is a direct prove that your code works.
+- A unit test provides immediate time savings.
 - If defects are found with unit tests, this is a signal that defects will also exist at the process level, and these defects can be solved faster than if they were found with a process test.
+- A unit test generally does not leave traces in the Mendix app being tested, which means the result cannot be visually inspected there.
 
 ## Structure
 
-- Maintaining unit tests will have a different frequency than maintaining process tests.
-- Create one test configuration per Mendix application, for all unit tests, and only for unit tests.
-- Create one test suite per Mendix model module.
-- Create one test case per microflow to be tested.
+Maintaining unit tests will have a different frequency than maintaining process tests. Therefore it is recommended to use below structure in MTA:
+
+- One test configuration per Mendix application, for all unit tests, and only for unit tests.
+- One test suite per Mendix model module.
+- One test case per microflow to be tested.
+- Data variation on the test case level to reach higher test coverage for each microflow to be tested.
 
 ## Tips and tricks
 
@@ -26,8 +29,9 @@ A unit test in MTA is a test that executes a single microflow, and creates the n
 - Build a unit test **for every defect found**.
 - During product refinement, determine whether a feature is **unit testable**.
 - **Test without security.** 
+- **Test using rollback.**
 - **Prevent reliance on the database.** Do not retrieve objects from database, and do not commit objects to database.
-- **Include asserts** to have MTA check the results automatically instead of manual inspecting them. 
+- **Include asserts** to have MTA check the results automatically instead of manually inspecting them. 
 - **Use datavariation on relevant attributes**, to achieve higher test coverage. 
 
 ## Feedback?
