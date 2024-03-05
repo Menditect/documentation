@@ -43,10 +43,8 @@ Like updating tests, adding tests to your existing test configuration is also qu
 
 Downloading revisions and adapting test configurations can be time consuming, especially for large Mendix projects.
 
-Think twice before adapting. [Knowing when to adapt](../howtos/know-when-to-adapt-revision) helps save time if you have made changes to you App, and want to execute a test.
-
-Recommended is to set up a CI/CD pipeline, which uses the [API's in MTA](../../cicd). 
-Setup a scheduded nightly action running at 5:00 UTC that always [downloads the latest revision](../../cicd#post-download-revision) of the relevant development branch(es).
+Recommended is to set up a CI/CD pipeline, which uses the [API's in MTA](../../api). 
+Setup a scheduded nightly action running at 5:00 UTC that always [downloads the latest revision](../../api#post-download-revision) of the relevant development branch(es).
 This way, you will not have to wait for the download to complete during working hours. 
 Don't worry about your database filling up with unnessesary revision data, because MTA cleans up unused revisions, daily at 2:30 UTC. 
 Just make sure to run your CI/CD pipeline after that.
