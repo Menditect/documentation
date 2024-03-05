@@ -12,6 +12,13 @@ Data Variation Item or variant refers to an attribute value or assert value that
 Data Variation Items are always part of [Data Variation](datavariation).
 The value of a Data Variation Item is defined either in an the value of an attribute or in an [Assert on attribute](Assert/assert-attribute).
 
+:::info
+It is **not possible** to import a CSV or Excel file into the datavariation, for multiple reasons. 
+<br/>There are multiple operators possible on a single value, other than "Equals", like "Contains", "Greater than", "Range", etc. These are not part of a list of values in CSV or Excel.
+<br/>MTA performs an input validation according to the data type of the corresponding attribute, while entering the value. This cannot be done in a bulk import action.
+<br/>Values shown in data variation are only part of the full set of values used during a test run, since the rest of the values are fixed per-run, so importing would most likely result in a lot of duplication.
+:::
+
 ## Properties
 | Name           | Description                                                                                                                                                                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +27,9 @@ The value of a Data Variation Item is defined either in an the value of an attri
 | Value          | The value of the attribute or assert.                                                                                                                                                                                                                                                 |
 
 ## Business rules
+
 None.
+
 Note that not entering a value will be interpreted as 'Empty'.
 
 ## Actions on Data Variation Item
