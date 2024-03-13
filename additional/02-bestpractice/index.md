@@ -5,4 +5,6 @@ slug: /
 
 # Best practice
 
-These pages are meant to help you get the most out of MTA by determining your strategy to get started, optimizing your Mendix Apps for testing, preparing for unit testing and process testing and maintaining your test data.
+:::info
+**These pages are meant to help you <br/>- get the most out of MTA by determining your strategy to get started, <br/>- optimizing your Mendix Apps for testing, <br/>- preparing for unit testing and process testing<br/>- and maintaining your test data.**
+:::
