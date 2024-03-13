@@ -17,6 +17,8 @@ Processes that need to be tested will have different frequencies where they are 
 - One test suite for cleaning up test data, one test suite for creating (master)data, and one or more test suites per (sub)process for process testing.
 - Data variation on the test suite level.
 
+![The process test structure](bp_pt_01.png)
+
 ## Tips and tricks
 
 - Perform a **Product Risk Analysis** (PRA) to determine which process to test first. 

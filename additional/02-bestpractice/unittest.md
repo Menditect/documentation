@@ -19,8 +19,13 @@ Maintaining unit tests will have a different frequency than maintaining process 
 
 - One test configuration per Mendix application, for all unit tests, and only for unit tests.
 - One test suite per Mendix model module.
+
+![The unit test structure](bp_ut_01.png)
+
 - One test case per microflow to be tested.
 - Data variation on the test case level to reach higher test coverage for each microflow to be tested.
+
+![The unit test suite structure](bp_ut_02.png)
 
 ## Tips and tricks
 
