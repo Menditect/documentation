@@ -21,7 +21,9 @@ On the Test Case level, a choice has to be made between the Test Suite / Test Ca
 An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).
 
 For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
- 
+
+It is **not possible** to execute one single column in the data variation.
+
 ## Business rules
 
 None. 

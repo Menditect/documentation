@@ -29,9 +29,18 @@ To learn more about configuring an MTA user, read the How To section.
 - Click on "<i class="fal fa-plus-circle"></i> Add".
 - Select the Application you want to Add.
 
+:::note
+Applications that are not hosted in the Mendix cloud don't always show in this list.<br/>
+Add a Mendix App manually by using the <i class="fas fa-ellipsis"></i> button on the top right.
+:::
+
 ### View Project ID
 - Navigate to the "Applications" page.
 - Click on <i class="fal fa-info-circle"></i> to view the Project ID.
+
+:::note
+This Project ID is the same ID as the "App ID" that can be found in Mendix Sprintr, under the "Settings" page, after you selected an App.
+:::
 
 ### Unregister Application from MTA
 - Navigate to the "Applications" page .
