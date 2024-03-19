@@ -55,6 +55,7 @@ Menditect on-premise customers and partners **do not** have to set these values.
 | DeepLink.IndexPage          | index.html              |
 | DeepLink.LoginLocation      | /SSO/login?f=true&cont= |
 
+#### Scheduled events
 
 - Toggle these scheduled events to Currently Enabled:
 
@@ -66,6 +67,8 @@ MtaDataValidationModule.RunInterval
 TestconfigurationModule.RunTrunsCleanup
 TestconfigurationModule.RunTcnfsCleanup
 ```
+
+#### Firewall and network settings
 
 :::info
 Below steps are important and MTA will not work if these steps are skipped.
