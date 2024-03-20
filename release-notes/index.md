@@ -6,9 +6,9 @@
 
 #### Supported Mendix versions
 
-Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). The current highest release that is supported is 9.24.12.
-For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). **Mendix 10 support is monthly release based.**
-Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-pro/lts-mts.
+Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). <br/>
+Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
+For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 
 
@@ -24,7 +24,14 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ---------------------------------------------------- |
 | __New functionality__ | It is now possible to duplicate a "Create" teststep. |
 | __Release actions__   | None.                                                |
-|                       |
+
+<br/>
+
+
+| ID                    | MTA-1641                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Replaced the CI/CD v2 `/rest/cicd/v2` endpoints by the new Public API `/rest/mta/api` endpoints. <br/><br/>Changes are:<br/>- a new base URL for this Public API<br/>- added GET testsuites and GET testcases endpoints <br/>- added GET testsuiteruns and GET testcaseruns endpoint<br/>- added GET applications endpoint<br/>- added GET testconfiguration adapt status endpoint<br/>- added GET testrun archive endpoint |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 <br/>
 
@@ -33,7 +40,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Removed the API Key from the Mendix User in MTA. All MTA communication with Mendix is now secured via a Personal Access Token (PAT).            |
 | __Release actions__   | Create a new PAT and select these scopes: `mx:deployment:read` and `mx:modelrepository:repo:read`. Enter this PAT into MTA. Delete the old one. |
-|                       |
 
 <br/>
 
@@ -42,7 +48,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to customize the time slot where MTA runs scheduled events to cleanup data and verify internal data consistency.                                                                                                                                                                                                |
 | __Release actions__   | The default time slot to run internal scheduled events is between midnight (00:00) UTC and 04:00 AM. This can be adjusted to accomodate with another timezone, by changing the "ScheduledEventsOffsetUTC" constant. The format is an integer, where 0 is the default value, 12 is the maximum value, and -12 is the minimum value. |
-|                       |
 
 <br/>
 
@@ -51,7 +56,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Removed the MtaDocVersion constant that was used to link to the correct MTA version in the documentation site. The correct MTA version is now derived from the release version that is also shown on the top-right in MTA. |
 | __Release actions__   | None: the constant will be automatically removed upon deployment.                                                                                                                                                          |
-|                       |
 
 <br/>
 
@@ -60,7 +64,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to copy values from a String Unlimited attribute to the clipboard. |
 | __Release actions__   | None.                                                                                 |
-|                       |
 
 <br/>
 
@@ -69,7 +72,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Changed the page element that shows if a Test Configuration is adapting from a button to a text element with a spinner icon. |
 | __Release actions__   | None.                                                                                                                        |
-|                       |
 
 <br/>
 
@@ -78,7 +80,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | __New functionality__ | The first teststep in the Test Case no longer has an option to Move it Up. The last teststep in the Test Case no longer has an option to Move it Down. |
 | __Release actions__   | None.                                                                                                                                                  |
-|                       |
 
 <br/>
 
@@ -87,7 +88,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | When creating a Delete Teststep, the popup is automatically shown where the source teststep must be selected. |
 | __Release actions__   | None.                                                                                                         |
-|                       |
 
 <br/>
 
@@ -96,7 +96,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 | --------------------- | ------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Removed the MTA Manager "Mendix users" page. Only the logged in user can enter their Mendix user credentials. |
 | __Release actions__   | None.                                                                                                         |
-|                       |
 
 <br/>
 
