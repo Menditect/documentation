@@ -12,14 +12,14 @@ However it is possible to use a custom error flow in the microflow where the err
 
 Take a look at this simple microflow that calls a REST service:
 
-![REST call](images/rest_call_01.png)
+![REST call](images/rest-call-01.png)
 
 If the REST call fails, the microflow will throw an Exception. 
 If the microflow is called from MTA, the test run will fail with a technical error, stop executing, and any data generated in the test case will be rolled back.
 
 To assert that the REST call *will* fail, first change the microflow with a custom error flow that includes a validation message action:
 
-![REST call](images/rest_call_02.png)
+![REST call](images/rest-call-02.png)
 
 Now it is possible to [assert on the validation message](../../Assert/assert-validation-feedback) containing, for example, an HTTP Status Code 500.
 
