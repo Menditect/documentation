@@ -2,7 +2,7 @@
 
 ## Issue summary
 
-After [recording](../../recording) user actions, when stopping the recording, the teststep generation fails with an error.
+After recording user actions, when stopping the recording, the teststep generation fails with an error.
 
 
 ## Possible causes and resolutions
