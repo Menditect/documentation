@@ -2,7 +2,9 @@
 
 ## Definition
 
-A unit test in MTA is a test that executes a single microflow, and creates the necessary data in order to do so.
+A unit test in MTA is a test that executes a single microflow, and creates the necessary data in order to do so. 
+
+Menditect advises to start with building Unit tests when introducing Menditect Test Automation, given it's characteristics.
 
 ## Characteristics
 
