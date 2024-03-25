@@ -51,6 +51,20 @@ Therefore, creating and saving objects using microflows is preferred over using 
 
 ## Limitations
 
+### Retrieve 
+
+If the Menditect Plugin Module intercepts more than 8MB of data during a running recording, the recording will fail. 
+
+The cause of this could be that the test application is retrieving:
+- a large number of objects (more than 100), or
+- objects with a lot of attributes (more than 100), or
+- large attribute values (string attributes with more than 100 characters or unlimited), or
+- a combination of above. 
+ 
+Microflows that return more than 8MB of data, or front-end retrieve-from-database actions (in a datagrid / listview / nanoflow) that return more than 8MB of data, will consecutively break the recording.
+
+Redesign your microflows, nanoflows and page retrieve actions. Consider retrieving only a subset or using paging. Challenge design decisions if these amounts of data are sent to your application's front-end. If not sure what is causing the issue, use the [Mendix debugger](https://docs.mendix.com/refguide/debug-microflows-and-nanoflows/) to check how much data is being retrieved from the database. 
+
 ### Rollback 
 
 If an object is created and subsequently rolled back by the page and not by a microflow (for instance using a "Cancel changes" button in Mendix) it is not possible for the recorder to determine this rollback has taken place. 

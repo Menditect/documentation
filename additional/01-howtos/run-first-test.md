@@ -112,12 +112,7 @@ The structure of a test script in MTA looks like this:
 
 ![Add test configuration](images/run_first_test/test_configuration_scheme.png)
 
-
-Use the '...' button on your Test Configuration to show the quick menu and choose 'Test design'.
-
-![Add test configuration](images/run_first_test/08.png)
-
-MTA will show the Test Design page and with your Test Configuration preselected.
+The next step is adding a test suite.
 - Click the '+ Test suite' button to add a Test Suite to your Test Configuration.
 - Give it a name and optional description.
 - Save.
@@ -138,21 +133,16 @@ Next you will choose a microflow to test.
 - Click <i class="fal fa-ballot-check"></i> and then '+ Assert' to add an Assert.
 - Change 'Assert' to "Not equals". This will check that the output is not empty.
 - Save.
-<br/>
 
 ## 5. Execute and evaluate your test
 
-You have two options to execute your test:
-1. Click '<i class="fas fa-play"></i> Execute' to Execute the Test Configuration (shown at "1" in the image).
-2. You can also only run your Test Case with the <i class="fas fa-play"></i> button (shown at "2" in the image).
-
-![Add test configuration](images/run_first_test/09.png)
+Click '<i class="fas fa-play"></i> Execute test suite' to execute the test suite.
 
 After executing:
 - Click on 'Details' to view your test results.
 - Click on 'Results' to view the test suite run results.
 - MTA will open the Test suite run results. This page looks familiar, but is not the same as the page where you configure your Test Suite. You can go back with the '<i class="fas fa-cog"></i> Configure test suite' button.
 
-Did your test pass? Congratulations! <br/>
-If not, you can try setting the 'Apply security' to 'Off' on your Test Case. <br/>
-Additionally, you may want to read [this page](deal-with-failed-testrun).
+Did your test pass? Congratulations! 
+
+Did your test fail? Try setting the 'Apply security' to 'Off' on your Test Case. <br/>You may also want to read [this page](deal-with-failed-testrun).
