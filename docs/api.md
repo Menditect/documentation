@@ -598,6 +598,16 @@ Retrieve a summary of a test run to allow checking if the test run is either Run
 }
 ```
 
+Possible values for `Result` are:
+```json
+- "Running"
+- "StoppedByUser"
+- "Pass"
+- "AssertsFailed"
+- "ERROR"
+```
+
+
 ## GET testsuiteruns
 
 Retrieve the test suite runs inside a test run.
