@@ -35,6 +35,7 @@ Actions are described with as few literal descriptions to page elements as possi
 - [Construction Error](construction-error)
 - [Data Variation](datavariation)
 - [Data Variation Item](datavariation-item)
+- [Feedback Message](feedback-message)
 - [Recording](recording)
 - [Snapshot](snapshot)
 - [Test Case](test-case)
