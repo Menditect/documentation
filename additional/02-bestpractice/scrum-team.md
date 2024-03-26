@@ -14,4 +14,4 @@ Keeping the business involved is key to success. Plan recurring meetings to repo
 
 ## Get started
 
-Starting with test automation in an existing team can be challenging. Menditect advises to start defining realistic test objectives from day one. Start with building [unit tests](unittest) first, move on to [process testing](processtest) later. When stuck in MTA, make sure to use the <i class="fa-light fa-headset"></i> button to create a support ticket at Menditect.
+Starting with test automation in an existing team can be challenging. Menditect advises to start defining realistic test objectives from day one. Start with building [unit tests](unittest) first, move on to [process testing](processtest) later. Define coverage goals in MTA to stay motivated. When stuck in MTA, make sure to use the <i class="fa-light fa-headset"></i> button to create a support ticket at Menditect.
