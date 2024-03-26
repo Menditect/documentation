@@ -19,7 +19,7 @@ In order to prepare MTA for integration with your CI/CD pipeline you need to cre
 This is the username and password you will connect with to the API. 
 
 - Save and logout.
-- Then, login with the CI/CD user, click the <i class="fal fa-user-circle"></i> user icon on the top right and [fill in the PAT](access-mendix-model).
+- Then, login with the CI/CD user, click the <i class="fal fa-user-circle"></i> user icon on the top right and [fill in the API key and PAT](access-mendix-model).
 - Finally, if you also want MTA to push CI/CD testrun results to your own API endpoint, enter the Endpoint and Secret key.<br/>Read more about it on the [CI/CD result handling page](cicd-result).
 
 ## Check App status
