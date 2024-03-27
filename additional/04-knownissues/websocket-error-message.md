@@ -10,6 +10,9 @@ The MTA Plugin uses a websocket connection to connect to MTA:<br/>
 https://docs.mendix.com/refguide/websockets-in-runtime/
 
 On some business networks, such connections are blocked by network settings or firewall settings that disallow the websocket (ws or wss) protocol. 
+
+**Resolution**
+
 The connection to MTA is created on port 443; please make sure this port allows access for the websocket protocol.
 
 One way to test if the websocket connection is actively being blocked on the business network, is to try to connect to MTA from outside the business network, such as from home.
