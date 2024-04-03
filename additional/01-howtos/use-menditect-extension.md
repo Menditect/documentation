@@ -34,12 +34,39 @@ Mendix will open the Microflow Call Hierarchy tab and show all submicroflows cal
 Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 
-
 ## MTA integration
 
 ### Prerequisites
 
-### View microflow call hierarchy
+In order to use the MTA integration features of the Extension, some information needs to be entered in Studio Pro.
+
+- Click on <i class="fal fa-cog"></i> in the Microflow Call Hierarchy tab.
+- Enter the MTA Endpoint. For example: `https://mta-menditect-9fo2p.mendixcloud.com`
+- Enter the Username and Password for an existing Account in MTA, having at least `Tester` and `ApiUser` [User Roles](manage-accounts#mta-user-roles). 
+- Select which [Test configuration](../../test-configuration) to use, to store and view [Test Cases](../../test-case).
+- Save the settings.
+
+### Create Test
+
+To create a new Test Case, that will execute a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](#microflow-call-hierarchy) for a specific microflow
+- Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
+- Select which [Test suite](../../test-suite) to use, to store the new [Test Case](../../test-case).
+
+MTA will create a new Test Case for the microflow, and Studio Pro will open the MTA page with the new Test Case.
+
+:::note
+Sometimes you may see the login page at this point. Restarting Studio Pro will make the Extension login automatically.
+:::
+
+### View Test
+
+To view an existing Test Case executes a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](#microflow-call-hierarchy) for a specific microflow
+- Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
+- Select the [Test Case](../../test-case) that contains the [microflow teststep](../../Teststep/microflow) that calls the microflow.
+
+Studio Pro will open the MTA page with the new Test Case.
 
 ## Known limitations
 
