@@ -6,7 +6,7 @@ The Menditect Call Hierarchy extension is currently in BETA.
 
 ## Howto
 
-This document describes how to import and configure the [Menditect Call Hierarchy extension](https://marketplace.mendix.com/link/component/xxx), so you can use it in Mendix Studio Pro.
+This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx), so you can use it in Mendix Studio Pro.
 
 The Menditect Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to recusively view all submicroflows that are called from that microflow in a tree structure.
 
@@ -16,9 +16,9 @@ The Menditect Call Hierarchy extension can also be used to [generate a microflow
 ## Installation
 
 To install the Menditect Call Hierarchy extension:
-- Download [Mendix Studio Pro 10.6.3](https://marketplace.mendix.com/link/studiopro/10.6.3) or higher;
+- Download [Mendix Studio Pro 10.6.3 <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/studiopro/10.6.3) or higher;
 - Create or open a Mendix App in this version of Studio Pro;
-- Download the [Menditect Call Hierarchy extension](https://marketplace.mendix.com/link/component/xxx) from the Mendix marketplace;
+- Download the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) from the Mendix marketplace;
 - Import it in the Mendix App.
 
 ## Microflow Call Hierarchy
@@ -61,8 +61,8 @@ Sometimes you may see the login page at this point. Restarting Studio Pro will m
 
 ### View Test
 
-To view an existing Test Case executes a specific microflow from the Mendix model:
-- [Open the Microflow Call Hierarchy tab](#microflow-call-hierarchy) for a specific microflow
+To view an existing Test Case that executes a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](#microflow-call-hierarchy)  for a specific microflow
 - Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
 - Select the [Test Case](../../test-case) that contains the [microflow teststep](../../Teststep/microflow) that calls the microflow.
 
@@ -79,6 +79,6 @@ Studio Pro will open the MTA page with the new Test Case.
 
 ## Feedback?
 
-**Click on <i class="fas fa-pen-field"></i> to [leave a review](https://marketplace.mendix.com/link/component/xxx) of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
+**Click on <i class="fas fa-pen-field"></i> to [leave a review <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
 
 Last updated 3 April 2024

@@ -2,7 +2,7 @@
 
 #### Release date
 
-??? ????? 2024
+17 April 2024
 
 #### Supported Mendix versions
 
@@ -11,19 +11,27 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 
-
 ## Highlights in this release
 
-- !!!
+- [Menditect Call Hierarchy <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) Extension for Mendix Studio Pro 10 released!
+- Added much requested option to **Duplicate a teststep**!
+- Improved **Public API** (replacing the CI/CD API)!
 
 ## New functionality 
 
 
+| ID                    | MTA-1569                                                                                                                                                                                                                                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | We have released the Menditect Call Hierarchy Extension. With this extension, the entire call hierarchy of a single Microflow can be viewed in Mendix Studio Pro. The extension also allows for test generation from Studio Pro, whereby a Test Case is created to execute a microflow, and setting all necessary parameters. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                         |
 
-| ID                    | MTA-96                                               |
-| --------------------- | ---------------------------------------------------- |
-| __New functionality__ | It is now possible to duplicate a "Create" teststep. |
-| __Release actions__   | None.                                                |
+<br/>
+
+
+| ID                    | MTA-96                                                                                                                                                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to duplicate a "Create" teststep, allowing the creation of multiple objects of the same entity in the same Test Case, without having to use Data Variation and persist each object one-by-one. |
+| __Release actions__   | None.                                                                                                                                                                                                             |
 
 <br/>
 
@@ -36,10 +44,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | MTA-1595                                                                                                                                        |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Removed the API Key from the Mendix User in MTA. All MTA communication with Mendix is now secured via a Personal Access Token (PAT).            |
-| __Release actions__   | Create a new PAT and select these scopes: `mx:deployment:read` and `mx:modelrepository:repo:read`. Enter this PAT into MTA. Delete the old one. |
+| ID                    | MTA-1595                                                                                                                                                                |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Removed the API Key from the Mendix User in MTA. All MTA communication with Mendix is now secured via a Personal Access Token (PAT).                                    |
+| __Release actions__   | **Create a new PAT and select these scopes: <br/>- `mx:deployment:read` <br/>- `mx:modelrepository:repo:read`. <br/>Enter this PAT into MTA. <br/>Delete the old one.** |
 
 <br/>
 
