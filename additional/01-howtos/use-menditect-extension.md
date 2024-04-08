@@ -76,6 +76,7 @@ Studio Pro will open the MTA page with the new Test Case.
 - Using SSO for the credentials that are used to login to MTA is not supported.
 - The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
+- In rare occurences, Studio Pro will show a NGINX 404 "Page not found" error in the web viewer when trying to show MTA.
 
 ## Feedback?
 
