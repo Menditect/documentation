@@ -8,16 +8,17 @@ The Menditect Call Hierarchy extension is currently in BETA.
 
 This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx), so you can use it in Mendix Studio Pro.
 
-The Menditect Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to recusively view all submicroflows that are called from that microflow in a tree structure.
+The Menditect Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to hierarchically view all submicroflows that are called from that microflow in a tree structure.
 
-The Menditect Call Hierarchy extension can also be used to [generate a microflow test](generate-test#test-a-microflow), and view [test cases](../../test-case) where that microflow is executed.
+The Menditect Call Hierarchy extension can also be used to [generate a microflow test](generate-test#test-a-microflow) in Menditect Test Automation (MTA), and view [test cases](../../test-case) where that microflow is executed.
 
 
 ## Installation
 
+To use the Menditect Call Hierarchy extension, you must have installed [Mendix Studio Pro 10.6.3 <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/studiopro/10.6.3) or higher.
+
 To install the Menditect Call Hierarchy extension:
-- Download [Mendix Studio Pro 10.6.3 <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/studiopro/10.6.3) or higher;
-- Create or open a Mendix App in this version of Studio Pro;
+- Create or open a Mendix App in Studio Pro 10.6.3 or higher;
 - Download the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) from the Mendix marketplace;
 - Import it in the Mendix App.
 
@@ -29,7 +30,7 @@ To view the Microflow Call Hierarchy:
 - Select the "Menditect" sub menu.
 - Click on "Microflow Call Hierarchy".
 
-Mendix will open the Microflow Call Hierarchy tab and show all submicroflows called from the selected microflow, recursively.
+Mendix will open the Microflow Call Hierarchy tab and show all submicroflows called from the selected microflow, hierarchically.
 
 Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
@@ -38,17 +39,26 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 ### Prerequisites
 
-In order to use the MTA integration features of the Extension, some information needs to be entered in Studio Pro.
+In order to use the MTA integration features of the Extension, there are some prerequisites.
 
-- Click on <i class="fal fa-cog"></i> in the Microflow Call Hierarchy tab.
+#### Prepare MTA
+
+- Make sure to create an Account in MTA having at least `Tester` and `ApiUser` [User Roles](manage-accounts#mta-user-roles). 
+- [Create a Test configuration](../../test-configuration#create-a-new-test-configuration) that is linked to the App that you want to test.
+
+#### Configure Extension
+
+- Open the App that you want to test in Studio Pro.
+- Open the Microflow Call Hierarchy tab. 
+- Click on <i class="fal fa-cog"></i>.
 - Enter the MTA Endpoint. For example: `https://mta-menditect-9fo2p.mendixcloud.com`
-- Enter the Username and Password for an existing Account in MTA, having at least `Tester` and `ApiUser` [User Roles](manage-accounts#mta-user-roles). 
-- Select which [Test configuration](../../test-configuration) to use, to store and view [Test Cases](../../test-case).
+- Enter the Username and Password for the Account that you created in MTA to be used by the Extension.
+- Select the [Test configuration](../../test-configuration) that should be used to store and view [Test Cases](../../test-case).
 - Save the settings.
 
-### Create Test
+### Generate Test
 
-To create a new Test Case, that will execute a specific microflow from the Mendix model:
+To generate a new Test Case, that will execute a specific microflow from the Mendix model:
 - [Open the Microflow Call Hierarchy tab](#microflow-call-hierarchy) for a specific microflow
 - Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
 - Select which [Test suite](../../test-suite) to use, to store the new [Test Case](../../test-case).
