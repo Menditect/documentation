@@ -14,8 +14,9 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## Highlights in this release
 
 - [Menditect Call Hierarchy <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) Extension for Mendix Studio Pro 10 released!
-- Added much requested option to **Duplicate a teststep**!
-- Improved **Public API** (replacing the CI/CD API)!
+- Huge **performance improvement** in test runs.
+- Added much requested option to **Duplicate a teststep**.
+- Loads of refactoring done.
 
 ## New functionality 
 
@@ -24,6 +25,14 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | We have released the Menditect Call Hierarchy Extension. With this extension, the entire call hierarchy of a single Microflow can be viewed in Mendix Studio Pro. The extension also allows for test generation from Studio Pro, whereby a Test Case is created to execute a microflow, and setting all necessary parameters. |
 | __Release actions__   | None.                                                                                                                                                                                                                                                                                                                         |
+
+<br/>
+
+
+| ID                    | MTA-1789                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Improved the performance of test runs, resulting in test execution that is up to 4 times faster. |
+| __Release actions__   | None.                                                                                            |
 
 <br/>
 

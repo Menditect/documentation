@@ -2,11 +2,38 @@
 
 ## Definition
 
-This document describes how to generate tests. 
+This document describes how to make MTA generate tests, as alternative to creating tests manually. 
 
 Generating tests is implemented in different pages and levels in MTA. The aim of generating a test is to speed up test scripting, by using the Mendix model information available to MTA.
 
-## Test a microflow
+## From Mendix Studio Pro
+
+The [Menditect Call Hierarchy extension](use-menditect-extension) can be used to generate tests from Mendix Studio Pro.
+
+First, make sure to [connect the extension to MTA](connect-menditect-extension-to-mta).
+
+### Generate Test
+
+To generate a new Test Case, that will execute a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy) for a specific microflow
+- Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
+- Select which [Test suite](../../test-suite) to use, to store the new [Test Case](../../test-case).
+
+MTA will create a new Test Case for the microflow, and Studio Pro will open the MTA page with the new Test Case.
+
+
+### View Test
+
+To view an existing Test Case that executes a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy)  for a specific microflow
+- Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
+- Select the [Test Case](../../test-case) that contains the [microflow teststep](../../Teststep/microflow) that calls the microflow.
+
+Studio Pro will open the MTA page with the new Test Case.
+
+## In MTA
+
+### Generate Test
 
 It is possible to automatically generate teststeps to test a microflow. Teststeps will be generated to fill the input parameters of the microflow and the last teststep generated will call the microflow.
 
@@ -19,24 +46,12 @@ If the object is nonpersistable, or if the database does not contain any objects
 
 *Primitive* microflow parameters will always be filled with random values. This means that, if the microflow has no Object or List parameters, the result of a generated test case will always be only the teststep that calls the selected microflow.
 
-## Record and replay user actions
+### Record Test
 
 It is possible to generate teststeps based on recorded user actions, by creating a [Recording](../../recording). By executing the resulting teststeps, the recorded actions are essentially replayed.
-
-## Fill attributes values
-
-### Generate random values for attributes
-
-- For Create teststeps, see [Reference guide for Create teststep](../../Teststep/create#generate-random-values) 
-- For Change teststeps, see [Reference guide for Change teststep](../../Teststep/change#generate-random-values)
-
-### Use database values for attributes
-
-- For Create teststeps, see [Reference guide for Create teststep](../../Teststep/create#generate-assignments-from-database)
-- For Change teststeps, see [Reference guide for Change teststep](../../Teststep/change#generate-assignments-from-database)
 
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 January 2024
+Last updated 9 April 2024
