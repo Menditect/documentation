@@ -4,7 +4,7 @@
 
 This document describes how to make MTA generate tests, as alternative to creating tests manually. 
 
-Generating tests is implemented in different pages and levels in MTA. The aim of generating a test is to speed up test scripting, by using the Mendix model information available to MTA.
+You can generate a test from Mendix Studio Pro, or from inside MTA. The aim of generating a test is to speed up test scripting, by using the Mendix model information available to MTA.
 
 ## From Mendix Studio Pro
 
@@ -19,17 +19,35 @@ To generate a new Test Case, that will execute a specific microflow from the Men
 - Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
 - Select which [Test suite](../../test-suite) to use, to store the new [Test Case](../../test-case).
 
-MTA will create a new Test Case for the microflow, and Studio Pro will open the MTA page with the new Test Case.
+MTA will create a new Test Case for the microflow, and Studio Pro will open a new tab showing MTA, containing the new Test Case.
 
+:::info
+If the microflow that you have selected is new, you first have to commit it, [download the new revision](../../application-revision#change-the-application-revision-for-a-test-configuration) and [adapt the test suites in MTA](../../application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision).<br/>
+Otherwise, the microflow is unknown to MTA, and MTA will not be able to generate a Test Case for it.
+:::
+
+### Edit Test
+
+The Test Case that MTA generates will execute the microflow, and prepare data that the microflow needs for it's parameters. You may want to edit the data for these parameters. For security reasons, the MTA tab is read-only. 
+
+To Edit the Test Case that MTA has generated, just click on the <i class="fas fa-external-link"></i> button in the MTA tab.
+
+MTA will open in a new browser window, showing the Test Case that was generated. Here you can [edit teststeps](../../Teststep), add [asserts](../../Assert) and add [data variation](../../datavariation).
+
+### Run Test
+
+If your application is running in Studio Pro, and the [Plugin is connected to MTA](import-plugin), you can now run your test. 
+
+Just click on "Execute test case" button in the MTA tab.
 
 ### View Test
 
 To view an existing Test Case that executes a specific microflow from the Mendix model:
-- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy)  for a specific microflow
+- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy) for a specific microflow
 - Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
 - Select the [Test Case](../../test-case) that contains the [microflow teststep](../../Teststep/microflow) that calls the microflow.
 
-Studio Pro will open the MTA page with the new Test Case.
+Studio Pro will open a tab showing MTA, containing the Test Case.
 
 ## In MTA
 
