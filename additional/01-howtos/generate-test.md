@@ -28,11 +28,9 @@ Otherwise, the microflow is unknown to MTA, and MTA will not be able to generate
 
 ### Edit Test
 
-The Test Case that MTA generates will execute the microflow, and prepare data that the microflow needs for it's parameters. You may want to edit the data for these parameters. For security reasons, the MTA tab is read-only. 
+The Test Case that MTA generates will execute the microflow, and prepare data that the microflow needs for it's parameters. The data that is used is *randomly generated*. It is not yet possible to use database data, that is only possible from [inside MTA](#in-mta). Therefore, you may want to edit the data for the microflow parameters. For security reasons, the MTA tab is read-only. 
 
-To Edit the Test Case that MTA has generated, just click on the <i class="fas fa-external-link"></i> button in the MTA tab.
-
-MTA will open in a new browser window, showing the Test Case that was generated. Here you can [edit teststeps](../../Teststep), add [asserts](../../Assert) and add [data variation](../../datavariation).
+To Edit the Test Case that MTA has generated, just click on the <i class="fas fa-external-link"></i> button in the MTA tab. MTA will open in a new browser window, showing the Test Case that was generated. Here you can [edit teststeps](../../Teststep), add [asserts](../../Assert) and add [data variation](../../datavariation).
 
 ### Run Test
 
