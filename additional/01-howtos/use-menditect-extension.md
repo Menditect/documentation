@@ -66,7 +66,7 @@ To generate a new Test Case, that will execute a specific microflow from the Men
 MTA will create a new Test Case for the microflow, and Studio Pro will open the MTA page with the new Test Case.
 
 :::note
-Sometimes you may see the login page at this point. Restarting Studio Pro will make the Extension login automatically.
+Sometimes you may see the login page at this point, or get a 404 (page not found) error. Restarting Studio Pro will make the Extension login automatically. If login problems persist, this may be result of the [configuration of SAML SSO in MTA](configure-mta-saml).
 :::
 
 ### View Test
