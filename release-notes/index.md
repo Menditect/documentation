@@ -11,6 +11,11 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 
+**See what's new!**
+<iframe src="https://player.vimeo.com/video/932536786?h=1540a8b7ed" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
+
+
 ## Highlights in this release
 
 - [Menditect Call Hierarchy <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/xxx) Extension for Mendix Studio Pro 10 released!
