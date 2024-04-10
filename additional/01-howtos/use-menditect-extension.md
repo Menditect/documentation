@@ -35,13 +35,10 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
 - Excluded microflows are not viewed differently than included microflows.
 - If the project contains errors, the call hierarchy is not reliable.
-- Using SSO for the credentials that are used to login to MTA is not supported.
-- Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
-- The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
-- A large number of user sessions can appear in MTA when using the extension intensively. 
+- For Menditect software used by non-paying Menditect users the support level is “Low” by default (see Menditect [Service Level Agreement](../../legal/sla)).
 
 ## Feedback?
 
-**Click on <i class="fas fa-pen-field"></i> to leave a review  of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
+**Click on <i class="fas fa-pen-field"></i> in the extension, to leave a review in the Mendix Marketplace!**
 
 Last updated 10 April 2024
