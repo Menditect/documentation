@@ -1,9 +1,5 @@
 # Use Menditect Extension in Studio Pro
 
-:::caution
-The Menditect Call Hierarchy extension is currently in BETA.
-:::
-
 ## Howto
 
 This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225133), so you can use it in Mendix Studio Pro.
@@ -46,6 +42,7 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
 - The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
+- Using the extension in Studio Pro under MacOS is currently not supported.
 
 ## Feedback?
 

@@ -21,9 +21,14 @@ If you want to run tests from Studio Pro, make sure to [configure the plugin](im
 - Enter the MTA Endpoint. For example: `https://mta-menditect-9fo2p.mendixcloud.com`
 - Enter the Username and Password for the Account that you created in MTA to be used by the Extension.
 - Select the [Test configuration](../../test-configuration) that should be used to store and view [Test Cases](../../test-case).
-- Save the settings.
+- Save the settings. You can now [Generate tests from Studio Pro!](generate-test#from-mendix-studio-pro)
 
-You can now [Generate tests from Studio Pro!](generate-test#from-mendix-studio-pro)
+
+:::info
+Settings are stored here:<br/>
+`C:\Users\{your_user_name}\AppData\Local\Menditect\Microflow Call Hierarchy`
+:::
+
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
