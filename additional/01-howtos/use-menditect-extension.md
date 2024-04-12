@@ -1,5 +1,11 @@
 # Use Menditect Extension in Studio Pro
 
+**Watch installation video!**
+<iframe src="https://player.vimeo.com/video/932891691" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
+
+
+
 ## Howto
 
 This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225133), so you can use it in Mendix Studio Pro.

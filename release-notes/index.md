@@ -26,6 +26,14 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## New functionality 
 
 
+| ID                    | MTA-1595                                                                                                                                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | For the process of adding a new Application to MTA, the Mendix user is now authorized using a Personal Access Token (PAT). We have removed the API Key from the Mendix User in MTA. All communication with Mendix is now secured via PAT's. |
+| __Release actions__   | **Create a new PAT and select these scopes: <br/>- `mx:deployment:read` <br/>- `mx:modelrepository:repo:read`. <br/>Enter this PAT into MTA. <br/>Delete the old one.**                                                                     |
+
+<br/>
+
+
 | ID                    | MTA-1569                                                                                                                                                                                                                                                                                                                      |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | We have released the Menditect Call Hierarchy Extension. With this extension, the entire call hierarchy of a single Microflow can be viewed in Mendix Studio Pro. The extension also allows for test generation from Studio Pro, whereby a Test Case is created to execute a microflow, and setting all necessary parameters. |
@@ -57,13 +65,6 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-
-| ID                    | MTA-1595                                                                                                                                                                |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Removed the API Key from the Mendix User in MTA. All MTA communication with Mendix is now secured via a Personal Access Token (PAT).                                    |
-| __Release actions__   | **Create a new PAT and select these scopes: <br/>- `mx:deployment:read` <br/>- `mx:modelrepository:repo:read`. <br/>Enter this PAT into MTA. <br/>Delete the old one.** |
-
-<br/>
 
 
 | ID                    | MTA-1733                                                                                                                                                                                                                                                                                                                           |
