@@ -18,10 +18,11 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-- [Menditect Call Hierarchy <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211) Extension for Mendix Studio Pro 10 released!
-- Huge **performance improvement** in test runs.
+- MTA integration with Mendix Studio Pro via the Menditect Call Hierarchy Extension!<br/>[View the installation guide here](../additional/howtos/use-microflow-call-hierarchy-extension).
+- Significant **performance improvement** in test runs.
 - Added much requested option to **Duplicate a teststep**.
 - Loads of refactoring done.
+
 
 ## New functionality 
 

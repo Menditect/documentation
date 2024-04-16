@@ -8,14 +8,14 @@ You can generate a test from Mendix Studio Pro, or from inside MTA. The aim of g
 
 ## From Mendix Studio Pro
 
-The [Menditect Call Hierarchy extension](use-menditect-extension) can be used to generate tests from Mendix Studio Pro.
+The [Menditect Call Hierarchy extension](use-microflow-call-hierarchy-extension) can be used to generate tests from Mendix Studio Pro.
 
 First, make sure to [connect the extension to MTA](connect-menditect-extension-to-mta).
 
 ### Generate Test
 
 To generate a new Test Case, that will execute a specific microflow from the Mendix model:
-- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy) for a specific microflow
+- [Open the Microflow Call Hierarchy tab](use-microflow-call-hierarchy-extension#microflow-call-hierarchy) for a specific microflow
 - Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
 - Select which [Test suite](../../test-suite) to use, to store the new [Test Case](../../test-case).
 
@@ -41,7 +41,7 @@ Just click on "Execute test case" button in the MTA tab.
 ### View Test
 
 To view an existing Test Case that executes a specific microflow from the Mendix model:
-- [Open the Microflow Call Hierarchy tab](use-menditect-extension#microflow-call-hierarchy) for a specific microflow
+- [Open the Microflow Call Hierarchy tab](use-microflow-call-hierarchy-extension#microflow-call-hierarchy) for a specific microflow
 - Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
 - Select the [Test Case](../../test-case) that contains the [microflow teststep](../../Teststep/microflow) that calls the microflow.
 
