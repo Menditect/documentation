@@ -1,5 +1,5 @@
 ---
-sidebar_position: 18
+sidebar_position: 17
 ---
 
 
@@ -32,9 +32,9 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 ### Create a new Test Configuration
 - Navigate to the "Test configurations" page. 
 - Add a new Test Configuration and enter a Name and optional Description. 
-- Choose whether the Test Configuration should be Ci/Cd enabled. 
-
-For the full explanation on how to add a Test Configuration, read the [How To](additional/howtos/run-first-test#2-add-a-test-configuration).
+- Select the [Applications](application) to test.
+- Select the [Revisions](application-revision) that you want to base your test on, for each selected Application.
+- Select the [Instance](application-instance) where you want to execute your test, for each selected Application.
 
 ### Edit a Test Configuration
 
@@ -83,4 +83,4 @@ See [Snapshot](snapshot).
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 27 March 2024

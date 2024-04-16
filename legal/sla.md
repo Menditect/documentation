@@ -74,7 +74,7 @@ For solving incidents in MTA software, Menditect offers the following response t
 | __Medium__   | Next Business Day      | t.b.d.               | Reasonable effort       | t.b.d.               |
 | __Low__      | Reasonable effort      | t.b.d.               | At Menditect discretion | t.b.d.               |
 
-For Menditect software used by non-paying Menditect users the support level is “Low” by default. 
+For Menditect software used by non-paying Menditect users the support level is “Low” by default.
 
 ## 2 Mendix App Platform
 

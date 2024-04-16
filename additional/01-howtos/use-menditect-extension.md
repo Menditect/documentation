@@ -1,10 +1,19 @@
 # Use Menditect Extension in Studio Pro
 
+**Watch installation video!**
+<iframe src="https://player.vimeo.com/video/932891691" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
+
+
+
 ## Howto
 
-This document describes how to import and configure the Menditect Call Hierarchy extension, so you can use it in Mendix Studio Pro.
+This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211), so you can use it in Mendix Studio Pro.
 
 The Menditect Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to hierarchically view all submicroflows that are called from that microflow in a tree structure.
+
+The Menditect Call Hierarchy extension can also be used to [generate a microflow test](generate-test#from-mendix-studio-pro) in Menditect Test Automation (MTA), and view [test cases](../../test-case) where that microflow is executed.
+
 
 ## Installation
 
@@ -12,7 +21,7 @@ To use the Menditect Call Hierarchy extension, you must have installed [Mendix S
 
 To install the Menditect Call Hierarchy extension:
 - Create or open a Mendix App in Studio Pro 10.6.3 or higher;
-- Download the Menditect Call Hierarchy extension from the Mendix marketplace;
+- Download the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211) from the Mendix marketplace;
 - Import it in the Mendix App.
 
 ## Microflow Call Hierarchy
@@ -35,10 +44,14 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
 - Excluded microflows are not viewed differently than included microflows.
 - If the project contains errors, the call hierarchy is not reliable.
-- For Menditect software used by non-paying Menditect users the support level is “Low” by default (see Menditect [Service Level Agreement](../../legal/sla)).
+- Using SSO for the credentials that are used to login to MTA is not supported.
+- Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
+- The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
+- A large number of user sessions can appear in MTA when using the extension intensively. 
+- Using the extension in Studio Pro under MacOS is currently not supported.
 
 ## Feedback?
 
-**Click on <i class="fas fa-pen-field"></i> in the extension, to leave a review in the Mendix Marketplace!**
+**Click on <i class="fas fa-pen-field"></i> to [leave a review <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211) of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
 
-Last updated 10 April 2024
+Last updated 3 April 2024

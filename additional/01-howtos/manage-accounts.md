@@ -28,8 +28,8 @@ This role can Manage Accounts and configure Mendix credentials for Accounts. It 
 ### Tester
 This role can manage [Applications](../../application), build [Test Configurations](../../test-configuration) and [run tests](../../test-run). Use this role when creating Accounts for users who want to use MTA for testing.
 
-### CiCdApiUser
-This role can call endpoints in the [CI/CD API](cicd-config). 
+### ApiUser
+This role can call endpoints in the [Public API](../../api). 
 
 ### MTAConnectionUser
 This role should **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](import-plugin#configuring-connection-user-in-mta).

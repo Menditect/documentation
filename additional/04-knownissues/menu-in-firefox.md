@@ -15,6 +15,8 @@ This popup menu is using the `has` selector in CSS.
 This feature is enabled by default in Chromium browsers, and disabled by default in Firefox.
 Most other browsers do not support the feature.
 
+**Resolution**
+
 To enable the feature in **Firefox**: 
 - navigate to `about:config` in your Address bar
 - search for `has-selector` like this:

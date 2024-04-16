@@ -15,7 +15,7 @@ Despite these advantages, there can be scenario's that creating teststeps by han
 
 This document describes what aspects to consider when creating such a recording.
 Other documents about this topic are:
-- [Recorder](../../generated-test) in the reference guide.
+- [Recording](../../recording) in the reference guide.
 - [Complete recorded actions](../howtos/record-user-actions) in the How to section.
  
 ## Guidelines
@@ -50,6 +50,20 @@ If an object is created or changed by a microflow the recorder will create a Mic
 Therefore, creating and saving objects using microflows is preferred over using page actions.
 
 ## Limitations
+
+### Retrieve 
+
+If the Menditect Plugin Module intercepts more than 8MB of data during a running recording, the recording will fail. 
+
+The cause of this could be that the test application is retrieving:
+- a large number of objects (more than 100), or
+- objects with a lot of attributes (more than 100), or
+- large attribute values (string attributes with more than 100 characters or unlimited), or
+- a combination of above. 
+ 
+Microflows that return more than 8MB of data, or front-end retrieve-from-database actions (in a datagrid / listview / nanoflow) that return more than 8MB of data, will consecutively break the recording.
+
+Redesign your microflows, nanoflows and page retrieve actions. Consider retrieving only a subset or using paging. Challenge design decisions if these amounts of data are sent to your application's front-end. If not sure what is causing the issue, use the [Mendix debugger](https://docs.mendix.com/refguide/debug-microflows-and-nanoflows/) to check how much data is being retrieved from the database. 
 
 ### Rollback 
 

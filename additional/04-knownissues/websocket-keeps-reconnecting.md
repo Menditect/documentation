@@ -12,6 +12,8 @@ The issue is due to a default timeout setting on the container orchestration sof
 The resolution is to extend this setting (the WebSocket Gateway Default Timeout for Mendix Private Cloud). 
 How or where to adjust this setting depends on the software being used.
 
+**Resolution**
+
 The setting should be adjusted to an adequate time period, higher than the highest expected execution time of a Test Run. 
 For example: one hour (3600 sec).
 

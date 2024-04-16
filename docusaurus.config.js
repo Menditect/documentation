@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.5.0',
+              label: '2.6.0',
               path: '/',
             },
           },
@@ -64,14 +64,15 @@ const config = {
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
+          { id: 'api', content: 'api.md', versions: ['2.6.0'] },
           { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
           { id: 'archive', content: 'archive.md', versions: 'ALL' },
-          { id: 'cicd', content: 'cicd.md', versions: 'ALL' },
           { id: 'assert-attribute', content: 'Assert/assert-attribute.md', versions: 'ALL' },
           { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
+          { id: 'cicd', content: 'cicd.md', versions: ['2.5.0'] },
           { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
           { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
@@ -83,6 +84,7 @@ const config = {
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'feedback-message.md', versions: 'ALL' },
           { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
+          { id: 'construction-error', content: 'construction-error.md', versions: 'ALL' },
         ],
       }),
     ],

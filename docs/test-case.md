@@ -1,5 +1,5 @@
 ---
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 
@@ -59,7 +59,7 @@ When the Test Suite execution hits the Test Case, the Test Case's Execution User
 
 This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
 
-Different then when [generating from inside the test suite](generated-test), you can choose to generate based on random data, or to use from existing data from a database.
+Different then when [generating from inside the test suite](recording.md), you can choose to generate based on random data, or to use from existing data from a database.
 
 :::info
 Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
