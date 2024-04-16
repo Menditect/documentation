@@ -2,7 +2,7 @@
 
 ## Howto
 
-This document describes how to connect the [Menditect Call Hierarchy extension](use-menditect-extension) to MTA, in order to view and generate test cases from Mendix Studio Pro.
+This document describes how to connect the [Menditect Call Hierarchy extension](use-microflow-call-hierarchy-extension) to MTA, in order to view and generate test cases from Mendix Studio Pro.
 
 ## Prepare MTA
 

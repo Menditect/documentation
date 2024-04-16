@@ -59,7 +59,7 @@ const config = {
           { id: 'sla', content: '@site/legal/sla.md' },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/use-menditect-extension.md',
+            content: '@site/additional/01-howtos/use-microflow-call-hierarchy-extension.md',
           },
           {
             id: 'mta-intergration-mch-extension',
