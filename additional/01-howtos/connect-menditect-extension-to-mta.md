@@ -25,6 +25,8 @@ If you want to run tests from Studio Pro, make sure to [configure the plugin](im
 
 
 :::info
+The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
+
 Settings are stored here:<br/>
 `C:\Users\{your_user_name}\AppData\Local\Menditect\Microflow Call Hierarchy`
 :::
