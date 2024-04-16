@@ -8,7 +8,7 @@
 
 ## Howto
 
-This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225133), so you can use it in Mendix Studio Pro.
+This document describes how to import and configure the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211), so you can use it in Mendix Studio Pro.
 
 The Menditect Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to hierarchically view all submicroflows that are called from that microflow in a tree structure.
 
@@ -21,7 +21,7 @@ To use the Menditect Call Hierarchy extension, you must have installed [Mendix S
 
 To install the Menditect Call Hierarchy extension:
 - Create or open a Mendix App in Studio Pro 10.6.3 or higher;
-- Download the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225133) from the Mendix marketplace;
+- Download the [Menditect Call Hierarchy extension <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211) from the Mendix marketplace;
 - Import it in the Mendix App.
 
 ## Microflow Call Hierarchy
@@ -52,6 +52,6 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 ## Feedback?
 
-**Click on <i class="fas fa-pen-field"></i> to [leave a review <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225133) of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
+**Click on <i class="fas fa-pen-field"></i> to [leave a review <i class="fas fa-external-link"></i>](https://marketplace.mendix.com/link/component/225211) of the Microflow Call Hierarchy extension on the Mendix Marketplace!**
 
 Last updated 3 April 2024
