@@ -46,7 +46,6 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - If the project contains errors, the call hierarchy is not reliable.
 - Using SSO for the credentials that are used to login to MTA is not supported.
 - Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
-- The credentials that are used to login to MTA are stored in the Windows Account settings. This is done to prevent having to manually login everytime the extension is used.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
 - Using the extension in Studio Pro under MacOS is currently not supported.
 
