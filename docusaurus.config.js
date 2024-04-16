@@ -61,6 +61,10 @@ const config = {
             id: 'microflow-call-hierarchy-extension',
             content: '@site/additional/01-howtos/use-menditect-extension.md',
           },
+          {
+            id: 'mta-intergration-mch-extension',
+            content: '@site/additional/01-howtos/connect-menditect-extension-to-mta.md',
+          },
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
