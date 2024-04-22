@@ -43,10 +43,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | MTA-1789                                                                                         |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Improved the performance of test runs, resulting in test execution that is up to 4 times faster. |
-| __Release actions__   | None.                                                                                            |
+| ID                    | MTA-1789                                                                      |
+| --------------------- | ----------------------------------------------------------------------------- |
+| __New functionality__ | Improved the performance of test runs, reducing the execution time up to 40%. |
+| __Release actions__   | None.                                                                         |
 
 <br/>
 
