@@ -48,8 +48,11 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - It is not possible to view the call hierarchy of microflows in the System module.
 - Using SSO for the credentials that are used to login to MTA is not supported.
 - Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
+- Clicking the `Open in MTA to Edit` button on the "Test runs" page currently results in an empty browser tab.
+- Using mouse back & forward buttons to navigate back and forward in the webviewer, results in unexpected behaviour of the extension.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
 - Using the extension in Studio Pro under MacOS is currently not supported.
+
 
 ## Feedback?
 
