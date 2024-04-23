@@ -44,6 +44,8 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
 - Excluded microflows are not viewed differently than included microflows.
 - If the project contains errors, the call hierarchy is not reliable.
+- If the Test Configuration that was configured for saving created Test Cases is deleted, the extension will show "An unexpected error has occured".
+- It is not possible to view the call hierarchy of microflows in the System module.
 - Using SSO for the credentials that are used to login to MTA is not supported.
 - Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
