@@ -21,3 +21,9 @@ As part of the test strategy, **define the maximum number of variations** that a
 - Probability  (more probable scenarios first)
 - Risk (high risk scenarios first)
 - Impact (high impact scenarios first)
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 9 April 2024
