@@ -86,7 +86,7 @@ This is the username that is set for the Connection user in MTA. The default val
 #### `MTAConnectionPassword`
 This is the password that is set for the Connection user in MTA [in the previous step](#configuring-connection-user-in-mta).
 
-#### `MTAWebSocketURL`
+#### `MTAConnectionUrl`
 This is the URL that the app will use to connect to MTA. The URL is setup as follows:
 
 *wss://{URL to MTA}*
