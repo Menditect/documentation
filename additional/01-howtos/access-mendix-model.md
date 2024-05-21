@@ -11,8 +11,8 @@ A Personal Access Token (PAT) needs to be created to make communication possible
 
 - Go to https://user-settings.mendix.com/link/developersettings
 - Click "New token". Name it 'MTA Test'.
-- Select `mx:deployment:read`
-- Select `mx:modelrepository:repo:read`
+- Under **`Deployment Mendix Cloud`**, <br/>select `mx:deployment:read` 
+- Under **`Model Repository`**, <br/>select `mx:modelrepository:repo:read` 
 - Click "Create".
 - Store it in the password manager so you don't lose it.
 

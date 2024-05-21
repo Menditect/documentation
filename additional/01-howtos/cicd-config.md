@@ -6,27 +6,27 @@ This document describes how to configure MTA to use the CI/CD API.
 
 **Looking for the CI/CD API docs?** These were moved to the [reference guide](../../api).
 
-## Create CI/CD user
+## Create API user
 
-In order to prepare MTA for integration with your CI/CD pipeline you need to create a user in MTA with *only* the Tester and CiCdApiUser roles. 
+In order to prepare MTA for integration with your CI/CD pipeline you need to create a user in MTA with *only* the Tester and ApiUser roles. 
 
 - First, login as an MTA Manager. Do not login with an account that has Administrator rights!
 - Navigate to MTA management and then to MTA Users. Create a New local MTA user.
 - Then, fill in the form like this:
 
-![Create Ci Cd user](images/cicd-create-account.png)
+![Create API user](images/cicd-create-account.png)
 
 This is the username and password you will connect with to the API. 
 
 - Save and logout.
-- Then, login with the CI/CD user, click the <i class="fal fa-user-circle"></i> user icon on the top right and [fill in the PAT](access-mendix-model).
-- Finally, if you also want MTA to push CI/CD testrun results to your own API endpoint, enter the Endpoint and Secret key.<br/>Read more about it on the [CI/CD result handling page](cicd-result).
+- Then, login with the API user, click the <i class="fal fa-user-circle"></i> user icon on the top right and [fill in the PAT](access-mendix-model).
+- Finally, if you also want MTA to push testrun results to your own API endpoint, enter the Endpoint and Secret key.<br/>Read more about it on the [CI/CD result handling page](cicd-result).
 
 ## Check App status
-The CI/CD API can be used in a pipeline that performs deployments of a Mendix Application. But the CI/CD API does not check if the deployment is done.
+The Public API can be used in a pipeline that performs deployments of a Mendix Application. But it does not check if the deployment is done.
 
 :::info 
-Before executing a CI/CD testrun, check that the deployment is completed and the status of the <a href="../../application-instance">Application Instance</a> is "Running".
+Before executing a testrun, check that the deployment is completed and the status of the <a href="../../application-instance">Application Instance</a> is "Running".
 :::
 
 ## Cleanup testruns
