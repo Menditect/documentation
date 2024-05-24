@@ -1,10 +1,11 @@
 # Import plugin
 
-**NEW: Watch the video instead!**
+In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. 
+This is the MTA Plugin module. 
+To import and configure this module, read this page or watch this video.
+
 <iframe src="https://player.vimeo.com/video/846213936?h=494a93fd4f" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
-
-In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. This is the MTA Plugin module. Each version of MTA comes with a specific version of the MTA Plugin module. The versions are however not the same, because sometimes the MTA Plugin needs to be updated or patched resulting in a newer version.
 
 If you are [running MTA on Premise](run-mta-on-premise), you may notice that MTA also contains an MTA Plugin module. This is because Menditect regression-tests MTA with MTA. The information in this page is regarding the customer Application to test. For Menditect on-premise customers and partners: please don't import the MTA Plugin module into MTA.
 
@@ -14,7 +15,9 @@ In no case should you make changes to elements inside the MtaPluginModule. <br/>
 
 ## Importing MTA Plugin
 
-Download the MTA plugin module from Mendix Marketplace:
+Download the MTA plugin module from Mendix Marketplace. 
+
+Make sure to check your app's Mendix version before importing the module. 
 
 | Mendix Version                 | Url                                                       |
 | ------------------------------ | --------------------------------------------------------- |
@@ -33,9 +36,9 @@ After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar f
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 :::
 
-### Upgrading to a newer runtime version
+### Upgrading Mendix 
 
-To upgrade the major version of your Mendix App (for example, from Mendix 8.18 to 9.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
+To upgrade the major version of your Mendix App (for example, from Mendix 9.24 to 10.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
 
 ## Configuring MTA Plugin
 
@@ -62,10 +65,13 @@ If you have already set the password previously for another App, use that passwo
 
 ### Setting Constants
 
-To configure the MTA Plugin, there are 5 constants that you have to assign a value. If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
+To configure the MTA Plugin, there are 5 constants that you have to assign a value. 
+If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
 
-:::info
 To find the values for any of these Constants, simply [open the details of the Application Instance](../../application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
+
+:::warning
+Never set these constants on a Production environment!
 :::
 
 #### `ApplicationInstanceToken`
