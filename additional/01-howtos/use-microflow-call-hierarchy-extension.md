@@ -39,19 +39,24 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 ## Known limitations
 
+### Call hierarchy limitations
+
 - Rules are not shown in the hierarchy view.
 - Viewing a very large microflow call hierarchy will crash the extension webviewer tab in Studio Pro.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
 - Excluded microflows are not viewed differently than included microflows.
 - If the project contains errors, the call hierarchy is not reliable.
-- If the Test Configuration that was configured for saving created Test Cases is deleted, the extension will show "An unexpected error has occured".
 - It is not possible to view the call hierarchy of microflows in the System module.
+- Using the extension in Studio Pro under MacOS is currently not supported.
+
+### MTA integration limitations
+
+- If the Test Configuration that was configured for saving created Test Cases is deleted, the extension will show "An unexpected error has occured".
 - Using SSO for the credentials that are used to login to MTA is not supported.
 - Incorrect configuration of the constants in the Deeplink module may lead to errors in the web viewer.
 - Clicking the `Open in MTA to Edit` button on the "Test runs" page currently results in an empty browser tab.
 - Using mouse back & forward buttons to navigate back and forward in the webviewer, results in unexpected behaviour of the extension.
 - A large number of user sessions can appear in MTA when using the extension intensively. 
-- Using the extension in Studio Pro under MacOS is currently not supported.
 
 
 ## Feedback?
