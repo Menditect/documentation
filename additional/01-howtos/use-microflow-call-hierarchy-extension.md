@@ -43,6 +43,7 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 - Rules are not shown in the hierarchy view.
 - Viewing a very large microflow call hierarchy will crash the extension webviewer tab in Studio Pro.
+- The order of microflows as shown in the hierarchy view, is not always the same as they are called in the microflow.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
 - Excluded microflows are not viewed differently than included microflows.
 - If the project contains errors, the call hierarchy is not reliable.
