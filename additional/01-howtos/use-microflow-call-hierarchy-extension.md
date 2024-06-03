@@ -41,6 +41,7 @@ Double-click on any of the microflows in this tab, to open it in Studio Pro.
 
 ### Call hierarchy limitations
 
+- The order of microflow calls as shown in the hierarchy view, is based on how they were added in the microflow, not how they will be called when the microflow is executed.
 - Rules are not shown in the hierarchy view.
 - Viewing a very large microflow call hierarchy will crash the extension webviewer tab in Studio Pro.
 - Switching Apps in Studio Pro may crash the extension in Studio Pro.
