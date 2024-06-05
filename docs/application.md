@@ -30,7 +30,9 @@ To learn more about configuring an MTA user, read the How To section.
 - Select the Application you want to Add.
 
 :::note
-Applications that are not hosted in the Mendix cloud don't always show in this list.<br/>
+Apps that are not hosted in the Mendix cloud don't always show in this list.<br/>
+Also, Apps that you have left, may still appear in the list, but cannot be registered in MTA.
+
 Add a Mendix App manually by using the <i class="fas fa-ellipsis"></i> button on the top right.
 :::
 
