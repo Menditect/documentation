@@ -30,6 +30,11 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Use the Add Test Suite button to create a new Test Suite.
 - Enter a name and an optional description and choose "Save".
 
+### Edit a Test Suite
+- Find the Test Suite you want to edit.
+- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
+- Use the <i class="fal fa-pencil"></i> button to edit the Test Suite.
+
 ### Configure a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.

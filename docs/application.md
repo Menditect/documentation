@@ -36,12 +36,12 @@ Also, Apps that you have left, may still appear in the list, but cannot be regis
 Add a Mendix App manually by using the <i class="fas fa-ellipsis"></i> button on the top right.
 :::
 
-### View Project ID
+### View Key and Project ID
 - Navigate to the "Applications" page.
-- Click on <i class="fal fa-info-circle"></i> to view the Project ID.
+- Click on <i class="fal fa-info-circle"></i> to view the Application Key (next to the App title) and the Project ID.
 
 :::note
-This Project ID is the same ID as the "App ID" that can be found in Mendix Sprintr, under the "Settings" page, after you selected an App.
+The Project ID is the same ID as the "App ID" that can be found in [Mendix Sprintr](https://sprintr.home.mendix.com/), under the "Settings" page, after you selected an App.
 :::
 
 ### Unregister Application from MTA
