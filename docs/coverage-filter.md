@@ -6,12 +6,16 @@ sidebar_position: 11
 
 ## Definition
 
-...
+A coverage filter is used to exclude one or more microflows from counting towards the coverage percentage that is calculated for one [Coverage Goal](coverage-goal) whenever a test is executed.
+
+A coverage filter is evaluated on the fully-qualified name of a microflow: `MyModule.MyMicroflow`
+
+A coverage filter can be provided with asterisks (*) as a wildcard. A wildcard anywhere in the filter will be evaluated as "any text". This means that `MyModule.*` will be interpreted as "all microflows in MyModule". `*.*` will be interpreted as "All microflows" and `*.VAL_*` will be interpreted as "All microflows starting with VAL_ ".
 
 ## Properties
-| Name | Description                    |
-| ---- | ------------------------------ |
-| Name | The name of the coverage goal. |
+| Name               | Description                    |
+| ------------------ | ------------------------------ |
+| Module Name Filter | The filter for the module name |
 
 ## Business rules
 - ...
@@ -20,7 +24,6 @@ sidebar_position: 11
 ## Related topics
 - [Application](application)
 - [Test Configuration](test-configuration)
-- [Coverage Scope](coverage-scope)
 - [Coverage Goal](coverage-goal)
 
 

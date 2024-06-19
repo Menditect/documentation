@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 # Coverage Goal
@@ -25,7 +25,6 @@ sidebar_position: 12
 - [Application](application)
 - [Test Configuration](test-configuration)
 - [Coverage Filter](coverage-filter)
-- [Coverage Goal](coverage-goal)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
