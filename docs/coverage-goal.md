@@ -6,7 +6,9 @@ sidebar_position: 13
 
 ## Definition
 
-...
+A Coverage Goal is used to define which microflows should at least be tested, when a Test Configuration is executed. These microflows will count towards the coverage percentage on the Test Run. A Coverage Goal is made up of one or more [Coverage Filters](coverage-filter), which define which microflows to exclude from calculating the coverage percentage.
+
+A Coverage Goal can be defined on a [Test Configuration](test-configuration), or on an [Application](application).
 
 ## Properties
 | Name | Description                    |
