@@ -1,5 +1,9 @@
 # Release 2.5.0
 
+:::caution
+These release notes are from a version that is no longer being actively maintained. 
+:::
+
 #### Release date
 
 30 November 2023

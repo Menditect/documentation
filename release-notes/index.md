@@ -2,7 +2,7 @@
 
 #### Release date
 
-19 June 2024
+XXXXXXXXXXXXX
 
 #### Supported Mendix versions
 
@@ -16,34 +16,37 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-## Highlights in this release
-
-- COVERAGE
-
 
 ## New functionality 
 
 
-| ID                    | MTA-1401  |
-| --------------------- | --------- |
-| __New functionality__ | Coverage. |
-| __Release actions__   | None.     |
+| ID                    | MTA-1401                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Added the option to measure the Code Coverage after executing a Test! Watch the video above to get started.                                            |
+| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality**. |
+<br/>
+
+
+| ID                    | MTA-1333                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Added the Delay option on a teststep, to specify how long MTA should wait before executing the next teststep.                                          |
+| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality.** |
 
 <br/>
 
 
-| ID                    | MTA-1752                                                                                                                                                                                                                                                                                                                                                                                   |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | When executing any test, a choice must now be made to run the test with "Full output" or not. Running without full output will be faster than before, but when viewing the results of the Test Run, teststep values are only shown if they are used by other teststeps. Running with full output will be slower but will include all data values when viewing the results of the Test Run. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                      |
+| ID                    | MTA-1752                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When executing any test, a choice must now be made to run the test with "Full output" or not. Running without full output, which is now the new default setting, will be faster than before, but when viewing the results of the Test Run, teststep values are only shown if they are used by other teststeps. Running with full output will be slower but will include all data values when viewing the results of the Test Run. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 <br/>
 
 
-| ID                    | MTA-1333       |
-| --------------------- | -------------- |
-| __New functionality__ | Teststep delay |
-| __Release actions__   | None.          |
+| ID                    | N/A                                                                                                                                                                                                                                                                                           |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When executing any test, it is now possible to navigate through the output values of teststeps to determine in which other teststeps that output is used. Because there was already an option to see which teststep is providing input, these values are now fully navigable, back and forth. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                         |
 
 <br/>
 
@@ -56,10 +59,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | N/A                                                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Added instructional demo video's to MTA. Just click on the <i class="fal fa-clapperboard-play"></i>  button in the top-right in MTA. |
-| __Release actions__   | None.                                                                                                                                |
+| ID                    | N/A                                                                                          |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added instructional demo video's to MTA. Just click on the 🎬 button in the top-right in MTA. |
+| __Release actions__   | None.                                                                                        |
 
 <br/>
 
@@ -73,6 +76,16 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | __Problem__         | Specifying a single quote (') as value of a String attribute in a retrieve teststep would lead to incorrect escaping when executing the test. This is because single quotes are escaped differently in XPATH parameters. |
 | __Solution__        | Single quotes are now escaped correctly, resulting in correct XPATH parameters.                                                                                                                                          |
 | __Release actions__ | None.                                                                                                                                                                                                                    |
+
+<br/>
+
+
+
+| ID                  | MTA-1822                                                                                            |
+| ------------------- | --------------------------------------------------------------------------------------------------- |
+| __Problem__         | Unlimited String values could not be copied from attributes in the results of a Test Run.           |
+| __Solution__        | Unlimited String values can now be copied with a Copy button from attributes results of a Test Run. |
+| __Release actions__ | None.                                                                                               |
 
 <br/>
 
