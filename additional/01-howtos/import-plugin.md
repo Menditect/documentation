@@ -15,19 +15,6 @@ In no case should you make changes to elements inside the MtaPluginModule. <br/>
 
 ## Importing MTA Plugin
 
-Download the MTA plugin module from Mendix Marketplace. 
-
-Make sure to check your app's Mendix version before importing the module. 
-
-| Mendix Version                 | Url                                                       |
-| ------------------------------ | --------------------------------------------------------- |
-| Mendix 10                      | https://marketplace.mendix.com/link/component/214764      |
-| Mendix 9.24.4 - Mendix 9.24.9  | https://marketplace.mendix.com/link/component/214717      |
-| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637      |
-| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123      |
-| Mendix 7                       | [Contact Menditect Support](mailto:support@menditect.com) |
-
-Always make sure to download the right release. The MTA version supported by the release is listed in the description on Github. 
 
 Import the MTA plugin module package **in your test application** as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. 
 
@@ -36,9 +23,35 @@ After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar f
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 :::
 
-### Upgrading Mendix 
+### Plugin version vs Mendix version
+Download the MTA plugin module from Mendix Marketplace. 
+
+Make sure to check your app's Mendix version before importing the module. 
+
+| Mendix Version                 | Url                                                  |
+| ------------------------------ | ---------------------------------------------------- |
+| Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
+| Mendix 9.24.4 - Mendix 9.24.9  | https://marketplace.mendix.com/link/component/214717 |
+| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
+| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123 |
+| Mendix 7                       | Not supported                                        |
+
+#### Upgrading Mendix 
 
 To upgrade the major version of your Mendix App (for example, from Mendix 9.24 to 10.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
+
+
+### Plugin version vs MTA version
+Always use the latest MTA Plugin version for the latest MTA version.
+
+ 
+|         | MTA Plugin 4.7.2 | MTA Plugin 4.5.3 | MTA Plugin 4.4.5 |
+| ------- | ---------------- | ---------------- | ---------------- |
+| MTA 2.7 | Supported        | Not supported    | Not supported    |
+| MTA 2.6 | Not supported    | Supported        | Not supported    |
+| MTA 2.5 | Not supported    | Not supported    | Not supported    |
+
+
 
 ## Configuring MTA Plugin
 
@@ -99,15 +112,13 @@ This is the URL that the app will use to connect to MTA. The URL is setup as fol
 
 Example: wss://mta-mtatraining.mendixcloud.com
 
-:::caution
-The constant `NoAssociationResponse` is experimental. This feature is not supported. Use at your own risk.
+:::info
+The constant `NoAssociationResponse` can be used to omit associations from the results of a Test Run for performance reasons. However, this feature is experimental, and not officially supported.
 :::
 
 ### Configuring Plugin Home page
 
-:::note
-As of MTA version 2.0, configuring the MTA Plugin Home page is only necessary if you want to manually connect to MTA. 
-:::
+Including this page in your App is necessary if you want to manually connect to MTA (with [ConnectionMethod](#connectionmethod) = "Manual"). 
 
 - Create a Page with a Responsive layout.
 - Insert the "MTAPluginPage" snippet from the MTA Plugin Module.

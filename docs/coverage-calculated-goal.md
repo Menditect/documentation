@@ -2,13 +2,14 @@
 sidebar_position: 14
 ---
 
-# Coverage Result
+# Coverage Calculated Goal
 
 ## Definition
 
-A Coverage Result is calculated when a [Test Configuration](test-configuration) is executed, and "Coverage" was selected. 
+A Coverage Result is calculated when a [Test Configuration](test-configuration) is executed, "Coverage" was selected when starting the Test Run, and [Coverage Goals](coverage-goal) exist. 
 
-A Coverage Result can be calculated on a [Test Configuration](test-configuration), or on an [Application](application).
+A Coverage Result can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
+
 
 ## Properties
 | Name | Description                    |
@@ -31,4 +32,4 @@ A Coverage Result can be calculated on a [Test Configuration](test-configuration
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 24 June 2024

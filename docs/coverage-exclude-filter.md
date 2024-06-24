@@ -1,19 +1,24 @@
 ---
-sidebar_position: 11
+sidebar_position: 12
 ---
 
-# Coverage Filter
+# Coverage Exclude Filter
 
 ## Definition
 
-A Coverage Filter is used to **exclude** one or more microflows from counting towards the coverage percentage that is calculated for one [Coverage Goal](coverage-goal) whenever a test is executed.
+An Exclude Filter is used to **exclude** one or more microflows from counting towards the coverage percentage that is calculated for one [Coverage Goal](coverage-goal) whenever a test is executed.
 
-A Coverage Filter is evaluated on the fully-qualified name of a microflow: `MyModule.MyMicroflow`. Therefore, the filter is constructed in 2 parts; the Module name part and the Microflow name part.
+An Exclude Filter is evaluated on the **fully-qualified** name of a microflow: `MyModule.MyMicroflow`. Therefore, the filter is constructed in 2 parts; the Module name part and the Microflow name part.
 
-A Coverage Filter can be provided with asterisks (\*) as a wildcard. A wildcard anywhere in the filter will be evaluated as "any text". This means that
+An Exclude Filter is **case-insensitive**. This is because elements in a Mendix Model are also case-insensitive (there cannot be two modules with the same name even if the casing is different).
+
+An Exclude Filter can be provided with asterisks (\*) as a **wildcard**. A wildcard anywhere in the filter will be evaluated as "any text". This means that
 -  `MyModule.*` will be interpreted as "all microflows in MyModule". 
 -  `*.*` will be interpreted as "All microflows" and 
 -  `*.VAL_*` will be interpreted as "All microflows starting with VAL_ ".
+-  `*.val_*` will also be interpreted as "All microflows starting with VAL_ ".
+
+Microflows in the Mendix System module are always excluded from coverage calculation.
 
 ## Properties
 | Name                  | Description                       |
@@ -26,7 +31,7 @@ A Coverage Filter can be provided with asterisks (\*) as a wildcard. A wildcard 
 - The Microflow Name Filter may not be empty and should start with a letter, underscore or asterisk and can only contain letters, digits, underscores and asterisks.
 
 
-## Actions on a Coverage Filter
+## Actions on an Exclude Filter
 
 ### View Filters on a Coverage Goal
 - Navigate to [<i class="fal fa-umbrella"></i> Coverage Goals](coverage-goal) for the respective [Application](application) or [Test Configuration](test-configuration).
@@ -38,7 +43,7 @@ A Coverage Filter can be provided with asterisks (\*) as a wildcard. A wildcard 
 :::info
 Note that the evaluation of Coverage Filters is only valid for a single revision.<br/>
 For Coverage Goals on a Test Configuration, this is the revision that was applied to that Test Configuration.<br/>
-For Coverage Goals on an Application, this is the latest revision that any selected Test Configuration is on.
+For Coverage Goals on an Application, this is the *latest* Application Revision found in the included Test Configurations.
 :::
 
 - Open the list of Filters on a Coverage Goal.
@@ -76,11 +81,11 @@ For Coverage Goals on an Application, this is the latest revision that any selec
 
 ## Related topics
 - [Coverage Goal](coverage-goal)
-- [Coverage Filter Exception](coverage-filter-exception)
+- [Coverage Exception Filter](coverage-exception-filter)
 - [Application](application)
 - [Test Configuration](test-configuration)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 24 June 2024

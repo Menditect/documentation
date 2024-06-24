@@ -30,12 +30,12 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 
 ### View downloaded Application revisions for an Application
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an Application by clicking on the tile.
+- Select an [Application](application) by clicking on the tile.
 - Navigate to "App revisions".
 
 ### View downloaded elements in a revision 
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
-- Select an Application by clicking on the tile.
+- Select an [Application](application) by clicking on the tile.
 - Navigate to "App revisions" to view the Application revisions.
 - Click on <i class="fal fa-info-circle"></i> to view Modules, Entities and Microflows in this revision.
 
