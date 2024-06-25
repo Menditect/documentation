@@ -21,12 +21,12 @@ A Coverage Goal that is defined on an Application, is applicable for microflows 
 Microflows in the Mendix System module are always excluded from coverage calculation.
 
 ## Properties
-| Name                | Description                                                                                                                                                           |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name                | The name of the coverage goal.                                                                                                                                        |
-| Exclude Filters     | The [Exclude Filters](coverage-exclude-filter) that will be applied when evaluating the Coverage Goal.                                                                |
-| Test Suites         | Defines which [Test Suites](test-suite) are included when evaluating the Calculated Goal<br/> (only applicable for a Coverage Goal on a Test Configuration)           |
-| Test Configurations | Defines which [Test Configurations](test-configuration) are included when evaluating the Calculated Goal<br/> (only applicable for a Coverage Goal on an Application) |
+| Name                | Description                                                                                                                                                          |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                | The name of the coverage goal.                                                                                                                                       |
+| Exclude Filters     | The [Exclude Filters](coverage-exclude-filter) that determine the Coverage Goal.                                                                                     |
+| Test Suites         | Defines which [Test Suites](test-suite) are included when calculating the Coverage Goal<br/> (only applicable for a Coverage Goal on a Test Configuration)           |
+| Test Configurations | Defines which [Test Configurations](test-configuration) are included when calculating the Coverage Goal<br/> (only applicable for a Coverage Goal on an Application) |
 
 ## Business rules
 

@@ -56,9 +56,9 @@ A Calculated Goal can be associated to a [Test Configuration](test-configuration
 - Click on <i class="fal fa-umbrella"></i>.
 
 ## Related topics
+- [Coverage Goal](coverage-goal)
 - [Application](application)
 - [Test Configuration](test-configuration)
-- [Coverage Filter](coverage-filter)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

@@ -10,15 +10,14 @@ sidebar_position: 22
 The Test Run contains the tests that can be/are executed according a [Test Configuration](test-configuration).
 
 ## Properties
-| Name               | Description                                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------------------- |
-| Name               | The name of the Test Run.                                                                             |
-| Flagged for delete | This indicates if the Test Run is flagged for deletion by the user.                                   |
-| Pinned             | If a Test Run is pinned by a user it will not be deleted overnight.                                   |
-| Result             | The test result ('Passed' or 'Failed').                                                               |
-| Scope              | The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') |
-| Start date         | The moment when the Test Run starts.                                                                  |
-| Status             | This indicates if the test is running or not; can be 'Running' or 'Finished'.                         |
+| Name        | Description                                                                                                                       |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Start date  | The moment when the Test Run was started.                                                                                         |
+| Full output | Determines if the test was executed with "Full output" enabled. Recognizable by the <i class="fal fa-memo-circle-info"></i> icon. |
+| Pinned      | If a Test Run is pinned by a user it will not be deleted overnight. Recognizable by the <i class="fas fa-thumbtack"></i> icon.    |
+| Result      | The test result ('Passed' or 'Failed').                                                                                           |
+| Scope       | The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case')                             |
+| Status      | This indicates if the test is running or not; can be 'Running' or 'Finished'.                                                     |
   
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).
@@ -63,4 +62,4 @@ Pinning a Test Run will prevent it from being cleaned up overnight.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 26 June 2024

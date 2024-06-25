@@ -41,6 +41,8 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 
 ### Execute a Test Suite
 - Use the Execute test suite button from the <i class="fal fa-link-simple"></i> menu or inside a Test Suite, to start a new [Test Run](test-run).
+- Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
+- Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
 ### Share a Test Suite
 
