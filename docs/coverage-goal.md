@@ -30,13 +30,10 @@ Microflows in the Mendix System module are always excluded from coverage calcula
 
 ## Business rules
 
-On a Coverage Goal that is defined on an Application, it is only possible to determine which microflows will be included based on the Exclude Filters, if at least 1 Test Configuration is included. 
-
-If no Test Configurations are included on a Coverage Goal that is defined on an Application, the Exclude Filters cannot be changed.
-
-Not including any Test Suites or Test Configurations on a Coverage Goal, will always lead to a 0 % coverage percentage.
-
-Defining Exclude Filters leading to 0 microflows being included in the Coverage Goal, will always lead to a 0 % coverage percentage.
+- On a Coverage Goal that is defined on an Application, it is only possible to determine which microflows will be included based on the Exclude Filters, if at least 1 Test Configuration is included. 
+- If no Test Configurations are included on a Coverage Goal that is defined on an Application, the Exclude Filters cannot be changed.
+- Not including any Test Suites or Test Configurations on a Coverage Goal, will always lead to a 0 % coverage percentage.
+- Defining Exclude Filters leading to 0 microflows being included in the Coverage Goal, will always lead to a 0 % coverage percentage.
 
 ## Actions on a Coverage Goal
 

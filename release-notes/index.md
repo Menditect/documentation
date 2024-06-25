@@ -11,19 +11,26 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 
-**Watch the video on coverage!**
+**Watch the video on code coverage!**
 <iframe src="https://player.vimeo.com/video/956958620?h=47a5aa5f4c" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
 
+
+## Highlights in this release
+
+- Introducing Code Coverage using Coverage Goals and Filters. Know which microflows are covered by your tests!
+- Added instructional Demo Video's to MTA!
+- Added the option to execute a Teststep with a delay, which allows more fine-grained waiting than Test Case delay.
+- Improved Test Run performance some more, with the option to omit unused data when running a test.
 
 
 ## New functionality 
 
 
-| ID                    | MTA-1401                                                                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Added the option to measure the Code Coverage after executing a Test! Watch the video above to get started.                                            |
-| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality**. |
+| ID                    | MTA-1401                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added the option to measure the Code Coverage after executing a Test. Use the Coverage Goals navigation item on your Application or Test Configuration to get started. |
+| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality**.                 |
 <br/>
 
 
