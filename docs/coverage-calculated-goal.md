@@ -6,23 +6,54 @@ sidebar_position: 14
 
 ## Definition
 
-A Coverage Result is calculated when a [Test Configuration](test-configuration) is executed, "Coverage" was selected when starting the Test Run, and [Coverage Goals](coverage-goal) exist. 
+A Calculated Goal is a representation of the code coverage of one moment in time. It represents the coverage percentage of microflows that were executed, out of all included microflows for the associated [Coverage Goal](coverage-goal). 
 
-A Coverage Result can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
+A Coverage Goal is calculated and stored as a Calculated Goal, whenever a [Test Configuration](test-configuration) is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
+
+A Calculated Goal can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
 
 
 ## Properties
-| Name | Description                    |
-| ---- | ------------------------------ |
-| Name | The name of the coverage goal. |
+| Name             | Description                                                                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CalculationDate  | The date and time when the [Coverage Goal](coverage-goal) was calculated.                                                                          |
+| App revision     | The [Application Revision](application-revision) that was used to evaluate and calculate the Coverage Goal.                                        |
+| Total #          | The total number of microflows in the App revision.                                                                                                |
+| Excluded #       | The number of microflows that was excluded after evaluating the Coverage Goal.                                                                     |
+| Included #       | The number of microflows that was included after evaluating the Coverage Goal, <br/> and used to calculate the Coverage Goal.                      |
+| Executed excl. # | The number of microflows that were executed but not included in the Coverage Goal.                                                                 |
+| Executed incl. # | The number of microflows that were executed and included in the Coverage Goal.                                                                     |
+| Not executed #   | The number of microflows that were not executed.                                                                                                   |
+| Coverage %       | The coverage percentage (Executed incl devided by Included).                                                                                       |
+| Trend %          | The absolute difference in coverage percentage of this Calculated Goal, <br/> compared to the previous Calculated Goal for the same Coverage Goal. |
+
+
 
 ## Business rules
-- ...
+- A Calculated Goal will only be created when executing a full [Test Configuration](test-configuration) and with "Coverage" enabled.
+- A Calculated Goal will only be created for [Test Runs](test-run) where the result is "Passed".
+- A Calculated Goal on an Application will be created for Test Runs in all Test Configurations that are included in the associated [Coverage Goal](coverage-goal), and only for Test Configurations on the latest [Application Revision](application-revision) found in these Test Configurations.
+- A Calculated Goal for Test Runs that were deleted, will only show Coverage % and Trend %. Other properties are no longer available then.
 
-## Actions on a Coverage Goal
+## Actions on a Calculated Goal
 
-### View Applications in use by MTA
-- ...
+### View Calculated Goals on an Application
+- [View Coverage Goals on an Application](coverage-goal#view-coverage-goals-on-an-application)
+- Click "<i class="fal fa-eye"></i> Calculated".
+
+### View Calculated Goals on an Application Revision
+- [View downloaded Application revisions for an Application](application-revision#view-downloaded-application-revisions-for-an-application)
+- Select the Application Revision to view the Calculated Goals for.
+- Click on <i class="fal fa-umbrella"></i>.
+
+### View Calculated Goals on a Test Configuration
+- [View Coverage Goals on a Test Configuration](coverage-goal#view-coverage-goals-on-a-test-configuration)
+- Click "<i class="fal fa-eye"></i> Calculated".
+
+### View Calculated Goals on a Test Run
+- [View Test Runs](test-run#view-test-runs)
+- Select the Test Run to view the Calculated Goals for.
+- Click on <i class="fal fa-umbrella"></i>.
 
 ## Related topics
 - [Application](application)

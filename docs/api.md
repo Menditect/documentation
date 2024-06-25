@@ -444,7 +444,7 @@ Any of below status descriptors:
 
 Initiate the execution of a test configuration for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
-The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable coverage goals after the test was executed.
+The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](coverage-goal) after the test was executed.
 
 :::note
 Make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.

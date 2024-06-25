@@ -6,13 +6,17 @@ sidebar_position: 13
 
 ## Definition
 
-A Coverage Goal is used to define which microflows should at least be tested, when a Test Configuration is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Calculated Goal](coverage-calculated-goal). A Coverage Goal is made up of one or more [Coverage Exclude Filters](coverage-exclude-filter). Coverage Exclude Filters define which microflows to exclude, and which to include, when evaluating the Calculated Goal.
+A Coverage Goal is used to define which microflows should at least be tested, when a Test Configuration is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Calculated Goal](coverage-calculated-goal). A Coverage Goal is made up of one or more [Exclude Filters](coverage-exclude-filter). 
+
+A Coverage Goal is **evaluated** immediately after associated Exclude Filters are saved. Evaluating leads to determining which microflows will be included, and which microflows will be excluded from the Coverage Goal.
+
+A Coverage Goal is **calculated** and stored as a Calculated Goal, whenever a [Test Configuration](test-configuration) is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
 
 A Coverage Goal can be defined on a [Test Configuration](test-configuration), or on an [Application](application).
 
-A Coverage Goal that is defined on a Test Configuration, is applicable for microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. When evaluating the Calculated Goal, this will only be done for [Test Suites](test-suite) that were included in the Coverage Goal.
+A Coverage Goal that is defined on a Test Configuration, is applicable for microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. When evaluating or calculating the Calculated Goal, this will only be done for [Test Suites](test-suite) that were included in the Coverage Goal.
 
-When evaluating a Calculated Goal that is defined on an Application, this will only be done for Test Configurations that were included in the Coverage Goal. The Coverage Goal is applicable for microflows in the *latest* Application Revision found in these included Test Configurations.
+A Coverage Goal that is defined on an Application, is applicable for microflows in the *latest* Application Revision found in the included Test Configurations. When evaluating or calculating the Calculated Goal, this will only be done for [Test Configurations](test-configuration) that were included in the Coverage Goal.
 
 Microflows in the Mendix System module are always excluded from coverage calculation.
 
@@ -61,6 +65,7 @@ Defining Exclude Filters leading to 0 microflows being included in the Coverage 
 ### Add a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
 - Click "<i class="fal fa-plus-circle"></i> Add" to add a Coverage Goal.
+- Select the Application if not yet pre-selected.
 - Enter a name for the Coverage Goal.
 - Save.
 
@@ -70,6 +75,19 @@ Defining Exclude Filters leading to 0 microflows being included in the Coverage 
 - Select "<i class="fas fa-pencil"></i> Edit".
 - Change the name of the Coverage Goal.
 - Save.
+
+### Evaluate a Coverage Goal
+
+To evaluate a Coverage Goal, add, edit or delete an [Exclude Filter](coverage-exclude-filter).
+
+### View Evaluated Coverage Goal 
+- [Open the list of Filters on a Coverage Goal.](coverage-exclude-filter#view-filters-on-a-coverage-goal)
+- In the top-left of the page, the number of included, excluded and total microflows is shown.
+- Click on one of these numbers to view which microflows are either included or excluded.
+
+### Calculate a Coverage Goal
+
+To calculate a Coverage Goal and create a new [Calculated Goal](coverage-calculated-goal), [execute a Test Configuration](test-configuration#execute-a-test-configuration) and enable "Coverage".
 
 ### Copy name of a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
