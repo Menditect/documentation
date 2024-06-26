@@ -7,17 +7,12 @@ toc_max_heading_level: 2
 
 This document describes the endpoints of MTA's public API.
 
-To learn **how to** implement the API's in a CI/CD pipeline, read the how-to section.
+To learn **how to** implement the API's in a CI/CD pipeline, read the how-to pages on CI/CD.
 
-**Authorization**
 
-To authorize a session for MTA's public API:
+To authorize a session for MTA's public API, use Basic (HTTP) Authorization.
 
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
+Also make sure to include the HTTP Header `Content-Type` = `'application/json'` for all below endpoints.
 
 ## GET testconfigurations
 

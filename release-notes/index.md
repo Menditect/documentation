@@ -11,41 +11,45 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 
-**Watch the video on code coverage!**
+**Watch the video on Code Coverage!**
 <iframe src="https://player.vimeo.com/video/956958620?h=47a5aa5f4c" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
 
 
 ## Highlights in this release
 
-- Introducing Code Coverage using Coverage Goals and Filters. Know which microflows are covered by your tests!
-- Added instructional Demo Video's to MTA!
-- Added the option to execute a Teststep with a delay, which allows more fine-grained waiting than Test Case delay.
-- Improved Test Run performance some more, with the option to omit unused data when running a test.
+
+<i class="fas fa-fire"></i>  Introducing Code Coverage. Know which microflows are covered by your tests!
+<br/>
+<i class="fas fa-fire"></i>  Added instructional Demo Video's to MTA.
+<br/>
+<i class="fas fa-fire"></i>  Added the option to execute a Teststep with a delay, which allows more fine-grained waiting than Test Case delay.
+<br/>
+<i class="fas fa-fire"></i>  Improved Test Run performance some more, with the option to omit unused data when running a test.
 
 
 ## New functionality 
 
 
-| ID                    | MTA-1401                                                                                                                                                               |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added the option to measure the Code Coverage after executing a Test. Use the Coverage Goals navigation item on your Application or Test Configuration to get started. |
-| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality**.                 |
+| ID                    | MTA-1401                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added the option to measure the Code Coverage of microflows that were executed in Test Runs. Look for the <i class="fal fa-umbrella"></i> icon! <br/><br/>This will be measured after a test was executed, on both Test Configuration and Application level. <br/>A 100 % coverage means all microflows were executed. Set Coverage Goals with Exclude Filters to exclude microflows. Use the Coverage Goals navigation item on your Application or Test Configuration to get started. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 <br/>
 
 
-| ID                    | MTA-1333                                                                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Added the Delay option on a teststep, to specify how long MTA should wait before executing the next teststep.                                          |
-| __Release actions__   | **You must import the newest version of the MTA Plugin from the Mendix Marketplace into your Test Application if you want to use this functionality.** |
+| ID                    | MTA-1333                                                                                                                                                                                                                                           |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added the Delay option on a teststep, to specify how long MTA should wait before executing the next teststep. If a delay other than 0 was specified, the delay is shown in the teststep. Look for the <i class="fal fa-hourglass-start"></i> icon! |
+| __Release actions__   | None.                                                                                                                                                                                                                                              |
 
 <br/>
 
 
-| ID                    | MTA-1752                                                                                                                                                                                                                                                                                                                                                                                                           |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | When executing any test, a choice must now be made to run the test with "Full output" or not. Running **without** full output, which is now the new default setting, will be faster than before, but when viewing the results of the Test Run, teststep values are only shown if they are used by other teststeps. Running with full output will include all data values when viewing the results of the Test Run. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ID                    | MTA-1752                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When executing any test, a choice must now be made to run the test with "Full output" or not. Look for the <i class="fal fa-memo-circle-info"></i> icon!<br/><br/> Running without full output, which is now the new default setting, will be faster than before, but when viewing the results of the Test Run, teststep values are only shown if they are used by other teststeps. Running with full output will include all data values when viewing the results of the Test Run. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 <br/>
 
@@ -66,10 +70,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | N/A                                                                                          |
-| --------------------- | -------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added instructional demo video's to MTA. Just click on the 🎬 button in the top-right in MTA. |
-| __Release actions__   | None.                                                                                        |
+| ID                    | N/A                                                                                                                                           |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added instructional demo video's to MTA. <br/><br/>Just click on the <i class="fal fa-clapperboard-play"></i> button in the top-right in MTA. |
+| __Release actions__   | None.                                                                                                                                         |
 
 <br/>
 

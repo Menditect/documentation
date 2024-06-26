@@ -37,6 +37,10 @@ Microflows in the Mendix System module are always excluded from coverage calcula
 
 ## Actions on a Coverage Goal
 
+:::info
+By default, there is always a single Coverage Goal, including all microflows in the revision.
+:::
+
 ### View Coverage Goals on an Application
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application) by clicking on the tile.
