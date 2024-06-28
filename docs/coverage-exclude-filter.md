@@ -29,7 +29,8 @@ Microflows in the Mendix System module are always excluded from coverage calcula
 ## Business rules
 - The Module Name Filter may not be empty and should start with a letter, underscore or asterisk and can only contain letters, digits, underscores and asterisks.
 - The Microflow Name Filter may not be empty and should start with a letter, underscore or asterisk and can only contain letters, digits, underscores and asterisks.
-
+- Exclude Filters that are added to a Coverage Goal on a Test Configuration, will apply to microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. 
+- Exclude Filters that are added to a Coverage Goal on an Application, will apply to microflows in the *latest* [Application Revision](application-revision) found in the included Test Configurations. 
 
 ## Actions on an Exclude Filter
 
@@ -39,46 +40,37 @@ Microflows in the Mendix System module are always excluded from coverage calcula
 - Click <i class="fa fa-pencil"></i> in "Applied microflow filters" on the right side of the page.
 
 ### Generate an Exclude Filter on a Coverage Goal by Microflow name
-- Open the list of Filters on a Coverage Goal.
+- Open the list of Exclude Filters on a Coverage Goal.
 - Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
 - Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by microflow name"
 - Select the Microflow(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters for each selected microflow, with fully qualified name as Module Name filter and Microflow Name filter.
 
-The associated Coverage Goal will be evaluated after saving the Filter.
-
 ### Generate an Exclude Filter on a Coverage Goal by Module name
-- Open the list of Filters on a Coverage Goal.
+- Open the list of Exclude Filters on a Coverage Goal.
 - Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
 - Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by module name"
 - Select the Module(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters with the selected modules as Module Name filter, and wildcards for the Microflow Name filter.
 
-The associated Coverage Goal will be evaluated after saving the Filter.
-
 ### Add an Exclude Filter on a Coverage Goal manually
-- Open the list of Filters on a Coverage Goal.
+- Open the list of Exclude Filters on a Coverage Goal.
 - Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
 - Click "<i class="fal fa-plus-circle"></i> New"
 - Enter the Module Name filter and Microflow Name filter and click Save.
 
-The associated Coverage Goal will be evaluated after saving the Filter.
-
 ### Edit an Exclude Filter
-- Open the list of Filters on a Coverage Goal.
+- Open the list of Exclude Filters on a Coverage Goal.
 - Click on the <i class="fa fa-pencil"></i> button on the filter you want to edit.
 
-The associated Coverage Goal will be evaluated after saving the Filter.
-
 ### Delete an Exclude Filter
-- Open the list of Filters on a Coverage Goal.
+- Open the list of Exclude Filters on a Coverage Goal.
 - Click on the <i class="fa fa-trash-alt"></i> button on the filter you want to delete.
 
-The associated Coverage Goal will be evaluated after deleting the Filter.
 
 ## Related topics
 - [Coverage Goal](coverage-goal)
-- [Coverage Exception Filter](coverage-exception-filter)
+- [Coverage Exception](coverage-exception)
 - [Application](application)
 - [Test Configuration](test-configuration)
 

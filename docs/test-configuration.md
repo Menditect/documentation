@@ -44,7 +44,7 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 ### Execute a Test Configuration
 
 - Use the Execute test configuration button on the bottom left, to start a new [Test Run](test-run).
-- Choose "Coverage" to create a new [Calculated Goal](coverage-calculated-goal) after the Test Run was executed.
+- Choose "Coverage" to create a new [Coverage Calculation](coverage-calculation) after the Test Run was executed.
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 

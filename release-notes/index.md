@@ -20,7 +20,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <i class="fas fa-fire"></i>  Introducing Code Coverage. Know which microflows are covered by your tests! Define specific coverage goals and measure coverage trends.
 <br/>
-<i class="fas fa-fire"></i>  Improved analysis of test runs by providing links to teststeps that use a specific output.
+<i class="fas fa-fire"></i>  Improved analysis of Test Runs by providing links to Teststeps that use a specific output.
 <br/>
 <i class="fas fa-fire"></i>  Added instructional Demo Video's to MTA.
 <br/>

@@ -6,21 +6,11 @@ sidebar_position: 13
 
 ## Definition
 
-A Coverage Goal defines which microflows should at least be executed, when a **specific collection of tests** is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Coverage Calculation](coverage-calculated-goal). 
+A Coverage Goal defines which microflows should at least be executed, when a **specific collection of tests** is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Coverage Calculation](coverage-calculation). 
 
 To define the microflows usage in Coverage Calculation, a Coverage Goal can have one or more [Exclude Filters](coverage-exclude-filter). Microflows in the Mendix System module are always excluded from coverage calculation.
 
 A Coverage Goal can be defined on a [Test Configuration](test-configuration), or on an [Application](application). When defining on a Test Configuration, create the **specific collection of tests**, by including [Test Suites](test-suite). When defining on an Application, create the **specific collection of tests**, by including [Test Configurations](test-configuration).
-
-**VERPLAATSEN NAAR COVERAGE CALCULATION**
-
-A Coverage Goal is **calculated** and stored as a Calculated Goal, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
-
-**VERPLAATSEN NAAR COVERAGE EXCLUDE FILTER**
-
-A Coverage Goal that is defined on a Test Configuration, is applicable for microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. 
-
-A Coverage Goal that is defined on an Application, is applicable for microflows in the *latest* [Application Revision](application-revision) found in the included Test Configurations. 
 
 
 ## Properties
@@ -91,7 +81,7 @@ To evaluate a Coverage Goal, add, edit or delete an [Exclude Filter](coverage-ex
 
 ### Calculate a Coverage Goal
 
-To calculate a Coverage Goal and create a new [Calculated Goal](coverage-calculated-goal), [execute a Test Configuration](test-configuration#execute-a-test-configuration) and enable "Coverage".
+To calculate a Coverage Goal and create a new [Coverage Calculation](coverage-calculation), [execute a Test Configuration](test-configuration#execute-a-test-configuration) and enable "Coverage".
 
 ### Copy name of a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
@@ -105,7 +95,7 @@ To calculate a Coverage Goal and create a new [Calculated Goal](coverage-calcula
 - Confirm.
 
 ## Related topics
-- [Coverage Calculated Goal](coverage-calculated-goal)
+- [Coverage Calculation](coverage-calculation)
 - [Coverage Exclude Filter](coverage-exclude-filter)
 - [Application](application)
 - [Test Configuration](test-configuration)
