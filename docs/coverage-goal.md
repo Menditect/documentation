@@ -6,19 +6,22 @@ sidebar_position: 13
 
 ## Definition
 
-A Coverage Goal is used to define which microflows should at least be tested, when a Test Configuration is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Calculated Goal](coverage-calculated-goal). A Coverage Goal is made up of one or more [Exclude Filters](coverage-exclude-filter). 
+A Coverage Goal defines which microflows should at least be executed, when a **specific collection of tests** is executed. Microflows that are included in the goal, will count towards the coverage percentage in the [Coverage Calculation](coverage-calculated-goal). 
 
-A Coverage Goal is **evaluated** immediately after associated Exclude Filters are saved. Evaluating leads to determining which microflows will be included, and which microflows will be excluded from the Coverage Goal.
+To define the microflows usage in Coverage Calculation, a Coverage Goal can have one or more [Exclude Filters](coverage-exclude-filter). Microflows in the Mendix System module are always excluded from coverage calculation.
 
-A Coverage Goal is **calculated** and stored as a Calculated Goal, whenever a [Test Configuration](test-configuration) is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
+A Coverage Goal can be defined on a [Test Configuration](test-configuration), or on an [Application](application). When defining on a Test Configuration, create the **specific collection of tests**, by including [Test Suites](test-suite). When defining on an Application, create the **specific collection of tests**, by including [Test Configurations](test-configuration).
 
-A Coverage Goal can be defined on a [Test Configuration](test-configuration), or on an [Application](application).
+**VERPLAATSEN NAAR COVERAGE CALCULATION**
 
-A Coverage Goal that is defined on a Test Configuration, is applicable for microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. When evaluating or calculating the Calculated Goal, this will only be done for [Test Suites](test-suite) that were included in the Coverage Goal.
+A Coverage Goal is **calculated** and stored as a Calculated Goal, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
 
-A Coverage Goal that is defined on an Application, is applicable for microflows in the *latest* Application Revision found in the included Test Configurations. When evaluating or calculating the Calculated Goal, this will only be done for [Test Configurations](test-configuration) that were included in the Coverage Goal.
+**VERPLAATSEN NAAR COVERAGE EXCLUDE FILTER**
 
-Microflows in the Mendix System module are always excluded from coverage calculation.
+A Coverage Goal that is defined on a Test Configuration, is applicable for microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. 
+
+A Coverage Goal that is defined on an Application, is applicable for microflows in the *latest* [Application Revision](application-revision) found in the included Test Configurations. 
+
 
 ## Properties
 | Name                | Description                                                                                                                                                          |

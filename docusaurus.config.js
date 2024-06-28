@@ -61,6 +61,10 @@ const config = {
             id: 'microflow-call-hierarchy-extension',
             content: '@site/additional/01-howtos/use-microflow-call-hierarchy-extension.md',
           },
+          {
+            id: 'generate-test',
+            content: '@site/additional/01-howtos/generate-test.md',
+          },		  
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },

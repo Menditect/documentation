@@ -18,14 +18,15 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-
-<i class="fas fa-fire"></i>  Introducing Code Coverage. Know which microflows are covered by your tests!
+<i class="fas fa-fire"></i>  Introducing Code Coverage. Know which microflows are covered by your tests! Define specific coverage goals and measure coverage trends.
+<br/>
+<i class="fas fa-fire"></i>  Improved analysis of test runs by providing links to teststeps that use a specific output.
 <br/>
 <i class="fas fa-fire"></i>  Added instructional Demo Video's to MTA.
 <br/>
 <i class="fas fa-fire"></i>  Added the option to execute a Teststep with a delay, which allows more fine-grained waiting than Test Case delay.
 <br/>
-<i class="fas fa-fire"></i>  Improved Test Run performance some more, with the option to omit unused data when running a test.
+<i class="fas fa-fire"></i>  Optimized Test Run performance by providing the choice for normal (faster) and full output.
 
 
 ## New functionality 
@@ -58,14 +59,6 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | When executing any test, it is now possible to navigate through the output values of teststeps to determine in which other teststeps that output is used. Because there was already an option to see which teststep is providing input, these values are now fully navigable, back and forth. |
 | __Release actions__   | None.                                                                                                                                                                                                                                                                                         |
-
-<br/>
-
-
-| ID                    | MTA-1662                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| __New functionality__ | Removed the CI/CD v2 API endpoints as they were deprecated in the previous version. |
-| __Release actions__   | None.                                                                               |
 
 <br/>
 
