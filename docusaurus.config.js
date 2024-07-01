@@ -59,11 +59,15 @@ const config = {
           { id: 'sla', content: '@site/legal/sla.md' },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/use-microflow-call-hierarchy-extension.md',
+            content: '@site/additional/01-howtos/01-connect-mta/use-microflow-call-hierarchy-extension.md',
+          },
+          {
+            id: 'import-plugin',
+            content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
           },
           {
             id: 'generate-test',
-            content: '@site/additional/01-howtos/generate-test.md',
+            content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
         ],
         versionedLinks: [
