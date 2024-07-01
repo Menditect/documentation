@@ -1,4 +1,4 @@
-# CI/CD handle results
+# Handle the results of a Test Run
 
 ## Definition
 

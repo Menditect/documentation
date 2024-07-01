@@ -1,4 +1,4 @@
-# CI/CD flow
+# Automate pipeline
 
 ## Definition
 

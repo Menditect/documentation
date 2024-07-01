@@ -12,11 +12,7 @@ An Exclude Filter is evaluated on the **fully-qualified** name of a microflow: `
 
 An Exclude Filter is **case-insensitive**. This is because elements in a Mendix Model are also case-insensitive (there cannot be two modules with the same name even if the casing is different).
 
-An Exclude Filter can be provided with asterisks (\*) as a **wildcard**. A wildcard anywhere in the filter will be evaluated as "any text". This means that
--  `MyModule.*` will be interpreted as "all microflows in MyModule". 
--  `*.*` will be interpreted as "All microflows" and 
--  `*.VAL_*` will be interpreted as "All microflows starting with VAL_ ".
--  `*.val_*` will also be interpreted as "All microflows starting with VAL_ ".
+An Exclude Filter can be provided with asterisks (\*) as a **wildcard**. 
 
 Microflows in the Mendix System module are always excluded from coverage calculation.
 
