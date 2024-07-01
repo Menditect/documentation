@@ -64,7 +64,7 @@ const config = {
           {
             id: 'generate-test',
             content: '@site/additional/01-howtos/generate-test.md',
-          },		  
+          },
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },

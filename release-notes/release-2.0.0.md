@@ -40,7 +40,6 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 :::caution
 There is a breaking change in this MTA version that requires you to download, import and configure the MTA Plugin Module in every Mendix App that you want to test before you can continue using MTA again.
 
-[Click here to start.](../additional/howtos/import-plugin#configuring-mta-plugin)
 :::
 
 ## New functionality 
@@ -62,14 +61,14 @@ There is a breaking change in this MTA version that requires you to download, im
 | ID                    | MTA-0965                                                                                                                                                                                                  |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | The connection between MTA and the Application under test is now secured with an MTA Connection User that exists in MTA, and no longer with an MTA Plugin User that exists in the Application under test. |
-| __Release actions__   | Please read the [Configure MTA plugin](../additional/howtos/import-plugin#configuring-mta-plugin) page.                                                                                                   |
+| __Release actions__   | Please read the howto page.                                                                                                                                                                               |
 
 <br/>
 
 | ID                    | MTA-0975                                                                                                                                                                                                                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | The MTA Plugin User and the MTA Plugin Homepage are no longer required to be included in the Application under test. The MTA Plugin Homepage is now included in the Plugin Module as a Snippet and no longer as a Page. |
-| __Release actions__   | Please read the [Configure Plugin Home Page](../additional/howtos/import-plugin#configuring-plugin-home-page) page.                                                                                                     |
+| __Release actions__   | Please read the howto page.                                                                                                                                                                                             |
 
 <br/>
 
@@ -153,28 +152,28 @@ There is a breaking change in this MTA version that requires you to download, im
 | ID                    | MTA-0939                                                                                                                                       |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: The results of the Test Run (on Test Configuration, Test Suite and Test Case level) are now also included in the "get results" API. |
-| __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                               |
+| __Release actions__   | Please read the documentation page.                                                                                                            |
 
 <br/>
 
 | ID                    | MTA-1029                                                                                                                                                                                             |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: When executing with CI/CD, MTA will no longer detect if there is a new revision deployed on the Application under test and consequentually no longer download or adapt to a new revision. |
-| __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                                                                                     |
+| __Release actions__   | Please read the documentation page.page.                                                                                                                                                             |
 
 <br/>
 
 | ID                    | MTA-1037                                                                                                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | CI/CD API: When executing with CI/CD, you can no longer specify which Application Instance to run on, because that is determined by the Test Setting for the CI/CD user in MTA. |
-| __Release actions__   | Please read the [CI/CD configuration](../../additional/howtos/cicd-config) page.                                                                                                |
+| __Release actions__   | Please read the documentation page.page.                                                                                                                                        |
 
 <br/>
 
-| ID                    | MTA-0938                                                                                                                   |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | CI/CD API: When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice.                   |
-| __Release actions__   | Please read the [CI/CD results](../../additional/howtos/cicd-result#3-get-realtime-results-in-your-own-api-endpoint) page. |
+| ID                    | MTA-0938                                                                                                 |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | CI/CD API: When executing with CI/CD, MTA can push results in real time to a self-hosted API webservice. |
+| __Release actions__   | Please read the documentation page.                                                                      |
 
 <br/>
 

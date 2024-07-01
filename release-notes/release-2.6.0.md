@@ -18,7 +18,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-- MTA integration with Mendix Studio Pro via the Menditect Call Hierarchy Extension!<br/>[View the installation guide here](../additional/howtos/use-microflow-call-hierarchy-extension).
+- MTA integration with Mendix Studio Pro via the Menditect Call Hierarchy Extension!<br/>[View the installation guide here](../additional/howtos/connect-mta/use-microflow-call-hierarchy-extension).
 - Significant **performance improvement** in test runs.
 - Added much requested option to **Duplicate a teststep**.
 - Loads of refactoring done.
