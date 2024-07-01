@@ -47,13 +47,13 @@ Clicking on one of the numbers will show which microflows the number relates to.
 
 ### Generate an Exclude Filter on a Coverage Goal by Microflow name
 - Open the list of Exclude Filters on a Coverage Goal.
-- Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by microflow name"
+- Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "<i class="fal fa-play-circle"></i> Generate by microflow name"
 - Select the Microflow(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters for each selected microflow, with fully qualified name as Module Name filter and Microflow Name filter.
 
 ### Generate an Exclude Filter on a Coverage Goal by Module name
 - Open the list of Exclude Filters on a Coverage Goal.
-- Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by module name"
+- Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "<i class="fal fa-cube"></i> Generate by module name"
 - Select the Module(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters with the selected modules as Module Name filter, and wildcards for the Microflow Name filter.
 
