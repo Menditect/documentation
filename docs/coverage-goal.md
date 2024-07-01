@@ -31,7 +31,7 @@ A Coverage Goal can be defined on a [Test Configuration](test-configuration), or
 ## Actions on a Coverage Goal
 
 :::info
-By default, there is always a single Coverage Goal, including all microflows in the revision.
+After creating an Application or Test Configuration, a default Coverage Goal is created without Exclude Filters, <br/>including all microflows in the revision.
 :::
 
 ### View Coverage Goals on an Application
@@ -69,15 +69,6 @@ By default, there is always a single Coverage Goal, including all microflows in 
 - Select "<i class="fas fa-pencil"></i> Edit".
 - Change the name of the Coverage Goal.
 - Save.
-
-### Evaluate a Coverage Goal
-
-To evaluate a Coverage Goal, add, edit or delete an [Exclude Filter](coverage-exclude-filter).
-
-### View Evaluated Coverage Goal 
-- [Open the list of Filters on a Coverage Goal.](coverage-exclude-filter#view-filters-on-a-coverage-goal)
-- In the top-left of the page, the number of included, excluded and total microflows is shown.
-- Click on one of these numbers to view which microflows are either included or excluded.
 
 ### Calculate a Coverage Goal
 

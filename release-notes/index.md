@@ -18,15 +18,15 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-<i class="fas fa-fire"></i>  Introducing Code Coverage. Know which microflows are covered by your tests! Define specific coverage goals and measure coverage trends.
+<i class="fas fa-fire"></i>  Introducing <b>Code Coverage</b>. Know which microflows are covered by your tests! Define specific coverage goals and measure coverage trends.
 <br/>
-<i class="fas fa-fire"></i>  Improved analysis of Test Runs by providing links to Teststeps that use a specific output.
+<i class="fas fa-fire"></i>  Improved <b>analysis of Test Runs</b> by providing links to Teststeps that use a specific output.
 <br/>
-<i class="fas fa-fire"></i>  Added instructional Demo Video's to MTA.
+<i class="fas fa-fire"></i>  Added instructional <b>Demo Video's</b> to MTA.
 <br/>
-<i class="fas fa-fire"></i>  Added the option to execute a Teststep with a delay, which allows more fine-grained waiting than Test Case delay.
+<i class="fas fa-fire"></i>  Added the option to execute with a <b>Teststep delay</b>, which allows more fine-grained waiting than Test Case delay.
 <br/>
-<i class="fas fa-fire"></i>  Optimized Test Run performance by providing the choice for normal (faster) and full output.
+<i class="fas fa-fire"></i>  Optimized <b>Test Run performance</b> by providing the choice for normal (faster) and full output.
 
 
 ## New functionality 

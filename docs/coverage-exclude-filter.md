@@ -37,26 +37,29 @@ Microflows in the Mendix System module are always excluded from coverage calcula
 ### View Exclude Filters on a Coverage Goal
 - Navigate to [<i class="fal fa-umbrella"></i> Coverage Goals](coverage-goal) for the respective [Application](application) or [Test Configuration](test-configuration).
 - Select the [Coverage Goal](coverage-goal) you want to set filters for.
-- Click <i class="fa fa-pencil"></i> in "Applied microflow filters" on the right side of the page.
+- Click <i class="fa fa-pencil"></i> in "Microflow usage for coverage calculation" on the right side of the page.
+
+:::info
+On the top of this page, you will see how many microflows will be included and excluded, based on the current Application Revision and Exclude Filters in the Coverage Goal.
+This information will be automatically updated if the Exclude Filters change or if another Application Revision is applied. 
+Clicking on one of the numbers will show which microflows the number relates to. 
+:::
 
 ### Generate an Exclude Filter on a Coverage Goal by Microflow name
 - Open the list of Exclude Filters on a Coverage Goal.
-- Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
 - Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by microflow name"
 - Select the Microflow(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters for each selected microflow, with fully qualified name as Module Name filter and Microflow Name filter.
 
 ### Generate an Exclude Filter on a Coverage Goal by Module name
 - Open the list of Exclude Filters on a Coverage Goal.
-- Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
 - Click "<i class="fal fa-wand-magic-sparkles"></i> Generate" and select "Generate by module name"
 - Select the Module(s) and click "<i class="fal fa-wand-magic-sparkles"></i> Generate filter" when done.
 - MTA will generate filters with the selected modules as Module Name filter, and wildcards for the Microflow Name filter.
 
 ### Add an Exclude Filter on a Coverage Goal manually
 - Open the list of Exclude Filters on a Coverage Goal.
-- Click "<i class="fal fa-plus-circle"></i> Add" in "Exclude microflow filters".
-- Click "<i class="fal fa-plus-circle"></i> New"
+- Click "<i class="fal fa-plus-circle"></i> Add".
 - Enter the Module Name filter and Microflow Name filter and click Save.
 
 ### Edit an Exclude Filter
