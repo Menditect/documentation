@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Import plugin
 
 In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. 

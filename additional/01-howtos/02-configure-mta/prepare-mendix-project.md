@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Prepare Mendix project
 
 To prepare the Mendix project for MTA, it is advisable to check for microflows that open a page. If you want to test a microflow that opens a page, you must include an output parameter in that microflow, returning the exact same object that is passed to the page.

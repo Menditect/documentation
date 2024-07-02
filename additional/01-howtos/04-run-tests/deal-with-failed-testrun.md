@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Deal with a failed Test Run
 
 ## Functional vs technical failed Test Run

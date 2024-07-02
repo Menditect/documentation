@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Configure MTA to use SAML SSO
 
 ## Definition

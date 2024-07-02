@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Use Microflow Call Hierarchy Extension in Studio Pro
 
 **Watch installation video!**

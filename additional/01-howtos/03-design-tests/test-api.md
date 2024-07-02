@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Test an API
 
 Testing a (REST) API means creating an integration test where two apps communicate. One hypothetical app **(A)** executes a REST call and does something with the result. The other app **(B)** hosts the REST service. 

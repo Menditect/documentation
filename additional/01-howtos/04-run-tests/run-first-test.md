@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Run your first test in MTA
 
 **NEW: Watch the video instead!**

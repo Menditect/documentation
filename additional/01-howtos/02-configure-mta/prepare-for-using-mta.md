@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Prepare for using MTA for the first time
 
 ## Purpose

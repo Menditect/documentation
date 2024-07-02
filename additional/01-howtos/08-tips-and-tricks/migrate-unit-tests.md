@@ -18,7 +18,7 @@ This document helps you to migrate tests for the [Mendix Unit Test module](https
 7. When finished, open a Test Case, and add an [Assert](../../../Assert/assert-microflow-output):
    - If the microflow returns a Boolean, assert "True";
    - If the microflow returns a String, select assert type "Not equals" and leave the value blank;
-   - If the microflow does not return anything, check the [Assert on an Exception](../design-tests/assert-exception) how-to.
+   - If the microflow does not return anything, check the [Assert on an Exception](assert-exception) how-to.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

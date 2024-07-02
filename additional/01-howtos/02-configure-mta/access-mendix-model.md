@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Access Mendix model
 
 To access Mendix projects, the user who logs in to MTA must be linked to a Mendix user.

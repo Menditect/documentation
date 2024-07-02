@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Manage Accounts
 
 To manage MTA accounts, login as [MTA Manager](#mtamanager) and navigate to MTA Management -> MTA Users.
