@@ -18,9 +18,9 @@ Note that when your test configuration contains an error, you can still execute 
 :::
 
 The quickest way to updating tests:
-- Choose a "master" test configuration to update to the latest revision.
-- Create an empty test configuration (a "draft") with your name in the title, so other Tester's know not to touch it. 
-- Change the revision of the draft test configuration to the latest revision.
+- Choose any "master" Test Configuration that you want to update to the latest revision. 
+- Create an empty Test Configuration (a "draft") with your name in the title, so other Tester's know not to touch it. 
+- Set the revision of the draft test configuration to the latest revision.
 - Next, copy the test suite that contains the test that you need to update, from the master into the draft.
 - MTA will *automatically* adapt the contents of the test suite.
 - Make your changes in the draft test suite to fix any construction errors and repair broken tests.

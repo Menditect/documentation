@@ -2,9 +2,7 @@
 
 ## Definition
 
-This document describes how to configure MTA to use the CI/CD API.
-
-**Looking for the CI/CD API docs?** These were moved to the [reference guide](../../../api).
+This document describes how to configure MTA to use the [Public API](../../../api).
 
 ## Create API user
 

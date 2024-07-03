@@ -83,13 +83,15 @@ A list of all Test Suites in the Test Configuration, to allow the execution of a
     {
       "Key": "32",
       "Name": "Test Suite #1",
-      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32"
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32",
+      "Seqnr": "1"
     },
     {
       "Key": "33",
       "Name": "Test Suite #2",
-      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33"
-    }
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33",
+      "Seqnr": "2"
+     }
   ]
 }
 ```
