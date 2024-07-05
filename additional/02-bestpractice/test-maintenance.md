@@ -17,18 +17,15 @@ If this happens when you don't have time to fix these errors, the test configura
 Note that when your test configuration contains an error, you can still execute the test cases and test suites that do not contain errors.
 :::
 
-The quickest way to updating tests:
-- Choose any "master" Test Configuration that you want to update to the latest revision. 
-- Create an empty Test Configuration (a "draft") with your name in the title, so other Tester's know not to touch it. 
-- Set the revision of the draft test configuration to the latest revision.
-- Next, copy the test suite that contains the test that you need to update, from the master into the draft.
-- MTA will *automatically* adapt the contents of the test suite.
-- Make your changes in the draft test suite to fix any construction errors and repair broken tests.
-- Repeat this process until you have done this for all the test suites that need to be updated.
-- Remove these test suites from the master.
-- Adapt the master to the latest revision.
-- Copy the updated test suites to the master. Note that you can copy test suites even if the target test configuration contains errors.
-- Delete the test suites from the draft test configuration.
+The quickest way to updating tests is by moving Test Suites one-by-one into an empty Test Configuration:
+1. Choose any *source* Test Configuration that you want to update to the latest revision. 
+2. Create an empty, *target* Test Configuration with your name in the title, so your collaegues know not to touch it. 
+3. Set the revision of the target to the latest revision.
+4. Next, copy the first Test Suite from the source into the target.
+5. MTA will *automatically* adapt the contents of the Test Suite in the target.
+6. Fix [construction errors](../../construction-error) and update the Test Cases as a result of this adapt.
+7. Repeat steps 4-6 until you have done this for all the Test Suites.
+8. You can now choose to delete the source or keep it (to keep the associated Test Runs).
 
 ## Adding tests
 
