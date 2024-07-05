@@ -17,7 +17,7 @@ If this happens when you don't have time to fix these errors, the test configura
 Note that when your test configuration contains an error, you can still execute the test cases and test suites that do not contain errors.
 :::
 
-The quickest way to updating tests is by moving Test Suites one-by-one into an empty Test Configuration:
+The best way adapt a large Test Configuration is by copying Test Suites one-by-one into an empty Test Configuration:
 1. Choose any *source* Test Configuration that you want to update to the latest revision. 
 2. Create an empty, *target* Test Configuration with your name in the title, so your collaegues know not to touch it. 
 3. Set the revision of the target to the latest revision.
