@@ -27,6 +27,11 @@ The best way adapt a large Test Configuration is by copying Test Suites one-by-o
 7. Repeat steps 4-6 until you have done this for all the Test Suites.
 8. You can now choose to delete the source or keep it (to keep the associated Test Runs).
 
+
+**Watch the how-to video on Adapting:**
+<iframe src="https://player.vimeo.com/video/980624666" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
+
 ## Adding tests
 
 Like updating tests, adding tests to your existing test configuration is also quicker if you use a draft test configuration to build the tests:
