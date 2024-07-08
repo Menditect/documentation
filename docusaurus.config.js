@@ -72,7 +72,7 @@ const config = {
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
-          { id: 'api', content: 'api.md', versions: ['2.6.0'] },
+          { id: 'api', content: 'api.md', versions: ['2.6.0', '2.7.0'] },
           { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
