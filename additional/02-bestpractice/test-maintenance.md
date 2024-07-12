@@ -17,7 +17,12 @@ If this happens when you don't have time to fix these errors, the test configura
 Note that when your test configuration contains an error, you can still execute the test cases and test suites that do not contain errors.
 :::
 
-The best way adapt a large Test Configuration is by copying Test Suites one-by-one into an empty Test Configuration:
+### Fix adapt resulting in construction errors
+
+If your adapt results in a lot of [construction errors](../../construction-error), you can [restore a snapshot](../../snapshot#restore-a-snapshot) of the Test Configuration, that was created before it was adapted.
+
+After that, you can go to the adapt process, one [Test Suite](../../test-suite) at the time:
+
 1. Choose any *source* Test Configuration that you want to update to the latest revision. 
 2. Create an empty, *target* Test Configuration with your name in the title, so your collaegues know not to touch it. 
 3. Set the revision of the target to the latest revision.
