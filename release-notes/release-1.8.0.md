@@ -40,7 +40,7 @@ Read more about MTS/LTS versions at https://docs.mendix.com/releasenotes/studio-
 </ul>
 
 :::note
-Make sure to <a href="../additional/howtos/import-plugin">download the latest MTA Plugin Module version</a> before using this version of MTA.
+Make sure to download the latest MTA Plugin Module version before using this version of MTA.
 :::
 
 ## New functionality 

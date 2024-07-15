@@ -7,17 +7,12 @@ toc_max_heading_level: 2
 
 This document describes the endpoints of MTA's public API.
 
-To learn **how to** implement the API's in a CI/CD pipeline, read the how-to section.
+To learn **how to** implement the API's in a CI/CD pipeline, read the how-to pages on CI/CD.
 
-**Authorization**
 
-To authorize a session for MTA's public API:
+To authorize a session for MTA's public API, use Basic (HTTP) Authorization.
 
-| Authorization | Basic                        |
-| ------------- | ---------------------------- |
-| Username:     | `[the CiCd username in MTA]` |
-| Password:     | `[the CiCd password in MTA]` |
-
+Also make sure to include the HTTP Header `Content-Type` = `'application/json'` for all below endpoints.
 
 ## GET testconfigurations
 
@@ -88,13 +83,15 @@ A list of all Test Suites in the Test Configuration, to allow the execution of a
     {
       "Key": "32",
       "Name": "Test Suite #1",
-      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32"
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32",
+      "Seqnr": "1"
     },
     {
       "Key": "33",
       "Name": "Test Suite #2",
-      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33"
-    }
+      "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33",
+      "Seqnr": "2"
+     }
   ]
 }
 ```
@@ -444,8 +441,10 @@ Any of below status descriptors:
 
 Initiate the execution of a test configuration for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](coverage-goal) after the test was executed.
+
 :::note
-The Key values in the body are those of the Application Instances. Please make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.
+Make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.
 :::
 
 ### Request
@@ -461,14 +460,18 @@ The request for this endpoint is made up of both a URL and a JSON body.
 `https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/execute`
 
 ```json
-[
-    {
-        "Key": "8"
-    },
-    {
-        "Key": "12"
-    }
-]
+{
+    "Coverage": true,
+    "ApplicationInstances": 
+    [
+        {
+            "Key": "19"
+        }, 
+        {
+            "Key": "21"
+        }
+    ]
+}
 ```
 
 ### Responses

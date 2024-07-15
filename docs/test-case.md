@@ -1,5 +1,5 @@
 ---
-sidebar_position: 16
+sidebar_position: 20
 ---
 
 
@@ -76,6 +76,8 @@ When generating multiple test cases, best practice is to create a container [tes
 ### Execute Test Case
 
 - Use the Execute test case button from the <i class="fal fa-share-nodes"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
+- Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
+- Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
 Executing a single Test Case will also execute previous Test Cases that the Test Case depends on. 
 

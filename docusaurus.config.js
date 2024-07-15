@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.6.0',
+              label: '2.7.0',
               path: '/',
             },
           },
@@ -59,7 +59,15 @@ const config = {
           { id: 'sla', content: '@site/legal/sla.md' },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/use-microflow-call-hierarchy-extension.md',
+            content: '@site/additional/01-howtos/01-connect-mta/use-microflow-call-hierarchy-extension.md',
+          },
+          {
+            id: 'import-plugin',
+            content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
+          },
+          {
+            id: 'generate-test',
+            content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
           {
             id: 'mta-intergration-mch-extension',
@@ -68,7 +76,7 @@ const config = {
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
-          { id: 'api', content: 'api.md', versions: ['2.6.0'] },
+          { id: 'api', content: 'api.md', versions: ['2.6.0', '2.7.0'] },
           { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
@@ -76,7 +84,6 @@ const config = {
           { id: 'assert-attribute', content: 'Assert/assert-attribute.md', versions: 'ALL' },
           { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
-          { id: 'cicd', content: 'cicd.md', versions: ['2.5.0'] },
           { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
           { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },

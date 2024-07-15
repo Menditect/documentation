@@ -16,7 +16,7 @@ Despite these advantages, there can be scenario's that creating teststeps by han
 This document describes what aspects to consider when creating such a recording.
 Other documents about this topic are:
 - [Recording](../../recording) in the reference guide.
-- [Complete recorded actions](../howtos/record-user-actions) in the How to section.
+- [Complete recorded actions](../howtos/design-tests/record-user-actions) in the How to section.
  
 ## Guidelines
 
@@ -37,7 +37,7 @@ Before starting the recording, it is useful to follow these guidelines first.
 
 ### Microflow page calls
 
-To prepare microflows with "Show page" activities, read [this section](../howtos/prepare-mendix-project).
+To prepare microflows with "Show page" activities, read [this section](../howtos/configure-mta/prepare-mendix-project).
 
 ### Recurring patterns
 

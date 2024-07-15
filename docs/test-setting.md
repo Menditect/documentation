@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 23
 ---
 
 
@@ -9,6 +9,11 @@ sidebar_position: 19
 
 A Test Setting can be chosen to run a [Test Configuration](test-configuration). The Test Setting defines which [Application Instance(s)](application-instance) will be used during a [Test Run](test-run).
 The user that is logged in determines which Test Setting is to be selected when Executing the Test Configuration, by setting one as a Preference.
+
+:::info
+Test Settings are only relevant when [executing Test Configurations from within MTA](test-configuration#execute-a-test-configuration).<br/>
+When using MTA's [Public API](api#post-execute-testconfiguration), an [Application Instance](application-instance) must be specified.
+:::
 
 ## Properties
 

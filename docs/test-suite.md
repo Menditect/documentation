@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 24
 ---
 
 
@@ -30,12 +30,19 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Use the Add Test Suite button to create a new Test Suite.
 - Enter a name and an optional description and choose "Save".
 
+### Edit a Test Suite
+- Find the Test Suite you want to edit.
+- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
+- Use the <i class="fal fa-pencil"></i> button to edit the Test Suite.
+
 ### Configure a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to configure a Test Suite.
 - Select Configure on the Test Suite you want to configure.
 
 ### Execute a Test Suite
 - Use the Execute test suite button from the <i class="fal fa-link-simple"></i> menu or inside a Test Suite, to start a new [Test Run](test-run).
+- Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
+- Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
 ### Share a Test Suite
 

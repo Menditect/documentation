@@ -23,16 +23,17 @@ Note that if a retrieved object is deleted by a Delete Object Teststep in MTA, a
 
 
 ## Properties
-| Name            | Description                                                                                                            |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Name            | The name of the Teststep.                                                                                              |
-| Description     | A description of the Teststep.                                                                                         |
-| Highlight       | This indicates whether to visually highlight the Teststep in the Test Case to draw attention to it.                    |
-| Category        | Can be either 'Object' or 'Microflow'.                                                                                 |
-| Action          | Only for Object Teststeps; either 'Create', 'Retrieve', 'Change', 'Delete' or 'Persist'.                               |
-| Retrieve set    | Only for Retrieve Object Teststeps; either 'All objects', or 'Only First object'.                                      |
-| Retrieve option | Only for Retrieve Object Teststeps; either 'From database', 'From former Teststep', or 'By association' (from memory). |
-| Microflow Name  | Only for Microflow Teststeps; Name of the microflow to be executed.                                                    |
+| Name                  | Description                                                                                                                      |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Name                  | The name of the Teststep. [Edit](#edit-a-teststep) the teststep to change.                                                       |
+| Description           | A description of the Teststep. [Edit](#edit-a-teststep) the teststep to change.                                                  |
+| Delay after execution | Delays the execution after executing this teststep with specified milliseconds. [Edit](#edit-a-teststep) the teststep to change. |
+| Highlight             | Highlights the Teststep yellow in the list, to draw attention to it. [Edit](#edit-a-teststep) the teststep to change.            |
+| Category              | Can be either 'Object' or 'Microflow'.                                                                                           |
+| Action                | Only for Object Teststeps; either 'Create', 'Retrieve', 'Change', 'Delete' or 'Persist'.                                         |
+| Retrieve set          | Only for Retrieve Object Teststeps; either 'All objects', or 'Only First object'.                                                |
+| Retrieve option       | Only for Retrieve Object Teststeps; either 'From database', 'From former Teststep', or 'By association' (from memory).           |
+| Microflow Name        | Only for Microflow Teststeps; Name of the microflow to be executed.                                                              |
 
 ## Business rules
 - The name is mandatory.
@@ -77,6 +78,7 @@ First, navigate to the Test Case that the Teststep is in.
 
 
 ### Edit a Teststep
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
 - Click on "<i class="fa fa-pencil"></i> Edit".
 - Click on <i class="fa fa-pencil"></i> next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
 
