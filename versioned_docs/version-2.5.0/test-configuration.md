@@ -34,8 +34,6 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 - Add a new Test Configuration and enter a Name and optional Description. 
 - Choose whether the Test Configuration should be Ci/Cd enabled. 
 
-For the full explanation on how to add a Test Configuration, read the [How To](additional/howtos/run-first-test#2-add-a-test-configuration).
-
 ### Edit a Test Configuration
 
 - Open or Select the Test Configuration that you want to edit.
