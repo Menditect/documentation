@@ -66,6 +66,10 @@ const config = {
             content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
           },
           {
+            id: 'howto-byomeal',
+            content: '@site/additional/01-howtos/02-configure-mta/run-mta-on-premise.md',
+          },
+          {
             id: 'generate-test',
             content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
