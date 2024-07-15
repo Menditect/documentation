@@ -117,7 +117,7 @@ This is the URL that the app will use to connect to MTA. The URL is setup as fol
 Example: wss://mta-mtatraining.mendixcloud.com
 
 :::info
-The constant `NoAssociationResponse` can be used to omit associations from the results of a Test Run for performance reasons. However, this feature is experimental, and not officially supported.
+The constant `NoAssociationResponse` should not be modified. The feature is experimental, and not officially supported.
 :::
 
 ### Configuring Plugin Home page
