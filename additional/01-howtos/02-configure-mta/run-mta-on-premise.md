@@ -34,11 +34,11 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 | MtaUtils.DeleteObjectBatchSize                                   | `500`                                                    |
 | MtaUtils.DeploymentType                                          | `On-Premises`                                            |
 | MtaUtils.InternalToken                                           | *(empty)*                                                |
-| MtaUtils.MtaDocVersion                                           | `2.5.0`                                                  |
 | MtaUtils.NodeRevision                                            | `0`                                                      |
+| MtaUtils.ScheduledEventsOffsetUTC                                | *(set offset from UTC time for scheduled events to run)* |
 | MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                    |
-| MtaUtils.UrlReleaseNotes                                         | `releasenotes`                                           |
 | MtaUtils.UrlSupportForm                                          | `https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri` |
+| MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`            |
 | PluginRecordModule.RecordingSupportRequestUrl                    | `https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri` |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                     |
 
@@ -61,15 +61,15 @@ Menditect on-premise customers and partners **do not** have to set these values.
 
 #### Scheduled events
 
-- Toggle these scheduled events to Currently Enabled:
+- Toggle these scheduled events (that cleanup old or unused data) to Currently Enabled:
 
 ```
-ApiCiCdModule.RunCtresCleanup
-ApplicationModule.RunARVNsContentCleanUp
-Deeplink.Cleanup
-MtaDataValidationModule.RunInterval
-TestconfigurationModule.RunTrunsCleanup
-TestconfigurationModule.RunTcnfsCleanup
+ApplicationModule.SE_ARVNsABRNsCleanUp
+CoverageRun.SE_CGLRsLevelAPCTCleanUp
+DeepLink.CleanUp
+MtaDataValidationModule.SE_Datavalidation
+TestconfigurationModule.SE_TCNFsCleanUp
+TestRunModule.SE_TRUNsCleanUp
 ```
 
 #### Firewall and network settings
@@ -117,4 +117,4 @@ After updating MTA, make sure that all the test applications have the newest ver
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 16 July 2024
