@@ -8,7 +8,13 @@ The message could look like this:
 
  ![Generic error](generic-error.png)
 
-In most cases, if the page is loading correctly, this is nothing to worry about. It may be due to the Mendix XAS interface being temporarily unresponsive.
+If this generic message is shown only once while navigating, and does not come back when after you retry the same action, it is nothing to worry about.
 
-However, if you are having doubts: when this error is shown, please use Development Tools / Console (keyboard shortcut `Ctrl` + `Shift` + `i`) to verify the origin of the error message. You can make a screenshot of this Console window and share it with us, by contacting support (support@menditect.com).
+The cause is that the interface between the browser and the Mendix server did not respond in time because too much data was being processed. 
+
+#### Resolutions
+
+Processing large amounts of data in MTA becomes troublesome when running MTA on an instance which resources are inadequate. The solution is to buy more resources for your cloud node. 
+
+For Mendix resource packs, see https://docs.mendix.com/developerportal/deploy/mendix-cloud-deploy/#resource-pack. When using MTA intensively with more than 2 users, an M21 resource pack or larger is recommended.
 
