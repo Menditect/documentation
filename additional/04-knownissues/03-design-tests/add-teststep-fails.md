@@ -19,6 +19,6 @@ There are too many attributes or associations in the Entity. Generally, more tha
 
 **Resolution**
 
-The least expensive solution is to create a microflow in the Mendix model that Creates / Changes / Retrieves the object, and [call that microflow in MTA](../../Teststep/microflow).
+The least expensive solution is to create a microflow in the Mendix model that Creates / Changes / Retrieves the object, and [call that microflow in MTA](../../../Teststep/microflow).
 
 An alternative is to upgrade the Mendix resource pack. See Mendix docs: https://docs.mendix.com/developerportal/deploy/mendix-cloud-deploy/#resource-pack.
