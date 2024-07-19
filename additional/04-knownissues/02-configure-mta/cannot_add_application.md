@@ -2,7 +2,7 @@
 
 ## Issue summary
 
-Sometimes a Mendix Application or Application Branch is not visible in the list when adding an [Application](../../application) or [Revision](../../application-revision).
+Sometimes a Mendix Application or Application Branch is not visible in the list when adding an [Application](../../../application) or [Revision](../../../application-revision).
 
 ## Possible causes and resolutions
 
@@ -12,4 +12,4 @@ If the Application was just added to Mendix, you first have to hit the Publish b
 
 If the Publish button is not yet enabled, you have to restart Mendix Studio Pro. 
 
-If the Application is still not visible, it's possible to manually add the Application using the "..." button on top-right of the [Add Application page](../../application#register-application-in-mta).
+If the Application is still not visible, it's possible to manually add the Application using the "..." button on top-right of the [Add Application page](../../../application#register-application-in-mta).

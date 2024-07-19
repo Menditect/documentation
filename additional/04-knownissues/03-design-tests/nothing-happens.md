@@ -3,11 +3,11 @@
 ## Issue summary
 
 While working in MTA and trying to start any of below actions:
-- [Execute a Test Configuration](../../test-configuration#execute-a-test-configuration)
-- [Execute a Test Suite](../../test-suite#execute-a-test-suite)
-- [Execute a Test Case](../../test-case#execute-test-case)
-- [Download a revision](../../application-revision#change-the-application-revision-for-a-test-configuration)
-- [Adapting Test Suites to a downloaded revision](../../application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision)
+- [Execute a Test Configuration](../../../test-configuration#execute-a-test-configuration)
+- [Execute a Test Suite](../../../test-suite#execute-a-test-suite)
+- [Execute a Test Case](../../../test-case#execute-test-case)
+- [Download a revision](../../../application-revision#change-the-application-revision-for-a-test-configuration)
+- [Adapting Test Suites to a downloaded revision](../../../application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision)
 
 in some occasions, it may seem like nothing happens.
 

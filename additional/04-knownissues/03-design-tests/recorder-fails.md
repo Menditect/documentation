@@ -2,7 +2,7 @@
 
 ## Issue summary
 
-After [recording](../../recording) user actions, when stopping the recording, the teststep generation fails with an error.
+After [recording](../../../recording) user actions, when stopping the recording, the teststep generation fails with an error.
 
 
 ## Possible causes and resolutions
@@ -27,4 +27,4 @@ Please start the recorder before logging in to the application.
 
 The limits of the recording feature are reached. 
 
-[Check the limitations.](../bestpractice/record-actions#limitations)
+[Check the limitations.](../../bestpractice/record-actions#limitations)
