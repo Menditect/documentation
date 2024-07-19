@@ -24,23 +24,23 @@ Your cloud needs to meet at least the specifications of the Mendix S21-STANDARD 
 - Deploy and transport it to the environment in your cloud. <br/>When deploying MTA on the Mendix Cloud, you need to use **at least an S21 Resource Pack.** <br/>When deploying MTA on another Cloud provider, you need to have **at least 2 GB of RAM for the App and 1/2 CPU core** available.
 - Check the content of the following environment variables for the MTA application:
 
-| Environment variable                                             | value                                                    |
-| ---------------------------------------------------------------- | -------------------------------------------------------- |
-| ApiMendixModule.WebsocketStage                                   | `production`                                             |
-| Atlas_Core.Atlas_Core_Version                                    | `3.0.7`                                                  |
-| Atlas_Web_Content.Atlas_Web_Content_Version                      | `3.0.6`                                                  |
-| EgalitConfigModule.EsaMultiInstanceMode                          | `False`                                                  |
-| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | `5`                                                      |
-| MtaUtils.DeleteObjectBatchSize                                   | `500`                                                    |
-| MtaUtils.DeploymentType                                          | `On-Premises`                                            |
-| MtaUtils.InternalToken                                           | *(empty)*                                                |
-| MtaUtils.NodeRevision                                            | `0`                                                      |
-| MtaUtils.ScheduledEventsOffsetUTC                                | *(set offset from UTC time for scheduled events to run)* |
-| MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                    |
-| MtaUtils.UrlSupportForm                                          | `https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri` |
-| MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`            |
-| PluginRecordModule.RecordingSupportRequestUrl                    | `https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri` |
-| TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                     |
+| Environment variable                                             | value                                                            |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ApiMendixModule.WebsocketStage                                   | `production`                                                     |
+| Atlas_Core.Atlas_Core_Version                                    | `3.0.7`                                                          |
+| Atlas_Web_Content.Atlas_Web_Content_Version                      | `3.0.6`                                                          |
+| EgalitConfigModule.EsaMultiInstanceMode                          | `False`                                                          |
+| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | `5`                                                              |
+| MtaUtils.DeleteObjectBatchSize                                   | `500`                                                            |
+| MtaUtils.DeploymentType                                          | `On-Premises`                                                    |
+| MtaUtils.InternalToken                                           | *(empty)*                                                        |
+| MtaUtils.NodeRevision                                            | `0`                                                              |
+| MtaUtils.ScheduledEventsOffsetUTC                                | *(offset from UTC, in whole hours, for scheduled events to run)* |
+| MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                            |
+| MtaUtils.UrlSupportForm                                          | `https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri`         |
+| MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`                    |
+| PluginRecordModule.RecordingSupportRequestUrl                    | `https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri`         |
+| TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                             |
 
 
 :::note
