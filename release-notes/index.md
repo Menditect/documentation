@@ -1,5 +1,7 @@
 # Release 2.7.0
 
+<sup>These release notes also apply for MTA version 2.7.1.</sup>
+
 #### Release date
 
 15 July 2024
