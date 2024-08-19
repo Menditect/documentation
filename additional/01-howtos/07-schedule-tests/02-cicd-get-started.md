@@ -1,6 +1,12 @@
-# Get started
+# Get started with the API
 
-## Get started
+:::info
+If you're getting started using the MTA Public API, [let us know](mailto:support@menditect.com?subject=MTA%20Public%20API). 
+
+Menditect has created a **starter kit** that we can share with you to make the implementation easier. 
+:::
+
+## Getting started
 
 The [MTA Public API](../../../api) uses Keys to uniquely refer to objects in the database, as an alternative to using the Mendix internal Object ID (which is very long and not exposed in MTA), or object names (which are not always unique). As a result, the best way to get started is by using the Key of the Test Configuration, Application and Application Instance, to call the endpoints that you need.
 
