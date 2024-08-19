@@ -13,89 +13,112 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-<i class="fas fa-fire"></i>  Introducing <b>Code Coverage</b>. Know which microflows are covered by your tests! Define specific coverage goals and measure coverage trends.
-<br/>
-<i class="fas fa-fire"></i>  Improved <b>analysis of Test Runs</b> by providing links to Teststeps that use a specific output.
-<br/>
-<i class="fas fa-fire"></i>  Added instructional <b>Demo Video's</b> to MTA.
-<br/>
-<i class="fas fa-fire"></i>  Added the option to execute with a <b>Teststep delay</b>, which allows more fine-grained waiting than Test Case delay.
-<br/>
-<i class="fas fa-fire"></i>  Optimized <b>Test Run performance</b> by providing the choice for normal (faster) and full output.
+<i class="fas fa-fire"></i>  <b>Export and Import Test Configuration to file</b> <br/>This allows for backing up your test scripts and enables MTA cross-instance migration.
+<br/><br/>
+<i class="fas fa-fire"></i>  <b>Copy a Test Suite from a Test Configuration using other Application</b> <br/>This allows for reusing test scripts across different Mendix Applications.
+<br/><br/>
+<i class="fas fa-fire"></i>  Bug fixes for stability and security.
 
 
 ## New functionality 
 
 
-| ID                    | MTA-1401                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added the option to measure the Code Coverage of microflows that were executed in Test Runs. Look for the <i class="fal fa-umbrella"></i> icon! <br/><br/>This will be measured after a test was executed, on both Test Configuration and Application level. <br/>A 100 % coverage means all microflows were executed. Set Coverage Goals with Exclude Filters to exclude microflows. Use the Coverage Goals navigation item on your Application or Test Configuration to get started. |
-| __Release actions__   | Test management apps using MTA's [Public API](../api#post-execute-testconfiguration) to execute a Test Configuration, have to provide a "Coverage" parameter in the body. Check the reference guide for more information.                                                                                                                                                                                                                                                              |
+| ID                    | MTA-1828                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to export (backup) a Test Configuration to a text file, and import a Test Configuration from a text file. |
+| __Release actions__   | None.                                                                                                                        |
 <br/>
 
 
-| ID                    | MTA-1333                                                                                                                                                                                                                                           |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added the Delay option on a teststep, to specify how long MTA should wait before executing the next teststep. If a delay other than 0 was specified, the delay is shown in the teststep. Look for the <i class="fal fa-hourglass-start"></i> icon! |
-| __Release actions__   | None.                                                                                                                                                                                                                                              |
-
+| ID                    | MTA-1829                                                                                                                                                                                                                                                                               |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to import a Test Suite from a source Test Configuration, even if that Test Suite uses an Application, that is not used in the target Test Configuration. MTA will detect elements such as Microflows and Entities, by matching them by fully qualified Mendix name. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                  |
 <br/>
 
 
-| ID                    | MTA-1752                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When executing any test, a choice must now be made to run the test with "Full output" or not. Look for the <i class="fal fa-memo-circle-info"></i> icon!<br/><br/> Running without full output, which is now the new default setting, will be faster than before, but when viewing the results of the Test Run, teststep values are only shown if they are used by other teststeps. Running with full output will include all data values when viewing the results of the Test Run. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-
+| ID                    | MTA-1910                                                                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The page where Test Suites and Test Cases can be copied has changed. Test Suites and Test Cases can now be "duplicated" in the same Test Configuration and Test Suite (respectively). When copying from another Test Configuration or Test Suite, the copy button is now available as "Copy from", in the Test Configuration or Test Suite that you want to copy into. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                  |
 <br/>
 
 
-| ID                    | N/A                                                                                                                                                                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When executing any test, it is now possible to navigate through the output values of teststeps to determine in which other teststeps that output is used. Because there was already an option to see which teststep is providing input, these values are now fully navigable, back and forth. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                         |
-
+| ID                    | MTA-1662                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| __New functionality__ | The MTA CiCd API v2 that was deprecated since MTA 2.6 has been permanently deleted. |
+| __Release actions__   | The MTA CiCd API v2 was replaced by the MTA Public API (see reference guide).       |
 <br/>
 
 
-| ID                    | N/A                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added instructional demo video's to MTA. <br/><br/>Just click on the <i class="fal fa-clapperboard-play"></i> button in the top-right in MTA. |
-| __Release actions__   | None.                                                                                                                                         |
-
+| ID                    | MTA-86                                                                        |
+| --------------------- | ----------------------------------------------------------------------------- |
+| __New functionality__ | On the Test Configurations page, it is now possible to filter on Application. |
+| __Release actions__   | None.                                                                         |
 <br/>
-
 
 
 ## Bug fixes
 
 
-| ID                  | MTA-1727                                                                                                                                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __Problem__         | Specifying a single quote (') as value of a String attribute in a retrieve teststep would lead to incorrect escaping when executing the test. This is because single quotes are escaped differently in XPATH parameters. |
-| __Solution__        | Single quotes are now escaped correctly, resulting in correct XPATH parameters.                                                                                                                                          |
-| __Release actions__ | None.                                                                                                                                                                                                                    |
+| ID                  | MTA-1914                                                                                                                                                                                                 |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When selecting "empty list" as value for a Microflow List parameter, the value would be empty (or null), instead of instantiating a List with 0 objects. This resulted in errors when mutating the list. |
+| __Solution__        | When selecting "empty list" as value for a Microflow List parameter, an actual empty List is instantiated and passed as the parameter value.                                                             |
+| __Release actions__ | **In your Test Application, open the Mendix Marketplace and update the MTA Plugin to the newest version.**                                                                                               |
 
 <br/>
 
 
-
-| ID                  | MTA-1822                                                                                            |
-| ------------------- | --------------------------------------------------------------------------------------------------- |
-| __Problem__         | Unlimited String values could not be copied from attributes in the results of a Test Run.           |
-| __Solution__        | Unlimited String values can now be copied with a Copy button from attributes results of a Test Run. |
-| __Release actions__ | None.                                                                                               |
-
-<br/>
-
-
-
-| ID                  | MTA-1835                                                                                                                                                                                                             |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Microflow teststeps with the same output data type as needed for an input parameter are not visible (and cannot be used as input) if those microflow teststeps have input parameters where datavariation is applied. |
-| __Solution__        | Microflow teststeps with the same output data type as needed for an input parameter are visible so they can be used as input.                                                                                        |
-| __Release actions__ | None.                                                                                                                                                                                                                |
+| ID                  | MTA-1886                                                                                                                                                                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When connecting an Application Instance to MTA with the correct MTA Connection User credentials but a non-existing Token, the connection will show as Connected in the Appliation Instance, but as disconnected in MTA. |
+| __Solution__        | When connecting to MTA using a non-existing Token, MTA will not assign a Connection ID and the connection will still show as disconnected in the Application Instance.                                                  |
+| __Release actions__ | None.                                                                                                                                                                                                                   |
 
 <br/>
 
 
+| ID                  | MTA-1930                                                                                                           |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | When viewing the results of a Test Case Run, the Apply Security setting on the respective Test Case was not shown. |
+| __Solution__        | The Apply Security setting on a Test Case is now shown, both in design view and in the Test Case Run results.      |
+| __Release actions__ | None.                                                                                                              |
+
+<br/>
+
+
+| ID                  | MTA-1928                                                                                                              |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When downloading a revision through the MTA Public API, a change in Repository type from SVN to Git, is not detected. |
+| __Solution__        | Either when downloading a revision in MTA or through the MTA Public API, changes in Repository type are now detected. |
+| __Release actions__ | None.                                                                                                                 |
+
+<br/>
+
+
+| ID                  | MTA-1924                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Adding a Microflow Parameter value to Test Suite data variation resulted in an error.                         |
+| __Solution__        | It is again possible to add a Microflow Parameter value to Test Suite data variation without seeing an error. |
+| __Release actions__ | None.                                                                                                         |
+
+<br/>
+
+
+| ID                  | MTA-1923                                                                                             |
+| ------------------- | ---------------------------------------------------------------------------------------------------- |
+| __Problem__         | A data variation row is added when a value was added, then deleted, and then added again.            |
+| __Solution__        | The number of data variation rows when adding, deleting and again adding a value, remains unchanged. |
+| __Release actions__ | None.                                                                                                |
+
+<br/>
+
+
+| ID                  | MTA-1901                                                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | When cancelling the creation of a new Application Instance inside the Test Configuration wizard, an error would occur. |
+| __Solution__        | The creation of a new Application Instance can again be cancelled when inside the Test Configuration wizard.           |
+| __Release actions__ | None.                                                                                                                  |
+
+<br/>
