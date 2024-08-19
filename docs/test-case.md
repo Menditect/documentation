@@ -2,10 +2,7 @@
 sidebar_position: 20
 ---
 
-
 # Test Case
-
-
 
 ## Definition
 
@@ -104,6 +101,16 @@ Note that it is possible that due to moving a Test Case and dependencies of Test
 - Click on <i class="fa fa-pencil"></i> under the <i class="fas fa-ellipsis"></i> menu in the Test Case to edit it.
 
 Note that it not is possible to change the Test Case Type or associated Test Application after creation.
+
+### Duplicate a Test Case
+
+- Click on <i class="fal fa-copy"></i> under the <i class="fas fa-ellipsis"></i> menu in the Test Case to duplicate it in the same [Test Suite](test-suite).
+
+### Copy a Test Case from another Test Suite
+
+- Navigate to the Test Suite you want to Copy a Test Case in.
+- Click on "<i class="fal fa-copy"></i> Copy from" to select a Test Case from another Test Suite.
+- Click on "<i class="fal fa-copy"></i> Copy" to copy the Test Case.
 
 ### Delete a Test Case
 

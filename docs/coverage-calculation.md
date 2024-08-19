@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 11
 ---
 
 # Coverage Calculation
@@ -32,6 +32,9 @@ A overage Calculation can be associated to a [Test Configuration](test-configura
 - A Coverage Calculation will only be created for [Test Runs](test-run) where the result is "Passed".
 - A Coverage Calculation on an Application will be created for Test Runs in all Test Configurations that are included in the associated [Coverage Goal](coverage-goal), and only for Test Configurations on the latest [Application Revision](application-revision) found in these Test Configurations.
 - A Coverage Calculation for Test Runs that were deleted, will only show Coverage % and Trend %. Other properties are no longer available then.
+- For any [Application](application), only details for the 2 most recent Coverage Calculations will be kept in the cleanup process.
+- Additionally, for any Application, the latest Coverage Calculation will also be kept, if the calculation was performed for a subset of included Test Configurations.
+- For any Test Configuration, details of the Coverage Calculations will be kept if the associated Test Runs are not yet deleted.
 
 ## Actions on a Coverage Calculation
 
