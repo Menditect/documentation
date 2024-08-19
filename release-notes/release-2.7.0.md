@@ -1,14 +1,21 @@
-# Release 2.8.0
+# Release 2.7.0
+
+<sup>These release notes also apply for MTA version 2.7.1.</sup>
 
 #### Release date
 
-23 August 2024
+15 July 2024
 
 #### Supported Mendix versions
 
 Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Support Version (MTS). <br/>
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
+
+
+**Watch the video on Code Coverage!**
+<iframe src="https://player.vimeo.com/video/956958620?h=47a5aa5f4c" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
 
 
 ## Highlights in this release
