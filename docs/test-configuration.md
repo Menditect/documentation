@@ -58,6 +58,11 @@ Included in the file are: [Test Suites](test-suite), Execution Users and [Covera
 
 Not included are: [Test Settings](test-setting), [Test Runs](test-run) and associated [Coverage Calculations](coverage-calculation).
 
+:::info
+The export function can be used to temporarily store, or migrate Test Configuration design data.<br/>
+Do not use the export function for backup purposes. Export files are only valid for a single MTA version. If MTA is updated, the export file can no longer be imported.
+:::
+
 ### Import a Test Configuration from file
 
 - Navigate to "Test Configurations" in the top menu.
