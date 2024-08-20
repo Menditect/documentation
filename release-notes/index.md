@@ -65,7 +65,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | When selecting "empty list" as value for a Microflow List parameter, the value would be empty (or null), instead of instantiating a List with 0 objects. This resulted in errors when mutating the list. |
 | __Solution__        | When selecting "empty list" as value for a Microflow List parameter, an actual empty List is instantiated and passed as the parameter value.                                                             |
-| __Release actions__ | **In your Test Application, open the Mendix Marketplace and update the MTA Plugin to the newest version.**                                                                                               |
+| __Release actions__ | **Open your App in Studio Pro, visit the Mendix Marketplace and update the MTA Plugin to the newest version.**                                                                                           |
 
 <br/>
 
