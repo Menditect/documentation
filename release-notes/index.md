@@ -73,7 +73,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | ID                  | MTA-1886                                                                                                                                                                                                                |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | When connecting an Application Instance to MTA with the correct MTA Connection User credentials but a non-existing Token, the connection will show as Connected in the Appliation Instance, but as disconnected in MTA. |
-| __Solution__        | When connecting to MTA using a non-existing Token, MTA will not assign a Connection ID and the connection will still show as disconnected in the Application Instance.                                                  |
+| __Solution__        | When connecting to MTA using a non-existing Token, the connection will show an error message and display as disconnected in the Application Instance.                                                                   |
 | __Release actions__ | None.                                                                                                                                                                                                                   |
 
 <br/>
