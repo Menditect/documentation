@@ -13,9 +13,9 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-<i class="fas fa-fire"></i>  <b>Export and Import Test Configuration to file</b> <br/>This allows for backing up your test scripts and enables MTA cross-instance migration.
+<i class="fas fa-fire"></i>  <b>Export and Import Test Configuration to file</b> <br/>This allows for exporting your test scripts and enables MTA cross-instance migration.
 <br/><br/>
-<i class="fas fa-fire"></i>  <b>Copy a Test Suite from a Test Configuration using other Application</b> <br/>This allows for reusing test scripts across different Mendix Applications.
+<i class="fas fa-fire"></i>  <b>Copy a Test Suite from a Test Configuration using other Application</b> <br/>This allows for reusing test scripts across different Mendix Applications and supports splitting up Applications into microservices.
 <br/><br/>
 <i class="fas fa-fire"></i>  Bug fixes for stability and security.
 
@@ -44,10 +44,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | MTA-1662                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| __New functionality__ | The MTA CiCd API v2 that was deprecated since MTA 2.6 has been permanently deleted. |
-| __Release actions__   | The MTA CiCd API v2 was replaced by the MTA Public API (see reference guide).       |
+| ID                    | MTA-1662                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------ |
+| __New functionality__ | The MTA CiCd API v2 that was deprecated since MTA 2.6 has been permanently deleted.              |
+| __Release actions__   | The MTA CiCd API v2 was replaced by the [MTA Public API](../api) (click to see reference guide). |
 <br/>
 
 
