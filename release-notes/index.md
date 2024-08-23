@@ -13,11 +13,13 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-<i class="fas fa-fire"></i>  <b>Export and Import Test Configuration to file</b> <br/>This allows for exporting your test scripts and enables MTA cross-instance migration.
-<br/><br/>
+<i class="fas fa-fire"></i>  <b>Export and Import Test Configuration to file</b> <br/>This allows for exporting your test scripts and enables MTA cross-instance migration. <i>Some useful examples:</i>
+<iframe src="https://player.vimeo.com/video/1002007845" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
 <i class="fas fa-fire"></i>  <b>Copy a Test Suite from a Test Configuration using other Application</b> <br/>This allows for reusing test scripts across different Mendix Applications and supports splitting up Applications into microservices.
 <br/><br/>
 <i class="fas fa-fire"></i>  Bug fixes for stability and security.
+
 
 
 ## New functionality 
