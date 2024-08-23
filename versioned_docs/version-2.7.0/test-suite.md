@@ -37,7 +37,7 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 
 ### Configure a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to configure a Test Suite.
-- Click anywhere in the row of the Test Suite you want to configure.
+- Select Configure on the Test Suite you want to configure.
 
 ### Execute a Test Suite
 - Use the Execute test suite button from the <i class="fal fa-link-simple"></i> menu or inside a Test Suite, to start a new [Test Run](test-run).
@@ -59,33 +59,14 @@ Note that after using a URL to open the Test Suite, each time you hit `F5` or `C
 - Navigate to the Test Configuration that the Test Suite is in.
 - Click on <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> on the left of the title of the Test Suite to move it up or down.
 
-### Duplicate a Test Suite
-- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to duplicate a Test Suite.
-- Use the <i class="fas fa-ellipsis"></i> button on the Test Suite to open the menu.
-- Click "<i class="fas fa-copy"></i> Duplicate".
-
-### Copy a Test Suite from another Test Configuration
-
-This action will Copy a Test Suite, from another Test Configuration, with the same linked [Applications](application).
-
-- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to Copy a Test Suite in.
-- Click on "<i class="fal fa-copy"></i> Copy from" to select a Test Suite from another Test Configuration.
-- Click on "<i class="fal fa-copy"></i> Copy" to copy the Test Suite.
-
-### Import a Test Suite from another Test Configuration and Application
-
-This action will Copy a Test Suite, from another Test Configuration, and with an [Application](application) that is not linked to the current Test Configuration.
-
-MTA will detect elements such as Microflows and Entities, by matching them by fully qualified Mendix name. If any of the elements cannot be matched, the contents will not be copied.
-
-- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to Copy a Test Suite in.
-- Click on "<i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i> Import from" to select a Test Suite from another Test Configuration.
-- Click on "<i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i> Import" to copy the Test Suite.
-
+### Copy a Test Suite
+- Navigate to the Test configurations page in MTA and select the Test Configuration where you want to copy a Test Suite.
+- Click <i class="fas fa-copy"></i> on the Test Suite you want to copy.
+- Click Select and proceed to copy the Test Suite in the same Test Configuration, or expand the list of other Test Configuration and select one there.
+- Give the copy a name and choose "Save".
 
 ### Delete a Test Suite
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to delete a Test Suite.
-- Use the <i class="fas fa-ellipsis"></i> button to open the menu.
 - Click <i class="fas fa-trash-alt"></i> on the Test Suite you want to delete.
 
 Note that deleting a Test Suite is permanent. Individual Test Suites cannot be recovered.

@@ -6,6 +6,7 @@ sidebar_position: 6
 
 ## Definition
 
+Previously: *Application Environment*.<br/>
 A single Mendix Application or 'app' that is deployed on a computer, for example: Test, Acceptance, or Local machine. 
 
 The associated [Test setting](test-setting) on a Test Configuration determines which Application Instances are being tested.
