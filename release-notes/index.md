@@ -124,3 +124,21 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | __Release actions__ | None.                                                                                                                  |
 
 <br/>
+
+
+| ID                  | MTA-1940                                                                          |
+| ------------------- | --------------------------------------------------------------------------------- |
+| __Problem__         | Cannot delete a Test Run if there is Application level Coverage associated to it. |
+| __Solution__        | A Test Run can be deleted also if Application level Coverage is associated to it. |
+| __Release actions__ | None.                                                                             |
+
+<br/>
+
+
+| ID                  | MTA-1941                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | If a Test Run is still running while MTA is stopped, it appears to still be running after MTA is restarted.              |
+| __Solution__        | If a Test Run is still running while MTA is stopped, it will show as stopped with status Failed, after MTA is restarted. |
+| __Release actions__ | None.                                                                                                                    |
+
+<br/>
