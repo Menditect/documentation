@@ -178,10 +178,12 @@ A list of Applications, to allow downloading and adapting to another revision of
     {
         "Key": "15",
         "Name": "FirstTestApp",
+        "MxProjectId":"5d6afb37-aef1-4ba1-818c-76d62bee88b8"
     },
     {
         "Key": "16",
         "Name": "SecondTestApp",
+        "MxProjectId":"2f4345a6-937c-4e4c-9b4d-09e680dc61e0"
     }
 ]
 ```
@@ -266,7 +268,7 @@ A list of revisions with their respective Key, Application and Commit informatio
         "Application": "FirstTestApp",
         "CommitDate": "2023-08-29T09:31:13.000Z",
         "CommitId": "247",
-        "CommitMessage": "DataType change of an attribute"
+        "CommitMessage": "DataType change of an attribute",
         "Branches": [
                {
                       "Name": "branchDev"
@@ -278,7 +280,7 @@ A list of revisions with their respective Key, Application and Commit informatio
         "Application": "SecondTestApp",
         "CommitDate": "2023-08-22T11:09:38.000Z",
         "CommitId": "173",
-        "CommitMessage": "Added an entity"
+        "CommitMessage": "Added an entity",
         "Branches": [
                {
                      "Name": "trunk"
