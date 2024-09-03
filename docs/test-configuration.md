@@ -65,6 +65,7 @@ Do not use the export function for backup purposes. Export files are only valid 
 
 ### Import a Test Configuration from file
 
+- First, make sure that the Applications that exist in the Test Configuration you want to import, are [added to MTA](application#register-application-in-mta).
 - Navigate to "Test Configurations" in the top menu.
 - Click <i class="fas fa-ellipsis"></i> and then "<i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i> Import Test Configuration". 
 - Select a file from your file system. 
