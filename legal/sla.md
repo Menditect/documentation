@@ -67,12 +67,12 @@ Menditect Services B.V. CET (Central European Time) The Netherlands
 ### 1.8 Response Time and Resolution Time Objectives
 For solving incidents in MTA software, Menditect offers the following response time and resolution time objectives:
 
-|              | Standard Response Time | Custom Response Time | Standard Response Time  | Custom Response Time |
-| ------------ | ---------------------- | -------------------- | ----------------------- | -------------------- |
-| __Critical__ | < 2 office hours       | t.b.d.               | < 8 office hours        | t.b.d.               |
-| __High__     | < 8 office hours       | t.b.d.               | Next Business Day       | t.b.d.               |
-| __Medium__   | Next Business Day      | t.b.d.               | Reasonable effort       | t.b.d.               |
-| __Low__      | Reasonable effort      | t.b.d.               | At Menditect discretion | t.b.d.               |
+|              | Standard Response Time | Custom Response Time | Standard Resolution Time | Custom Resolution Time |
+| ------------ | ---------------------- | -------------------- | ------------------------ | ---------------------- |
+| __Critical__ | < 2 office hours       | t.b.d.               | < 8 office hours         | t.b.d.                 |
+| __High__     | < 8 office hours       | t.b.d.               | Next Business Day        | t.b.d.                 |
+| __Medium__   | Next Business Day      | t.b.d.               | Reasonable effort        | t.b.d.                 |
+| __Low__      | Reasonable effort      | t.b.d.               | At Menditect discretion  | t.b.d.                 |
 
 For Menditect software used by non-paying Menditect users the support level is “Low” by default.
 
