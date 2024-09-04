@@ -66,6 +66,10 @@ const config = {
             content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
           },
           {
+            id: 'pat',
+            content: '@site/additional/01-howtos/02-configure-mta/access-mendix-model.md',
+          },
+          {
             id: 'howto-byomeal',
             content: '@site/additional/01-howtos/02-configure-mta/run-mta-on-premise.md',
           },
