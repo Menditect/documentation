@@ -34,7 +34,7 @@ After that, you can go to the adapt process, one [Test Suite](../../test-suite) 
 
 
 **Watch the how-to video on Adapting:**
-<iframe src="https://player.vimeo.com/video/980624666" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/1009807371" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
 
 ## Adding tests
