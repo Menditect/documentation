@@ -1,8 +1,8 @@
-# Release 2.9
+# Release 2.8.0
 
 #### Release date
 
-23 October 2024
+23 August 2024
 
 #### Supported Mendix versions
 
