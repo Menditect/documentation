@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 
@@ -57,10 +57,18 @@ Note that downloading can take some time depending on the size of the Mendix pro
 - Select the revision you want to test on.
 - MTA will download the revision if it is not yet downloaded.
 
+### Change to a revision downloaded using a subscription
+
+If a [Branch Subscription](branch-subscription) is present, it is possible to change to the latest downloaded revision immediately.
+
+- Click on <i class="fas fa-ellipsis"></i> for the Application for which you want to change the revision.
+- Click "<i class="fal fa-pencil"></i> Change to <i class="fal fa-code-commit"></i> (commitid)".
+
+
 ### Adapt Test Suites in a Test Configuration to a downloaded Application revision
 
 :::note
-MTA will no longer check if the revision of a Test Configuration matches the one that is running on the Application Instance.
+MTA will not check if the revision of a [Test Configuration](test-configuration) matches the one that is running on the [Application Instance](application-instance). <br/>This allows for connecting a locally running [Application](application) to MTA.
 :::
 
 [Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
