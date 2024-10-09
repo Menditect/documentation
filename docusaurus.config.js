@@ -88,6 +88,7 @@ const config = {
           { id: 'assert-attribute', content: 'Assert/assert-attribute.md', versions: 'ALL' },
           { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
+          { id: 'branch-subscription', content: 'branch-subscription.md', versions: ['2.9'] },
           { id: 'coverage-calculation', content: 'coverage-calculation.md', versions: 'ALL' },
           { id: 'coverage-exception', content: 'coverage-exception.md', versions: 'ALL' },
           { id: 'coverage-exclude-filter', content: 'coverage-exclude-filter.md', versions: 'ALL' },
