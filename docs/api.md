@@ -41,17 +41,20 @@ A list of Test Configurations with their Key and Name:
   {
     "Key": "28",
     "Name": "Test Configuration #1",
-    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/28"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/28",
+    "ConstructionError": "No Error"    
   },
   {
     "Key": "29",
     "Name": "Test Configuration #2",
-    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/29"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/29",
+    "ConstructionError": "Error"    
   },
   {
     "Key": "30",
     "Name": "Test Configuration #3",
-    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/30"
+    "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testconfiguration/30",
+    "ConstructionError": "No Error"    
   }
 ]
 ```
@@ -84,13 +87,15 @@ A list of all Test Suites in the Test Configuration, to allow the execution of a
       "Key": "32",
       "Name": "Test Suite #1",
       "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/32",
-      "Seqnr": "1"
+      "Seqnr": "1",
+      "ConstructionError": "No Error"    
     },
     {
       "Key": "33",
       "Name": "Test Suite #2",
       "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testsuite/33",
-      "Seqnr": "2"
+      "Seqnr": "2",
+      "ConstructionError": "Error"    
      }
   ]
 }
@@ -129,17 +134,20 @@ A list of all Test Cases in the Test Configuration or Test Suite, to allow the e
     {
         "Key": "96",
         "Name": "Test Case #1",
-        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/96"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/96",
+        "ConstructionError": "Error"    
     },
     {   
         "Key": "97",
         "Name": "Test Case #2",
-        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/97"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/97",
+        "ConstructionError": "No Error"    
     },
     {
         "Key": "98",
         "Name": "Test Case #3",
-        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/98"
+        "Url": "https://mta-menditect-9fo2p.mendixcloud.com/link/testcase/98",
+        "ConstructionError": "No Error"    
     }
 ]
 ```

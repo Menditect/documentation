@@ -13,7 +13,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Highlights in this release
 
-<i class="fas fa-fire"></i>  <b>Branch subscriptions!</b> <br/> Reduce waiting time for adapting to newer revisions because the latest one is always available. 
+<i class="fas fa-fire"></i>  <b>Download revisions automatically!</b> <br/> Reduce waiting time with Branch Subscriptions.  
 <br/><br/>
 <i class="fas fa-fire"></i>  <b>Execute a single variation in the data variation.</b><br/> Re-testing failed test variations is now much faster.
 
@@ -68,4 +68,11 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | __Problem__         | Cancelled Test Runs that are used in a Coverage Calculations on Application level cannot be deleted. |
 | __Solution__        | Cancelled Test Runs that are used in a Coverage Calculations on Application level can be deleted.    |
 | __Release actions__ | None.                                                                                                |
+
+
+| ID                  | MTA-1957                                                                                                                                                          |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Known issue from MTA 2.8.0: it was not possible to Copy a Test Suite if there is a Teststep that contains values filled with the output from a previous Teststep. |
+| __Solution__        | It is again possible to Copy a Test Suite if there is a Teststep that contains values filled with the output from a previous Teststep.                            |
+| __Release actions__ | None.                                                                                                                                                             |
 
