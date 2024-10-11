@@ -4,11 +4,13 @@ sidebar_position: 9
 
 # Know when to adapt to next revision
 
-## Definition
+## Explanation
 
-This document provides an overview of when it is necessary to adapt (download and adapt Test Suites) to a next revision.
+Test Configurations are always built upon a single currently loaded Application Revision. The information in that revision is used to determine which objects and object values can exist in the database, and which microflows can be executed. This in turn allows to create the necessary Teststeps that are needed to build a test in MTA. And, when the test is executed, gives some guarantee that these model elements also exist in the Application Instance that the test is running on.
 
-In most scenarios it is not necessary to adapt to a next revision in order to Execute the Test Configuration.
+To allow Test Configurations to stay updated with changes done in the Mendix model, they can be adapted to another revision. Note that this does not necessarily have to be a newer revision, it can be any revision on any branch of the App. Downloading a revision can be done in the background by using a Branch Subscription (available from MTA 2.9), but adapting must be done manually because adapting can lead to Construction Errors.
+
+Construction Errors in a Test Configuration will block executing it. Executing would lead to an error in the Test Run, because model elements don't match. But, it is not always necessary to adapt to the revision of the Application Instance, in order to Execute the Test Configuration. Below is a list of scenario's, which would lead to an error when executing or not.
 
 ## Scenario
 
