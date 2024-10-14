@@ -39,10 +39,10 @@ Additionally, a Webhook can be created in the [Application](application) under t
 - Select which branch to subscribe to.
 - Select a Polling frequency.
 - Select whether to create a Webhook (only available for Mendix Apps stored in a Git repository).
+- Save. MTA will activate the subscription polling after 5 minutes. The webhook, if selected, will be active immediately.
 
-:::note
-An active webhook will make MTA download new revisions immediately, but if it fails or is deactivated, the subscription polling frequency will apply.
-:::
+Note that an active webhook will make MTA download new revisions instantly, but if it fails or is deactivated, the subscription polling frequency will still apply.
+
 
 ### Edit a Branch Subscription
 
