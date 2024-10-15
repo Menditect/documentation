@@ -69,25 +69,17 @@ The page will close.
 
 [Create a data variation item.](datavariation-item#create-a-data-variation-item)
 
-### Add a Variation
+### Add a Data Variation run
 - Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column you want to create a copy from, for instance the column labeled *# 1*. 
+- Click on the column of the Data Variation run you want to create a copy from, for instance the column labeled *# 1*. 
 - Click "*Copy*".
 
-### Delete a Variation
+### Delete a Data Variation run
 - Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column you want to delete, for instance the column labeled *# 2*. 
+- Click on the column of the Data Variation run you want to delete, for instance the column labeled *# 2*. 
 - Click <i class="fas fa-trash-alt"></i>.
 
 Note that you cannot delete the first column labeled *# 1*.
-
-### Execute a Variation
-- Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column you want to delete, for instance the column labeled *# 2*. 
-- Click on "<i class="fal fa-play"></i> Execute variation".
-- Choose "Coverage" to create a new [Coverage Calculation](coverage-calculation) after the Test Run was executed.
-- Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
-- Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
 ### Edit Data Variation values
 - Open the Test Suite data variation page or Test Case data variation popup.

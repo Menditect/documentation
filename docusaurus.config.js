@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.8.0',
+              label: '2.9',
               path: '/',
             },
           },
@@ -66,6 +66,10 @@ const config = {
             content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
           },
           {
+            id: 'pat',
+            content: '@site/additional/01-howtos/02-configure-mta/access-mendix-model.md',
+          },
+          {
             id: 'howto-byomeal',
             content: '@site/additional/01-howtos/02-configure-mta/run-mta-on-premise.md',
           },
@@ -84,6 +88,7 @@ const config = {
           { id: 'assert-attribute', content: 'Assert/assert-attribute.md', versions: 'ALL' },
           { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
+          { id: 'branch-subscription', content: 'branch-subscription.md', versions: ['2.9'] },
           { id: 'coverage-calculation', content: 'coverage-calculation.md', versions: 'ALL' },
           { id: 'coverage-exception', content: 'coverage-exception.md', versions: 'ALL' },
           { id: 'coverage-exclude-filter', content: 'coverage-exclude-filter.md', versions: 'ALL' },
