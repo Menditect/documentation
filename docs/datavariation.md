@@ -18,7 +18,7 @@ It is possible to combine Test Suite datavariation and Test Case variation in th
 On the Test Case level, a choice has to be made between the Test Suite / Test Case datavariation when varying on an Attribute or Assert. Once the choice is made, it can only be undone by excluding the varied Attributes and Asserts.
 :::
 
-An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Items](datavariation-item).
+An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Item](datavariation-item).
 
 For each data variation of a Test Suite, a Test Suite Run will be created. For each data variation of a Test Case, a Test Case Run will be created. Therefore, if there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
 
@@ -108,4 +108,4 @@ Note that you cannot delete the first column labeled *# 1*.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 april 2023
+Last updated: 21 October 2023
