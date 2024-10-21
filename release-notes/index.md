@@ -10,11 +10,12 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
-
 ## Highlights in this release
 
 <i class="fas fa-fire"></i>  <b>Download revisions automatically!</b> <br/> Reduce waiting time with Branch Subscriptions.  
-<br/><br/>
+<br/>
+<iframe src="https://player.vimeo.com/video/1019352760" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>
 <i class="fas fa-fire"></i>  <b>Execute a single variation in the data variation.</b><br/> Re-testing failed test variations is now much faster.
 
 
