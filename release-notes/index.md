@@ -22,10 +22,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality 
 
-| ID                    | MTA-1453                                                                                                                                                                                                                                                                                                                                |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to subscribe to a branch. Subscribing will always download the latest revision in the background, automatically. The polling rate can be set to high, medium or low. Additionally, on a Git repository, a Webhook can be created, which will result in instantaneous downloading of a revision after it was created. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                   |
+| ID                    | MTA-1453                                                                                                                                                                                |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to subscribe to a branch. Subscribing will always download the latest revision in the background, automatically. The polling rate can be set to high, medium or low. |
+| __Release actions__   | None.                                                                                                                                                                                   |
 <br/>
 
 

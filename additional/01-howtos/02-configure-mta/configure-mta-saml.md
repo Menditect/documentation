@@ -20,11 +20,11 @@ If Menditect is hosting MTA for you, please [contact support](mailto:support@men
 
 ## Configure SAML SSO
 
-The basic configuration for SAML SSO is the same for all Identity Providers and described in the Mendix documentation. The current location of the relevant documenation page is here: https://docs.mendix.com/appstore/modules/saml/
+The basic configuration for SAML SSO is the same for all Identity Providers and described in the Mendix documentation. The current location of the relevant documentation page is here: https://docs.mendix.com/appstore/modules/saml/
 
 This configuration has to be done when logged in with the MTA Manager role in MTA.
 
-Use this settings:
+Use these settings:
 
 | IdP configuration                            |                                                                                         |
 | -------------------------------------------- | --------------------------------------------------------------------------------------- |
