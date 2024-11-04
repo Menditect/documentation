@@ -46,23 +46,29 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## Bug fixes
 
 
-| ID                  | MTA-1962                                                                                                           |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| __Problem__         | Revisions downloaded using the MTA Public API, in a Git branch other than `main`, are visible but unusable in MTA. |
-| __Solution__        | Any revisions downloaded using the MTA API can be used to adapt Test Configurations to.                            |
-| __Release actions__ | Affected revisions will be repaired in the migration that starts after startup of MTA.                             |
+| ID                  | MTA-1962                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Revisions downloaded using the MTA Public API, in a Git branch other than `main`, were visible but unusable in MTA. |
+| __Solution__        | Any revisions downloaded using the MTA API can be used to adapt Test Configurations to.                             |
+| __Release actions__ | Affected revisions will be repaired in the migration that starts after startup of MTA.                              |
 
 <br/>
 
-
-| ID                  | MTA-1969                                                                                                                                                                                     |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | If a Test Configuration is still adapting while Snapshots are being cleaned up, the Snapshot is deleted. This results in being unable to restore a Test Configuration after an adapt failed. |
-| __Solution__        | Snapshots won't be cleaned up if the associated Test Configuration is still being adapted.                                                                                                   |
-| __Release actions__ | None.                                                                                                                                                                                        |
+| ID                  | MTA-1969                                                                                                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | If a Test Configuration was still adapting while Snapshots were being cleaned up, the Snapshot was deleted. This resulted in being unable to restore a Test Configuration after an adapt failed. |
+| __Solution__        | Snapshots won't be cleaned up if the associated Test Configuration is still being adapted.                                                                                                       |
+| __Release actions__ | None.                                                                                                                                                                                            |
 
 <br/>
 
+| ID                  | MTA-1927                                                                       |
+| ------------------- | ------------------------------------------------------------------------------ |
+| __Problem__         | Adding a Persist teststep in an empty Test Case resulted in an error.          |
+| __Solution__        | Adding a Persist teststep in an empty Test Case no longer results in an error. |
+| __Release actions__ | None.                                                                          |
+
+<br/>
 
 | ID                  | MTA-1940                                                                                             |
 | ------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -70,10 +76,28 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 | __Solution__        | Cancelled Test Runs that are used in a Coverage Calculations on Application level can be deleted.    |
 | __Release actions__ | None.                                                                                                |
 
+<br/>
 
-| ID                  | MTA-1957                                                                                                                                                          |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Known issue from MTA 2.8.0: it was not possible to Copy a Test Suite if there is a Teststep that contains values filled with the output from a previous Teststep. |
-| __Solution__        | It is again possible to Copy a Test Suite if there is a Teststep that contains values filled with the output from a previous Teststep.                            |
-| __Release actions__ | None.                                                                                                                                                             |
+| ID                  | MTA-1957                                                                                                                                                              |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | *Known issue from MTA 2.8.0:* it was not possible to Copy a Test Suite if there was a Teststep that contained values filled with the output from a previous Teststep. |
+| __Solution__        | It is again possible to Copy a Test Suite if there is a Teststep that contains values filled with the output from a previous Teststep.                                |
+| __Release actions__ | None.                                                                                                                                                                 |
+
+
+<br/>
+
+| ID                  | MTA-1904                                                                                                                                  |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | In some cases, deleting a teststep (or Test Case / Test Suite with teststeps) had to be done twice for the object to be actually deleted. |
+| __Solution__        | It is now only necessary to perform deleting a teststep once.                                                                             |
+| __Release actions__ | None.                                                                                                                                     |
+
+<br/>
+
+| ID                  | N/A                                                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | If MTA was stopped while a revision was being downloaded, the download status was still "Downloading" after MTA was restarted.                    |
+| __Solution__        | If MTA is stopped while a revision is being downloaded, the download status is now changed to "Error", allowing the Tester to retry the download. |
+| __Release actions__ | None.                                                                                                                                             |
 
