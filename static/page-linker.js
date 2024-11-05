@@ -1,10 +1,9 @@
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     const versionLinks = data.versions[version];
+    if (version != '2.8.0' && version != '2.7.0')  //@@todo: read allowed versions from docusaurus const
+      versionLinks = data.versions['2.8.0'];
     const path = versionLinks[tag];
-    if (path) return path;
-    versionLinks = data.versions['2.8.0'];
-    path = versionLinks[tag];
     return path;
   } else if (tag) {
     const path = data.nonVersions[tag];
