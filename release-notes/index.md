@@ -36,10 +36,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | MTA-1948                                                                                                                                                                                                                                                                              |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The MTA Public API can now be used to check if a Test Configuration, Test Suite or Test Case contains a Construction Error. This property can be used to determine if a Test Configuration can be adapted, but also to determine if an adapt has resulted in new Construction Errors. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                 |
+| ID                    | MTA-1948                                                                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The MTA Public API can now be used to check if a Test Configuration, Test Suite or Test Case contains a Construction Error. This property can be used to check if a Test Configuration can be adapted; or after an adapt, to check if a Test Configuration can be executed. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                       |
 <br/>
 
 
