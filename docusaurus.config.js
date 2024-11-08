@@ -77,6 +77,10 @@ const config = {
             id: 'generate-test',
             content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
+          {
+            id: 'mta-intergration-mch-extension',
+            content: '@site/additional/01-howtos/connect-menditect-extension-to-mta.md',
+          },
         ],
         versionedLinks: [
           { id: 'application', content: 'application.md', versions: 'ALL' },
