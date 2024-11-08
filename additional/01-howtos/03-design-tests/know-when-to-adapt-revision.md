@@ -12,7 +12,6 @@ To allow Test Configurations to stay updated with changes done in the Mendix mod
 
 Construction Errors in a Test Configuration will block executing it. Executing would lead to an error in the Test Run, because model elements don't match. But, it is not always necessary to adapt to the revision of the Application Instance, in order to Execute the Test Configuration. Below is a list of scenario's, which would lead to an error when executing or not.
 
-
 ## Scenario
 
 :::info
