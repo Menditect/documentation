@@ -10,7 +10,7 @@ sidebar_position: 16
 
 Data Variation Item or variant refers to an attribute value or assert value that can be varied when executing test. 
 Data Variation Items are always part of [Data Variation](datavariation).
-The value of a Data Variation Item is defined either in the value of an attribute or in an [Assert](Assert/).
+The value of a Data Variation Item is defined either in an the value of an attribute or in an [Assert on attribute](Assert/assert-attribute).
 
 :::info
 It is **not possible** to import a CSV or Excel file into the datavariation, for multiple reasons. 
@@ -76,4 +76,4 @@ From the data variation page or popup, to edit a single attribute or assert in a
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 21 October 2023
+Last updated: 19 april 2023

@@ -36,7 +36,7 @@ const versionedLinkOptionsSchema = Joi.object({
   versions: Joi.alternatives().try(
     Joi.string().valid('ALL'),
     // Should be a valid version, e.g.: 1.8.0
-    Joi.array().items(Joi.string().pattern(/^([1-9]\d*|0)(\.(([1-9]\d*)|0)){2}$/)),
+    Joi.array().items(Joi.string().pattern(/^([1-9]\d*|0)(\.(([1-9]\d*)|0))$/)),
   ),
 });
 

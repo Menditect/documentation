@@ -65,16 +65,7 @@ Menditect on-premise customers and partners **do not** have to set these values.
 
 #### Scheduled events
 
-- Toggle these scheduled events (that cleanup old or unused data) to Currently Enabled:
-
-```
-ApplicationModule.SE_ARVNsABRNsCleanUp
-CoverageRun.SE_CGLRsLevelAPCTCleanUp
-DeepLink.CleanUp
-MtaDataValidationModule.SE_Datavalidation
-TestconfigurationModule.SE_TCNFsCleanUp
-TestRunModule.SE_TRUNsCleanUp
-```
+**Toggle ALL scheduled events to Enabled=True**
 
 #### Firewall and network settings
 

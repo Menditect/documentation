@@ -22,7 +22,7 @@ Follow the steps described [here](../connect-mta/import-plugin) to complete this
 
 Follow the steps described [here](prepare-mendix-project) to complete this action.
 
-## 3. Create an API key and PAT for your Mendix account
+## 3. Create an Access Token for your Mendix account
 
 *This action needs to be performed by each Mendix developer who wishes to test their Mendix Apps in MTA.*
 

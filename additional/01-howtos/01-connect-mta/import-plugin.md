@@ -49,11 +49,10 @@ To upgrade the major version of your Mendix App (for example, from Mendix 9.24 t
 Always use the latest MTA Plugin version for the latest MTA version.
 
  
-|         | MTA Plugin 4.7.2 | MTA Plugin 4.5.3 | MTA Plugin 4.4.5 |
-| ------- | ---------------- | ---------------- | ---------------- |
-| MTA 2.7 | Supported        | Not supported    | Not supported    |
-| MTA 2.6 | Not supported    | Supported        | Not supported    |
-| MTA 2.5 | Not supported    | Not supported    | Not supported    |
+|           | MTA Plugin 4.8.1 | MTA Plugin 4.7.2 | Any older MTA Plugin |
+| --------- | ---------------- | ---------------- | -------------------- |
+| MTA 2.9.x | Supported        | Not supported    | Not supported        |
+| MTA 2.8.0 | Supported        | Not supported    | Not supported        |
 
 
 
