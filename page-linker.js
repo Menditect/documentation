@@ -33,6 +33,7 @@ async function getRedirectURL() {
     const url = await getRedirectURL();
     location.replace(url);
   } catch (err) {
+    alert(err.message);
     location.replace(`${document.location.origin}/404`);
   }
 })();
