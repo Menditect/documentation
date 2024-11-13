@@ -21,9 +21,6 @@ async function getRedirectURL() {
   const tag = params.get('tag');
   const version = params.get('version');
 
-  alert(version);
-  alert(tag);
-
   const data = await getPageLinkerIndex();
   const path = findCorrectPath(data, version, tag);
   const url = path ? `${document.location.origin}${path}` : `${document.location.origin}/404`;
