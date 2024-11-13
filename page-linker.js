@@ -2,11 +2,6 @@ function findCorrectPath(data, version, tag) {
   if (version && tag) {
     const versionLinks = data.versions[version];
     const path = versionLinks[tag];
-    if (path) {
-      alert("Using tag " + tag + " navigating to " + path);
-    } else {
-      alert("Using tag " + tag + " navigating to " + versionLinks['2.9']);
-    }
     return path ? path : versionLinks['2.9'];
   } else if (tag) {
     const path = data.nonVersions[tag];
