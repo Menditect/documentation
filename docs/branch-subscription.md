@@ -37,10 +37,9 @@ Subscribing to a branch in a [Test Configuration](test-configuration) will make 
 - Click "<i class="fal fa-code-branch"></i> Subscribe to branch".
 - Select which branch to subscribe to.
 - Select a Polling frequency.
-- Save. MTA will activate the subscription polling after 5 minutes. 
+- Save. 
 
 Note that an active webhook will make MTA download new revisions instantly, but if it fails or is deactivated, the subscription polling frequency will still apply.
-
 
 ### Edit a Branch Subscription
 
