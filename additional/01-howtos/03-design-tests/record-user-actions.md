@@ -70,3 +70,10 @@ If an object is created by the page and not by a microflow (for instance using a
 | MTA is unable to set enumeration value                                                                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | In some cases the recorder is not able to determine an enumeration value. This happens when an enumeration value is deleted from Mendix, but not yet from the database, because a migration script has not yet been executed on the table where the enumeration is used. |
+
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 28 august 2023
