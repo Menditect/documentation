@@ -2,16 +2,33 @@
 sidebar_class_name: hidden
 ---
 
-# CREATE A FRONTEND TEST WITH THE MENDITECT PLAYWRIGHT MODULE
+# Use the Menditect Playwright Connector
 
-This section describes how to create a frontend test using Playwright for a Responsive Web Mendix App. 
+This section describes how to create a frontend test using Playwright, in Mendix. 
 Playwright is a library with which you can locate elements on a web page and execute actions on these elements.
 See https://playwright.dev/java/ for the relevant Playwright documentation.
 
-## IN SHORT
+Menditect has created 2 modules that enable MTA customers to build frontend tests using Playwright.
+- The Menditect Playwright Connector module: https://marketplace.mendix.com/link/component/235323
+- The Menditect Playwright Starter Kit module: https://marketplace.mendix.com/link/component/235327
 
-- Start by importing the Menditect Playwright module. This module needs the playwright driver bundle jar file in your userlib directory. @@DEPENDENCY? The module uses an Object model to define which locators and which actions to play in sequence. @@WHY?
-- Start by calling the Create_Browser, Create_BrowserContext and Create_Page microflows. 
+## Connector Module
+
+The Connector Module enables the use of Playwright to define and run a frontend test from any Mendix App. The Playwright Locators and Actions defined in the Connector Module can then be used to test *any* webapplication, not just Mendix Apps. Locator and Action microflows in the Connector Module can be defined and executed from MTA.
+
+## Starter Kit
+
+The Starter Kit is meant for using the Connector module for Mendix apps. This starter kit contains
+- A reusable Locator and Action microflows to test standard Mendix Widgets
+- An example Mendix Project with an example Playwright testscript
+- A Page showing Test Results with Screenshots, Trace files & Aria Snapshots
+
+## Get started
+
+It is not necessary to import the modules in the same Mendix App as the one under test. However for this example, this is assumed to be the case.
+
+- Start by importing the Connector module. This module requires the playwright driver bundle jar file in your userlib directory. See the documentation in the Mendix Marketplace on how to download this jar file.
+- Download the Starter Kit module to start testing the most common Mendix Widgets in Playwright.
 - Create a PlaywrightTest object that will be used to associate the list of objects to. 
 - Add Locators and Actions to the object list using the corresponding microflows. 
 - At the end, call the Execute_Playwright microflow that executes everything in the list and returns a result.
