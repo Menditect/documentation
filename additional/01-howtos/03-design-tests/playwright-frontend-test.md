@@ -52,7 +52,7 @@ Instead of using a single microflow calling the Locators and Actions, it is **re
 
 ## Playwright Test Structure
 
-As can be seen in the example "ACT_Playwright_Full_Test" microflow, each Playwright Test has the same basic structure:
+As can be seen in the example "ACT_Playwright_Full_Test" microflow in the Starter Kit, each Playwright Test has the same basic structure:
 - Setup
 - Locators and Actions
 - Teardown
@@ -116,9 +116,6 @@ These microflows are called at the end of a Playwright test:
 | Teardown_Playwright  | Removes the Playwright engine from memory.                |
 
 
-## Browserstack
-
-It is possible to test 
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
