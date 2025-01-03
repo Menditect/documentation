@@ -86,6 +86,8 @@ These microflows are called in order to setup a locally executed frontend test:
 
 To use Browserstack instead of running Playwright on a local machine, replace the call to the "Create_Browser" microflow, with a call to the "Connect_BrowserStack" microflow.
 
+Currently, using Browserstack is only supported if the Mendix App is running in the cloud. [Local Testing](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector.
+
 ### Locators and Actions
 
 #### Generic App testing
@@ -148,7 +150,9 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 
 ### Custom Widgets
 
-In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Connector to execute the corresponding Playwright commands. Mendix will add the "mx-name-`widgetName`" class to any widget that you add to a Page or Snippet, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions within the element.
+In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Connector to execute the corresponding Playwright commands. 
+
+Mendix will add the "mx-name-`widgetName`" class to any Widget that you add to a Page or Snippet, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
 
 ### Snippets
 
