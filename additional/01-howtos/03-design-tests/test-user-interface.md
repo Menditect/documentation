@@ -136,13 +136,23 @@ Furthermore, the [Test Case](../../../test-case) containing these Teststeps shou
 
 For now, logging into the Mendix App needs to occur using the Mx_Login microflow. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
 
-## Example App
+## Testing Standard Widgets
 
 The Example App was created to show how to Locate most of the standard Mendix Widgets and execute Actions like Click, Fill Text or Select Option. 
 It contains an Overview page and two popup pages that combined contain these commonly used Widgets.
 The "ACT_Playwright_Full_Test" microflow is an example microflow that tests these Pages.
 This microflow can be executed from MTA if the App is running locally from Studio Pro. 
 Note that the submicroflow actions inside, can be built as Teststeps in MTA.
+
+## Testing Custom Widgets and Snippets
+
+### Custom Widgets
+
+In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Connector to execute the corresponding Playwright commands. Mendix will add the "mx-name-`widgetName`" class to any widget that you add to a Page or Snippet, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions within the element.
+
+### Snippets
+
+Important note: Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, is is always required to add a surrounding Container (rendered as a DIV element) to locate it.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
