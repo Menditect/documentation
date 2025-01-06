@@ -6,18 +6,26 @@ sidebar_class_name: hidden
 
 This section describes how to create a frontend test in MTA, by adding the prerequisite modules to a Mendix project.
 
-:::info
+:::note Playwright
 Menditect uses the Playwright runtime to execute these frontend tests. 
 Playwright is a library with which you can locate elements on a web page and execute actions on these elements.
 See https://playwright.dev/java/ for the relevant documentation.
 :::
 
+
 ## Prerequisites
 
+
 Download these modules from the Mendix marketplace to enable frontend testing.
-- The Connector: https://marketplace.mendix.com/link/component/235323
-- The Starter Kit: https://marketplace.mendix.com/link/component/235327
+- The Playwright Connector: https://marketplace.mendix.com/link/component/235323 
+- The Playwright Starter Kit: https://marketplace.mendix.com/link/component/235327 
 - The [MTA Plugin](../connect-mta/import-plugin) 
+
+:::tip Separate from Test App
+For this how-to, we have imported these modules in the same Mendix App, as the one under test.<br/>
+It is however possible to import the prerequisite modules in a separate App.<br/>
+Documentation for this setup will be added in the future.
+:::
 
 ### Connector
 
@@ -29,7 +37,7 @@ Locator and Action microflows in the Connector can be defined and executed from 
 ### Starter Kit
 
 The Starter Kit is meant specifically to define and run frontend tests for Mendix apps. This starter kit contains
-- Reusable Locator and Action microflows to test standard Mendix Widgets;
+- Reusable Locator and Action microflows to test Mendix Platform Supported Widgets;
 - An example Mendix Project with an example testscript;
 - A Page showing Results from executed tests.
 
@@ -51,15 +59,16 @@ This folder contains Action microflows for Mendix Widgets.
 
 ## Get started
 
-It is not necessary to import the modules in the same Mendix App as the one under test. However for this example, this is assumed to be the case.
-
 - Start by importing the Connector. This module **requires the playwright driver bundle** jar file in your userlib directory. 
 See the documentation in the Mendix Marketplace on how to download this jar file.
 - Download the Starter Kit module to start testing the most common Mendix Widgets.
 - Add both the Module Roles to the project's User Roles.
 - Add the TestResultFiles page to the Navigation for the User Role that will be evaluating executed frontend Tests.
-- Optionally add the Overview page to the Navigation if you plan to use the examples in the Starter Kit as inspiration to start building your own frontend test. This is **recommended** for first-time users.
+- Optionally add the Overview page to the Navigation if you plan to use the examples in the Starter Kit as inspiration to start building your own frontend test. 
 
+:::info Recommended
+It is recommended for first-time users to use the Example App to get started.
+:::
 
 ## Test structure
 
@@ -86,7 +95,7 @@ These microflows are called in order to setup a locally executed frontend test:
 
 To use Browserstack instead of running Playwright on a local machine, replace the call to the "Create_Browser" microflow, with a call to the "Connect_BrowserStack" microflow.
 
-Currently, using Browserstack is only supported if the Mendix App is running in the cloud. [Local Testing](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector.
+Currently, using Browserstack is only supported if the Mendix App is running in the cloud. [Local Testing](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector. @@Formulering verwarrend
 
 ### Locators and Actions
 
@@ -110,9 +119,13 @@ In order to test Mendix Widgets, use the microflows from the Starter Kit. The pr
 - a String variable representing the Page class.
 - a microflow call to "Locate_MxWidget" in the Starter Kit `_Private` folder.
 
-See the [Example App](#example-app) for some examples. The structure used there can be duplicated for any Mendix Page.
+See the [Mendix Platform Supported Widgets](#testing-mendix-platform-supported-widgets) for some examples. The structure used there can be duplicated for any Mendix Page.
 
-A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is **recommended** to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). Recommended is using the same Class name as the Page name. 
+:::info Recommended
+Always use the Locator microflows inside the "Get_Locator_By_Locator" folder.
+:::
+
+A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is recommended to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). Recommended is using the same Class name as the Page name. 
 
 The "Locate_MxWidget" microflow then defines the scope of the Mendix Page, and then calls the "Locate_MxWidget_in_Locator" microflow, strategy is determined to locate the Widget depending on the type.
 
@@ -132,15 +145,21 @@ These microflows are called at the end of a Playwright test:
 
 ## MTA Implementation
 
-It is **recommended** to use [Teststeps](../../../Teststep) in MTA to call abovementioned microflows.
+:::info Recommended
+It is recommended to use [Teststeps](../../../Teststep) in MTA to call abovementioned microflows.
+:::
 
-Furthermore, the [Test Case](../../../test-case) containing these Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. 
+The [Test Case](../../../test-case) containing the Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. 
 
 For now, logging into the Mendix App needs to occur using the Mx_Login microflow. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
 
-## Testing Standard Widgets
+## Testing Mendix Platform Supported Widgets
 
-The Example App was created to show how to Locate most of the standard Mendix Widgets and execute Actions like Click, Fill Text or Select Option. 
+:::tip Platform supported widgets
+[Click here to see a list of recent Platform supported Widgets](https://marketplace.mendix.com/link/supporttype/Platform)
+:::
+
+The Example App was created to show how to Locate most of the Mendix Platform Supported Widgets and execute Actions like Click, Fill Text or Select Option. 
 It contains an Overview page and two popup pages that combined contain these commonly used Widgets.
 The "ACT_Playwright_Full_Test" microflow is an example microflow that tests these Pages.
 This microflow can be executed from MTA if the App is running locally from Studio Pro. 
