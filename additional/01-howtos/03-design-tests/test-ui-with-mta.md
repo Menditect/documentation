@@ -2,7 +2,7 @@
 sidebar_class_name: hidden
 ---
 
-# Test the User Interface using MTA
+# Test the UI with MTA
 
 This section describes how to create a frontend test in MTA, by adding the prerequisite modules to a Mendix project.
 
