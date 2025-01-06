@@ -165,6 +165,32 @@ The "ACT_Playwright_Full_Test" microflow is an example microflow that tests thes
 This microflow can be executed from MTA if the App is running locally from Studio Pro. 
 Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 
+### Widgets supported by Menditect
+
+- Authentication (login)
+- ActionButton
+- CheckBox
+- Confirmation Dialog
+- DataGrid
+- DatePicker
+- DialogMessage
+- DropDown
+- DynamicImage
+- GroupBox
+- Label
+- ListView
+- MenuBar
+- MenuItem
+- RadioButton
+- ReferenceSelector
+- StaticImage
+- TabContainer
+- TextArea
+- TextBox
+- X button (that closes page)
+
+More Widgets will be added in future releases.
+
 ## Testing Custom Widgets and Snippets
 
 ### Custom Widgets
