@@ -95,7 +95,9 @@ These microflows are called in order to setup a locally executed frontend test:
 
 To use Browserstack instead of running Playwright on a local machine, replace the call to the "Create_Browser" microflow, with a call to the "Connect_BrowserStack" microflow.
 
-Currently, using Browserstack is only supported if the Mendix App is running in the cloud. [Local Testing](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector. @@Formulering verwarrend
+Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
+Local Testing is currently only supported if Playwright is also running locally.
+[Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector.
 
 ### Locators and Actions
 
