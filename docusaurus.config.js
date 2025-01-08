@@ -78,8 +78,12 @@ const config = {
             content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
           {
+            id: 'ui-testing',
+            content: '@site/additional/01-howtos/03-design-tests/test-ui-with-mta.md',
+          },
+          {
             id: 'mta-intergration-mch-extension',
-            content: '@site/additional/01-howtos/connect-menditect-extension-to-mta.md',
+            content: '@site/additional/01-howtos/01-connect-mta/connect-menditect-extension-to-mta.md',
           },
         ],
         versionedLinks: [
