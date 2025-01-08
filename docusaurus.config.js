@@ -54,9 +54,18 @@ const config = {
       /** @type {import('./plugins/page-linker/options').PageLinkerOptions} */
       ({
         nonVersionedLinks: [
-          { id: 'privacy-policy', content: '@site/legal/pp.md' },
-          { id: 'eula', content: '@site/legal/eula.md' },
-          { id: 'sla', content: '@site/legal/sla.md' },
+          {
+            id: 'privacy-policy',
+            content: '@site/legal/pp.md'
+          },
+          {
+            id: 'eula',
+            content: '@site/legal/eula.md'
+          },
+          {
+            id: 'sla',
+            content: '@site/legal/sla.md'
+          },
           {
             id: 'microflow-call-hierarchy-extension',
             content: '@site/additional/01-howtos/01-connect-mta/use-microflow-call-hierarchy-extension.md',

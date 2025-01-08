@@ -18,7 +18,7 @@ See https://playwright.dev/java/ for the relevant documentation.
 
 Download below modules from the Mendix marketplace to enable frontend testing.
 
-Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use.
+Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use. If you want access to these modules, please [contact support](mailto:support@menditect.com).
 - The Playwright Connector: https://marketplace.mendix.com/link/component/235323 
 - The Playwright Starter Kit: https://marketplace.mendix.com/link/component/235327 
 - The [MTA Plugin](../connect-mta/import-plugin) 
@@ -125,11 +125,17 @@ In order to test Mendix Widgets, use the microflows from the Starter Kit. The pr
 
 See the [Mendix Platform Supported Widgets](#testing-mendix-platform-supported-widgets) for some examples. The structure used there can be duplicated for any Mendix Page.
 
+A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is recommended to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. 
+
 :::info Recommended
 Always use the Locator microflows inside the "Get_Locator_By_Locator" folder.
 :::
 
-A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is recommended to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). Recommended is using the same Class name as the Page name. 
+In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). 
+
+:::info Recommended
+Assign the same Class name on the Page as the Page's Title. 
+:::
 
 The "Locate_MxWidget" microflow then defines the scope of the Mendix Page, and then calls the "Locate_MxWidget_in_Locator" microflow, strategy is determined to locate the Widget depending on the type.
 
