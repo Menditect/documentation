@@ -1,5 +1,5 @@
 ---
-sidebar_class_name: hidden
+sidebar_position: 10
 ---
 
 # Test the UI with MTA
@@ -16,7 +16,9 @@ See https://playwright.dev/java/ for the relevant documentation.
 ## Prerequisites
 
 
-Download these modules from the Mendix marketplace to enable frontend testing.
+Download below modules from the Mendix marketplace to enable frontend testing.
+
+Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use.
 - The Playwright Connector: https://marketplace.mendix.com/link/component/235323 
 - The Playwright Starter Kit: https://marketplace.mendix.com/link/component/235327 
 - The [MTA Plugin](../connect-mta/import-plugin) 
