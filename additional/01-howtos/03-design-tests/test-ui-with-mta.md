@@ -192,6 +192,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - MenuBar
 - MenuItem
 - RadioButton
+- RadioButton List
 - ReferenceSelector
 - StaticImage
 - TabContainer
