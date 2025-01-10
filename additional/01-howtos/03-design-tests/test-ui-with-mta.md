@@ -179,7 +179,10 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 
 - Authentication (login)
 - ActionButton
+- Badge
+- Badge Button
 - CheckBox
+- ComboBox
 - Confirmation Dialog
 - DataGrid
 - DatePicker
@@ -193,8 +196,10 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - MenuItem
 - RadioButton
 - RadioButton List
+- Rich Text
 - ReferenceSelector
 - StaticImage
+- Switch
 - TabContainer
 - TextArea
 - TextBox
