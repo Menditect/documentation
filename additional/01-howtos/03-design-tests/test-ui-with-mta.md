@@ -21,6 +21,7 @@ Download below modules from the Mendix marketplace to enable frontend testing.
 Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use. If you want access to these modules, please [contact support](mailto:support@menditect.com).
 - The Playwright Connector: https://marketplace.mendix.com/link/component/235323 
 - The Playwright Starter Kit: https://marketplace.mendix.com/link/component/235327 
+- An Example App for testing Mendix Widgets with Playwright: https://marketplace.mendix.com/link/component/235973
 - The [MTA Plugin](../connect-mta/import-plugin) 
 
 :::tip Separate from Test App
@@ -40,7 +41,6 @@ Locator and Action microflows in the Connector can be defined and executed from 
 
 The Starter Kit is meant specifically to define and run frontend tests for Mendix apps. This starter kit contains
 - Reusable Locator and Action microflows to test Mendix Platform Supported Widgets;
-- An example Mendix Project with an example testscript;
 - A Page showing Results from executed tests.
 
 A few notes about the Starter Kit:
