@@ -217,7 +217,7 @@ Mendix will add the "mx-name-`widgetName`" class to any Widget that you add to a
 
 ### Snippets
 
-Important note: Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, is is always required to add a surrounding Container (rendered as a DIV element) to locate it.
+Important note: Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, it is always required to add a surrounding Container (rendered as a DIV element) to locate it.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
