@@ -89,15 +89,12 @@ The Mendix Cloud currently does not allow for third party frameworks, like Playw
 
 These microflows are called in order to setup a locally executed frontend test:
 
-| Microflow             | Explanation                                                                                                                                                     |
-| :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start_Playwright_Test | Initiates a new frontend Test with the given name.                                                                                                              |
-| Create_Browser        | Creates a browser of the specified type. To run the test in background, set Headless to True. SlowMo sets the waiting time in milliseconds between each Action. |
-| Create_BrowserContext | Used to define Browser attributes. Create and associate a ViewportSize object to set the Browser window Width and Height in pixels.                             |
-| Create_Page           | Creates a new Page in the Browser.                                                                                                                              |
-| Start_Tracing         | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                              |
-| Navigate              | Use to navigate to the homepage of your App.                                                                                                                    |
-| Mx_Login              | *Optionally*: use to login to your App with specified Username and Password. Works on a non-customized Mendix Login Page.                                       |
+| Microflow     | Location               | Explanation                                                                                                                                                          |
+| :------------ | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start_Test    | Playwright Starter Kit | Initiates a new frontend Test with the given name, a Browser with the specified width and height, sets the `wait between actions` parameter, and creates a new Page. |
+| Start_Tracing | Playwright Connector   | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                                   |
+| Navigate      | Playwright Connector   | Use to navigate to the homepage of your App.                                                                                                                         |
+| Mx_Login      | Playwright Starter Kit | *Optionally*: use to login to your App with specified Username and Password. Works only on the non-customized default (Atlas) Mendix Login Page.                     |
 
 ### Setup (using Browserstack)
 
@@ -133,7 +130,14 @@ For more advanced usage, checkout the Playwright documentation for [Locators](ht
 
 #### Mendix App testing
 
-In order to test Mendix Widgets, use the microflows from the Starter Kit. The proposed structure is to assign each Mendix Page their own subfolder. That folder should contain an Enumeration, containing the names of the Widgets inside that Page, and a Microflow, having this structure: 
+In order to test Mendix Widgets, make use the microflows from the Starter Kit, and create your own library of pages and widgets, preferably in a separate "PlaywrightConnectorHelper" module.
+
+The proposed approach is, for each Mendix Page that you want to test:
+- create one Enumeration, containing the names of the Widgets inside that Page, called `PageName_Widgets` (replace by actual page name).
+- create one Microflow, called `PageName_Locators` (replace by actual page name).
+Using fully-qualified names for the PageName is recommended if the same page name occurs in multiple modules.
+
+Create the Microflow like this:
 - input parameters to identify the Widget to Locate. 
 - a String variable representing the Module name.
 - a String variable representing the Page class.
@@ -162,12 +166,11 @@ The "Specific" subfolder contains Actions that can be performed on the respectiv
 
 These microflows are called at the end of a Playwright test:
 
-| Microflow            | Explanation                                               |
-| :------------------- | :-------------------------------------------------------- |
-| Mx_Logout            | *Optionally*: locates the Logout button and clicks on it. |
-| Stop_Tracing         | *Optionally*: saves the recorded trace files.             |
-| Stop_Playwright_Test | Ends the Playwright test.                                 |
-| Teardown_Playwright  | Removes the Playwright engine from memory.                |
+| Microflow    | Location               | Explanation                                                                       |
+| :----------- | :--------------------- | :-------------------------------------------------------------------------------- |
+| Mx_Logout    | Playwright Starter Kit | *Optionally*: uses a Javascript action to logout.                                 |
+| Stop_Tracing | Playwright Connector   | *Optionally*: saves the recorded trace files.                                     |
+| Stop_Test    | Playwright Starter Kit | Ends the Playwright test and optioally removes the Playwright engine from memory. |
 
 ## MTA Implementation
 
@@ -175,9 +178,7 @@ These microflows are called at the end of a Playwright test:
 It is recommended to use [Teststeps](../../../Teststep) in MTA to call abovementioned microflows.
 :::
 
-The [Test Case](../../../test-case) containing the Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. 
-
-For now, logging into the Mendix App needs to occur using the Mx_Login microflow. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
+The [Test Case](../../../test-case) containing the Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. Use the Mx_Login microflow from the Starter Kit or alternatively create a custom microflow in a separate module. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
 
 ## Testing Mendix Platform Supported Widgets
 
