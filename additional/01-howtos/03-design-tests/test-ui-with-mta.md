@@ -30,12 +30,13 @@ It is however possible to import the prerequisite modules in a separate App.<br/
 Documentation for this setup will be added in the future.
 :::
 
-### Connector
+### Playwright Connector
 
-The Connector makes it possible to define and run a frontend test from any Mendix App. 
-It includes Locator microflows to find elements on a webpage, and Action microflows to click on elements, fill them with text, or select a value. 
-The Connector can be used to test *any* webapplication, not just Mendix Apps. 
-Locator and Action microflows in the Connector can be defined and executed from MTA.
+The Playwright Connector makes it possible to define and run a frontend test from any Mendix App. It the App to connect to the Playwright server, based on specified connection settings, and execute the test. When executing a UI test, Playwright starts and hosts its own browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
+
+![Playwright Setup](../images/pw_setup.png)
+
+The Playwright Connector includes Locator microflows to find elements on a webpage, and Action microflows to click on elements, fill them with text, or select a value. Therefore it can be used to test *any* webapplication, not just Mendix Apps. Locator and Action microflows in the Playwright Connector can be defined and executed from MTA.
 
 ### Starter Kit
 
@@ -54,15 +55,14 @@ A few notes about the Starter Kit:
 This folder contains generic Locator microflows that are used internally by the Starter Kit to uniquely identify and locate a Widget on a Mendix Page. These microflows should not be called directly. Specific Locator microflows must be created for each Mendix Page, bespoke to your Mendix App. For now, use the [Example App](#example-app) to build Page-specific Locator microflows. In the future, Menditect will be able to generate these microflows based on the Page structure.
 
 `_Use_Me / TestResults`
-This folder contains a Page that shows stored files (Screenshots, Snapshots and Trace Files) after executing a test where Tracing was enabled. For now, these files are stored in the Mendix App where the Connector module is imported. In the future, Test Results will be stored in MTA.
+This folder contains a Page that shows stored files (Screenshots, Snapshots and Trace Files) after executing a test where Tracing was enabled. For now, these files are stored in the Mendix App where the Playwright Connector module is imported. In the future, Test Results will be stored in MTA.
 
 `_Use_Me / WidgetActions`
 This folder contains Action microflows for Mendix Widgets. 
 
 ## Get started
 
-- Start by importing the Connector. This module **requires the playwright driver bundle** jar file in your userlib directory. 
-See the documentation in the Mendix Marketplace on how to download this jar file.
+- Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar
 - Download the Starter Kit module to start testing the most common Mendix Widgets.
 - Add both the Module Roles to the project's User Roles.
 - Add the TestResultFiles page to the Navigation for the User Role that will be evaluating executed frontend Tests.
@@ -81,6 +81,12 @@ Each frontend test has the same basic structure:
 
 ### Setup (local testing)
 
+Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
+
+:::note Licensed Mendix node not supported
+The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use UI testing in MTA when the app under test is hosted in the Mendix Cloud.
+:::
+
 These microflows are called in order to setup a locally executed frontend test:
 
 | Microflow             | Explanation                                                                                                                                                     |
@@ -95,11 +101,21 @@ These microflows are called in order to setup a locally executed frontend test:
 
 ### Setup (using Browserstack)
 
-To use Browserstack instead of running Playwright on a local machine, replace the call to the "Create_Browser" microflow, with a call to the "Connect_BrowserStack" microflow.
+One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
+
+To test using BrowserStack, replace the call to the "Create_Browser" microflow, with a call to the "Connect_BrowserStack" microflow.
 
 Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
 Local Testing is currently only supported if Playwright is also running locally.
-[Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Connector.
+[Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
+
+### Setup (other platforms)
+
+*Azure*<br/>
+Microsoft Azure also provides a cloud-based infrastructure for running Playwright tests, allowing teams to automate browser testing at scale without managing on-premise resources. It integrates with Azure DevOps and CI/CD pipelines. You can read more on Playwright in Azure [here](https://azure.microsoft.com/products/playwright-testing#Feature).
+
+*Docker*<br/>
+It is also possible to deploy a  Docker image on a separate local server (e.g. Windows server) or a Private Cloud deployment. This also allows for on-premise, air-gapped deployments within the customer’s network. You can read more on how to host a Playwright server using Docker here.You can read more on how to host a Playwright server using Docker [here](https://github.com/microsoft/playwright/blob/main/docs/src/docker.md).
 
 ### Locators and Actions
 
@@ -107,7 +123,7 @@ Local Testing is currently only supported if Playwright is also running locally.
 
 To perform an action on an element in the page, the basic structure is to use two microflows; a Locator microflow and an Action microflow. Sometimes calling a second Locator microflow is needed.
 
-In the Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
+In the Playwright Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
 
 Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties) that calls the Locator Action microflow.
 
@@ -211,7 +227,7 @@ More Widgets will be added in future releases.
 
 ### Custom Widgets
 
-In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Connector to execute the corresponding Playwright commands. 
+In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Playwright Connector to execute the corresponding Playwright commands. 
 
 Mendix will add the "mx-name-`widgetName`" class to any Widget that you add to a Page or Snippet, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
 
