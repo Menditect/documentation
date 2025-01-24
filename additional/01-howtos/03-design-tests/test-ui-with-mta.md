@@ -15,7 +15,6 @@ See https://playwright.dev/java/ for the relevant documentation.
 
 ## Prerequisites
 
-
 Download below modules from the Mendix marketplace to enable frontend testing.
 
 Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use. If you want access to these modules, please [contact support](mailto:support@menditect.com).
@@ -89,12 +88,13 @@ The Mendix Cloud currently does not allow for third party frameworks, like Playw
 
 These microflows are called in order to setup a locally executed frontend test:
 
-| Microflow     | Location               | Explanation                                                                                                                                                          |
-| :------------ | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start_Test    | Playwright Starter Kit | Initiates a new frontend Test with the given name, a Browser with the specified width and height, sets the `wait between actions` parameter, and creates a new Page. |
-| Start_Tracing | Playwright Connector   | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                                   |
-| Navigate      | Playwright Connector   | Use to navigate to the homepage of your App.                                                                                                                         |
-| Mx_Login      | Playwright Starter Kit | *Optionally*: use to login to your App with specified Username and Password. Works only on the non-customized default (Atlas) Mendix Login Page.                     |
+| Microflow     | Location               | Explanation                                                                                                                                                                   |
+| :------------ | :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start_Test    | Playwright Starter Kit | Start a new UI Test, a Browser with the specified width and height, sets the `wait between actions` parameter, and creates a new `Page` object that represents a browser tab. |
+| Start_Tracing | Playwright Connector   | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                                            |
+| Navigate      | Playwright Connector   | Use to navigate to the homepage of your App.                                                                                                                                  |
+| Mx_Login      | Playwright Starter Kit | *Optionally*: use to login to your App with specified Username and Password. Works only on the non-customized default (Atlas) Mendix Login Page.                              |
+| Create_Page   | Playwright Connector   | *Optionally*: use to add any additional browser tabs.                                                                                                                         |
 
 ### Setup (using Browserstack)
 
@@ -135,7 +135,10 @@ In order to test Mendix Widgets, make use the microflows from the Starter Kit, a
 The proposed approach is, for each Mendix Page that you want to test:
 - create one Enumeration, containing the names of the Widgets inside that Page, called `PageName_Widgets` (replace by actual page name).
 - create one Microflow, called `PageName_Locators` (replace by actual page name).
+
 Using fully-qualified names for the PageName is recommended if the same page name occurs in multiple modules.
+
+Use only alphanumeric characters (letters and digits) for the names of the Widget in the enumeration. 
 
 Create the Microflow like this:
 - input parameters to identify the Widget to Locate. 
@@ -159,7 +162,11 @@ Assign the same Class name on the Page as the Page's Title.
 
 The "Locate_MxWidget" microflow then defines the scope of the Mendix Page, and then calls the "Locate_MxWidget_in_Locator" microflow, strategy is determined to locate the Widget depending on the type.
 
-Actions can be performed on a Widget by using microflows from the "WidgetActions" folder. The "Generic" subfolder contains Actions that don't require a Locator. 
+Actions can be performed on a Widget by using microflows from the "WidgetActions" folder. The "Generic" subfolder contains Actions that don't require a Locator:
+- Click `OK` on a DialogMessage
+- Click on the specified button on a Confirmation Dialog (Proceed / Cancel, etc)
+- 
+
 The "Specific" subfolder contains Actions that can be performed on the respective Mendix Widget, and take a Locator as an input parameter. 
 
 ### Teardown
@@ -178,7 +185,17 @@ These microflows are called at the end of a Playwright test:
 It is recommended to use [Teststeps](../../../Teststep) in MTA to call abovementioned microflows.
 :::
 
+### Session handling
+
 The [Test Case](../../../test-case) containing the Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. Use the Mx_Login microflow from the Starter Kit or alternatively create a custom microflow in a separate module. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
+
+The upside of the current implementation is that sessions created by Playwright can be carried onto subsequent Test Cases. Just point to the `MenditectPlaywrightConnector.Page` object that was created in a Test Case, whenever calling a Locator microflow, and the same browser tab will be used to run the test. Only when closing all the browser tabs (`MenditectPlaywrightConnector.Close_Page`) or by stopping the test (`MenditectPlaywrightStarterKit.Stop_Test`) the browser will be closed.
+
+When running Playwright on your local machine from Studio Pro, the free license will only allow for so many user sessions. Therefore, a few tips:
+- prevent using Anonymous sessions;
+- always logout at the end when creating a Playwright session;
+- prevent also manually logging in from your own browser;
+- restart the App if needed.
 
 ## Testing Mendix Platform Supported Widgets
 
@@ -201,7 +218,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - CheckBox
 - ComboBox
 - Confirmation Dialog
-- DataGrid
+- DataGrid *
 - DatePicker
 - DialogMessage
 - DropDown
@@ -221,6 +238,11 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - TextArea
 - TextBox
 - X button (that closes page)
+
+* Some notes about DataGrids:
+- The button to toggle the search panel can be given any name, but the button to trigger the search action, is always called `search`, so always use that (for the enumeration value) to locate it.
+- The ClickRow and DoubleClickRow actions are based on the Index of the row. Locating by Text is still under development. 
+- Both ClickRow and DoubleClickRow microflows, will wait 1 second to perform the action, to allow the search to be finished. To wait longer, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties).
 
 More Widgets will be added in future releases.
 
