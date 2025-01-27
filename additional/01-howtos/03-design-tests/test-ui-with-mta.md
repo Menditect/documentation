@@ -252,9 +252,11 @@ More Widgets will be added in future releases.
 
 In order to test custom made Widgets from the Marketplace, it is advisable to use the Starter Kit only as inspiration, but to replace it by your own Locator and Action Module that uses the Playwright Connector to execute the corresponding Playwright commands. 
 
-Mendix will add the "mx-name-`widgetName`" class to any Widget that you add to a Page or Snippet, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
+Mendix will add the "mx-name-`widgetName`" class to every widget on the Page, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
 
 ### Snippets
+
+Mendix will add the "mx-name-`snippetCallName`-`widgetName` for some Widgets from older Mendix versions. In newer versions, the the "mx-name-`widgetName`" is used. Take this into account when creating enumeration values.
 
 Important note: Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, is is always required to add a surrounding Container (rendered as a DIV element) to locate it.
 
