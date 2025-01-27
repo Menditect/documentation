@@ -148,11 +148,7 @@ Create the Microflow like this:
 
 See the [Mendix Platform Supported Widgets](#testing-mendix-platform-supported-widgets) for some examples. The structure used there can be duplicated for any Mendix Page.
 
-A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is recommended to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. 
-
-:::info Recommended
-Always use the Locator microflows inside the "Get_Locator_By_Locator" folder.
-:::
+A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. Use the microflows inside the "Get_Locator_By_Page" only for page a-specific elements (like menuitems).
 
 :::tip Mendix Popup Layout
 If you close a Popup and then open it again, the old one will remain Locatable by Playwright, resulting in a [strict mode violation](https://playwright.dev/docs/locators#strictness) when performing an action on it. Either create a duplicated Popup with a different class, or use `Last_Locator_Element`; although no guarantee, the last visible Popup is usually also the last one added to the HTML.
@@ -176,11 +172,11 @@ The "Specific" subfolder contains Actions that can be performed on the respectiv
 
 These microflows are called at the end of a Playwright test:
 
-| Microflow    | Location               | Explanation                                                                       |
-| :----------- | :--------------------- | :-------------------------------------------------------------------------------- |
-| Mx_Logout    | Playwright Starter Kit | *Optionally*: uses a Javascript action to logout.                                 |
-| Stop_Tracing | Playwright Connector   | *Optionally*: saves the recorded trace files.                                     |
-| Stop_Test    | Playwright Starter Kit | Ends the Playwright test and optioally removes the Playwright engine from memory. |
+| Microflow    | Location               | Explanation                                                                        |
+| :----------- | :--------------------- | :--------------------------------------------------------------------------------- |
+| Mx_Logout    | Playwright Starter Kit | *Optionally*: uses a Javascript action to logout.                                  |
+| Stop_Tracing | Playwright Connector   | *Optionally*: saves the recorded trace files.                                      |
+| Stop_Test    | Playwright Starter Kit | Ends the Playwright test and optionally removes the Playwright engine from memory. |
 
 ## MTA Implementation
 
@@ -226,6 +222,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - DialogMessage
 - DropDown
 - DynamicImage
+- FileManager `2`
 - GroupBox
 - Label
 - ListView
@@ -242,10 +239,18 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - TextBox
 - X button (that closes page)
 
-`¹` Some notes about DataGrids:
+`¹` DataGrid:
 - The button to toggle the search panel can be given any name, but the button to trigger the search action, is always called `search`, so always use that (for the enumeration value) to locate it.
 - The ClickRow and DoubleClickRow actions are based on the Index of the row. Locating by Text is still under development. 
 - Both ClickRow and DoubleClickRow microflows, will wait 1 second to perform the action, to allow the search to be finished. To wait longer, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties).
+
+`2` FileManager:
+- To "catch" the event of downloading a file into a FileDocument, make use of the Playwright Connector. Write a new microflow that executes the `Click` action on the *Download* button, and pass the fully-qualified name of that microflow as parameter for the `On_Download` microflow. Execute only the latter.
+- To "catch" the event of uploading a file, make use of the Playwright Connector. Write a new microflow that executes the `Click` action on the *Browse...* button, and pass the fully-qualified name of that microflow as parameter for the `On_File_Chooser` microflow. Execute the latter. Next, define the FileDocuments to upload, by calling the `Set_Files` microflow. 
+- For uploading a file from the file system, use the `MxFileDocument_UploadAs` microflow from the Starter Kit. Point to the location on the file system of the **Server** where the Mendix App is running. Simulating a user that is uploading a file, only works if you are running locally!
+- To view an image or pdf file in the Browser, use `FileDocument_Get_URL` to get the URL to view it. Add a browser tab by calling `Create_Page` and next the `Navigate` microflow to navigate to that URL.
+- Use the microflows `FileDocument_to_MyImage` or `FileDocument_to_MyPdf` to get some example FileDocuments...
+- ...or, read more about [File Handling in MTA](../tips-and-tricks/handle-files).
 
 More Widgets will be added in future releases.
 

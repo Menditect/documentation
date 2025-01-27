@@ -38,7 +38,9 @@ Now, it is possible to use this pattern in a Test Case, to test processes that r
 
 An example String that decodes into the Menditect Logo can be found [here](../images/menditectlogo.txt).
 
+Now, just add a [Teststep](../../../Teststep/microflow) in MTA calling this microflow, and you can use the created file anywhere in the Test Case.
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 21 august 2023
+Last updated 27 January 2025
