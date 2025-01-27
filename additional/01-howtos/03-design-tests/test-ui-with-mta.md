@@ -88,13 +88,13 @@ The Mendix Cloud currently does not allow for third party frameworks, like Playw
 
 These microflows are called in order to setup a locally executed frontend test:
 
-| Microflow     | Location               | Explanation                                                                                                                                                                   |
-| :------------ | :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start_Test    | Playwright Starter Kit | Start a new UI Test, a Browser with the specified width and height, sets the `wait between actions` parameter, and creates a new `Page` object that represents a browser tab. |
-| Start_Tracing | Playwright Connector   | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                                            |
-| Navigate      | Playwright Connector   | Use to navigate to the homepage of your App.                                                                                                                                  |
-| Mx_Login      | Playwright Starter Kit | *Optionally*: use to login to your App with specified Username and Password. Works only on the non-customized default (Atlas) Mendix Login Page.                              |
-| Create_Page   | Playwright Connector   | *Optionally*: use to add any additional browser tabs.                                                                                                                         |
+| Microflow     | Location               | Explanation                                                                                                                                                                    |
+| :------------ | :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start_Test    | Playwright Starter Kit | Starts a new UI Test, a Browser with the specified width and height, sets the `wait between actions` parameter, and creates a new `Page` object that represents a browser tab. |
+| Start_Tracing | Playwright Connector   | *Optionally*: enables the use of Screenshots, Snapshots and Tracefiles for a test.                                                                                             |
+| Navigate      | Playwright Connector   | Opens the homepage of your App.                                                                                                                                                |
+| Mx_Login      | Playwright Starter Kit | *Optionally*: uses a Javascript action to login.                                                                                                                               |
+| Create_Page   | Playwright Connector   | *Optionally*: adds an additional browser tab.                                                                                                                                  |
 
 ### Setup (using Browserstack)
 

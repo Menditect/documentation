@@ -629,11 +629,11 @@ Retrieve the test suite runs inside a test run.
 
 **URL**
 
-`/rest/mta/api/testsuiteruns/{testrunexecutionid}/details`
+`/rest/mta/api/testsuiteruns?testrunExecutionId={testrunexecutionid}`
 
 **Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuiteruns/9724158a-a002-49a2-b4b7-79f18fbc9b15/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuiteruns?testrunExecutionId=9724158a-a002-49a2-b4b7-79f18fbc9b15`
 
 
 ### Responses
@@ -668,11 +668,11 @@ Retrieve the test case runs inside a test suite run.
 
 **URL**
 
-`/rest/mta/api/testcaseruns/{testsuiterunKey}/details`
+`/rest/mta/api/testcaseruns?testsuiterunKey={testsuiterunKey}`
 
 **Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcaseruns/42/details`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/testcaseruns?testsuiterunKey=42`
 
 
 ### Responses
@@ -764,4 +764,4 @@ Retrieve the [archived test run content](archive) (only available if Test Run Ar
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 22 December 2023
+Last updated: 27 January 2025
