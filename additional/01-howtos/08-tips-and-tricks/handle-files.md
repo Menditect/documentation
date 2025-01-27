@@ -1,14 +1,21 @@
 # Handle files
 
-MTA does not (yet) allow uploading a **FileDocument** into your App.
+MTA does not (yet) allow uploading a `FileDocument` into your Test App.
 
 This also means, that using Binary attributes is not (yet) supported.
 
-If it is necessary to test a process that includes or requires uploading a file, it is recommended to perform these steps:
+However, there are some ways to include the Uploading and Downloading of files into your test process. 
+Using a [UI testscript](../design-tests/test-ui-with-mta) is the recommended approach.
+
+It is also possible to use an extension microflow inside the Test App to create the files. 
+
+## Duplicate existing FileDocument
+
 - Create (if not yet exists) an MTA extension module in the tested App.
-- Add an entity that inherits from FileDocument.
-- Add an attribute that can be used to uniquely identify an uploaded file.
-- Build a page to upload files into this entity.
+- Add a User to the module.
+- Add an entity that inherits from FileDocument or Image, for instance `MyPdfFile`.
+- Give the User full access to that entity.
+- Build a NewEdit Page to upload files of this type.
 - Create a microflow with only a single (Java) Duplicate File Document action from the Community Commons module. It should look like this:
 ![Duplicate File Document microflow](../images/duplicate-filedoc.png)
 
@@ -19,6 +26,17 @@ Now, it is possible to use this pattern in a Test Case, to test processes that r
 4. Microflow call to the abovementioned microflow with parameters: teststep 1 as Target, and teststep 3 as Source.
 5. Other logic to perform the actual test.
 6. Optional delete logic to clean up.
+
+## Create FileDocument from a Base64 string
+
+- Create (if not yet exists) an MTA extension module in the tested App.
+- Add a User to the module.
+- Add an entity that inherits from FileDocument or Image, for instance `MyImage`.
+- Give the User full access to that entity.
+- Create a microflow that decodes a String to a FileDocument using the (Java) Base64 decode to file action from the Community Commons module. It should look like this:
+![Create File from Base64 String](../images/image-from-base64.png)
+
+An example String that decodes into the Menditect Logo can be found [here](../images/menditectlogo.txt).
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
