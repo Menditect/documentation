@@ -218,7 +218,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - CheckBox
 - ComboBox
 - Confirmation Dialog
-- DataGrid *
+- DataGrid `¹`
 - DatePicker
 - DialogMessage
 - DropDown
@@ -239,7 +239,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - TextBox
 - X button (that closes page)
 
-* Some notes about DataGrids:
+`¹` Some notes about DataGrids:
 - The button to toggle the search panel can be given any name, but the button to trigger the search action, is always called `search`, so always use that (for the enumeration value) to locate it.
 - The ClickRow and DoubleClickRow actions are based on the Index of the row. Locating by Text is still under development. 
 - Both ClickRow and DoubleClickRow microflows, will wait 1 second to perform the action, to allow the search to be finished. To wait longer, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties).
