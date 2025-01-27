@@ -222,6 +222,7 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - DialogMessage
 - DropDown
 - DynamicImage
+- FileManager `2`
 - GroupBox
 - Label
 - ListView
@@ -238,10 +239,18 @@ Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 - TextBox
 - X button (that closes page)
 
-`¹` Some notes about DataGrids:
+`¹` DataGrid:
 - The button to toggle the search panel can be given any name, but the button to trigger the search action, is always called `search`, so always use that (for the enumeration value) to locate it.
 - The ClickRow and DoubleClickRow actions are based on the Index of the row. Locating by Text is still under development. 
 - Both ClickRow and DoubleClickRow microflows, will wait 1 second to perform the action, to allow the search to be finished. To wait longer, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties).
+
+`2` FileManager:
+- To "catch" the event of downloading a file into a FileDocument, make use of the Playwright Connector. Write a new microflow that executes the `Click` action on the *Download* button, and pass the fully-qualified name of that microflow as parameter for the `On_Download` microflow. Execute only the latter.
+- To "catch" the event of uploading a file, make use of the Playwright Connector. Write a new microflow that executes the `Click` action on the *Browse...* button, and pass the fully-qualified name of that microflow as parameter for the `On_File_Chooser` microflow. Execute the latter. Next, define the FileDocuments to upload, by calling the `Set_Files` microflow. 
+- For uploading a file from the file system, use the `MxFileDocument_UploadAs` microflow from the Starter Kit. Point to the location on the file system of the **Server** where the Mendix App is running. Simulating a user that is uploading a file, only works if you are running locally!
+- To view an image or pdf file in the Browser, use `FileDocument_Get_URL` to get the URL to view it. Add a browser tab by calling `Create_Page` and next the `Navigate` microflow to navigate to that URL.
+- Use the microflows `FileDocument_to_MyImage` or `FileDocument_to_MyPdf` to get some example FileDocuments...
+- ...or, read more about [File Handling in MTA](../tips-and-tricks/handle-files).
 
 More Widgets will be added in future releases.
 
