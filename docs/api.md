@@ -764,4 +764,4 @@ Retrieve the [archived test run content](archive) (only available if Test Run Ar
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 22 December 2023
+Last updated: 27 January 2025
