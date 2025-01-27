@@ -154,6 +154,10 @@ A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages c
 Always use the Locator microflows inside the "Get_Locator_By_Locator" folder.
 :::
 
+:::tip Mendix Popup Layout
+If you close a Popup and then open it again, the old one will remain Locatable by Playwright, resulting in a [strict mode violation](https://playwright.dev/docs/locators#strictness) when performing an action on it. Either create a duplicated Popup with a different class, or use `Last_Locator_Element`; although no guarantee, the last visible Popup is usually also the last one added to the HTML.
+:::
+
 In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). 
 
 :::info Recommended
@@ -165,7 +169,6 @@ The "Locate_MxWidget" microflow then defines the scope of the Mendix Page, and t
 Actions can be performed on a Widget by using microflows from the "WidgetActions" folder. The "Generic" subfolder contains Actions that don't require a Locator:
 - Click `OK` on a DialogMessage
 - Click on the specified button on a Confirmation Dialog (Proceed / Cancel, etc)
-- 
 
 The "Specific" subfolder contains Actions that can be performed on the respective Mendix Widget, and take a Locator as an input parameter. 
 
@@ -256,7 +259,7 @@ Mendix will add the "mx-name-`widgetName`" class to every widget on the Page, so
 
 ### Snippets
 
-Mendix will add the "mx-name-`snippetCallName`-`widgetName` for some Widgets from older Mendix versions. In newer versions, the the "mx-name-`widgetName`" is used. Take this into account when creating enumeration values.
+Mendix will add the "mx-name-`snippetCallName`-`widgetName`" for some Widgets from older Mendix versions. In newer versions, the the "mx-name-`widgetName`" is used. Take this into account when creating enumeration values.
 
 Important note: Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, is is always required to add a surrounding Container (rendered as a DIV element) to locate it.
 
