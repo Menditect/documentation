@@ -148,11 +148,7 @@ Create the Microflow like this:
 
 See the [Mendix Platform Supported Widgets](#testing-mendix-platform-supported-widgets) for some examples. The structure used there can be duplicated for any Mendix Page.
 
-A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Therefore, it is recommended to always use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. 
-
-:::info Recommended
-Always use the Locator microflows inside the "Get_Locator_By_Locator" folder.
-:::
+A Mendix Page is not the same scope as a page in the Browser, but Mendix Pages can be on top of each other (Popups over Responsive pages). Use the Locator microflows inside the "Get_Locator_By_Locator" folder, to narrow the scope to only one Mendix Page. Use the microflows inside the "Get_Locator_By_Page" only for page a-specific elements (like menuitems).
 
 :::tip Mendix Popup Layout
 If you close a Popup and then open it again, the old one will remain Locatable by Playwright, resulting in a [strict mode violation](https://playwright.dev/docs/locators#strictness) when performing an action on it. Either create a duplicated Popup with a different class, or use `Last_Locator_Element`; although no guarantee, the last visible Popup is usually also the last one added to the HTML.
@@ -176,11 +172,11 @@ The "Specific" subfolder contains Actions that can be performed on the respectiv
 
 These microflows are called at the end of a Playwright test:
 
-| Microflow    | Location               | Explanation                                                                       |
-| :----------- | :--------------------- | :-------------------------------------------------------------------------------- |
-| Mx_Logout    | Playwright Starter Kit | *Optionally*: uses a Javascript action to logout.                                 |
-| Stop_Tracing | Playwright Connector   | *Optionally*: saves the recorded trace files.                                     |
-| Stop_Test    | Playwright Starter Kit | Ends the Playwright test and optioally removes the Playwright engine from memory. |
+| Microflow    | Location               | Explanation                                                                        |
+| :----------- | :--------------------- | :--------------------------------------------------------------------------------- |
+| Mx_Logout    | Playwright Starter Kit | *Optionally*: uses a Javascript action to logout.                                  |
+| Stop_Tracing | Playwright Connector   | *Optionally*: saves the recorded trace files.                                      |
+| Stop_Test    | Playwright Starter Kit | Ends the Playwright test and optionally removes the Playwright engine from memory. |
 
 ## MTA Implementation
 
