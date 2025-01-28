@@ -44,7 +44,7 @@ The Starter Kit is meant specifically to define and run frontend tests for Mendi
 - A Page showing Results from executed tests.
 
 A few notes about the Starter Kit:
-- The Starter Kit assumes that the default texts for elements is used as defined in a US-English Mendix project. Other languages are not (yet) supported.
+- The Starter Kit currently has the en-US and nl-NL languages built-in. 
 - [React-enabled projects](https://docs.mendix.com/refguide/mendix-client/react/) can be tested by setting the Constant IsUsingReactClient to True.
 - Although more Widgets will be added as supported in the Starter Kit, any changes made in the future can break Locating a Widget correctly.
 
@@ -271,4 +271,4 @@ Important note: Snippets are not rendered as HTML elements by Mendix, even thoug
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 20 December 2024
+Last updated 29 January 2025

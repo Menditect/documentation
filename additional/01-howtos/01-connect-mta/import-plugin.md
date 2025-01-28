@@ -35,7 +35,7 @@ Make sure to check your app's Mendix version before importing the module.
 | Mendix Version                 | Url                                                  |
 | ------------------------------ | ---------------------------------------------------- |
 | Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
-| Mendix 9.24.4 - Mendix 9.24.9  | https://marketplace.mendix.com/link/component/214717 |
+| Mendix 9.24.4 and higher       | https://marketplace.mendix.com/link/component/214717 |
 | Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
 | Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123 |
 | Mendix 7                       | Not supported                                        |
