@@ -262,11 +262,18 @@ In order to test custom made Widgets from the Marketplace, it is advisable to us
 
 Mendix will add the "mx-name-`widgetName`" class to every widget on the Page, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
 
+For an input Widget like TextBox or DatePicker, there are two chained Locators in the Starter Kit: first Locating the surrounding HTML element, then Locating the input element by [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) "TEXTBOX". Chaining Locators like this, is also advisable for custom widgets.
+
+To perform actions on some more complex Widgets like a DataGrid, it may also be necessary to include a Locator in the Action microflow. For instance, when clicking on a row in a datagrid, the row will be located by css `css=.mx-name-index-#` (replacing the # with a number).
+
+
 ### Snippets
 
-Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
+Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. 
+
+In order to define Locators for Widgets inside a Snippet, add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 29 January 2025
+Last updated 3 February 2025

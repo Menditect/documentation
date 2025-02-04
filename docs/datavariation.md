@@ -36,7 +36,7 @@ To resolve this, use below guide to remove all Data Variation.
 
 ### View Test Suite Data Variation
 - Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
-- Navigate to "<i class="fal fa-table"></i> Data variation" in the left menu.
+- Click on "<i class="fal fa-table"></i> Test suite data variation" on the top-right.
 
 ### Migrate Test Suite Data Variation to Test Case Data Variation
 - Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
