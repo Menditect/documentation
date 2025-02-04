@@ -271,9 +271,7 @@ To perform actions on some more complex Widgets like a DataGrid, it may also be 
 
 Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. 
 
-In order to define Locators for Widgets inside a Snippet, there are two options:
-- add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
-- add a Constant to your Mendix project, that adds a "mx-name-`snippetCallName`-`widgetName`" class to widgets inside a Snippet. Read https://docs.mendix.com/appstore/partner-solutions/ats/ht-two-increase-recorder-helper-coverage/#increasing-ats-recorder-coverage-of-your-aut
+In order to define Locators for Widgets inside a Snippet, add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

@@ -69,4 +69,4 @@ If a Microflow Parameter is a List instead of a single Object, it is possible to
 Note that it is not possible to select the same previous teststep multiple times.
 
 ### Include a Microflow Parameter Value as a Data Variation Item
-- Select the <i class="fas fa-table"></i> button for the parameter that you want to include in [Data Variation](datavariation).
+- Select the <i class="fas fa-table"></i> button for the parameter that you want to include in [Data Variation](../datavariation).
