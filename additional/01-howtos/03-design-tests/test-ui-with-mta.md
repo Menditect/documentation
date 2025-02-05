@@ -31,7 +31,7 @@ Documentation for this setup will be added in the future.
 
 ### Playwright Connector
 
-The Playwright Connector makes it possible to define and run a frontend test from any Mendix App. It the App to connect to the Playwright server, based on specified connection settings, and execute the test. When executing a UI test, Playwright starts and hosts its own browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
+The Playwright Connector makes it possible to define and run a frontend test from any Mendix App. It enables the App to connect to the Playwright server, based on specified connection settings, and execute the test. When executing a UI test, Playwright starts and hosts its own browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
 
 ![Playwright Setup](../images/pw_setup.png)
 
@@ -64,7 +64,7 @@ This folder contains Action microflows for Mendix Widgets.
 - Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar
 - Download the Starter Kit module to start testing the most common Mendix Widgets.
 - Add both the Module Roles to the project's User Roles.
-- Create a Page with the Snippets in the Starter Kit, add it to the Navigation for the User Role that will be evaluating executed frontend Tests.
+- Create a Page with the `SNIP_Playwright_Assets` Snippet in the Starter Kit, add it to the Navigation for the User Role that will be evaluating executed frontend Tests.
 - Optionally: Add the Overview page from the Example App to the Navigation, to use it as inspiration to build your own frontend test. 
 
 :::info Recommended
