@@ -65,7 +65,7 @@ Menditect on-premise customers and partners **do not** have to set these values.
 
 #### Scheduled events
 
-**Toggle ALL scheduled events to Enabled=True**
+*Toggle ALL scheduled events to Enabled=True*
 
 #### Firewall and network settings
 
