@@ -110,6 +110,7 @@ const config = {
           { id: 'coverage-exception', content: 'coverage-exception.md', versions: 'ALL' },
           { id: 'coverage-exclude-filter', content: 'coverage-exclude-filter.md', versions: 'ALL' },
           { id: 'coverage-goal', content: 'coverage-goal.md', versions: 'ALL' },
+          { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
           { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
