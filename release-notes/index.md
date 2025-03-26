@@ -14,12 +14,23 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <i class="fas fa-fire"></i>  <b>Datavariation pages and functions greatly improved!</b> <br/>  
 - Cleaner UI, more flexible information density
-- Added navigability between Datavariation Run and Design
+- Added navigability between Datavariation Run and Design, and between Datavariation and Test Case pages
 - Added Title on variation column 
+- Sorting columns and rows
+- Deleting the first column
+
+@@TODO: klantwensen noemen als punten
 
 ## New functionality 
 
-| ID                    | (Multiple)                                                                                                                                                                                                                                            |
+@@2013 overkoepelende ticket voor matrix
+@@2050 overkoepelende ticket voor matrix styling
+@@ Highlight functie uitleggen, je kan zien waar je vandaan komt (ook bij toevoegen nieuwe items)
+@@ MTA-2040 bewaartermijn van test runs die aangemaakt zijn via de API, kan worden gebruikt om CICD runs te bekijken bijvoorbeeld na het weekend
+@@ MTA-1997 the titels of the variation columns worden nu ook getoond in de run 
+@@ MTA-2009 testen
+
+| ID                    | MTA-2042                                                                                                                                                                                                                                              |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to navigate from a Test Suite Run, Test Case Run or Teststep Run to the corresponding variation column, and to navigate from an attribute, microflow parameter or assert in the Test Run, to the corresponding variation item row. |
 | __Release actions__   | None.                                                                                                                                                                                                                                                 |
@@ -37,20 +48,24 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Bug fixes
 
-| ID                  | MTA-2025                                                                                                                               |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | With the Branch Subscriptions Scheduled Event enabled, MTA would restart after some time, due to the Java Runtime being out-of-memory. |
-| __Solution__        | Fixed a memory leak in the Branch Subscriptions feature.                                                                               |
-| __Release actions__ | None.                                                                                                                                  |
+@@1992 gedaan vanwege pen test, met markus bespreken
+@@ check ook of er known issues opgelost zijn
+@@2032 not possible to copy a test case if it has test case level Datavariation enabled
+
+| ID                  | MTA-2025                                                   |
+| ------------------- | ---------------------------------------------------------- |
+| __Problem__         | Inefficient usage of the Java Virtual Memory (heap space). |
+| __Solution__        | Improved usage of the Java Virtual Memory.                 |
+| __Release actions__ | None.                                                      |
 
 <br/>
 
 
-| ID                  | MTA-2048                                                                                                          |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Deleting an entire Application from MTA could take very long if there are still downloaded Application Revisions. |
-| __Solution__        | Application Revisions are now deleted in batches to improve the Delete Application process.                       |
-| __Release actions__ | None.                                                                                                             |
+| ID                  | MTA-2048                                                                                                       |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Deleting large Applications from MTA could take very long if there are still downloaded Application Revisions. |
+| __Solution__        | Application Revisions are now deleted in batches to improve the Delete Application process.                    |
+| __Release actions__ | None.                                                                                                          |
 
 <br/>
 
@@ -62,7 +77,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-| ID                  | MTA-1993                                                                                                               |
+| ID                  | MTA-2027                                                                                                               |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Git merge commits in the Select Application Revision pages were shown in the wrong order (in respect to other commits) |
 | __Solution__        | Fixed the order of Git commits in the Select Application Revision pages.                                               |
@@ -70,7 +85,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-| ID                  | MTA-1993                                                                                                              |
+| ID                  | MTA-1949                                                                                                              |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | __Problem__         | Count validation feedback message Asserts in Test Suite Datavariation were not included when Duplicating a Test Case. |
 | __Solution__        | Count validation feedback message Asserts in Test Suite Datavariation are now included when Duplicating a Test Case.  |
