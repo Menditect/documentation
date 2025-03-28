@@ -13,27 +13,31 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## Highlights in this release
 
 <i class="fas fa-fire"></i>  <b>Datavariation pages and functions greatly improved!</b> <br/>  
-- Cleaner UI, more flexible information density
-- Added navigability between Datavariation Run and Design, and between Datavariation and Test Case pages
-- Added Title on variation column 
-- Sorting columns and rows
-- Deleting the first column
-
-@@TODO: klantwensen noemen als punten
+- Cleaner UI, more flexible information density.
+- Added the Highlighting feature in Datavariation, as a helping indicator after Navigation actions or after adding Datavariation colums or Datavariation item rows. 
+- Improved Navigability between Datavariation Run and Design, and between Datavariation and Test Case pages.
 
 ## New functionality 
 
-@@2013 overkoepelende ticket voor matrix
-@@2050 overkoepelende ticket voor matrix styling
-@@ Highlight functie uitleggen, je kan zien waar je vandaan komt (ook bij toevoegen nieuwe items)
-@@ MTA-2040 bewaartermijn van test runs die aangemaakt zijn via de API, kan worden gebruikt om CICD runs te bekijken bijvoorbeeld na het weekend
-@@ MTA-1997 the titels of the variation columns worden nu ook getoond in de run 
-@@ MTA-2009 testen
 
-| ID                    | MTA-2042                                                                                                                                                                                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to navigate from a Test Suite Run, Test Case Run or Teststep Run to the corresponding variation column, and to navigate from an attribute, microflow parameter or assert in the Test Run, to the corresponding variation item row. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                 |
+| ID                    | MTA-2013                                                                                                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | It is now possible to assign a Title to a Datavariation column, shift Datavariation columns left and right, and delete the first Datavariation column, making the second column the first. |
+| __Release actions__   | None.                                                                                                                                                                                      |
+
+<br/>
+
+| ID                    | MTA-2042                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved navigation from and to Datavariation pages, where any navigated or added item(s) are Highlighted, with a blue border around it. It is now possible to navigate from a Test Suite, Test Case, or Teststep, to the corresponding variation column(s), or back, and to navigate from an attribute, microflow parameter or assert, to the corresponding variation column.  Also it is now possible, to navigate from a Test Suite Run, Test Case Run or Teststep Run to the corresponding variation column, and to navigate from an attribute, microflow parameter or assert in the Test Run, to the corresponding cell. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+<br/>
+
+| ID                    | MTA-2050                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The Datavariation pages UI are completely restyled. Both pages are now popup pages, where the amount of viewable columns on the page can be configured. The Title of the Datavariation colum is now displayed. Icons are now only shown for Asserts no longer for Values. Columns within the same Test Case or Teststep can be shifted up and down (having no effect on resulting Test Run). Additionally, the Title of Datavariation colums are now shown as the Title of the executed Test Suite or Test Case, in the Test Run Result pages. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 <br/>
 
@@ -44,13 +48,34 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | MTA-2040                                                                                                                                                                                                                                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to set a time-to-live [in days] on any Test Run that was executed through the MTA Public API. The default is 2 days, the minimum is 1 day, and the maximum is 7 days. This allows, for example, to view the Test Results of scheduled Tests after the weekend, if they were executed on a Friday. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                |
+
+<br/>
+
+| ID                    | MTA-2009                                                                                                                          |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When executing a Test Case or Test Suite, MTA navigates to the result page automatically (because there is only one result page). |
+| __Release actions__   | None.                                                                                                                             |
+
+<br/>
+
 
 
 ## Bug fixes
 
-@@1992 gedaan vanwege pen test, met markus bespreken
-@@ check ook of er known issues opgelost zijn
-@@2032 not possible to copy a test case if it has test case level Datavariation enabled
+https://menditect.atlassian.net/browse/MTA-1992 gedaan vanwege pen test, met markus bespreken
+
+
+| ID                  | MTA-2032                                                                                                                     |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | It was not possible to copy a Test Case from another Test Suite if this Test Case had Test Case level Datavariation enabled. |
+| __Solution__        | It is now possible to copy a Test Case from another Test Suite if this Test Case has Test Case level Datavariation enabled.  |
+| __Release actions__ | None.                                                                                                                        |
+
+<br/>
 
 | ID                  | MTA-2025                                                   |
 | ------------------- | ---------------------------------------------------------- |
@@ -60,6 +85,13 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                  | MTA-1960                                                                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Known issue "Incorrect sequence number in data variation", when deleting Test Cases having Datavariation.               |
+| __Solution__        | Solved this known issue; the sequence number for Test Cases and Teststeps in the Datavariation are now shown correctly. |
+| __Release actions__ | None.                                                                                                                   |
+
+<br/>
 
 | ID                  | MTA-2048                                                                                                       |
 | ------------------- | -------------------------------------------------------------------------------------------------------------- |
