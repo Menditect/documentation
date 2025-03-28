@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Run MTA on premises
+# Run MTA BYOMEAL (Bring Your Own Mendix Environment And License)
 
 ## Purpose
 
