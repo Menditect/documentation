@@ -62,10 +62,17 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-| ID                    | MTA-2054                                                                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Customers using SAML SSO can now choose to use IdP assertion attributes to assign User Roles to created Accounts, or assign User Roles manually in MTA. |
-| __Release actions__   | None.                                                                                                                                                   |
+| ID                    | MTA-2054                                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Customers using SAML SSO can now choose to use IdP assertion attributes to assign User Roles to created Accounts, or to login as MTA Manager and assign User Roles manually. |
+| __Release actions__   | None.                                                                                                                                                                        |
+
+<br/>
+
+| ID                    | (none)                                                                                                                                                                                                                |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The "Mendix Model" page in a Test Configuration now contains the option to export the list of microflows with the flag "Is used in Teststep". The resulting CSV file can be used for reporting design-level Coverage. |
+| __Release actions__   | None.                                                                                                                                                                                                                 |
 
 <br/>
 
