@@ -11,7 +11,7 @@ It is possible to either define the result to have a single value, or a range th
 
 A Microflow Teststep can have zero or one Assert defined on the output.
 
-When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item) for each defined variation.
+When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item-row) for each defined variation.
 
 ## Properties
 | Name               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
