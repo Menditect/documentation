@@ -85,6 +85,8 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Bug fixes
 
+- 2085
+- 2086
 
 | ID                  | MTA-2032                                                                                                                                       |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -150,5 +152,19 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                  | MTA-2085                                                                                                                                                                                                                                                    |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Adding a newly created Assert to Test Suite datavariation from the Edit Assert page, shows an error message "DataVariationType has an issue: Test suite variation item can only exist for test case, if test case is flagged for test suite datavariation". |
+| __Solution__        | Adding a newly created Assert to Test Suite datavariation from the Edit Assert page, no longer leads to an error message.                                                                                                                                   |
+| __Release actions__ | None.                                                                                                                                                                                                                                                       |
 
+<br/>
+
+| ID                  | MTA-2086                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Deleting an Application is not possible if there are still calculated coverage runs on the Application level. |
+| __Solution__        | Calculated coverage runs on the Application level are automatically deleted if the Application is deleted.    |
+| __Release actions__ | None.                                                                                                         |
+
+<br/>
 
