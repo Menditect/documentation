@@ -29,7 +29,7 @@ It is **not possible** to import a CSV or Excel file into the datavariation, for
 
 None.
 
-Note that not entering a value will be interpreted as 'Empty'.
+Note that not entering a value will be interpreted as `Empty`, except for String values, where it will be interpreted as '' (zero-length String).
 
 ## Actions on Data Variation Item
 

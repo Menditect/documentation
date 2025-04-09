@@ -17,64 +17,53 @@ To change the value of an Attribute or Assert per Test Run, it needs to be expli
 On the Test Case level, a choice has to be made between the Test Suite / Test Case Datavariations when varying on an Attribute or Assert. Once the choice is made, it can only be undone by excluding the varied Attributes and Asserts.
 :::
 
-An included Attribute or Assert is referred to in the MTA Documentation as a [Data Variation Item](datavariation-item-row).
+An included Attribute or Assert is referred to in the MTA Documentation as a [Datavariation Item Row](datavariation-item-row).
 
-For each [Datavariation Column](datavariation-column), a Test Suite Run or Test Case Run will be created. If there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
+For each [Datavariation Column](datavariation-column), a Test Suite Run or Test Case Run will be created. The order in which they are executed is represented by a number shown in the header. If there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
 
-It is also possible to execute one single column in the data variation.
+It is also possible to execute one single Datavariation Column.
 
 ## Business rules
 
-None. 
+It is **not allowed** to delete a [Datavariation Column](datavariation-column) if there is only one.
 
-## Actions on Data Variation
+It **is allowed** to delete all [Datavariation Item Rows](datavariation-item-row). Executing the Test Case or Test Suite will then only run once.
 
-### View Test Suite Data Variation
-- Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
-- Click on "<i class="fal fa-table"></i> Test suite data variation" on the top-right.
+## Actions on Datavariations
+
+### Navigate to Test Suite Datavariations
+
+Everywhere throughout the Test Configuration or Test Run, click the <font color="#1799DE"><i class="fas fa-table"></i></font> to navigate to the Test Suite Datavariations.
+
+### Navigate to Test Case Datavariations
+
+Everywhere throughout the Test Suite or Test Suite Run, click the <font color="#1799DE"><i class="fas fa-table-rows"></i></font> to navigate to the Test Case Datavariations.
 
 ### Migrate Test Suite Data Variation to Test Case Data Variation
 - Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
 - Click on "<i class="fa-light fa-arrow-right"></i> Move to test case data variation".
 - Select the Test Case that you want to migrate from Test Suite Data Variation to Test Case Data Variation.
 
-### Remove all Test Suite Data Variation
-To completely remove all Data Variation Items and also remove all Data Variations:
-- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
-- Click on "<i class="fas fa-trash-alt"></i> Delete test suite data variation".
-
-### View Test Case Data Variation
-- Open the Test Configuration and click "<i class="fal fa-cog"></i> Configure" to open the Test Suite. 
-- Click on <i class="fas fa-ellipsis"></i> on the Test Case.
-- Click on "<i class="fa-light fa-table-rows"></i> View data variation".
-
 ### Migrate Test Case Data Variation to Test Suite Data Variation
 - Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton popup.
 - Click on "<i class="fa-light fa-arrow-right"></i> Move to test suite data variation".
 - Confirm.
   
+### Remove all Test Suite Data Variation
+To completely remove all Data Variation Items and also remove all Data Variations:
+- Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton page.
+- Click on "<i class="fal fa-trash-alt"></i> Disable test suite data variations".
+
+Note: if you already deleted all [Datavariation Item Rows](datavariation-item-row), you will not get a confirmation message.
+
 ### Remove all Test Case Data Variation
 To completely remove all Data Variation Items and also remove all Data Variations:
 - Click on <i class="fas fa-ellipsis"></i> on the top right of the Data Variaton popup.
-- Click on "<i class="fas fa-trash-alt"></i> Delete test case data variation".
+- Click on "<i class="fal fa-trash-alt"></i> Disable test case data variations".
+
+Note: if you already deleted all [Datavariation Item Rows](datavariation-item-row), you will not get a confirmation message.
 
 The page will close.
-
-### Add items to Data Variation
-
-[Create a data variation item.](datavariation-item-row#create-a-data-variation-item)
-
-### Add a Variation
-- Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column you want to create a copy from, for instance the column labeled *# 1*. 
-- Click "*Copy*".
-
-### Delete a Variation
-- Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column you want to delete, for instance the column labeled *# 2*. 
-- Click <i class="fas fa-trash-alt"></i>.
-
-Note that you cannot delete the first column labeled *# 1*.
 
 ### Execute a Variation
 - Open the Test Suite data variation page or Test Case data variation popup.
@@ -103,4 +92,4 @@ Note that you cannot delete the first column labeled *# 1*.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 21 October 2023
+Last updated: 9 April 2025
