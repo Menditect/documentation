@@ -46,6 +46,13 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | (none)                                                                                                                                                         | <i class="fa-regular fa-lightbulb-on"></i> |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| __New functionality__ | Executing a Test Case or Test Suite from a Test Suite / Case Run result page, will only run the respective Datavariation Column, if Datavariation was applied. |                                            |
+| __Release actions__   | None.                                                                                                                                                          |                                            |
+
+<br/>
+
 | ID                    | MTA-2000                                                                                                                                        |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | It is now possible to automatically adapt a Test Configuration to the most recently downloaded Application Revision using a Branch Subsciption. |
@@ -81,6 +88,12 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | (none)                                                                                                                                                                 |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved scaling of the MTA pages that are shown in the [Menditect Call Hierarchy extension](../additional/howtos/connect-mta/use-microflow-call-hierarchy-extension). |  |
+| __Release actions__   | None (you do not need to update the Extension).                                                                                                                        |
+
+<br/>
 
 
 ## Bug fixes
