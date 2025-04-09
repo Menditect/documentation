@@ -18,9 +18,8 @@ A Datavariation Column represents a single Test Suite Run or Test Case Run that 
 
 ## Business rules
 
-None.
 
-Note that not entering a value will be interpreted as 'Empty'.
+It is **not allowed** to delete a [Datavariation Column](datavariation-column) if there is only one.
 
 ## Actions on Datavariation Column
 
@@ -48,10 +47,20 @@ Note that not entering a value will be interpreted as 'Empty'.
 - Save.
 
 ### Change the order of a Datavariation Column
+
+The left-to-right order of the Datavariation Columns represents the order in which they are executed. 
+
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to edit. 
 - Click "<i class="fa-light fa-arrow-right"></i> Shift right" to swap the position with the Datavariation Column on the right, or 
 - Click "<i class="fa-light fa-arrow-left"></i> Shift left" to swap the position with the Datavariation Column on the left.
+
+
+## Related topics
+- [Assert](Assert)
+- [Datavariations](datavariation)
+- [Test Run](test-run)
+- [Test Suite](test-suite)
 
 
 ## Feedback?

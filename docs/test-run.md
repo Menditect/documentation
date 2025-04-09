@@ -24,7 +24,8 @@ Regardless of the Scope of a Test Run, Test Suite runs, Test Case runs and Tests
 | Result                | The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). |
 | Scope                 | The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case')                                                           |
 | Status                | This indicates if the test is running or not; can be 'Running' or 'Finished'.                                                                                   |
-  
+| Retention period      | Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted.           |
+
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).
 
@@ -71,8 +72,13 @@ For each Teststep run that has input, you can click on the input, to view which 
 - Navigate to "Test runs".
 - Click <i class="fal fa-trash-can"></i> for the Test run you want to delete.
 
+#### Cleanup of manually-executed Test Runs
+In a Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
 
-Note that for each Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
+#### Cleanup of API-triggered Test Runs 
+For Test Runs that are executed through the [Public API](api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the "Test runs" page.
+
+#### Persisted dashboard data
 If a Test Run is cleaned up, the following information about the Test Run is stored for the statistics on the dashboard page:
 - start date
 - result (Pas, Fail, Error)

@@ -19,7 +19,7 @@ On the Test Case level, a choice has to be made between the Test Suite / Test Ca
 
 An included Attribute or Assert is referred to in the MTA Documentation as a [Datavariation Item Row](datavariation-item-row).
 
-For each [Datavariation Column](datavariation-column), a Test Suite Run or Test Case Run will be created. The order in which they are executed is represented by a number shown in the header. If there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
+For each [Datavariation Column](datavariation-column), a Test Suite Run or Test Case Run will be created. If there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
 
 It is also possible to execute one single Datavariation Column.
 
@@ -72,16 +72,6 @@ The page will close.
 - Choose "Coverage" to create a new [Coverage Calculation](coverage-calculation) after the Test Run was executed.
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
-
-### Edit Data Variation values
-- Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column of the Data Variation you want to edit, for instance the column labeled *# 2*. 
-- Click "<i class="fas fa-pencil"></i> Edit values".
-
-### Edit Data Variation description
-- Open the Test Suite data variation page or Test Case data variation popup.
-- Click on the column of the Data Variation you want to describe, for instance the column labeled *# 2*. 
-- Click "<i class="fas fa-pencil"></i> Edit description".
 
 ## Related topics
 - [Assert](Assert)

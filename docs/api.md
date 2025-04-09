@@ -451,6 +451,8 @@ Any of below status descriptors:
 
 Initiate the execution of a test configuration for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+The `retentionPeriodInDays` parameter is optional and can be omitted. If provided, the allowed values are 1, 2, 3, 4, 5, 6 and 7. If ommitted, the value is 2.
+
 The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](coverage-goal) after the test was executed.
 
 :::note
@@ -463,11 +465,11 @@ Make sure to include the Instance Keys in the body for *all* added Applications 
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testconfigurations/{testconfigurationKey}/execute`
+`/rest/mta/api/testconfigurations/{testconfigurationKey}/execute?retentionPeriodInDays={retentionPeriodInDays}`
 
 **Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testconfigurations/12/execute?retentionPeriodInDays=7`
 
 ```json
 {
@@ -501,6 +503,8 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 Initiate the execution of a test suite for the specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+The `retentionPeriodInDays` parameter is optional and can be omitted. If provided, the allowed values are 1, 2, 3, 4, 5, 6 and 7. If ommitted, the value is 2.
+
 :::note
 The Key values in the body are those of the Application Instances. Please make sure to include the Instance Keys in the body for *all* Applications used by the Test Cases in the specified Test Suite.
 :::
@@ -511,11 +515,11 @@ The Key values in the body are those of the Application Instances. Please make s
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testsuites/{testsuiteKey}/execute`
+`/rest/mta/api/testsuites/{testsuiteKey}/execute?retentionPeriodInDays={retentionPeriodInDays}`
 
 **Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites/33/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testsuites/33/execute?retentionPeriodInDays=7`
 
 ```json
 [
@@ -544,6 +548,8 @@ The request for this endpoint is made up of both a URL and a JSON body.
 
 Initiate the execution of a single test case for a specified application instance(s) in the body. The execute process will be started asynchronously. The progress can be polled using the [Get testrun](#get-testrun) endpoint.
 
+The `retentionPeriodInDays` parameter is optional and can be omitted. If provided, the allowed values are 1, 2, 3, 4, 5, 6 and 7. If ommitted, the value is 2.
+
 :::note
 The Key values in the body are those of the Application Instances. Please make sure to include the Instance Key in the body for the Application used by the specified Test Case, but also *all* Instance Keys of the Test Cases that the specified Test Case depends on.
 :::
@@ -554,11 +560,11 @@ The Key values in the body are those of the Application Instances. Please make s
 
 The request for this endpoint is made up of both a URL and a JSON body.
 
-`/rest/mta/api/testcases/{testcaseKey}/execute`
+`/rest/mta/api/testcases/{testcaseKey}/execute?retentionPeriodInDays={retentionPeriodInDays}`
 
 **Example:**
 
-`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases/54321/execute`
+`https://mta-menditect-9fo2p.mendixcloud.com/rest/mta/api/testcases/54321/execute?retentionPeriodInDays=7`
 
 ```json
 [
