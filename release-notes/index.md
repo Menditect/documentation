@@ -95,6 +95,13 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | (none)                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved the performance of actions in the Test Suite and Test Case pages. This is also a possible fix for the known issue "Generic random error message". |
+| __Release actions__   | None.                                                                                                                                                      |
+
+<br/>
+
 
 ## Bug fixes
 
