@@ -11,15 +11,18 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 ## Highlights in this release
-
+<iframe src="https://player.vimeo.com/video/1071367010" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>  
 <i class="fas fa-fire"></i>  <b>Datavariation pages and functions greatly improved!</b> <br/>  
 - New features, like adding a Title, shift up and down, configuring amount of columns per page.<br/>  
 - Improved Datavariation Navigability in both Run and Design, by using a.o. Highlighting and direct navigation to a Teststep or Test Case.
-<br/>  <br/>  
+<br/> 
+<br/>
 
 <i class="fas fa-fire"></i>  <b>Automatically Adapt your Test Configuration!</b> <br/>  <br/>  
 
-<i class="fas fa-fire"></i>  <b>Many improvements based on Customer Feedback! Highlighted with <i class="fa-regular fa-lightbulb-on"></i></b> <br/>  
+<i class="fas fa-fire"></i>  <b>Many improvements based on Customer Feedback!</b> <br/>  
+- Highlighted with <i class="fa-regular fa-lightbulb-on"></i> <br/>  
 
 
 ## New functionality 
