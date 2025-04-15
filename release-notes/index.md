@@ -98,6 +98,13 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | (none)                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Pages that require input (like Create Teststep) now automatically focus the element where the input can be entered (like a search textbox). |
+| __Release actions__   | None.                                                                                                                                       |
+
+<br/>
+
 | ID                    | (none)                                                                                                                                                     |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Improved the performance of actions in the Test Suite and Test Case pages. This is also a possible fix for the known issue "Generic random error message". |
@@ -189,3 +196,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                  | (none)                                                             |
+| ------------------- | ------------------------------------------------------------------ |
+| __Problem__         | SAML Requests were not cleaned up properly by the Scheduled Event. |
+| __Solution__        | SAML Requests are now properly cleaned up by the Scheduled Event.  |
+| __Release actions__ | None.                                                              |
+
+<br/>
