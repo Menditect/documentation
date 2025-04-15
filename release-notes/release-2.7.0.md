@@ -1,5 +1,9 @@
 # Release 2.7.0
 
+:::caution
+These release notes are from a version that is no longer being actively maintained. 
+:::
+
 <sup>These release notes also apply for MTA version 2.7.1.</sup>
 
 #### Release date
