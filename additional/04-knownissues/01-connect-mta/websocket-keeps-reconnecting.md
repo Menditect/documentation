@@ -6,6 +6,10 @@ This is an issue that occurs specifically when Menditect customers have an "On p
 When hosting MTA in a private cloud, like Google Cloud Platform (GCP) or Amazon Web Services (AWS), system administrators may notice that the Websocket communication between a Mendix App under test and MTA keeps dropping and reconnecting.
 Also Testers in MTA will notice that the connection to their Mendix App under test appears stable but whenever they execute a test it will fail with an error. 
 
+:::caution Kubernetes
+We have noticed that Mendix also started hosting environments on Kubernetes. Currently, hosting MTA on Kubernetes on the Mendix Cloud also results in the same issue with Websockets reconnecting. This can result in Test Runs stopping halfway because MTA no longer receives results from the Plugin. Mendix is analyzing the issue. Until they have a solution, please make sure to use Cloud Foundry environments instead.
+:::
+
 ## Possible causes and resolutions
 
 The issue is due to a default timeout setting on the container orchestration software like Kubernetes. The result will be that any connection will be dropped after a certain amount of time like for example 30 or 60 seconds.

@@ -6,7 +6,7 @@ An Assert on Attribute formulates an expected result of an attribute in an Objec
 
 An Assert on Attribute can be added for a value of an attribute in an Object action Teststep.
 
-When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item-row) for each defined variation.
+When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item) for each defined variation.
 
 
 ## Properties

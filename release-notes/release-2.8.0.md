@@ -1,5 +1,9 @@
 # Release 2.8.0
 
+:::caution
+These release notes are from a version that is no longer being actively maintained. 
+:::
+
 #### Release date
 
 23 August 2024
