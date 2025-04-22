@@ -62,7 +62,7 @@ This folder contains Action microflows for Mendix Widgets.
 ## Get started
 
 - Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar
-- Download the Starter Kit module to start testing the most common Mendix Widgets.
+- Download the Starter Kit module to start testing the most common Mendix Widgets. This module **requires the Apache Commons Lang** jar file in your userlib directory. Download the jar file here: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
 - Add both the Module Roles to the project's User Roles.
 - Create a Page with the `SNIP_Playwright_Assets` Snippet in the Starter Kit, add it to the Navigation for the User Role that will be evaluating executed frontend Tests.
 - Optionally: Add the Overview page from the Example App to the Navigation, to use it as inspiration to build your own frontend test. 
