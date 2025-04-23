@@ -26,7 +26,7 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 
 - You will receive information from Menditect on how to download the MDA file that you need to set up MTA.
 - Deploy and transport it to the environment in your cloud. 
-- Check the content of the following environment variables for the MTA application:
+- Check the value of the following environment variables (Constants) for the MTA application:
 
 | Environment variable                                             | value                                                            |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
