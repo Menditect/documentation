@@ -49,14 +49,18 @@ To upgrade the major version of your Mendix App (for example, from Mendix 9.24 t
 Always use the latest MTA Plugin version for the latest MTA version.
 
  
-|           | MTA Plugin 4.8.1 | MTA Plugin 4.7.2 | Any older MTA Plugin |
-| --------- | ---------------- | ---------------- | -------------------- |
-| MTA 2.9.x | Supported        | Not supported    | Not supported        |
-| MTA 2.8.0 | Supported        | Not supported    | Not supported        |
+|            | MTA Plugin 4.8.1 | Any older MTA Plugin |
+| ---------- | ---------------- | -------------------- |
+| MTA 2.10.x | Supported        | Not supported        |
+| MTA 2.9.0  | Supported        | Not supported        |
 
 
 
 ## Configuring MTA Plugin
+
+After you have imported the Plugin into your Mendix App that you want to test with MTA, you can configure the Plugin to connect to MTA.
+
+If you are working in a new MTA environment, make sure to first [create MTA Manager and Tester accounts in MTA](../configure-mta/manage-accounts). After logging in as Tester in MTA, it is possible to [register the Mendix App](../../../application#register-application-in-mta), which will trigger the [creation of an Application Instance](../../../application-instance#create-an-application-instance), that you need to configure the Plugin.
 
 ### Including After startup microflow
 
@@ -135,4 +139,4 @@ You can now view connection details and manually connect to MTA, with accounts h
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 7 february 2023
+Last updated 23 April 2025
