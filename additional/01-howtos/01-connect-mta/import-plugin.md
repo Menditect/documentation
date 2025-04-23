@@ -64,14 +64,13 @@ If you are working in a new MTA environment, make sure to first [create MTA Mana
 
 ### Including After startup microflow
 
-After you have downloaded the MTA Plugin, you need to configure your Application under test.
 Open the App Settings window in Mendix Studio Pro and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
 
 If there is no existing After startup microflow, just select the "ASU_Setup_Connection_MTA" in the popup window.
 
 ### Configuring Connection user in MTA
 
-After MTA has started up for the first time, it will create a Connection user. 
+MTA will create a Connection user when starting up for the first time. 
 
 In order to allow a Mendix App to connect to MTA you need to set the password for this Connection user. There is only one Connection user per MTA node so the password is the same for all Mendix Apps that you want to test in MTA.
 
