@@ -31,8 +31,6 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 | Environment variable                                             | value                                                            |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
 | ApiMendixModule.WebsocketStage                                   | `production`                                                     |
-| Atlas_Core.Atlas_Core_Version                                    | `3.0.7`                                                          |
-| Atlas_Web_Content.Atlas_Web_Content_Version                      | `3.0.6`                                                          |
 | EgalitConfigModule.EsaMultiInstanceMode                          | `False`                                                          |
 | MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | `5`                                                              |
 | MtaUtils.DeleteObjectBatchSize                                   | `500`                                                            |
@@ -43,7 +41,6 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 | MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                            |
 | MtaUtils.UrlSupportForm                                          | `https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri`         |
 | MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`                    |
-| PluginRecordModule.RecordingSupportRequestUrl                    | `https://share.hsforms.com/1RJY9cRw-TSm9QWXD6bZcbw3twri`         |
 | TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                             |
 
 
@@ -112,4 +109,4 @@ After updating MTA, make sure that all the test applications have the newest ver
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 16 July 2024
+Last updated 23 April 2025
