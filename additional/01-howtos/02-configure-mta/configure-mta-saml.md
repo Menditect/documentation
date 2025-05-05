@@ -50,11 +50,10 @@ MTA uses user provisioning logic like any other Mendix App implementing SAML. It
 
 The SAML20 module will create an Account if a user can be authenticated by the IdP. However, by default, the Account will have no User Roles. 
 
-:::caution
-Currently, it is not possible to assign user roles from MTA (after the user has signed in) when implementing SAML. If user roles are assigned in MTA they will be reset from the IdP. The only way to assign user roles is using below logic.  
-:::
+**Use below setting to indicate if User Roles are set in MTA by an MTA Manager, or by your IdP:**
+![SAML set User Roles](../images/saml-roles.png)
 
-In order to have MTA assign the desired roles to created Accounts, you must configure your IdP to use assertion attributes, as follows.
+Configure your IdP to use a SAML "Attribute" Assertion, as follows.
 
 ```
 - There must be at least one assertion attribute with the name "MTA_UserRole"
@@ -71,5 +70,5 @@ More about User Roles can be found in the [Manage Accounts howto](manage-account
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 31 January 2024
+Last updated 6 May 2025
 
