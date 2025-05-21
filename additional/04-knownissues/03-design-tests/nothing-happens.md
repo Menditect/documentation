@@ -1,4 +1,4 @@
-# Nothing happens
+# Nothing happens when starting action
 
 ## Issue summary
 
