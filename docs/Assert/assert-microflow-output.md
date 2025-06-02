@@ -7,7 +7,7 @@ if the microflow returns a primitive datatype (String, Integer, Decimal, Boolean
 
 If the microflow returns an Object or a List of Objects, it is currently only possible to define an [Assert on Object count](assert-object-count).
 
-:::note Assert on Attribute
+:::info Assert on Attribute
 If the Microflow returns an Object, and you want to add an Assert on an Attribute of that Object, you have to add a [Retrieve teststep](../Teststep/retrieve), first.<br/>
 Click on the <i class="fas fa-ellipsis"></i> button on the microflow Teststep and click "<i class="fal fa-plus-circle"></i> Retrieve output".
 :::
