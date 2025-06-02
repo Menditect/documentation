@@ -6,7 +6,7 @@ While navigating through MTA, a "generic" error message is sometimes shown. The 
 
 The message could be:
 
- `An error occured, please contact your system administrator`
+ `An error occured, please contact your system administrator.`
 
  Or:
 
