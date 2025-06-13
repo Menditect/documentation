@@ -2,13 +2,15 @@
 sidebar_position: 6
 ---
 
-# Run MTA BYOMEAL (Bring Your Own Mendix Environment And License)
+# Run your own MTA deployment
 
 ## Purpose
 
 This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted.
 
-This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
+This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod, or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
+
+To host MTA, both Mendix Operator and Runtime license are required. See https://docs.mendix.com/developerportal/deploy/private-cloud/#request-both-operator-and-runtime-license.
 
 :::note
 When installing MTA for the first time, always clean up your existing environment first (both the database and the Mendix model).
@@ -24,7 +26,7 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 
 ### Actions
 
-- You will receive information from Menditect on how to download the MDA file that you need to set up MTA.
+- You will receive information on how to download the MDA file that you need to set up MTA.
 - Deploy and transport it to the environment in your cloud. 
 - Check the value of the following environment variables (Constants) for the MTA application:
 
@@ -46,7 +48,7 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 
 :::note
 You may notice that MTA also contains environment variables from the MTA Plugin Module. This is because Menditect regression-tests MTA with MTA. 
-Menditect on-premise customers and partners **do not** have to set these values.
+On the MTA Application itself, **do not** change these values.
 :::
 
 
