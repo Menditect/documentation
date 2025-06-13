@@ -91,14 +91,17 @@ hsforms.com/*
 
 ### MTA actions
 
-- Always create a backup of your database before bringing MTA down and upgrading.
-- During deployment, make sure that you check all the values of the Constants for the Mendix model.
-- After upgrading with the provided MDA file in this directory, make sure to login using the admin account (usually MxAdmin).
-- Run all the migrations from the top menu in MTA, from old to new. 
-- Wait for all of the migrations to be done. 
-- When running into errors, contact Menditect support (support@menditect.com), and do not proceed with test scripting.
+- Create a full backup of your MTA database and file storage.
+- Stop the MTA Application.
+- Deploy the provided MDA file.
+- Check all the values of the Constants for the Mendix model (see above).
+- Verify that all Scheduled Events are Enabled.
+- Start the MTA Application.
+- Restart Test Applications Instances, or use the [Plugin Home Page](../connect-mta/import-plugin#configuring-plugin-home-page) to ensure they are connected to MTA.
+- Login to MTA as Tester.
+- Wait until the migration process is done. If the migration fails, contact Menditect support (support@menditect.com).
+- Check if the test configurations can be executed.
 - Logout.
-- Login with a Tester account and check if the test configurations can be executed.
 
 ### Test application actions
 
@@ -109,4 +112,4 @@ After updating MTA, make sure that all the test applications have the newest ver
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 23 April 2025
+Last updated 13 June 2025
