@@ -42,4 +42,4 @@ To test if this step was successful, try to [Add an Application](../run-tests/ru
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 19 February 2024
+Last updated 19 May 2025

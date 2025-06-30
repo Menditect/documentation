@@ -23,8 +23,3 @@ Pages are structured in 4 segments:
 - Actions: actions that can be done with this element.
  
 Actions are described with as few literal descriptions to page elements as possible. This means that sometimes buttons are visible on the page, but sometimes they are listed under a menu or overflow button.
-
-
-# Version
-
-Referenced elements in this guide were created for MTA version 2.7, released 15 July 2024.

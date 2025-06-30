@@ -11,12 +11,12 @@ A single Mendix Application or 'app' that is deployed on a computer, for example
 The associated [Test setting](test-setting) on a Test Configuration determines which Application Instances are being tested.
 
 ## Properties
-| Name            | Description                                                                                                  |
-| --------------- | ------------------------------------------------------------------------------------------------------------ |
-| Name            | The name of the Application Instance; the name of the first one is 'Default' but can be changed by the user. |
-| Token           | A globally unique id (GUID) that is generated upon creation and identifies this instance.                    |
-| Application URL | The URL to the instance that is entered by the user.                                                         |
-| Connectiond Id  | A globally unique id (GUID) that is generated each time a connection is made to the instance.                |
+| Name           | Description                                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------ |
+| Name           | The name of the Application Instance; the name of the first one is 'Default' but can be changed by the user. |
+| Token          | A globally unique id (GUID) that is generated upon creation and identifies this instance.                    |
+| URL            | *{Optional}* The URL to the instance that is entered by the user. Only used for [Recordings](recording).     |
+| Connectiond Id | A globally unique id (GUID) that is generated each time a connection is made to the instance.                |
 
 ## Business rules
 - A Test Setting must be associated to exacly one Application Instance in order to Execute the Test Configuration.

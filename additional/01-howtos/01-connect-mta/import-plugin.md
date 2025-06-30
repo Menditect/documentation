@@ -10,17 +10,18 @@ To import and configure this module, read this page or watch this video.
 
 <iframe src="https://player.vimeo.com/video/846213936?h=494a93fd4f" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
-
-If you are [running MTA on Premise](../configure-mta/run-mta-on-premise), you may notice that MTA also contains an MTA Plugin module. This is because Menditect regression-tests MTA with MTA. The information in this page is regarding the customer Application to test. For Menditect on-premise customers and partners: please don't import the MTA Plugin module into MTA.
+<br/>
 
 :::caution
-In no case should you make changes to elements inside the MtaPluginModule. <br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your test project.
+Don't make changes to elements inside the MtaPluginModule. Configure Constants in the Project settings in Studio Pro.<br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your Mendix project.
 :::
 
 ## Importing MTA Plugin
 
 
-Import the MTA plugin module package **in your test application** as a new module. If you have imported it before, make sure to replace the module and not delete it first. Deleting it first may result in having to fix errors manually. 
+Import the MTA plugin module package **in the Application under Test** as a new module. 
+- If you have imported it before, replace the existing module. 
+- Only delete the existing module first, if you are [upgrading a major Mendix version](#upgrading-mendix).
 
 :::info
 After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. <br/>
@@ -34,6 +35,7 @@ Make sure to check your app's Mendix version before importing the module.
 
 | Mendix Version                 | Url                                                  |
 | ------------------------------ | ---------------------------------------------------- |
+| Mendix 11                      | Not supported                                        |
 | Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
 | Mendix 9.24.4 and higher       | https://marketplace.mendix.com/link/component/214717 |
 | Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
@@ -52,8 +54,8 @@ Always use the latest MTA Plugin version for the latest MTA version.
 |            | MTA Plugin 4.8.1 | Any older MTA Plugin |
 | ---------- | ---------------- | -------------------- |
 | MTA 2.10.x | Supported        | Not supported        |
-| MTA 2.9.0  | Supported        | Not supported        |
-
+| MTA 2.9.x  | Supported        | Not supported        |
+| MTA 2.8.x  | Not supported    | Not supported        |
 
 
 ## Configuring MTA Plugin
@@ -64,15 +66,17 @@ If you are working in a new MTA environment, make sure to first [create MTA Mana
 
 ### Including After startup microflow
 
-Open the App Settings window in Mendix Studio Pro and navigate to the Runtime tab. On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. Make sure to include the "At_Startup_Setup_Connection" microflow in the MtaPluginModule. 
-
-If there is no existing After startup microflow, just select the "ASU_Setup_Connection_MTA" in the popup window.
+- Open the App Settings window in Mendix Studio Pro.
+- Navigate to the Runtime tab. 
+- On the "After startup" setting, click on 'Show' if there is an After startup microflow already selected. 
+- Make sure to include a Call Microflow action to the `ASU_Setup_Connection_MTA` microflow in the MtaPluginModule. 
+- Otherwise, just select the `ASU_Setup_Connection_MTA` in the popup window.
 
 ### Configuring Connection user in MTA
 
 MTA will create a Connection user when starting up for the first time. 
 
-In order to allow a Mendix App to connect to MTA you need to set the password for this Connection user. There is only one Connection user per MTA node so the password is the same for all Mendix Apps that you want to test in MTA.
+In order to allow a Mendix App to connect to MTA, you need to set the password for this Connection user. There is only one Connection user per MTA node so the password is the same for all Mendix Apps that you want to test in MTA.
 
 If you have already set the password previously for another App, use that password. Otherwise follow these steps. 
 
@@ -138,4 +142,4 @@ You can now view connection details and manually connect to MTA, with accounts h
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 23 April 2025
+Last updated 30 June 2025
