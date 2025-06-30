@@ -8,38 +8,51 @@ To manage MTA accounts, login as [MTA Manager](#mtamanager) and navigate to MTA 
 
 Accounts in MTA are managed like most Mendix Apps: using the [Administration](https://docs.mendix.com/appstore/modules/administration/) module. 
 
-When creating an account, make sure to set the Time zone according to where the user will log in. For CiCdApiUser accounts, set the Time zone to the same Time zone as where MTA is hosted. 
+## Time Zone
+When creating an account, make sure to set the Time zone according to where the user will log in. For [ApiUser](#apiuser) accounts, set the Time zone to the same Time zone as where MTA is hosted. 
 
+## Password criteria
 Passwords have to meet the password policy criteria:
 - Length minimum of 6 characters.
 - Contain a digit.
 - Contain an uppercase character.
 - Contain non-alphanumeric characters.
 
-When assigning user roles, these are the possibilities:
-
 ## MTA User Roles
 
-Below are the roles that can be assigned when logged in as MTA Manager.
+### Administrator
 
-:::note
-Logging in as **Administrator** will only allow you to create other Administrator Accounts, or MTA Manager Accounts. <br/>Logging in as Administrator is only applicable [when MTA is hosted on-premises](run-mta-on-premise).
-It is not advisable to combine this role with other (below) roles.
+This Role can: 
+- Manage other Administrator Accounts, or MTA Manager Accounts. 
+- View and logout active user sessions.
+
+:::note Administrator Account
+Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../howtos/configure-mta/run-mta-on-premise).<br/>
+Do not combine this role with other (below) roles.
 :::
 
-### MTAManager
-This role can Manage Accounts and configure Mendix credentials for Accounts. It can also [configure SAML SSO](configure-mta-saml).
+### MTA Manager
+This Role can:
+- Manage other MTA Manager Accounts, Tester Accounts, API User Accounts and the Connection User Account.
+- [Configure SAML SSO](configure-mta-saml).
+- [Toggle the Archive function](../../../archive#toggle-archive-in-mta).
+- View and logout active user sessions.
 
 ### Tester
-This role can manage [Applications](../../../application), build [Test Configurations](../../../test-configuration) and [run tests](../../../test-run). Use this role when creating Accounts for users who want to use MTA for testing.
 
-### ApiUser
-This role can call endpoints in the [Public API](../../../api). 
+:::success Default
+This is the standard Role for new Accounts.<br/>
+:::
 
-### MTAConnectionUser
-This role should **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../connect-mta/import-plugin#configuring-connection-user-in-mta).
+This Role can manage [Applications](../../../application), build [Test Configurations](../../../test-configuration) and [run tests](../../../test-run). 
+
+### API User
+This Role can call endpoints in the [Public API](../../../api). 
+
+### MTA Connection User
+This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../connect-mta/import-plugin#configuring-connection-user-in-mta).
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 30 January 2024
+Last updated 30 June 2025

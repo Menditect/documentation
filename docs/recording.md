@@ -26,7 +26,7 @@ Note that one recorded action can lead to zero or many Teststeps, and that the '
 - Click on "<i class="fas fa-wand-magic-sparkles"></i> Generate test" in the Test Case.
 - Select "<i class="fas fa-wand-magic-sparkles"></i> Generate test by recording" to open the recording page.
 - Click "Start recording".
-- In the browser, navigate to the Test Application.
+- If the [Application Instance](application-instance)'s URL is known, you can use the button to navigate to the Application home page.
 - Perform the actions to be recorded there. Make sure to start the recorder before opening the page where the first record action takes place.
 - In the browser, navigate back to MTA.
 - Click "Stop recording".

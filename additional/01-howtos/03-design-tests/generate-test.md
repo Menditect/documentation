@@ -27,7 +27,6 @@ MTA will create a new Test Case for the microflow, and Studio Pro will open a ne
 
 :::info
 If the microflow that you have selected is new, you first have to commit it, [download the new revision](../../../application-revision#change-the-application-revision-for-a-test-configuration) and [adapt the test suites in MTA](../../../application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision).<br/>
-Otherwise, the microflow is unknown to MTA, and MTA will not be able to generate a Test Case for it.
 :::
 
 ### Edit Test
