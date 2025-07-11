@@ -4,15 +4,17 @@
 
 With this [Teststep](.) type, objects can be retrieved from database or memory and used in subsequent Teststeps. Values entered for attributes and associations will be converted into an XPATH expression and subsequently filter the list of objects retrieved. Also objects that are output from previous teststeps can be filtered. 
 
-## Domain model Access
+## Entity Access
 
-Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+### Security applied
 
-Upon executing a Retrieve teststep, MTA will evaluate the Execution user's *Read* rights on the Domain Model through the configured User Roles. 
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the "Path to User" XPath constraint (if specified) on the Entity is evaluated to determine which objects are included. If there is no XPath constraint, all objects are included.
 
-Only objects that pass this evaluation will be included in the results in the [Test Run](../test-run).
+`Member rights` are ignored: for all objects, all attribute values will be shown, **regardless of specified Read/Write Entity Access**.
 
-To circumvent domain model access rights it is **not** possible to use a [Microflow teststep](microflow); above evaluations will also be performed for the object(s) returned by the microflow.
+### Security not applied
+
+If the [Test Case](../test-case) that this teststep is in, does not have Apply Security enabled, all objects are included.
 
 ## Retrieve from database
 

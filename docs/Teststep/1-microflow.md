@@ -8,12 +8,17 @@ With this [Teststep](.) type, a Microflow is executed.
 
 Microflows configured in a Microflow teststep are always executed regardless of the "Allowed roles" setting in Mendix.
 
-## Domain model Access
+## Entity Access
 
-Domain model access rights apply:
-- If the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
-- For object actions in microflows that have "Apply entity access" set to "Yes". 
-- For object return values.
+### Security applied
+
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled:
+- For object actions in microflows that have "Apply entity access" set to "Yes", Entity Access will be checked;
+- For object return values: if there is one (or more) attribute where the specified User does not have access to, an error will be shown upon execution.
+
+### Security not applied 
+
+If the [Test Case](../test-case) that this teststep is in, does not have Apply Security enabled, security limitations will be ignored.
 
 ## Add a Microflow Teststep
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
