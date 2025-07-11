@@ -10,15 +10,15 @@ Note that a Change teststep can be used on a single object or on a list of objec
 
 To save the changes to the database, add a [Persist](persist) step.
 
-## Domain model Access
+## Entity Access
 
-Domain model access rights apply if the [Test Case](../test-case) that the teststep is in, has Apply Security enabled.
+### Security applied
 
-Upon executing a Change teststep, MTA will check if the Execution user has *Write* rights on the Domain Model through the configured User Roles. 
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the MTA Plugin will check if the Execution user has *Write* rights on changed attributes, through the configured `Member rights`. If there are no *Write* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
-If the necessary rights are not found in the Domain Model, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+### Security not applied 
 
-To circumvent domain model access rights it is possible to use a [Microflow teststep](microflow).
+If the [Test Case](../test-case) that this teststep is in, does not have Apply Security enabled, all attributes may be changed.
 
 ## Add a Change Object Teststep
 
