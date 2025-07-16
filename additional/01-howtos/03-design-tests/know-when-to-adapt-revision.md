@@ -19,40 +19,46 @@ Construction Errors in a Test Configuration will block executing it. Executing w
 **Used?** means the entity, attribute or microflow is used in a teststep
 :::
 
-| Change done in next revision      | Used?            | Executing when not adapting to next revision |
-| --------------------------------- | ---------------- | -------------------------------------------- |
-| Added entity                      | N/A              | <i class="fal fa-check"></i>                 |
-| Deleted existing entity           | Not Used         | <i class="fal fa-check"></i>                 |
-| Deleted existing entity           | Used in Teststep | <font color="red">Construction Error</font>  |
-| Added attribute                   | N/A              | <i class="fal fa-check"></i>                 |
-| Deleted existing attribute        | Not Used         | <i class="fal fa-check"></i>                 |
-| Deleted existing attribute        | Used in Teststep | <font color="red">Construction Error</font>  |
-| Added association                 | N/A              | <i class="fal fa-check"></i>                 |
-| Deleted existing association      | Not Used         | <i class="fal fa-check"></i>                 |
-| Deleted existing association      | Used in Teststep | <font color="red">Construction Error</font>  |
-| Renamed entity                    | Not Used         | <i class="fal fa-check"></i>                 |
-| Renamed entity                    | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Renamed attribute                 | Not Used         | <i class="fal fa-check"></i>                 |
-| Renamed attribute                 | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Renamed association               | Not Used         | <i class="fal fa-check"></i>                 |
-| Renamed association               | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Other domain model change         | Not Used         | <i class="fal fa-check"></i>                 |
-| Other domain model change         | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Added microflow                   | N/A              | <i class="fal fa-check"></i>                 |
-| Deleted existing microflow        | Not Used         | <i class="fal fa-check"></i>                 |
-| Deleted existing microflow        | Used in Teststep | <font color="red">Construction Error</font>  |
-| Added microflow input parameter   | Not Used         | <i class="fal fa-check"></i>                 |
-| Added microflow input parameter   | Used in Teststep | <font color="red">Construction Error</font>  |
-| Deleted microflow input parameter | Not Used         | <i class="fal fa-check"></i>                 |
-| Deleted microflow input parameter | Used in Teststep | <font color="red">Construction Error</font>  |
-| Renamed microflow input parameter | Not Used         | <i class="fal fa-check"></i>                 |
-| Renamed microflow input parameter | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Changed microflow return value    | Not Used         | <i class="fal fa-check"></i>                 |
-| Changed microflow return value    | Used in Teststep | <font color="red">Construction Error</font>  |
-| Other microflow change            | Not Used         | <i class="fal fa-check"></i>                 |
-| Other microflow change            | Used in Teststep | <i class="fal fa-check"></i>                 |
-| Any other model change            | N/A              | <i class="fal fa-check"></i>                 |
+| Change done in next revision    | Is Used?         | Result after adapt                          | Execute without adapt                  |
+| ------------------------------- | ---------------- | ------------------------------------------- | -------------------------------------- |
+| Added entity                    | N/A              | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing entity         | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing entity         | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Added attribute                 | N/A              | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing attribute      | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing attribute      | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Added association               | N/A              | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing association    | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing association    | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Renamed entity                  | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed entity                  | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed attribute               | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed attribute               | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed association             | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed association             | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Other domain model change       | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Other domain model change       | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Added microflow                 | N/A              | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing microflow      | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted existing microflow      | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Added input parameter           | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Added Primitive input parameter | Used in Teststep | <i class="fal fa-check"></i>                | <font color="red">Runtime Error</font> |
+| Added Object input parameter    | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Deleted input parameter         | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Deleted input parameter         | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Changed parameter datatype      | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Changed parameter datatype `*`  | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Renamed input parameter         | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Renamed input parameter         | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Changed return value            | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Changed return value            | Used in Teststep | <font color="red">Construction Error</font> | <font color="red">Runtime Error</font> |
+| Other microflow change          | Not Used         | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Other microflow change          | Used in Teststep | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
+| Any other model change          | N/A              | <i class="fal fa-check"></i>                | <i class="fal fa-check"></i>           |
 
+`*` Upon adapting, some primitive datatypes are convertable by MTA when they are changed, and will not lead to a Construction Error. 
+
+For more information, also see the [Using Primitives](use-previous-teststeps-data#using-primitives) chapter in "Use previous teststeps data".
 
 
 ## Feedback?
