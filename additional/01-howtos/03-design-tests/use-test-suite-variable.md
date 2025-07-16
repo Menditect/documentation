@@ -14,7 +14,7 @@ It is possible to define a variable once, reuse it across the entire Test Suite,
 
 The MTA Utility Module contains several extension microflows that can be used to perform operations that are not native functions of MTA (yet).
 
-[Download the MTA Utility Module here](../images/MtaUtilityModule.mpk)
+[Download the MTA Utility Module here](../images/MtaUtilityModule.mpk) (Mendix 9.24.33 or higher required)
 
 Use any of the GET_String / GET_Integer etc. microflows and fill in the value that you want to reuse in the Test Suite.
 
