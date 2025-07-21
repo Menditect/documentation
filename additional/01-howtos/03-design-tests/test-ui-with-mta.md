@@ -17,17 +17,13 @@ See https://playwright.dev/java/ for the relevant documentation.
 
 Download below modules from the Mendix marketplace to enable frontend testing.
 
-Note: the Playwright Connector and Starter Kit modules are still in Beta. Menditect distributes these modules but does not offer support for it's use. If you want access to these modules, please [contact support](mailto:support@menditect.com).
-- The Playwright Connector: https://marketplace.mendix.com/link/component/235323 
-- The Playwright Starter Kit: https://marketplace.mendix.com/link/component/235327 
-- An Example App for testing Mendix Widgets with Playwright: https://marketplace.mendix.com/link/component/235973
-- The [MTA Plugin](../connect-mta/import-plugin) 
+The Playwright Starter Kit module is still in Beta. Menditect distributes this module but does not offer support for it's use. 
 
-:::tip Separate from Test App
-For this how-to, we have imported these modules in the same Mendix App, as the one under test.<br/>
-It is however possible to import the prerequisite modules in a separate App.<br/>
-Documentation for this setup will be added in the future.
-:::
+**If you want access to these modules, please [contact support](mailto:support@menditect.com).**
+- The Playwright Connector<br/>https://marketplace.mendix.com/link/component/235323 
+- The Playwright Starter Kit<br/>https://marketplace.mendix.com/link/component/235327 
+- Optional: An Example App for testing Mendix Widgets with Playwright<br/>https://marketplace.mendix.com/link/component/235973
+- The [MTA Plugin](../connect-mta/import-plugin) 
 
 ### Playwright Connector
 
@@ -64,12 +60,8 @@ This folder contains Action microflows for Mendix Widgets.
 - Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
 - Download the Starter Kit module to start testing the most common Mendix Widgets. This module **requires the Apache Commons Lang** jar file in your userlib directory. Download the jar file here: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
 - Add both the Module Roles to the project's User Roles.
-- Create a Page with the `SNIP_Playwright_Assets` Snippet in the Starter Kit, add it to the Navigation for the User Role that will be evaluating executed frontend Tests.
+- Download and import [this Snippet](../images/SNIP_Playwright_Files.mpk) into your Mendix App, add it to a Page that is accessible for Users that will be evaluating executed frontend Tests.
 - Optionally: Add the Overview page from the Example App to the Navigation, to use it as inspiration to build your own frontend test. 
-
-:::info Recommended
-It is recommended for first-time users to use the Example App to get started.
-:::
 
 ## Test structure
 
