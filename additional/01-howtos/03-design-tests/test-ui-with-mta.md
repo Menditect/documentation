@@ -61,7 +61,7 @@ This folder contains Action microflows for Mendix Widgets.
 
 ## Get started
 
-- Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar
+- Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
 - Download the Starter Kit module to start testing the most common Mendix Widgets. This module **requires the Apache Commons Lang** jar file in your userlib directory. Download the jar file here: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
 - Add both the Module Roles to the project's User Roles.
 - Create a Page with the `SNIP_Playwright_Assets` Snippet in the Starter Kit, add it to the Navigation for the User Role that will be evaluating executed frontend Tests.
@@ -120,7 +120,7 @@ This should be noted in the documentation in the Mendix Marketplace.
 7.	Run Docker Desktop. No need to sign-in, just click Skip.
 8.	Run a command line prompt (cmd).
 9.	Copy the command line noted here into a text editor (use the copy button): https://playwright.dev/docs/docker#network-configuration.
-10.	Replace the two parts where the playwright version is denoted, by the playwright version in use by the Connector. Example:
+10.	Replace the two parts where the playwright version is denoted, by the playwright version in use by the Connector. Example:<br/>
 `docker run --add-host=hostmachine:host-gateway -p 3000:3000 --rm --init -it --workdir /home/pwuser --user pwuser mcr.microsoft.com/playwright:v1.53.0-noble /bin/sh -c "npx -y playwright@1.53.0 run-server --port 3000 --host 0.0.0.0"`
 11.	Copy and paste the command line in the prompt and press Enter.<br/>This will do three things:<br/>1. download the docker image containing the playwright server<br/>2. run this image in a virtualized Docker container<br/>3. make sure that the hostmachine can be reached from the container.
 12.	Wait until it says `Listening on ws://0.0.0.0:3000/` in the prompt.
