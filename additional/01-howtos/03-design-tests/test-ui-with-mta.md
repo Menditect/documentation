@@ -96,7 +96,7 @@ These microflows are called in order to setup a locally executed frontend test:
 | Mx_Login      | Playwright Starter Kit | *Optionally*: uses a Javascript action to login.                                                                                                                               |
 | Create_Page   | Playwright Connector   | *Optionally*: adds an additional browser tab.                                                                                                                                  |
 
-### Setup (using Browserstack)
+### Setup (running Playwright in Browserstack)
 
 One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
 
@@ -105,6 +105,38 @@ To test using BrowserStack, replace the call to the "Create_Browser" microflow, 
 Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
 Local Testing is currently only supported if Playwright is also running locally.
 [Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
+
+### Setup (running Playwright in a Docker container)
+
+This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 19 will be replaced by the Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
+
+1.	Install Docker Desktop https://www.docker.com/products/docker-desktop/.
+2.	Although not always required by Docker, restart Windows.
+3.	Start Studio Pro that will run the Test Application and connect to MTA. 
+4.	Make sure the Connector and Mx UI Testkit are imported.
+5.	Check the playwright version that is being used by the Connector. 
+This should be noted in the documentation in the Mendix Marketplace.
+6.	Run the Test Application. Check MTA to see if it's connected.
+7.	Run Docker Desktop. No need to sign-in, just click Skip.
+8.	Run a command line prompt (cmd).
+9.	Copy the command line noted here into a text editor (use the copy button): https://playwright.dev/docs/docker#network-configuration.
+10.	Replace the two parts where the playwright version is denoted, by the playwright version in use by the Connector. Example:
+`docker run --add-host=hostmachine:host-gateway -p 3000:3000 --rm --init -it --workdir /home/pwuser --user pwuser mcr.microsoft.com/playwright:v1.53.0-noble /bin/sh -c "npx -y playwright@1.53.0 run-server --port 3000 --host 0.0.0.0"`
+11.	Copy and paste the command line in the prompt and press Enter.<br/>This will do three things:<br/>1. download the docker image containing the playwright server<br/>2. run this image in a virtualized Docker container<br/>3. make sure that the hostmachine can be reached from the container.
+12.	Wait until it says `Listening on ws://0.0.0.0:3000/` in the prompt.
+13.	Create a Test Case that uses the Test Application.
+14.	Add a microflow teststep to Start_Playwright_Test.
+15.	Add a microflow teststep to Connect_Playwright_Server, with URL: ws://0.0.0.0:3000/
+16.	Add a microflow teststep to Create_BrowserContext; Viewport can be left empty.
+17.	Add a microflow teststep to Create_Page.
+18.	Add a microflow teststep to Start_Tracing. This is required if you want to visually inspect any of the results, because you cannot view the output of the browser in real time.
+19.	Add a microflow teststep to Navigate. Important: you cannot navigate to localhost, because the localhost will point to inside the virtualized container. You have to navigate to http://hostmachine:8080 (assuming the Test Application is running on port 8080). This will only work if you correctly executed step 10.
+20.	Build your UI test like you otherwise would.
+21.	Make sure to add Page_Screenshot teststeps to check important results.
+22.	Make sure to end with Stop_Tracing and Stop_Playwright_Test.
+23.	Run your test!
+24.	To shutdown the locally running docker container simply press Ctrl+C in the prompt.
+
 
 ### Setup (other platforms)
 
