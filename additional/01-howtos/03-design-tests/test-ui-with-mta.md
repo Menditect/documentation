@@ -21,7 +21,7 @@ The Playwright Starter Kit module is still in Beta. Menditect distributes this m
 
 **If you want access to these modules, please [contact support](mailto:support@menditect.com).**
 - The Playwright Connector<br/>https://marketplace.mendix.com/link/component/235323 
-- The Playwright Starter Kit<br/>https://marketplace.mendix.com/link/component/235327 
+- The Playwright UI Test Kit<br/>https://marketplace.mendix.com/link/component/235327 
 - Optional: An Example App for testing Mendix Widgets with Playwright<br/>https://marketplace.mendix.com/link/component/235973
 - The [MTA Plugin](../connect-mta/import-plugin) 
 
@@ -210,7 +210,7 @@ It is recommended to use [Teststeps](../../../Teststep) in MTA to call abovement
 
 ### Session handling
 
-The [Test Case](../../../test-case) containing the Teststeps should be using MxAdmin as an Execution user, with the Apply-security setting Off. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. Use the Mx_Login microflow from the Starter Kit or alternatively create a custom microflow in a separate module. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
+The [Test Case](../../../test-case) containing the Teststeps should be using an Account with dedicated UserRoles in the Connector & UI Kit Playwright modules (for example, `UiTestUser`) as an Execution user, with the Apply-security Enabled. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. Use the Mx_Login microflow from the Starter Kit or alternatively create a custom microflow in a separate module. In the future, the session that is created by MTA, will also be used during the execution of the frontend test.
 
 The upside of the current implementation is that sessions created by Playwright can be carried onto subsequent Test Cases. Just point to the `MenditectPlaywrightConnector.Page` object that was created in a Test Case, whenever calling a Locator microflow, and the same browser tab will be used to run the test. Only when closing all the browser tabs (`MenditectPlaywrightConnector.Close_Page`) or by stopping the test (`MenditectPlaywrightStarterKit.Stop_Test`) the browser will be closed.
 
