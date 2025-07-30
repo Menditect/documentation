@@ -7,21 +7,19 @@ sidebar_position: 15
 
 ## Definition
 
-Datavariations are used to execute the same test multiple times, but each time with different values for Attributes and Asserts. 
+Datavariations are used to execute the same test multiple times, but each time with different values for Attributes and Asserts. To change the value of an Attribute or Assert per Test Run, it needs to be explicitly included in the Datavariations. An included Attribute or Assert is referred to in the MTA Documentation as a [Datavariation Item Row](datavariation-item-row).
 
-Datavariations can be defined on the [Test Suite](test-suite) or [Test Case](test-case) level. 
+Datavariations can be defined on the [Test Suite](test-suite) or [Test Case](test-case) level. The choice whether to apply Datavariation, and on which level (Test Case or Test Suite), is made on a Test Case.
 
-To change the value of an Attribute or Assert per Test Run, it needs to be explicitly included in the Datavariations. It is possible to combine Test Suite level and Test Case level Datavariations in the same Test Suite. 
+When applying Test Case level Datavariations, each Datavariation Column results in a new execution of the Test Case. An executed Test Case is referred to as a Test Case Run.
+
+When applying Test Suite level Datavariations, each Datavariation Column results in a new execution of the entire Test Suite. An executed Test Suite is referred to as a Test Suite Run.
+
+Applying both levels of Datavariations in the same Test Suite results in a multiplication of Test Case Runs for Test Cases with Test Case level Datavariations.
 
 :::note
-On the Test Case level, a choice has to be made between the Test Suite / Test Case Datavariations when varying on an Attribute or Assert. Once the choice is made, it can only be undone by excluding the varied Attributes and Asserts.
+It is also possible to [execute only one Datavariation Column](#execute-a-variation).
 :::
-
-An included Attribute or Assert is referred to in the MTA Documentation as a [Datavariation Item Row](datavariation-item-row).
-
-For each [Datavariation Column](datavariation-column), a Test Suite Run or Test Case Run will be created. If there is a Test Case with Test Case datavariation and another Test Case with Test Suite datavariation in the same Test Suite, this will have a multiplier-effect.
-
-It is also possible to execute one single Datavariation Column.
 
 ## Business rules
 
