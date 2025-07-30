@@ -11,9 +11,9 @@ Datavariations are used to execute the same test multiple times, but each time w
 
 Datavariations can be defined on the [Test Suite](test-suite) or [Test Case](test-case) level. The choice whether to apply Datavariation, and on which level (Test Case or Test Suite), is made on a Test Case.
 
-When applying Test Case level Datavariations, each Datavariation Column results in a new execution of the Test Case. An executed Test Case is referred to as a Test Case Run.
+When applying Test Case level Datavariations, each [Datavariation Column](datavariation-column) results in a new execution of the Test Case. An executed Test Case is referred to as a Test Case Run.
 
-When applying Test Suite level Datavariations, each Datavariation Column results in a new execution of the entire Test Suite. An executed Test Suite is referred to as a Test Suite Run.
+When applying Test Suite level Datavariations, each [Datavariation Column](datavariation-column) results in a new execution of the entire Test Suite. An executed Test Suite is referred to as a Test Suite Run.
 
 Applying both levels of Datavariations in the same Test Suite results in a multiplication of Test Case Runs for Test Cases with Test Case level Datavariations.
 
