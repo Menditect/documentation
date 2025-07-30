@@ -22,7 +22,6 @@ The Playwright Starter Kit module is still in Beta. Menditect distributes this m
 **If you want access to these modules, please [contact support](mailto:support@menditect.com).**
 - The Playwright Connector<br/>https://marketplace.mendix.com/link/component/235323 
 - The Playwright UI Test Kit<br/>https://marketplace.mendix.com/link/component/235327 
-- Optional: An Example App for testing Mendix Widgets with Playwright<br/>https://marketplace.mendix.com/link/component/235973
 - The [MTA Plugin](../connect-mta/import-plugin) 
 
 ### Playwright Connector
@@ -47,7 +46,7 @@ A few notes about the Starter Kit:
 #### Structure
 
 `_Private`
-This folder contains generic Locator microflows that are used internally by the Starter Kit to uniquely identify and locate a Widget on a Mendix Page. These microflows should not be called directly. Specific Locator microflows must be created for each Mendix Page, bespoke to your Mendix App. For now, use the [Example App](#example-app) to build Page-specific Locator microflows. In the future, Menditect will be able to generate these microflows based on the Page structure.
+This folder contains generic Locator microflows that are used internally by the Starter Kit to uniquely identify and locate a Widget on a Mendix Page. These microflows should not be called directly. Specific Locator microflows must be created for each Mendix Page, bespoke to your Mendix App. 
 
 `_Use_Me / TestResults`
 This folder contains a Page that shows stored files (Screenshots, Snapshots and Trace Files) after executing a test where Tracing was enabled. For now, these files are stored in the Mendix App where the Playwright Connector module is imported. In the future, Test Results will be stored in MTA.
@@ -61,7 +60,6 @@ This folder contains Action microflows for Mendix Widgets.
 - Download the Starter Kit module to start testing the most common Mendix Widgets. This module **requires the Apache Commons Lang** jar file in your userlib directory. Download the jar file here: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
 - Add both the Module Roles to the project's User Roles.
 - Download and import [this Snippet](../images/SNIP_Playwright_Files.mpk) into your Mendix App, add it to a Page that is accessible for Users that will be evaluating executed frontend Tests.
-- Optionally: Add the Overview page from the Example App to the Navigation, to use it as inspiration to build your own frontend test. 
 
 ## Test structure
 
@@ -222,15 +220,7 @@ When running Playwright on your local machine from Studio Pro, the free license 
 
 ## Testing Mendix Platform Supported Widgets
 
-:::tip Platform supported widgets
 [Click here to see a list of recent Platform supported Widgets](https://marketplace.mendix.com/link/supporttype/Platform)
-:::
-
-The Example App was created to show how to Locate most of the Mendix Platform Supported Widgets and execute Actions like Click, Fill Text or Select Option. 
-It contains an Overview page and two popup pages that combined contain these commonly used Widgets.
-The "ACT_Playwright_Full_Test" microflow is an example microflow that tests these Pages.
-This microflow can be executed from MTA if the App is running locally from Studio Pro. 
-Note that the submicroflow actions inside, can be built as Teststeps in MTA.
 
 ### Widgets supported by Menditect
 
