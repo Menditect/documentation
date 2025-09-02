@@ -112,6 +112,7 @@ const config = {
           { id: 'coverage-goal', content: 'coverage-goal.md', versions: 'ALL' },
           { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
           { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
+          { id: 'recording', content: 'recording.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
