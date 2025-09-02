@@ -121,7 +121,6 @@ const config = {
           { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'feedback-message.md', versions: 'ALL' },
-          { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
           { id: 'construction-error', content: 'construction-error.md', versions: 'ALL' },
         ],
       }),
