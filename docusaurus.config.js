@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.10',
+              label: '3.0',
               path: '/',
             },
           },
@@ -112,6 +112,7 @@ const config = {
           { id: 'coverage-goal', content: 'coverage-goal.md', versions: 'ALL' },
           { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
           { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
+          { id: 'generated-test', content: 'recording.md', versions: 'ALL' },
           { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
           { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
           { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
@@ -120,7 +121,6 @@ const config = {
           { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
           { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'feedback-message.md', versions: 'ALL' },
-          { id: 'generated-test', content: 'generated-test.md', versions: 'ALL' },
           { id: 'construction-error', content: 'construction-error.md', versions: 'ALL' },
         ],
       }),

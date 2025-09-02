@@ -3,7 +3,7 @@
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     let versionLinks = data.versions[version];
-    if (!versionLinks) { versionLinks = data.versions['2.10']; }
+    if (!versionLinks) { versionLinks = data.versions['3.0']; }
     const path = versionLinks[tag];
     return path;
   } else if (tag) {
