@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Test with anonymous user
 
 Mendix allows the possibility to enable users to work anonymously in an environment. This means that they do not have to login. 

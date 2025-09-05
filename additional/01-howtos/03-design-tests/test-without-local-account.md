@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Test without local Account
 
 MTA requires an Execution User for each test case to indicate who is running it. The name of the Execution User should be equal to the username of a local user account. 

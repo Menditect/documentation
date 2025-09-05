@@ -1,7 +1,3 @@
----
-sidebar_position: 9
----
-
 # Know when to adapt to next revision
 
 ## Explanation
