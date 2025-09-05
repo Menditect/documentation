@@ -88,7 +88,7 @@ const config = {
           },
           {
             id: 'ui-testing',
-            content: '@site/additional/01-howtos/03-design-tests/test-ui-with-mta.md',
+            content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
           },
           {
             id: 'mta-intergration-mch-extension',
