@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Test without local Account
 
 MTA requires an Execution User for each test case to indicate who is running it. The name of the Execution User should be equal to the username of a local user account. 
@@ -41,7 +37,7 @@ Every Test Case in this Test Suite contains these teststeps:
 
 There are two ways to set the password:
 - Insert a password string in Step 2 (in the Create teststep). You will however not be able to login with this password due to Mendix security restrictions.
-- Use a microflow to generate a random password so you can use it to login a [UI test](test-ui-with-mta), during the execution of the test.
+- Use a microflow to generate a random password so you can use it to login a [UI test](frontend-test-with-mta), during the execution of the test.
 
 ![RandomStrongPassword microflow](../images/random_password.png)
 

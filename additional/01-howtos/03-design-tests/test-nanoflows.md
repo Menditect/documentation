@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # Test Nanoflows
 
 To test the actions that exist in a nanoflow, simply use the [recorder](record-user-actions) to detect these actions. Every create object in the nanoflow will yield a Create Object Teststep in MTA, every retrieve object will yield a Retrieve Object Teststep, et cetera. MTA will try to recreate all the actions, just as recorded user actions in a page are recreated.

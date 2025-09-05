@@ -1,8 +1,4 @@
----
-sidebar_position: 10
----
-
-# Frontend testing with MTA
+# Frontend test with MTA
 
 This section describes how to create a frontend test in MTA, by adding the prerequisite modules to a Mendix project.
 
