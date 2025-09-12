@@ -62,7 +62,6 @@ Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g.
 :::note Licensed Mendix node not supported
 The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use UI testing in MTA when the app under test is hosted in the Mendix Cloud.
 :::
-                                                                                                |
 
 ### Setup (running Playwright in Browserstack)
 
