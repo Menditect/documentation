@@ -13,8 +13,16 @@ Playwright is a library with which you can locate elements on a web page and exe
 See https://playwright.dev/java/ for the relevant documentation.
 :::
 
+## Preparations
 
-## Prerequisites
+In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). 
+
+:::info Recommended
+Assign the same Class name on the Page as the Page's Title. 
+:::
+
+
+## Modules to import
 
 Download below modules from the Mendix marketplace to enable frontend testing.
 
@@ -41,21 +49,14 @@ A few notes about the UI Test Kit:
 - Although more Widgets may be added as supported in the UI Test Kit, any changes made in the future can break Locating a Widget correctly.
 
 
-## Get started
+## Setup
 
 - Start by importing the Playwright Connector. This module **requires the playwright driver bundle** jar file in your userlib directory if you want to [run Playwright on your local machine](#setup-local-testing). Download the jar file here: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
 - Download the UI Test Kit module to start testing the most common Mendix Widgets. This module **requires the Apache Commons Lang** jar file in your userlib directory. Download the jar file here: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
 - Add both the Module Roles to the project's User Roles.
 - Download and import [this Snippet](../images/SNIP_Playwright_Files.mpk) into your Mendix App, add it to a Page that is accessible for Users that will be evaluating executed frontend Tests.
 
-## Test structure
-
-Each frontend test has the same basic structure:
-- Start Test
-- Locators and Actions
-- Stop Test
-
-### Setup (local testing)
+### Playwright running Locally
 
 Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
@@ -63,7 +64,7 @@ Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g.
 The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use UI testing in MTA when the app under test is hosted in the Mendix Cloud.
 :::
 
-### Setup (running Playwright in Browserstack)
+### Playwright running in Browserstack
 
 One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
 
@@ -73,7 +74,7 @@ Currently, using Browserstack is only supported if the Mendix App is running in 
 Local Testing is currently only supported if Playwright is also running locally.
 [Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
 
-### Setup (running Playwright in a Docker container)
+### Playwright running in a Docker container 
 
 This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 19 will be replaced by the Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
 
@@ -105,9 +106,69 @@ This should be noted in the documentation in the Mendix Marketplace.
 24.	To shutdown the locally running docker container simply press Ctrl+C in the prompt.
 
 
+## MTA Test structure
+
+Each frontend test has the same basic structure:
+- [Start Test](#start-test)
+- [Locators and Actions](#locators-and-actions)
+- [Stop Test](#stop-test)
+
+### Start Test
+
+These steps describe how to Start a frontend test for a Mendix App.
+
+**1. How to connect to the Playwright Server?**
+
+| Connection Method           | Add Teststep that Calls Microflow               |
+| --------------------------- | ----------------------------------------------- |
+| Connect to my local machine | `PlaywrightConnector.Create_Browser`            |
+| Connect to BrowserStack     | `PlaywrightConnector.Connect_BrowserStack`      |
+| Connect to URL              | `PlaywrightConnector.Connect_Playwright_Server` |
+
+**2. What browser do you want to run your test on?**
+
+Set the `BrowserType` parameter of the Microflow Teststep that you just added.
+
+**3. Do you want to run a headless test?** Default `No`. Headless testing means that the browser will not be visible during the test. Only applicable when running Playwright on a local machine (other options are always Headless).
+
+Set the `Headless` parameter of the Microflow Teststep that you just added. 
+
+**4. Set milliseconds to wait between actions.** Default `0`. Setting this will make Playwright wait between actions so you can see what's happening in the browser.
+
+Set the `SlowMo` parameter of the Microflow Teststep that you just added.
+
+**5. Set remaining Microflow parameters.**
+
+Set the remaining parameters, depending on which Microflow you chose.
+
+**6. Do you want to provide a login, or view the Mendix App anonymously?**
+
+| Login type                | Add Teststep that Calls Microflow                   |
+| ------------------------- | --------------------------------------------------- |
+| Username / Password       | `MenditectMxUITestKit.Start_MxUITest_With_Login`    |
+| Anonymous (if configured) | `MenditectMxUITestKit.Start_MxUITest_Without_Login` |
+
+**7. Provide the URL where the Mendix App is running.**
+
+Set the `URL` parameter of the Microflow Teststep that you just added.
+
+**8. Do you want to enable Tracing for the duration of the Test?** A Trace file will be generated, that you can upload at https://trace.playwright.dev/, where you will be able to view the actions in the browser. Particularly useful for Headless testing.
+
+Set the `Tracing` parameter of the Microflow Teststep that you just added.
+
+**9. Do you want to choose the height and width of the browser window?** 
+
+Set the `ViewPort` object parameter of the Microflow Teststep that you just added. If left empty, Playwright will use default values.
+
+**10. Set remaining Microflow parameters.**
+
+Set the remaining parameters, depending on which Microflow you chose.
+
 ### Locators and Actions
 
-#### Generic App testing
+### Stop Test
+
+## Generic App testing
 
 To perform an action on an element in the page, the basic structure is to use two microflows; a Locator microflow and an Action microflow. Sometimes calling a second Locator microflow is needed.
 
@@ -119,11 +180,6 @@ For more advanced usage, checkout the Playwright documentation for [Locators](ht
 
 #### Mendix App testing
 
-In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). 
-
-:::info Recommended
-Assign the same Class name on the Page as the Page's Title. 
-:::
 
 
 ### Session handling
