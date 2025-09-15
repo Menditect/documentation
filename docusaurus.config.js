@@ -149,6 +149,16 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
+        id: 'frontend-testing',
+        path: 'additional/03-frontend-testing',
+        routeBasePath: 'additional/frontend-testing',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      require.resolve('@docusaurus/plugin-content-docs'),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
         id: 'knownissues',
         path: 'additional/04-knownissues',
         routeBasePath: 'additional/knownissues',
@@ -220,6 +230,11 @@ const config = {
           {
             to: 'additional/howtos',
             label: 'How to?',
+            position: 'left',
+          },
+          {
+            to: 'additional/frontend-testing',
+            label: 'Frontend testing',
             position: 'left',
           },
           {

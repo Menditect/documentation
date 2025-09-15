@@ -27,7 +27,7 @@ This Role can:
 - View and logout active user sessions.
 
 :::note Administrator Account
-Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../howtos/configure-mta/run-mta-on-premise).<br/>
+Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../howtos/host-and-deploy/manage-mta-deployment).<br/>
 Do not combine this role with other (below) roles.
 :::
 
@@ -47,12 +47,15 @@ This is the standard Role for new Accounts.<br/>
 This Role can manage [Applications](../../../application), build [Test Configurations](../../../test-configuration) and [run tests](../../../test-run). 
 
 ### API User
-This Role can call endpoints in the [Public API](../../../api). 
+This Role can call endpoints in the [Public API](../../../api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
 This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../connect-mta/import-plugin#configuring-connection-user-in-mta).
 
+Make sure to regularly change the `MTAConnectionUser` password. 
+
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 30 June 2025
+Last updated 15 September 2025
