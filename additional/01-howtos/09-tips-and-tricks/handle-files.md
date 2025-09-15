@@ -5,7 +5,7 @@ MTA does not (yet) allow uploading a `FileDocument` into your Test App.
 This also means, that using Binary attributes is not (yet) supported.
 
 However, there are some ways to include the Uploading and Downloading of files into your test process. 
-Using a [UI testscript](../design-tests/frontend-test-with-mta) is the recommended approach.
+Using a [Frontend testscript](../design-tests/frontend-test-with-mta) is the recommended approach.
 
 It is also possible to use an extension microflow inside the Test App to create the files. 
 
