@@ -1,8 +1,9 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 ---
 
-# Run your own MTA deployment
+
+# Manage your own MTA deployment
 
 ## Purpose
 
@@ -54,7 +55,7 @@ On the MTA Application itself, **do not** change these values.
 
 #### SAML SSO
 
-- If MTA will be [configured to use SAML SSO](configure-mta-saml), additionally set these values (otherwise, use the default value):
+- If MTA will be [configured to use SAML SSO](../configure-mta/configure-mta-saml), additionally set these values (otherwise, use the default value):
 
 | Environment variable        | value                   |
 | --------------------------- | ----------------------- |

@@ -54,7 +54,7 @@ Construction Errors in a Test Configuration will block executing it. Executing w
 
 `*` Upon adapting, some primitive datatypes are convertable by MTA when they are changed, and will not lead to a Construction Error. 
 
-For more information, also see the [Using Primitives](use-previous-teststeps-data#using-primitives) chapter in "Use previous teststeps data".
+For more information, also see the [Using Primitives](../design-tests/use-previous-teststeps-data#using-primitives) chapter in "Use previous teststeps data".
 
 
 ## Feedback?

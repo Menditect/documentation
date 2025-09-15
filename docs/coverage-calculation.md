@@ -6,9 +6,9 @@ sidebar_position: 11
 
 ## Definition
 
-A overage Calculation is a representation of the code coverage of one moment in time. It represents the coverage percentage of microflows that were executed, out of all included microflows for the associated [Coverage Goal](coverage-goal).  This Coverage Goal is **calculated** and stored as a Coverage Calculation, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
+A Coverage Calculation is a representation of the code coverage of one moment in time. It represents the coverage percentage of microflows that were executed, out of all included microflows for the associated [Coverage Goal](coverage-goal).  This Coverage Goal is **calculated** and stored as a Coverage Calculation, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
 
-A overage Calculation can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
+A Coverage Calculation can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
 
 
 ## Properties
