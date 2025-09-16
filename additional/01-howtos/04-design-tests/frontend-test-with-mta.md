@@ -19,11 +19,11 @@ These steps describe how to Start a frontend test for a Mendix App.
 
 **1. How to connect to the Playwright Server?**
 
-| Connection Method           | Add Teststep that Calls Microflow               |
-| --------------------------- | ----------------------------------------------- |
-| Connect to my local machine | `PlaywrightConnector.Create_Browser`            |
-| Connect to BrowserStack     | `PlaywrightConnector.Connect_BrowserStack`      |
-| Connect to URL              | `PlaywrightConnector.Connect_Playwright_Server` |
+| Connection Method           | Add Teststep that Calls Microflow                        |
+| --------------------------- | -------------------------------------------------------- |
+| Connect to my local machine | `MenditectPlaywrightConnector.Create_Browser`            |
+| Connect to BrowserStack     | `MenditectPlaywrightConnector.Connect_BrowserStack`      |
+| Connect to URL              | `MenditectPlaywrightConnector.Connect_Playwright_Server` |
 
 **2. What browser do you want to run your test on?**
 
@@ -68,6 +68,10 @@ Set the remaining parameters, depending on which Microflow you chose.
 
 ### Stop Test
 
+To Stop the Frontend Test, simply add a Teststep that calls `MenditectMxUITestKit.Stop_MxUITest`. 
+
+At the end of the Test Configuration, to unload the Playwright libraries from memory, call `MenditectPlaywrightConnector.Shutdown_Playwright`.
+
 ## Generic App testing
 
 To perform an action on an element in the page, the basic structure is to use two microflows; a Locator microflow and an Action microflow. Sometimes calling a second Locator microflow is needed.
@@ -77,9 +81,6 @@ In the Playwright Connector, Locator microflows are inside the "Microflows/Comma
 Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../Teststep#properties) that calls the Locator Action microflow.
 
 For more advanced usage, checkout the Playwright documentation for [Locators](https://playwright.dev/java/docs/locators) and [Actions](https://playwright.dev/java/docs/input).
-
-#### Mendix App testing
-
 
 
 ### Session handling

@@ -10,8 +10,12 @@ Make sure to first [connect Playwright to MTA](../connect-mta/connect-playwright
 
 In order to identify a Mendix Page, it is necessary to fill in the [Page class on the Mendix Page in Studio Pro](https://docs.mendix.com/refguide/common-widget-properties/#class). 
 
+![Example Page class in Page properties](../images/page-class.png)
+
+If there is already a Page class filled in, it is possible to add another class name, separated with a `Space`.
+
 :::info Recommended
-Assign the same Class name on the Page as the Page's Title. 
+Assign the same class name on the Page as the Page's Title. 
 :::
 
 

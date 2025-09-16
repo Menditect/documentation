@@ -14,15 +14,20 @@ Playwright is a library with which you can locate elements on a web page and exe
 See https://playwright.dev/java/ for the relevant documentation.
 :::
 
-## Running Playwright Locally
+## Run Playwright Locally
 
-Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
+Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. 
+
+The currently supported version is 1.53.0. Download it here:<br/>
+https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
+
+If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
 :::note Licensed Mendix node not supported
-The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use UI testing in MTA when the app under test is hosted in the Mendix Cloud.
+The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use Frontend testing in MTA when the app under test is hosted in the Mendix Cloud.
 :::
 
-## Running Playwright in Browserstack
+## Run Playwright in Browserstack
 
 One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
 
@@ -30,14 +35,14 @@ Currently, using Browserstack is only supported if the Mendix App is running in 
 Local Testing is currently only supported if Playwright is also running locally.
 [Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
 
-## Running Playwright in a Docker container 
+## Run Playwright in a Docker container 
 
 This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 19 will be replaced by the Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
 
 1.	Install Docker Desktop https://www.docker.com/products/docker-desktop/.
 2.	Although not always required by Docker, restart Windows.
 3.	Start Studio Pro that will run the Test Application and connect to MTA. 
-4.	Make sure the Connector and Mx UI Testkit are imported.
+4.	Make sure the Connector and Mendix Frontend Testkit are imported.
 5.	Check the playwright version that is being used by the Connector. 
 This should be noted in the documentation in the Mendix Marketplace.
 6.	Run the Test Application. Check MTA to see if it's connected.
