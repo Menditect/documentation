@@ -1,13 +1,13 @@
 ---
-sidebar_position: 1
+sidebar_class_name: hidden
 slug: /
 ---
  
-# MTA documentation
+# Menditect Documentation
 
-Welcome to the [Menditect ®](https://menditect.com) Test Automation Documentation site.
+Welcome to the [Menditect ®](https://menditect.com) Documentation site.
 
-Browse through the different topics in the reference guide, read the latest release notes or use the how-to if you want to get started with MTA.
+Browse through the different topics in the reference guide, read the latest release notes or use the how-to if you want to get started.
 Use the menu buttons to continue in one of the sections.
 
 Click on the Menditect logo anytime to return to this page.

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Reference guide
+# 📖 MTA Reference Guide
 
 Here you can find the definitions for the most important terminology used in MTA.
 

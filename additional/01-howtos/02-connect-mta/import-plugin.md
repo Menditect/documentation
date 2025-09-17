@@ -2,11 +2,9 @@
 sidebar_position: 1
 ---
 
-# Import plugin
+# Import And Configure MTA Plugin
 
-In order for MTA to communicate with the Application under test, you need to import a module created by Menditect that will initiate this communication. 
-This is the MTA Plugin module. 
-To import and configure this module, read this page or watch this video.
+To import and configure the [MTA Plugin](../../../Tools/mta-plugin), read this page or watch this video.
 
 <iframe src="https://player.vimeo.com/video/846213936?h=494a93fd4f" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>
@@ -16,8 +14,7 @@ To import and configure this module, read this page or watch this video.
 Don't make changes to elements inside the MtaPluginModule. Configure Constants in the Project settings in Studio Pro.<br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your Mendix project.
 :::
 
-## Importing MTA Plugin
-
+## Import MTA Plugin
 
 Import the MTA plugin module package **in the Application under Test** as a new module. 
 - If you have imported it before, replace the existing module. 
@@ -28,43 +25,14 @@ After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar f
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 :::
 
-### Plugin version vs Mendix version
-Download the MTA plugin module from Mendix Marketplace. 
 
-Make sure to check your app's Mendix version before importing the module. 
-
-| Mendix Version                 | Url                                                  |
-| ------------------------------ | ---------------------------------------------------- |
-| Mendix 11                      | Not supported                                        |
-| Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
-| Mendix 9.24.4 and higher       | https://marketplace.mendix.com/link/component/214717 |
-| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
-| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123 |
-| Mendix 7                       | Not supported                                        |
-
-#### Upgrading Mendix 
-
-To upgrade the major version of your Mendix App (for example, from Mendix 9.24 to 10.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
-
-
-### Plugin version vs MTA version
-Always use the latest MTA Plugin version for the latest MTA version.
-
- 
-|            | MTA Plugin 4.8.1 | Any older MTA Plugin |
-| ---------- | ---------------- | -------------------- |
-| MTA 2.10.x | Supported        | Not supported        |
-| MTA 2.9.x  | Supported        | Not supported        |
-| MTA 2.8.x  | Not supported    | Not supported        |
-
-
-## Configuring MTA Plugin
+## Configure MTA Plugin
 
 After you have imported the Plugin into your Mendix App that you want to test with MTA, you can configure the Plugin to connect to MTA.
 
 If you are working in a new MTA environment, make sure to first [create MTA Manager and Tester accounts in MTA](../configure-mta/manage-accounts). After logging in as Tester in MTA, it is possible to [register the Mendix App](../../../application#register-application-in-mta), which will trigger the [creation of an Application Instance](../../../application-instance#create-an-application-instance), that you need to configure the Plugin.
 
-### Including After startup microflow
+### Include After startup microflow
 
 - Open the App Settings window in Mendix Studio Pro.
 - Navigate to the Runtime tab. 
@@ -72,7 +40,7 @@ If you are working in a new MTA environment, make sure to first [create MTA Mana
 - Make sure to include a Call Microflow action to the `ASU_Setup_Connection_MTA` microflow in the MtaPluginModule. 
 - Otherwise, just select the `ASU_Setup_Connection_MTA` in the popup window.
 
-### Configuring Connection user in MTA
+### Configure Connection user in MTA
 
 MTA will create a Connection user when starting up for the first time. 
 
@@ -86,7 +54,7 @@ If you have already set the password previously for another App, use that passwo
 - Set the password. 
 - Save the password in a password manager that you can share with your colleagues.
 
-### Setting Constants
+### Set Constants
 
 To configure the MTA Plugin, there are 5 constants that you have to assign a value. 
 If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
@@ -126,7 +94,7 @@ Example: wss://mta-mtatraining.mendixcloud.com
 The constant `NoAssociationResponse` should not be modified. The feature is experimental, and not officially supported.
 :::
 
-### Configuring Plugin Home page
+### Configure Plugin Home page
 
 Including this page in your App is necessary if you want to manually connect to MTA (with [ConnectionMethod](#connectionmethod) = "Manual"). 
 

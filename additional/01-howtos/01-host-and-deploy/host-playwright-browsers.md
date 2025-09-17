@@ -14,6 +14,9 @@ Playwright is a library with which you can locate elements on a web page and exe
 See https://playwright.dev/java/ for the relevant documentation.
 :::
 
+
+![Playwright Setup](../images/pw_setup.png)
+
 ## Run Playwright Locally
 
 Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. 
