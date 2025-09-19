@@ -35,7 +35,7 @@ Do not combine this role with other (below) roles.
 This Role can:
 - Manage other MTA Manager Accounts, Tester Accounts, API User Accounts and the Connection User Account.
 - [Configure SAML SSO](configure-mta-saml).
-- [Toggle the Archive function](../../../archive#toggle-archive-in-mta).
+- [Toggle the Archive function](../../../mta/archive#toggle-archive-in-mta).
 - View and logout active user sessions.
 
 ### Tester
@@ -44,10 +44,10 @@ This Role can:
 This is the standard Role for new Accounts.<br/>
 :::
 
-This Role can manage [Applications](../../../application), build [Test Configurations](../../../test-configuration) and [run tests](../../../test-run). 
+This Role can manage [Applications](../../../mta/application), build [Test Configurations](../../../mta/test-configuration) and [run tests](../../../mta/test-run). 
 
 ### API User
-This Role can call endpoints in the [Public API](../../../api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
+This Role can call endpoints in the [Public API](../../../mta/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
 This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../connect-mta/import-plugin#configuring-connection-user-in-mta).

@@ -1,6 +1,6 @@
 # Automate pipeline
 
-This page should help you automate the scheduling of test execution, using the [MTA Public API](../../../api).
+This page should help you automate the scheduling of test execution, using the [MTA Public API](../../../mta/api).
 
 ## Endpoints
 
@@ -10,7 +10,7 @@ There are 2 usecases for calling this endpoint:
 1. You know a Test Configuration name, and want to determine the Test Configuration Key by filtering from a list of Test Configurations, so you can execute it.
 2. You know an Application Key, and want to determine a list of Keys of Test Configurations are testing that Application, so you can execute them.
 
-If instead you only want to execute a specific Test Configuration, you can find the Key in MTA, by [Editing the Test Configuration](../../../test-configuration#edit-a-test-configuration). The Key is shown in the header at the end of the title.
+If instead you only want to execute a specific Test Configuration, you can find the Key in MTA, by [Editing the Test Configuration](../../../mta/test-configuration#edit-a-test-configuration). The Key is shown in the header at the end of the title.
 
 ### 2: get testsuites
 
@@ -19,7 +19,7 @@ There are 3 usecases for calling this endpoint:
 2. You know a Test Configuration Key, and want to execute specific Test Suites. You can determine which to run, by sequence or by name.
 3. You know a Test Configuration Key, and want to execute one or more Test Cases in a Test Suite, of which you only know the name.
 
-If instead you want to execute a single Test Suite, you can **find the Key** by [Editing the Test Suite](../../../test-suite#edit-a-test-suite). The Key is shown in the header at the end of the title.
+If instead you want to execute a single Test Suite, you can **find the Key** by [Editing the Test Suite](../../../mta/test-suite#edit-a-test-suite). The Key is shown in the header at the end of the title.
 
 ### 3: get testcases
 
@@ -27,7 +27,7 @@ There are 2 usecases for calling this endpoint:
 1. You know a Test Suite Key, and want to execute all it's Test Cases, one by one.
 2. You know a Test Suite Key, and want to execute specific Test Cases. You can determine which to run, by sequence or by name.
 
-If instead you want to execute a single Test Case, you can **find the Key** by [Editing the Test Case](../../../test-suite#edit-a-test-case). The Key is shown in the header at the end of the title.
+If instead you want to execute a single Test Case, you can **find the Key** by [Editing the Test Case](../../../mta/test-suite#edit-a-test-case). The Key is shown in the header at the end of the title.
 
 ### 4: get applications
 
@@ -35,7 +35,7 @@ There are 2 usecases for calling this endpoint:
 1. You know an Application name, and want to determine the Application Key by filtering from a list of Applications, so you can use it for other endpoints.
 2. You know a Test Configuration Key, and want to use this endpoint to determine the Keys of the Applications that are being tested in that Test Configuration.
 
-If instead you want to get the Application Key from MTA, you can **find the Key** by opening the Applications page and [View Key and Project ID](../../../application#view-key-and-project-id). 
+If instead you want to get the Application Key from MTA, you can **find the Key** by opening the Applications page and [View Key and Project ID](../../../mta/application#view-key-and-project-id). 
 
 ### 5: get application instances
 
@@ -43,7 +43,7 @@ There are 2 usecases for calling this endpoint:
 1. You know an Application Key and Application Instance name, and want to determine the Application Instance Key by filtering from a list of Application Instances, so you can use it to execute a test on.
 2. You know an Application Key and assume there is only one Application Instance, and want to use this endpoint to determine the Key of that Application Instance, so you can use it to execute a test on.
 
-If instead you want to get the Application Instance Key from MTA, you can **find the Key** by [Editing the Application Instance](../../../application-instance#edit-an-application-instance). The Key is shown in the header at the end of the title.
+If instead you want to get the Application Instance Key from MTA, you can **find the Key** by [Editing the Application Instance](../../../mta/application-instance#edit-an-application-instance). The Key is shown in the header at the end of the title.
 
 ### 6: get revisions
 

@@ -21,7 +21,7 @@ To assert that the REST call *will* fail, first change the microflow with a cust
 
 ![REST call](../images/rest-call-02.png)
 
-Now it is possible to [assert on the validation message](../../../Assert/assert-validation-feedback) containing, for example, an HTTP Status Code 500.
+Now it is possible to [assert on the validation message](../../../mta/Assert/assert-validation-feedback) containing, for example, an HTTP Status Code 500.
 
 
 ## Feedback?

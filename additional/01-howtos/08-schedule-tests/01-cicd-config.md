@@ -2,7 +2,7 @@
 
 ## Definition
 
-This document describes how to configure MTA to use the [Public API](../../../api).
+This document describes how to configure MTA to use the [Public API](../../../mta/api).
 
 ## Create API user
 
@@ -24,11 +24,11 @@ This is the username and password you will connect with to the API.
 The Public API can be used in a pipeline that performs deployments of a Mendix Application. But it does not check if the deployment is done.
 
 :::info 
-Before executing a testrun, check that the deployment is completed and the status of the <a href="../../../application-instance">Application Instance</a> is "Running".
+Before executing a testrun, check that the deployment is completed and the status of the <a href="../../../mta/application-instance">Application Instance</a> is "Running".
 :::
 
 ## Cleanup testruns
-No need to clean up testruns manually. Currently, a nightly scheduled event cleans up executed [Test Runs](../../../test-run). MTA only keeps test runs associated with the last two executions for a single Application. 
+No need to clean up testruns manually. Currently, a nightly scheduled event cleans up executed [Test Runs](../../../mta/test-run). MTA only keeps test runs associated with the last two executions for a single Application. 
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

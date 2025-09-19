@@ -21,7 +21,7 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
 - Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 - Select an entity. You can search by name.
-- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
+- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve from database" in the Retrieve options.
 - [Set filter values](#set-filter-values).
 - Click on the "Save" button. 
@@ -31,7 +31,7 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
 - Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 - Select an entity. You can search by name.
-- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
+- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve by association" in the Retrieve options.
 - [Set filter values](#set-filter-values).
 - Click on the "Save" button. 
@@ -53,7 +53,7 @@ There are two options to Retrieve from former Teststep. The first option is quic
 2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
 3. Select an entity. You can search by name.
 4. Select the previous Teststep that returns the object that needs to be retrieved. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
-5. Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](construction-error), even if only retrieving the first object.
+5. Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object.
 6. Select "Retrieve using output from former test step" in the Retrieve options.
 7. [Set filter values](#set-filter-values).
 8. Click on the "Save" button. 

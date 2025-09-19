@@ -16,7 +16,7 @@ This document describes how to import and configure the [Microflow Call Hierarch
 
 The Microflow Call Hierarchy extension can be used on a microflow in Mendix Studio Pro, to hierarchically view all submicroflows that are called from that microflow in a tree structure.
 
-The Microflow Call Hierarchy extension can also be used to [generate a microflow test](../design-tests/generate-test#from-mendix-studio-pro) in Menditect Test Automation (MTA), and view [test cases](../../../test-case) where that microflow is executed.
+The Microflow Call Hierarchy extension can also be used to [generate a microflow test](../design-tests/generate-test#from-mendix-studio-pro) in Menditect Test Automation (MTA), and view [test cases](../../../mta/test-case) where that microflow is executed.
 
 
 ## Installation

@@ -10,7 +10,7 @@ To view the detailed results of a testrun that is executed from CI/CD Version 1,
 Using the Details button it is possible to view the results of the testrun. Also testruns executed from CI/CD Version 2 are visible here.
 
 ## 2. Download results in CI/CD API
-With the [Get testrun](../../../api#get-testrun) request in the CI/CD API it is possible to use your CI/CD pipeline or Test Management system to get the results, after the execution has finished.
+With the [Get testrun](../../../mta/api#get-testrun) request in the CI/CD API it is possible to use your CI/CD pipeline or Test Management system to get the results, after the execution has finished.
 
 ## 3. Get realtime results in your own API endpoint
 As of MTA version 2.0, it is possible to have MTA push the results after each Test Case run to your own hosted REST service. You need to tell MTA where to push the results, and provide a secret key that you should use to verify the source (MTA) upon receiving this push message.  

@@ -30,10 +30,10 @@ The first Test Suite contains one Test Case for each Account that should be crea
 Each Test Case uses MxAdmin as the Execution User, and has the Apply Security setting to "No".
 
 Every Test Case in this Test Suite contains these teststeps:
-1. [Retrieve](../../../Teststep/retrieve) UserRole (1 or more teststep) to determine the Roles for the Account
-2. [Create](../../../Teststep/create) Account, filling the Name attribute and UserRoles association
+1. [Retrieve](../../../mta/Teststep/retrieve) UserRole (1 or more teststep) to determine the Roles for the Account
+2. [Create](../../../mta/Teststep/create) Account, filling the Name attribute and UserRoles association
 3. Set the password (read below)
-4. [Persist](../../../Teststep/persist)
+4. [Persist](../../../mta/Teststep/persist)
 
 There are two ways to set the password:
 - Insert a password string in Step 2 (in the Create teststep). You will however not be able to login with this password due to Mendix security restrictions.
@@ -52,9 +52,9 @@ If any objects are associated to the Account entity, make sure to delete these o
 The last Test Suite contains one Test Case that delete the Account(s) that were created in the first Test Suite. It uses MxAdmin as the Execution User, and has the Apply Security setting to "No".
 
 Assuming there are no other Accounts in the database (note that MxAdmin is a *User*, not an *Account*) the simplest way is to:
-1. [Retrieve](../../../Teststep/retrieve) the created Account object(s)
-2. [Delete](../../../Teststep/delete) the objects from teststep 1
-5. [Persist](../../../Teststep/persist)
+1. [Retrieve](../../../mta/Teststep/retrieve) the created Account object(s)
+2. [Delete](../../../mta/Teststep/delete) the objects from teststep 1
+5. [Persist](../../../mta/Teststep/persist)
 
 This will wipe all Accounts from the database. 
 

@@ -35,8 +35,8 @@ Maintaining unit tests will have a different frequency than maintaining process 
 - Start building unit tests of **validation flows, rules and calculation microflows**.
 - Build a unit test **for every defect found**.
 - During product refinement, determine whether a feature is **unit testable**.
-- **Test without security** on the [Test Case](../../test-case#properties).
-- **Test using rollback** on the [Test Case](../../test-case#properties).
+- **Test without security** on the [Test Case](../../mta/test-case#properties).
+- **Test using rollback** on the [Test Case](../../mta/test-case#properties).
 - Use MTA's **test generation by microflow** feature as a starting point.
 - **Prevent reliance on the database.** Do not retrieve objects from database, and do not commit objects to database.
 - **Include asserts** to have MTA check the results automatically instead of manually inspecting them. 

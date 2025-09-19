@@ -11,12 +11,12 @@ The assumption is made that both the publishing App and the consuming App are bu
 
 Retrieving data from a Dataset that is exposed as an Entity in a Mendix App works exactly the same as retrieving data from a regular Entity.
 
-It is possible to use a regular [Retrieve teststep](../../../Teststep/retrieve). Domain model access must be configured for the Entity, allowing the Execution user Read Access.
+It is possible to use a regular [Retrieve teststep](../../../mta/Teststep/retrieve). Domain model access must be configured for the Entity, allowing the Execution user Read Access.
 
 
 ### Creating OData objects
 
-Creating data from a Dataset that is exposed as an Entity in a Mendix App can be done by a [Create teststep](../../../Teststep/create), but saving the data to the database of the publishing App cannot be done by using [Persist](../../../Teststep/persist). This must be handled by a Microflow call, where the microflow contains a "Send external object" action. Only a single object can be committed by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
+Creating data from a Dataset that is exposed as an Entity in a Mendix App can be done by a [Create teststep](../../../mta/Teststep/create), but saving the data to the database of the publishing App cannot be done by using [Persist](../../../mta/Teststep/persist). This must be handled by a Microflow call, where the microflow contains a "Send external object" action. Only a single object can be committed by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
 
 ![Send external object](../images/commit-odata-object.png)
 
@@ -28,7 +28,7 @@ https://docs.mendix.com/refguide/published-odata-resource/#capabilities
 
 ### Changing OData objects
 
-Changing data from a Dataset that is exposed as an Entity in a Mendix App can be done by a [Change teststep](../../../Teststep/change), but saving the data to the database of the publishing App cannot be done by using [Persist](../../../Teststep/persist). This must be handled by a Microflow call, where the microflow contains a "Send external object" action. Only a single object can be committed by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
+Changing data from a Dataset that is exposed as an Entity in a Mendix App can be done by a [Change teststep](../../../mta/Teststep/change), but saving the data to the database of the publishing App cannot be done by using [Persist](../../../mta/Teststep/persist). This must be handled by a Microflow call, where the microflow contains a "Send external object" action. Only a single object can be committed by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
 
 ![Send external object](../images/commit-odata-object.png)
 
@@ -40,7 +40,7 @@ https://docs.mendix.com/refguide/published-odata-resource/#capabilities
 
 ### Deleting OData objects
 
-Deleting data from a Dataset that is exposed as an Entity in a Mendix App can **not** be done by a [Delete teststep](../../../Teststep/delete) combined with [Persist](../../../Teststep/persist). Deletion must be handled by a Microflow call, where the microflow contains a "Delete external object" action. Only a single object can be deleted by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
+Deleting data from a Dataset that is exposed as an Entity in a Mendix App can **not** be done by a [Delete teststep](../../../mta/Teststep/delete) combined with [Persist](../../../mta/Teststep/persist). Deletion must be handled by a Microflow call, where the microflow contains a "Delete external object" action. Only a single object can be deleted by this action. It is best to check if the object is not empty first, to allow for similar behaviour as in MTA.
 
 ![Delete external object](../images/delete-odata-object.png)
 

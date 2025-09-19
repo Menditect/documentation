@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Purpose
 
-In order for MTA to communicate with the [Application Instance](../application-instance) under test, you need to import a module created by Menditect that will initiate this communication. 
+In order for MTA to communicate with the [Application Instance](../mta/application-instance) under test, you need to import a module created by Menditect that will initiate this communication. 
 
 This is the MTA Plugin module. 
 

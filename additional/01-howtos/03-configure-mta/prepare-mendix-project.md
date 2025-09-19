@@ -21,7 +21,7 @@ This process saves time if completed before configuring MTA.
 :::note A Few Notes
 - Only follow these steps for the microflows that you actually want to test.
 - If pages are called *without* Page Parameters, no changes are needed.
-- If pages are called with *multiple* Page Parameters, you have to fill these using the output of a [Create](../../../Teststep/create) or [Retrieve](../../../Teststep/retrieve) teststep.
+- If pages are called with *multiple* Page Parameters, you have to fill these using the output of a [Create](../../../mta/Teststep/create) or [Retrieve](../../../mta/Teststep/retrieve) teststep.
 :::
 
 ## Feedback?

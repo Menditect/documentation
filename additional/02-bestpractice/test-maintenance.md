@@ -19,16 +19,16 @@ Note that when your test configuration contains an error, you can still execute 
 
 ### Fix adapt resulting in construction errors
 
-If your adapt results in a lot of [construction errors](../../construction-error), you can [restore a snapshot](../../snapshot#restore-a-snapshot) of the Test Configuration, that was created before it was adapted.
+If your adapt results in a lot of [construction errors](../../mta/construction-error), you can [restore a snapshot](../../mta/snapshot#restore-a-snapshot) of the Test Configuration, that was created before it was adapted.
 
-After that, you can go to the adapt process, one [Test Suite](../../test-suite) at the time:
+After that, you can go to the adapt process, one [Test Suite](../../mta/test-suite) at the time:
 
 1. Choose any *source* Test Configuration that you want to update to the latest revision. 
 2. Create an empty, *target* Test Configuration with your name in the title, so your collaegues know not to touch it. 
 3. Set the revision of the target to the latest revision.
 4. Next, copy the first Test Suite from the source into the target.
 5. MTA will *automatically* adapt the contents of the Test Suite in the target.
-6. Fix [construction errors](../../construction-error) and update the Test Cases as a result of this adapt.
+6. Fix [construction errors](../../mta/construction-error) and update the Test Cases as a result of this adapt.
 7. Repeat steps 4-6 until you have done this for all the Test Suites.
 8. You can now choose to delete the source or keep it (to keep the associated Test Runs).
 
@@ -50,14 +50,14 @@ Like updating tests, adding tests to your existing test configuration is also qu
 
 Downloading revisions and adapting test configurations can be time consuming, especially for large Mendix projects.
 
-Recommended is to set up a CI/CD pipeline, which uses the [API's in MTA](../../api). 
-Setup a scheduded nightly action running at 5:00 UTC that always [downloads the latest revision](../../api#post-download-revision) of the relevant development branch(es).
+Recommended is to set up a CI/CD pipeline, which uses the [API's in MTA](../../mta/api). 
+Setup a scheduded nightly action running at 5:00 UTC that always [downloads the latest revision](../../mta/api#post-download-revision) of the relevant development branch(es).
 This way, you will not have to wait for the download to complete during working hours. 
 Don't worry about your database filling up with unnessesary revision data, because MTA cleans up unused revisions, daily at 2:30 UTC. 
 Just make sure to run your CI/CD pipeline after that.
 
 :::info
-Don't have a CI/CD pipeline? <br/>You can also [download the latest revision in MTA](../../application-revision#change-the-application-revision-for-a-test-configuration).
+Don't have a CI/CD pipeline? <br/>You can also [download the latest revision in MTA](../../mta/application-revision#change-the-application-revision-for-a-test-configuration).
 :::
 
 ## Feedback?

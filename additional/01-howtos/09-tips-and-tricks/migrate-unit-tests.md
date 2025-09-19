@@ -6,7 +6,7 @@ This document helps you to migrate tests for the [Mendix Unit Test module](https
 
 ## Steps 
 
-1. [Create a new Test Configuration](../../../test-configuration#create-a-new-test-configuration).
+1. [Create a new Test Configuration](../../../mta/test-configuration#create-a-new-test-configuration).
 2. Navigate to "Mendix Model" to use the [Test Case generation feature](../design-tests/generate-test#test-a-microflow). 
 3. Use the "Microflow" filter textbox, to filter on microflows tested in the Mendix Unit Test Module. 
 4. Filter on "UT\_" or "TEST\_".
@@ -15,7 +15,7 @@ This document helps you to migrate tests for the [Mendix Unit Test module](https
 
 ![Mendix Model page](../images/migrate_unit_test.png)
 
-7. When finished, open a Test Case, and add an [Assert](../../../Assert/assert-microflow-output):
+7. When finished, open a Test Case, and add an [Assert](../../../mta/Assert/assert-microflow-output):
    - If the microflow returns a Boolean, assert "True";
    - If the microflow returns a String, select assert type "Not equals" and leave the value blank;
    - If the microflow does not return anything, check the [Assert on an Exception](assert-exception) how-to.

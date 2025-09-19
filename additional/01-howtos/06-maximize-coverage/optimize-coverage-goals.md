@@ -4,11 +4,11 @@
 
 The goal of Coverage Goals is to specify which microflows should be executed when running some collection of tests, and thereby getting 100 % coverage.
 
-This document helps with setting up [Coverage Goals](../../../coverage-goal) and creating [Exclude Filters](../../../coverage-exclude-filter) to achieve this.
+This document helps with setting up [Coverage Goals](../../../mta/coverage-goal) and creating [Exclude Filters](../../../mta/coverage-exclude-filter) to achieve this.
 
 ## Choose the best Coverage Goal level
 
-[Coverage Goals](../../../coverage-goal) are available on the [Test Configuration](../../../test-configuration) and [Application](../../../application) levels. 
+[Coverage Goals](../../../mta/coverage-goal) are available on the [Test Configuration](../../../mta/test-configuration) and [Application](../../../mta/application) levels. 
 
 You can choose to use either, or both execution levels. In most situations, using only one level is preferred.
 
@@ -22,7 +22,7 @@ This will be the case in most situations, where MTA Testers have chosen to distr
 
 Test Configuration Coverage Goals are preferred if there is **only one Test Configuration** for one Application that is tested in MTA. Joining calculated coverage from multiple Test Configurations is not necessary then, but you will be able to leave out Test Suites from your coverage calculation.
 
-But there may be other reasons to use Test Configuration Coverage Goals (besides Application Coverage Goals). For instance, if there are actually two Test Configurations where one is a copy of the other, or one runs on a different [Application Revision](../../../application-revision) than the other, but the two are otherwise very similar. Another aspect is that a Test Configuration can test multiple Applications. An integration test may be a reason to wait with applying another Application Revision, making it difficult to join the calculated coverage with Test Runs from other Test Configurations. In that case, Test Configuration Coverage Goals are preferred over Application Coverage Goals.
+But there may be other reasons to use Test Configuration Coverage Goals (besides Application Coverage Goals). For instance, if there are actually two Test Configurations where one is a copy of the other, or one runs on a different [Application Revision](../../../mta/application-revision) than the other, but the two are otherwise very similar. Another aspect is that a Test Configuration can test multiple Applications. An integration test may be a reason to wait with applying another Application Revision, making it difficult to join the calculated coverage with Test Runs from other Test Configurations. In that case, Test Configuration Coverage Goals are preferred over Application Coverage Goals.
 
 ## Optimize Exclude Filters and Exceptions
 

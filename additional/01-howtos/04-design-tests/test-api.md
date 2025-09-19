@@ -76,7 +76,7 @@ There is an example microflow included in the module for this option.
 
 You can perform the configuration in steps 4 for options 2 and 3 in MTA, instead of in a configuration page in the test app. 
 
-The best way is to create a [Test Case](../../../test-case) that creates the configuration objects and uses Test Case [Datavariation](../../../datavariation) to allow for the variation of the stubbed JSON string:
+The best way is to create a [Test Case](../../../mta/test-case) that creates the configuration objects and uses Test Case [Datavariation](../../../mta/datavariation) to allow for the variation of the stubbed JSON string:
 
 ![Using MTA](../images/test-api-MTA.png)
 
