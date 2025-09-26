@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Playwright Test Kit
+# Playwright for Mendix Test Kit
 
 ## Purpose
 

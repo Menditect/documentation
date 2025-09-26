@@ -14,6 +14,10 @@ A Test Case is always executed on a Test Application and by an execution user. T
 
 When the Test Suite execution hits the Test Case, the Test Case's Execution User is used to login to the Test Case's Test application. When the Test Case is finished executing, the Execution user will be logged out again. The consequence of this, is that all data that was not saved to the database (either by a Persist Object Teststep or a Commit action in a Microflow), will be permanently lost. This is important to realize during test scripting, because if a subsequent Test Case retrieves data from a Teststep in this Test Case, this action will fail if the data was not saved to the database.
 
+:::info Production security level
+MTA can only test Mendix Apps having [Production Security Level](https://docs.mendix.com/refguide10/app-security/#security-level).
+:::
+
 ## Properties
 | Name                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

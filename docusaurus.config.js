@@ -72,7 +72,7 @@ const config = {
           },
           {
             id: 'import-plugin',
-            content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
+            content: '@site/docs/tools/mta-plugin.md',
           },
           {
             id: 'pat',
@@ -122,6 +122,7 @@ const config = {
           { id: 'Teststep', content: 'mta/Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'mta/feedback-message.md', versions: 'ALL' },
           { id: 'construction-error', content: 'mta/construction-error.md', versions: 'ALL' },
+          { id: 'mta-plugin', content: 'tools/ma-plugin.md', versions: 'ALL' },
         ],
       }),
     ],

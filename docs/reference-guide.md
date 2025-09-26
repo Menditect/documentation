@@ -1,25 +1,32 @@
 ---
-sidebar_position: 1
+sidebar_class_name: hidden
+slug: /
 ---
-
-# Reference Guide
-
-Here you can find the definitions for the most important terminology used in MTA.
-
-By default, the reference guide is shown for the latest MTA version that is in production. 
-
-It is possible to select a previous version on the top right of the page.
-
-
-# How to use
-
-A page in the reference guide will always reference some element in MTA with that name.
-Referenced elements in MTA are accompanied by a <i class="fal fa-question-circle"></i> button, that links to the relevant page in this guide.
-
-Pages are structured in 4 segments:
-- Definition: a description defining the element, why it exists and what it does.
-- Properties: the attributes of the element in the MTA database, limited by how they occur in the MTA user interface.
-- Business rules: rules as defined in the MTA application that apply to this element, excluding regular validation messages.
-- Actions: actions that can be done with this element.
  
-Actions are described with as few literal descriptions to page elements as possible. This means that sometimes buttons are visible on the page, but sometimes they are listed under a menu or overflow button.
+# Menditect Documentation
+
+Welcome to the [Menditect ®](https://menditect.com) Documentation site.
+
+The **Reference Guide** lists all elements in Menditect Test Automation and supporting modules & extensions.
+
+By default, the Reference Guide is shown for the latest MTA version that is in production. 
+
+It is possible to select the previous version on the top right of the page.
+
+Click on the Menditect logo anytime to return to this page.
+
+## System requirements
+
+Below are the system requirements in order use MTA to test your Mendix Apps. 
+- A desktop or laptop computer.
+- A monitor running on HD resolution (1920x1080 pixels) on 100% scaling. Lower resolutions are not supported. [Just like Mendix.](https://docs.mendix.com/refguide/system-requirements/#hardware)
+- An up-to-date browser, recommended are Chromium-based like Chrome, Edge, Opera or Brave. Using other browsers like Firefox or Safari may negatively impact user experience.
+- Browser configuration set to run at 100% zoom level.
+- Mendix Studio Pro installation if you need to configure your Apps.
+
+
+## Need help now?
+
+*Contact Menditect Support*
+- [+3185 – 4010494](tel:+31854010494)
+- [support@menditect.com](mailto:support@menditect.com)

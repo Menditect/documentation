@@ -1,16 +1,9 @@
----
-sidebar_position: 18
----
-
-
-# Feedback Message
+# Teststep Exception
 
 
 ## Definition
 
-A Feedback Message occurs in a [Test Run](test-run), as a result of a "Validation feedback" action in a Microflow that is executed. 
-
-Feedback Messages in MTA are indicated by the <i class="fal fa-message-check"></i> icon.
+A Teststep Exception occurs in a [Test Run](test-run), as a result of a problem in a [Teststep](Teststep) that was executed.
 
 ## Properties
 | Name    | Description       |

@@ -17,13 +17,13 @@ Each frontend test has the same basic structure:
 
 These steps describe how to Start a frontend test for a Mendix App.
 
-**1. How to connect to the Playwright Server?**
+**1. How do you want to start the Browser?**
 
-| Connection Method           | Add Teststep that Calls Microflow                        |
-| --------------------------- | -------------------------------------------------------- |
-| Connect to my local machine | `MenditectPlaywrightConnector.Create_Browser`            |
-| Connect to BrowserStack     | `MenditectPlaywrightConnector.Connect_BrowserStack`      |
-| Connect to URL              | `MenditectPlaywrightConnector.Connect_Playwright_Server` |
+| Connection Method         | Add Teststep that Calls Microflow                        |
+| ------------------------- | -------------------------------------------------------- |
+| Start at my local machine | `MenditectPlaywrightConnector.Create_Browser`            |
+| Start at BrowserStack     | `MenditectPlaywrightConnector.Connect_BrowserStack`      |
+| Start at URL              | `MenditectPlaywrightConnector.Connect_Playwright_Server` |
 
 **2. What browser do you want to run your test on?**
 
@@ -41,12 +41,12 @@ Set the `SlowMo` parameter of the Microflow Teststep that you just added.
 
 Set the remaining parameters, depending on which Microflow you chose.
 
-**6. Do you want to provide a login, or view the Mendix App anonymously?**
+**6. Do you want to provide a login to view your Mendix App?**
 
-| Login type                | Add Teststep that Calls Microflow                   |
-| ------------------------- | --------------------------------------------------- |
-| Username / Password       | `MenditectMxUITestKit.Start_MxUITest_With_Login`    |
-| Anonymous (if configured) | `MenditectMxUITestKit.Start_MxUITest_Without_Login` |
+| Login type | Add Teststep that Calls Microflow                   |
+| ---------- | --------------------------------------------------- |
+| Yes        | `MenditectMxUITestKit.Start_MxUITest_With_Login`    |
+| No         | `MenditectMxUITestKit.Start_MxUITest_Without_Login` |
 
 **7. Provide the URL where the Mendix App is running.**
 
