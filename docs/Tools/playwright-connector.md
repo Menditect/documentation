@@ -6,17 +6,35 @@ sidebar_position: 2
 
 ## Purpose
 
-
-The Playwright Connector makes it possible to define and run a frontend test from any Mendix App. It enables the App to connect to the Playwright server, based on specified connection settings, and execute the test. When executing a Frontend test, Playwright starts and hosts its own browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
-
-
-The Playwright Connector includes Locator microflows to find elements on a webpage, and Action microflows to click on elements, fill them with text, or select a value. Therefore it can be used to test *any* webapplication, not just Mendix Apps. Locator and Action microflows in the Playwright Connector can be defined and executed from MTA.
+The Playwright Connector makes it possible to define and run a **frontend test** in MTA, from any Mendix App. It enables the App to connect to a Playwright Browser, based on specified connection settings, and execute the test. The module is essentially a wrapper around Playwright [Locators](https://playwright.dev/java/docs/locators), [Assertions](https://playwright.dev/java/docs/test-assertions) and [Actions](https://playwright.dev/java/docs/input). These are executed as [Java Actions](https://docs.mendix.com/refguide/java-actions/) inside a Microflow, which in turn can be executed by MTA. Because these actions are generic, the module can be used to frontend test *any* webapplication, not just Mendix Apps.
 
 
 ## Supported Versions
 
+The currently supported version is 4.6.0.
 
+## Installation instructions
 
+Download the Playwright Connector module from the Mendix Marketplace:
+
+https://marketplace.mendix.com/link/component/235323
+
+## Update instructions
+
+Replace the existing module when importing a new version. When running the Playwright Browser from within your Mendix project, make sure to check which Playwright version is supported by the Playwright Connector.
+
+Make sure to delete any old JAR files from the userlib subfolder in your project directory. 
+
+## Dependencies
+
+These modules are **required** to be imported in the Mendix App under test:
+- [MTA Plugin](tools/mta-plugin)
+- [Playwright Connector](tools/playwright-connector)
+- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+
+## Known issues
+
+None.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

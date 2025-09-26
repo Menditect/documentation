@@ -40,25 +40,10 @@ Note that when retrieving by association, data needs to exist either in database
 
 ## Retrieve from former Teststep
 
-There are two options to Retrieve from former Teststep. The first option is quicker:
-
-**Option 1:**
-
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object that you want to retrieve, and choose "<i class="fal fa-plus-circle"></i> Retrieve output".
+- Choose <i class="fal fa-plus-circle"></i> **Retrieve output**
 
-**Option 2:**
-
-1. Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
-3. Select an entity. You can search by name.
-4. Select the previous Teststep that returns the object that needs to be retrieved. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
-5. Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object.
-6. Select "Retrieve using output from former test step" in the Retrieve options.
-7. [Set filter values](#set-filter-values).
-8. Click on the "Save" button. 
-
-Note that when retrieving from a former Teststep in a previous Test Case, data needs to be saved to the database in that Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
+Note that if you move the new Teststep to a lower Test Case, data needs to be saved to the database in the originating Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
 
 ## Set filter values
 

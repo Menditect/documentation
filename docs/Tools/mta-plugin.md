@@ -6,16 +6,12 @@ sidebar_position: 1
 
 ## Purpose
 
-In order for MTA to communicate with the [Application Instance](../mta/application-instance) under test, you need to import a module created by Menditect that will initiate this communication. 
+It is required to import The MTA Plugin in the Mendix App under test, in order to execute a test from MTA.
 
-This is the MTA Plugin module. 
+In order for MTA to communicate with the [Application Instance](../mta/application-instance) under test, you need to import this module created by Menditect that will initiate this communication. 
+
 
 ## Supported Versions
-
-:::caution
-Don't make changes to elements inside the MtaPluginModule. Configure Constants in the Project settings in Studio Pro.<br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your Mendix project.
-:::
-
 
 ### Plugin version vs MTA version
 
@@ -30,7 +26,7 @@ Don't make changes to elements inside the MtaPluginModule. Configure Constants i
 
 ### Plugin version vs Mendix version
 
-Download the MTA plugin module from Mendix Marketplace. 
+Download the MTA Plugin module from the Mendix Marketplace. 
 
 Make sure to check your app's Mendix version before importing the module. 
 
@@ -149,9 +145,34 @@ Then, download the MTA Plugin module that matches the newer Mendix version as li
 
 ## Dependencies
 
+These modules are **required** to be imported in the Mendix App under test:
+- [MTA Plugin](tools/mta-plugin)
+- [Playwright Connector](tools/playwright-connector)
+- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+
+
+Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
+
 ## Known issues
 
-None.
+
+:::caution
+Don't make changes to elements inside the MtaPluginModule. Configure Constants in the Project settings in Studio Pro.<br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your Mendix project.
+:::
+
+### Plugin appears Connected but is not
+
+When connecting an [Application Instance](../mta/application-instance) to MTA, the MTAPluginPage snippet in the test application shows that the instance is "Connected" and received a Connection ID, where MTA shows that the instance is not connected.
+
+#### Possible cause
+
+An unknown (non existing) Application Token was used to connect.
+
+MTA does not recognize the Application Token and breaks off the connection. The error is only shown in the application logging. However this error is not communicated to the MTA Plugin, so the test application seems to be connected. 
+
+**Resolution**
+
+Check the Application Token and re-establish the connection.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

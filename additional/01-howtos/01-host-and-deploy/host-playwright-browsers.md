@@ -6,16 +6,20 @@ sidebar_position: 2
 
 ## Purpose
 
-This document describes the options to host the Playwright Browsers, which are required to run a Frontend Test with MTA.
+This document describes the options to host a [Playwright Browser](https://playwright.dev/java/docs/browsers), which is required to run a Frontend Test with MTA.
 
-:::note Playwright
-Menditect uses the Playwright runtime to execute these frontend tests. 
-Playwright is a library with which you can locate elements on a web page and execute actions on these elements.
-See https://playwright.dev/java/ for the relevant documentation.
-:::
-
+When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
 
 ![Playwright Setup](../images/pw_setup.png)
+
+Currently, there are 3 supported options to host a Playwright Browser:
+1. From within the Mendix project (local only)
+2. From BrowserStack (cloud only)
+3. From a Docker Container (cloud or local)
+
+:::info Mendix Cloud
+Option 1 is only available for a local machine, because Mendix does not allow for third party frameworks, like Playwright, to load its own dependencies. It is required to host the Playwright Browser elsewhere in the cloud when running the Mendix App in the cloud.
+:::
 
 ## Run Playwright Locally
 
@@ -26,9 +30,6 @@ https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/dri
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
-:::note Licensed Mendix node not supported
-The Mendix Cloud currently does not allow for third party frameworks, like Playwright, to load its own dependencies. This is why it is currently not possible to use Frontend testing in MTA when the app under test is hosted in the Mendix Cloud.
-:::
 
 ## Run Playwright in Browserstack
 

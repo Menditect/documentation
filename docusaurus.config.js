@@ -91,6 +91,10 @@ const config = {
             content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
           },
           {
+            id: 'frontend-testing',
+            content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
+          },
+          {
             id: 'mta-intergration-mch-extension',
             content: '@site/additional/01-howtos/01-connect-mta/connect-menditect-extension-to-mta.md',
           },

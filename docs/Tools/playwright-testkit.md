@@ -7,17 +7,32 @@ sidebar_position: 2
 
 The Playwright Test Kit is meant specifically to define and run Frontend tests for **Mendix Apps**. 
 
-It contains Reusable Locator and Action microflows to test Mendix Platform Supported Widgets.
-
-A few notes about the Frontend Test Kit:
-- The Frontend Test Kit currently has the en-US and nl-NL languages built-in. 
-- [React-enabled projects](https://docs.mendix.com/refguide/mendix-client/react/) can be tested by setting the Constant IsUsingReactClient to True.
-- Although more Widgets may be added as supported in the Frontend Test Kit, any changes made in the future can break Locating a Widget correctly.
+It contains microflows to test Mendix Platform Supported Widgets.
 
 ## Supported Versions
 
+The currently supported version is 4.6.0.
 
+## Installation instructions
 
+Download the Playwright for Mendix Test Kit from the Mendix Marketplace:
+
+https://marketplace.mendix.com/link/component/235327
+
+## Update instructions
+
+Replace the existing module when importing a new version. 
+
+## Dependencies
+
+These modules are **required** to be imported in the Mendix App under test:
+- [MTA Plugin](tools/mta-plugin)
+- [Playwright Connector](tools/playwright-connector)
+- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+
+## Known issues
+
+None.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
