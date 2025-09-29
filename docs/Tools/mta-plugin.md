@@ -49,7 +49,7 @@ If you are experiencing compilation errors or errors in the After startup microf
 
 After you have imported the Plugin into your Mendix App that you want to test with MTA, you can configure the Plugin to connect to MTA.
 
-If you are working in a new MTA environment, make sure to first [create MTA Manager and Tester accounts in MTA](../configure-mta/manage-accounts). After logging in as Tester in MTA, it is possible to [register the Mendix App](../../../mta/application#register-application-in-mta), which will trigger the [creation of an Application Instance](../../../mta/application-instance#create-an-application-instance), that you need to configure the Plugin.
+After logging in as Tester in MTA, it is possible to [register the Mendix App](../mta/application#register-application-in-mta), which will trigger the [creation of an Application Instance](../mta/application-instance#create-an-application-instance), that you need to configure the Plugin.
 
 ### Include After startup microflow
 
@@ -78,7 +78,7 @@ If you have already set the password previously for another App, use that passwo
 To configure the MTA Plugin, there are 5 constants that you have to assign a value. 
 If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
 
-To find the values for any of these Constants, simply [open the details of the Application Instance](../../../mta/application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
+To find the values for any of these Constants, simply [open the details of the Application Instance](../mta/application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
 
 :::warning
 Never set these constants on a Production environment!
@@ -86,12 +86,12 @@ Never set these constants on a Production environment!
 
 #### `ApplicationInstanceToken`
 This corresponds with an ID that MTA has generated for an Application Instance. 
-You can set this constant after you have [added an Application Instance](../../../mta/application-instance#create-an-application-instance) in MTA.
+You can set this constant after you have [added an Application Instance](../mta/application-instance#create-an-application-instance) in MTA.
 
 #### `ConnectionMethod`
 This will determine if your app will try to connect to MTA, either
 - 'AfterStartup': After deployment the app will try to connect to MTA using the provided token and Connection User's credentials.
-- 'Manual': You have to establish the connection to MTA manually, with the [Plugin Home page](#configuring-plugin-home-page) in the app.
+- 'Manual': You have to establish the connection to MTA manually, with the [Plugin Home page](#configure-plugin-home-page) in the app.
 - 'None': This will disable the connection to MTA.
 
 Any other value will result in an error message when attempting to establish the connection to MTA.
@@ -100,7 +100,7 @@ Any other value will result in an error message when attempting to establish the
 This is the username that is set for the Connection user in MTA. The default value is 'MTAConnectionUser'.
 
 #### `MTAConnectionPassword`
-This is the password that is set for the Connection user in MTA [in the previous step](#configuring-connection-user-in-mta).
+This is the password that is set for the Connection user in MTA [in the previous step](#configure-connection-user-in-mta).
 
 #### `MTAConnectionUrl`
 This is the URL that the app will use to connect to MTA. The URL is setup as follows:
@@ -146,9 +146,9 @@ Then, download the MTA Plugin module that matches the newer Mendix version as li
 ## Dependencies
 
 These modules are **required** to be imported in the Mendix App under test:
-- [MTA Plugin](tools/mta-plugin)
-- [Playwright Connector](tools/playwright-connector)
-- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+- MTA Plugin
+- [Playwright Connector](playwright-connector)
+- [Playwright for Mendix Test Kit](playwright-testkit)
 
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.

@@ -26,9 +26,9 @@ Replace the existing module when importing a new version.
 ## Dependencies
 
 These modules are **required** to be imported in the Mendix App under test:
-- [MTA Plugin](tools/mta-plugin)
-- [Playwright Connector](tools/playwright-connector)
-- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+- [MTA Plugin](mta-plugin)
+- [Playwright Connector](playwright-connector)
+- Playwright for Mendix Test Kit
 
 ## Known issues
 

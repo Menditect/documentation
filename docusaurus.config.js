@@ -15,7 +15,7 @@ const config = {
   url: 'https://documentation.menditect.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'menditect',
   projectName: 'documentation',
@@ -68,7 +68,7 @@ const config = {
           },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/01-connect-mta/use-microflow-call-hierarchy-extension.md',
+            content: '@site/additional/01-howtos/02-connect-mta/use-microflow-call-hierarchy-extension.md',
           },
           {
             id: 'import-plugin',
@@ -76,23 +76,23 @@ const config = {
           },
           {
             id: 'pat',
-            content: '@site/additional/01-howtos/02-configure-mta/access-mendix-model.md',
+            content: '@site/additional/01-howtos/03-configure-mta/access-mendix-model.md',
           },
           {
             id: 'howto-byomeal',
-            content: '@site/additional/01-howtos/02-configure-mta/run-mta-on-premise.md',
+            content: '@site/additional/01-howtos/01-host-and-deploy/manage-mta-deployment.md',
           },
           {
             id: 'generate-test',
-            content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
+            content: '@site/additional/01-howtos/04-design-tests/generate-test.md',
           },
           {
             id: 'ui-testing',
-            content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
+            content: '@site/additional/01-howtos/04-design-tests/frontend-test-with-mta.md',
           },
           {
             id: 'frontend-testing',
-            content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
+            content: '@site/additional/01-howtos/04-design-tests/frontend-test-with-mta.md',
           },
           {
             id: 'mta-intergration-mch-extension',
@@ -126,7 +126,7 @@ const config = {
           { id: 'Teststep', content: 'mta/Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'mta/feedback-message.md', versions: 'ALL' },
           { id: 'construction-error', content: 'mta/construction-error.md', versions: 'ALL' },
-          { id: 'mta-plugin', content: 'tools/ma-plugin.md', versions: 'ALL' },
+          { id: 'mta-plugin', content: 'tools/mta-plugin.md', versions: 'ALL' },
         ],
       }),
     ],

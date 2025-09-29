@@ -28,9 +28,9 @@ Make sure to delete any old JAR files from the userlib subfolder in your project
 ## Dependencies
 
 These modules are **required** to be imported in the Mendix App under test:
-- [MTA Plugin](tools/mta-plugin)
-- [Playwright Connector](tools/playwright-connector)
-- [Playwright for Mendix Test Kit](tools/playwright-testkit)
+- [MTA Plugin](mta-plugin)
+- Playwright Connector
+- [Playwright for Mendix Test Kit](playwright-testkit)
 
 ## Known issues
 
