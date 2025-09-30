@@ -6,7 +6,7 @@ This document describes how to design a Frontend Test in MTA.
 
 Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test).
 
-## MTA Test structure
+## Mendix App testing
 
 Each frontend test has the same basic structure:
 - [Start Test](#start-test)
@@ -14,8 +14,6 @@ Each frontend test has the same basic structure:
 - [Stop Test](#stop-test)
 
 ### Start Test
-
-These steps describe how to Start a frontend test for a Mendix App.
 
 **1. How do you want to start the Browser?**
 
@@ -65,6 +63,33 @@ Set the `ViewPort` object parameter of the Microflow Teststep that you just adde
 Set the remaining parameters, depending on which Microflow you chose.
 
 ### Locators and Actions
+
+For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, we've introduced Widget-specific Locators and Actions.
+
+The recurring <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> Teststep pattern for Mendix Apps is:
+1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class, also see [Prepare for Frontend test](../configure-mta/prepare-frontend-test). 
+   - Takes a PageClass String parameter
+   - Returns a MxPageLocator object 
+2. **Locate** a Mendix **Widget**: for example `Locate_MxWidget_Button`, by Widget Name, for example `actionButton1`.
+   - Takes a WidgetName String parameter
+   - Returns a MxLocator specialization object
+3. Perform **Action** on the Mendix Widget, for example `Click_Button`.
+   - Takes a MxLocator specialization object
+   - Throws a possible Playwright Error, when the Widget cannot be located. 
+
+- When the navigation moves to another Mendix Page, a new `Locate_MxPage` microflow must be called to locate that Mendix Page. 
+- When the Mendix Widget is inside another Mendix Widget, adding an additional Widget-specific `Locate_MxWidget_...` microflow may be needed.
+- When there are multiple occurences of the same Mendix Widget, for example in a list, adding a Widget-specific `Filter...` or `Nth...` microflow may be needed.
+
+Pattern examples:
+
+<i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i>
+
+Locate Mendix Page, Locate DataGrid, Filter by text, Click.
+
+<i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i>
+
+Locate Mendix Page, Locate Button, Click, Locate Popup Page, Locate Textbox, Fill text, Locate Button, Click.
 
 ### Stop Test
 
