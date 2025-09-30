@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Here you can find the definitions for the most important terminology used in Menditect Test Automation, or MTA.
 
-MTA is a Mendix App, developed and maintained by Menditect, that can be used for Automated Testing other Mendix Apps. MTA can be hosted by Menditect in the Mendix cloud, or hosted by the customer, either in the cloud or on-premises. MTA uses information about the Mendix model, like microflows and entities, for test design. Test scripts are defined inside MTA but executed on an Instance of the Mendix App under test. Test Run Results can be viewed inside MTA. 
+MTA is a Mendix App, developed and maintained by Menditect, that can be used for Automated Testing other Mendix Apps. MTA can be hosted by Menditect in the Mendix cloud, or hosted by the customer, either in the cloud or on-premises. MTA uses information about the Mendix model, like microflows and entities, for test design. Test scripts are defined inside MTA but executed on an Instance of the Mendix App under test. Test Run Results can be viewed inside MTA, or downloaded into a separate BI tool by using the MTA API. 
 
 
 # How to use
