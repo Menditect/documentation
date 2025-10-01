@@ -25,8 +25,7 @@ Below are the system requirements in order use MTA to test your Mendix Apps.
 - Mendix Studio Pro installation if you need to configure your Apps.
 
 
-## Need help now?
+## Contact Menditect Support
 
-*Contact Menditect Support*
-- [+3185 – 4010494](tel:+31854010494)
-- [support@menditect.com](mailto:support@menditect.com)
+<a href="tel:+31854010494"><i class="fa-solid fa-phone-flip"></i> +3185 – 4010494</a><br/>
+<a href="mailto:support@menditect.com"><i class="fa-solid fa-envelope"></i>  support@menditect.com</a>

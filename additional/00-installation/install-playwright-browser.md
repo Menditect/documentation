@@ -1,16 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Host Playwright Browsers
+# Install Playwright Browser
 
 ## Purpose
 
 This document describes the options to host a [Playwright Browser](https://playwright.dev/java/docs/browsers), which is required to run a Frontend Test with MTA.
 
-When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.
-
-![Playwright Setup](../images/pw_setup.png)
+When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. <!--In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.![Playwright Setup](../images/pw_setup.png)-->
 
 Currently, there are 3 supported options to host a Playwright Browser:
 1. From within the Mendix project (local only)
@@ -20,6 +18,14 @@ Currently, there are 3 supported options to host a Playwright Browser:
 :::info Mendix Cloud
 Option 1 is only available for a local machine, because Mendix does not allow for third party frameworks, like Playwright, to load its own dependencies. It is required to host the Playwright Browser elsewhere in the cloud when running the Mendix App in the cloud.
 :::
+
+### Prerequisites
+
+- Make sure that the [MTA Plugin](../../../tools/mta-plugin) module is [imported and configured](import-plugin).
+- Start by importing the [Playwright Connector](../../../tools/playwright-connector).
+- Then import the [Frontend Test Kit](../../../tools/playwright-testkit) to start testing the most common Mendix Widgets. 
+- Add both the Module Roles to the project's User Role(s) that will be used to execute Frontend Tests.
+
 
 ## Run Playwright Locally
 
@@ -63,9 +69,8 @@ This should be noted in the documentation in the Mendix Marketplace.
 You cannot navigate to `localhost`, because the localhost will point to inside the virtualized container. You have to navigate to http://hostmachine:8080 (assuming the Test Application is running on port 8080). This will only work if you correctly executed step 10.
 :::
 
-## Next step for Frontend Testing
 
-[Connect Playwright to MTA](../connect-mta/connect-playwright-to-mta)
+
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

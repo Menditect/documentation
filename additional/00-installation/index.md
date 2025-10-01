@@ -2,22 +2,23 @@
 sidebar_position: 1
 ---
 
+# Install MTA
 
-# Manage your own MTA deployment
+This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted. This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod, or an on-premise installation.  
 
-## Purpose
+**If Menditect hosts MTA for you, this page is not applicable.**
 
-This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted.
+The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
 
-This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod, or an on-premise installation. The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
+To host MTA, both Mendix Operator and Runtime license are required. <br/>See: https://docs.mendix.com/developerportal/deploy/private-cloud/#request-both-operator-and-runtime-license.
 
-To host MTA, both Mendix Operator and Runtime license are required. See https://docs.mendix.com/developerportal/deploy/private-cloud/#request-both-operator-and-runtime-license.
+## New Installation
+
 
 :::note
 When installing MTA for the first time, always clean up your existing environment first (both the database and the Mendix model).
 :::
 
-## Configuring a new MTA implementation
 
 Required for hosting MTA in the Mendix Cloud is an **M21-STANDARD** cloud resource pack, see [Mendix Cloud Container resources](https://docs.mendix.com/developerportal/deploy/mendix-cloud-deploy/#resource-pack).
 

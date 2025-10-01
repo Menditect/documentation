@@ -83,12 +83,10 @@ The recurring <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i
 
 Pattern examples:
 
-<i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i>
-
+**Click on a row in a Datagrid:**<br/><i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i><br/>
 Locate Mendix Page, Locate DataGrid, Filter by text, Click.
 
-<i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i>
-
+**Show a popup, fill text and close popup:**<br/><i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i><br/>
 Locate Mendix Page, Locate Button, Click, Locate Popup Page, Locate Textbox, Fill text, Locate Button, Click.
 
 ### Stop Test

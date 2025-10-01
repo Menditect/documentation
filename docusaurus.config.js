@@ -134,6 +134,16 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
+        id: 'installation',
+        path: 'additional/00-installation',
+        routeBasePath: 'additional/installation',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      require.resolve('@docusaurus/plugin-content-docs'),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
         id: 'howto',
         path: 'additional/01-howtos',
         routeBasePath: 'additional/howtos',
@@ -154,9 +164,9 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'frontend-testing',
-        path: 'additional/03-frontend-testing',
-        routeBasePath: 'additional/frontend-testing',
+        id: 'knowledge-base',
+        path: 'additional/03-knowledge-base',
+        routeBasePath: 'additional/knowledge-base',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
@@ -222,10 +232,9 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'reference-guide',
+            to: 'additional/installation',
+            label: 'Installation',
             position: 'left',
-            label: 'Reference guide',
           },
           {
             to: 'release-notes',
@@ -233,13 +242,14 @@ const config = {
             position: 'left',
           },
           {
-            to: 'additional/howtos',
-            label: 'How to?',
+            type: 'doc',
+            docId: 'reference-guide',
             position: 'left',
+            label: 'Reference guide',
           },
           {
-            to: 'additional/frontend-testing',
-            label: 'Frontend testing',
+            to: 'additional/howtos',
+            label: 'How to?',
             position: 'left',
           },
           {
@@ -248,8 +258,8 @@ const config = {
             position: 'left',
           },
           {
-            to: 'additional/knownissues',
-            label: 'Known Issues',
+            to: 'additional/knowledge-base',
+            label: 'Knowledge base',
             position: 'left',
           },
           {
