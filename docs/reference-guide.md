@@ -7,13 +7,11 @@ slug: /
 
 Welcome to the [Menditect ®](https://menditect.com) Documentation site.
 
-The **Reference Guide** lists all elements in Menditect Test Automation and supporting modules & extensions.
+**This is the Reference Guide**, covering all topics and components regarding [MTA](mta) and associated [Connectors](Tools). Use the Sidebar to navigate the topics. By default, topics are shown for the latest MTA version that is in production. You can change the version in the Topbar.
 
-By default, the Reference Guide is shown for the latest MTA version that is in production. 
+View [Installation](../additional/installation) for step-by-step instructions on how to install and configure MTA.
 
-It is possible to select the previous version on the top right of the page.
-
-Click on the Menditect logo anytime to return to this page.
+For help on testing specific situations, browse the [How to? pages](../additional/howtos).
 
 ## System requirements
 

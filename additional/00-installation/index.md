@@ -4,9 +4,15 @@ sidebar_position: 1
 
 # Install MTA
 
+:::info License
+MTA is web software as a service, licensed by [Menditect ®](https://menditect.com). <br/>
+Contact [Menditect Sales](mailto:sales@menditect.com) to purchase a license.
+
+If your Menditect license also contains the hosting of MTA, this page is not applicable.
+:::
+
 This document describes the MTA implementation steps for customers that bring their own Mendix license and environment, either local or cloud hosted. This could be any custom cloud environment like a Cloud Foundry or Kubernetes Pod, or an on-premise installation.  
 
-**If Menditect hosts MTA for you, this page is not applicable.**
 
 The main difference with Menditect hosting MTA on the Mendix cloud is that the client is responsible for managing the cloud platform.
 
