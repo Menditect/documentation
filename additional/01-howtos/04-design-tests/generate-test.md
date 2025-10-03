@@ -33,7 +33,7 @@ To Edit the Test Case that MTA has generated, just click on the <i class="fas fa
 
 ### Run Test
 
-If your application is running in Studio Pro, and the [Plugin is connected to MTA](../connect-mta/import-plugin), you can now run your test. 
+If your application is running in Studio Pro, and the [Plugin is connected to MTA](../../installation/import-plugin), you can now run your test. 
 
 Just click on "Execute test case" button in the MTA tab.
 

@@ -27,7 +27,7 @@ This Role can:
 - View and logout active user sessions.
 
 :::note Administrator Account
-Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../howtos/host-and-deploy/manage-mta-deployment).<br/>
+Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../installation).<br/>
 Do not combine this role with other (below) roles.
 :::
 
@@ -50,7 +50,7 @@ This Role can manage [Applications](../../../mta/application), build [Test Confi
 This Role can call endpoints in the [Public API](../../../mta/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
-This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../connect-mta/import-plugin#configuring-connection-user-in-mta).
+This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../../installation/import-plugin#configuring-connection-user-in-mta).
 
 Make sure to regularly change the `MTAConnectionUser` password. 
 

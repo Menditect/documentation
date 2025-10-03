@@ -56,7 +56,7 @@ On the MTA Application itself, **do not** change these values.
 
 #### SAML SSO
 
-- If MTA will be [configured to use SAML SSO](../configure-mta/configure-mta-saml), additionally set these values (otherwise, use the default value):
+- If MTA will be [configured to use SAML SSO](howtos/configure-mta/configure-mta-saml), additionally set these values (otherwise, use the default value):
 
 | Environment variable        | value                   |
 | --------------------------- | ----------------------- |
@@ -109,7 +109,7 @@ Preparation is recommended to make sure that your data will be migrated successf
 - Check all the values of the Constants for the Mendix model (see above).
 - Verify that all Scheduled Events are Enabled.
 - Start the MTA Application.
-- Restart Test Applications Instances, or use the [Plugin Home Page](../connect-mta/import-plugin#configuring-plugin-home-page) to ensure they are connected to MTA.
+- Restart Test Applications Instances, or use the [Plugin Home Page](installation/import-plugin#configure-plugin-home-page) to ensure they are connected to MTA.
 - Login to MTA as Tester.
 - Wait until the migration process is done. If the migration fails, contact Menditect support (support@menditect.com).
 - Check if the test configurations can be executed.
@@ -119,7 +119,7 @@ Preparation is recommended to make sure that your data will be migrated successf
 
 After updating MTA, make sure that all the test applications have the newest version of the MTA Plugin module installed. 
 
-[Read how to import and configure the Plugin here](../connect-mta/import-plugin)
+[Read how to import and configure the Plugin here](installation/import-plugin)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

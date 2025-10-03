@@ -10,13 +10,13 @@ sidebar_position: 2
 
 ## Installation instructions
 
-Import the MTA Plugin in the [Mendix App](../mta/application) under Test.
+Import the MTA Plugin in the [Mendix App](../../mta/application) under Test.
 
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 
 After you have imported the Plugin into your Mendix App that you want to test with MTA, you can configure the Plugin to connect to MTA.
 
-After logging in as Tester in MTA, it is possible to [register the Mendix App](../mta/application#register-application-in-mta), which will trigger the [creation of an Application Instance](../mta/application-instance#create-an-application-instance), that you need to configure the Plugin.
+After logging in as Tester in MTA, it is possible to [register the Mendix App](../../mta/application#register-application-in-mta), which will trigger the [creation of an Application Instance](../../mta/application-instance#create-an-application-instance), that you need to configure the Plugin.
 
 ### Include After startup microflow
 
@@ -45,7 +45,7 @@ If you have already set the password previously for another App, use that passwo
 To configure the MTA Plugin, there are 5 constants that you have to assign a value. 
 If you are testing an app that is running locally, assign the values in the project configuration settings (Mendix docs: https://docs.mendix.com/refguide/configuration/#2-configuration-settings) but *never* inside the MtaPluginModule. 
 
-To find the values for any of these Constants, simply [open the details of the Application Instance](../mta/application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
+To find the values for any of these Constants, simply [open the details of the Application Instance](../../mta/application-instance#view-application-instances-for-an-application) in MTA and click on a Copy button. 
 
 :::warning
 Never set these constants on a Production environment!
@@ -53,7 +53,7 @@ Never set these constants on a Production environment!
 
 #### `ApplicationInstanceToken`
 This corresponds with an ID that MTA has generated for an Application Instance. 
-You can set this constant after you have [added an Application Instance](../mta/application-instance#create-an-application-instance) in MTA.
+You can set this constant after you have [added an Application Instance](../../mta/application-instance#create-an-application-instance) in MTA.
 
 #### `ConnectionMethod`
 This will determine if your app will try to connect to MTA, either

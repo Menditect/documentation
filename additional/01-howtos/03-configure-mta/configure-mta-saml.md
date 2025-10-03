@@ -13,7 +13,7 @@ This document does *not* describe how to test an application using SSO authentic
 ## Enable SAML SSO
 The SAML20 module, and the necessary dependency modules, have been imported into MTA. 
 
-If you have a on-premises license, please follow the [run mta on premises](../host-and-deploy/manage-mta-deployment#saml-sso) howto for SAML SSO first.
+If you have a on-premises license, please follow the [run mta on premises](../../installation#saml-sso) howto for SAML SSO first.
 
 If Menditect is hosting MTA for you, please [contact support](mailto:support@menditect.com) to have it enabled. 
 
@@ -63,7 +63,7 @@ Configure your IdP to use a SAML "Attribute" Assertion, as follows.
 - if the value is 'CiCdApiUser', then the 'CiCdApiUser' role will be assigned;
 ```
 
-When assigning the 'Administrator' role, MTA must be configured to [run on-premises](../host-and-deploy/manage-mta-deployment).
+When assigning the 'Administrator' role, MTA must be configured to [run on-premises](../../installation).
 
 More about User Roles can be found in the [Manage Accounts howto](manage-accounts#mta-user-roles).
 

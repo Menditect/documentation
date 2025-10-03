@@ -14,7 +14,7 @@ This can be useful to prepare for a first time implementation, a deep dive, or a
 
 *For each Mendix App to be tested in MTA, this action needs to be performed. *
 
-Follow the steps described [here](../connect-mta/import-plugin) to complete this action.
+Follow the steps described [here](../../installation/import-plugin) to complete this action.
 
 ## 2. Enable microflow testing for page calls
 
