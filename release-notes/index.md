@@ -25,6 +25,17 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality 
 
+MTA-2018
+Test Case and Teststep Exception handling and Assert on Teststep Exception
+
+MTA-2011
+Reducing UI/UX complexity by splitting up test process into 3 sub processes; Test Design, Asserts and Datavariation
+
+MTA-1487
+Differentiate between Empty and zero length Strings values.
+
+MTA-2002
+The application filter for the Test Configurations Page will now be stored for the current user.
 
 | ID                    | MTA-xxxx |
 | --------------------- | -------- |
@@ -36,7 +47,8 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Bug fixes
 
-
+MTA-2166
+Limited String values sometimes not shown in results of an executed microflow Teststep that has an Object as return value
 
 | ID                  | (none) |
 | ------------------- | ------ |

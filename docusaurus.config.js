@@ -237,33 +237,33 @@ const config = {
             position: 'left',
           },
           {
-            to: 'release-notes',
-            label: 'Release notes',
-            position: 'left',
-          },
-          {
             type: 'doc',
             docId: 'reference-guide',
             position: 'left',
             label: 'Reference guide',
           },
           {
+            type: 'docsVersionDropdown',
+            position: 'left',
+          },
+          {
+            to: 'release-notes',
+            label: 'Release notes',
+            position: 'right',
+          },
+          {
             to: 'additional/howtos',
             label: 'How to?',
-            position: 'left',
+            position: 'right',
           },
           {
             to: 'additional/bestpractice',
             label: 'Best Practice',
-            position: 'left',
+            position: 'right',
           },
           {
             to: 'additional/knowledge-base',
             label: 'Knowledge base',
-            position: 'left',
-          },
-          {
-            type: 'docsVersionDropdown',
             position: 'right',
           },
           {
