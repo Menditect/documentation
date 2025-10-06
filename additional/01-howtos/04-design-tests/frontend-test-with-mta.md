@@ -16,6 +16,8 @@ Each frontend test has the same basic structure:
 
 ### Start Test
 
+<!-- verwijzen naar de pagina waarom je deze keuze moet maken en hoe je dat doet -->
+
 **1. How do you want to start the Browser?**
 
 | Connection Method         | Add Teststep that Calls Microflow                        |
@@ -97,6 +99,12 @@ The recurring pattern of Teststeps for frontend testing a Mendix App:
 
 **Click on a row in a Datagrid:**
 
+
+<!-- waarom moet ik extra actie doen? doel is uniciteit; uitleggen, verwijzen naar knowledge base, er zijn meerdere manieren -->
+<!-- zowel in de browser extensie als in MTA krijg je een hint dat dit nodig zou kunnen zijn -->
+<!-- generieke eigenschappen van mendix pagina's en consequenties voor playwright uitleggen in knowledge base -->
+
+
 |     | Type          | Description                        |
 | --- | ------------- | ---------------------------------- |
 | 1   | Locate Page   | Locate the main page               |
@@ -124,6 +132,8 @@ The recurring pattern of Teststeps for frontend testing a Mendix App:
 ### Assertions
 
 An assertion in frontend testing will check if a certain fact about a Locator is true. An assertion in frontend testing behaves differently from an [MTA Assert](../../../mta/Assert). If the certain fact about the Locator is false, the assertion has failed, and a [Teststep Exception](../../../mta/teststep-exception) will be thrown. It is possible to handle this exception using an Exception Handler, and continue with the next [Test Case](../../../mta/test-case). It is not advisable to continue with the next [Teststep](../../../mta/Teststep), because the rest of the actions will most likely also fail.
+
+<!-- doorlinken naar de juiste paragraaf van test case exception handling -->
 
 Learn more about Playwright Assertions here: https://playwright.dev/java/docs/test-assertions
 
@@ -169,6 +179,10 @@ At the end of the Test Configuration, to unload the Playwright libraries from me
 
 ## Generic App testing
 
+
+<!-- dit is een aparte howto -->
+
+
 To perform an action on an element in the page, the basic structure is to use two microflows; a Locator microflow and an Action microflow. Sometimes calling a second Locator microflow is needed.
 
 In the Playwright Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
@@ -179,6 +193,8 @@ For more advanced usage, checkout the Playwright documentation for [Locators](ht
 
 
 ### Session handling
+
+<!-- dit is een conceptuele uitleg van test case sessies vs playwright sessies, dat moet apart, evt met visuele uitleg erbij -->
 
 The [Test Case](../../../mta/test-case) containing the Teststeps should be using an Account with dedicated UserRoles in the Connector & UI Test Kit Playwright modules (for example, `UiTestUser`) as an Execution user, with the Apply-security Enabled. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. 
 

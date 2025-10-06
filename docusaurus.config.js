@@ -237,19 +237,21 @@ const config = {
             position: 'left',
           },
           {
-            type: 'doc',
-            docId: 'reference-guide',
-            position: 'left',
             label: 'Reference guide',
-          },
-          {
-            type: 'docsVersionDropdown',
+            to: '/',
             position: 'left',
+            items: [
+              {
+                type: 'docsVersion',
+                to: '/2.10.0',
+                label: '2.10 Reference guide',
+              }
+            ]
           },
           {
             to: 'release-notes',
             label: 'Release notes',
-            position: 'right',
+            position: 'left',
           },
           {
             to: 'additional/howtos',
