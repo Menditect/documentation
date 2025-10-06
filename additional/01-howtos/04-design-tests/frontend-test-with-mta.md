@@ -11,6 +11,7 @@ Make sure to first [prepare the Mendix model for the Frontend Test](../configure
 Each frontend test has the same basic structure:
 - [Start Test](#start-test)
 - [Locators and Actions](#locators-and-actions)
+- [Assertions](#assertions)
 - [Stop Test](#stop-test)
 
 ### Start Test
@@ -66,7 +67,7 @@ Set the remaining parameters, depending on which Microflow you chose.
 
 For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, we've introduced Widget-specific Locators and Actions.
 
-The recurring <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> Teststep pattern for Mendix Apps is:
+The recurring pattern of Teststeps for frontend testing a Mendix App:
 1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class, also see [Prepare for Frontend test](../configure-mta/prepare-frontend-test). 
    - Takes a PageClass String parameter
    - Returns a MxPageLocator object 
@@ -81,13 +82,84 @@ The recurring <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i
 - When the Mendix Widget is inside another Mendix Widget, adding an additional Widget-specific `Locate_MxWidget_...` microflow may be needed.
 - When there are multiple occurences of the same Mendix Widget, for example in a list, adding a Widget-specific `Filter...` or `Nth...` microflow may be needed.
 
-Pattern examples:
+:::info examples below
+:::
 
-**Click on a row in a Datagrid:**<br/><i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i><br/>
-Locate Mendix Page, Locate DataGrid, Filter by text, Click.
+**Click on a button:**
 
-**Show a popup, fill text and close popup:**<br/><i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-1"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i> - <i class="fa-solid fa-2"></i> - <i class="fa-solid fa-3"></i><br/>
-Locate Mendix Page, Locate Button, Click, Locate Popup Page, Locate Textbox, Fill text, Locate Button, Click.
+|     | Type          | Description          |
+| --- | ------------- | -------------------- |
+| 1   | Locate Page   | Locate the main page |
+| 2   | Locate Widget | Locate actionbutton  |
+| 3   | Action        | Click actionbutton   |
+
+****
+
+**Click on a row in a Datagrid:**
+
+|     | Type          | Description                        |
+| --- | ------------- | ---------------------------------- |
+| 1   | Locate Page   | Locate the main page               |
+| 2   | Locate Widget | Locate the datagrid widget         |
+| 3   | Locate Widget | Locate the 2nd row in the datagrid |
+| 4   | Action        | Click datagrid row                 |
+
+****
+
+**Show a popup, fill text and close popup:**
+
+|     | Type          | Description            |
+| --- | ------------- | ---------------------- |
+| 1   | Locate Page   | Locate the main page   |
+| 2   | Locate Widget | Locate actionbutton    |
+| 3   | Action        | Click actionbutton     |
+| 4   | Locate Page   | Locate the popup page  |
+| 5   | Locate Widget | Locate textbox         |
+| 6   | Action        | Fill textbox with text |
+| 7   | Locate Widget | Locate actionbutton    |
+| 8   | Action        | Click actionbutton     |
+
+****
+
+### Assertions
+
+An assertion in frontend testing will check if a certain fact about a Locator is true. An assertion in frontend testing behaves differently from an [MTA Assert](../../../mta/Assert). If the certain fact about the Locator is false, the assertion has failed, and a [Teststep Exception](../../../mta/teststep-exception) will be thrown. It is possible to handle this exception using an Exception Handler, and continue with the next [Test Case](../../../mta/test-case). It is not advisable to continue with the next [Teststep](../../../mta/Teststep), because the rest of the actions will most likely also fail.
+
+Learn more about Playwright Assertions here: https://playwright.dev/java/docs/test-assertions
+
+
+:::info examples below
+:::
+
+**Check if page title matches expected text**
+
+|     | Type        | Description            |
+| --- | ----------- | ---------------------- |
+| 1   | Locate Page | Locate the main page   |
+| 2   | Assertion   | Assert Page title text |
+
+****
+
+**Check if a certain image is visible**
+
+|     | Type          | Description             |
+| --- | ------------- | ----------------------- |
+| 1   | Locate Page   | Locate the main page    |
+| 2   | Locate Widget | Locate image            |
+| 4   | Assertion     | Assert image is visible |
+
+****
+
+**Check if a button can be clicked**
+
+|     | Type          | Description                    |
+| --- | ------------- | ------------------------------ |
+| 1   | Locate Page   | Locate the main page           |
+| 2   | Locate Widget | Locate actionbutton            |
+| 4   | Assertion     | Assert actionbutton is enabled |
+
+****
+
 
 ### Stop Test
 

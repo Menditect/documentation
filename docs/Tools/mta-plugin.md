@@ -6,10 +6,9 @@ sidebar_position: 1
 
 ## Purpose
 
-It is required to import The MTA Plugin in the Mendix App under test, in order to execute a test from MTA.
+In order for MTA to communicate with the [Application Instance](../mta/application-instance) under test, you need to import the MTA Plugin module created by Menditect that will initiate this communication. 
 
-In order for MTA to communicate with the [Application Instance](../mta/application-instance) under test, you need to import this module created by Menditect that will initiate this communication. 
-
+The MTA Plugin triggers the execution of a test and returns the results of the test to MTA.
 
 ## Supported Versions
 

@@ -4,13 +4,13 @@ sidebar_position: 2
 
 # Install MTA Plugin
 
+You can watch this video to view the configuration steps that are described below.
+
 <iframe src="https://player.vimeo.com/video/846213936?h=494a93fd4f" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
 
 ## Installation instructions
 
-Import the MTA Plugin in the [Mendix App](../../mta/application) under Test.
+Import the [MTA Plugin](../../Tools/mta-plugin) in the [Mendix App](../../mta/application) under Test.
 
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 
