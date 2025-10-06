@@ -1,6 +1,6 @@
 {
     "editor.formatOnSave": true,
     "[markdown]": {
-        "editor.wordWrap": "off"
+        "editor.wordWrap": "on"
     }
 }
