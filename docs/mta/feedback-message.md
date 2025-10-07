@@ -13,9 +13,9 @@ A Feedback Message occurs in a [Test Run](test-run), as a result of a "Validatio
 Feedback Messages in MTA are indicated by the <i class="fal fa-message-check"></i> icon.
 
 ## Properties
-| Name    | Description       |
-| ------- | ----------------- |
-| Message | The message text. |
+
+### Message
+The message text.
   
 ## Business rules
 

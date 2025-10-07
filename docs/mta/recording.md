@@ -8,10 +8,12 @@ sidebar_position: 19
 It is possible to automatically generate Teststeps by creating a recording. MTA bases these Teststeps on intercepted user actions that are executed on an [Application Instance](application-instance). 
 
 ## Properties
-| Name                            | Description                                                                                |
-| ------------------------------- | ------------------------------------------------------------------------------------------ |
-| Max. duration recording (s)     | The number of seconds that MTA will intercept user actions before the recording times out. |
-| Max. number of recorded actions | The maximum number of intercepted user actions to store in MTA.                            |
+
+### Max. duration recording (s)
+The number of seconds that MTA will intercept user actions before the recording times out.
+
+### Max. number of recorded actions
+The maximum number of intercepted user actions to store in MTA.
 
 ## Business rules 
 - If the recording times out, no Teststeps will be created. 

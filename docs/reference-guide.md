@@ -7,7 +7,7 @@ slug: /
 
 Welcome to the [Menditect ®](https://menditect.com) Documentation site.
 
-**This is the Reference Guide**, covering all topics and components regarding [MTA](mta) and associated [Connectors](Tools). Use the Sidebar to navigate the topics. By default, topics are shown for the latest MTA version that is in production. You can change the version in the Topbar.
+**This is the Reference Guide**, covering all topics and components regarding [MTA](mta), associated [Connectors](Tools) and the documentation of the [Public API](api). Use the Sidebar to navigate the topics. By default, topics are shown for the latest MTA version that is in production. It is also possible to view the Reference Guide of the previous version.
 
 View [Installation](../additional/installation) for step-by-step instructions on how to install and configure MTA.
 

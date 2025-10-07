@@ -17,10 +17,11 @@ When using MTA's [Public API](api#post-execute-testconfiguration), an [Applicati
 
 ## Properties
 
-| Name       | Description                                    |
-| ---------- | ---------------------------------------------- |
-| Name       | The name of the Test Setting.                  |
-| Preference | When yes, select this Test Setting to execute. |
+### Name
+The name of the Test Setting.
+
+### Preference
+When yes, select this Test Setting to execute.
 
 ## Business rules
 

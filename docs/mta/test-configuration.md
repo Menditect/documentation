@@ -14,10 +14,13 @@ A Test Configuration is an executable test script that describes which [Test Sui
 The Test Configuration is the highest or first level of the 4-layer framework that is used in MTA. 
 
 ## Properties
-| Name         | Description                                                                                                                    |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Name         | The name of the Test Configuration.                                                                                            |
-| CiCd enabled | If set to Yes, the Test Configuration will be executed if one of it is associated Test Applications is executed via Ci/Cd API. |
+
+### Name
+The name of the Test Configuration.
+
+## Description
+A description of the Test Configuration.
+
 
 ## Business rules
 

@@ -9,14 +9,24 @@ sidebar_position: 9
 Subscribing to a branch in a [Test Configuration](test-configuration) will make MTA poll for new [Revisions](application-revision) (commits) on that branch and automatically download them in the background. 
 
 ## Properties
-| Name                | Description                                                                                                                                                                                                                  |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application         | The Application where the Branch Subscription is made on. This can be any published free or licensed Mendix App.                                                                                                             |
-| Test Configuration  | The Test Configuration where the Branch Subscription is created in.                                                                                                                                                          |
-| Branch              | The branch where MTA will poll for new revisions.                                                                                                                                                                            |
-| Polling frequency   | This how often the branch is checked for a new revision (High, Medium, Low).                                                                                                                                                 |
-| Adapt automatically | Select "Latest application revision" to [adapt the Test Configuration](application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) automatically after the revision was downloaded. |
-| Mendix user         | The Mendix user linked to the Account that created the Branch Subscription, that is used to authorize when polling and downloading revisions from Mendix.                                                                    |
+
+### Application         
+The Application where the Branch Subscription is made on. This can be any published free or licensed Mendix App.                                                                                                             |
+
+### Test Configuration  
+The Test Configuration where the Branch Subscription is created in.                                                                                                                                                          |
+
+### Branch              
+The branch where MTA will poll for new revisions.                                                                                                                                                                            |
+
+### Polling frequency   
+This how often the branch is checked for a new revision (High, Medium, Low).                                                                                                                                                 |
+
+### Adapt automatically 
+Select "Latest application revision" to [adapt the Test Configuration](application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) automatically after the revision was downloaded. |
+
+### Mendix user         
+The Mendix user linked to the Account that created the Branch Subscription, that is used to authorize when polling and downloading revisions from Mendix.                                                                    |
 
 ## Business rules
 - If the Account of the user that created the Branch Subscription is deleted, the subscription will be deactivated. The subscription can be [repaired](#repair-a-branch-subscription) by anyone having access to the same [Application](application).
@@ -71,4 +81,4 @@ A Branch Subscription that is invalid will show as <font color="#f99b1d"> <i cla
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 October 2024
+Last updated 7 October 2025

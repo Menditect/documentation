@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # MTA Connectors
@@ -13,7 +13,7 @@ These modules are **required** to be imported in the Mendix App under test:
 
 # How to use
 
-Pages in this section will describe details about of each Module / Extension, for the selected MTA version (shown in the top right).
+Pages in this section will describe details about of each Module / Extension.
 - Purpose
 - Supported Versions
 - Installation instructions

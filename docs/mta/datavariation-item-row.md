@@ -19,11 +19,17 @@ It is **not possible** to import a CSV or Excel file into the datavariation, for
 :::
 
 ## Properties
-| Name           | Description                                                                                                                                                                                                                                                              |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Type           | There are two types: <br /> - Attribute value, where an attribute is assigned a value, or a microflow parameter is given a value; <br /> - Assert, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Datavariation page.<br /> |
-| Attribute name | The name of the attribute.                                                                                                                                                                                                                                               |
-| Value          | The value of the attribute or assert.                                                                                                                                                                                                                                    |
+
+### Type
+There are two types: 
+- `Attribute value`, where an attribute is assigned a value, or a microflow parameter is given a value; 
+- `Assert`, where the value of an attribute is checked. Asserts are recognizable by the "=" sign on the Datavariation page.<br />
+
+### Attribute name
+The name of the attribute.
+
+### Value
+The value of the attribute or assert.
 
 ## Business rules
 

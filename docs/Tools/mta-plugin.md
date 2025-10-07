@@ -10,6 +10,8 @@ In order for MTA to communicate with the [Application Instance](../mta/applicati
 
 The MTA Plugin triggers the execution of a test and returns the results of the test to MTA.
 
+The Installation Guide covers instructions on how to install and configure the MTA Plugin.
+
 ## Supported Versions
 
 ### Plugin version vs MTA version

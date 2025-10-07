@@ -12,18 +12,37 @@ A Coverage Calculation can be associated to a [Test Configuration](test-configur
 
 
 ## Properties
-| Name             | Description                                                                                                                                |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| CalculationDate  | The date and time when the [Coverage Goal](coverage-goal) was calculated.                                                                  |
-| App revision     | The [Application Revision](application-revision) that was used to evaluate and calculate the Coverage Goal.                                |
-| Total #          | The total number of microflows in the App revision.                                                                                        |
-| Excluded #       | The number of microflows that was excluded after evaluating the Coverage Goal.                                                             |
-| Included #       | The number of microflows that was included after evaluating the Coverage Goal, <br/> and used to calculate the Coverage Goal.              |
-| Executed excl. # | The number of microflows that were executed but not included in the Coverage Goal.                                                         |
-| Executed incl. # | The number of microflows that were executed and included in the Coverage Goal.                                                             |
-| Not executed #   | The number of microflows that were not executed.                                                                                           |
-| Coverage %       | The coverage percentage (Executed incl devided by Included).                                                                               |
-| Trend %          | The absolute difference in coverage percentage of this Calculation, <br/> compared to the previous Calculation for the same Coverage Goal. |
+
+### CalculationDate  
+The date and time when the [Coverage Goal](coverage-goal) was calculated.          
+
+### App revision     
+The [Application Revision](application-revision) that was used to evaluate and calculate the Coverage Goal.            
+
+### Total \#          
+The total number of microflows in the App revision.              
+
+### Excluded \#       
+The number of microflows that was excluded after evaluating the Coverage Goal.     
+
+### Included \#       
+The number of microflows that was included after evaluating the Coverage Goal, <br/> and used to calculate the Coverage Goal.            
+
+### Executed excl. \# 
+The number of microflows that were executed but not included in the Coverage Goal. 
+
+### Executed incl. \# 
+The number of microflows that were executed and included in the Coverage Goal.     
+
+### Not executed \#   
+The number of microflows that were not executed. 
+
+### Coverage %       
+The coverage percentage (Executed incl devided by Included).     
+
+### Trend %          
+The absolute difference in coverage percentage of this Calculation, <br/> compared to the previous Calculation for the same Coverage Goal. 
+
 
 
 
@@ -64,4 +83,4 @@ A Coverage Calculation can be associated to a [Test Configuration](test-configur
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 24 June 2024
+Last updated 7 October 2025

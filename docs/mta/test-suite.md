@@ -13,11 +13,15 @@ A Test Suite is an executable part of a [Test Configuration](test-configuration)
 The Test Suite is the second level of the 4-layer framework that is used in MTA. It allows for a Test Configurations to be split up into different functional or technical aspects of the tested software. It is possible to define [Data Variation](datavariation) on the Test Suite level. 
 
 ## Properties
-| Name        | Description                                                                                                                                                                             |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name        | The name of the Test Suite.                                                                                                                                                             |
-| Description | The description of the Test Suite.                                                                                                                                                      |
-| Status      | Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured. |
+
+### Name
+The name of the Test Suite.
+
+### Description
+A description of the Test Suite.
+
+### Status
+Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured.
   
 ## Business rules
 

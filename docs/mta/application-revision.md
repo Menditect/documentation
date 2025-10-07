@@ -7,21 +7,35 @@ sidebar_position: 6
 
 ## Definition
 
-An Application Revision is a development version of a Mendix [Application](application). Revisions are created when Mendix model changes are commited in Mendix Studio Pro or Mendix Studio.
+An Application Revision is a development version of a Mendix [Application](application) at a moment in time; a single commit either in Git or SVN. Revisions are created when Mendix model changes are commited to Teamserver in Mendix Studio Pro.
 
 See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#revision) for more information about revisions.
 
 ## Properties
-| Name               | Description                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------- |
-| Author             | The creator of the revision (committer).                                                                 |
-| Commit message     | The description added to the commit action. Typically this contains information about the model changes. |
-| Create commit date | The date when the revision is created (or the commit is done).                                           |
-| Mendix version     | The version of Mendix Studio (Pro) in which the Application is developed.                                |
-| Commit id          | The commit number of the model of the Mendix application.                                                |
-| Total modules      | The total number of modules in application revision.                                                     |
-| Total entities     | The total number of entities in application revision.                                                    |
-| Total microflows   | The total number of microflows in application revision.                                                  |
+
+### Author 
+The creator of the revision (committer).  
+ 
+### Commit message  
+The description added to the commit action. Typically this contains information about the model changes.
+
+### Create commit date 
+The date when the revision is created (or the commit is done).  
+
+### Mendix version  
+The version of Mendix Studio (Pro) in which the Application is developed.
+
+### Commit id 
+The commit number of the model of the Mendix application.  
+  
+### Total modules
+The total number of modules in application revision. 
+  
+### Total entities  
+The total number of entities in application revision. 
+ 
+### Total microflows
+The total number of microflows in application revision.
 
 ## Business rules
 - The Application revision information cannot be deleted from MTA if a Test Configuration is using the Application revision.
@@ -95,4 +109,4 @@ Application revisions are cleaned up nightly by MTA if they are no longer in use
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 7 October 2025

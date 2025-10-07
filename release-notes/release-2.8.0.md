@@ -50,10 +50,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-| ID                    | MTA-1662                                                                                             |
-| --------------------- | ---------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The MTA CiCd API v2 that was deprecated since MTA 2.6 has been permanently deleted.                  |
-| __Release actions__   | The MTA CiCd API v2 was replaced by the [MTA Public API](../mta/api) (click to see reference guide). |
+| ID                    | MTA-1662                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------ |
+| __New functionality__ | The MTA CiCd API v2 that was deprecated since MTA 2.6 has been permanently deleted.              |
+| __Release actions__   | The MTA CiCd API v2 was replaced by the [MTA Public API](../api) (click to see reference guide). |
 <br/>
 
 

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Purpose
 
-The purpose of this module is to enable customers who want to use the [MTA Public API](../mta/api) for scheduling the execution of tests in MTA.
+The purpose of this module is to enable customers who want to use the [MTA Public API](../api) for scheduling the execution of tests in MTA.
 
 It is meant to help customers setup their own CI/CD pipeline and to understand how the MTA Public API can be used to achieve this.
 

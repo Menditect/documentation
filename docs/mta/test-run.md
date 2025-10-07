@@ -14,17 +14,33 @@ The results are stored in subsequent Test Suite runs, Test Case runs and Testste
 Regardless of the Scope of a Test Run, Test Suite runs, Test Case runs and Teststep runs are always created.
 
 ## Properties
-| Name                  | Description                                                                                                                                                     |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application Instances | The [Application Instances](application-instance) that were used to execute the Test Run on.                                                                    |
-| Application Revisions | The [Application Revisions](application-revision) that were used to execute the Test Run on.                                                                    |
-| Start date            | The moment when the Test Run was started.                                                                                                                       |
-| Full output           | Determines if the test was executed with "Full output" enabled. Recognizable by the <i class="fal fa-memo-circle-info"></i> icon.                               |
-| Pinned                | If a Test Run is pinned by a user it will not be deleted overnight. Recognizable by the <i class="fas fa-thumbtack"></i> icon.                                  |
-| Result                | The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). |
-| Scope                 | The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case')                                                           |
-| Status                | This indicates if the test is running or not; can be 'Running' or 'Finished'.                                                                                   |
-| Retention period      | Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted.           |
+
+### Application Instances 
+The [Application Instances](application-instance) that were used to execute the Test Run on.
+
+### Application Revisions 
+The [Application Revisions](application-revision) that were used to execute the Test Run on.
+
+### Start date
+The moment when the Test Run was started. 
+
+### Full output 
+Determines if the test was executed with "Full output" enabled. Recognizable by the <i class="fal fa-memo-circle-info"></i> icon. 
+
+### Pinned
+If a Test Run is pinned by a user it will not be deleted overnight. Recognizable by the <i class="fas fa-thumbtack"></i> icon.
+
+### Result
+The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). 
+
+### Scope 
+The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
+
+### Status
+This indicates if the test is running or not; can be 'Running' or 'Finished'. 
+
+### Retention period
+Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
 
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).

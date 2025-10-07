@@ -11,10 +11,12 @@ sidebar_position: 16
 A Datavariation Column represents a single Test Suite Run or Test Case Run that will be executed with the attribute values and assert values that are shown.
 
 ## Properties
-| Name        | Description                                                                                                                                              |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name        | The Name of the Datavariation Column. <br/>This will be shown throughout the Test Run Result pages to reference which Datavariation Column was executed. |
-| Description | The Description of the Datavariation Column.                                                                                                             |
+
+### Name
+The Name of the Datavariation Column. <br/>This will be shown throughout the Test Run Result pages to reference which Datavariation Column was executed.
+
+### Description
+The Description of the Datavariation Column.
 
 ## Business rules
 

@@ -16,7 +16,9 @@ Each frontend test has the same basic structure:
 
 ### Start Test
 
-<!-- verwijzen naar de pagina waarom je deze keuze moet maken en hoe je dat doet -->
+Before you can start the frontend test, you need to decide where the Playwright Browser will be hosted, where the test will be executed in.
+
+For installation instructions, please follow [this page](../../installation/install-playwright-browser).
 
 **1. How do you want to start the Browser?**
 

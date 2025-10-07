@@ -3,12 +3,14 @@
 
 ## Definition
 
-A Teststep Exception occurs in a [Test Run](test-run), as a result of a problem in a [Teststep](Teststep) that was executed.
+A Teststep Exception occurs during the execution of a [Teststep](Teststep/). A Teststep Exception occurs because in the [Application Instance](application-instance) where the test was executed, a Mendix Error occured that was not handled by an [Error Handler](https://docs.mendix.com/refguide/error-handling-in-microflows/).
+
+A Teststep Exception can be handled by a [Teststep Exception Handler](Teststep#exception-handling).
 
 ## Properties
-| Name    | Description       |
-| ------- | ----------------- |
-| Message | The message text. |
+
+### Message
+The Exception message text.
   
 ## Business rules
 

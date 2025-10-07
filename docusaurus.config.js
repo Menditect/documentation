@@ -101,7 +101,7 @@ const config = {
         ],
         versionedLinks: [
           { id: 'application', content: 'mta/application.md', versions: 'ALL' },
-          { id: 'api', content: 'mta/api.md', versions: 'ALL' },
+          { id: 'api', content: 'api.md', versions: 'ALL' },
           { id: 'application-branch', content: 'mta/application-branch.md', versions: 'ALL' },
           { id: 'application-instance', content: 'mta/application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'mta/application-revision.md', versions: 'ALL' },

@@ -21,12 +21,18 @@ If enabled, the Archive function has a slight negative effect on MTA performance
 
 
 ## Properties (Archive Event)
-| Name        | Description                                                                                                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Timestamp   | Date and time of the occurence of the Archive Event.                                                                                                                                                          |
-| Event type  | TestRunArchive: a Test Run that finished was stored in an Archive Event.<br/> TestRunArchiveEnabled: someone enabled the Archive function.<br/>TestRunArchiveDisabled: someone disabled the Archive function. |
-| Description | Information that identifies the Archive Event. This could be the Account name of the person who enabled or disabled the Archive function, or information about the Test Run.                                  |
-| Content     | The content of the Archive Event.                                                                                                                                                                             |  |
+
+### Timestamp   
+Date and time of the occurence of the Archive Event.                                                                                                                                                          |
+
+### Event type  
+TestRunArchive: a Test Run that finished was stored in an Archive Event.<br/> TestRunArchiveEnabled: someone enabled the Archive function.<br/>TestRunArchiveDisabled: someone disabled the Archive function. |
+
+### Description 
+Information that identifies the Archive Event. This could be the Account name of the person who enabled or disabled the Archive function, or information about the Test Run.                                  |
+
+### Content     
+The content of the Archive Event.                                                                                                                                                                             |  |
 
 ## Business rules
 
@@ -50,4 +56,4 @@ None.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 23 may 2023
+Last updated 7 October 2025

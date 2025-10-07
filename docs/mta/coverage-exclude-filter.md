@@ -17,10 +17,12 @@ An Exclude Filter can be provided with asterisks (\*) as a **wildcard**.
 Microflows in the Mendix System module are always excluded from coverage calculation.
 
 ## Properties
-| Name                  | Description                       |
-| --------------------- | --------------------------------- |
-| Module Name Filter    | The filter for the module name    |
-| Microflow Name Filter | The filter for the microflow name |
+
+### Module Name Filter
+The filter for the module name
+
+### Microflow Name Filter
+The filter for the microflow name
 
 ## Business rules
 - The Module Name Filter may not be empty and should start with a letter, underscore or asterisk and can only contain letters, digits, underscores and asterisks.
@@ -76,4 +78,4 @@ Clicking on one of the numbers will show which microflows the number relates to.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 24 June 2024
+Last updated 7 October 2025

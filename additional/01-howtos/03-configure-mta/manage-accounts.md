@@ -47,7 +47,7 @@ This is the standard Role for new Accounts.<br/>
 This Role can manage [Applications](../../../mta/application), build [Test Configurations](../../../mta/test-configuration) and [run tests](../../../mta/test-run). 
 
 ### API User
-This Role can call endpoints in the [Public API](../../../mta/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
+This Role can call endpoints in the [Public API](../../../api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
 This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../../installation/import-plugin#configuring-connection-user-in-mta).

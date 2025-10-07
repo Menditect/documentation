@@ -2,7 +2,7 @@
 
 ## Definition
 
-This document describes how to configure MTA to use the [Public API](../../../mta/api).
+This document describes how to configure MTA to use the [Public API](../../../api).
 
 ## Create API user
 

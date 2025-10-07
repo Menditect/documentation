@@ -6,13 +6,15 @@ sidebar_position: 4
 
 ## Definition
 
-A Mendix project that can be added to MTA for test purposes. 
+A Mendix project that can be registered in MTA, enabling it to be tested.
 
 ## Properties
-| Name       | Description                                                |
-| ---------- | ---------------------------------------------------------- |
-| Name       | The name of the project in Mendix teamserver.              |
-| Project ID | The unique identifier of the project in Mendix teamserver. |
+
+### Name       
+The name of the project in Mendix teamserver.     
+
+### Project ID
+The unique identifier of the project in Mendix teamserver.
 
 ## Business rules
 - An MTA user is associated to a Mendix user in MTA. This MTA user can only add Mendix Applications that are registered to the Mendix user. 
@@ -25,11 +27,11 @@ To learn more about configuring an MTA user, read the How To section.
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 
 ### Register Application in MTA
-- Navigate to the "Applications" page .
-- Click on "<i class="fal fa-plus-circle"></i> Add".
+- Use the top menu in MTA to navigate to the "Applications" page .
+- Use the "Add" button to add an Application.
 - Select the Application you want to Add.
 
-:::note
+:::note manual registration
 Apps that are not hosted in the Mendix cloud don't always show in this list.<br/>
 Also, Apps that you have left, may still appear in the list, but cannot be registered in MTA.
 
@@ -57,4 +59,4 @@ The Project ID is the same ID as the "App ID" that can be found in [Mendix Sprin
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 7 October 2025

@@ -15,22 +15,44 @@ A Test Case is always executed on a Test Application and by an execution user. T
 When the Test Suite execution hits the Test Case, the Test Case's Execution User is used to login to the Test Case's Test application. When the Test Case is finished executing, the Execution user will be logged out again. The consequence of this, is that all data that was not saved to the database (either by a Persist Object Teststep or a Commit action in a Microflow), will be permanently lost. This is important to realize during test scripting, because if a subsequent Test Case retrieves data from a Teststep in this Test Case, this action will fail if the data was not saved to the database.
 
 :::info Production security level
-MTA can only test Mendix Apps having [Production Security Level](https://docs.mendix.com/refguide10/app-security/#security-level).
+MTA can only test Mendix Apps having [Production Security Level](https://docs.mendix.com/refguide/app-security/#security-level).
 :::
 
 ## Properties
-| Name                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name                     | The name of the Test Case.                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Test application         | The associated test application to execute the Test Case on.                                                                                                                                                                                                                                                                                                                                                                           |
-| Execution user           | The username to execute the Test Case with. Do NOT use the MTA Plugin User account.                                                                                                                                                                                                                                                                                                                                                    |
-| Apply security           | If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data).                                                                                                                                                                                                                                              |
-| Execution time-out       | The maximum number of seconds this Test Case is allowed to run. If the execution duration takes longer, the execution is aborted.                                                                                                                                                                                                                                                                                                      |
-| Execute with delay       | The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. This is particularly useful when some Mendix code is executed asyncronously in a previous Test Case, and you want to prevent the two Test Cases to run simultaneously.                                                                                                                                          |
-| Rollback after execution | Indicates if all database transactions executed in this Test Case should be rolled back. This enables for unittesting without changing anything in the database. Note that when starting or stopping additional transactions in an executed microflow, this property will not work as expected. Setting this property to Yes will lead to [Construction Errors](construction-error) if subsequent Test Cases depend on this Test Case. |
-| Objective                | The objective of the testcase.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Preconditions            | A description of the preconditions of a Test Case.                                                                                                                                                                                                                                                                                                                                                                                     |
-| Expected result          | A description of the expected result of a Test Case.                                                                                                                                                                                                                                                                                                                                                                                   |
+
+
+### Name
+The name of the Test Case.
+
+### Test application 
+The associated test application to execute the Test Case on. 
+
+### Execution user
+The username to execute the Test Case with. Do NOT use the MTA Plugin User account.
+
+### Apply security
+If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). 
+
+### Exception handling
+Determines if the next Test Case will be executed, if an exception occurs in one of the [Teststeps](Teststep) inside the Test Case, that are not handled by the Teststep.
+
+### Execution time-out 
+The maximum number of seconds this Test Case is allowed to run. If the execution duration takes longer, the execution is aborted.
+
+### Execute with delay 
+The number of milliseconds to wait with executing this Test Case, after the previous Test Case has finished executing. This is particularly useful when some Mendix code is executed asyncronously in a previous Test Case, and you want to prevent the two Test Cases to run simultaneously. 
+
+### Rollback after execution
+Indicates if all database transactions executed in this Test Case should be rolled back. This enables for unittesting without changing anything in the database. Note that when starting or stopping additional transactions in an executed microflow, this property will not work as expected. Setting this property to Yes will lead to [Construction Errors](construction-error) if subsequent Test Cases depend on this Test Case. 
+
+### Objective
+The objective of the testcase. 
+
+### Preconditions 
+A description of the preconditions of a Test Case. 
+
+### Expected result
+A description of the expected result of a Test Case. 
 
 ## Business rules
 
@@ -76,7 +98,7 @@ When generating multiple test cases, best practice is to create a container [tes
 
 ### Execute Test Case
 
-- Use the Execute test case button from the <i class="fal fa-share-nodes"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
+- Use the Execute test case button from the <i class="fas fa-ellipsis"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 

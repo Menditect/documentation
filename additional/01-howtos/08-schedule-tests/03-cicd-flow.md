@@ -1,6 +1,6 @@
 # Automate pipeline
 
-This page should help you automate the scheduling of test execution, using the [MTA Public API](../../../mta/api).
+This page should help you automate the scheduling of test execution, using the [MTA Public API](../../../api).
 
 ## Endpoints
 
