@@ -7,8 +7,7 @@ toc_max_heading_level: 2
 
 This document describes the endpoints of MTA's public API.
 
-To learn **how to** implement the API's in a CI/CD pipeline, read the how-to pages on CI/CD.
-
+Read the Howto section for information on getting started or implementing these endpoints in a development pipeline.
 
 To authorize a session for MTA's public API, use Basic (HTTP) Authorization.
 

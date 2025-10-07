@@ -133,9 +133,7 @@ The recurring pattern of Teststeps for frontend testing a Mendix App:
 
 ### Assertions
 
-An assertion in frontend testing will check if a certain fact about a Locator is true. An assertion in frontend testing behaves differently from an [MTA Assert](../../../mta/Assert). If the certain fact about the Locator is false, the assertion has failed, and a [Teststep Exception](../../../mta/teststep-exception) will be thrown. It is possible to handle this exception using an Exception Handler, and continue with the next [Test Case](../../../mta/test-case). It is not advisable to continue with the next [Teststep](../../../mta/Teststep), because the rest of the actions will most likely also fail.
-
-<!-- doorlinken naar de juiste paragraaf van test case exception handling -->
+An assertion in frontend testing will check if a certain fact about a Locator is true. An assertion in frontend testing behaves differently from an [MTA Assert](../../../mta/Assert). If the certain fact about the Locator is false, the assertion has failed, and a [Teststep Exception](../../../mta/teststep-exception) will be thrown. MTA default behaviour is to stop the test execution if this occors. You can also choose to continue the execution with the next Test Case by enabling a [Test Case Exception Handler](../../../mta/test-case#exception-handling). It is also possible, however not advisable, to continue the execution with the next Teststep by enabling a [Teststep Exception Handler](../../../mta/Teststep#exception-handling), because the rest of the actions will most likely also fail.
 
 Learn more about Playwright Assertions here: https://playwright.dev/java/docs/test-assertions
 
