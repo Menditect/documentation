@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Mendix introduction for testers
 
 ## Why introduce Mendix to testers?

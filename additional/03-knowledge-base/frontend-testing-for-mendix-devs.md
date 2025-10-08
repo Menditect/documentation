@@ -1,4 +1,4 @@
-# The Basics for Mendix Developers
+# Frontend Testing for Mendix Devs
 
 Frontend testing of websites using tools like **Playwright** (or comparable libraries such as Cypress or Puppeteer) is fundamentally achieved through a process that simulates a real user's interaction with the website's **Document Object Model (DOM)**. This is done by combining three core elements: **locators**, **actions**, and **assertions**.
 
