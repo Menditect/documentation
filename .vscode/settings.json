@@ -2,5 +2,6 @@
     "editor.formatOnSave": true,
     "[markdown]": {
         "editor.wordWrap": "on"
-    }
+    },
+    "markdown.extension.toc.updateOnSave": false
 }

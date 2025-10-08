@@ -1,18 +1,18 @@
-# Design Frontend test in MTA
+# Structure a Frontend test in MTA
 
 ## Purpose 
 
-This document describes how to design a Frontend Test in MTA.
+This document describes how to structure a Frontend Test in MTA.
 
 Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test).
 
 ## Mendix App testing
 
 Each frontend test has the same basic structure:
-- [Start Test](#start-test)
-- [Locators and Actions](#locators-and-actions)
-- [Assertions](#assertions)
-- [Stop Test](#stop-test)
+1. [Start Test](#start-test)
+2. [Locators and Actions](#locators-and-actions)
+3. [Assertions](#assertions)
+4. [Stop Test](#stop-test)
 
 ### Start Test
 
@@ -69,7 +69,7 @@ Set the remaining parameters, depending on which Microflow you chose.
 
 ### Locators and Actions
 
-For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, we've introduced Widget-specific Locators and Actions.
+For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, Menditect introduced Widget-specific Locators and Actions.
 
 The recurring pattern of Teststeps for frontend testing a Mendix App:
 1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class, also see [Prepare for Frontend test](../configure-mta/prepare-frontend-test). 
@@ -101,18 +101,18 @@ The recurring pattern of Teststeps for frontend testing a Mendix App:
 
 **Click on a row in a Datagrid:**
 
-
-<!-- waarom moet ik extra actie doen? doel is uniciteit; uitleggen, verwijzen naar knowledge base, er zijn meerdere manieren -->
-<!-- zowel in de browser extensie als in MTA krijg je een hint dat dit nodig zou kunnen zijn -->
-<!-- generieke eigenschappen van mendix pagina's en consequenties voor playwright uitleggen in knowledge base -->
-
-
 |     | Type          | Description                        |
 | --- | ------------- | ---------------------------------- |
 | 1   | Locate Page   | Locate the main page               |
 | 2   | Locate Widget | Locate the datagrid widget         |
 | 3   | Locate Widget | Locate the 2nd row in the datagrid |
 | 4   | Action        | Click datagrid row                 |
+
+Note that you have to add **a second Locator microflow** to find the 2nd row in the datagrid. 
+
+This is necessary because the same Widget occurs multiple times and you have to choose which one to Click.
+
+Also read [Find a Locator](frontend-test-find-locator) to learn more.
 
 ****
 
@@ -177,51 +177,6 @@ To Stop the Frontend Test, simply add a Teststep that calls `MenditectMxUITestKi
 
 At the end of the Test Configuration, to unload the Playwright libraries from memory, call `MenditectPlaywrightConnector.Shutdown_Playwright`.
 
-## Generic App testing
-
-
-<!-- dit is een aparte howto -->
-
-
-To perform an action on an element in the page, the basic structure is to use two microflows; a Locator microflow and an Action microflow. Sometimes calling a second Locator microflow is needed.
-
-In the Playwright Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
-
-Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#properties) that calls the Locator Action microflow.
-
-For more advanced usage, checkout the Playwright documentation for [Locators](https://playwright.dev/java/docs/locators) and [Actions](https://playwright.dev/java/docs/input).
-
-
-### Session handling
-
-<!-- dit is een conceptuele uitleg van test case sessies vs playwright sessies, dat moet apart, evt met visuele uitleg erbij -->
-
-The [Test Case](../../../mta/test-case) containing the Teststeps should be using an Account with dedicated UserRoles in the Connector & UI Test Kit Playwright modules (for example, `UiTestUser`) as an Execution user, with the Apply-security Enabled. Although MTA creates it's own user session to perform actions in a Test Case, it is still necessary to login to the App under test when using MTA. 
-
-The upside of the current implementation is that sessions created by Playwright can be carried onto subsequent Test Cases. Just point to the `MenditectPlaywrightConnector.Page` object that was created in a Test Case, whenever calling a Locator microflow, and the same browser tab will be used to run the test. 
-
-When running Playwright on your local machine from Studio Pro, the free license will only allow for so many user sessions. Therefore, a few tips:
-- prevent using Anonymous sessions;
-- always logout at the end when creating a Playwright session;
-- prevent also manually logging in from your own browser;
-- restart the App if needed.
-
-## Testing Mendix Platform Supported Widgets
-
-[Click here to see a list of recent Platform supported Widgets](https://marketplace.mendix.com/link/supporttype/Platform)
-
-
-## Testing Custom Widgets and Snippets
-
-### Custom Widgets
-
-Mendix will add the "mx-name-`widgetName`" class to every widget on the Page, so it is always possible to create a Locator for the surrounding HTML element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements.
-
-### Snippets
-
-Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. 
-
-In order to define Locators for Widgets inside a Snippet, add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

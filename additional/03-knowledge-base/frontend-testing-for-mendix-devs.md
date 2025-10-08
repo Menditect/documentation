@@ -50,7 +50,7 @@ Once a single element is **located**, the test framework needs to perform a **us
 
 ***
 
-## The Testing Flow
+## The Testing Flow 〰
 
 A typical frontend test follows a simple **"Locate -> Act -> Assert"** loop:
 
