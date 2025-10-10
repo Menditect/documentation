@@ -7,18 +7,17 @@ sidebar_position: 7
 ## Definition
 
 If enabled, the Archive function is meant for MTA customers that require that their [Test Run](test-run) results are persisted over a longer period of time. 
+
 Every Test Run (regardless of the result) is stored in a hierarchical JSON string in an Archive Event. 
-
-However, **only Test Runs of the Full Test Configuration** are archived.
-
-Archive Events are stored in MTA for a trailing period of one year. 
 
 The information in Archive Events can be used for auditing purposes, for example.
 
-:::note
-If enabled, the Archive function has a slight negative effect on MTA performance.
+:::info a few notes
+- Only Test Runs of the Full Test Configuration are archived.
+- Archive Events are stored in MTA for a trailing period of one year. 
+- It is not recommended to use the Archive function for automation purposes since changes in the JSON structure can occur in upcoming MTA releases.
+- If data needs to be persisted in a fixed format and/or for a longer period, use the [API](../api#get-testrun) to retrieve Test Run results and persist these outside of MTA.
 :::
-
 
 ## Properties (Archive Event)
 

@@ -4,7 +4,6 @@
 
 This document describes how to prepare your Mendix model for a Frontend Test in MTA.
 
-Make sure to first [connect Playwright to MTA](../../installation/install-playwright-browser).
 
 ## Preparations
 

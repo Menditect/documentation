@@ -4,7 +4,8 @@
 
 This document describes how to structure a Frontend Test in MTA.
 
-Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test).
+Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and 
+ [host a Playwright Browser](../../installation/install-playwright-browser)..
 
 ## Mendix App testing
 

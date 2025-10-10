@@ -11,9 +11,6 @@ To see an up-to-date list of Mendix Platform supported Widgets: https://marketpl
 :::warning todo
 :::
 
-
-
-
 <!-- waarom moet ik extra actie doen? doel is uniciteit; uitleggen, verwijzen naar knowledge base, er zijn meerdere manieren -->
 <!-- zowel in de browser extensie als in MTA krijg je een hint dat dit nodig zou kunnen zijn -->
 <!-- generieke eigenschappen van mendix pagina's en consequenties voor playwright uitleggen in knowledge base -->
@@ -31,7 +28,7 @@ To see an up-to-date list of Mendix Platform supported Widgets: https://marketpl
 
 In the Playwright Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
 
-Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#properties) that calls the Locator Action microflow.
+Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#delay-after-execution) that calls the Locator Action microflow.
 
 For more advanced usage, checkout the Playwright documentation for [Locators](https://playwright.dev/java/docs/locators) and [Actions](https://playwright.dev/java/docs/input).
 
