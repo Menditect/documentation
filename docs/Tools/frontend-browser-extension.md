@@ -4,7 +4,7 @@ sidebar_position: 4
 
 
 
-#  Extension for Frontend Testing
+# Browser Extension for Frontend Testing
 
 ## Purpose
 

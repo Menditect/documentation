@@ -4,9 +4,21 @@
 
 This document describes how to find a Locator when designing a Frontend Test.
 
+Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and [host a Playwright Browser](../../installation/install-playwright-browser).
+
+
 ## Locators for Platform supported Mendix Widgets
 
 To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
+
+Locating Mendix Widgets is made as simple as possible by Menditect. The first step is to determine the **name of the widget**, for example `actionButton1`, on the Page. 
+
+For **Mendix developers**, the easiest way is to open the Page in Studio Pro and find the name by opening the Properties: https://docs.mendix.com/refguide/common-widget-properties/#name
+
+For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/frontend-browser-extension) created by Menditect to extract the Widget name from the `mx-name-widgetName` CSS class.
+
+
+
 
 :::warning todo
 :::

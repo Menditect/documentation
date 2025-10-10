@@ -4,8 +4,7 @@
 
 This document describes how to structure a Frontend Test in MTA.
 
-Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and 
- [host a Playwright Browser](../../installation/install-playwright-browser)..
+Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and [host a Playwright Browser](../../installation/install-playwright-browser).
 
 ## Mendix App testing
 
@@ -23,11 +22,11 @@ For installation instructions, please follow [this page](../../installation/inst
 
 **1. How do you want to start the Browser?**
 
-| Connection Method         | Add Teststep that Calls Microflow                        |
-| ------------------------- | -------------------------------------------------------- |
-| Start at my local machine | `MenditectPlaywrightConnector.Create_Browser`            |
-| Start at BrowserStack     | `MenditectPlaywrightConnector.Connect_BrowserStack`      |
-| Start at URL              | `MenditectPlaywrightConnector.Connect_Playwright_Server` |
+| Connection Method         | Add Teststep that Calls Microflow                                |
+| ------------------------- | ---------------------------------------------------------------- |
+| Start at my local machine | `MenditectPlaywrightConnector.Start_Test_Locally`                |
+| Start at BrowserStack     | `MenditectPlaywrightConnector.Start_Test_With_BrowserStack`      |
+| Start at URL              | `MenditectPlaywrightConnector.Start_Test_With_Playwright_Server` |
 
 **2. What browser do you want to run your test on?**
 
