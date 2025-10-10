@@ -21,7 +21,7 @@ Assign the same class name on the Page as the Page's Title.
 
 ## Next step for Frontend Testing
 
-[Design Frontend test in MTA](../design-tests/frontend-test-with-mta)
+[Design Frontend test in MTA](../design-tests/frontend-test-structure-in-mta)
 
 
 ## Feedback?
