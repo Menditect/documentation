@@ -1,4 +1,4 @@
-# Generate a test
+# Generate a Microflow test
 
 ## Definition
 

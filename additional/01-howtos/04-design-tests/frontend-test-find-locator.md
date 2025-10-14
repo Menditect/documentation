@@ -4,6 +4,8 @@
 
 This document describes how to find a Locator when designing a Frontend Test.
 
+When designing a Frontend test, defining the right Locator(s) is not always simple. For background information about this challenge, consult the [Knowledge base docs](../../knowledge-base/frontend-testing-for-mendix-devs#locator-challenges).
+
 Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and [host a Playwright Browser](../../installation/install-playwright-browser).
 
 
@@ -11,13 +13,21 @@ Make sure to first [prepare the Mendix model for the Frontend Test](../configure
 
 To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
 
-Locating Mendix Widgets is made as simple as possible by Menditect. The first step is to determine the **name of the widget**, for example `actionButton1`, on the Page. 
+Locating Mendix Widgets is made as simple as possible by Menditect. 
+
+### 1. Determine Widget Name
+
+The first step is to determine the name of the widget, for example `actionButton1`, on the Page. 
 
 For **Mendix developers**, the easiest way is to open the Page in Studio Pro and find the name by opening the Properties: https://docs.mendix.com/refguide/common-widget-properties/#name
 
-For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/frontend-browser-extension) created by Menditect to extract the Widget name from the `mx-name-widgetName` CSS class.
+For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/frontend-browser-extension) created by Menditect to extract the Widget name from the `mx-name-widgetName123` in the CSS.
 
+### 2: Determine parent element
 
+If the parent element is a Mendix Page, the parent will be the relevant `Page` object from the `PlaywrightConnector` module.
+
+However, if the parent 
 
 
 :::warning todo

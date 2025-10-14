@@ -1,4 +1,8 @@
-# Mendix Frontend Testing Challenges Solved by Menditect
+---
+sidebar_position: 3
+---
+
+# Frontend Testing Challenges Solved by Menditect
 
 ## Fragility
 
