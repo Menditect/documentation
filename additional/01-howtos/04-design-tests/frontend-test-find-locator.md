@@ -2,7 +2,7 @@
 
 ## Purpose 
 
-This document describes how to find a Locator when designing a Frontend Test.
+This document describes how to find a Locator when designing a Frontend Test. A Locator is used to uniquely define an element on a webpage, allowing you to perform actions on it.
 
 When designing a Frontend test, defining the right Locator(s) is not always simple. For background information about this challenge, consult the [Knowledge base docs](../../knowledge-base/frontend-testing-for-mendix-devs#locator-challenges).
 
@@ -13,29 +13,44 @@ Make sure to first [prepare the Mendix model for the Frontend Test](../configure
 
 To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
 
-Locating Mendix Widgets is made as simple as possible by Menditect. 
+Locating Mendix Widgets is made as simple as possible by Menditect. For Locating Mendix Widgets, use the microflows and entities from the [Playwright Testkit](../../../Tools/playwright-testkit).
 
 ### 1. Determine Widget Name
 
-The first step is to determine the name of the widget, for example `actionButton1`, on the Page. 
+The first step is to determine the name of the Widget, for example `actionButton1`, on the Page. 
 
 For **Mendix developers**, the easiest way is to open the Page in Studio Pro and find the name by opening the Properties: https://docs.mendix.com/refguide/common-widget-properties/#name
 
 For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/frontend-browser-extension) created by Menditect to extract the Widget name from the `mx-name-widgetName123` in the CSS.
 
-### 2: Determine parent element
+### 2. Determine parent element
 
-If the parent element is a Mendix Page, the parent will be the relevant `Page` object from the `PlaywrightConnector` module.
+The parent is the encompassing element that the Widget from step 1 is in. In order to Locate any Widget using the Playwright Testkit, a parent element needs to be passed as a microflow parameter. In the Playwright Testkit, every element that can be a potential parent element is a specialization of the `MxParentWidgetLocator` entity. 
 
-However, if the parent 
+- Example: microflow `Locate_MxWidget_Button`, uses `MxParentWidgetLocator` as parent element parameter and `WidgetName` as the Widget determining Locator parameter.
 
+#### Situation 1: Parent is the Mendix Page
 
-:::warning todo
-:::
+In most cases, the Mendix Page can be used, meaning that the `MxPageLocator` object from the `Locate_MxPage` microflow can be passed. 
 
-<!-- waarom moet ik extra actie doen? doel is uniciteit; uitleggen, verwijzen naar knowledge base, er zijn meerdere manieren -->
-<!-- zowel in de browser extensie als in MTA krijg je een hint dat dit nodig zou kunnen zijn -->
-<!-- generieke eigenschappen van mendix pagina's en consequenties voor playwright uitleggen in knowledge base -->
+Note that even though the encompassing element on the Mendix Page is not the Page itself, it is still possible to use the `MxPageLocator` object, if the encompassing element does not influence the *multiplicity* or *visibility* of the Widget itself. This is the case for:
+- [Containers](https://docs.mendix.com/refguide/container/)
+- [Layout Grids](https://docs.mendix.com/refguide/layout-grid/)
+- [Dataviews](https://docs.mendix.com/refguide/data-view/)
+- etc. 
+
+You will not find these Widgets as specializations of the `MxParentWidgetLocator` entity in the Playwright Testkit's domain model. 
+
+#### Situation 2: Parent is another Widget
+
+If the encompassing element is a
+- [Datagrid](https://docs.mendix.com/refguide/data-grid/)
+- [Listview](https://docs.mendix.com/refguide/list-view/)
+- [TabContainer](https://docs.mendix.com/refguide/tab-container/)
+- etc.
+
+You **will** find these Widgets as specializations of the `MxParentWidgetLocator` entity in the Playwright Testkit's domain model. 
+
 
 
 ## Locators for Custom Widgets and Snippets

@@ -71,6 +71,8 @@ Set the remaining parameters, depending on which Microflow you chose.
 
 For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, Menditect introduced Widget-specific Locators and Actions.
 
+Read [Find a Locator](frontend-test-find-locator) to learn more about Locators for Mendix Apps.
+
 The recurring pattern of Teststeps for frontend testing a Mendix App:
 1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class, also see [Prepare for Frontend test](../configure-mta/prepare-frontend-test). 
    - Takes a PageClass String parameter
