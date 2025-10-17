@@ -29,10 +29,14 @@ Option 1 is only available for a local machine, because Mendix does not allow fo
 
 ## Run Playwright Locally
 
-Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary jar file (driver-bundle.jar) to the /userlib folder of the Mendix project. 
+Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary `driver-bundle.jar` file to the `/userlib` folder of the Mendix project. 
 
 The currently supported version is 1.53.0. Download it here:<br/>
 https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
+
+:::info reboot needed
+It may be necessary to restart your computer if you want to use a locally-hosted Playwright Browser for the first time.
+:::
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 

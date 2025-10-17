@@ -2,7 +2,7 @@
 
 ## Purpose 
 
-This document describes how to find a Locator when designing a Frontend Test. A Locator is used to uniquely define an element on a webpage, allowing you to perform actions on it.
+This document describes how to find a Locator when designing a Frontend Test. Locators is meant to uniquely find an element on a webpage, allowing you to perform actions on it.
 
 When designing a Frontend test, defining the right Locator(s) is not always simple. For background information about this challenge, consult the [Knowledge base docs](../../knowledge-base/frontend-testing-for-mendix-devs#locator-challenges).
 
