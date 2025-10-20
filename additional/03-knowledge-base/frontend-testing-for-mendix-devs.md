@@ -8,7 +8,7 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 
 ***
 
-## 1. Locators 📍
+## 1. Locators
 
 **Locators** are the mechanism used to find specific elements on a web page. Think of them as the coordinates or unique addresses for elements like buttons, text fields, or links. The most robust and common locators are based on **HTML/CSS attributes**, which ensure the test targets the correct element even if the visual layout changes slightly.
 
@@ -18,6 +18,7 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 * **Text Content:** Locating an element based on the visible text it contains, e.g., finding the button that says "Log In."
 * **Accessibility Roles:** Using attributes like `aria-label` or the element's inherent role (e.g., `role="button"`), which is a modern, reliable approach that aligns tests with user accessibility.
 * **XPath:** A powerful, but sometimes brittle, language for navigating and querying elements in the DOM. Not recommended for Mendix Apps, because even the smallest change will break the Locator.
+* * **Test ID:** Testing by test ids is the most resilient way of testing as even if your text or role of the attribute changes, the test will still pass. The downside is, testing by test ids is not user facing. Unfortunately, Mendix does not offer testing by test ids, because there is no way to uniquely define a test ID on a HTML element in Mendix that will remain unchanged over time.
 
 ### Locator Challenges
 * **Multiplicity:** When a locator (like a CSS selector or XPath) matches multiple elements, the testing framework (e.g., Selenium, Cypress, Playwright) has to make a choice, which can lead to ambiguity. The simplest approach is to select the first matching element. However the element the test intends to interact with might not be the first one. If the page structure changes (e.g., a new, similar element is added earlier in the DOM), the locator will suddenly point to the wrong element, causing the test to interact with the wrong UI component or fail unexpectedly. This means the test is not reliably testing the intended functionality. In Mendix Apps, this challenge is faced when using a Listview, DataGrid or Gallery, or other Widgets with multiple rows or columns.
@@ -27,7 +28,7 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 
 ***
 
-## 2. Actions 🖱️
+## 2. Actions
 
 Once a single element is **located**, the test framework needs to perform a **user action** on it. These actions mimic the input a real user would provide. The library translates high-level commands into lower-level browser operations.
 
@@ -41,7 +42,7 @@ Once a single element is **located**, the test framework needs to perform a **us
 
 ***
 
-## 3. Assertions ✅
+## 3. Assertions
 
 **Assertions** are the final and most crucial step, determining if the application behaves as expected after an action is performed. An assertion is a conditional check; if the condition is **true**, the test passes; if **false**, the test fails.
 

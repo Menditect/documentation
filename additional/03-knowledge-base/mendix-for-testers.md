@@ -50,7 +50,7 @@ Studio Pro elements that we often refer to in this introduction are:
 We also advise the reader to follow the [Mendix Rapid Developer Course.](https://academy.mendix.com/link/certifications/23/rapid) This course not only gives a first hands-on experience on building Mendix applications, it also gives an insight on the way-of-working with Mendix.   
 :::
 
-## The mendix UI 💻
+## The mendix UI
 
 ### The Mendix UI: Understanding page (to page) navigation in a Mendix application
 
@@ -215,7 +215,7 @@ The control over visibility of elements can be controlled by:
 
 It is very hard to determine the actual visibility of specific elements, because they rely heavily on data in the database and the user role. Therefore, it is better to test them (manually or with a test tool) via UI testing if they are of (critical) importance.
 
-## The Mendix domain model 🛢
+## The Mendix domain model
 
 The [Mendix domain model](https://docs.mendix.com/refguide/domain-model/) specifies the data structure of the Mendix app. When building a Mendix app it generates a database.
 
@@ -245,7 +245,7 @@ If, however, objects of the same entity are stored both via Mendix save buttons 
 - a microflow can bypass entity access whereas the Mendix page actions cannot do this  
 - the microflow logic can be different (more strict) than the logic on the domain model
 
-## Mendix backend logic: Microflows ▶️
+## Mendix backend logic: Microflows
 
 ### Microflows explained
 

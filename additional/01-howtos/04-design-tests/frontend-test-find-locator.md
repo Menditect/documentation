@@ -29,15 +29,20 @@ The parent is the encompassing element that the Widget from step 1 is in. In ord
 
 - Example: microflow `Locate_MxWidget_Button`, uses `MxParentWidgetLocator` as parent element parameter and `WidgetName` as the Widget determining Locator parameter.
 
-<font color="#00d46a"><b><i class="fa-solid fa-location-arrow"></i> Situation 1: Parent is the Mendix Page</b></font>
+:::note Situation 1: Parent is the Mendix Page
 
 In most cases, the Mendix Page can be used, meaning that the `MxPageLocator` object from the `Locate_MxPage` microflow can be passed. 
 
 Note that even though the encompassing element on the Mendix Page is not the Page itself, it is still possible to use the `MxPageLocator` object, if the encompassing element does not influence the *multiplicity* or *visibility* of the Widget itself. This is the case for [Containers](https://docs.mendix.com/refguide/container/), [Layout Grids](https://docs.mendix.com/refguide/layout-grid/), [Dataviews](https://docs.mendix.com/refguide/data-view/) etc. 
 
 You will not find these Widgets as specializations of the `MxParentWidgetLocator` entity in the Playwright Testkit's domain model. 
+:::
 
-<font color="#00d46a"><b><i class="fa-solid fa-location-arrow"></i> Situation 2: Parent is another Widget</b></font>
+
+
+:::note Situation 2
+Parent is another Widget
+:::
 
 If the encompassing element is a [Datagrid](https://docs.mendix.com/refguide/data-grid/), [Listview](https://docs.mendix.com/refguide/list-view/), [Tabcontainer](https://docs.mendix.com/refguide/tab-container/), [Template Grid](https://docs.mendix.com/refguide/template-grid/), etc., these will influence either the *multiplicity* or *visibility* of the Widget, and you have to add more Locators, to be more specific.
 

@@ -1,9 +1,9 @@
 ---
-sidebar_class_name: hidden
+sidebar_position: 1
 slug: /
 ---
  
-# Menditect Documentation
+# Reference Guide
 
 Welcome to the [Menditect ®](https://menditect.com) Documentation site.
 

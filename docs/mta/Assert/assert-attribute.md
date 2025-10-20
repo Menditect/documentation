@@ -8,6 +8,11 @@ An Assert on Attribute can be added for a value of an attribute in an Object act
 
 When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep input, the Assert can be applied as a [Data Variation Item](../datavariation-item-row) for each defined variation.
 
+:::note
+An Assert on Attribute is evaluated **for every returned object** of a Teststep. <br/>
+If there are **no objects**, the Assert on Attribute will always **Pass**.
+:::
+
 
 ## Properties
 | Name               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -57,4 +62,4 @@ There are multiple ways to add an Assert on Attribute:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 19 january 2023
+Last updated: 20 October 2025
