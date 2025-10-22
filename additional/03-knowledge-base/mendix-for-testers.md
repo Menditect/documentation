@@ -125,6 +125,8 @@ In order to understand how UI or API based process testing differs from “Direc
 
 There are several types of actions that a page or API can perform.
 
+![Page and API actions](Picture1.png)
+
 These page and API actions can trigger a Mendix backend action of the type “Object action” (create, retrieve, change delete) or “Microflow execution”. When or how the backend is triggered is configured in the Mendix page and API models. In the Mendix runtime this results in communication between the frontend/API and the Mendix backend.   
 The most important actions testers should know about, are explained below.
 
@@ -252,6 +254,8 @@ If, however, objects of the same entity are stored both via Mendix save buttons 
 A [microflow](https://docs.mendix.com/refguide/microflows/) is a visual representation of application logic in a Mendix model. A microflow has (optional) input parameters and a return value. The logic in a microflow is created by creating a chain of activities.
 
 ### Microflow input & output
+
+![Microflow input and output](Picture2.png)
 
 **Explicit input and output: parameters & return type**  
 A microflow can have explicit inputs via [parameters](https://docs.mendix.com/refguide/parameter/). Microflow parameters can be objects, a list of objects or primitive values. A microflow also has one [return type](https://docs.mendix.com/refguide/end-event/#return-type). A return type can also be an object, list of objects or a primitive value. 
