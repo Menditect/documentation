@@ -159,6 +159,16 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
+        id: 'knowledge-base',
+        path: 'additional/05-knowledge-base',
+        routeBasePath: 'additional/knowledge-base',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      require.resolve('@docusaurus/plugin-content-docs'),
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
         id: 'release-notes',
         path: 'release-notes',
         routeBasePath: 'release-notes',
@@ -230,6 +240,11 @@ const config = {
           {
             to: 'additional/knownissues',
             label: 'Known Issues',
+            position: 'left',
+          },
+          {
+            to: 'additional/knowledge-base',
+            label: 'Knowledge base',
             position: 'left',
           },
           {
