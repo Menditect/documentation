@@ -7,6 +7,8 @@ sidebar_position: 19
 
 It is possible to automatically generate Teststeps by creating a recording. MTA bases these Teststeps on intercepted user actions that are executed on an [Application Instance](application-instance). 
 
+Recording user actions only works on Apps created in Mendix 9 LTS and Mendix 10 LTS versions. 
+
 ## Properties
 
 ### Max. duration recording (s)
@@ -47,4 +49,4 @@ Learn more about creating Recordings in the How To and Best Practice sections.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 January 2024
+Last updated 12 November 2025
