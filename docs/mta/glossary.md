@@ -28,7 +28,9 @@ A Filter is an attempt to narrow down a [Locator](#locator) that results in loca
 ## Index
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
-Index is...
+Index is a number that represents a position within a traversable collection. 
+In Mendix the Index is used to indicate the position in a list, grid or other view that shows data from multiple database objects.
+Playwright uses zero-based indexing, meaning the first item in a collection is at Index 0.
 
 ## Input
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
@@ -56,7 +58,9 @@ Pages define the end-user interface of a Mendix application; every Page is based
 Because Mendix Pages can be stacked using the Popup layout, there can be multiple Mendix Pages on a single Playwright [Page](#playwright-page).
 
 ## Nth
-Context: Playwright testing for Mendix
+Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
+
+Nth is a [Filter](#filter) using an [Index](#index) to filter a [Locator](#locator) that results in multiple [Elements](#element), yielding a new [Locator](#locator) that only represents the [Element](#element) on that [Index](#index).
 
 ## Playwright Page
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
