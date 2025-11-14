@@ -11,6 +11,9 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 ## Highlights in this release
+<i class="fas fa-fire"></i>  <b>UI testing now generally available!</b> <br/>  
+- Connector and Test Kit add-ons can be downloaded from the Marketplace.<br/>  
+- Option to Generate UI Teststep(s) from MTA!<br/> <br/>  
 <i class="fas fa-fire"></i>  <b>Test Suite pages completely redesigned!</b> <br/>  
 - Test Cases and Teststeps are now shown in collapsible treeview, on the left side.<br/>  
 - Change Test Case and Teststep Run Settings directly from the detail view, on the right side.<br/>  
@@ -18,35 +21,40 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <i class="fas fa-fire"></i>  <b>Added Test Run Exception handling!</b> <br/>  
 - Choose to either Raise the Exception when it occurs, or just Continue with the Test Run.<br/>  
 - Option to add an Assert on an Exception.<br/> <br/>  
-<i class="fas fa-fire"></i>  <b>UI testing now generally available!</b> <br/>  
-- Connector and Test Kit add-ons can be downloaded from the Marketplace.<br/>  
-- Option to Generate UI Teststep(s) from MTA!<br/> <br/>  
 
 
 ## New functionality 
 
-de oude onofficiele utility module wordt nu officieel ondersteund met helper microflows (check bij Jort de naamgeving)
-Chrome en Firefox extensies om te helpen met Locators bouwen bij frontend testing
 
 MTA-2071
-frontend testing wizard(s) en add frontend test functie
-
-MTA-2041
-Textboxes to enter String values are now replaced by Testareas to allow entering new lines.
-Additionally, String values can be shown as a JSON tree in a popup.
+MTA now fully supports frontend testing a Mendix Application. 
+Menditect has made the required Playwright modules publicly available in the Mendix Marketplace.
+When these are downloaded into the Mendix model, it is possible to generate Frontend Test Cases in MTA. 
+With the Frontend Test Case structure in place, 
+it is possible to add Teststeps that consistently Locate any Platform Supported Mendix Widget on a Mendix Page, 
+and perform subsequent Actions on it.
 
 MTA-2126
 After an Application was added to MTA, it is possible to Enable loading Pages and Widgets on that Application.
 When enabled, MTA now also downloads Page and Widget information when downloading a revision with Mendix model information.
 
-MTA-2017
-It is now possible to Export a Snapshot to a JSON file, if it was created before a Test Configuration was adapted to another Revision, and the adapt failed.
+MTA-2011
+@complete redesign in the UI of the test suite page 
+@complete redesign in the UI of the test suite run page
+
 
 MTA-2018
 Added Test Case and Teststep Exception handling and Assert on Teststep Exception. 
 It is now possible to continue with the next Teststep upon an Exception, or continue with the next Test Case.
 Additionally, it is possible to Assert that an Exception is expected, enabling the option to have a Test Run succeed with Exceptions.
 Breaking change: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.
+
+MTA-2041
+Textboxes to enter String values are now replaced by Testareas to allow entering new lines.
+Additionally, String values can be shown as a JSON tree in a popup.
+
+MTA-2017
+It is now possible to Export a Snapshot to a JSON file, if it was created before a Test Configuration was adapted to another Revision, and the adapt failed.
 
 MTA-2204
 The SAML SSO module in MTA was updated to 3.6.21 because of a security breach found at Siemens.
@@ -74,27 +82,27 @@ Support form is now opened in a new browser tab instead of a popup.
 This is done to enable customers hosting MTA themselves. 
 Use the `MtaUtils.UrlSupportForm` constant to set the URL.
 
-MTA-2011
-complete redesign in the UI of the test suite page 
-complete redesign in the UI of the test suite run page
-
 
 MTA-2002
 The application filter for the Test Configurations Page will now be stored for the current user.
 
 
 
-## Unclear
+### Unclear
 
-STATUS? MTA-2200
+- de oude onofficiele utility module wordt nu officieel ondersteund met helper microflows (check bij Jort de naamgeving)
+
+- Chrome en Firefox extensies om te helpen met Locators bouwen bij frontend testing
+
+- STATUS? MTA-2200
 content hash; export van microflows met bijbehorende content hash, zodat klanten zelf inzicht kan krijgen in de aangepaste microflows per revisie
 
-STATUS? MTA-1487
+- STATUS? MTA-1487
 Differentiate between Empty and zero length Strings values.
 
-STATUS? MTA-2166 
+- STATUS? MTA-2166 
 
-STATUS? MTA-2115
+- STATUS? MTA-2115
 
 
 | ID                    | MTA-xxxx |
