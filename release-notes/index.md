@@ -2,7 +2,7 @@
 
 #### Release date
 
-3 November 2025
+17 December 2025
 
 #### Supported Mendix versions
 
@@ -11,9 +11,9 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 ## Highlights in this release
-<i class="fas fa-fire"></i>  <b>UI testing now generally available!</b> <br/>  
-- Connector and Test Kit add-ons can be downloaded from the Marketplace.<br/>  
-- Option to Generate UI Teststep(s) from MTA!<br/> <br/>  
+<i class="fas fa-fire"></i>  <b>Frontend testing now generally available!</b> <br/>  
+- Just download the Connector and Test Kit modules from the Marketplace.<br/>  
+- MTA will show options to prepare the Frontend Test Case structure and Generate Frontend Teststeps!<br/> <br/>  
 <i class="fas fa-fire"></i>  <b>Test Suite pages completely redesigned!</b> <br/>  
 - Test Cases and Teststeps are now shown in collapsible treeview, on the left side.<br/>  
 - Change Test Case and Teststep Run Settings directly from the detail view, on the right side.<br/>  
@@ -25,70 +25,109 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality 
 
+:::caution update mta plugin
+Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functions may not work on the old version of the MTA Plugin.
+:::
 
-MTA-2071
-MTA now fully supports frontend testing a Mendix Application. 
-Menditect has made the required Playwright modules publicly available in the Mendix Marketplace.
-When these are downloaded into the Mendix model, it is possible to generate Frontend Test Cases in MTA. 
-With the Frontend Test Case structure in place, 
-it is possible to add Teststeps that consistently Locate any Platform Supported Mendix Widget on a Mendix Page, 
-and perform subsequent Actions on it.
+| ID                    | MTA-2071                                                                                                                                                                                                                                  |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | After an Application is added to MTA, it is possible to Enable loading Pages and Widgets on that Application. When enabled, MTA now also downloads Page and Widget information when downloading a revision with Mendix model information. |
+| __Release actions__   | None.                                                                                                                                                                                                                                     |
 
-MTA-2126
-After an Application was added to MTA, it is possible to Enable loading Pages and Widgets on that Application.
-When enabled, MTA now also downloads Page and Widget information when downloading a revision with Mendix model information.
+<br/>
 
-MTA-2011
-@complete redesign in the UI of the test suite page 
-@complete redesign in the UI of the test suite run page
+| ID                    | MTA-2126                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | MTA now fully supports frontend testing a Mendix Application. Menditect has made the required Playwright modules publicly available in the Mendix Marketplace. When these are downloaded into the Mendix model, it is possible to generate Frontend Test Cases in MTA. With the Frontend Test Case structure in place, it is possible to add Teststeps that consistently Locate any Platform Supported Mendix Widget on a Mendix Page, and perform subsequent Actions on it. |
+| __Release actions__   | Import [required Add-on modules](../Tools/) from the marketplace and Enable loading Pages and Widgets on the Application in MTA.                                                                                                                                                                                                                                                                                                                                             |
 
+<br/>
 
-MTA-2018
-Added Test Case and Teststep Exception handling and Assert on Teststep Exception. 
-It is now possible to continue with the next Teststep upon an Exception, or continue with the next Test Case.
-Additionally, it is possible to Assert that an Exception is expected, enabling the option to have a Test Run succeed with Exceptions.
-Breaking change: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.
+| ID                    | MTA-2011                                                                                                                                                                                                                                              |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Pages showing the Test Suite with Test Cases and Teststeps, and Pages showing Test Suite Run results, are completely redesigned, making it easier to add and edit Teststeps, set Asserts and Datavariation, and get a better overall user experience. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                 |
 
-MTA-2041
-Textboxes to enter String values are now replaced by Testareas to allow entering new lines.
-Additionally, String values can be shown as a JSON tree in a popup.
+<br/>
 
-MTA-2017
-It is now possible to Export a Snapshot to a JSON file, if it was created before a Test Configuration was adapted to another Revision, and the adapt failed.
+| ID                    | MTA-2018                                                                                                                                                                                                                                                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added Test Case and Teststep Exception handling and Assert on Teststep Exception. It is now possible to continue with the next Teststep upon an Exception, or continue with the next Test Case. Additionally, it is possible to Assert that an Exception is expected, enabling the option to have a Test Run succeed with Exceptions. |
+| __Release actions__   | Import the latest MTA Plugin into the Application under test. <br/>*Breaking change*: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.                                                                                                                                               |
 
-MTA-2204
-The SAML SSO module in MTA was updated to 3.6.21 because of a security breach found at Siemens.
+<br/>
 
-MTA-2226
-When a Teststep returns a FileDocument with contents in a Test Run, the contents can now be downloaded.
-If the FileDocument is of the Playwright Tracefile type, it can also be (re-)played at the Playwright website.
+| ID                    | MTA-2041                                                                                                                                                        |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Textboxes to enter String values are now replaced by Testareas to allow entering new lines. Additionally, String values can be shown as a JSON tree in a popup. |
+| __Release actions__   | None.                                                                                                                                                           |
+
+<br/>
 
 
-MTA-2231
-It is now possible to add a Microflow Teststep using output, 
-directly from a Teststep that returns an Object, to fill an Object Microflow parameter of the added Teststep.
+| ID                    | MTA-2226                                                                                                                                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | When a Teststep returns a FileDocument with contents in a Test Run, the contents can now be downloaded. If the FileDocument is of the Playwright Tracefile type, it can also be (re-)played at the Playwright website. |
+| __Release actions__   | This feature only works for Test Runs that were executed in MTA 3.0 with the newest version of the MTA Plugin module.                                                                                                  |
 
-MTA-1870
-MTA can now download Add-on Modules in a Mendix project and use the elements from an Add-on module for Teststeps. 
-Also see https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/
+<br/>
 
-MTA-2178
-MTA will no longer fail a Test Run if there are attributes returned that are unknown in the downloaded revision.
-The error message was that the model was not up to date, but because Add-on modules are now supported, 
-it is possible that these attributes are marked as Hidden, and therefore should be omitted.
 
-MTA-2196
-Support form is now opened in a new browser tab instead of a popup.
-This is done to enable customers hosting MTA themselves. 
-Use the `MtaUtils.UrlSupportForm` constant to set the URL.
+| ID                    | MTA-2017                                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | It is now possible to Export a Snapshot to a JSON file, if it was created before a Test Configuration was adapted to another Revision, and the adapt failed. |
+| __Release actions__   | None.                                                                                                                                                        |
+
+<br/>
+
+
+| ID                    | MTA-2204                                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The SAML SSO module in MTA was updated to 3.6.21 because of a security breach found at Siemens Security Advisory. |
+| __Release actions__   | None.                                                                                                             |
+
+<br/>
+
+
+| ID                    | MTA-2231                                                                                                                                                                                                                        |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | It is now possible to add a new Microflow Teststep "using output" from a Teststep that returns an Object. The Object Microflow parameter of the new Microflow Teststep will be filled with the output of the original Teststep. |
+| __Release actions__   | None.                                                                                                                                                                                                                           |
+
+<br/>
+
+| ID                    | MTA-1870                                                                                                                                                                                                                                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | MTA will no longer fail a Test Run if there are attributes returned that are unknown in the downloaded revision. The error message was that the model was not up to date, but because Add-on modules are now supported,  it is possible that these attributes are marked as Hidden, and therefore should be omitted. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                |
+
+<br/>
+
+
+| ID                    | MTA-2178                                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | MTA can now download Add-on Modules in a Mendix project and use the elements from an Add-on module for Teststeps. |
+| __Release actions__   | For more information, see https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/                  |
+
+<br/>
+
+
+| ID                    | MTA-2196                                                                                                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The Support Form is now opened in a new browser tab instead of a popup. This is done to enable customers using MTA through a Mendix license, to contact Mendix Support instead of Menditect Support. |
+| __Release actions__   | Use the `MtaUtils.UrlSupportForm` constant to set the URL.                                                                                                                                           |
+
+<br/>
+
+
+
+### Unclear
+
 
 
 MTA-2002
 The application filter for the Test Configurations Page will now be stored for the current user.
 
-
-
-### Unclear
 
 - de oude onofficiele utility module wordt nu officieel ondersteund met helper microflows (check bij Jort de naamgeving)
 
