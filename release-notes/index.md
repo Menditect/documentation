@@ -53,7 +53,7 @@ Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functio
 | ID                    | MTA-2018                                                                                                                                                                                                                                                                                                                              |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Added Test Case and Teststep Exception handling and Assert on Teststep Exception. It is now possible to continue with the next Teststep upon an Exception, or continue with the next Test Case. Additionally, it is possible to Assert that an Exception is expected, enabling the option to have a Test Run succeed with Exceptions. |
-| __Release actions__   | Import the latest MTA Plugin into the Application under test. <br/>*Breaking change*: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.                                                                                                                                               |
+| __Release actions__   | Import the latest MTA Plugin into your Mendix App. <br/>*Breaking change*: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.                                                                                                                                                          |
 
 <br/>
 
@@ -68,7 +68,7 @@ Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functio
 | ID                    | MTA-2226                                                                                                                                                                                                               |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | When a Teststep returns a FileDocument with contents in a Test Run, the contents can now be downloaded. If the FileDocument is of the Playwright Tracefile type, it can also be (re-)played at the Playwright website. |
-| __Release actions__   | This feature only works for Test Runs that were executed in MTA 3.0 with the newest version of the MTA Plugin module.                                                                                                  |
+| __Release actions__   | Import the latest MTA Plugin into your Mendix App and execute a test in MTA 3.0.                                                                                                                                       |
 
 <br/>
 
@@ -107,7 +107,7 @@ Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functio
 | ID                    | MTA-2178                                                                                                          |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | MTA can now download Add-on Modules in a Mendix project and use the elements from an Add-on module for Teststeps. |
-| __Release actions__   | For more information, see https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/                  |
+| __Release actions__   | Read https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/ for more information.                 |
 
 <br/>
 
@@ -120,53 +120,53 @@ Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functio
 <br/>
 
 
-
-### Unclear
-
-
-
-MTA-2002
-The application filter for the Test Configurations Page will now be stored for the current user.
-
-
-- de oude onofficiele utility module wordt nu officieel ondersteund met helper microflows (check bij Jort de naamgeving)
-
-- Chrome en Firefox extensies om te helpen met Locators bouwen bij frontend testing
-
-- STATUS? MTA-2200
-content hash; export van microflows met bijbehorende content hash, zodat klanten zelf inzicht kan krijgen in de aangepaste microflows per revisie
-
-- STATUS? MTA-1487
-Differentiate between Empty and zero length Strings values.
-
-- STATUS? MTA-2166 
-
-- STATUS? MTA-2115
-
-
-| ID                    | MTA-xxxx |
-| --------------------- | -------- |
-| __New functionality__ | ...      |
-| __Release actions__   | None.    |
+| ID                    | MTA-2228                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| __New functionality__ | The MTA Utility Module is now hosted in the Mendix Marketplace as an Add-on module. |
+| __Release actions__   | Replace the existing Utility module (if present) in your Mendix model.              |
 
 <br/>
 
 
+
+| ID                    | MTA-2229                                                                                          |
+| --------------------- | ------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Released browser extensions for Chrome and Firefox that show the mx-names of Widgets on the Page. |
+| __Release actions__   | Download the browser extensions from the Chrome Web Store / Firefox Addon site.                   |
+
+<br/>
+
+
+
+| ID                    | MTA-2200                                                                                                                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Included the Content Hash in the Microflow Usage CSV export on the Mendix Model page of a Test Configuration. The Content Hash of a Microflow can be used to determine whether a Microflow was changed between revisions. |
+| __Release actions__   | Download a new revision in MTA 3.0.                                                                                                                                                                                       |
+
+<br/>
+
 ## Bug fixes
 
-MTA-2140
-Count validation feedback message Asserts that are included in Test Suite datavariation are not copied when duplicating a Test Case.
+| ID                  | MTA-2140                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | Count validation feedback message Asserts that are included in Test Suite datavariation are not copied when duplicating a Test Case. |
+| __Solution__        | Count validation feedback message Asserts that are included in Test Suite datavariation are now copied when duplicating a Test Case. |
+| __Release actions__ | None.                                                                                                                                |
 
-MTA-2149
-Generate by Recording feature results in an error popup when performed in a Test Case without any Teststeps.
+<br/>
 
-MTA-2166
-Limited String values are sometimes not shown in results of an executed microflow Teststep that has an Object as return value
+| ID                  | MTA-2149                                                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Generate by Recording feature results in an error popup when performed in a Test Case without any Teststeps.           |
+| __Solution__        | Generate by Recording feature no longer results in an error popup when performed in a Test Case without any Teststeps. |
+| __Release actions__ | None.                                                                                                                  |
 
-| ID                  | (none) |
-| ------------------- | ------ |
-| __Problem__         | ...    |
-| __Solution__        | ...    |
-| __Release actions__ | None.  |
+<br/>
+
+| ID                  | MTA-2166                                                                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | String attribute values are not shown in the Test Run results of an executed Microflow Teststep that returns an Object. |
+| __Solution__        | String attribute values are now shown in the Test Run results of an executed Microflow Teststep that returns an Object. |
+| __Release actions__ | None.                                                                                                                   |
 
 <br/>
