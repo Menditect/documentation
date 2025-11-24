@@ -10,11 +10,15 @@ Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 An Action can be done on an [Element](#element) when it has been successfully located by a [Locator](#locator). 
 A Playwright Action simulates a user action like a mousebutton being clicked or a text being typed.
 
+More info at: https://playwright.dev/java/docs/input
+
 ## Assertion
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
 An Assertion is a verification on an [Element](#element) to check if certain claim about a property of that [Element](#element) is true or not (properties described below).
 If an Assertion fails, the Playwright test also fails.
+
+More info at: https://playwright.dev/java/docs/test-assertions
 
 ## Element
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
@@ -27,7 +31,9 @@ An Element can be visible on the [Page](#playwright-page).
 ## Filter
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
-A Filter is an attempt to narrow down a [Locator](#locator) that results in locating multiple [Element](#element), into locating a single [Element](#element).
+A Filter is a specific kind of Locator; an attempt to narrow down a [Locator](#locator) that results in locating multiple [Element](#element), into locating a single [Element](#element).
+
+More info at: https://playwright.dev/java/docs/locators#filtering-locators
 
 ## Index
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
@@ -55,11 +61,15 @@ Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 A Locator is an attempt to describe (unique attributes of) a single [Element](#element) allowing it to be located on the [Page](#playwright-page), in order to perform [Actions](#action) on it.
 Locators allow for chaining meaning a nested [Element](#element) further down the node tree can be located using a Locator of it's parent [Element](#element).
 
+More info at: https://playwright.dev/java/docs/locators
+
 ## Mendix Page
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
 Pages define the end-user interface of a Mendix application; every Page is based on a layout.
 Because Mendix Pages can be stacked using the Popup layout, there can be multiple Mendix Pages on a single Playwright [Page](#playwright-page).
+
+More info at: https://docs.mendix.com/refguide/page/
 
 ## Nth
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
@@ -71,12 +81,20 @@ Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
 A Tab page in the browser with an HTML source. There can only be one Page per browser Tab.
 
+More info at: https://playwright.dev/java/docs/pages
+
 ## Text  
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
 Any text that is visible on the Mendix [Page](#mendix-page) and that can be used for a [Filter](#filter). 
 Typically, Text is contained between an opening and closing HTML tag, for example <div\> and </div\>.
 
+## Tracefile
+Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
+
+A .ZIP file that contains information about an executed Playwright Frontend test. The Tracefile is essentially a recording of all browser pages and elements during the test, and the [Locators](#locator) and [Actions](#action) performed. The Trace Viewer at the Playwright Website can be used to view the recording. 
+
+More info at: https://playwright.dev/docs/trace-viewer#opening-the-trace
 
 ## Value 
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
@@ -92,20 +110,7 @@ A Widget is a reusable, self-contained user interface element on a Mendix [Page]
 
 
 <!-- 
-
-- Item
-- Header
-- Row
-- Hidden
-- Visible
-- Enabled
-- Disabled
-- Selected
-- Checked
-- Unchecked
-
-- Tracefile
-
 - ELO (context: Test Kit) element locator (vs Locator_etc)
 - ACT (context: Test Kit) element action
-- ASR (context: Test Kit) assert -->
+- ASR (context: Test Kit) assert 
+- -->
