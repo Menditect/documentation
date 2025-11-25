@@ -1,3 +1,7 @@
+---
+toc_max_heading_level: 4
+---
+
 # Microflow call
 
 ## Definition
@@ -35,10 +39,10 @@ Note that if the microflow contains input parameters, it is possible to save the
 
 ### Objects or Lists
 
-### Assign empty object
+#### Assign empty object
 - Select the <i class="fal fa-empty-set"></i> button for the parameter to set it to 'Empty'.
 
-### Assign from former Teststep
+#### Assign from former Teststep
 - Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](create) the value or [Retrieves](retrieve) the value from database.
 - Select or Save the Teststep that should provide the value.
 
@@ -71,7 +75,7 @@ Select this option to fill the value of the Microflow parameter with the Page Cl
 See also https://docs.mendix.com/refguide/common-widget-properties/#class
 
 :::note
-If the Page Class for the selected Mendix Page is changed in Studio Pro, the value will also change. It is not necessary to re-select the Page here.
+If the Class for the selected Mendix Page is changed in Studio Pro, the value will be changed automatically upon loading the new revision. It is not necessary to re-select the Page here.
 :::
 
 #### WidgetName from revision
@@ -79,7 +83,7 @@ Select this option to fill the value of the Microflow parameter with the Name th
 See also https://docs.mendix.com/refguide/common-widget-properties/#name
 
 :::note
-If the Widget Name for the selected Widget is changed in Studio Pro, the value will also change. It is not necessary to re-select the Widget here.
+If the Name for the selected Widget is changed in Studio Pro, the value will be changed automatically upon loading the new revision. It is not necessary to re-select the Widget here.
 :::
 
 ### Assign values to a List of Objects
