@@ -99,7 +99,7 @@ More info at: https://playwright.dev/docs/trace-viewer#opening-the-trace
 ## Value 
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
-The primitive data, like a string, integer or date, being the result of [Input](#input).
+The literal data, like a string, integer or date, being the result of [Input](#input).
 The Value does not have to be visible on the Mendix [Page](#mendix-page).
 Values can be stored to the database of the Mendix Application.
 

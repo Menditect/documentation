@@ -3,7 +3,7 @@
 ## Definition
 
 An Assert on Microflow output formulates an expected result of the output value of a Microflow [Teststep](../Teststep) upon execution, 
-if the microflow returns a primitive datatype (String, Integer, Decimal, Boolean, Datetime or Enumeration).
+if the microflow returns a literal value (String, Integer, Decimal, Boolean, Datetime or Enumeration).
 
 If the microflow returns an Object or a List of Objects, it is currently only possible to define an [Assert on Object count](assert-object-count).
 

@@ -28,14 +28,20 @@ The version of Mendix Studio (Pro) in which the Application is developed.
 ### Commit id 
 The commit number of the model of the Mendix application.  
   
-### Total modules
+### Modules
 The total number of modules in application revision. 
   
-### Total entities  
+### Entities  
 The total number of entities in application revision. 
  
-### Total microflows
+### Microflows
 The total number of microflows in application revision.
+  
+### Pages  
+The total number of pages in application revision. Only shown if the associated [Application](application) had Loading Pages and Widgets enabled at the time the revision was downloaded.
+ 
+### Widgets
+The total number of widgets in application revision. Only shown if the associated [Application](application) had Loading Pages and Widgets enabled at the time the revision was downloaded.
 
 ## Business rules
 - The Application revision information cannot be deleted from MTA if a Test Configuration is using the Application revision.

@@ -29,19 +29,28 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 
 ## Setting Microflow Parameters
 
-A microflow parameter can be an Object, a List of Objects, or any of the primitive types: String, Enumeration, Datetime, Integer, Decimal, Boolean.
+A microflow parameter can be an Object, a List of Objects, or any of the literal values like String, Enumeration, Datetime, Integer, Decimal, Boolean.
 
 Note that if the microflow contains input parameters, it is possible to save the Microflow Teststep without providing a value for these, but this may result in MTA showing a [Construction Error](../construction-error).
 
-### Assign Empty 
+### Objects or Lists
 
+### Assign empty object
 - Select the <i class="fal fa-empty-set"></i> button for the parameter to set it to 'Empty'.
 
-### Assign fixed value
+### Assign from former Teststep
+- Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](create) the value or [Retrieves](retrieve) the value from database.
+- Select or Save the Teststep that should provide the value.
 
-You can only assign fixed values to primitive types. 
+:::note
+Make sure the selected teststep returns one object, and not multiple objects. <br/>If the microflow returns multiple objects, the parameter will be empty when executing.
+:::
+
+### Literal values
+
 Assigning values to an Object must be done [from former Teststep](#assign-value-from-former-teststep).
 
+#### Fixed value
 - Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
 - Enter or select a value for the attribute. 
 
@@ -53,20 +62,25 @@ For each datatype, there is a different way of entering the value:
 
 Note that if the value is not set, this means it will be set to 'Empty' when executing the test. 
 
-### Assign value from former Teststep
-
-** Setting a primitive value **
+#### Teststep
 - First click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
-** Setting an Object value **
-- Click "Select input", and either choose to select an existing teststep to set the objecct, or add a new Teststep that [Creates](create) the value or [Retrieves](retrieve) the value from database.
-- Select or Save the Teststep that should provide the value.
+#### PageClass from revision
+Select this option to fill the value of the Microflow parameter with the Page Class that is entered on a selected Mendix Page.
+See also https://docs.mendix.com/refguide/common-widget-properties/#class
 
 :::note
-Make sure the selected teststep returns one object, and not multiple objects. <br/>If the microflow returns multiple objects, the parameter will be empty when executing.
+If the Page Class for the selected Mendix Page is changed in Studio Pro, the value will also change. It is not necessary to re-select the Page here.
 :::
 
+#### WidgetName from revision
+Select this option to fill the value of the Microflow parameter with the Name that is entered on a selected Mendix Widget.
+See also https://docs.mendix.com/refguide/common-widget-properties/#name
+
+:::note
+If the Widget Name for the selected Widget is changed in Studio Pro, the value will also change. It is not necessary to re-select the Widget here.
+:::
 
 ### Assign values to a List of Objects
 If a Microflow Parameter is a List instead of a single Object, it is possible to add multiple objects, thus filling the list. Use the "<i class="fal fa-plus-circle"></i>" Another input teststep" to accomplish this.
