@@ -14,6 +14,9 @@ The Test Suite is the second level of the 4-layer framework that is used in MTA.
 
 ## Properties
 
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+
 ### Name
 The name of the Test Suite.
 

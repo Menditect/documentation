@@ -13,6 +13,9 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 
 ## Properties
 
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+
 ### Author 
 The creator of the revision (committer).  
  

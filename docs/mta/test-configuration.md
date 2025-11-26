@@ -15,8 +15,11 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 
 ## Properties
 
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+
 ### Name
-The name of the Test Configuration.
+The name of the Test Configuration. The name will be displayed in the Test Configuration overview.
 
 ## Description
 A description of the Test Configuration.
@@ -116,4 +119,4 @@ See [Snapshot](snapshot).
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 August 2024
+Last updated 27 November 2025

@@ -15,6 +15,9 @@ Regardless of the Scope of a Test Run, Test Suite runs, Test Case runs and Tests
 
 ## Properties
 
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+
 ### Application Instances 
 The [Application Instances](application-instance) that were used to execute the Test Run on.
 
@@ -41,6 +44,9 @@ This indicates if the test is running or not; can be 'Running' or 'Finished'.
 
 ### Retention period
 Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
+
+### Trace files
+A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Suite Run that can be downloaded or replayed at the Playwright website.
 
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).

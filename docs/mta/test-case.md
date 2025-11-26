@@ -20,9 +20,11 @@ MTA can only test Mendix Apps having [Production Security Level](https://docs.me
 
 ## Properties
 
-
 ### Name
 The name of the Test Case.
+
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
 
 ### Test application 
 The associated test application to execute the Test Case on. 
@@ -78,6 +80,15 @@ A description of the expected result of a Test Case.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose "Save".
 
+### Generate Frontend Test Cases
+- Navigate to the Test Suite you want to create Frontend Test Cases in.
+- Use the `Add frontend test` button to create Frontend Test Cases.
+- Select the [Application](application) for the Test Cases.
+- Select the Execution user for the Test Cases.
+- Select the `Start test location` to determine if Playwright is hosted locally, in Browserstack, or in a separate server.
+- Fix the construction errors by setting the missing parameters. Consult the Frontend testing howto's for more information.
+
+
 ### Generate a Test Case to test a Microflow
 
 This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
@@ -88,7 +99,7 @@ Different then when [generating from inside the test suite](recording.md), you c
 Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
 :::
 
-- Navigate to "Mendix Model" after opening a [Test Configuration](test-configuration).
+- Navigate to "Microflows" after opening a [Test Configuration](test-configuration).
 - Select the microflow(s) to generate a Test Case for.
 - Choose to either generate a Test Case with random data, or from database.
 - When choosing from database, select the [application instance](application-instance).

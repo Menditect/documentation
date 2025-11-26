@@ -11,6 +11,8 @@ A Teststep Exception occurs during the execution of a [Teststep](Teststep/). A T
 
 A Teststep Exception can be handled by a [Teststep Exception Handler](Teststep#exception-handling).
 
+A Teststep Exception is not to be confused with the [Coverage Exception](coverage-exception).
+
 ## Properties
 
 ### Message

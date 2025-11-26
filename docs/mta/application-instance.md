@@ -14,6 +14,9 @@ The associated [Test setting](test-setting) on a Test Configuration determines w
 
 ## Properties
 
+### Key
+The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+
 ### Name          
  The name of the Application Instance; the name of the first one is 'Default' but can be changed by the user. |
  

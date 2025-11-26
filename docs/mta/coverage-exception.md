@@ -10,6 +10,7 @@ A Coverage Exception is used to **include** one or more microflows, that were ex
 
 A Coverage Exception is always associated to exactly one Exclude Filter. The microflows excluded by the Exclude Filter, can be included again by setting an Exception Filter. Results will be updated immediately. 
 
+A Coverage Exception is not to be confused with the [Teststep Exception](teststep-exception).
 
 ## Properties
 

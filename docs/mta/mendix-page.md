@@ -7,6 +7,8 @@ sidebar_position: 21
 
 MTA stores information about a Mendix Page to enable Frontend testing. For every Frontend test, it is required to start with Locating the Mendix Page.
 
+Note that a Mendix Page is different from a [Playwright Page](frontend-glossary#playwright-page).
+
 A Mendix Page define the end-user interface of a Mendix application; every Page is based on a Page Layout.
 
 More info at: https://docs.mendix.com/refguide/page/

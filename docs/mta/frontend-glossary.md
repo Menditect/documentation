@@ -63,14 +63,6 @@ Locators allow for chaining meaning a nested [Element](#element) further down th
 
 More info at: https://playwright.dev/java/docs/locators
 
-## Mendix Page
-Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
-
-Pages define the end-user interface of a Mendix application; every Page is based on a layout.
-Because Mendix Pages can be stacked using the Popup layout, there can be multiple Mendix Pages on a single Playwright [Page](#playwright-page).
-
-More info at: https://docs.mendix.com/refguide/page/
-
 ## Nth
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
