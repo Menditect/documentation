@@ -30,9 +30,8 @@ These modules are **required** to be imported in the Mendix App under test:
 - [Playwright Connector](playwright-connector)
 - Playwright for Mendix Test Kit
 
-## Known issues
+Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
 
-None.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

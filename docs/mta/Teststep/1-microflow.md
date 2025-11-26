@@ -6,11 +6,11 @@ toc_max_heading_level: 4
 
 ## Definition
 
-With this [Teststep](.) type, a Microflow is executed. 
+With this [Teststep](.) type, a [Microflow](../mendix-microflow) is executed. 
 
 ## Allowed roles
 
-Microflows configured in a Microflow teststep are always executed regardless of the "Allowed roles" setting in Mendix.
+[Microflows](../mendix-microflow) configured in a Microflow teststep are always executed regardless of the "Allowed roles" setting in Mendix.
 
 ## Entity Access
 
@@ -27,15 +27,15 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 ## Add a Microflow Teststep
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
 - Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Microflow teststep" to add a Microflow Teststep.
-- Select the Microflow to execute. You can search by the module or microflow name, or by any of the input or output parameters.
+- Select the [Microflow](../mendix-microflow) to execute. You can search by the module or microflow name, or by any of the input or output parameters.
 - [Set Microflow Parameters](#setting-microflow-parameters).
 - Click on the "Save" button. 
 
 ## Setting Microflow Parameters
 
-A microflow parameter can be an Object, a List of Objects, or any of the literal values like String, Enumeration, Datetime, Integer, Decimal, Boolean.
+A [Microflow](../mendix-microflow) parameter can be an Object, a List of Objects, or any of the literal values like String, Enumeration, Datetime, Integer, Decimal, Boolean.
 
-Note that if the microflow contains input parameters, it is possible to save the Microflow Teststep without providing a value for these, but this may result in MTA showing a [Construction Error](../construction-error).
+Note that if the [Microflow](../mendix-microflow) contains input parameters, it is possible to save the Microflow Teststep without providing a value for these, but this may result in MTA showing a [Construction Error](../construction-error).
 
 ### Objects or Lists
 

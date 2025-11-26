@@ -42,37 +42,6 @@ Make sure to check your app's Mendix version before importing the module.
 
 
 
-## Dependencies
-
-These modules are **required** to be imported in the Mendix App under test:
-- MTA Plugin
-- [Playwright Connector](playwright-connector)
-- [Playwright for Mendix Test Kit](playwright-testkit)
-
-
-Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
-
-## Known issues
-
-
-:::caution
-Don't make changes to elements inside the MtaPluginModule. Configure Constants in the Project settings in Studio Pro.<br/>Menditect will not provide support if the MtaPluginModule is changed after you have imported it into your Mendix project.
-:::
-
-### Plugin appears Connected but is not
-
-When connecting an [Application Instance](../mta/application-instance) to MTA, the MTAPluginPage snippet in the test application shows that the instance is "Connected" and received a Connection ID, where MTA shows that the instance is not connected.
-
-#### Possible cause
-
-An unknown (non existing) Application Token was used to connect.
-
-MTA does not recognize the Application Token and breaks off the connection. The error is only shown in the application logging. However this error is not communicated to the MTA Plugin, so the test application seems to be connected. 
-
-**Resolution**
-
-Check the Application Token and re-establish the connection.
-
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
