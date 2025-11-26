@@ -37,4 +37,4 @@ The result of this action will be:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated: 29 september 2023
+Last updated 26 November 2025

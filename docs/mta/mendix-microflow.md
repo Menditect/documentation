@@ -42,4 +42,4 @@ The Documentation of the Microflow as entered in Studio Pro.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 November 2025
+Last updated 26 November 2025

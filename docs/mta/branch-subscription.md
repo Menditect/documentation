@@ -78,7 +78,8 @@ A Branch Subscription that is invalid will show as <font color="#f99b1d"> <i cla
 - [Application Revision](application-revision)
 - [Test Configuration](test-configuration)
 
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 7 October 2025
+Last updated 27 November 2025

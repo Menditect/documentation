@@ -106,3 +106,9 @@ A Widget is a reusable, self-contained user interface element on a Mendix [Page]
 - ACT (context: Test Kit) element action
 - ASR (context: Test Kit) assert 
 - -->
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 27 November 2025

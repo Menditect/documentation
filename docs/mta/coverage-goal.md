@@ -100,4 +100,4 @@ To calculate a Coverage Goal and create a new [Coverage Calculation](coverage-ca
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 24 June 2024
+Last updated 27 November 2025

@@ -49,4 +49,4 @@ Learn more about creating Recordings in the How To and Best Practice sections.
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 12 November 2025
+Last updated 26 November 2025

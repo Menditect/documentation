@@ -105,4 +105,4 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 22 November 2023
+Last updated 26 November 2025

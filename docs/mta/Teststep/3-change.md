@@ -76,3 +76,8 @@ Because of performance reasons, the amount of associations retrieved is limited 
 ### Generate random values
 You can choose to fill attributes with random data, by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill attributes with random values". 
 
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 27 November 2025
