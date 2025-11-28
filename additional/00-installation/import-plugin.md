@@ -93,14 +93,6 @@ Including this page in your App is necessary if you want to manually connect to 
 You can now view connection details and manually connect to MTA, with accounts having the Project User Roles that you specified.
 
 
-
-## Update instructions
-
-Replace the existing module when importing a new version.
-
-Make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. 
-
-
 ### Upgrading Mendix Runtime of the parent Project  
 
 To upgrade the major version of your Mendix App (for example, from Mendix 9 to 10), you need to make sure to replace all the files related to the MTA Plugin Module. 

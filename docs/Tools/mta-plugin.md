@@ -14,8 +14,6 @@ The Installation Guide covers instructions on how to install and configure the M
 
 ## Supported Versions
 
-### Plugin version vs MTA version
-
 |          | MTA Plugin 4.9.1 | MTA Plugin 4.8.1 | Any older MTA Plugin |
 | -------- | ---------------- | ---------------- | -------------------- |
 | MTA 3.0  | Supported        | Supported *      | Not supported        |
@@ -25,7 +23,7 @@ The Installation Guide covers instructions on how to install and configure the M
 \* In order to make use of all the features of MTA, import the latest plugin.
  
 
-### Plugin version vs Mendix version
+## Installation instructions
 
 Download the MTA Plugin module from the Mendix Marketplace. 
 
@@ -41,6 +39,11 @@ Make sure to check your app's Mendix version before importing the module.
 | Mendix 7                       | Not supported                                        |
 
 
+## Update instructions
+
+:::caution delete before replace
+Delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
+:::
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
