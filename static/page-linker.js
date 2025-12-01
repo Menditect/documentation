@@ -1,7 +1,7 @@
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     let versionLinks = data.versions[version];
-    if (!versionLinks) { versionLinks = data.versions['3.0']; }
+    if (!versionLinks) { versionLinks = data.versions['3.0']; } //if the version is not found, default to the current production version
     const path = versionLinks[tag];
     return path;
   } else if (tag) {
