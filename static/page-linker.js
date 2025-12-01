@@ -1,5 +1,3 @@
-// @ts-check
-
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     let versionLinks = data.versions[version];
@@ -8,7 +6,10 @@ function findCorrectPath(data, version, tag) {
     return path;
   } else if (tag) {
     const path = data.nonVersions[tag];
-    return path;
+    if (path) return path;
+    let versionLinks = data.versions['3.0'];
+    const pathalt = versionLinks[tag];
+    return pathalt;
   }
 }
 

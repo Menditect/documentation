@@ -127,6 +127,8 @@ const config = {
           { id: 'feedback-message', content: 'mta/feedback-message.md', versions: 'ALL' },
           { id: 'construction-error', content: 'mta/construction-error.md', versions: 'ALL' },
           { id: 'mta-plugin', content: 'tools/mta-plugin.md', versions: 'ALL' },
+          { id: 'playwright-connector', content: 'tools/playwright-connector.md', versions: 'ALL' },
+          { id: 'playwright-testkit', content: 'tools/playwright-testkit.md', versions: 'ALL' },
         ],
       }),
     ],
