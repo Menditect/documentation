@@ -1,14 +1,15 @@
-// @ts-check
-
 function findCorrectPath(data, version, tag) {
   if (version && tag) {
     let versionLinks = data.versions[version];
-    if (!versionLinks) { versionLinks = data.versions['2.10']; }
+    if (!versionLinks) { versionLinks = data.versions['2.10']; } //if the version is not found, default to the current production version
     const path = versionLinks[tag];
     return path;
   } else if (tag) {
     const path = data.nonVersions[tag];
-    return path;
+    if (path) return path;
+    let versionLinks = data.versions['2.10'];  //if the unversioned tag cannot be found, try to find a versioned tag for the current production version
+    const pathalt = versionLinks[tag];
+    return pathalt;
   }
 }
 
