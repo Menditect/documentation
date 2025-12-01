@@ -7,7 +7,7 @@ function findCorrectPath(data, version, tag) {
   } else if (tag) {
     const path = data.nonVersions[tag];
     if (path) return path;
-    let versionLinks = data.versions['3.0'];
+    let versionLinks = data.versions['3.0'];  //if the unversioned tag cannot be found, try to find a versioned tag for the current production version
     const pathalt = versionLinks[tag];
     return pathalt;
   }
