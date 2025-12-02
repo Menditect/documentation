@@ -25,13 +25,16 @@ The information in Log Events can be used for auditing purposes, for example.
 Date and time of the occurence of the Log Event.
 
 ### Event type  
-TestRunArchive: a Test Run that finished was stored in an Log Event.<br/> TestRunArchiveEnabled: someone enabled the Archive function.<br/>TestRunArchiveDisabled: someone disabled the Archive function.
+TestRunArchive: a [Test Run](test-run) that finished was stored in an Log Event.<br/> TestRunArchiveEnabled: someone enabled the Archive function.<br/>TestRunArchiveDisabled: someone disabled the Archive function.
 
 ### Description 
-Information that identifies the Log Event. This could be the Account name of the person who enabled or disabled the Archive function, or information about the Test Run.
+Information that identifies the Log Event. This could be the Account name of the person who enabled or disabled the Archive function, or information about the [Test Run](test-run).
 
 ### Content
 The content of the Log Event.
+
+### Files
+A list of downloadable FileDocuments that were created during the [Test Run](test-run).
 
 ## Business rules
 

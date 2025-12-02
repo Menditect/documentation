@@ -24,14 +24,14 @@ The identifying number assigned by MTA that is used in the [MTA Public API](api)
  A globally unique id (GUID) that is generated upon creation and identifies this instance.                  
  
 ### URL           
- *{Optional}* The URL to the instance that is entered by the user. Only used for [Recordings](recording).   
+ *{Optional}* The URL to the instance that is entered by the user. Entering this allows for navigating to the Instance's Homepage when creating a [Recording](recording).
  
 ### Connectiond Id
  A globally unique id (GUID) that is generated each time a connection is made to the instance.              
  
 
 ## Business rules
-- A Test Setting must be associated to exacly one Application Instance in order to Execute the Test Configuration.
+- A [Test Setting](test-setting) must be associated to exacly one Application Instance in order to Execute the Test Configuration.
 
 ## Actions on an Application Instance
 

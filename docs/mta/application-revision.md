@@ -26,7 +26,7 @@ The description added to the commit action. Typically this contains information 
 The date when the revision is created (or the commit is done).  
 
 ### Mendix version  
-The version of Mendix Studio (Pro) in which the Application is developed.
+The version of Mendix Studio Pro in which the Application is developed.
 
 ### Commit id 
 The commit number of the model of the Mendix application.  
@@ -38,10 +38,10 @@ The total number of modules in application revision.
 The total number of entities in application revision. 
  
 ### Microflows
-The total number of microflows in application revision.
+The total number of [Microflows](mendix-microflow) in application revision.
   
 ### Pages  
-The total number of pages in application revision. Only shown if the associated [Application](application) had Loading Pages and Widgets enabled at the time the revision was downloaded.
+The total number of [Pages](mendix-page) in application revision. Only shown if the associated [Application](application) had Loading Pages and Widgets enabled at the time the revision was downloaded.
  
 ### Widgets
 The total number of widgets in application revision. Only shown if the associated [Application](application) had Loading Pages and Widgets enabled at the time the revision was downloaded.
@@ -94,12 +94,8 @@ If a [Branch Subscription](branch-subscription) is present, it is possible to ch
 MTA will not check if the revision of a [Test Configuration](test-configuration) matches the one that is running on the [Application Instance](application-instance). <br/>This allows for connecting a locally running [Application](application) to MTA.
 :::
 
-[Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be able to execute the Test Configuration.
+[Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be build Teststeps using that revision's Mendix Model information.
 - Click the Adapt to next revision” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a [Construction Error](construction-error) will be shown.
-
-:::note
-This can take some time depending on the size of the Mendix project, the number and size of Test Suites in the Test Configuration. The adapt is running as a background process, you can continue using MTA. However, you cannot edit a configuration for which the adapt is running (A limited view of the configuration is possible during the adapt).
-:::
 
 ### Restore previous revision of Test Suites in a Test Configuration
 
