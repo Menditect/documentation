@@ -31,8 +31,8 @@ There are two options to add a Change Object teststep. The first option is quick
 
 **Option 2:**
 
-1. Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Change teststep" to add a Change Object Teststep.
+1. Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+2. Click <i class="fal fa-plus-circle"></i> and Click `Change teststep` to add a Change Teststep.
 3. Select an entity. You can search by name.
 4. Select the previous Teststep that returns the object(s) that you want to change. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object or a list of objects.
 

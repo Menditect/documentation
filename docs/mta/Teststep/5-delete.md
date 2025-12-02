@@ -28,8 +28,8 @@ There are two options to Delete an Object. The first option is quicker:
 
 **Option 2:**
 
-1. Select the Test Case that you want to create a Teststep in.
-2. Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Delete teststep" to add a Delete Object Teststep.
+1. Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+2. Click <i class="fal fa-plus-circle"></i> and Click `Delete teststep` to add a Delete Teststep.
 3. Select an entity. You can search by name.
 4. Select the previous Teststep that returns the object that needs to be deleted. This could be a Create, Change or Retrieve Teststep but also a Microflow Teststep that returns an object.
 5. Click on the "Save" button. 

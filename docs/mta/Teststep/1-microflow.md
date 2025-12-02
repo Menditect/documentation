@@ -25,8 +25,8 @@ If the [Test Case](../test-case) that this teststep is in, has Apply Security en
 If the [Test Case](../test-case) that this teststep is in, does not have Apply Security enabled, security limitations will be ignored.
 
 ## Add a Microflow Teststep
-- Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Microflow teststep" to add a Microflow Teststep.
+- Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+- Click <i class="fal fa-plus-circle"></i> and Click `Microflow teststep` to add a Microflow Teststep.
 - Select the [Microflow](../mendix-microflow) to execute. You can search by the module or microflow name, or by any of the input or output parameters.
 - [Set Microflow Parameters](#setting-microflow-parameters).
 - Click on the "Save" button. 

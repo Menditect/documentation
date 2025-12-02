@@ -82,15 +82,12 @@ The constant `NoAssociationResponse` is not officially supported.
 
 ### Configure Plugin Home page
 
-Including this page in your App is necessary if you want to manually connect to MTA (with [ConnectionMethod](#connectionmethod) = "Manual"). 
+Including a Microflow call in your App is necessary if you want to manually connect to MTA (with [ConnectionMethod](#connectionmethod) = "Manual"). 
 
-- Create a Page with a Responsive layout.
-- Insert the "MTAPluginPage" snippet from the MTA Plugin Module.
-- Add Project User Roles to the Page.
-- Add the "MTAPluginUser" Module role from the MTA Plugin Module to all of these Project User Roles.
-- Include the new Page in the Navigation.
+- Make sure to add the `MTAPluginUser` module role to the necessary Project Role(s).
+- Include a call to the `Show_MTA_Plugin_Status_Page` Microflow in the Navigation.
 
-You can now view connection details and manually connect to MTA, with accounts having the Project User Roles that you specified.
+You can now view connection details and manually connect to MTA.
 
 
 ### Upgrading Mendix Runtime of the parent Project  

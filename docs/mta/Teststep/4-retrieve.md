@@ -18,8 +18,8 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 
 ## Retrieve from database
 
-- Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
+- Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+- Click <i class="fal fa-plus-circle"></i> and Click `Retrieve teststep` to add a Retrieve Teststep.
 - Select an entity. You can search by name.
 - Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve from database" in the Retrieve options.
@@ -28,8 +28,8 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 
 ## Retrieve by association
 
-- Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click "<i class="fal fa-plus-circle"></i> Add" and Click "<i class="fal fa-plus-circle"></i> Retrieve teststep" to add a Retrieve Object Teststep.
+- Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+- Click <i class="fal fa-plus-circle"></i> and Click `Retrieve teststep` to add a Retrieve Teststep.
 - Select an entity. You can search by name.
 - Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
 - Select "Retrieve by association" in the Retrieve options.

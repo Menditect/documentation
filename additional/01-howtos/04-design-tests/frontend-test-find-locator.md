@@ -21,7 +21,7 @@ The first step is to determine the name of the Widget, for example `actionButton
 
 For **Mendix developers**, the easiest way is to open the Page in Studio Pro and find the name by opening the Properties: https://docs.mendix.com/refguide/common-widget-properties/#name
 
-For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/frontend-browser-extension) created by Menditect to extract the Widget name from the `mx-name-widgetName123` in the CSS.
+For **Testers** who do not use Studio Pro, it is recommended to use one of the [Browser Extensions](../../../Tools/mta-widget-finder) created by Menditect to extract the Widget name from the `mx-name-widgetName123` in the CSS.
 
 ### 2. Determine parent element
 

@@ -14,36 +14,31 @@ The Installation Guide covers instructions on how to install and configure the M
 
 ## Supported Versions
 
-|          | MTA Plugin 4.9.1 | MTA Plugin 4.8.1 | Any older MTA Plugin |
-| -------- | ---------------- | ---------------- | -------------------- |
-| MTA 3.0  | Supported        | Supported *      | Not supported        |
-| MTA 2.10 | Supported        | Supported        | Not supported        |
-| MTA 2.9  | Not supported    | Not supported    | Not supported        |
+|          | MTA Plugin 5  | MTA Plugin 4.8.1 | Any older MTA Plugin |
+| -------- | ------------- | ---------------- | -------------------- |
+| MTA 3.0  | Supported     | Supported *      | Not supported        |
+| MTA 2.10 | Supported     | Supported        | Not supported        |
+| MTA 2.9  | Not supported | Not supported    | Not supported        |
 
 \* In order to make use of all the features of MTA, import the latest plugin.
  
 
 ## Installation instructions
 
-Download the MTA Plugin module from the Mendix Marketplace. 
-
-Make sure to check your app's Mendix version before importing the module. 
-
-| Mendix Version                 | Url                                                  |
-| ------------------------------ | ---------------------------------------------------- |
-| Mendix 11                      | Not supported                                        |
-| Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
-| Mendix 9.24.4 and higher       | https://marketplace.mendix.com/link/component/214717 |
-| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
-| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123 |
-| Mendix 7                       | Not supported                                        |
-
+- Import the MTA Plugin Add-on module into your [Application](../mta/application) from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/214717).
+- Follow the [Installation guide](../additional/installation/) to configure the module.
 
 ## Update instructions
+
+### Updating from MTA Plugin 4.8.1
 
 :::caution delete before replace
 Delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
 :::
+
+### Updating from MTA Plugin 5 and above
+
+- Import the MTA Plugin Add-on module into your [Application](../mta/application) from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/214717).
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

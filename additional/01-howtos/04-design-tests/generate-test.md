@@ -2,7 +2,7 @@
 
 ## Definition
 
-This document describes how to make MTA generate tests, as alternative to creating tests manually. 
+This document describes how to make MTA generate a Microflow test, as opposed to creating one manually. 
 
 You can generate a test from Mendix Studio Pro, or from inside MTA. The aim of generating a test is to speed up test scripting, by using the Mendix model information available to MTA.
 

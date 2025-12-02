@@ -26,7 +26,7 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## New functionality 
 
 :::caution update mta plugin
-Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functions may not work on the old version of the MTA Plugin.
+Make sure to update the MTA Plugin from the Mendix Marketplace. Some new functions will not work on the old version of the MTA Plugin.
 :::
 
 | ID                    | MTA-2071                                                                                                                                                                                                                                  |
