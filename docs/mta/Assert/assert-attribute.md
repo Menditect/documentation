@@ -54,7 +54,7 @@ The following Assert Compare types are supported for the Mendix data types:
 
 ### Delete an Assert on Attribute 
 - Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
-- Select any [Teststeps](Teststep/) that has an Assert on Attribute, marked with a colored `Assert` tag.
+- Select any [Teststeps](../Teststep/) that has an Assert on Attribute, marked with a colored `Assert` tag.
 - Select Tab `Assert(s)`.
 - Click `Manage asserts`.
 - Select the Attribute where you want to delete the Assert.
