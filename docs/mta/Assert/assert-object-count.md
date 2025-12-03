@@ -26,7 +26,7 @@ Asserts on object count can be defined either on Retrieve Object Teststeps or on
 
 ### Delete an Assert on Object Count
 - Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
-- Select a [Microflow Teststep](../Teststep/microflow) that has an Assert, marked with a colored `Assert` tag.
+- Select a [MTeststep](../Teststep/) that has an Assert, marked with a colored `Assert` tag.
 - Select Tab `Assert(s)`.
 - Click `Manage asserts`.
 - Select the `Object count` tab.
