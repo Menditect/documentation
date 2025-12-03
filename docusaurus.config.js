@@ -87,6 +87,9 @@ const config = {
             content: '@site/additional/01-howtos/04-design-tests/generate-test.md',
           },
           {
+            id: 'generate-frontend-test',
+            content: '@site/additional/01-howtos/04-design-tests/generate-frontend-test.md',
+          }, {
             id: 'ui-testing',
             content: '@site/additional/01-howtos/04-design-tests/frontend-test-with-mta.md',
           },
@@ -107,6 +110,7 @@ const config = {
           { id: 'application-revision', content: 'mta/application-revision.md', versions: 'ALL' },
           { id: 'archive', content: 'mta/archive.md', versions: 'ALL' },
           { id: 'assert-attribute', content: 'mta/Assert/assert-attribute.md', versions: 'ALL' },
+          { id: 'assert-exception', content: 'mta/Assert/assert-exception.md', versions: ['3.0'] },
           { id: 'assert-microflow-output', content: 'mta/Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'mta/Assert/assert-object-count.md', versions: 'ALL' },
           { id: 'branch-subscription', content: 'mta/branch-subscription.md', versions: 'ALL' },

@@ -26,16 +26,20 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 ## Actions on an Assert on Validation feedback 
 
 ### Add Count Assert 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
-- Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Test Case](../test-case).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Count assert" for the Assert type.
 - Select the Comparison operator and fill in the Comparison number.
 - Save.
  
 ### Add Attribute-member Assert 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
-- Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Test Case](../test-case).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Attribute-member" for the Assert type.
 - Choose the Entity that the feedback message should occur on.
@@ -44,8 +48,10 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Save.
 
 ### Add Association-member Assert 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
-- Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Test Case](../test-case).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "Association-member" for the Assert type.
 - Choose the Entity that the feedback message should occur on.
@@ -54,8 +60,10 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 - Save.
 
 ### Add All-members Assert 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
-- Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Test Case](../test-case).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on "<i class="fal fa-plus-circle"></i> Assert" to add the Assert.
 - Choose "All-members" for the Assert type.
 - Select the Quantifier, Comparison operator and fill in the Comparison string.
@@ -63,8 +71,10 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 
 ### Delete an Assert on Validation feedback 
 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Test Case. 
-- Click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Test Case](../test-case).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on <i class="fas fa-trash-alt"></i> to delete the assert.
 
 ## Related topics

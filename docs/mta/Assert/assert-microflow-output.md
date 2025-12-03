@@ -48,14 +48,18 @@ The following Assert Compare types are supported for the Mendix data types:
 
 ## Actions on an Assert on Microflow output 
 
-### Set the Assert 
-There are multiple ways to add an Assert Microflow output:
-1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on <i class="fal fa-ballot-check"></i> under "Return value of microflow" to set the Assert;
-2. Click on the <i class="fas fa-ellipsis"></i> button on the Teststep where you want to set the assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. Click on the "<i class="fal fa-plus-circle"></i> Assert" button to set the Assert;
-3. Click on "Save and configure asserts" after configuring the Teststep. This will show the page where Asserts can be configured. Click on the "<i class="fal fa-plus-circle"></i> Assert" button to set the Assert.
+### Add an Assert on Microflow output 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Microflow Teststep](../Teststep/microflow) where the [Microflow](../mendix-microflow) has a return value.
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
+- Click on the "<i class="fal fa-plus-circle"></i> Assert" button to add the Assert.
 
-### Delete the Assert  
-- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep where you want to delete the assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured;
+### Delete an Assert on Microflow output 
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Microflow Teststep](../Teststep/microflow) that has an Assert, marked with a colored `Assert` tag.
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
 - Click on the <i class="fal fa-trash-can"></i> button.
 
 ## Related topics

@@ -45,14 +45,19 @@ The following Assert Compare types are supported for the Mendix data types:
 ## Actions on an Assert on Attribute 
 
 ### Add an Assert on Attribute 
-There are multiple ways to add an Assert on Attribute:
-1. Navigate to the "Attributes" tab in the "Details of teststep" pane on the right in the Test Suite overview page. Click on <i class="fal fa-ballot-check"></i> next to the attribute to add the Assert;
-2. Click on the <i class="fas fa-ellipsis"></i> button on the Teststep where you want to add an assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured. Click on <i class="fal fa-ballot-check"></i> next to the attribute to add the Assert;
-3. Click on "Save and configure asserts" after configuring the Teststep. This will show the page where Asserts can be configured. Navigate to the "Attributes" tab, click on the "<i class="fal fa-plus-circle"></i> Assert" button to add the Assert.
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select a [Create Teststep](../Teststep/create), [Change Teststep](../Teststep/change) or [Retrieve Teststep](../Teststep/retrieve).
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
+- Select the Attribute where you want to add the Assert.
+- Click on the "<i class="fal fa-plus-circle"></i> Assert" button to add the Assert.
 
 ### Delete an Assert on Attribute 
-- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep where you want to delete an assert, and click "<i class="fal fa-ballot-check"></i> Edit asserts" to open the page where asserts can be configured;
-- Click on <i class="fas fa-ballot-check"></i> on the attribute to delete the Assert from.
+- Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.
+- Select any [Teststeps](Teststep/) that has an Assert on Attribute, marked with a colored `Assert` tag.
+- Select Tab `Assert(s)`.
+- Click `Manage asserts`.
+- Select the Attribute where you want to delete the Assert.
 - Click on the <i class="fal fa-trash-can"></i> button.
 
 ## Related topics

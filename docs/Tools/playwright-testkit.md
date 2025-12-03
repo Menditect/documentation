@@ -1,7 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
-# Playwright for Mendix Test Kit
+
+# Playwright Frontend Testkit
 
 ## Purpose
 
