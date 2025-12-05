@@ -4,7 +4,7 @@
 
 This document describes how to structure a Frontend Test in MTA.
 
-Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and [host a Playwright Browser](../../installation/install-playwright-browser).
+Make sure to first [prepare your Mendix model](../configure-mta/prepare-mendix-project), and [host a Playwright Browser](../../installation/install-playwright-browser).
 
 ## Mendix App testing
 
@@ -74,7 +74,7 @@ For convenience when testing Mendix Apps, instead of using Playwright Locators a
 Read [Find a Locator](frontend-test-find-locator) to learn more about Locators for Mendix Apps.
 
 The recurring pattern of Teststeps for frontend testing a Mendix App:
-1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class, also see [Prepare for Frontend test](../configure-mta/prepare-frontend-test). 
+1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class. 
    - Takes a PageClass String parameter
    - Returns a MxPageLocator object 
 2. **Locate** a Mendix **Widget**: for example `Locate_MxWidget_Button`, by Widget Name, for example `actionButton1`.

@@ -14,13 +14,13 @@ The Installation Guide covers instructions on how to install and configure the M
 
 ## Supported Versions
 
-|          | MTA Plugin 5  | MTA Plugin 4.8.1 | Any older MTA Plugin |
-| -------- | ------------- | ---------------- | -------------------- |
-| MTA 3.0  | Supported     | Supported *      | Not supported        |
-| MTA 2.10 | Supported     | Supported        | Not supported        |
-| MTA 2.9  | Not supported | Not supported    | Not supported        |
+|          | MTA Plugin 5  | MTA Plugin 4.8.1  | Any older MTA Plugin |
+| -------- | ------------- | ----------------- | -------------------- |
+| MTA 3.0  | Supported     | Partial support * | Not supported        |
+| MTA 2.10 | Supported     | Supported         | Not supported        |
+| MTA 2.9  | Not supported | Not supported     | Not supported        |
 
-\* In order to make use of all the features of MTA, import the latest plugin.
+\* [Teststep Exception](../mta/teststep-exception) handling and [Test Run](../mta/test-run) FileDocument downloads won't work.
  
 
 ## Installation instructions

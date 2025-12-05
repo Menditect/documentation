@@ -33,11 +33,12 @@ The Documentation of the Page as entered in Studio Pro.
 
 ## Actions
 
-### View Page usage
+### View or Export Page usage
 
 - navigate to the [Test Configuration](test-configuration) of which you want to view Page usage 
 - navigate to `Mendix Model` 
 - navigate to `Pages` 
+- export the list with the `Page usage` button
 
 ## Related topics
 - [Application Revision](application-revision)

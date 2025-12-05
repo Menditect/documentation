@@ -2,23 +2,27 @@
 sidebar_position: 3
 ---
 
-# Playwright Frontend Testkit
+# MTA Mendix Frontend Testkit
 
 ## Purpose
 
-The Playwright Test Kit is meant specifically to define and run Frontend tests for **Mendix Apps**. 
+The Mendix Frontend Testkit is meant specifically to define and run Frontend tests for **Mendix Apps**. 
 
-It contains microflows to test Mendix Platform Supported Widgets.
+It contains microflows allowing an MTA Tester to [Locate](../mta/frontend-glossary#locator) a [Widget](../mta/frontend-glossary#widget) on a [Mendix Page](../mta/mendix-page) and perform an [Action](../mta/frontend-glossary#action) on it.
 
 ## Supported Versions
 
-The currently supported version is 4.6.0.
+Consult the Releases tab in the Mendix Marketplace:
+
+https://marketplace.mendix.com/link/component/206637
+
+All Platform Supported [Widgets](../mta/frontend-glossary#widget) in the latest Mendix LTS version are supported. Additionally, it is possible to extend the Testkit functionality by building your own module.
 
 ## Installation instructions
 
-Download the Playwright for Mendix Test Kit from the Mendix Marketplace:
+Download the Mendix Frontend Testkit from the Mendix Marketplace:
 
-https://marketplace.mendix.com/link/component/235327
+https://marketplace.mendix.com/link/component/206637
 
 ## Update instructions
 
@@ -28,8 +32,8 @@ Replace the existing module when importing a new version.
 
 These modules are **required** to be imported in the Mendix App under test:
 - [MTA Plugin](mta-plugin)
-- [Playwright Connector](playwright-connector)
-- Playwright for Mendix Test Kit
+- [MTA Playwright Connector](playwright-connector)
+- MTA Mendix Frontend Testkit
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
 

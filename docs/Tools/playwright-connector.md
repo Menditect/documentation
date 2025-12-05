@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Playwright Connector
+# MTA Playwright Connector
 
 ## Purpose
 
@@ -11,13 +11,15 @@ The Playwright Connector makes it possible to define and run a **frontend test**
 
 ## Supported Versions
 
-The currently supported version is 4.6.0.
+Consult the Releases tab in the Mendix Marketplace:
+
+https://marketplace.mendix.com/link/component/214764
 
 ## Installation instructions
 
 Download the Playwright Connector module from the Mendix Marketplace:
 
-https://marketplace.mendix.com/link/component/235323
+https://marketplace.mendix.com/link/component/214764
 
 ## Update instructions
 
@@ -29,8 +31,8 @@ Make sure to delete any old JAR files from the userlib subfolder in your project
 
 These modules are **required** to be imported in the Mendix App under test:
 - [MTA Plugin](mta-plugin)
-- Playwright Connector
-- [Playwright for Mendix Test Kit](playwright-testkit)
+- MTA Playwright Connector
+- [MTA Mendix Frontend Testkit](playwright-testkit)
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
 

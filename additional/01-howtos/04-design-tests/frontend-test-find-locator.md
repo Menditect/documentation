@@ -6,14 +6,14 @@ This document describes how to find a Locator when designing a Frontend Test. Lo
 
 When designing a Frontend test, defining the right Locator(s) is not always simple. For background information about this challenge, consult the [Knowledge base docs](../../knowledge-base/frontend-testing-for-mendix-devs#locator-challenges).
 
-Make sure to first [prepare the Mendix model for the Frontend Test](../configure-mta/prepare-frontend-test), and [host a Playwright Browser](../../installation/install-playwright-browser).
+Make sure to first [prepare your Mendix model](../configure-mta/prepare-mendix-project), and [host a Playwright Browser](../../installation/install-playwright-browser).
 
 
 ## Locators for Platform supported Mendix Widgets
 
 To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
 
-Locating Mendix Widgets is made as simple as possible by Menditect. For Locating Mendix Widgets, use the microflows and entities from the [Playwright Testkit](../../../Tools/playwright-testkit).
+Locating Mendix Widgets is made as simple as possible by Menditect. For Locating Mendix Widgets, use the microflows and entities from the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit).
 
 ### 1. Determine Widget Name
 

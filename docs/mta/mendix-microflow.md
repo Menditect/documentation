@@ -28,11 +28,12 @@ The Documentation of the Microflow as entered in Studio Pro.
 
 ## Actions
 
-### View Microflow usage
+### View or Export Microflow usage
 
 - navigate to the [Test Configuration](test-configuration) of which you want to view Microflow usage 
 - navigate to `Mendix Model` 
 - navigate to `Microflows` 
+- export the list with the `Microflow usage` button
 
 ## Related topics
 - [Application Revision](application-revision)

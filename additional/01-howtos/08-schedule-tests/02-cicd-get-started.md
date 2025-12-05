@@ -3,7 +3,7 @@
 :::info
 If you're getting started using the MTA Public API, [let us know](mailto:support@menditect.com?subject=MTA%20Public%20API). 
 
-Menditect has created a [Scheduler Module](../../../tools/scheduler-module) that we can share with you to make the implementation easier. 
+Menditect has created a Scheduler Module that we can share with you to make the implementation easier. 
 :::
 
 ## Getting started
