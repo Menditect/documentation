@@ -1,14 +1,14 @@
 ---
-sidebar_position: 24
+sidebar_position: 25
 ---
 
 # Test Case
 
 ## Definition
 
-A Test Case is a collection of operations to execute on an [Application Instance](application-instance), that are assembled to test some specific aspect of system behaviour. 
+A Test Case is a collection of operations to execute on an [Application Instance](application-instance), that are assembled to test some specific aspect of system behaviour. A Test Case is always part of a [Test Suite](test-suite).
 
-The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a [Test Suite](test-suite) to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
+The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a Test Suite to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
 
 A Test Case is always executed on a Test Application and by an execution user. The name of the execution user that is configured for the Test Case, must exactly match an existing, active and not blocked local user in the [Application Instance](application-instance) that is tested. Note that this is not the same user as the Mta Connection User that is used to communicate between the Application environment and MTA. 
 
@@ -26,8 +26,8 @@ The name of the Test Case.
 ### Key
 The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
 
-### Test application 
-The associated test application to execute the Test Case on. 
+### Application 
+The associated [Application](application) to execute the Test Case on. 
 
 ### Execution user
 The username to execute the Test Case with. Do NOT use the MTA Plugin User account.
@@ -80,17 +80,9 @@ A description of the expected result of a Test Case.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose `Save`.
 
-### Generate Frontend Test Cases
-- Navigate to the Test Suite you want to create Frontend Test Cases in.
-- Use the `Add frontend test` button to create Frontend Test Cases.
-- Select the [Application](application) for the Test Cases.
-- Select the Execution user for the Test Cases.
-- Select the `Start test location` to determine if Playwright is hosted locally, in Browserstack, or in a separate server.
-- Fix the construction errors by setting the missing parameters. Consult the Frontend testing howto's for more information.
-
 
 ### Generate a Test Case to test a Microflow
-
+@@todo move
 This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
 
 Different then when [generating from inside the test suite](recording.md), you can choose to generate based on random data, or to use from existing data from a database.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 20
 ---
 
 # Frontend Testing Glossary
@@ -106,6 +106,10 @@ A Widget is a reusable, self-contained user interface element on a Mendix [Page]
 - ACT (context: Test Kit) element action
 - ASR (context: Test Kit) assert 
 - -->
+
+## Related topics
+- [Frontend Test](frontend-test)
+- [Teststep](Teststep/)
 
 
 ## Feedback?

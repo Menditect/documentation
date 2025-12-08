@@ -79,29 +79,25 @@ Only for Microflow Teststeps; Name of the microflow to be executed.
 
 ### Move a Teststep
 
-First, navigate to the Test Case that the Teststep is in.
-
-**Option 1: Move a teststep 1 position up or down.** 
+#### Move a teststep 1 position up or down.
 - Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
 - Click on <i class="fas fa-arrow-up"></i> or "<i class="fas fa-arrow-down"></i>" to move the Teststep up or down.
-- Review and correct any resulting configuration [Construction Errors](construction-error).
+- Review and [Construction Errors](construction-error).
 
-**Option 2: Move a Teststep inside a Test Case.** 
-- Click on "<i class="fa fa-pencil"></i> Edit".
-- Use drag and drop to position the Teststep.
-- Review any configuration [Construction Errors](construction-error) and save your changes.
+#### Move Teststeps inside a Test Case.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep or Test Case.
+- Click on `Arrange Teststeps`.
+- Review any [Construction Errors](construction-error).
 
-**Option 3: Move a Teststep to another Test Case.** 
+#### Move a Teststep to another Test Case.
 - Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
-- Click on "<i class="fas fa-arrow-right"></i> Another test case".
-- Use drag and drop to move the Teststep.
-- Review any configuration [Construction Errors](construction-error) and save your changes.
+- Click on `Move to Test Case`.
+- Review any [Construction Errors](construction-error).
 
 
 ### Edit a Teststep
-- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
-- Click on "<i class="fa fa-pencil"></i> Edit".
-- Click on <i class="fa fa-pencil"></i> next to the Teststep name to edit the Name or the Description, or to Highlight the Teststep.
+- Select the Teststep.
+- Make the changes in the Teststep details, shown on the right.
 
 Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
 
@@ -117,14 +113,9 @@ Note that it not is possible to change the action or type of Teststep after crea
 ### Delete a Teststep
 - Navigate to the Test Case that the Teststep is in.
 - Click on the <i class="fas fa-ellipsis"></i> button on the Teststep.
-- Click on "<i class="fas fa-trash-alt"></i> Test step".
+- Click on `Delete`.
 
 Note that it is possible that due to deleting a Teststep and dependencies with another Teststep, a [Construction Error](construction-error) will occur prohibiting the execution of the Test Configuration.
-
-### Open the Microflow or Domain Model associated with a Teststep in Mendix Studio
-- Navigate to the Test Case that the Teststep is in.
-- Select the Teststep.
-- Click on "*Mx Studio*" on top of the Teststep details pane on the right.
 
 ## Related topics
 - [Assert](Assert/)

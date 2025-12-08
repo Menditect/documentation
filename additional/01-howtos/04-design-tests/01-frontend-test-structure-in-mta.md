@@ -20,53 +20,6 @@ Before you can start the frontend test, you need to decide where the Playwright 
 
 For installation instructions, please follow [this page](../../installation/install-playwright-browser).
 
-**1. How do you want to start the Browser?**
-
-| Connection Method         | Add Teststep that Calls Microflow                                |
-| ------------------------- | ---------------------------------------------------------------- |
-| Start at my local machine | `MenditectPlaywrightConnector.Start_Test_Locally`                |
-| Start at BrowserStack     | `MenditectPlaywrightConnector.Start_Test_With_BrowserStack`      |
-| Start at URL              | `MenditectPlaywrightConnector.Start_Test_With_Playwright_Server` |
-
-**2. What browser do you want to run your test on?**
-
-Set the `BrowserType` parameter of the Microflow Teststep that you just added.
-
-**3. Do you want to run a headless test?** Default `No`. Headless testing means that the browser will not be visible during the test. Only applicable when running Playwright on a local machine (other options are always Headless).
-
-Set the `Headless` parameter of the Microflow Teststep that you just added. 
-
-**4. Set milliseconds to wait between actions.** Default `0`. Setting this will make Playwright wait between actions so you can see what's happening in the browser.
-
-Set the `SlowMo` parameter of the Microflow Teststep that you just added.
-
-**5. Set remaining Microflow parameters.**
-
-Set the remaining parameters, depending on which Microflow you chose.
-
-**6. Do you want to provide a login to view your Mendix App?**
-
-| Login type | Add Teststep that Calls Microflow                   |
-| ---------- | --------------------------------------------------- |
-| Yes        | `MenditectMxUITestKit.Start_MxUITest_With_Login`    |
-| No         | `MenditectMxUITestKit.Start_MxUITest_Without_Login` |
-
-**7. Provide the URL where the Mendix App is running.**
-
-Set the `URL` parameter of the Microflow Teststep that you just added.
-
-**8. Do you want to enable Tracing for the duration of the Test?** A Trace file will be generated, that you can upload at https://trace.playwright.dev/, where you will be able to view the actions in the browser. Particularly useful for Headless testing.
-
-Set the `Tracing` parameter of the Microflow Teststep that you just added.
-
-**9. Do you want to choose the height and width of the browser window?** 
-
-Set the `ViewPort` object parameter of the Microflow Teststep that you just added. If left empty, Playwright will use default values.
-
-**10. Set remaining Microflow parameters.**
-
-Set the remaining parameters, depending on which Microflow you chose.
-
 ### Locators and Actions
 
 For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, Menditect introduced Widget-specific Locators and Actions.

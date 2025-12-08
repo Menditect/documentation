@@ -261,18 +261,26 @@ const config = {
           },
           {
             to: 'additional/howtos',
-            label: 'How to?',
-            position: 'right',
+            label: 'How-to\'s',
+            position: 'left',
           },
           {
-            to: 'additional/bestpractice',
-            label: 'Best Practice',
+            label: 'More',
             position: 'right',
-          },
-          {
-            to: 'additional/knowledge-base',
-            label: 'Knowledge base',
-            position: 'right',
+            items: [
+              {
+                to: 'additional/bestpractice',
+                label: 'Best Practice',
+              },
+              {
+                to: 'additional/knowledge-base',
+                label: 'Knowledge base',
+              },
+              {
+                to: 'additional/knownissues',
+                label: 'Known issues',
+              },
+            ],
           },
           {
             label: 'Legal',

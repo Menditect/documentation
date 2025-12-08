@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# Howto's
+# How-to's
 
 These how-to pages give detailed, step-by-step instructions on how to achieve something with MTA.
 
