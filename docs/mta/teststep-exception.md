@@ -28,13 +28,13 @@ None.
 
 #### Unhandled Exception
 
-- When a [Test Run](test-run) is Stopped because of a Teststep Exception, the executed [Teststep](Teststep/) is <font color="#d30d2e"> marked red </font>.
-- In the details of the executed Teststep, a message is shown <font color="#d30d2e"> Execution caused an exception - Execution stopped </font>.
+- When a [Test Run](test-run) is Stopped because of a Teststep Exception, the executed [Teststep](Teststep/) is <font color="#d30d2e"> marked red</font>.
+- In the details of the executed Teststep, this text is shown: <font color="#d30d2e"> Execution caused an exception - Execution stopped</font>. Also, the Exception Message is shown.
 
 #### MTA Handled Exception
 
 - When a [Test Run](test-run) Continues because of an [Assert that expects a Raised Teststep Exception](../mta/Assert/assert-exception), the executed [Teststep](Teststep/) is not marked red, but marked with a colored `Assert` tag.
-- In the details of the executed Teststep, a message is shown <font color="#d30d2e"> Execution caused an exception - Execution continued </font>.
+- In the details of the executed Teststep, this text is shown: <font color="#d30d2e"> Execution caused an exception - Execution continued</font>. Also, the Exception Message is shown.
 
 #### Mendix Handled Exception
 
