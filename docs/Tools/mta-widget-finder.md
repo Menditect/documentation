@@ -8,7 +8,7 @@ sidebar_position: 5
 
 The MTA Widget Finder is used to prepare for building a Frontend test.
 
-It is a browser extension that can be used in Google Chrome or Mozilla Firefox to determine the name of a [Mendix Widget](../mta/frontend-glossary#widget) on any [Mendix Page](../mta/mendix-page).
+It is a browser extension that can be used in [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.firefox.com/) to determine the name of a [Mendix Widget](../mta/frontend-glossary#widget) on any [Mendix Page](../mta/mendix-page).
 
 The name of a Widget is used to set the frontend test [Locator](../mta/frontend-glossary#locator). The MTA Widget Finder can be useful for debugging if a Locator fails.
 
@@ -19,51 +19,20 @@ The name of a Widget is used to set the frontend test [Locator](../mta/frontend-
 - Also, the Widget Finder will show a draggable black rectangle with (Count) information on how many times a Widget with this name occurs on this Page.
 - Clicking `Shift` will 'lock' the currently highlighted Widget and show the option to Copy the Widget name and Page name to the clipboard. CLicking `Shift` again will 'unlock' the Widget.
 
-## For Google Chrome
+## Supported Versions
 
-### Supported Versions
+The currently supported version is 1.0.4.
 
-The currently supported version is 1.0.3.
+## Installation instructions
 
-### Installation instructions
+### For Google Chrome
+- Download the MTA Widget Finder from the Chrome Webstore: https://chromewebstore.google.com/detail/mta-widget-finder/dkclafkppifhppoekgoenninlciofeck
 
-- navigate to the Chrome Web store for Extensions https://chromewebstore.google.com/category/extensions
-- look for the MTA Widget Finder
-- download the MTA Widget Finder
+### For Mozilla Firefox
+- Download the MTA Widget Finder from the Add-ons site: https://addons.mozilla.org/en-US/firefox/addon/mta-widget-finder/
 
-### Update instructions
 
-- uninstall the MTA Widget Finder
-- reinstall the MTA Widget Finder
+## Update instructions
 
-### Dependencies
-
-None.
-
-### Known issues
-
-None.
-
-## For Mozilla Firefox
-
-### Supported Versions
-
-The currently supported version is 1.0.3.
-
-### Installation instructions
-- navigate to the Firefox Addons page for Extensions https://addons.mozilla.org/en-US/firefox/extensions/
-- look for the MTA Widget Finder
-- download the MTA Widget Finder
-
-### Update instructions
-
-- uninstall the MTA Widget Finder
-- reinstall the MTA Widget Finder
-
-### Dependencies
-
-None.
-
-### Known issues
-
-None.
+- Un-install the MTA Widget Finder.
+- Re-install the MTA Widget Finder.

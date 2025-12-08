@@ -20,31 +20,30 @@ The Description of the Datavariation Column.
 
 ## Business rules
 
-
-It is **not allowed** to delete a [Datavariation Column](datavariation-column) if there is only one.
+- It is **not possible** to delete a [Datavariation Column](datavariation-column) if there is only one.
 
 ## Actions on Datavariation Column
 
 ### Execute a single Datavariation Column
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to Execute. 
-- Click "<i class="fal fa-play"></i> Execute".
+- Click `Execute`.
 - MTA will execute the Test Suite or Test Case once, for that single Datavariation Column.
 
 ### Add a Datavariation Column
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to duplicate. 
-- Click "<i class="fal fa-copy"></i> Add duplicate".
+- Click `Add duplicate`.
 
 ### Delete a Datavariation Column
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to delete. 
-- Click "<i class="fal fa-trash-alt"></i> Delete".
+- Click `Delete`.
 
 ### Edit the Name and Description of a Datavariation Column
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to edit. 
-- Click "<i class="fal fa-pencil"></i> Edit".
+- Click `Edit`.
 - Change the Name and Description.
 - Save.
 
@@ -54,8 +53,8 @@ The left-to-right order of the Datavariation Columns represents the order in whi
 
 - Navigate to the Test Suite or Test Case Datavariations page.
 - Click on <i class="fas fa-ellipsis"></i> in the column you want to edit. 
-- Click "<i class="fa-light fa-arrow-right"></i> Shift right" to swap the position with the Datavariation Column on the right, or 
-- Click "<i class="fa-light fa-arrow-left"></i> Shift left" to swap the position with the Datavariation Column on the left.
+- Click `Shift right` to swap the position with the Datavariation Column on the right, or 
+- Click `Shift left`  to swap the position with the Datavariation Column on the left.
 
 
 ## Related topics

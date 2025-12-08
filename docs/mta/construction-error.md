@@ -25,7 +25,7 @@ The element that the Construction Error is associated with, for example, a [Test
 
 ### View Construction Errors
 - Navigate to the relevant [Test Configuration](test-configuration).
-- Navigate to "<font color="#d30d2e"><i class="fas fa-circle-exclamation"></i>  Construction Errors</font>".
+- Navigate to `Construction Errors`.
 - A list of Construction Errors is shown including the element that it relates to.
 
 ### Solve Construction Errors

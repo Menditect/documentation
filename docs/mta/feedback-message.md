@@ -26,9 +26,9 @@ None.
 ### View Feedback Messages
 
 - Open the [Test Run](test-run).
-- Open the Test Suite Run by clicking on "<i class="fal fa-eye"></i> Results".
+- Open the Test Suite Run by clicking on `Results`.
 - Click on the <i class="fal fa-message-check"></i> icon on the Test Case, which indicates that there were Validation feedback messages.
-- Click "Show validation feedback messages".
+- Click `Show validation feedback messages`.
 
 
 ## Feedback?

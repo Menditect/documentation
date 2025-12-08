@@ -43,28 +43,28 @@ After creating an Application or Test Configuration, a default Coverage Goal is 
 ### View Coverage Goals on an Application
 - Navigate to the "Applications" page to view all Applications that are used in MTA.
 - Select an [Application](application) by clicking on the tile.
-- Navigate to "<i class="fal fa-umbrella"></i> Coverage Goals".
+- Navigate to `Coverage Goals`.
 
 ### View Coverage Goals on a Test Configuration
 - Navigate to the "Test configurations" page to view a list of all the Test Configurations in MTA.
 - Select a [Test Configuration](test-configuration) by clicking on the tile.
-- Navigate to "<i class="fal fa-umbrella"></i> Coverage Goals".
+- Navigate to `Coverage Goals`.
 
 ### Change Included Test Configurations on a Coverage Goal
 - Open the list of Coverage Goals for the Application.
-- Click "<i class="fas fa-pencil"></i> Edit" in the "Test configurations included for coverage calculation" element on the right side.
+- Click `Edit` in the `Test configurations included for coverage calculation` element on the right side.
 - Select Test Configurations to include.
 - Save.
 
 ### Change Included Test Suites on a Coverage Goal
 - Open the list of Coverage Goals for the Test Configuration.
-- Click "<i class="fas fa-pencil"></i> Edit" in the "Test suites included for coverage calculation" element on the right side.
+- Click `Edit` in the `Test suites included for coverage calculation` element on the right side.
 - Select Test Suites to include.
 - Save.
 
 ### Add a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
-- Click "<i class="fal fa-plus-circle"></i> Add" to add a Coverage Goal.
+- Click `Add` to add a Coverage Goal.
 - Select the Application if not yet pre-selected.
 - Enter a name for the Coverage Goal.
 - Save.
@@ -72,23 +72,23 @@ After creating an Application or Test Configuration, a default Coverage Goal is 
 ### Edit the name of a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
 - Click <i class="fas fa-ellipsis"></i> on the Coverage Goal you want to edit.
-- Select "<i class="fas fa-pencil"></i> Edit".
+- Select `Edit`.
 - Change the name of the Coverage Goal.
 - Save.
 
 ### Calculate a Coverage Goal
 
-To calculate a Coverage Goal and create a new [Coverage Calculation](coverage-calculation), [execute a Test Configuration](test-configuration#execute-a-test-configuration) and enable "Coverage".
+To calculate a Coverage Goal and create a new [Coverage Calculation](coverage-calculation), [execute a Test Configuration](test-configuration#execute-a-test-configuration) and enable `Coverage`.
 
 ### Copy name of a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
 - Click <i class="fas fa-ellipsis"></i> on the Coverage Goal you want to edit.
-- Select "<i class="fal fa-copy"></i> Copy".
+- Select `Copy`.
 
 ### Delete a Coverage Goal
 - Open the list of Coverage Goals for the Application or Test Configuration.
 - Click <i class="fas fa-ellipsis"></i> on the Coverage Goal you want to delete.
-- Select "<i class="fas fa-trash-alt"></i> Delete".
+- Select `Delete`.
 - Confirm.
 
 ## Related topics

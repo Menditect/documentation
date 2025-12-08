@@ -45,11 +45,11 @@ None.
 
 ### Toggle Archive in MTA
 - Login as an MTA Manager.
-- Navigate to "MTA management", "MTA settings".
-- Slide the "Test run archive" to either the Enabled or Disabled setting. 
+- Navigate to `MTA management`, `MTA settings`.
+- Slide the `Test run archive` to either the Enabled or Disabled setting. 
 
 ### View Archive in MTA
-- Navigate to "Archive".
+- Navigate to `Archive`.
 - Use the filter options to find a specific Log Event.
 
 ## Related topics

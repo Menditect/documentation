@@ -22,7 +22,7 @@ A Snapshot is created automatically before the [Test Suites](test-suite) in a [T
 
 Restoring a Test Configuration using a snapshot will allow to **undo an Adapt**. 
 
-- Navigate to "Test Configurations" in the top menu.
+- Navigate to `Test Configurations` in the top menu.
 - Click <i class="fas fa-ellipsis"></i> and then <i class="fa-light fa-clock-rotate-left"></i> to restore a test configuration.
 
 The result of this action will be:

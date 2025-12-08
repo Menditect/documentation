@@ -31,39 +31,39 @@ When yes, select this Test Setting to execute.
 ## Actions on Test Setting 
 
 ### View Test Settings
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
+- Navigate to `Test settings`.
 
 ### Create a Test Setting
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
-- Click "Add".
+- Navigate to `Test settings`.
+- Click `Add`.
 
 ### Edit a Test Setting
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
-- Click on the '<i class="fas fa-ellipsis"></i>' button and choose "Edit".
+- Navigate to `Test settings`.
+- Click on the <i class="fas fa-ellipsis"></i> button and choose `Edit`.
 
 ### Delete a Test Setting
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
-- Click on the '<i class="fas fa-ellipsis"></i>' button and choose "Delete".
+- Navigate to `Test settings`.
+- Click on the <i class="fas fa-ellipsis"></i> button and choose `Delete`.
 
 ### Associate an Application Instance to a Test Setting
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
-- Click on "Select" for the Application you want to select an Instance for.
+- Navigate to `Test settings`.
+- Click on `Select` for the Application you want to select an Instance for.
 
 ### Set a Test Setting as Preference
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "Test settings".
-- Click on "Set as my preference" on the Test Setting you want to use.
+- Navigate to `Test settings`.
+- Click on `Set as my preference` on the Test Setting you want to use.
 
 ## Related topics
 - [Application Instances](application-instance)

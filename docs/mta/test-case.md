@@ -78,7 +78,7 @@ A description of the expected result of a Test Case.
 - Select an [Application Instance](application-instance) to execute the Test Case on.
 - Select an Execution User to execute the Test Case with.
 - Optionally, change the Execution time-out and Execute with delay.
-- Choose "Save".
+- Choose `Save`.
 
 ### Generate Frontend Test Cases
 - Navigate to the Test Suite you want to create Frontend Test Cases in.

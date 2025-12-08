@@ -54,9 +54,9 @@ A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Sui
 ## Actions on Test Run
 
 ### View Test Runs
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration you want to view Test Runs for.
-- Navigate to "Test runs".
+- Navigate to `Test runs`.
 
 ### View Test Suite Run
 
@@ -64,7 +64,7 @@ A Test Suite run is an executed [Test Suite](test-suite) in a Test Run.
 
 - View Test Runs.
 - Select the Test Run you want to view the results for.
-- Click "Results" on the right side of the page, for the executed [Test Suite](test-suite).
+- Click `Results` on the right side of the page, for the executed [Test Suite](test-suite).
 
 ### View Test Case Run
 
@@ -89,16 +89,16 @@ For each Teststep run that has input, you can click on the input, to view which 
 - To create a new Test Run, execute a [Test Case](test-case), [Test Suite](test-suite) or [Test Configuration](test-configuration).
 
 ### Delete a Test Run
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration you want to view Test Runs for.
-- Navigate to "Test runs".
+- Navigate to `Test runs`.
 - Click <i class="fal fa-trash-can"></i> for the Test run you want to delete.
 
 #### Cleanup of manually-executed Test Runs
 In a Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
 
 #### Cleanup of API-triggered Test Runs 
-For Test Runs that are executed through the [Public API](api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the "Test runs" page.
+For Test Runs that are executed through the [Public API](api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the `Test runs` page.
 
 #### Persisted dashboard data
 If a Test Run is cleaned up, the following information about the Test Run is stored for the statistics on the dashboard page:

@@ -76,8 +76,8 @@ Note that after using a URL to open the Test Suite, each time you hit `F5` or `C
 This action will Copy a Test Suite, from another Test Configuration, with the same linked [Applications](application).
 
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to Copy a Test Suite in.
-- Click on "<i class="fal fa-copy"></i> Copy from" to select a Test Suite from another Test Configuration.
-- Click on "<i class="fal fa-copy"></i> Copy" to copy the Test Suite.
+- Click on `Copy from` to select a Test Suite from another Test Configuration.
+- Click on `Copy` to copy the Test Suite.
 
 ### Import a Test Suite from another Test Configuration and Application
 
@@ -86,8 +86,8 @@ This action will Copy a Test Suite, from another Test Configuration, and with an
 MTA will detect elements such as Microflows and Entities, by matching them by fully qualified Mendix name. If any of the elements cannot be matched, the contents will not be copied.
 
 - Navigate to the Test configurations page in MTA and select the Test Configuration where you want to Copy a Test Suite in.
-- Click on "<i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i> Import from" to select a Test Suite from another Test Configuration.
-- Click on "<i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i> Import" to copy the Test Suite.
+- Click on `Import from` to select a Test Suite from another Test Configuration.
+- Click on `Import` to copy the Test Suite.
 
 
 ### Delete a Test Suite

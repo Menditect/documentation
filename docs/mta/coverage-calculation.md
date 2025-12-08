@@ -6,7 +6,7 @@ sidebar_position: 11
 
 ## Definition
 
-A Coverage Calculation is a representation of the code coverage of one moment in time. It represents the coverage percentage of microflows that were executed, out of all included microflows for the associated [Coverage Goal](coverage-goal).  This Coverage Goal is **calculated** and stored as a Coverage Calculation, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
+A Coverage Calculation is a representation of the code coverage of one moment in time. It represents the coverage percentage of [Microflows](mendix-microflow) that were executed, out of all included microflows for the associated [Coverage Goal](coverage-goal).  This Coverage Goal is **calculated** and stored as a Coverage Calculation, whenever a test is executed, "Coverage" was selected when starting the Test Run, and Coverage Goals exist. 
 
 A Coverage Calculation can be associated to a [Test Configuration](test-configuration), or to an [Application](application).
 
@@ -59,7 +59,7 @@ The absolute difference in coverage percentage of this Calculation, <br/> compar
 
 ### View Coverage Calculations on an Application
 - [View Coverage Goals on an Application](coverage-goal#view-coverage-goals-on-an-application)
-- Click "<i class="fal fa-eye"></i> Calculated".
+- Click `Calculated`.
 
 ### View Coverage Calculations on an Application Revision
 - [View downloaded Application revisions for an Application](application-revision#view-downloaded-application-revisions-for-an-application)
@@ -68,7 +68,7 @@ The absolute difference in coverage percentage of this Calculation, <br/> compar
 
 ### View Coverage Calculations on a Test Configuration
 - [View Coverage Goals on a Test Configuration](coverage-goal#view-coverage-goals-on-a-test-configuration)
-- Click "<i class="fal fa-eye"></i> Calculated".
+- Click `Calculated`.
 
 ### View Coverage Calculations on a Test Run
 - [View Test Runs](test-run#view-test-runs)

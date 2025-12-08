@@ -57,19 +57,19 @@ From the Datavariations, to edit a single attribute or assert, simply double-cli
 
 ### Delete a Datavariation Item Row
 - From the Datavariations page, click <i class="fas fa-ellipsis"></i> in the Datavariation Item Row to delete.
-- Click ""<i class="fal fa-trash-alt"></i> Delete".
+- Click `Delete`.
 
 
 ### Navigate to the Test Case of the Datavariation Item Row
 
 - From the Datavariations page, click <i class="fas fa-ellipsis"></i> in the Datavariation Item Row.
-- Click ""<i class="fal fa-location-arrow"></i> Navigate to test case".
+- Click `Navigate to test case`.
 
 ### Navigate to the Teststep of the Datavariation Item Row
 This action is not possible for Test Case Asserts.
 
 - From the Datavariations page, click <i class="fas fa-ellipsis"></i> in the Datavariation Item Row.
-- Click ""<i class="fal fa-location-arrow"></i> Navigate to teststep".
+- Click `Navigate to teststep`.
 
 
 ### Change the order of a Datavariation Item Row

@@ -30,11 +30,11 @@ To learn more about configuring an MTA user, read the How To section.
 ## Actions on an Application
 
 ### View Applications in use by MTA
-- Navigate to the "Applications" page to view all Applications that are used in MTA.
+- Navigate to the `Applications` page to view all Applications that are used in MTA.
 
 ### Register Application in MTA
-- Use the top menu in MTA to navigate to the "Applications" page .
-- Use the "Add" button to add an Application.
+- Use the top menu in MTA to navigate to the `Applications` page .
+- Use the `Add` button to add an Application.
 - Select the Application you want to Add.
 
 :::note manual registration
@@ -45,24 +45,24 @@ Add a Mendix App manually by using the <i class="fas fa-ellipsis"></i> button on
 :::
 
 ### View information about the Application
-- Navigate to the "Applications" page.
+- Navigate to the `Applications` page.
 - Click on <i class="fal fa-info-circle"></i> to view the Application Key (next to the App title) and the Project ID.
 
 :::note
-The Project ID is the same ID as the "App ID" that can be found in [Mendix Sprintr](https://sprintr.home.mendix.com/), under the "Settings" page, after you selected an App.
+The Project ID is the same ID as the `App ID` that can be found in [Mendix Sprintr](https://sprintr.home.mendix.com/), under the `Settings` page, after you selected an App.
 :::
 
 ### Enable loading Pages and Widgets
 Enabling Page and Widget loading will allow for the generation of Frontend teststep(s).
 
-- Navigate to the "Applications" page .
+- Navigate to the `Applications` page .
 - Click on the <i class="fas fa-ellipsis"></i> button.
-- Click "Enable loading pages and widgets".
+- Click `Enable loading pages and widgets`.
 
 ### Unregister Application from MTA
-- Navigate to the "Applications" page .
+- Navigate to the `Applications` page .
 - Click on the <i class="fas fa-ellipsis"></i> button for the Application you want to unregister.
-- Click "<i class="fal fa-trash-can"></i> Delete".
+- Click `Delete`.
 
 ## Related topics
 - [Application Instance](application-instance)
