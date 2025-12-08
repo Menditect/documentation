@@ -32,7 +32,7 @@ The name of the Teststep. [Edit](#edit-a-teststep) the teststep to change.
 A description of the Teststep. [Edit](#edit-a-teststep) the teststep to change. 
 
 ### Exception handling
-Determines if the [Test Run](test-run) will continue if a [Teststep Exception](teststep-exception) occurs in this Teststep, that is not handled by Mendix.
+Determines if the [Test Run](test-run) will either `Continue`, or `Stop`, if a [Teststep Exception](teststep-exception) occurs in this Teststep, that is not handled by a Mendix [Error Handler](https://docs.mendix.com/refguide/error-handling-in-microflows/).
 
 ### Delay after execution
 Delays the execution of this teststep with specified milliseconds. [Edit](#edit-a-teststep) the teststep to change. 

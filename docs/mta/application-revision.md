@@ -51,16 +51,16 @@ The total number of widgets in application revision. Only shown if the associate
 
 ## Actions on an Application revision
 
-### View downloaded Application revisions for an Application
-- Navigate to the "Applications" page to view all Applications that are used in MTA.
+### View Application Revisions
+- Navigate to the `Applications` page to view all Applications that are used in MTA.
 - Select an [Application](application) by clicking on the tile.
-- Navigate to "App revisions".
+- Navigate to `App revisions`.
 
-### View downloaded elements in a revision 
-- Navigate to the "Applications" page to view all Applications that are used in MTA.
+### View Application Revision details
+- Navigate to the `Applications` page to view all Applications that are used in MTA.
 - Select an [Application](application) by clicking on the tile.
-- Navigate to "App revisions" to view the Application revisions.
-- Click on <i class="fal fa-info-circle"></i> to view Modules, Entities and Microflows in this revision.
+- Navigate to `App revisions` to view the Application revisions.
+- Click on <i class="fal fa-info-circle"></i> to view Modules, Entities, Microflows, Pages and Widgets in this revision.
 
 ### Add an Application revision
 Add a new Application revision to MTA by downloading it from teamserver. The only way to download a revision, is if you select this revision to be used in a Test Configuration.
@@ -73,10 +73,10 @@ There are two possible ways of achieving this:
 Note that downloading can take some time depending on the size of the Mendix project.
 
 ### Change the Application revision for a Test Configuration
-- Navigate to the "Test configurations" page.
+- Navigate to the `Test configurations` page.
 - Select the Test Configuration.
-- Navigate to "App revisions". 
-- Click on "Change revision".
+- Navigate to `App revisions`. 
+- Click on `Change revision`.
 - Select the revision you want to test on.
 - MTA will download the revision if it is not yet downloaded.
 
@@ -85,7 +85,7 @@ Note that downloading can take some time depending on the size of the Mendix pro
 If a [Branch Subscription](branch-subscription) is present, it is possible to change to the latest downloaded revision immediately.
 
 - Click on <i class="fas fa-ellipsis"></i> for the Application for which you want to change the revision.
-- Click "<i class="fal fa-pencil"></i> Change to <i class="fal fa-code-commit"></i> (commitid)".
+- Click `Change to {commitid}`.
 
 
 ### Adapt Test Suites in a Test Configuration to a downloaded Application revision
@@ -95,7 +95,7 @@ MTA will not check if the revision of a [Test Configuration](test-configuration)
 :::
 
 [Test Suites](test-suite) in a Test Configuration must be adapted to a new downloaded Application revision, in order to be build Teststeps using that revision's Mendix Model information.
-- Click the Adapt to next revision” button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a [Construction Error](construction-error) will be shown.
+- Click the `Adapt to next revision` button for the selected Test Configuration. MTA will evaluate all model changes and check the consistency of the Test Suite definitions with the Mendix model. If the test model and the Mendix model are not compliant a [Construction Error](construction-error) will be shown.
 
 ### Restore previous revision of Test Suites in a Test Configuration
 
