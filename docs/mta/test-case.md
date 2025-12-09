@@ -80,25 +80,6 @@ A description of the expected result of a Test Case.
 - Optionally, change the Execution time-out and Execute with delay.
 - Choose `Save`.
 
-
-### Generate a Test Case to test a Microflow
-@@todo move
-This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
-
-Different then when [generating from inside the test suite](recording.md), you can choose to generate based on random data, or to use from existing data from a database.
-
-:::info
-Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
-:::
-
-- Navigate to "Microflows" after opening a [Test Configuration](test-configuration).
-- Select the microflow(s) to generate a Test Case for.
-- Choose to either generate a Test Case with random data, or from database.
-- When choosing from database, select the [application instance](application-instance).
-- Optionally open and configure (one of) the test case(s) from here.
-
-When generating multiple test cases, best practice is to create a container [test suite](test-suite) to create 'draft' versions first, and move them to a 'production' test suite later.
-
 ### Execute Test Case
 
 - Use the Execute test case button from the <i class="fas fa-ellipsis"></i> menu or inside a Test Case, to start a new [Test Run](test-run).

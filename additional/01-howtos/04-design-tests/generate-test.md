@@ -50,16 +50,22 @@ Studio Pro will open a tab showing MTA, containing the Test Case.
 
 ### Generate Test
 
-It is possible to automatically generate teststeps to test a microflow. Teststeps will be generated to fill the input parameters of the microflow and the last teststep generated will call the microflow.
+This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
 
-The generated teststeps will appear in a new test case inside a selected test suite, or in the test case where you are working in. This depends on from where the generating is done, because there are two ways to generate teststeps for testing a microflow:
-- Navigate to "Mendix Model" in the Test Configuration. Select one or more microflows to generate a test case for. Using this option, it is possible to generate multiple test cases in a test suite, at once.
-- Click on "Generate test by microflow" while working in a Test Case. Select a single microflow to generate teststeps for. Using this option, you can combine manually created teststeps with generated teststeps in the same test case.
+You can choose to generate based on random data, or to use from existing data from a database.
 
-Teststeps will be generated to fill any Object or List parameters of the microflow. Parameters can be filled using values from a database. Therefore it can be needed to select a running [Application instance](../../../mta/application-instance).
-If the object is nonpersistable, or if the database does not contain any objects of the necessary entity, MTA will use random values for the Object's attributes. 
+Steps:
+- Navigate to "Microflows" after opening a [Test Configuration](test-configuration).
+- Select the microflow(s) to generate a Test Case for.
+- Choose to either generate a Test Case with random data, or from database.
+- When choosing from database, select the [application instance](application-instance).
+- Optionally open and configure (one of) the test case(s) from here.
 
-*Primitive* microflow parameters will always be filled with random values. This means that, if the microflow has no Object or List parameters, the result of a generated test case will always be only the teststep that calls the selected microflow.
+A few notes:
+- Teststeps will be generated to fill any Object or List parameters of the microflow. Parameters can be filled using values from a database. Therefore it can be needed to select a running [Application instance](../../../mta/application-instance).
+- Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
+- If the object is nonpersistable, or if the database does not contain any objects of the necessary entity, MTA will use random values for the Object's attributes. 
+- *Primitive* microflow parameters will always be filled with random values.
 
 ### Record Test
 
