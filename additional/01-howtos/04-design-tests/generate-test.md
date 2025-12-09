@@ -55,10 +55,10 @@ This feature enables you to generate a test just like when inside a test suite, 
 You can choose to generate based on random data, or to use from existing data from a database.
 
 Steps:
-- Navigate to "Microflows" after opening a [Test Configuration](test-configuration).
+- Navigate to "Microflows" after opening a [Test Configuration](../../../mta/test-configuration).
 - Select the microflow(s) to generate a Test Case for.
 - Choose to either generate a Test Case with random data, or from database.
-- When choosing from database, select the [application instance](application-instance).
+- When choosing from database, select the [application instance](../../../mta/application-instance).
 - Optionally open and configure (one of) the test case(s) from here.
 
 A few notes:

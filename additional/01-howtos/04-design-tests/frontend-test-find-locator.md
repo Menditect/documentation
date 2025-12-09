@@ -38,8 +38,6 @@ Note that even though the encompassing element on the Mendix Page is not the Pag
 You will not find these Widgets as specializations of the `MxParentWidgetLocator` entity in the Playwright Testkit's domain model. 
 :::
 
-
-
 :::note Situation 2: Parent is another Widget
 
 If the encompassing element is a [Datagrid](https://docs.mendix.com/refguide/data-grid/), [Listview](https://docs.mendix.com/refguide/list-view/), [Tabcontainer](https://docs.mendix.com/refguide/tab-container/), [Template Grid](https://docs.mendix.com/refguide/template-grid/), etc., these will influence either the *multiplicity* or *visibility* of the Widget, and you have to add more Locators, to be more specific.
@@ -62,20 +60,36 @@ In this situation, you have to add at least two more Teststeps:
 
 After these "parent" Locator and optional Filter Teststeps are added, it is now possible to add the Locator Teststep for the Widget itself.
 
-## Custom Widgets
-
-Custom Widgets are Widgets that are not supported by Menditect in the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit). However, it is possible to create your own bespoke "extension" for this Testkit. 
-
-@@todo
-
-
-### Create Custom Frontend Testkit
-
-For all Widgets, Mendix will add the "mx-name-`widgetName`" class to the HTML, so it is always possible to create a Locator for the surrounding element. However in most cases you will want to add another Locator inside that Locator, so define Actions for child elements (for instance an <input\> element).
 
 :::info snippets
 Snippets are not rendered as HTML elements by Mendix, even though Mendix does allow for adding a Class to a Snippet. In order to define Locators for Widgets inside a Snippet, add a surrounding Container rendered as a DIV element, with a representable name, to locate it.
 :::
+
+
+## Custom Widgets
+
+Custom Widgets are [Widgets](../../../mta/frontend-glossary#widget) that are not supported by Menditect in the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit). However, it is possible to still build a Frontend test with Locators for Custom Widgets. 
+
+For all Widgets, Mendix will add the "mx-name-`widgetName`" property, so it is always possible to create a Locator for the surrounding [element](../../../mta/frontend-glossary#element). However in most cases you will need to append Locators to Locate a child element, for instance an <input\> element. See also the Mendix Docs: https://docs.mendix.com/refguide/common-widget-properties/#name
+
+In order to use the MTA Frontend Teststep generate [feature](../../../mta/frontend-test#generate-teststeps), it is advisable to create your own Testkit module, as an 'extension' to the MTA Mendix Frontend Testkit. 
+
+### Create Custom Frontend Testkit
+
+This section describes how to support a fictitious Custom Widget called `MyWidget`. 
+
+- Add a new Module in your Mendix App called `MenditectMxFrontendTestKitCustom`. 
+  - A Module with this exact name will be scanned by MTA for Frontend test Microflows and Entities.
+- Add a new persistable Entity called `MxMyWidgetLocator`. 
+  - If the Widget can contain other Widgets (MyWidget behaves like, for example, a Container), select `MenditectMxFrontendTestKit.MxParentWidgetLocator` for the Generalization.
+  - If the Widget can contain other Widgets in a list (MyWidget behaves like, for example, a ListView), select `MenditectMxFrontendTestKit.MxParentMultiWidgetInstanceLocator` for the Generalization.
+  - Otherwise, select `MenditectMxFrontendTestKit.MxLocator` for the Generalization.
+- Add a new Microflow with the exact name `Locate_MxWidget_MyWidget`
+  - Add a `WidgetName` String parameter.
+  - Add a `ParentWidget` parameter of type `MenditectMxFrontendTestKit.MxParentWidgetLocator`.
+  - Create an `MxMyDataGridLocator` object.
+  - Use this object for the Return value of the Microflow.
+  - 
 
 ## Locators in non-Mendix Apps
 
