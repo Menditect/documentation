@@ -23,11 +23,25 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 - Option to add an Assert on an Exception.<br/> <br/>  
 
 
+## Required actions
+
+### Update the MTA Plugin
+
+Some new functions will not work on the old version of the [MTA Plugin](../Tools/mta-plugin).
+- Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketplace.mendix.com/link/component/214717). 
+
+### Replace Page call by Microflow call
+
+The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages.
+- Replace any usages of the `MTAPluginPage` Snippet by a call to the `Show_MTA_Plugin_Status_Page` Microflow.
+
+### Re-create your PAT
+
+For Mendix Teams still using SVN repositories, it is required to re-create a Personal Access Token (PAT) in their Mendix profile, with the required scopes.
+- Follow the Steps in the [Access Mendix Model How-to](../additional/howtos/configure-mta/access-mendix-model#create-your-pat-in-your-mendix-account).
+
 ## New functionality 
 
-:::caution update mta plugin
-Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketplace.mendix.com/link/component/214717). Some new functions will not work on the old version of the MTA Plugin.
-:::
 
 | ID                    | MTA-2071                                                                                                                                                                                                                                  |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,10 +71,10 @@ Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketp
 
 <br/>
 
-| ID                    | MTA-2041                                                                                                                                                        |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Textboxes to enter String values are now replaced by Testareas to allow entering new lines. Additionally, String values can be shown as a JSON tree in a popup. |
-| __Release actions__   | None.                                                                                                                                                           |
+| ID                    | MTA-2041                                                                                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Text Boxes to enter String values are now replaced by Text Areas to allow entering new lines. Additionally, String values can be shown as a JSON tree in a popup. |
+| __Release actions__   | None.                                                                                                                                                             |
 
 <br/>
 
@@ -136,6 +150,29 @@ Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketp
 
 <br/>
 
+
+| ID                    | N/A                                                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | If a Microflow, Entity or Attribute contains Documentation, it is now visible in MTA under the <i class="fal fa-book-open"></i> Icon. |
+| __Release actions__   | None.                                                                                                                                 |
+
+<br/>
+
+
+| ID                    | N/A                                                            |
+| --------------------- | -------------------------------------------------------------- |
+| __New functionality__ | It is now possible to manually delete an Application Revision. |
+| __Release actions__   | None.                                                          |
+
+<br/>
+
+
+| ID                    | N/A                                                            |
+| --------------------- | -------------------------------------------------------------- |
+| __New functionality__ | The Mendix Runtime version of MTA has been updated to 9.24.40. |
+| __Release actions__   | None.                                                          |
+
+<br/>
 
 
 | ID                    | MTA-2200                                                                                                                                                                                                                  |

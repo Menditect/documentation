@@ -46,7 +46,7 @@ This indicates if the test is running or not; can be 'Running' or 'Finished'.
 Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
 
 ### Trace files
-A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Suite Run that can be downloaded or replayed at the Playwright website.
+A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Suite Run.
 
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).

@@ -84,7 +84,7 @@ Typically, Text is contained between an opening and closing HTML tag, for exampl
 ## Tracefile
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
-A .ZIP file that contains information about an executed Playwright Frontend test. The Tracefile is essentially a recording of all browser pages and elements during the test, and the [Locators](#locator) and [Actions](#action) performed. The Trace Viewer at the Playwright Website can be used to view the recording. 
+A .ZIP file that contains information about an executed Playwright Frontend test. The Tracefile is essentially a recording of all browser pages and elements during the test, and the [Locators](#locator) and [Actions](#action) performed. The Tracefile Viewer in MTA can be used to view the recording. 
 
 More info at: https://playwright.dev/docs/trace-viewer#opening-the-trace
 

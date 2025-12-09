@@ -92,11 +92,11 @@ This action will generate one or more [Teststeps](Teststep/).
 - Move the mouse below the second Test Case.
 - Click <i class="fal fa-plus-circle"></i> and Click `Frontend teststep(s)`.
 - Select the [Page](mendix-page) where the [Widgets](frontend-glossary#widget) will be tested. If this is the first Page after opening the App, select the user's Homepage.
-- Select the Widget to [locate](frontend-glossary#locator) or perform an [Action](frontend-glossary#action) on.
+- Select the Widget to [locate](frontend-glossary#locator) and perform an [Action](frontend-glossary#action) on.
 - MTA will show the structure of the Widget on the Page.
-- If any of the parent [elements](frontend-glossary#element) can contain multiple child elements, select which [Filter](frontend-glossary#filter) to use.
-- Define which [Action](frontend-glossary#action) to perform on the selected Widget.
-- If the Action results in another [Locator](frontend-glossary#locator), select a secondary Action.
+- If any of the parent Widgets can contain multiple child elements, you must select which [Filter](frontend-glossary#filter) to use.
+- Define which Action to perform on the selected Widget.
+- If the Action results in another Locator, select a secondary Action.
 - Click `Add teststeps`.
 - Fix any [construction errors](construction-error) by [filling in parameters of the Microflow teststeps](Teststep/microflow#setting-microflow-parameters) that MTA added.
 

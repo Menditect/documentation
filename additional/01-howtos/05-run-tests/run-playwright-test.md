@@ -18,5 +18,5 @@ If the Test Run stalls in MTA and it takes too long for the Browser to become vi
 
 ## Analyzing a Frontend test
 
-The results of a Frontend test can be stored in a Playwright Tracefile, that you can upload at https://trace.playwright.dev/, where you will be able to view the actions in the browser. 
+The results of a Frontend test can be stored in a [Playwright Tracefile](../../../mta/frontend-glossary#tracefile). 
 
