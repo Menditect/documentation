@@ -10,9 +10,13 @@ A Frontend Test in MTA is a set of [Teststeps](Teststep/) that start a Playwrigh
 
 In contrast to a "Traditional" backend test in MTA, where [Mendix Microflows](mendix-microflow) can be tested, a Frontend test allows to interact with any website's user interface. 
 
+Read the how-to section and the installation guide to enable Frontend testing.
+
 Preparing the structure for Frontend-testing any website is described below in [Setup Frontend Test](#setup-frontend-test). Teststeps that are generated, will be calling [Microflows](mendix-microflow) from the [Playwright Connector](../Tools/playwright-connector).
 
 Generating Teststeps specifically for testing Mendix Apps is described in [Generate Teststep(s)](#generate-teststeps). Teststeps that are generated, will be calling [Microflows](mendix-microflow) from the [Mendix Frontend Testkit](../Tools/playwright-testkit).
+
+For background information about Playwright Testing, make sure to checkout the Knowledge Base section in this documentation site.
 
 ## Properties
 
@@ -69,6 +73,11 @@ Enables setting the height and width of the browser window.
 
 ### Setup Frontend Test
 
+This action will generate 3 [Test Cases](test-case)
+1. Frontend test - Setup (this will create the Playwright Browser)
+2. Frontend test - `[Add test here]` (this is a placeholder Test Case for to-be created Teststeps)
+3. Frontend test - Teardown (this will stop the Playwright Test and return any recorded [Trace files](frontend-glossary#tracefile))
+
 - Navigate to the Test Suite where you want to create a Frontend test in.
 - Use the `Add frontend test` button to create Frontend Test Cases.
 - Select the [Application](application) for the Test Cases.
@@ -77,6 +86,8 @@ Enables setting the height and width of the browser window.
 - Fix the construction errors by setting the missing parameters. Consult [Properties](#properties) above to learn about parameters.
 
 ### Generate Teststep(s)
+
+This action will generate one or more [Teststeps](Teststep/). 
 
 - Move the mouse below the second Test Case.
 - Click <i class="fal fa-plus-circle"></i> and Click `Frontend teststep(s)`.

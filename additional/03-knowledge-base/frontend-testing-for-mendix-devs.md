@@ -6,8 +6,6 @@ sidebar_position: 2
 
 Frontend testing of websites using tools like **Playwright** (or comparable libraries such as Cypress or Puppeteer) is fundamentally achieved through a process that simulates a real user's interaction with the website's **Document Object Model (DOM)**. This is done by combining three core elements: **locators**, **actions**, and **assertions**.
 
-***
-
 ## 1. Locators
 
 **Locators** are the mechanism used to find specific elements on a web page. Think of them as the coordinates or unique addresses for elements like buttons, text fields, or links. The most robust and common locators are based on **HTML/CSS attributes**, which ensure the test targets the correct element even if the visual layout changes slightly.
@@ -26,7 +24,70 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 * 1. The element may be locatable but an Action will fail because it is not Visible. 
 * 2. The same element may occur multiple times but on different tab pages, leading to the above issue with **Multiplicity**.
 
-***
+### Locators in Mendix Apps
+
+For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, Menditect introduced Widget-specific Locators and Actions.
+
+Read [Find a Locator](../howtos/design-tests/frontend-test-find-locator) to learn more about Locators for Mendix Apps.
+
+The recurring pattern of Teststeps for frontend testing a Mendix App:
+1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class. 
+   - Takes a PageClass String parameter
+   - Returns a MxPageLocator object 
+2. **Locate** a Mendix **Widget**: for example `Locate_MxWidget_Button`, by Widget Name, for example `actionButton1`.
+   - Takes a WidgetName String parameter
+   - Returns a MxLocator specialization object
+3. Perform **Action** on the Mendix Widget, for example `Click_Button`.
+   - Takes a MxLocator specialization object
+   - Throws a possible Playwright Error, when the Widget cannot be located. 
+
+- When the navigation moves to another Mendix Page, a new `Locate_MxPage` microflow must be called to locate that Mendix Page. 
+- When the Mendix Widget is inside another Mendix Widget, adding an additional Widget-specific `Locate_MxWidget_...` microflow may be needed.
+- When there are multiple occurences of the same Mendix Widget, for example in a list, adding a Widget-specific `Filter...` or `Nth...` microflow may be needed.
+
+:::info examples below
+:::
+
+**Click on a button:**
+
+|     | Type          | Description          |
+| --- | ------------- | -------------------- |
+| 1   | Locate Page   | Locate the main page |
+| 2   | Locate Widget | Locate actionbutton  |
+| 3   | Action        | Click actionbutton   |
+
+****
+
+**Click on a row in a Datagrid:**
+
+|     | Type          | Description                        |
+| --- | ------------- | ---------------------------------- |
+| 1   | Locate Page   | Locate the main page               |
+| 2   | Locate Widget | Locate the datagrid widget         |
+| 3   | Locate Widget | Locate the 2nd row in the datagrid |
+| 4   | Action        | Click datagrid row                 |
+
+Note that you have to add **a second Locator microflow** to find the 2nd row in the datagrid. 
+
+This is necessary because the same Widget occurs multiple times and you have to choose which one to Click.
+
+Also read [Find a Locator](../howtos/design-tests/frontend-test-find-locator) to learn more.
+
+****
+
+**Show a popup, fill text and close popup:**
+
+|     | Type          | Description            |
+| --- | ------------- | ---------------------- |
+| 1   | Locate Page   | Locate the main page   |
+| 2   | Locate Widget | Locate actionbutton    |
+| 3   | Action        | Click actionbutton     |
+| 4   | Locate Page   | Locate the popup page  |
+| 5   | Locate Widget | Locate textbox         |
+| 6   | Action        | Fill textbox with text |
+| 7   | Locate Widget | Locate actionbutton    |
+| 8   | Action        | Click actionbutton     |
+
 
 ## 2. Actions
 
@@ -40,8 +101,6 @@ Once a single element is **located**, the test framework needs to perform a **us
 * **Select:** Chooses an option from a dropdown menu.
 * **Navigate:** Directs the browser to a specific URL.
 
-***
-
 ## 3. Assertions
 
 **Assertions** are the final and most crucial step, determining if the application behaves as expected after an action is performed. An assertion is a conditional check; if the condition is **true**, the test passes; if **false**, the test fails.
@@ -53,9 +112,47 @@ Once a single element is **located**, the test framework needs to perform a **us
 * **State:** Asserting that an element is in the correct state, such as being **enabled** (not disabled), or a checkbox being **checked**.
 * **URL/Navigation:** Asserting that the browser has been redirected to the correct **new page/URL** after an action like a form submission.
 
-***
 
-## The Testing Flow 〰
+### Assertions in Mendix Apps
+
+An assertion in frontend testing will check if a certain fact about a Locator is true. An assertion in frontend testing behaves differently from an [MTA Assert](../../../mta/Assert). If the certain fact about the Locator is false, the assertion has failed, and a [Teststep Exception](../../../mta/teststep-exception) will be thrown. MTA default behaviour is to stop the test execution if this occors. You can also choose to continue the execution with the next Test Case by enabling a [Test Case Exception Handler](../../../mta/test-case#exception-handling). It is also possible, however not advisable, to continue the execution with the next Teststep by enabling a [Teststep Exception Handler](../../../mta/Teststep#exception-handling), because the rest of the actions will most likely also fail.
+
+Learn more about Playwright Assertions here: https://playwright.dev/java/docs/test-assertions
+
+
+:::info examples below
+:::
+
+**Check if page title matches expected text**
+
+|     | Type        | Description            |
+| --- | ----------- | ---------------------- |
+| 1   | Locate Page | Locate the main page   |
+| 2   | Assertion   | Assert Page title text |
+
+****
+
+**Check if a certain image is visible**
+
+|     | Type          | Description             |
+| --- | ------------- | ----------------------- |
+| 1   | Locate Page   | Locate the main page    |
+| 2   | Locate Widget | Locate image            |
+| 4   | Assertion     | Assert image is visible |
+
+****
+
+**Check if a button can be clicked**
+
+|     | Type          | Description                    |
+| --- | ------------- | ------------------------------ |
+| 1   | Locate Page   | Locate the main page           |
+| 2   | Locate Widget | Locate actionbutton            |
+| 4   | Assertion     | Assert actionbutton is enabled |
+
+****
+
+## The Testing Flow
 
 A typical frontend test follows a simple **"Locate -> Act -> Assert"** loop:
 
