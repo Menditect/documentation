@@ -30,6 +30,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 Some new functions will not work on the old version of the [MTA Plugin](../Tools/mta-plugin).
 - Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketplace.mendix.com/link/component/214717). 
 
+:::info changed versioning
+Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the same marketplace component, we have moved to a different versioning system. The major MTA Plugin version indicates the Mendix Runtime version. The remaining digits indicate the internal version of the MTA Plugin.
+:::
+
 ### Replace Page call by Microflow call
 
 The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages.
