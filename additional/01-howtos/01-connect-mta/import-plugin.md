@@ -18,44 +18,36 @@ Don't make changes to elements inside the MtaPluginModule. Configure Constants i
 
 ## Importing MTA Plugin
 
-
-Import the MTA plugin module package **in the Application under Test** as a new module. 
-- If you have imported it before, replace the existing module. 
-- Only delete the existing module first, if you are [upgrading a major Mendix version](#upgrading-mendix).
+Import the MTA Plugin Add-on module into your Application from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/214717).
 
 :::info
 After importing, make sure to delete any old JAR files like mta-plugin-xxx.jar from the userlib subfolder in your project directory. <br/>
 If you are experiencing compilation errors or errors in the After startup microflow, try cleaning up your deployment directory first.
 :::
 
-### Plugin version vs Mendix version
-Download the MTA plugin module from Mendix Marketplace. 
 
-Make sure to check your app's Mendix version before importing the module. 
+## Supported Versions
 
-| Mendix Version                 | Url                                                  |
-| ------------------------------ | ---------------------------------------------------- |
-| Mendix 11                      | Not supported                                        |
-| Mendix 10                      | https://marketplace.mendix.com/link/component/214764 |
-| Mendix 9.24.4 and higher       | https://marketplace.mendix.com/link/component/214717 |
-| Mendix 9.0.5 - Mendix 9.24.3   | https://marketplace.mendix.com/link/component/206637 |
-| Mendix 8.12.7 - Mendix 8.18.26 | https://marketplace.mendix.com/link/component/210123 |
-| Mendix 7                       | Not supported                                        |
+|          | MTA Plugin 9/10/11 | MTA Plugin 4.8.1  | Any older MTA Plugin |
+| -------- | ------------------ | ----------------- | -------------------- |
+| MTA 3.0  | Supported          | Partial support   | Not supported        |
+| MTA 2.10 | Supported          | Supported         | Not supported        |
+| MTA 2.9  | Not supported      | Not supported     | Not supported        |
 
-#### Upgrading Mendix 
+:::info changed versioning
+Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the same marketplace component, we have moved to a different versioning system. The major MTA Plugin version indicates the Mendix Runtime version. The remaining digits indicate the internal version of the MTA Plugin.
+:::
+
+
+### Updating from MTA Plugin 4.8.1
+
+:::caution delete before replace
+Delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
+:::
+
+### Upgrading Mendix 
 
 To upgrade the major version of your Mendix App (for example, from Mendix 9.24 to 10.12), you need to make sure to replace all the files related to the MTA Plugin Module. Delete the complete module from the project and delete the JAR files from the userlib subfolder in your project directory. Then, download the respective MTA plugin module from Github that matches the newer Mendix version as listed above. You can do all this before performing the upgrade.
-
-
-### Plugin version vs MTA version
-Always use the latest MTA Plugin version for the latest MTA version.
-
- 
-|            | MTA Plugin 4.8.1 | Any older MTA Plugin |
-| ---------- | ---------------- | -------------------- |
-| MTA 2.10.x | Supported        | Not supported        |
-| MTA 2.9.x  | Supported        | Not supported        |
-| MTA 2.8.x  | Not supported    | Not supported        |
 
 
 ## Configuring MTA Plugin
