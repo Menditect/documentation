@@ -15,6 +15,10 @@ To see an up-to-date list of Mendix Platform supported Widgets: https://marketpl
 
 Locating a Widget is made as simple as possible by Menditect: use the microflows and entities from the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit). It is possible to create the Teststeps manually, but it is easier to use the MTA build-in [feature](../../../mta/frontend-test#generate-teststeps) that generates the Teststeps for you.
 
+:::info auto visibility check
+By default, when a Locator microflow is executed, MTA will perform an `IsVisible` Assertion. If the element is not visible on the Page, the test will fail. This allows for early detection if Locator might fail. To disable this, use the `IsVisibleOptions` parameter of the Locator microflow.
+:::
+
 ### 1. Determine Widget Name
 
 The first step is to determine the name of the Widget, for example `actionButton1`, on the Page. 
@@ -76,7 +80,7 @@ In order to use the MTA Frontend Teststep generate [feature](../../../mta/fronte
 
 ### Create Custom Frontend Testkit
 
-This section describes how to Locate a fictitious Custom Widget called `MyWidget` and use the Microflows from the [MTA Playwright Connector](../../../Tools/playwright-connector) to add [Filters](../../../mta/frontend-glossary#filter), [Assertions](../../../mta/frontend-glossary#assertion) and [Actions](../../../mta/frontend-glossary#action).
+This section describes how to add a [Locator](../../../mta/frontend-glossary#locator) for a fictitious Custom Widget called `MyWidget` and use the Microflows from the [MTA Playwright Connector](../../../Tools/playwright-connector) to add [Filters](../../../mta/frontend-glossary#filter), [Assertions](../../../mta/frontend-glossary#assertion) and [Actions](../../../mta/frontend-glossary#action).
 
 #### Add Locator
 
