@@ -76,7 +76,9 @@ In order to use the MTA Frontend Teststep generate [feature](../../../mta/fronte
 
 ### Create Custom Frontend Testkit
 
-This section describes how to support a fictitious Custom Widget called `MyWidget`. 
+This section describes how to Locate a fictitious Custom Widget called `MyWidget` and use the Microflows from the [MTA Playwright Connector](../../../Tools/playwright-connector) to add Filters, Assertions and Actions.
+
+#### Add Locator
 
 - Add a new Module in your Mendix App called `MenditectMxFrontendTestKitCustom`. 
   - A Module with this exact name will be scanned by MTA for Frontend test Microflows and Entities.
@@ -85,15 +87,20 @@ This section describes how to support a fictitious Custom Widget called `MyWidge
   - If the Widget can contain other Widgets in a list (MyWidget behaves like, for example, a ListView), select `MenditectMxFrontendTestKit.MxParentMultiWidgetInstanceLocator` for the Generalization.
   - Otherwise, select `MenditectMxFrontendTestKit.MxLocator` for the Generalization.
 - Add a new Microflow with the exact name `Locate_MxWidget_MyWidget`
-  - Add a `WidgetName` String parameter.
-  - Add a `ParentWidget` parameter of type `MenditectMxFrontendTestKit.MxParentWidgetLocator`.
+  - Add a `WidgetName` String parameter. This will be filled with the name of the Widget (without the `mx-name-` part). 
+  - Add a `ParentWidget` parameter of type `MenditectMxFrontendTestKit.MxParentWidgetLocator`. This will set the Locator for the parent, either a [Mendix Page](../../../mta/mendix-page) or another Widget.
+  - Optionally add an `Options` parameter of type `MenditectPlaywrightConnector.Locator_IsVisibleOptions`. This enables the Tester to choose, whether MTA will check if the Locator yields a Visible element on the Mendix Page before an Action is executed on the element.
+  - From `ParentWidget`, retrieve the associated `MenditectPlaywrightConnector.Locator` object, name it `ParentWidgetLocator`. This is the Playwright Locator for the Parent.
   - Create an `MxMyDataGridLocator` object.
   - Use this object for the Return value of the Microflow.
-  - 
+  - Now, a `MenditectPlaywrightConnector.Locator` object needs to be associated to the `MxMyDataGridLocator` object.
+    - Add a Microflow call to `MenditectPlaywrightConnector.Locator_Get_By_Selector`. 
+    - Fill the `Locator` parameter with the `ParentWidgetLocator` variable.
+    - Fill the `Selector` parameter with `'css=.mx-name-' + $WidgetName`.
 
 ## Locators in non-Mendix Apps
 
-In the Playwright Connector, Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
+In the [MTA Playwright Connector](../../../Tools/playwright-connector), Locator microflows are inside the "Microflows/Commands" folder. The "Get_Locator_By_Page" folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The "Get_Locator_By_Locator" folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the "Locator_Element_Operations" folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the "...Get_By_Selector" microflows. 
 
 Locator Actions are in the "Locator_Actions" folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#delay-after-execution) that calls the Locator Action microflow.
 
