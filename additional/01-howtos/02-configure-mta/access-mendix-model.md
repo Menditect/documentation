@@ -16,9 +16,12 @@ A Personal Access Token (PAT) needs to be created to make communication possible
 - Go to https://user-settings.mendix.com/link/developersettings
 - Click "New token". Name it 'MTA Test'.
 - Under **`Deployment Mendix Cloud`**, select: <br/> `mx:deployment:read` 
-- Under **`Model Repository`**, select: <br/> `mx:modelrepository:repo:write` <br/> `mx:modelrepository:repo:read` <br/> `mx:modelrepository:write` 
+- Under **`Model Repository`**, select: <br/> `mx:modelrepository:repo:read` 
+- *Important*: when using SVN \* (only Mendix 9 or lower), also select under **`Model Repository`**: <br/> `mx:modelrepository:repo:write` <br/> `mx:modelrepository:write` 
 - Click "Create".
 - Store it in the password manager so you don't lose it.
+
+\* because of changes in the Mendix API's that Menditect consumes, it is now required to also set the `write` scopes. Note that SVN will no longer be supported in Mendix 10 and higher.
 
 ### Enter PAT in MTA
 
@@ -42,4 +45,4 @@ To test if this step was successful, try to [Add an Application](../run-tests/ru
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 19 May 2025
+Last updated 10 December 2025
