@@ -12,17 +12,17 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 
 ### Common HTML Locators
 
-* **CSS Selectors:** These are the most versatile and common, targeting elements based on their HTML tag, `class`, `id`, or other attributes. For example, `#submit-button` targets an element with `id="submit-button"`.
-* **Text Content:** Locating an element based on the visible text it contains, e.g., finding the button that says "Log In."
-* **Accessibility Roles:** Using attributes like `aria-label` or the element's inherent role (e.g., `role="button"`), which is a modern, reliable approach that aligns tests with user accessibility.
-* **XPath:** A powerful, but sometimes brittle, language for navigating and querying elements in the DOM. Not recommended for Mendix Apps, because even the smallest change will break the Locator.
-* * **Test ID:** Testing by test ids is the most resilient way of testing as even if your text or role of the attribute changes, the test will still pass. The downside is, testing by test ids is not user facing. Unfortunately, Mendix does not offer testing by test ids, because there is no way to uniquely define a test ID on a HTML element in Mendix that will remain unchanged over time.
+- **CSS Selectors:** These are the most versatile and common, targeting elements based on their HTML tag, `class`, `id`, or other attributes. For example, `#submit-button` targets an element with `id="submit-button"`.
+- **Text Content:** Locating an element based on the visible text it contains, e.g., finding the button that says "Log In."
+- **Accessibility Roles:** Using attributes like `aria-label` or the element's inherent role (e.g., `role="button"`), which is a modern, reliable approach that aligns tests with user accessibility.
+- **XPath:** A powerful, but sometimes brittle, language for navigating and querying elements in the DOM. Not recommended for Mendix Apps, because even the smallest change will break the Locator.
+- **Test ID:** Testing by test-id's a very resilient way of testing as even if your text or role of the attribute changes, the test will still pass. However there are some downsides; testing by test-id's is not user facing, it makes Testers depend on Developers keeping the test-id's up to date, and Mendix does not natively support it. 
 
 ### Locator Challenges
-* **Multiplicity:** When a locator (like a CSS selector or XPath) matches multiple elements, the testing framework (e.g., Selenium, Cypress, Playwright) has to make a choice, which can lead to ambiguity. The simplest approach is to select the first matching element. However the element the test intends to interact with might not be the first one. If the page structure changes (e.g., a new, similar element is added earlier in the DOM), the locator will suddenly point to the wrong element, causing the test to interact with the wrong UI component or fail unexpectedly. This means the test is not reliably testing the intended functionality. In Mendix Apps, this challenge is faced when using a Listview, DataGrid or Gallery, or other Widgets with multiple rows or columns.
-* **Visibility:** An element may be **located** however not visible on the Browser Page. This is, for instance, the case when multiple tab pages have been rendered, and (obviously) only one tab page is visible. There are two problems that can occur in this situation:
-* 1. The element may be locatable but an Action will fail because it is not Visible. 
-* 2. The same element may occur multiple times but on different tab pages, leading to the above issue with **Multiplicity**.
+- **Multiplicity:** When a locator (like a CSS selector or XPath) matches multiple elements, the testing framework (e.g., Selenium, Cypress, Playwright) has to make a choice, which can lead to ambiguity. The simplest approach is to select the first matching element. However the element the test intends to interact with might not be the first one. If the page structure changes (e.g., a new, similar element is added earlier in the DOM), the locator will suddenly point to the wrong element, causing the test to interact with the wrong UI component or fail unexpectedly. This means the test is not reliably testing the intended functionality. In Mendix Apps, this challenge is faced when using a Listview, DataGrid or Gallery, or other Widgets with multiple rows or columns.
+- **Visibility:** An element may be **located** however not visible on the Browser Page. This is, for instance, the case when multiple tab pages have been rendered, and (obviously) only one tab page is visible. There are two problems that can occur in this situation:
+  1. The element may be locatable but an Action will fail because it is not Visible. 
+  2. The same element may occur multiple times but on different tab pages, leading to the above issue with **Multiplicity**.
 
 ### Locators in Mendix Apps
 
@@ -95,11 +95,11 @@ Once a single element is **located**, the test framework needs to perform a **us
 
 ### Examples of Actions
 
-* **Click:** Simulates a mouse click on a button, link, or checkbox.
-* **Fill/Type:** Enters text into an input field (e.g., a username or password box).
-* **Hover:** Moves the mouse cursor over an element, often to reveal a menu.
-* **Select:** Chooses an option from a dropdown menu.
-* **Navigate:** Directs the browser to a specific URL.
+**Click:** Simulates a mouse click on a button, link, or checkbox.
+**Fill/Type:** Enters text into an input field (e.g., a username or password box).
+**Hover:** Moves the mouse cursor over an element, often to reveal a menu.
+**Select:** Chooses an option from a dropdown menu.
+**Navigate:** Directs the browser to a specific URL.
 
 ## 3. Assertions
 
@@ -107,10 +107,10 @@ Once a single element is **located**, the test framework needs to perform a **us
 
 ### Examples of Assertions
 
-* **Visibility:** Asserting that a new element (like a success message) is now **visible** on the page.
-* **Text Content:** Asserting that a specific element contains the expected **text** (e.g., verifying a shopping cart total).
-* **State:** Asserting that an element is in the correct state, such as being **enabled** (not disabled), or a checkbox being **checked**.
-* **URL/Navigation:** Asserting that the browser has been redirected to the correct **new page/URL** after an action like a form submission.
+**Visibility:** Asserting that a new element (like a success message) is now **visible** on the page.
+**Text Content:** Asserting that a specific element contains the expected **text** (e.g., verifying a shopping cart total).
+**State:** Asserting that an element is in the correct state, such as being **enabled** (not disabled), or a checkbox being **checked**.
+**URL/Navigation:** Asserting that the browser has been redirected to the correct **new page/URL** after an action like a form submission.
 
 
 ### Assertions in Mendix Apps
