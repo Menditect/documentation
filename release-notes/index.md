@@ -211,3 +211,11 @@ For Mendix Teams still using SVN repositories, it is required to re-create a Per
 | __Release actions__ | None.                                                                                                                   |
 
 <br/>
+
+| ID                  | Plugin-4114                                                                                                                                                                                                                                                                                  |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Adding an empty object (as Teststep output) to a list results in an empty list when putting the list on a microflow parameter.                                                                                                                                                               |
+| __Solution__        | Adding an empty object (as Teststep output) to a list, makes not changes to the list, when putting the list on a microflow parameter. If the first object on the list is empty, the list will remain empty, because it is not possible to discriminate between an empty list or empty value. |
+| __Release actions__ | None.                                                                                                                                                                                                                                                                                        |
+
+<br/>
