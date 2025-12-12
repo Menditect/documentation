@@ -138,14 +138,6 @@ For Mendix Teams still using SVN repositories, it is required to re-create a Per
 <br/>
 
 
-| ID                    | MTA-2228                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| __New functionality__ | The MTA Utility Module is now hosted in the Mendix Marketplace as an Add-on module. |
-| __Release actions__   | Replace the existing Utility module (if present) in your Mendix model.              |
-
-<br/>
-
-
 
 | ID                    | MTA-2229                                                                                          |
 | --------------------- | ------------------------------------------------------------------------------------------------- |

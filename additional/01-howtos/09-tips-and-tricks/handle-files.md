@@ -19,8 +19,6 @@ There are two workarounds for this.
 
 The preferred way to fill the Contents of a FileDocument is by using a Java Action in a Microflow that converts a Base64 string into binary data and stores it in a file.
 
-@@todo refer to utility / common module
-
 - Create (if not yet exists) an MTA extension module in the tested App.
 - Add a User to the module.
 - Add an entity that inherits from FileDocument or Image, for instance `MyImage`.
