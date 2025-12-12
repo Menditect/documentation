@@ -74,9 +74,14 @@ Enables setting the height and width of the browser window.
 ### Setup Frontend Test
 
 This action will generate 3 [Test Cases](test-case)
-1. Frontend test - Setup (this will create the Playwright Browser)
-2. Frontend test - `[Add test here]` (this is a placeholder Test Case for to-be created Teststeps)
-3. Frontend test - Teardown (this will stop the Playwright Test and return any recorded [Trace files](frontend-glossary#tracefile))
+1. Frontend test - Setup 
+   - The Playwright Browser is created.
+2. Frontend test - `[Add test here]` 
+   - The Frontend Test is started.
+   - The Frontend Test is stopped, outputting any recorded [Trace files](frontend-glossary#tracefile).
+   - Add the Teststeps in between.
+3. Frontend test - Teardown 
+   - The Playwright Browser is terminated.
 
 - Navigate to the Test Suite where you want to create a Frontend test in.
 - Use the `Add frontend test` button to create Frontend Test Cases.
