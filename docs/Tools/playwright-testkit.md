@@ -10,14 +10,6 @@ The Mendix Frontend Testkit is meant specifically to define and run Frontend tes
 
 It contains microflows allowing an MTA Tester to [Locate](../mta/frontend-glossary#locator) a [Widget](../mta/frontend-glossary#widget) on a [Mendix Page](../mta/mendix-page) and perform an [Action](../mta/frontend-glossary#action) on it.
 
-## Supported Versions
-
-Consult the Releases tab in the Mendix Marketplace:
-
-https://marketplace.mendix.com/link/component/206637
-
-All Platform Supported [Widgets](../mta/frontend-glossary#widget) in the latest Mendix LTS version are supported. Additionally, it is possible to extend the Testkit functionality by building your own module.
-
 ## Installation instructions
 
 Download the Mendix Frontend Testkit from the Mendix Marketplace:
@@ -33,7 +25,6 @@ Replace the existing module when importing a new version.
 These modules are **required** to be imported in the Mendix App under test:
 - [MTA Plugin](mta-plugin)
 - [MTA Playwright Connector](playwright-connector)
-- MTA Mendix Frontend Testkit
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
 

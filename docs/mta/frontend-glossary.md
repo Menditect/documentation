@@ -66,7 +66,7 @@ More info at: https://playwright.dev/java/docs/locators
 ## Nth
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
-Nth is a [Filter](#filter) using an [Index](#index) to filter a [Locator](#locator) that results in multiple [Elements](#element), yielding a new [Locator](#locator) that only represents the [Element](#element) on that [Index](#index).
+Nth is a [Filter](#filter) using an [Index](#index) to filter a [Locator](#locator) that results in multiple [Elements](#element), yielding a new [Locator](#locator) that only represents the [Element](#element) on that [Index](#index). Playwright uses zero-based indexing, meaning the first item in a collection is at Index 0.
 
 ## Playwright Page
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>

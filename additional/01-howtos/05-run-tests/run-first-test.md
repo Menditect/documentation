@@ -146,7 +146,3 @@ After executing:
 - Click on 'Details' to view your test results.
 - Click on 'Results' to view the test suite run results.
 - MTA will open the Test suite run results. This page looks familiar, but is not the same as the page where you configure your Test Suite. You can go back with the '<i class="fas fa-cog"></i> Configure test suite' button.
-
-Did your test pass? Congratulations! 
-
-Did your test fail? Try setting the 'Apply security' to 'Off' on your Test Case. <br/>You may also want to read [this page](deal-with-failed-testrun).

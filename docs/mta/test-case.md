@@ -47,6 +47,10 @@ The number of milliseconds to wait with executing this Test Case, after the prev
 ### Rollback after execution
 Indicates if all database transactions executed in this Test Case should be rolled back. This enables for unittesting without changing anything in the database. Note that when starting or stopping additional transactions in an executed microflow, this property will not work as expected. Setting this property to Yes will lead to [Construction Errors](construction-error) if subsequent Test Cases depend on this Test Case. 
 
+:::info rollback on exception
+If a [Teststep Exception](teststep-exception) occurs that is not [handled](Teststep#exception-handling), the data in a Test Case will always be rolled back.
+:::
+
 ### Objective
 The objective of the testcase. 
 

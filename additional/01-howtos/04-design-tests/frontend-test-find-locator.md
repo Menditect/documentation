@@ -11,9 +11,11 @@ Make sure to first [prepare your Mendix model](../configure-mta/prepare-mendix-p
 
 ## Supported Widgets
 
-To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
+At least all Mendix Platform supported Widgets are supported. To see an up-to-date list of Mendix Platform supported Widgets: https://marketplace.mendix.com/link/supporttype/Platform
 
-Locating a Widget is made as simple as possible by Menditect: use the microflows and entities from the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit). It is possible to create the Teststeps manually, but it is easier to use the MTA build-in [feature](../../../mta/frontend-test#generate-teststeps) that generates the Teststeps for you.
+For a comprehensive list of Widgets that can be Located, checkout the `Widget_Locators` folder in the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit) module.
+
+Locating a Widget is made as simple as possible by Menditect: use the microflows and entities from the MTA Mendix Frontend Testkit. It is possible to create the Teststeps manually, but it is easier to use the MTA build-in [feature](../../../mta/frontend-test#generate-teststeps) that generates the Teststeps for you.
 
 :::info auto visibility check
 By default, when a Locator microflow is executed, MTA will perform an `IsVisible` Assertion. If the element is not visible on the Page, the test will fail. This allows for early detection if Locator might fail. To disable this, use the `IsVisibleOptions` parameter of the Locator microflow.
@@ -70,15 +72,15 @@ Snippets are not rendered as HTML elements by Mendix, even though Mendix does al
 :::
 
 
-## Custom Widgets
+## Other Widgets
 
-Custom Widgets are [Widgets](../../../mta/frontend-glossary#widget) that are not supported by Menditect in the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit). However, it is possible to still build a Frontend test with Locators for Custom Widgets. 
+It is possible to add a Custom Frontend Testkit that allows you to add Frontend testing support for Widgets that are not added to the MTA Mendix Frontend Testkit (yet).
 
 For all Widgets, Mendix will add the "mx-name-`widgetName`" property, so it is always possible to create a Locator for the surrounding [element](../../../mta/frontend-glossary#element). However in most cases you will need to append Locators to Locate a child element, for instance an <input\> element. See also the Mendix Docs: https://docs.mendix.com/refguide/common-widget-properties/#name
 
 In order to use the MTA Frontend Teststep generate [feature](../../../mta/frontend-test#generate-teststeps), it is advisable to create your own Testkit module, as an 'extension' to the MTA Mendix Frontend Testkit. 
 
-### Create Custom Frontend Testkit
+### Add Custom Frontend Testkit
 
 This section describes how to add a [Locator](../../../mta/frontend-glossary#locator) for a fictitious Custom Widget called `MyWidget` and use the Microflows from the [MTA Playwright Connector](../../../Tools/playwright-connector) to add [Filters](../../../mta/frontend-glossary#filter), [Assertions](../../../mta/frontend-glossary#assertion) and [Actions](../../../mta/frontend-glossary#action).
 

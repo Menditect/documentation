@@ -305,6 +305,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://testability.menditect.com',
+            label: 'Testability',
+            position: 'right',
+          },
         ],
       },
       prism: {

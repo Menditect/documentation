@@ -21,10 +21,6 @@ The name of a Widget is used to set the frontend test [Locator](../mta/frontend-
 
 ## Supported Versions
 
-The currently supported version is 1.0.4.
-
-## Installation instructions
-
 ### For Google Chrome
 - Download the MTA Widget Finder from the Chrome Webstore: https://chromewebstore.google.com/detail/mta-widget-finder/dkclafkppifhppoekgoenninlciofeck
 

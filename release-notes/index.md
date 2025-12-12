@@ -204,10 +204,10 @@ For Mendix Teams still using SVN repositories, it is required to re-create a Per
 
 <br/>
 
-| ID                  | Plugin-4114                                                                                                                                                                                                                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Adding an empty object (as Teststep output) to a list results in an empty list when putting the list on a microflow parameter.                                                                                                                                                               |
-| __Solution__        | Adding an empty object (as Teststep output) to a list, makes not changes to the list, when putting the list on a microflow parameter. If the first object on the list is empty, the list will remain empty, because it is not possible to discriminate between an empty list or empty value. |
-| __Release actions__ | None.                                                                                                                                                                                                                                                                                        |
+| ID                  | Plugin-4114                                                                                                                                                                                                                 |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will always be empty, also of other Teststeps that were added to the List do not have an empty output.    |
+| __Solution__        | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will be empty if the Teststep that results in empty output was the first item that was added to the list. |
+| __Release actions__ | None.                                                                                                                                                                                                                       |
 
 <br/>
