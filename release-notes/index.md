@@ -10,7 +10,10 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
+
 ## Highlights in this release
+<iframe src="https://player.vimeo.com/video/1146578844" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/>  
 <i class="fas fa-fire"></i>  <b>Frontend testing now generally available!</b> <br/>  
 - Just download the Connector and Test Kit modules from the Marketplace.<br/>  
 - MTA will show options to prepare the Frontend Test Case structure and Generate Frontend Teststeps!<br/> <br/>  
