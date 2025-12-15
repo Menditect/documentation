@@ -28,8 +28,6 @@ Frontend testing of websites using tools like **Playwright** (or comparable libr
 
 For convenience when testing Mendix Apps, instead of using Playwright Locators and Actions, Menditect introduced Widget-specific Locators and Actions.
 
-Read [Find a Locator](../howtos/design-tests/frontend-test-find-locator) to learn more about Locators for Mendix Apps.
-
 The recurring pattern of Teststeps for frontend testing a Mendix App:
 1. **Locate** the Mendix **Page**: `Locate_MxPage`, by Page Class. 
    - Takes a PageClass String parameter
@@ -70,8 +68,6 @@ The recurring pattern of Teststeps for frontend testing a Mendix App:
 Note that you have to add **a second Locator microflow** to find the 2nd row in the datagrid. 
 
 This is necessary because the same Widget occurs multiple times and you have to choose which one to Click.
-
-Also read [Find a Locator](../howtos/design-tests/frontend-test-find-locator) to learn more.
 
 ****
 

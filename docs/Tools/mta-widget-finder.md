@@ -6,11 +6,11 @@ sidebar_position: 5
 
 ## Purpose
 
-The MTA Widget Finder is used to prepare for building a Frontend test.
+The MTA Widget Finder is a browser extension used to facilitate building the right [Locator](../mta/frontend-glossary#locator) while [Frontend testing](../mta/frontend-test) a Mendix App.
 
-It is a browser extension that can be used in [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.firefox.com/) to determine the name of a [Mendix Widget](../mta/frontend-glossary#widget) on any [Mendix Page](../mta/mendix-page).
+It can be used in [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.firefox.com/) to determine the name of a [Mendix Widget](../mta/frontend-glossary#widget) on any [Mendix Page](../mta/mendix-page).
 
-The name of a Widget is used to set the frontend test [Locator](../mta/frontend-glossary#locator). The MTA Widget Finder can be useful for debugging if a Locator fails.
+The name of a Widget is used to set the frontend test [Locator](../mta/frontend-glossary#locator). The MTA Widget Finder can also be useful for debugging if a Locator fails.
 
 ### Usage 
 

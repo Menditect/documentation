@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Purpose
 
-This document describes the options to host a [Playwright Browser](https://playwright.dev/java/docs/browsers), which is required to run a Frontend Test with MTA.
+This document describes the options to host a [Playwright Browser](https://playwright.dev/java/docs/browsers), which is required to run a [Frontend Test](../../mta/frontend-test) with MTA.
 
 When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. <!--In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.![Playwright Setup](../images/pw_setup.png)-->
 

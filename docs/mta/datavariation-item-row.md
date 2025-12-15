@@ -40,18 +40,10 @@ Note that not entering a value will be interpreted as `Empty`, except for String
 ## Actions on Datavariation Item Row
 
 ### Create a Datavariation Item Row
-To add an attribute or an [Assert on attribute](Assert/assert-attribute) as a Datavariation Item, there are two ways:
-1. When configuring a [Teststep](teststep), <br/>- click on <i class="fas fa-table"></i> next to the attribute or assert to add it to the **Test Suite** Datavariation or <br/>- click on "<i class="fas fa-table-rows"></i>" next to the attribute or assert to add it to the **Test Case** Datavariation.<br/>Datavariation will be enabled and the respective attribute or assert will be added as a Datavariation Item;
-2. From the Datavariation page or popup, click on "<i class="fal fa-plus-circle"></i> Attribute" or "<i class="fal fa-plus-circle"></i> Assert" to add an Attribute Value or an Assert on attribute as a Datavariation Item Row.
 
-If only one of the icons is shown, this means the choice to use Datavariation on either the Test Case or Test Suite level was already made. 
+From the Datavariation page or popup, click on <i class="fal fa-plus-circle"></i> `Attribute` or <i class="fal fa-plus-circle"></i> `Assert` to add an Attribute Value or an Assert on attribute as a Datavariation Item Row.
 
-### Edit a Datavariation Item Row from the Test Suite page
-- On the Test Suite page, select the Test Case that has either the <i class="fas fa-table"></i> or the "<i class="fas fa-table-rows"></i>" icon next to it.
-- For each attribute and assert shown in the Teststep details pane on the right, if it has this same icon next to it, it indicates that they are included as a Datavariation Item Row.
-- Click on this icon to show the values per Datavariation.
- 
-### Edit a Datavariation Item Row from the Datavariations
+### Edit a Datavariation Item Row
 
 From the Datavariations, to edit a single attribute or assert, simply double-click on the attribute or assert in the respective column.
 

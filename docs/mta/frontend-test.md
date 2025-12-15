@@ -14,9 +14,10 @@ Read the how-to section and the installation guide to enable Frontend testing.
 
 Preparing the structure for Frontend-testing any website is described below in [Setup Frontend Test](#setup-frontend-test). Teststeps that are generated, will be calling [Microflows](mendix-microflow) from the [Playwright Connector](../Tools/playwright-connector).
 
-Generating Teststeps specifically for testing Mendix Apps is described in [Generate Teststep(s)](#generate-teststeps). Teststeps that are generated, will be calling [Microflows](mendix-microflow) from the [Mendix Frontend Testkit](../Tools/playwright-testkit).
+Generating Teststeps specifically for testing Mendix Apps is described in [Generate Teststep(s)](#generate-teststeps). Teststeps that are generated, will be calling [Microflows](mendix-microflow) from the [Mendix Frontend Testkit](../Tools/playwright-testkit). This allows for testing [Mendix Pages](mendix-page).
 
-For background information about Playwright Testing, make sure to checkout the Knowledge Base section in this documentation site.
+For background information about Playwright Testing, make sure to checkout the Knowledge Base section in this documentation site, or consult the [Playwright Documentation for Java](https://playwright.dev/java/docs/intro).
+
 
 ## Properties
 
@@ -68,6 +69,13 @@ A Trace file will be generated, that you can upload at https://trace.playwright.
 ### ViewPort 
 `Property of StartMxFrontendTestOptions`<br/>
 Enables setting the height and width of the browser window.
+
+## Business rules
+
+- [The Playwright Connector](../Tools/playwright-connector) module must be imported in the App under test, to create generic Frontend Tests.
+- [The Mendix Frontend Testkit](../Tools/playwright-testkit) module must be imported in the App under test, to Frontend Test Mendix Apps.
+- [Enable Loading Pages and Widgets](../mta/application#enable-loading-pages-and-widgets), to Frontend Test Mendix Apps.
+- The [Page Class](../mta/mendix-page#class-name) must be filled in in order to test Widgets on a Mendix Page.
 
 ## Actions on Frontend Test
 
