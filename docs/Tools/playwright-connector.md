@@ -17,8 +17,8 @@ The Playwright Connector makes it possible to define and run a [Frontend test](.
 Some relevant entities are explained here. Note that specific Entity and Attribute documentation is also shown in MTA.
 - `Browser`, this is the [Playwright Browser](https://playwright.dev/java/docs/browsers) definition that is created when starting the test with one of the `Start_Frontend_Test...` microflows. This allows for setting the `BrowserType` and the default waiting time between Playwright Actions, using the `LocalStartOptions` non persistable entity.
 - `BrowserContext`, this allows for setting a default timeout for Playwright Commands, using the `NewBrowserContextOptions` non persistable entity.
-- `Page`, this contains the definition for the [Playwright Page](../frontend-glossary#page). The Page is in fact the Browser Tab that is created upon setup. Page Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Page to be used in subsequent Test Cases.
-- `Locator`, this contains the definition of the [Playwright Locator](../frontend-glossary#locator). Locator Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Locator to be used in subsequent Test Cases.
+- `Page`, this contains the definition for the [Playwright Page](../mta/frontend-glossary#page). The Page is in fact the Browser Tab that is created upon setup. Page Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Page to be used in subsequent Test Cases.
+- `Locator`, this contains the definition of the [Playwright Locator](../mta/frontend-glossary#locator). Locator Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Locator to be used in subsequent Test Cases.
 
 
 ### Microflows
@@ -26,6 +26,12 @@ Some relevant entities are explained here. Note that specific Entity and Attribu
 Some relevant microflows are explained here. Note that specific Microflow and Microflow parameter documentation is also shown in MTA.
 
 Note that some Microflows contain an `Options` parameter. This parameter can be left `Empty` when using the Microflow in MTA, but it allows for setting specific options for that microflow.
+
+- `Start_Frontend_Test...` either one of these 3 microflows is called first when starting a Frontend Test, in order to create the Browser object.
+- `Create_BrowserContext` is called next, creating the `BrowserContext` object.
+- `Create_Page` is called next, creating the `Page` object.
+- `Delete_...` in the `Deletion` folder, these are used to stop the test.
+- `Teardown_Playwright` is used to remove Playwright from memory.
 
 [Locator](../mta/frontend-glossary#locator) microflows are inside the `Microflows/Commands/Get_Locator_By...` folders. 
 - The `Get_Locator_By_Page` folder contains Locators that have the complete Browser Page as scope to locate any HTML element. 

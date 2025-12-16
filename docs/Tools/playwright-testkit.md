@@ -14,7 +14,26 @@ It extends the functionality of Microflows from the [Playwright Connector](playw
 
 ### Domain model
 
+Some relevant entities are explained here. Note that specific Entity and Attribute documentation is also shown in MTA.
+- `MxLocator`, this contains the definition of the [Playwright Locator](../mta/frontend-glossary#locator) for the Mendix Widget. The `MxLocator` is always 1 on 1 associated with a `Locator` object from the [Playwright Connector](playwright-connector) module. MxLocator Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a MxLocator to be used in subsequent Test Cases. The `MxLocator` is the generalization for all Mendix Widget specific Locator entities in the domain model.
+- `MxParentWidgetLocator`, specializes from `MxLocator`. The specialization means that the respective Mendix Widget can behave as a parent, thus contain other Mendix Widgets, and the context is always a single Object. The `MxParentWidgetLocator` is the generalization for specific parent Locators, for example `MxContainerLocator` and `MxListViewItemLocator`.
+- `MxParentMultiWidgetInstanceLocator`, specializes from `MxLocator`. The specialization means that the respective Mendix Widget can behave as a parent, thus contain other Mendix Widgets, and the context is always a List of Objects. The `MxParentMultiWidgetInstanceLocator` is the generalization for specific list-parent Locators, for example `MxDataGrid2Locator`.
+
+
 ### Microflows
+
+Some relevant microflows are explained here. Note that specific Microflow and Microflow parameter documentation is also shown in MTA.
+
+Note that some Microflows contain an `Options` parameter. This parameter can be left `Empty` when using the Microflow in MTA, but it allows for setting specific options for that microflow.
+
+- `Start_MxFrontend_Test_With_Login` and `Start_MxFrontend_Test_Without_Login`, these are used to start a Mendix specific Frontend test, instead of the `Create_BrowserContext` and `Create_Page` microflows from the [Playwright Connector](playwright-connector) module.
+- `Locate_MxPage`, this is used to Locate the [Mendix Page](../mta/mendix-page) on the [Playwright Page](../mta/frontend-glossary#playwright-page). On showing the Homepage, and whenever a new Mendix Page is shown, this microflow has to be called first, in order to Locate Widgets on the respective Mendix Page. 
+- `Stop_MxFrontendTest` is used to stop a Mendix specific Frontend test, instead of the `Delete_...` microflows from the [Playwright Connector](playwright-connector) module.
+
+- `Widget_Locators`, this folder contains [Locator](../mta/frontend-glossary#locator) microflows specifically for Mendix Widgets.
+- `Widget_Element_Operators`, this folder contains [Filter](../mta/frontend-glossary#filter) microflows specifically for Mendix Widgets.
+- `Widget_Asserts`, this folder contains [Assertion](../mta/frontend-glossary#assertion) microflows specifically for Mendix Widgets.
+- `Widget_Actions`, this folder contains [Action](../mta/frontend-glossary#action) microflows specifically for Mendix Widgets.
 
 ## Usage
 
