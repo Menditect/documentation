@@ -25,7 +25,7 @@ For background information about Playwright Testing, make sure to checkout the K
 The [Application](application) that will be used for generated [Test Cases](test-case#test-application).
 
 ### Execution user
-The Execution user that will be used for generated [Test Cases](test-case#execution-user).
+The [Execution user](execution-user) that will be used for generated [Test Cases](test-case#execution-user).
 
 ### Start test location
 The hosting location of the Playwright Browser where the test will be executed in.
@@ -58,6 +58,15 @@ If the Mendix App has Anonymous access enabled it may not be necessary to Use lo
 | --------- | ---------------------------------------------------------- |
 | Yes       | `MenditectMxUITestKit.Start_MxFrontend_Test_With_Login`    |
 | No        | `MenditectMxUITestKit.Start_MxFrontend_Test_Without_Login` |
+
+:::info user session handling
+Mendix Studio Pro has a limitation of 6 allowed concurrent user sessions when running your App from Studio Pro.<br/>
+To prevent running into errors in the middle of your (Frontend) test script, here are some simple suggestions:
+- prevent using Anonymous sessions, to avoid leaving sessions open, and running into a max-sessions-exceeded Mendix error.
+- always logout at the end of your Frontend test.
+- prevent also manually logging in at the same time from your own browser.
+- restart the App right before executing the test.
+:::
 
 ### Mendix_URL
 The URL where the Mendix App is running.
