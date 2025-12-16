@@ -10,12 +10,12 @@ const sortReleaseNotesSideBar = require('./release-notes/sidebar');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Menditect documentation', //title is used when viewing older versions
+  title: 'MTA', //title is used when viewing older versions
   tagline: 'Go test it!',
   url: 'https://documentation.menditect.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'menditect',
   projectName: 'documentation',
@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.0',
+              label: '2.10',
               path: '/',
             },
           },
@@ -68,34 +68,27 @@ const config = {
           },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/02-connect-mta/use-microflow-call-hierarchy-extension.md',
+            content: '@site/additional/01-howtos/01-connect-mta/use-microflow-call-hierarchy-extension.md',
           },
           {
             id: 'import-plugin',
-            content: '@site/docs/tools/mta-plugin.md',
+            content: '@site/additional/01-howtos/01-connect-mta/import-plugin.md',
           },
           {
             id: 'pat',
-            content: '@site/additional/01-howtos/03-configure-mta/access-mendix-model.md',
+            content: '@site/additional/01-howtos/02-configure-mta/access-mendix-model.md',
           },
           {
             id: 'howto-byomeal',
-            content: '@site/additional/01-howtos/01-host-and-deploy/manage-mta-deployment.md',
+            content: '@site/additional/01-howtos/02-configure-mta/run-mta-on-premise.md',
           },
           {
             id: 'generate-test',
-            content: '@site/additional/01-howtos/04-design-tests/generate-test.md',
+            content: '@site/additional/01-howtos/03-design-tests/generate-test.md',
           },
           {
-            id: 'generate-frontend-test',
-            content: '@site/additional/01-howtos/04-design-tests/generate-frontend-test.md',
-          }, {
             id: 'ui-testing',
-            content: '@site/additional/01-howtos/04-design-tests/frontend-test-with-mta.md',
-          },
-          {
-            id: 'frontend-testing',
-            content: '@site/additional/01-howtos/04-design-tests/frontend-test-with-mta.md',
+            content: '@site/additional/01-howtos/03-design-tests/frontend-test-with-mta.md',
           },
           {
             id: 'mta-intergration-mch-extension',
@@ -103,47 +96,33 @@ const config = {
           },
         ],
         versionedLinks: [
-          { id: 'application', content: 'mta/application.md', versions: 'ALL' },
+          { id: 'application', content: 'application.md', versions: 'ALL' },
           { id: 'api', content: 'api.md', versions: 'ALL' },
-          { id: 'application-branch', content: 'mta/application-branch.md', versions: 'ALL' },
-          { id: 'application-instance', content: 'mta/application-instance.md', versions: 'ALL' },
-          { id: 'application-revision', content: 'mta/application-revision.md', versions: 'ALL' },
-          { id: 'archive', content: 'mta/archive.md', versions: 'ALL' },
-          { id: 'assert-attribute', content: 'mta/Assert/assert-attribute.md', versions: 'ALL' },
-          { id: 'assert-exception', content: 'mta/Assert/assert-exception.md', versions: ['3.0'] },
-          { id: 'assert-microflow-output', content: 'mta/Assert/assert-microflow-output.md', versions: 'ALL' },
-          { id: 'assert-object-count', content: 'mta/Assert/assert-object-count.md', versions: 'ALL' },
-          { id: 'branch-subscription', content: 'mta/branch-subscription.md', versions: 'ALL' },
-          { id: 'coverage-calculation', content: 'mta/coverage-calculation.md', versions: 'ALL' },
-          { id: 'coverage-exception', content: 'mta/coverage-exception.md', versions: 'ALL' },
-          { id: 'coverage-exclude-filter', content: 'mta/coverage-exclude-filter.md', versions: 'ALL' },
-          { id: 'coverage-goal', content: 'mta/coverage-goal.md', versions: 'ALL' },
-          { id: 'datavariation', content: 'mta/datavariation.md', versions: 'ALL' },
-          { id: 'snapshot', content: 'mta/snapshot.md', versions: 'ALL' },
-          { id: 'generated-test', content: 'mta/recording.md', versions: 'ALL' },
-          { id: 'test-case', content: 'mta/test-case.md', versions: 'ALL' },
-          { id: 'test-configuration', content: 'mta/test-configuration.md', versions: 'ALL' },
-          { id: 'test-instruction', content: 'mta/test-instruction.md', versions: 'ALL' },
-          { id: 'test-run', content: 'mta/test-run.md', versions: 'ALL' },
-          { id: 'test-suite', content: 'mta/test-suite.md', versions: 'ALL' },
-          { id: 'test-setting', content: 'mta/test-setting.md', versions: 'ALL' },
-          { id: 'Teststep', content: 'mta/Teststep/index.md', versions: 'ALL' },
-          { id: 'feedback-message', content: 'mta/feedback-message.md', versions: 'ALL' },
-          { id: 'construction-error', content: 'mta/construction-error.md', versions: 'ALL' },
-          { id: 'mta-plugin', content: 'tools/mta-plugin.md', versions: 'ALL' },
-          { id: 'playwright-connector', content: 'tools/playwright-connector.md', versions: 'ALL' },
-          { id: 'playwright-testkit', content: 'tools/playwright-testkit.md', versions: 'ALL' },
+          { id: 'application-branch', content: 'application-branch.md', versions: 'ALL' },
+          { id: 'application-instance', content: 'application-instance.md', versions: 'ALL' },
+          { id: 'application-revision', content: 'application-revision.md', versions: 'ALL' },
+          { id: 'archive', content: 'archive.md', versions: 'ALL' },
+          { id: 'assert-attribute', content: 'Assert/assert-attribute.md', versions: 'ALL' },
+          { id: 'assert-microflow-output', content: 'Assert/assert-microflow-output.md', versions: 'ALL' },
+          { id: 'assert-object-count', content: 'Assert/assert-object-count.md', versions: 'ALL' },
+          { id: 'branch-subscription', content: 'branch-subscription.md', versions: 'ALL' },
+          { id: 'coverage-calculation', content: 'coverage-calculation.md', versions: 'ALL' },
+          { id: 'coverage-exception', content: 'coverage-exception.md', versions: 'ALL' },
+          { id: 'coverage-exclude-filter', content: 'coverage-exclude-filter.md', versions: 'ALL' },
+          { id: 'coverage-goal', content: 'coverage-goal.md', versions: 'ALL' },
+          { id: 'datavariation', content: 'datavariation.md', versions: 'ALL' },
+          { id: 'snapshot', content: 'snapshot.md', versions: 'ALL' },
+          { id: 'generated-test', content: 'recording.md', versions: 'ALL' },
+          { id: 'test-case', content: 'test-case.md', versions: 'ALL' },
+          { id: 'test-configuration', content: 'test-configuration.md', versions: 'ALL' },
+          { id: 'test-instruction', content: 'test-instruction.md', versions: 'ALL' },
+          { id: 'test-run', content: 'test-run.md', versions: 'ALL' },
+          { id: 'test-suite', content: 'test-suite.md', versions: 'ALL' },
+          { id: 'test-setting', content: 'test-setting.md', versions: 'ALL' },
+          { id: 'Teststep', content: 'Teststep/index.md', versions: 'ALL' },
+          { id: 'feedback-message', content: 'feedback-message.md', versions: 'ALL' },
+          { id: 'construction-error', content: 'construction-error.md', versions: 'ALL' },
         ],
-      }),
-    ],
-    [
-      require.resolve('@docusaurus/plugin-content-docs'),
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'installation',
-        path: 'additional/00-installation',
-        routeBasePath: 'additional/installation',
-        sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
     [
@@ -170,9 +149,9 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'knowledge-base',
-        path: 'additional/03-knowledge-base',
-        routeBasePath: 'additional/knowledge-base',
+        id: 'knownissues',
+        path: 'additional/04-knownissues',
+        routeBasePath: 'additional/knownissues',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
@@ -180,9 +159,9 @@ const config = {
       require.resolve('@docusaurus/plugin-content-docs'),
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'knownissues',
-        path: 'additional/04-knownissues',
-        routeBasePath: 'additional/knownissues',
+        id: 'knowledge-base',
+        path: 'additional/05-knowledge-base',
+        routeBasePath: 'additional/knowledge-base',
         sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
@@ -238,21 +217,10 @@ const config = {
         },
         items: [
           {
-            to: 'additional/installation',
-            label: 'Installation',
+            type: 'doc',
+            docId: 'reference-guide',
             position: 'left',
-          },
-          {
             label: 'Reference guide',
-            to: '/',
-            position: 'left',
-            items: [
-              {
-                type: 'docsVersion',
-                to: '/2.10.0',
-                label: '2.10 Reference guide',
-              }
-            ]
           },
           {
             to: 'release-notes',
@@ -261,26 +229,27 @@ const config = {
           },
           {
             to: 'additional/howtos',
-            label: 'How-to\'s',
+            label: 'How to?',
             position: 'left',
           },
           {
-            label: 'More',
+            to: 'additional/bestpractice',
+            label: 'Best Practice',
+            position: 'left',
+          },
+          {
+            to: 'additional/knownissues',
+            label: 'Known Issues',
+            position: 'left',
+          },
+          {
+            to: 'additional/knowledge-base',
+            label: 'Knowledge base',
+            position: 'left',
+          },
+          {
+            type: 'docsVersionDropdown',
             position: 'right',
-            items: [
-              {
-                to: 'additional/bestpractice',
-                label: 'Best Practice',
-              },
-              {
-                to: 'additional/knowledge-base',
-                label: 'Knowledge base',
-              },
-              {
-                to: 'additional/knownissues',
-                label: 'Known issues',
-              },
-            ],
           },
           {
             label: 'Legal',
@@ -305,11 +274,6 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          {
-            href: 'https://testability.menditect.com',
-            label: 'Testability',
-            position: 'right',
-          },
         ],
       },
       prism: {
@@ -317,9 +281,6 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java', 'json', 'powershell'],
       },
-      footer: {
-        copyright: `Copyright © <a href="https://www.menditect.com">Menditect</a> ${new Date().getFullYear()}. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.`,
-      }
     }),
 };
 
