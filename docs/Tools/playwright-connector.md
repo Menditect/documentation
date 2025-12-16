@@ -14,10 +14,27 @@ The Playwright Connector makes it possible to define and run a [Frontend test](.
 
 ### Domain model
 
-### Microflows
-Locator microflows are inside the `Microflows/Commands` folder. The `Get_Locator_By_Page` folder contains Locators that have the complete Browser Page as scope to locate any HTML element. The `Get_Locator_By_Locator` folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element.  Another way to narrow down the list is using the microflows inside the `Locator_Element_Operations` folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the `...Get_By_Selector` microflows. 
+Some relevant entities are explained here. Note that specific Entity and Attribute documentation is also shown in MTA.
+- `Browser`, this is the [Playwright Browser](https://playwright.dev/java/docs/browsers) definition that is created when starting the test with one of the `Start_Frontend_Test...` microflows. This allows for setting the `BrowserType` and the default waiting time between Playwright Actions, using the `LocalStartOptions` non persistable entity.
+- `BrowserContext`, this allows for setting a default timeout for Playwright Commands, using the `NewBrowserContextOptions` non persistable entity.
+- `Page`, this contains the definition for the [Playwright Page](../frontend-glossary#page). The Page is in fact the Browser Tab that is created upon setup. Page Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Page to be used in subsequent Test Cases.
+- `Locator`, this contains the definition of the [Playwright Locator](../frontend-glossary#locator). Locator Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Locator to be used in subsequent Test Cases.
 
-Locator Actions are in the `Locator_Actions` folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#delay-after-execution) that calls the Locator Action microflow.
+
+### Microflows
+
+Some relevant microflows are explained here. Note that specific Microflow and Microflow parameter documentation is also shown in MTA.
+
+Note that some Microflows contain an `Options` parameter. This parameter can be left `Empty` when using the Microflow in MTA, but it allows for setting specific options for that microflow.
+
+[Locator](../mta/frontend-glossary#locator) microflows are inside the `Microflows/Commands/Get_Locator_By...` folders. 
+- The `Get_Locator_By_Page` folder contains Locators that have the complete Browser Page as scope to locate any HTML element. 
+- The `Get_Locator_By_Locator` folder contains the same Locators, but using another Locator that narrows the scope within to locate the HTML element. 
+- Another way to narrow down the list is using the microflows inside the `Locator_Element_Operations` folder, containing [Filters](https://playwright.dev/java/docs/locators#filtering-locators) and [Nth element locators](https://playwright.dev/java/docs/other-locators#n-th-element-locator). In order to use XPath or CSS Locators, use the `...Get_By_Selector` microflows. 
+
+[Assertion](../mta/frontend-glossary#assertion) microflows are in the `Locator_Assertions` folder. 
+
+[Action](../mta/frontend-glossary#action) microflows are in the `Locator_Actions` folder. Note that some Actions will wait for the element to become visible, others (like "Locator_Element_Count") will be executed immediately. If it is required to wait, it is recommended to use the "Delay after execution" property on the [Teststep in MTA](../../../mta/Teststep#delay-after-execution) that calls the Locator Action microflow.
 
 For more advanced usage, checkout the Playwright documentation for [Locators](https://playwright.dev/java/docs/locators) and [Actions](https://playwright.dev/java/docs/input).
 
