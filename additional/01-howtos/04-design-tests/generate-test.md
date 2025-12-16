@@ -1,0 +1,78 @@
+# Generate a Microflow test
+
+## Definition
+
+This document describes how to make MTA generate a Microflow test, as opposed to creating one manually. 
+
+You can generate a test from Mendix Studio Pro, or from inside MTA. The aim of generating a test is to speed up test scripting, by using the Mendix model information available to MTA.
+
+## From Mendix Studio Pro
+
+The [Menditect Call Hierarchy extension](../connect-mta/use-microflow-call-hierarchy-extension) can be used to generate tests from Mendix Studio Pro.
+
+First, make sure to [connect the extension to MTA](../connect-mta/connect-menditect-extension-to-mta).
+
+### Generate Test
+
+To generate a new Test Case, that will execute a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](../connect-mta/use-microflow-call-hierarchy-extension#microflow-call-hierarchy) for a specific microflow
+- Click on the <i class="fal fa-circle"></i> icon, on the left of the microflow name, or right-click on the microflow name and select "Generate Test"
+- Select which [Test suite](../../../mta/test-suite) to use, to store the new [Test Case](../../../mta/test-case).
+
+MTA will create a new Test Case for the microflow, and Studio Pro will open a new tab showing MTA, containing the new Test Case.
+
+:::info
+If the microflow that you have selected is new, you first have to commit it, [download the new revision](../../../mta/application-revision#change-the-application-revision-for-a-test-configuration) and [adapt the test suites in MTA](../../../mta/application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision).<br/>
+:::
+
+### Edit Test
+
+The Test Case that MTA generates will execute the microflow, and prepare data that the microflow needs for it's parameters. The data that is used is *randomly generated*. It is not yet possible to use database data, that is only possible from [inside MTA](#in-mta). Therefore, you may want to edit the data for the microflow parameters. For security reasons, the MTA tab is read-only. 
+
+To Edit the Test Case that MTA has generated, just click on the <i class="fas fa-external-link"></i> button in the MTA tab. MTA will open in a new browser window, showing the Test Case that was generated. Here you can [edit teststeps](../../../mta/Teststep), add [asserts](../../../mta/Assert) and add [data variation](../../../mta/datavariation).
+
+### Run Test
+
+If your application is running in Studio Pro, and the [Plugin is connected to MTA](../../installation/import-plugin), you can now run your test. 
+
+Just click on "Execute test case" button in the MTA tab.
+
+### View Test
+
+To view an existing Test Case that executes a specific microflow from the Mendix model:
+- [Open the Microflow Call Hierarchy tab](../connect-mta/use-microflow-call-hierarchy-extension#microflow-call-hierarchy) for a specific microflow
+- Click on the <font color="#5BDB5B"> <i class="fas fa-circle"></i> </font> icon, on the left of the microflow name, or right-click on the microflow name and select "View Test"
+- Select the [Test Case](../../../mta/test-case) that contains the [microflow teststep](../../../mta/Teststep/microflow) that calls the microflow.
+
+Studio Pro will open a tab showing MTA, containing the Test Case.
+
+## In MTA
+
+### Generate Test
+
+This feature enables you to generate a test just like when inside a test suite, but for multiple microflows at once.
+
+You can choose to generate based on random data, or to use from existing data from a database.
+
+Steps:
+- Navigate to "Microflows" after opening a [Test Configuration](../../../mta/test-configuration).
+- Select the microflow(s) to generate a Test Case for.
+- Choose to either generate a Test Case with random data, or from database.
+- When choosing from database, select the [application instance](../../../mta/application-instance).
+- Optionally open and configure (one of) the test case(s) from here.
+
+A few notes:
+- Teststeps will be generated to fill any Object or List parameters of the microflow. Parameters can be filled using values from a database. Therefore it can be needed to select a running [Application instance](../../../mta/application-instance).
+- Only when choosing *from database*, MTA will generate "Create object" teststeps for associations as well.
+- If the object is nonpersistable, or if the database does not contain any objects of the necessary entity, MTA will use random values for the Object's attributes. 
+- *Primitive* microflow parameters will always be filled with random values.
+
+### Record Test
+
+It is possible to generate teststeps based on recorded user actions, by creating a [Recording](../../../mta/recording). By executing the resulting teststeps, the recorded actions are essentially replayed.
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 9 April 2024

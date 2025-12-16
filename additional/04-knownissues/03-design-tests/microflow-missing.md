@@ -12,7 +12,7 @@ One reason could be, that the revisions between MTA and the test application don
 
 **Resolution**
 
-Commit your changes if you are working in Studio Pro, and [Update the revision that MTA uses](../../../application-revision#change-the-application-revision-for-a-test-configuration) for the Test Configuration.
+Commit your changes if you are working in Studio Pro, and [Update the revision that MTA uses](../../../mta/application-revision#change-the-application-revision-for-a-test-configuration) for the Test Configuration.
 
 ### Hidden microflow
 

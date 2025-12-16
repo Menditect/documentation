@@ -1,14 +1,13 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 toc_max_heading_level: 2
 ---
 
-# Public API
+# MTA Public API
 
 This document describes the endpoints of MTA's public API.
 
-To learn **how to** implement the API's in a CI/CD pipeline, read the how-to pages on CI/CD.
-
+Read the Howto section for information on getting started or implementing these endpoints in a development pipeline.
 
 To authorize a session for MTA's public API, use Basic (HTTP) Authorization.
 
@@ -453,7 +452,7 @@ Initiate the execution of a test configuration for the specified application ins
 
 The `retentionPeriodInDays` parameter is optional and can be omitted. If provided, the allowed values are 1, 2, 3, 4, 5, 6 and 7. If ommitted, the value is 2.
 
-The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](coverage-goal) after the test was executed.
+The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](mta/coverage-goal) after the test was executed.
 
 :::note
 Make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.
@@ -592,6 +591,8 @@ A unique execution ID of the Test Run:
 ## GET testrun
 
 Retrieve a summary of a test run to allow checking if the test run is either Running, or finished with status Pass / Fail, or ERROR.
+
+Note that associated FileDocuments are not yet included in the GET testrun endpoint. FileDocuments can only be downloaded through the MTA frontend.
 
 ### Request
 
@@ -736,7 +737,9 @@ Empty.
 
 ## GET testrun archive
 
-Retrieve the [archived test run content](archive) (only available if Test Run Archiving is enabled).
+Retrieve the [archived test run content](mta/archive) (only available if Test Run Archiving is enabled).
+
+Note that associated FileDocuments are not yet included in the GET testrun archive endpoint. FileDocuments can only be downloaded through the MTA frontend.
 
 ### Request
 
@@ -761,11 +764,11 @@ Retrieve the [archived test run content](archive) (only available if Test Run Ar
 
 
 ## Related topics
-- [Application](application)
-- [Application Revision](application-revision)
-- [Test Case](test-case)
-- [Test Configuration](test-configuration)
-- [Test Run](test-run)
+- [Application](mta/application)
+- [Application Revision](mta/application-revision)
+- [Test Case](mta/test-case)
+- [Test Configuration](mta/test-configuration)
+- [Test Run](mta/test-run)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

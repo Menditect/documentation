@@ -2,7 +2,7 @@
 
 ## Issue summary
 
-When connecting an [Application Instance](../../../application-instance) to MTA, the MTAPluginPage snippet in the test application shows that the instance is "Connected" and received a Connection ID, where MTA shows that the instance is not connected.
+When connecting an [Application Instance](../../../mta/application-instance) to MTA, the MTAPluginPage snippet in the test application shows that the instance is "Connected" and received a Connection ID, where MTA shows that the instance is not connected.
 
 ## Possible causes and resolutions
 

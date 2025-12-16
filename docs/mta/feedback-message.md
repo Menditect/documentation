@@ -1,0 +1,37 @@
+---
+sidebar_position: 19
+---
+
+
+# Feedback Message
+
+
+## Definition
+
+A Feedback Message occurs in a [Test Run](test-run), as a result of a "Validation feedback" action in a Microflow that is executed. 
+
+Feedback Messages in MTA are indicated by the <i class="fal fa-message-check"></i> icon.
+
+## Properties
+
+### Message
+The message text.
+  
+## Business rules
+
+None.
+
+## Actions on Feedback Message
+
+### View Feedback Messages
+
+- Open the [Test Run](test-run).
+- Open the Test Suite Run by clicking on `Results`.
+- Click on the <i class="fal fa-message-check"></i> icon on the Test Case, which indicates that there were Validation feedback messages.
+- Click `Show validation feedback messages`.
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 27 November 2025
