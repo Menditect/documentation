@@ -14,7 +14,7 @@ To save the changes to the database, add a [Persist](persist) step.
 
 ### Security applied
 
-If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the MTA Plugin will check if the Execution user has *Write* rights on changed attributes, through the configured `Member rights`. If there are no *Write* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the MTA Plugin will check if the [Execution Users](../execution-user) has *Write* rights on changed attributes, through the configured `Member rights`. If there are no *Write* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
 ### Security not applied 
 

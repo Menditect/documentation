@@ -10,7 +10,7 @@ It is possible to enable a so-called coverage listener on an [Application Instan
 
 The steps are as follows:
 - Create a [Test Case](../../../mta/test-case)
-- In the Settings, set the *Execution User* to 'MxAdmin' and *Apply Security* to "No"
+- In the Settings, set the [Execution User](../../../mta/execution-user) to 'MxAdmin' and *Apply Security* to "No"
 - Also, set the *Execution time-out* slightly higher than you expect your test to take (for example, 960 for 16 minutes)
 - Save the Test Case Settings
 - Add a [Persist Teststep](../../../mta/Teststep/persist)

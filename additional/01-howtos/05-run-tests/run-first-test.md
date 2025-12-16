@@ -98,7 +98,7 @@ Save the setup of your Test Configuration.
 
 ## 3. Execution user
 
-Next is configuring execution users. This is the Account that you would normally use to login to the Application and test the frontend. 
+Next is configuring an [Execution User](../../../mta/execution-user). This is the Account that you would normally use to login to the Application and test the frontend. 
 
 - Navigate to "Execution users" in the left menu.
 

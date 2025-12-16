@@ -20,7 +20,7 @@ Cannot execute pre-action "select object for retrieve run" because entity value 
 
 Other comparable scenario's leading to this error:
 - the object is committed to the database, but deleted thereafter. 
-- the object is committed to the database, but the Execution User in Test Case 2 or 3 does not have access to the Entity.
+- the object is committed to the database, but the [Execution User](../../../mta/execution-user) in Test Case 2 or 3 does not have access to the Entity.
 
 #### Resolutions
 

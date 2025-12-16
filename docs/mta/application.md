@@ -24,6 +24,7 @@ A Boolean setting that determines whether Pages and Widgets are loaded into MTA,
 
 ## Business rules
 - An MTA user is associated to a Mendix user in MTA. This MTA user can only add Mendix Applications that are registered to the Mendix user. 
+- MTA can only test Mendix Apps having [Production Security Level](https://docs.mendix.com/refguide/app-security/#security-level).
 
 To learn more about configuring an MTA user, read the How To section.
 

@@ -592,6 +592,8 @@ A unique execution ID of the Test Run:
 
 Retrieve a summary of a test run to allow checking if the test run is either Running, or finished with status Pass / Fail, or ERROR.
 
+Note that associated FileDocuments are not yet included in the GET testrun endpoint. FileDocuments can only be downloaded through the MTA frontend.
+
 ### Request
 
 **URL**
@@ -736,6 +738,8 @@ Empty.
 ## GET testrun archive
 
 Retrieve the [archived test run content](mta/archive) (only available if Test Run Archiving is enabled).
+
+Note that associated FileDocuments are not yet included in the GET testrun archive endpoint. FileDocuments can only be downloaded through the MTA frontend.
 
 ### Request
 

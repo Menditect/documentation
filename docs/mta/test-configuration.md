@@ -1,5 +1,5 @@
 ---
-sidebar_position: 26
+sidebar_position: 27
 ---
 
 
@@ -60,7 +60,7 @@ A description of the Test Configuration.
 - Open or Select the Test Configuration that you want to export.
 - Use the Export test configuration button on the bottom left, to download a Text file containing all design elements of a Test Configuration. 
 
-Included in the file are: [Test Suites](test-suite), Execution Users and [Coverage Goals](coverage-goal). 
+Included in the file are: [Test Suites](test-suite), [Execution Users](execution-user) and [Coverage Goals](coverage-goal). 
 
 Not included are: [Test Settings](test-setting), [Test Runs](test-run) and associated [Coverage Calculations](coverage-calculation).
 

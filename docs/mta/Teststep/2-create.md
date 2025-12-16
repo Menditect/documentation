@@ -6,7 +6,7 @@ With this [Teststep](.) type, an object is created in-memory.
 
 To save it to the database, add a [Persist](persist) step.
 
-The object is created only if the Execution user is allowed to based on the domain model access rules in the Mendix model.
+The object is created only if the [Execution Users](../execution-user) is allowed to based on the domain model access rules in the Mendix model.
 
 Domain model events (Before and After Create), if configured, are triggered.
 
@@ -14,7 +14,7 @@ Domain model events (Before and After Create), if configured, are triggered.
 
 ### Security applied
 
-If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the *Create* rights on the Entity, through the configured `Entity rights` will be evaluated by the MTA Plugin to check if the Execution user may create a new object. If there are no *Create* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the *Create* rights on the Entity, through the configured `Entity rights` will be evaluated by the MTA Plugin to check if the [Execution Users](../execution-user) may create a new object. If there are no *Create* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
 ### Security not applied 
 

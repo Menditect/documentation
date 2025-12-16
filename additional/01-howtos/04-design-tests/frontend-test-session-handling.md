@@ -10,7 +10,7 @@ Although MTA creates it's own user session to perform (backend) actions in a Tes
 
 ## Test Case security
 
-Execute Frontend tests with [Execution user](../../../mta/test-case#execution-user) `MxAdmin` and [Apply Security](../../../mta/test-case#apply-security) disabled. 
+Execute Frontend tests with [Execution user](../../../mta/execution-user) `MxAdmin` and [Apply Security](../../../mta/test-case#apply-security) disabled. 
 
 ## Local testing
 

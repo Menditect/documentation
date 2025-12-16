@@ -1,6 +1,6 @@
 # Test without local Account
 
-MTA requires an Execution User for each test case to indicate who is running it. The name of the Execution User should be equal to the username of a local user account. 
+MTA requires an [Execution User](../../../mta/execution-user) for each test case to indicate who is running it. The name of the Execution User should be equal to the username of a local user account. 
 
 ## SSO
 
@@ -27,7 +27,7 @@ At least make sure to put the Delete local Accounts logic in it's own Test Suite
 
 The first Test Suite contains one Test Case for each Account that should be created.
 
-Each Test Case uses MxAdmin as the Execution User, and has the Apply Security setting to "No".
+Each Test Case uses MxAdmin as the [Execution User](../../../mta/execution-user), and has the Apply Security setting to "No".
 
 Every Test Case in this Test Suite contains these teststeps:
 1. [Retrieve](../../../mta/Teststep/retrieve) UserRole (1 or more teststep) to determine the Roles for the Account

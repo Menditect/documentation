@@ -11,7 +11,7 @@ The assumption is made that both the publishing App and the consuming App are bu
 
 Retrieving data from a Dataset that is exposed as an Entity in a Mendix App works exactly the same as retrieving data from a regular Entity.
 
-It is possible to use a regular [Retrieve teststep](../../../mta/Teststep/retrieve). Domain model access must be configured for the Entity, allowing the Execution user Read Access.
+It is possible to use a regular [Retrieve teststep](../../../mta/Teststep/retrieve). Domain model access must be configured for the Entity, allowing the [Execution User](../../../mta/execution-user) Read Access.
 
 
 ### Creating OData objects
@@ -20,7 +20,7 @@ Creating data from a Dataset that is exposed as an Entity in a Mendix App can be
 
 ![Send external object](../images/commit-odata-object.png)
 
-Domain model access must be configured for the Entity, allowing the Execution user Create and Write Access. 
+Domain model access must be configured for the Entity, allowing the [Execution User](../../../mta/execution-user) Create and Write Access. 
 
 Additionally, the Published OData service must allow the Insertable and Updatable capability for the published resource:
 https://docs.mendix.com/refguide/published-odata-resource/#capabilities 
@@ -32,7 +32,7 @@ Changing data from a Dataset that is exposed as an Entity in a Mendix App can be
 
 ![Send external object](../images/commit-odata-object.png)
 
-Domain model access must be configured for the Entity, allowing the Execution user Write Access. 
+Domain model access must be configured for the Entity, allowing the [Execution User](../../../mta/execution-user) Write Access. 
 
 Additionally, the Published OData service must allow the Updatable capability for the published resource:
 https://docs.mendix.com/refguide/published-odata-resource/#capabilities 
@@ -44,7 +44,7 @@ Deleting data from a Dataset that is exposed as an Entity in a Mendix App can **
 
 ![Delete external object](../images/delete-odata-object.png)
 
-Domain model access must be configured for the Entity, allowing the Execution user Delete Access. 
+Domain model access must be configured for the Entity, allowing the [Execution User](../../../mta/execution-user) Delete Access. 
 
 Additionally, the Published OData service must allow the Deletable capability for the published resource:
 https://docs.mendix.com/refguide/published-odata-resource/#capabilities 
