@@ -80,7 +80,7 @@ const config = {
           },
           {
             id: 'howto-byomeal',
-            content: '@site/additional/installation/index.md',
+            content: '@site/additional/00-installation/index.md',
           },
           {
             id: 'generate-test',
