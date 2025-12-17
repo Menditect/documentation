@@ -39,8 +39,7 @@ Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the sa
 
 ### Replace Page call by Microflow call
 
-The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages.
-- Replace any usages of the `MTAPluginPage` Snippet by a call to the `Show_MTA_Plugin_Status_Page` Microflow.
+The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
 
 ### Re-create your PAT
 

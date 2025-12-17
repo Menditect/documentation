@@ -115,7 +115,7 @@ Preparation is recommended to make sure that your data will be migrated successf
 - Check all the values of the Constants for the Mendix model (see above).
 - Verify that all Scheduled Events are Enabled.
 - Start the MTA Application.
-- Restart Test Applications Instances, or use the [Plugin Home Page](installation/import-plugin#configure-plugin-home-page) to ensure they are connected to MTA.
+- Restart Test Applications Instances, or use the [Plugin Home Page](installation/import-plugin#manual-connection) to ensure they are connected to MTA.
 - Login to MTA as Tester.
 - Wait until the migration process is done. If the migration fails, contact Menditect support (support@menditect.com).
 - Check if the test configurations can be executed.

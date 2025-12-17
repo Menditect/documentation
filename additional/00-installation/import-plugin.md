@@ -58,7 +58,7 @@ You can set this constant after you have [added an Application Instance](../../m
 #### `ConnectionMethod`
 This will determine if your app will try to connect to MTA, either
 - 'AfterStartup': After deployment the app will try to connect to MTA using the provided token and Connection User's credentials.
-- 'Manual': You have to establish the connection to MTA manually, with the [Plugin Home page](#configure-plugin-home-page) in the app.
+- 'Manual': You have to establish the connection to MTA manually, with the [Plugin Home page](#manual-connection) in the app.
 - 'None': This will disable the connection to MTA.
 
 Any other value will result in an error message when attempting to establish the connection to MTA.
@@ -80,15 +80,11 @@ Example: wss://mta-mtatraining.mendixcloud.com
 The constant `NoAssociationResponse` is not officially supported.
 :::
 
-### Configure Plugin Home page
+### Manual connection
 
-Including a Microflow call in your App is necessary if you want to manually connect to MTA (with [ConnectionMethod](#connectionmethod) = "Manual"). 
+From MTA 3.0, the [MTA Plugin](../Tools/mta-plugin) is an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page before to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
 
-- Make sure to add the `MTAPluginUser` module role to the necessary Project Role(s).
-- Include a call to the `Show_MTA_Plugin_Status_Page` Microflow in the Navigation.
-
-You can now view connection details and manually connect to MTA.
-
+In this module, you can use the `MTAPluginStatus` Snippet in a Page, to view Connection details and establish a connection manually.
 
 ### Upgrading Mendix Runtime of the parent Project  
 
