@@ -206,10 +206,10 @@ For Mendix Teams still using SVN repositories, it is required to re-create a Per
 
 <br/>
 
-| ID                  | Plugin-4114                                                                                                                                                                                                                 |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will always be empty, also of other Teststeps that were added to the List do not have an empty output.    |
-| __Solution__        | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will be empty if the Teststep that results in empty output was the first item that was added to the list. |
-| __Release actions__ | None.                                                                                                                                                                                                                       |
+| ID                  | Plugin-4114                                                                                                                                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __Problem__         | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will always be empty, also of other Teststeps that were added to the List do not have an empty output. |
+| __Solution__        | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will now be filled as expected, with only Teststeps that do not result in an empty value.              |
+| __Release actions__ | None.                                                                                                                                                                                                                    |
 
 <br/>
