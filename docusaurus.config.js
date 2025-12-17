@@ -80,7 +80,7 @@ const config = {
           },
           {
             id: 'howto-byomeal',
-            content: '@site/additional/01-howtos/01-host-and-deploy/manage-mta-deployment.md',
+            content: '@site/additional/installation',
           },
           {
             id: 'generate-test',
