@@ -109,6 +109,7 @@ const config = {
           { id: 'application-instance', content: 'mta/application-instance.md', versions: 'ALL' },
           { id: 'application-revision', content: 'mta/application-revision.md', versions: 'ALL' },
           { id: 'archive', content: 'mta/archive.md', versions: 'ALL' },
+          { id: 'assert', content: 'mta/Assert/index.md', versions: 'ALL' },
           { id: 'assert-attribute', content: 'mta/Assert/assert-attribute.md', versions: 'ALL' },
           { id: 'assert-exception', content: 'mta/Assert/assert-exception.md', versions: ['3.0'] },
           { id: 'assert-microflow-output', content: 'mta/Assert/assert-microflow-output.md', versions: 'ALL' },
