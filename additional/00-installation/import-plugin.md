@@ -86,6 +86,8 @@ From MTA 3.0, the [MTA Plugin](../../Tools/mta-plugin) is an [Add-on module](htt
 
 In this module, you can use the `MTAPluginStatus` Snippet in a Page, to view Connection details and establish a connection manually.
 
+Make sure to add the Module Roles from both the MTA Plugin as the MTA Plugin Connection Snippet, to the respective Project Roles of your Mendix App.
+
 ### Upgrading Mendix Runtime of the parent Project  
 
 To upgrade the major version of your Mendix App (for example, from Mendix 9 to 10), you need to make sure to replace all the files related to the MTA Plugin Module. 
