@@ -72,7 +72,7 @@ const config = {
           },
           {
             id: 'import-plugin',
-            content: '@site/docs/tools/mta-plugin.md',
+            content: '@site/docs/Tools/mta-plugin.md',
           },
           {
             id: 'pat',
