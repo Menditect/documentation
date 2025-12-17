@@ -82,7 +82,7 @@ The constant `NoAssociationResponse` is not officially supported.
 
 ### Manual connection
 
-From MTA 3.0, the [MTA Plugin](../Tools/mta-plugin) is an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page before to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
+From MTA 3.0, the [MTA Plugin](../../Tools/mta-plugin) is an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page before to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
 
 In this module, you can use the `MTAPluginStatus` Snippet in a Page, to view Connection details and establish a connection manually.
 
