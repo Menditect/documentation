@@ -71,10 +71,6 @@ const config = {
             content: '@site/additional/01-howtos/02-connect-mta/use-microflow-call-hierarchy-extension.md',
           },
           {
-            id: 'import-plugin',
-            content: '@site/docs/Tools/mta-plugin.md',
-          },
-          {
             id: 'pat',
             content: '@site/additional/01-howtos/03-configure-mta/access-mendix-model.md',
           },
@@ -131,7 +127,8 @@ const config = {
           { id: 'Teststep', content: 'mta/Teststep/index.md', versions: 'ALL' },
           { id: 'feedback-message', content: 'mta/feedback-message.md', versions: 'ALL' },
           { id: 'construction-error', content: 'mta/construction-error.md', versions: 'ALL' },
-          { id: 'mta-plugin', content: 'tools/mta-plugin.md', versions: 'ALL' },
+          { id: 'mta-plugin', content: 'Tools/mta-plugin.md', versions: 'ALL' },
+          { id: 'import-plugin', content: 'Tools/mta-plugin.md', versions: 'ALL' },
           { id: 'playwright-connector', content: 'tools/playwright-connector.md', versions: 'ALL' },
           { id: 'playwright-testkit', content: 'tools/playwright-testkit.md', versions: 'ALL' },
         ],
