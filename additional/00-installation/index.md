@@ -131,7 +131,7 @@ After updating MTA, make sure that all the test applications have the newest ver
 
 MTA has an internal built-in function that validates database objects and associations every 24 hours. This feature is called Data Validation. Data Validation is performed by checking if MTA data conforms to a set of invariant business rules that are defined by Menditect for every Entity in the MTA App. If a database transaction fails for any reason, data may become "corrupted" in a sense that it no longer conforms to these business rules. 
 
-Data Validation Runs can either Pass or Fail. If validating a single Entity fails, the entire run fails. You can check if a Data Validation run has passed or failed by logging into MTA as an [Administrator](../-howtos/configure-mta/manage-accounts#administrator). You can also execute a manual Data Validation Run there.
+Data Validation Runs can either Pass or Fail. If validating a single Entity fails, the entire run fails. You can check if a Data Validation run has passed or failed by logging into MTA as an [Administrator](../howtos/configure-mta/manage-accounts#administrator). You can also execute a manual Data Validation Run there.
 
 If a Data Validation Run has failed, please contact Menditect Support at support@menditect.com. We may need to perform an analysis to check if the data needs to be patched, and/or if there may be a bug in MTA. 
 
