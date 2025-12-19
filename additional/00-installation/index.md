@@ -38,21 +38,25 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 - Deploy and transport it to the environment in your cloud. 
 - Check the value of the following environment variables (Constants) for the MTA application:
 
-| Environment variable                                             | value                                                            |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ApiMendixModule.WebsocketStage                                   | `production`                                                     |
-| EgalitConfigModule.EsaMultiInstanceMode                          | `False`                                                          |
-| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | `5`                                                              |
-| MtaUtils.DeleteObjectBatchSize                                   | `500`                                                            |
-| MtaUtils.DeploymentType                                          | `On-Premises`                                                    |
-| MtaUtils.InternalToken                                           | *(empty)*                                                        |
-| MtaUtils.NodeRevision                                            | `0`                                                              |
-| MtaUtils.ScheduledEventsOffsetUTC                                | *(offset from UTC, in whole hours, for scheduled events to run)* |
-| MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                            |
-| MtaUtils.UrlSupportForm                                          | `https://share.hsforms.com/1x-oVL39kRTGw-b3CQ9im8g3twri`         |
-| MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`                    |
-| TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                             |
+| Environment variable                                             | value                                                             |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------- |
+| ApiMendixModule.WebsocketStage                                   | `production`                                                      |
+| EgalitConfigModule.EsaMultiInstanceMode                          | `False`                                                           |
+| MtaDataValidationModule.RunIntervalNrOfDaysBeforeSysdate         | `5`                                                               |
+| MtaUtils.DeleteObjectBatchSize                                   | `500`                                                             |
+| MtaUtils.DeploymentType                                          | `On-Premises`                                                     |
+| MtaUtils.InternalToken                                           | *(empty)*                                                         |
+| MtaUtils.NodeRevision                                            | `0`                                                               |
+| MtaUtils.ScheduledEventsOffsetUTC                                | *(offset from UTC, in whole hours, for scheduled events to run)*  |
+| MtaUtils.UrlBaseDocumentation                                    | `https://documentation.menditect.com`                             |
+| MtaUtils.UrlSupportForm                                          | *(only change if MTA License is purchased via Mendix, see below)* |
+| MtaUtils.UrlVideoInstructional                                   | `https://menditect.com/demos/mta-movies.html`                     |
+| TestconfigurationModule.TCNF_DaysRemainAfterFlaggedForDeleteDate | `20`                                                              |
 
+
+*Mendix License* <br/>
+If the MTA License is purchased via Mendix, the support channel is Mendix Support.<br/> 
+In that case, the `MtaUtils.UrlSupportForm` Constant must be filled with `https://support.mendix.com/hc/en-us/requests/new`.
 
 :::note
 You may notice that MTA also contains environment variables from the MTA Plugin Module. This is because Menditect regression-tests MTA with MTA. 
