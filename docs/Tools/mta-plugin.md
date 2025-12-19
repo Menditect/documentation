@@ -40,16 +40,13 @@ Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the sa
 ### Updating from MTA Plugin 4.8.1
 
 :::caution delete before replace
-Delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
+Start with `Clean your Deployment directory` in Studio Pro. Then, delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
 :::
 
 ### Updating from MTA Plugin 9 and above
 
 - Import the MTA Plugin Add-on module into your [Application](../mta/application) from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/214717).
 
-### Troubleshooting
-
-If both MTA and the MTA Plugin indicate that there is an active connection, but executing a [Test Run](../mta/test-run) results in an error and/or a timeout, it may be needed to re-download the associated Mendix App on your computer after committing the changes containing the new MTA Plugin.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
