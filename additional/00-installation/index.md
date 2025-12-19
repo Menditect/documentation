@@ -133,8 +133,9 @@ MTA has an internal built-in function that validates database objects and associ
 
 Data Validation Runs can either Pass or Fail. If validating a single Entity fails, the entire run fails. You can check if a Data Validation run has passed or failed by logging into MTA as an [Administrator](howtos/configure-mta/manage-accounts#administrator). You can also execute a manual Data Validation Run there.
 
-If a Data Validation Run has failed, please contact Menditect Support at support@menditect.com. We may need to perform an analysis to check if the data needs to be patched, and/or if there may be a bug in MTA. 
+If a Data Validation Run has failed, please contact Menditect Support at support@menditect.com. Mentitect will perform an analysis to check if the data needs to be patched, and/or if there is a bug in MTA. It may be necessary to deploy a patched version (.mda file) of MTA to patch the data of fix the bug.
 
+If a Data Validation Run has failed and you are experiencing issues in MTA, Menditect can only provide support if a copy (backup) of the MTA database is shared. The database backup will only be used for resolving the issue and will be deleted when the issue is resolved. 
 
 
 ## Feedback?
