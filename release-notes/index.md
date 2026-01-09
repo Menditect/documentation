@@ -37,6 +37,10 @@ Some new functions will not work on the old version of the [MTA Plugin](../Tools
 Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the same marketplace component, we have moved to a different versioning system. The major MTA Plugin version indicates the Mendix Runtime version. The remaining digits indicate the internal version of the MTA Plugin.
 :::
 
+:::caution delete before replace
+Start with `Clean your Deployment directory` in Studio Pro. Then, delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
+:::
+
 ### Replace Page call by Microflow call
 
 The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
