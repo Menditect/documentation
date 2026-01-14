@@ -44,7 +44,7 @@ For a comprehensive list of Widgets that can be Located, checkout the `Widget_Lo
 Locating a Widget is made as simple as possible by Menditect: use the microflows and entities from the MTA Mendix Frontend Testkit. It is possible to create the Teststeps manually, but it is easier to use the MTA build-in [feature](../mta/frontend-test#generate-teststeps) that generates the Teststeps for you.
 
 :::info auto visibility check
-By default, when a Locator microflow is executed, MTA will perform an `IsVisible` Assertion. If the element is not visible on the Page, the test will fail. This allows for early detection if Locator might fail. To disable this, use the `IsVisibleOptions` parameter of the Locator microflow.
+By default, when a Locator microflow is executed, MTA will perform an `IsVisible` Assertion. If the element is not visible on the Page, the test will fail. This allows for early detection if Locator might fail. To change this behaviour and check if the element is **not** visible, use the `IsVisibleOptions` parameter of the Locator microflow.
 :::
 
 ### 1. Determine Widget Name
