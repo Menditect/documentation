@@ -38,6 +38,10 @@ https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/dri
 It may be necessary to restart your computer if you want to use a locally-hosted Playwright Browser for the first time.
 :::
 
+:::info local admin rights
+If you do not have local admin rights on your machine, you may run into errors when running Playwright locally.
+:::
+
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
 
