@@ -6,9 +6,13 @@ sidebar_position: 2
 
 ## Purpose
 
-The MTA Playwright Connector is a Mendix Add-on module built and maintained by Menditect, as a wrapper for Playwright Java commands.
+The MTA Playwright Connector is a Mendix Add-on module built and maintained by Menditect, that makes it possible to define and run a [Frontend test](../mta/frontend-test) in MTA. The module can be imported into any Mendix App, and can be used to frontend test *any* website, not just Mendix Apps. 
 
-The Playwright Connector makes it possible to define and run a [Frontend test](../mta/frontend-test) in MTA, from any Mendix App. It enables the App to connect to a Playwright Browser, based on specified connection settings, and execute the test. The module is essentially a wrapper around Playwright [Locators](https://playwright.dev/java/docs/locators), [Assertions](https://playwright.dev/java/docs/test-assertions) and [Actions](https://playwright.dev/java/docs/input). These are executed as [Java Actions](https://docs.mendix.com/refguide/java-actions/) inside a Microflow, which in turn can be executed by MTA. Because these actions are generic, the module can be used to frontend test *any* webapplication, not just Mendix Apps.
+:::info
+Although Playwright supports [testing against a website inside an iFrame](https://playwright.dev/java/docs/api/class-frame), this functionality is not (yet) available in the MTA Playwright Connector.
+:::
+
+The module enables the App to connect to a [Playwright Browser](../../additional/installation/install-playwright-browser), based on specified connection settings, and execute the test. The module is essentially a wrapper around Playwright [Locators](https://playwright.dev/java/docs/locators), [Assertions](https://playwright.dev/java/docs/test-assertions) and [Actions](https://playwright.dev/java/docs/input). These are executed as [Java Actions](https://docs.mendix.com/refguide/java-actions/) inside a Microflow, which in turn can be executed by MTA.
 
 ## Properties
 
@@ -47,6 +51,7 @@ For more advanced usage, checkout the Playwright documentation for [Locators](ht
 ## Installation instructions
 
 - Download the Playwright Connector module from the Mendix Marketplace: https://marketplace.mendix.com/link/component/214764
+- Make sure to assign the Module Role in the module to a Project Role that is also used as [Execution User](../mta/execution-user) for the [Test Case](../mta/test-case).
 - To start Frontend Testing, you must [host a Playwright Browser](../../additional/installation/install-playwright-browser).
 
 
