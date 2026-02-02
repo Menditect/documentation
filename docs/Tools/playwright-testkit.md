@@ -110,7 +110,7 @@ Replace the existing module when importing a new version.
 
 ## Dependencies
 
-:::warning
+:::caution
 When calling a Microflow from this module, a Connection to MTA **must be** established.
 :::
 
