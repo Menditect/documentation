@@ -49,4 +49,9 @@ Replace the module in the Mendix Project if there is a newer version available f
 
 ## Dependencies
 
-None.
+
+:::warning
+When calling a Microflow from this module, a Connection to MTA **must be** established.
+:::
+
+

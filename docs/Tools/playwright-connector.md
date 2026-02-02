@@ -58,12 +58,16 @@ Make sure to delete any old JAR files from the userlib subfolder in your project
 
 ## Dependencies
 
+:::warning
+When calling a Microflow from this module, a Connection to MTA **must be** established.
+:::
+
+
 These modules are **required** to be imported in the Mendix App under test:
 - [MTA Plugin](mta-plugin)
 - [MTA Mendix Frontend Testkit](playwright-testkit)
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
-
 
 ## Feedback?
 Are you missing a Playwright Java command? [Let us know by submitting a Feature Request!](https://share.hsforms.com/15C364bwdTfCyQypkV6lWrA3twri)
