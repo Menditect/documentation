@@ -100,6 +100,7 @@ Snippets are not rendered as HTML elements by Mendix, even though Mendix does al
 ## Installation instructions
 
 - Download the Mendix Frontend Testkit from the Mendix Marketplace: https://marketplace.mendix.com/link/component/206637
+- Make sure to assign the Module Role in the module to a Project Role that is also used as [Execution User](../mta/execution-user) for the [Test Case](../mta/test-case).
 - To enable Mendix App Frontend Testing, you must [Enable Loading Pages and Widgets](../mta/application#enable-loading-pages-and-widgets) on the Mendix App.
 - To test a [Mendix Page](../mta/mendix-page), you must fill in the [Page Class](../mta/mendix-page).
 
