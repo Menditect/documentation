@@ -58,7 +58,7 @@ Make sure to delete any old JAR files from the userlib subfolder in your project
 
 ## Dependencies
 
-:::warning
+:::caution
 When calling a Microflow from this module, a Connection to MTA **must be** established.
 :::
 
