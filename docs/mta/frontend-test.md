@@ -59,13 +59,9 @@ If the Mendix App has Anonymous access enabled it may not be necessary to Use lo
 | Yes       | `MenditectMxUITestKit.Start_MxFrontend_Test_With_Login`    |
 | No        | `MenditectMxUITestKit.Start_MxFrontend_Test_Without_Login` |
 
-:::info user session handling
-Mendix Studio Pro has a limitation of 6 allowed concurrent user sessions when running your App from Studio Pro.<br/>
-To prevent running into errors in the middle of your (Frontend) test script, here are some simple suggestions:
-- prevent using Anonymous sessions, to avoid leaving sessions open, and running into a max-sessions-exceeded Mendix error.
-- always logout at the end of your Frontend test.
-- prevent also manually logging in at the same time from your own browser.
-- restart the App right before executing the test.
+:::caution anonymous users
+When using Anonymous users, always use the `Without_Login` Microflow.<br/>
+When using a [Mendix Page](mendix-page) to Signin (instead of `/login.html`), use Locator and Action Microflows to fill the username and password textboxes and Click the Signin button, instead of the `With_Login` Microflow.
 :::
 
 ### Mendix_URL

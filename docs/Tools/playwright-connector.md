@@ -74,6 +74,16 @@ These modules are **required** to be imported in the Mendix App under test:
 
 Make sure to convert widgets to React widgets if [React](https://docs.mendix.com/refguide/mendix-client/react/) is enabled for the Mendix project.
 
+
+## Known issues
+
+When running your App from Studio Pro, you may see a `Too many user sessions` error message (in the Console and/or in the Browser). This is because there is a limitation of 6 allowed concurrent user sessions for a Trial license. Some tips:
+- prevent using Anonymous sessions, to avoid leaving sessions open, and running into a max-sessions-exceeded Mendix error.
+- always logout at the end of your Frontend test.
+- prevent also manually logging in at the same time from your own browser.
+- restart the App right before executing the test.
+
+
 ## Feedback?
 Are you missing a Playwright Java command? [Let us know by submitting a Feature Request!](https://share.hsforms.com/15C364bwdTfCyQypkV6lWrA3twri)
 
