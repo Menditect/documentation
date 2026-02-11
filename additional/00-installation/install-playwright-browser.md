@@ -22,6 +22,8 @@ Option 1 is only available for a local machine, because Mendix does not allow fo
 ### Prerequisites
 
 - Make sure that the [MTA Plugin](../../../tools/mta-plugin) module is [imported and configured](import-plugin).
+- Download the driver-bundle jar file that is required to run Playwright. Currently, the required version is 1.53.0: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
+- Move this jar file into your /userlib directory of the Mendix project.
 - Start by importing the [Playwright Connector](../../../tools/playwright-connector).
 - Then import the [Frontend Test Kit](../../../tools/playwright-testkit) to start testing the most common Mendix Widgets. 
 - Add both the Module Roles to the project's User Role(s) that will be used to execute Frontend Tests.
@@ -29,10 +31,7 @@ Option 1 is only available for a local machine, because Mendix does not allow fo
 
 ## Run Playwright Locally
 
-Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). For this, you only need to add the necessary `driver-bundle.jar` file to the `/userlib` folder of the Mendix project. 
-
-The currently supported version is 1.53.0. Download it here:<br/>
-https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar
+Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). 
 
 :::info reboot needed
 It may be necessary to restart your computer if you want to use a locally-hosted Playwright Browser for the first time.
@@ -52,6 +51,8 @@ One alternative option to hosting Playwright locally is to use Browserstack. Bro
 Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
 Local Testing is currently only supported if Playwright is also running locally.
 [Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
+
+Read [Frontend test](../../mta/frontend-test#browserstack-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
 ## Run Playwright in a Docker container 
 
