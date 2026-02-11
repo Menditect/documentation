@@ -48,6 +48,17 @@ Start with `Clean your Deployment directory` in Studio Pro. Then, delete the exi
 - Import the MTA Plugin Add-on module into your [Application](../mta/application) from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/214717).
 
 
+## Known issues
+
+### Merge Conflicts in Studio Pro
+
+A merge conflict may occur on a Java file inside the `/modules/javasource/` directory in your Mendix project. This is a directory that is generated each time a local build is performed.
+
+The conflict is usually the result of randomly generated GUID values, inside a Java file that may already be present on the server, while it is also generated locally but with different GUID values.
+
+**The issue can be resolved by either choosing "Using mine" or completely deleting the concerning directory.**
+
+
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
