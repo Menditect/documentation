@@ -100,8 +100,32 @@ This action will generate 3 [Test Cases](test-case)
 - Use the `Add frontend test` button to create Frontend Test Cases.
 - Select the [Application](application) for the Test Cases.
 - Select the Execution user for the Test Cases.
-- Select the `Start test location` to determine if Playwright is hosted locally, in Browserstack, or in a separate server.
+- Select the `Start test location` to determine if Playwright is hosted locally, in BrowserStack, or in a separate server.
 - Fix the construction errors by setting the missing parameters. Consult [Properties](#properties) above to learn about parameters.
+
+#### BrowserStack option
+
+When choosing to use [BrowserStack Automate](https://automate.browserstack.com/) when generating the Test Cases, some additional information is required. The Microflow Parameters need to exactly match the supported combination of Platform, Browser and Playwright version as documented here: https://www.browserstack.com/docs/automate/playwright/browsers-and-os?fw-lang=java
+
+Lookup your BrowserStack Username and Access Key here: https://www.browserstack.com/accounts/profile/details
+
+An example of a working combination of parameters:
+- Teststep: Create BrowserPlatform object
+  - BrowserType: Chromium
+  - BrowserVersion: 138
+  - DesktopResolution: 1920x1080
+  - OS: Windows
+  - OSVersion: 11
+
+- Teststep: Call Start_Frontend_Test_With_BrowserStack microflow
+  - AccessKey: *(fill in your access key)*
+  - BrowserPlatform: *(use former Teststep)*
+  - Debug: True
+  - LocalTesting: False
+  - PlaywrightVersion: 1.53
+  - ProjectName: MTA
+  - Username: *(fill in your user name)*
+  - Video: True
 
 ### Generate Teststep(s)
 
