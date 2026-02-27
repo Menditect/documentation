@@ -26,22 +26,17 @@ This configuration has to be done when logged in with the MTA Manager role in MT
 
 Use these settings:
 
-| IdP configuration                            |                                                                                         |
-| -------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Alias                                        | *[Name your configuration]*                                                             |
-| Response protocol binding                    | POST_BINDING                                                                            |
-| Use AssertionConsumerService Concept         | No                                                                                      |
-| Assertion consumer service index             | 0                                                                                       |
-| Read IDP metadata from URL                   | No                                                                                      |
-| Preferred entity descriptor                  | *[Will be filled automatically, after uploading the .xml file]*                         |
-| Authentication context                       | *[Use default configuration]*                                                           |
-| Identifying assertion type                   | Use Name ID                                                                             |
-| Entity where the user is to be found         | Administration.Account                                                                  |
-| Attribute where the user principal is stored | FullName                                                                                |
-| Allow the module to create users             | Yes                                                                                     |
-| Use Custom logic for user provisioning       | Yes                                                                                     |
-| Custom microflow                             | SSOConfigModule.CustomUserProvisioning                                                  |
-| Encryption settings                          | *[Choose your preference, uploading a keypair is not required to enable this setting.]* |
+| IdP configuration                    |                                                                                           |
+| ------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Alias                                | *[Name your configuration]*                                                               |
+| Response protocol binding            | POST_BINDING                                                                              |
+| Use AssertionConsumerService Concept | No                                                                                        |
+| Assertion consumer service index     | 0                                                                                         |
+| Read IDP metadata from URL           | No                                                                                        |
+| Preferred entity descriptor          | *[Will be filled automatically, after uploading the .xml file]*                           |
+| Authentication context               | *[Use default configuration]*                                                             |
+| Identifying assertion type           | Use Name ID *[Details will show "Not applicable", because value will be selected by MTA]* |
+| Encryption settings                  | *[Choose your preference, uploading a keypair is not required to enable this setting.]*   |
 
 
 ## User provisioning
