@@ -43,6 +43,12 @@ If you do not have local admin rights on your machine, you may run into errors w
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
+## Run Playwright in Azure Workspaces
+
+You can watch this video to view the configuration steps for Azure.
+
+<iframe src="https://player.vimeo.com/video/1169494973" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 
 ## Run Playwright in Browserstack
 
