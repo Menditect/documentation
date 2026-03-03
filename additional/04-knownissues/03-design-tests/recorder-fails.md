@@ -9,11 +9,11 @@ After [recording](../../../mta/recording) user actions, when stopping the record
 
 ### Unsupported Mendix Version
 
-The Recorder does not work in Mendix runtime versions 9.24.4, 9.24.5, 9.24.6 and 9.24.7.
+The Recorder function is only supported in Mendix LTS versions. 
 
 **Resolution**
 
-Upgrade to a newer Mendix runtime version.
+Upgrade to a Mendix LTS version. 
 
 ### Recorder started too late
 
@@ -21,7 +21,7 @@ It is possible that the recorder was started too late.
 
 **Resolution**
 
-Please start the recorder before logging in to the application.
+Please start the recorder *before* logging in to the application.
 
 ### Limitations
 
