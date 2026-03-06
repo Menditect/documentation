@@ -103,6 +103,10 @@ This action will generate 3 [Test Cases](test-case)
 - Select the `Start test location` to determine if Playwright is hosted locally, in BrowserStack, or in a separate server.
 - Fix the construction errors by setting the missing parameters. Consult [Properties](#properties) above to learn about parameters.
 
+### Azure option
+
+
+
 #### BrowserStack option
 
 When choosing to use [BrowserStack Automate](https://automate.browserstack.com/) when generating the Test Cases, some additional information is required. The Microflow Parameters need to exactly match the supported combination of Platform, Browser and Playwright version as documented here: https://www.browserstack.com/docs/automate/playwright/browsers-and-os?fw-lang=java
