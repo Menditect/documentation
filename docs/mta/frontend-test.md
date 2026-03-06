@@ -105,7 +105,16 @@ This action will generate 3 [Test Cases](test-case)
 
 ### Azure option
 
+When choosing to use [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing) when generating the Test Cases, some additional information is required. For more info, read https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests?tabs=playwrightcli&pivots=playwright-test-runner
 
+Make sure to note the [Browser endpoint](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests?tabs=playwrightcli&pivots=playwright-test-runner#configure-the-browser-endpoint) and an [Access token](https://learn.microsoft.com/en-us/azure/playwright-testing/how-to-manage-access-tokens) before you create the Teststeps in MTA.
+
+An example of a working combination of parameters:
+- Teststep: Call `Start_Frontend_Test_With_AzureStart_Frontend_Test_With_Azure_Playwright_Workspaces` microflow
+  - AccessToken: *(fill in your access token)*
+  - BrowserType: Chromium
+  - OperatingSystem: windows
+  - PlaywrightServiceURL: *(fill in the browser endpoint)*
 
 #### BrowserStack option
 
@@ -121,7 +130,7 @@ An example of a working combination of parameters:
   - OS: Windows
   - OSVersion: 11
 
-- Teststep: Call Start_Frontend_Test_With_BrowserStack microflow
+- Teststep: Call `Start_Frontend_Test_With_BrowserStack` microflow
   - AccessKey: *(fill in your access key)*
   - BrowserPlatform: *(use former Teststep)*
   - Debug: True

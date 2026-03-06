@@ -46,15 +46,13 @@ If this jar file is added to the Mendix project and the app is deployed to a loc
 ## Run Playwright in Azure Workspaces
 
 To run Playwright in Azure, follow these steps:
-- Navigate to https://portal.azure.com and login to a Microsoft account. Create a (free) account if you do not have one. Note that free accounts get 100 minutes of free Playwright Testing for the first month.
-- Look for the "Azure App Testing" Service.
-- Navigate to "All resources" and Create a "Playwright Workspace".
-- Copy and save the "Browser endpoint" URL in a secure password manager.
-- Navigate to "Settings", "Access management".
-- Generate an Access Token.
-- Copy and save the Token value in a secure password manager.
-
-For more info, read https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/how-to-manage-authentication?pivots=playwright-test-runner
+1. Navigate to https://portal.azure.com and login to a Microsoft account. Create a (free) account if you do not have one. Note that free accounts get 100 minutes of free Playwright Testing for the first month.
+2. Look for the "Azure App Testing" Service.
+3. Navigate to "All resources" and Create a "Playwright Workspace".
+4. Copy and save the "Browser endpoint" URL in a secure password manager.
+5. Navigate to "Settings", "Access management".
+6. Generate an Access Token.
+7. Copy and save the Token value in a secure password manager.
 
 Read [Frontend test](../../mta/frontend-test#azure-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
