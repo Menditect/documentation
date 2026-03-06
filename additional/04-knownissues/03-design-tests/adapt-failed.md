@@ -9,7 +9,7 @@ Note that if Adapting a Test Configuration leads to [Construction Errors](../../
 An Adapt action was triggered, either by an MTA user or by calling the [API endpoint](../../../api#post-adapt-testconfiguration-to-revision).
 
 Instead of successfully adapting the [Test Configuration](../../../mta/test-configuration) to the [Application revision](../../../mta/application-revision), an error is shown:
-- <font color="#CA2834" <i class="fa-solid fa-exclamation-circle"></i></font> An error occured while adapting a revision. Please contact support
+- <font color="#CA2834"><i class="fa-solid fa-exclamation-circle"></i></font> An error occured while adapting a revision. Please contact support
 
 When clicking the "Retry adapt to next revision" button, a popup message is displayed:
 - Cannot adapt the given test configuration, because test configuration {name} is being adapted. 
