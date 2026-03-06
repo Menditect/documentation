@@ -103,6 +103,19 @@ This action will generate 3 [Test Cases](test-case)
 - Select the `Start test location` to determine if Playwright is hosted locally, in BrowserStack, or in a separate server.
 - Fix the construction errors by setting the missing parameters. Consult [Properties](#properties) above to learn about parameters.
 
+### Azure option
+
+When choosing to use [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing) when generating the Test Cases, some additional information is required. For more info, read https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests?tabs=playwrightcli&pivots=playwright-test-runner
+
+Make sure to note the [Browser endpoint](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests?tabs=playwrightcli&pivots=playwright-test-runner#configure-the-browser-endpoint) and an [Access token](https://learn.microsoft.com/en-us/azure/playwright-testing/how-to-manage-access-tokens) before you create the Teststeps in MTA.
+
+An example of a working combination of parameters:
+- Teststep: Call `Start_Frontend_Test_With_AzureStart_Frontend_Test_With_Azure_Playwright_Workspaces` microflow
+  - AccessToken: *(fill in your access token)*
+  - BrowserType: Chromium
+  - OperatingSystem: windows
+  - PlaywrightServiceURL: *(fill in the browser endpoint)*
+
 #### BrowserStack option
 
 When choosing to use [BrowserStack Automate](https://automate.browserstack.com/) when generating the Test Cases, some additional information is required. The Microflow Parameters need to exactly match the supported combination of Platform, Browser and Playwright version as documented here: https://www.browserstack.com/docs/automate/playwright/browsers-and-os?fw-lang=java
@@ -117,7 +130,7 @@ An example of a working combination of parameters:
   - OS: Windows
   - OSVersion: 11
 
-- Teststep: Call Start_Frontend_Test_With_BrowserStack microflow
+- Teststep: Call `Start_Frontend_Test_With_BrowserStack` microflow
   - AccessKey: *(fill in your access key)*
   - BrowserPlatform: *(use former Teststep)*
   - Debug: True
