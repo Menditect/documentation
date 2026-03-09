@@ -103,7 +103,7 @@ This action will generate 3 [Test Cases](test-case)
 - Select the `Start test location` to determine if Playwright is hosted locally, in BrowserStack, or in a separate server.
 - Fix the construction errors by setting the missing parameters. Consult [Properties](#properties) above to learn about parameters.
 
-### Azure option
+#### Azure option
 
 When choosing to use [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing) when generating the Test Cases, some additional information is required. For more info, read https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/quickstart-run-end-to-end-tests?tabs=playwrightcli&pivots=playwright-test-runner
 
