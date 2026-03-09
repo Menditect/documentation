@@ -71,7 +71,7 @@ The URL where the Mendix App is running.
 
 ### Tracing
 `Property of StartMxFrontendTestOptions`<br/>
-A Trace file will be generated, that you can upload at https://trace.playwright.dev/, where you will be able to view the actions in the browser. Particularly useful for Headless testing.
+A Trace file will be generated, that is particularly useful for Headless testing. You can replay the Trace file in the [Test Run](test-run) results of the `Stop_MxFrontend_Test` microflow.
 
 ### ViewPort 
 `Property of StartMxFrontendTestOptions`<br/>
