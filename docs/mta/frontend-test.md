@@ -52,17 +52,19 @@ Waiting time in milliseconds between [Actions](frontend-glossary#action). Compar
 ### Use login
 Determines whether it is required to login to the Mendix App in order to test it's [Pages](mendix-page).
 
-If the Mendix App has Anonymous access enabled it may not be necessary to Use login.
 
 | Use login | Teststep will call Microflow                               |
 | --------- | ---------------------------------------------------------- |
 | Yes       | `MenditectMxUITestKit.Start_MxFrontend_Test_With_Login`    |
 | No        | `MenditectMxUITestKit.Start_MxFrontend_Test_Without_Login` |
 
-:::caution anonymous users
-When using Anonymous users, always use the `Without_Login` Microflow.<br/>
-When using a [Mendix Page](mendix-page) to Signin (instead of `/login.html`), use Locator and Action Microflows to fill the username and password textboxes and Click the Signin button, instead of the `With_Login` Microflow.
-:::
+#### Custom login.html
+If the default `login.html` file has been customized (for example to redirect to SSO), the login microflow may fail. In this case, use the original login file or create an alternative login file (for example, `login2.html`) that reflects the default behaviour, and use that URL for the `Start_MxFrontend_Test_With_Login` microflow parameter.
+
+Using **SSO** for Frontend testing is discouraged, because the Browser used in Frontend testing is created with a new session. Using SSO to authenticate during a Frontend test will only be successfull if the IdP authentication process is made part of the Frontend test in MTA. This is not recommended.
+
+#### Anonymous
+When using Anonymous users, always use the `Start_MxFrontend_Test_Without_Login` Microflow. When using a [Mendix Page](mendix-page) to Signin (instead of `login.html`), use Locator and Action Microflows to fill the username and password textboxes and Click the Signin button, instead of the `Start_MxFrontend_Test_With_Login` Microflow.
 
 ### Mendix_URL
 The URL where the Mendix App is running.
