@@ -305,7 +305,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'json', 'powershell'],
+        additionalLanguages: ['java', 'json', 'powershell', 'batch'],
       },
       footer: {
         copyright: `Copyright © <a href="https://www.menditect.com">Menditect</a> ${new Date().getFullYear()}. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.`,
