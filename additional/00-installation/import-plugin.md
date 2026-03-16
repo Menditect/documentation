@@ -18,6 +18,23 @@ After you have imported the Plugin into your Mendix App that you want to test wi
 
 After logging in as Tester in MTA, it is possible to [register the Mendix App](../../mta/application#register-application-in-mta), which will trigger the [creation of an Application Instance](../../mta/application-instance#create-an-application-instance), that you need to configure the Plugin.
 
+### Prepare Git 
+
+The [MTA Plugin](../../Tools/mta-plugin) is an Add-on module. There is a known issue with Add-on modules when the Mendix App is stored in a Git repository, that is not yet fixed by Mendix. The issue is that when two developers are committing their changes, they will encounter merge conflicts with the generated .java files. Luckily, there is a workaround to solve this issue. This workaround needs to be applied for every existing branch in the repository that is used in MTA.
+
+To implement the workaround, navigate to the App directory, and execute below commands. The commands can be executed from the command prompt (using the "Open in terminal" option in Windows Explorer) or by creating and executing a `git-fix.cmd` file, that can be deleted after executing.
+
+::: note commands to prevent file merge conflicts
+`
+git rm -r --cached modules/javasource/*/actions/*
+git rm -r --cached modules/javasource/*/proxies/*
+git rm -r --cached modules/javasource/system/*
+@echo /modules/javasource/*/actions/* >> .gitignore
+@echo /modules/javasource/*/proxies/* >> .gitignore
+@echo /modules/javasource/system/* >> .gitignore
+`
+:::
+
 ### Include After startup microflow
 
 - Open the App Settings window in Mendix Studio Pro.
