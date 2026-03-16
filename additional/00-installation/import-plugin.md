@@ -24,16 +24,14 @@ The [MTA Plugin](../../Tools/mta-plugin) is an Add-on module. There is a known i
 
 To implement the workaround, navigate to the App directory, and execute below commands. The commands can be executed from the command prompt (using the "Open in terminal" option in Windows Explorer) or by creating and executing a `git-fix.cmd` file, that can be deleted after executing.
 
-:::note commands to prevent file merge conflicts
-`
+```bat
 git rm -r --cached modules/javasource/*/actions/*
 git rm -r --cached modules/javasource/*/proxies/*
 git rm -r --cached modules/javasource/system/*
 @echo /modules/javasource/*/actions/* >> .gitignore
 @echo /modules/javasource/*/proxies/* >> .gitignore
 @echo /modules/javasource/system/* >> .gitignore
-`
-:::
+```
 
 ### Include After startup microflow
 
