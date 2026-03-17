@@ -68,11 +68,11 @@ const config = {
           },
           {
             id: 'microflow-call-hierarchy-extension',
-            content: '@site/additional/01-howtos/02-connect-mta/use-microflow-call-hierarchy-extension.md',
+            content: '@site/additional/01-howtos/03-connect-mta/use-microflow-call-hierarchy-extension.md',
           },
           {
             id: 'pat',
-            content: '@site/additional/01-howtos/03-configure-mta/access-mendix-model.md',
+            content: '@site/additional/01-howtos/04-configure-mta/access-mendix-model.md',
           },
           {
             id: 'howto-byomeal',
@@ -80,11 +80,11 @@ const config = {
           },
           {
             id: 'generate-test',
-            content: '@site/additional/01-howtos/04-design-tests/generate-test.md',
+            content: '@site/additional/01-howtos/05-design-tests/generate-test.md',
           },
           {
             id: 'mta-intergration-mch-extension',
-            content: '@site/additional/01-howtos/01-connect-mta/connect-menditect-extension-to-mta.md',
+            content: '@site/additional/01-howtos/03-connect-mta/connect-menditect-extension-to-mta.md',
           },
         ],
         versionedLinks: [
