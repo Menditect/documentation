@@ -39,7 +39,7 @@ Then choose "Save".
 
 If you need to change this information later, click the <i class="fal fa-user-circle"></i>  user icon on the top right.
 
-To test if this step was successful, try to [Add an Application](../run-tests/run-first-test). The Mendix projects associated with the given Mendix user should be visible.
+To test if this step was successful, try to [Add an Application](../../../mta/application#register-application-in-mta). The Mendix projects associated with the given Mendix user should be visible.
 
 
 ## Feedback?

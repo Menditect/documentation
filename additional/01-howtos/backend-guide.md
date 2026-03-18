@@ -2,11 +2,7 @@
 sidebar_position: 1
 ---
 
-# Run your first test in MTA
-
-**NEW: Watch the video instead!**
-<iframe src="https://player.vimeo.com/video/852636928?h=601d67c079" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<br/>
+# Backend test guide
 
 These step-by-step instructions will help new MTA users add and execute their first test on a single Mendix App.
 
@@ -15,7 +11,7 @@ These step-by-step instructions will help new MTA users add and execute their fi
 To go through these steps, you need
 - to have access to a Licensed Mendix App which is running in a cloud environment or on your local machine,
 - to know the username of an Account on this environment,
-- to have finished the previous 2 walkthroughs: [prepare for using MTA](../configure-mta/prepare-for-using-mta) and [access a Mendix model](../configure-mta/access-mendix-model).
+- to have finished the previous 2 walkthroughs: [prepare for using MTA](configure-mta/prepare-for-using-mta) and [access a Mendix model](configure-mta/access-mendix-model).
 
 ## Goals
 
@@ -35,7 +31,7 @@ Your very first stop is the 'Applications' tab.
 You will start by adding an Application to MTA and adding the username of an account in that Application, so MTA can login with that user to execute your test.
 Click on the '+ Add' button to add an Application.
 
-![Add application](../images/run_first_test/00.png)
+![Add application](images/run_first_test/00.png)
 
 - MTA should show the Mendix projects associated with the given Mendix user for your MTA account.
 - Add the application that you want to test from the list.
@@ -54,7 +50,7 @@ The Wizard consists of 4 steps.
 Enter the name and optional description of the Test Configuration. Click 'Save and Next'. 
 
 
-![Add test configuration](../images/run_first_test/03.png)
+![Add test configuration](images/run_first_test/03.png)
 
 
 ### Step 2
@@ -63,7 +59,7 @@ Enter the name and optional description of the Test Configuration. Click 'Save a
 Selecting the Application under test. Select the Application that you just added to MTA and click 'Next'.
 
 
-![Add test configuration](../images/run_first_test/04.png)
+![Add test configuration](images/run_first_test/04.png)
 
 
 ### Step 3
@@ -72,7 +68,7 @@ Selecting the Application under test. Select the Application that you just added
 Click the 'Select revision' button. MTA will show a popup. Select the branch and revision that you want to test. Click 'Save and Next'. 
 
 
-![Add test configuration](../images/run_first_test/05.png)
+![Add test configuration](images/run_first_test/05.png)
 
 
 MTA will show a message that it will start downloading this revision.
@@ -82,7 +78,7 @@ MTA will show a message that it will start downloading this revision.
 The last step is selecting an application instance. Click 'Application instance'.
 
 
-![Add test configuration](../images/run_first_test/06.png)
+![Add test configuration](images/run_first_test/06.png)
 
 
 - If you're running your Application under test on the Mendix Cloud, click 'Existing application instance'. You can select any of the application instances MTA has detected when you added the Application.
@@ -91,18 +87,18 @@ The last step is selecting an application instance. Click 'Application instance'
 After you have selected an Application instance, you will see the name and UID shown like this:
 
 
-![Add test configuration](../images/run_first_test/07.png)
+![Add test configuration](images/run_first_test/07.png)
 
 
 Save the setup of your Test Configuration.
 
 ## 3. Execution user
 
-Next is configuring an [Execution User](../../../mta/execution-user). This is the Account that you would normally use to login to the Application and test the frontend. 
+Next is configuring an [Execution User](../../mta/execution-user). This is the Account that you would normally use to login to the Application and test the frontend. 
 
 - Navigate to "Execution users" in the left menu.
 
-![Add application](../images/run_first_test/01.png)
+![Add application](images/run_first_test/01.png)
 
 - Click the '+ Add' button.
 - Enter the username of the Account you login with in the Test Application, when you normally execute your tests.<br/>Don't know what username to enter?  'MxAdmin' will work in most situations.<br/>Do NOT use the MTA Plugin User account.
@@ -114,7 +110,7 @@ Next is configuring an [Execution User](../../../mta/execution-user). This is th
 Now you can start designing your first test. 
 The structure of a test script in MTA looks like this:
 
-![Add test configuration](../images/run_first_test/test_configuration_scheme.png)
+![Add test configuration](images/run_first_test/test_configuration_scheme.png)
 
 The next step is adding a test suite.
 - Click the '+ Test suite' button to add a Test Suite to your Test Configuration.

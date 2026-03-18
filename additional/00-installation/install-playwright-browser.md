@@ -68,7 +68,7 @@ Read [Frontend test](../../mta/frontend-test#browserstack-option) in the Referen
 
 ## Run Playwright in a Docker container 
 
-This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 19 will be replaced by the Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
+This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 10 `0.0.0.0` will be replaced by the actual Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
 
 1.	Install Docker Desktop https://www.docker.com/products/docker-desktop/.
 2.	Although not always required by Docker, restart Windows.
