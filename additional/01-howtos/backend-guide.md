@@ -17,9 +17,9 @@ To go through these steps, you need
 
 If you walk through these instructions, you will have 
 - registered one of your Mendix Apps in MTA, so you can test it,
-- selected an instance (environment) of this Mendix App where it is running,  
-- registered an existing Account on this instance to be tested with,
-- created a simple microflow (unit) test with an assert,
+- selected an [instance](../../mta/application-instance) (environment) of this [Mendix App](../../mta/application) where it is running,  
+- registered an existing [User](../../mta/execution-user) on this instance to be tested with,
+- created a simple [microflow](../../mta/mendix-microflow) (unit) test with an [Assert](../../mta/Assert),
 - executed and evaluated this test.
 
 The test will execute a single microflow and check that the return value is not empty.
@@ -75,16 +75,12 @@ MTA will show a message that it will start downloading this revision.
 
 ### Step 4
 
-The last step is selecting an application instance. Click 'Application instance'.
+The last step is selecting an application instance. Click 'Select app instance'.
 
 
 ![Add test configuration](images/run_first_test/06.png)
 
-
-- If you're running your Application under test on the Mendix Cloud, click 'Existing application instance'. You can select any of the application instances MTA has detected when you added the Application.
-- If you're running on another cloud provider, on premise, or on a local computer, click 'New application instance'. 
-
-After you have selected an Application instance, you will see the name and UID shown like this:
+After you have selected an Application instance, you will see this:
 
 
 ![Add test configuration](images/run_first_test/07.png)
@@ -127,18 +123,23 @@ The next step is adding a test suite.
 
 ### Add a Teststep
 Next you will choose a microflow to test.
-- Click '+ Microflow test'.
+- [Add a Microflow Teststep](../../mta/Teststep/microflow#add-a-microflow-teststep).
 - Choose a microflow with a String or Integer/Long return value.  
 - MTA will create a teststep for executing the microflow, and teststeps to fill the parameters of the microflow. <br/>Note: you have to create nonpersistable objects yourself. 
-- Click <i class="fal fa-ballot-check"></i> and then '+ Assert' to add an Assert.
+- [Add an Assert on Attribute Value](../../mta/Assert/assert-attribute#add-an-assert-on-attribute).
 - Change 'Assert' to "Not equals". This will check that the output is not empty.
 - Save.
 
 ## 5. Execute and evaluate your test
 
-Click '<i class="fas fa-play"></i> Execute test suite' to execute the test suite.
+Click 'Execute test suite' to execute the test suite.
 
 After executing:
 - Click on 'Details' to view your test results.
 - Click on 'Results' to view the test suite run results.
-- MTA will open the Test suite run results. This page looks familiar, but is not the same as the page where you configure your Test Suite. You can go back with the '<i class="fas fa-cog"></i> Configure test suite' button.
+- MTA will open the Test suite run results.
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 18 March 2026
