@@ -50,4 +50,10 @@ The results of a Frontend test can be stored in a [Playwright Tracefile](../../m
 If a [Frontend test](../../mta/frontend-test) fails with a [Teststep Exception](../../mta/teststep-exception), the Playwright Tracefile may not be generated, because the Teststep that stores the Tracefile was not executed.
 
 To make sure that this Teststep will be executed, set the [Exception Handling](../../mta/Teststep#exception-handling) property to `Continue` on the preceding Teststeps.
-:::
+:::0
+
+
+## Feedback?
+Missing anything? [Let us know!](mailto:support@menditect.com)
+
+Last updated 18 March 2026
