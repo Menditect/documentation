@@ -30,7 +30,7 @@ This document describes which actions need to be performed whenever MTA is going
 
 *For each Mendix App to be tested in MTA, this action needs to be performed.*
 
-[Follow these steps](../../installation/) to complete this action.
+[Follow these steps](../../installation/install-playwright-browser) to complete this action.
 
 
 ## Feedback?
