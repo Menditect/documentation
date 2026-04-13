@@ -6,7 +6,7 @@ This document describes how to
 - set a String attribute value or microflow parameter to EMPTY (or `null` in Java terms)
 - [Assert](../../../mta/Assert/) that the String value *is* EMPTY / `null`.
 
-MTA has the option to leave String Textboxes empty, but this results in a zero-length String \'\', not in EMPTY / `null`.
+MTA has the option to leave String Textboxes empty, but this results in a zero-length String (''), not in EMPTY / `null`.
 
 ## Set empty String
 
