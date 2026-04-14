@@ -1,21 +1,11 @@
-# After Startup Error
+# Merge Conflicts in Add-on modules
 
 ## Issue summary
 
-When compiling a Mendix project under test after importing the Menditect Plugin Module, a Critical error occurs in the After Startup microflow, which prevents running the project.
+Committing local changes while there are also incoming changes results in merge conflicts in one of the (Java files of the) Add-on modules.
 
-## Possible causes and resolutions
+## Workaround
 
-### Older JAR files
+Mendix re-generates Java files inside the `/modules/javasource` directory of your App, each time you run it. For Enumerations, the Java files contain a GUID value that is random, and will thus be different when other developers have already generated the Java files. This results in a merge conflict. 
 
-There are JAR files in the Mendix project userlib directory that belong to an older version of the Plugin Module. 
-
-** Resolution **
-1. Open the Mendix project directory in explorer, or show the project directory from the Mendix modeler.
-2. Go to the userlib subdirectory.
-3. Delete all previous JAR files (like "mta-plugin-mendix-9-0-1.4.0.jar") and respective .RequiredLib files.
-4. Clean your deployment directory if you are running from your local machine.
-
-### Changes made in the Plugin module 
-
-If changes are made to the Plugin module, or in the JAVA files used by the Plugin module, Menditect cannot guarantee that the Plugin module will work as expected. To fix any issues resulting from this, revert the changes made end follow the steps described in the Known Issues section. If the problem persists, contact Menditect support.
+Mendix will need to release a "real" fix for this problem in the future, but in the mean time, the workaround is described [here](../../installation/import-plugin#prepare-git).
