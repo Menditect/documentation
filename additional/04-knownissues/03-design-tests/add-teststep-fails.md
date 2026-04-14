@@ -15,7 +15,7 @@ The freezing starts either:
 
 ### Too many attributes or associations
 
-There are too many attributes or associations in the Entity. Generally, more than 200 is problematic on an S21 resource pack. 
+There are too many attributes or associations in the Entity. Generally, more than 200 is problematic on an M21 resource pack. 
 
 **Resolution**
 
