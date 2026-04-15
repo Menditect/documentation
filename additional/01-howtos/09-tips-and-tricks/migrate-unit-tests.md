@@ -5,8 +5,8 @@
 This document helps you to migrate tests for the [Mendix Unit Test module](https://docs.mendix.com/appstore/modules/unit-testing/) to MTA.
 
 :::info
-Executing Unit-test microflows in MTA, only works for the Unit Test module version 9.5.2 or older. <br/>
-All versions from 9.6.0 and are not supported and need to be executed with the contect of the Mendix Unit Test module.
+Executing Unit-test microflows in MTA, only works for the Unit Test module **versions 9.5.2** and older. <br/>
+Versions 9.6.0 and higher are not supported and need to be executed with the context of the Mendix Unit Test module.
 :::
 
 ## Steps 
