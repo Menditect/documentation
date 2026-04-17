@@ -33,8 +33,8 @@ Option 1 is only available for a local machine, because Mendix does not allow fo
 
 Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). 
 
-:::info reboot needed
-It may be necessary to restart your computer if you want to use a locally-hosted Playwright Browser for the first time.
+:::info restart app needed
+It may be necessary to restart your Mendix App once, if you do not see a browser window when running a locally-hosted Playwright Browser for the first time.
 :::
 
 :::info local admin rights
