@@ -8,12 +8,12 @@ sidebar_position: 3
 
 This document describes the options to host a [Playwright Browser](https://playwright.dev/java/docs/browsers), which is required to run a [Frontend Test](../../mta/frontend-test) with MTA.
 
-When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. <!--In the image below, you can see how Playwright can be hosted on remote servers, either in the cloud or on a local server.![Playwright Setup](../images/pw_setup.png)-->
+When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. 
 
 Currently, there are 3 supported options to host a Playwright Browser:
-1. From within the Mendix project (local only)
-2. From BrowserStack (cloud only)
-3. From a Docker Container (cloud or local)
+1. `Locally`. Use this option if the Mendix App is running from Studio Pro on your device.
+2. `BrowserStack`. Use this option if you have a BrowserStack subscription and your Mendix App is running in the cloud.
+3. `PlaywrightServer`. Use this option for other cloud hosted Playwright services if your Mendix App is running in the cloud.
 
 :::info Mendix Cloud
 Option 1 is only available for a local machine, because Mendix does not allow for third party frameworks, like Playwright, to load its own dependencies. It is required to host the Playwright Browser elsewhere in the cloud when running the Mendix App in the cloud.
