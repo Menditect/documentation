@@ -10,13 +10,14 @@ This document describes the options to host a [Playwright Browser](https://playw
 
 When executing a Frontend test, Playwright starts and hosts its own Browser. This can be Chromium, Firefox or Webkit. In order to do this, Playwright needs to load required dependencies and, therefore, it needs the right permissions on the host server. 
 
-Currently, there are 3 supported options to host a Playwright Browser:
+Currently, there are 4 supported options to host a Playwright Browser:
 1. `Locally`. Use this option if the Mendix App is running from Studio Pro on your device.
 2. `BrowserStack`. Use this option if you have a BrowserStack subscription and your Mendix App is running in the cloud.
-3. `PlaywrightServer`. Use this option for other cloud hosted Playwright services if your Mendix App is running in the cloud.
+3. `PlaywrightServer`. Use this option for Docker or other cloud hosted Playwright services if your Mendix App is running in the cloud.
+4. `Azure`. This option is available for Microsoft Azure subscriptions. Note you must use the `Start_Frontend_Test_With_Azure_Playwright_Workspaces` microflow from the [Playwright Connector](../../../tools/playwright-connector).
 
-:::info Mendix Cloud
-Option 1 is only available for a local machine, because Mendix does not allow for third party frameworks, like Playwright, to load its own dependencies. It is required to host the Playwright Browser elsewhere in the cloud when running the Mendix App in the cloud.
+:::warning Mendix Cloud
+You must choose `BrowserStack` or `PlaywrightServer` if your Mendix App is running in the Mendix cloud, because the Playwright server will not run there.
 :::
 
 ### Prerequisites
@@ -29,7 +30,7 @@ Option 1 is only available for a local machine, because Mendix does not allow fo
 - Add both the Module Roles to the project's User Role(s) that will be used to execute Frontend Tests.
 
 
-## Run Playwright Locally
+## Locally
 
 Playwright can be hosted locally with the Mendix App running in Studio Pro (e.g. localhost). 
 
@@ -43,20 +44,7 @@ If you do not have local admin rights on your machine, you may run into errors w
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
-## Run Playwright in Azure Workspaces
-
-To run Playwright in Azure, follow these steps:
-1. Navigate to https://portal.azure.com and login to a Microsoft account. Create a (free) account if you do not have one. Note that free accounts get 100 minutes of free Playwright Testing for the first month.
-2. Look for the "Azure App Testing" Service.
-3. Navigate to "All resources" and Create a "Playwright Workspace".
-4. Copy and save the "Browser endpoint" URL in a secure password manager.
-5. Navigate to "Settings", "Access management".
-6. Generate an Access Token.
-7. Copy and save the Token value in a secure password manager.
-
-Read [Frontend test](../../mta/frontend-test#azure-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
-
-## Run Playwright in Browserstack
+## BrowserStack
 
 One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
 
@@ -66,7 +54,9 @@ Local Testing is currently only supported if Playwright is also running locally.
 
 Read [Frontend test](../../mta/frontend-test#browserstack-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
-## Run Playwright in a Docker container 
+## PlaywrightServer
+
+### Docker
 
 This chapter describes the situation where the Test Application is started from Studio Pro, and Docker Desktop is running on the same machine. When running the Test Application in the cloud, the URL in the Navigate action in step 10 `0.0.0.0` will be replaced by the actual Application URL in the cloud. When running Docker in the cloud, omit the steps to install Docker Desktop, and replace the command in step 9 by the one noted in https://playwright.dev/docs/docker#running-the-playwright-server.
 
@@ -90,6 +80,18 @@ This should be noted in the documentation in the Mendix Marketplace.
 You cannot navigate to `localhost`, because the localhost will point to inside the virtualized container. You have to navigate to http://hostmachine:8080 (assuming the Test Application is running on port 8080). This will only work if you correctly executed step 10.
 :::
 
+## Azure
+
+To run Playwright in Azure, follow these steps:
+1. Navigate to https://portal.azure.com and login to a Microsoft account. Create a (free) account if you do not have one. Note that free accounts get 100 minutes of free Playwright Testing for the first month.
+2. Look for the "Azure App Testing" Service.
+3. Navigate to "All resources" and Create a "Playwright Workspace".
+4. Copy and save the "Browser endpoint" URL in a secure password manager.
+5. Navigate to "Settings", "Access management".
+6. Generate an Access Token.
+7. Copy and save the Token value in a secure password manager.
+
+Read [Frontend test](../../mta/frontend-test#azure-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
 
 
