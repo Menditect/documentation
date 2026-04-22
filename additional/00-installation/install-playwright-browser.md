@@ -17,7 +17,7 @@ Currently, there are 4 supported options to host a Playwright Browser:
 4. `Azure`. This option is available for Microsoft Azure subscriptions. Note you must use the `Start_Frontend_Test_With_Azure_Playwright_Workspaces` microflow from the [Playwright Connector](../../../tools/playwright-connector).
 
 :::caution Mendix Cloud
-You must choose `BrowserStack` or `PlaywrightServer` if your Mendix App is running in the Mendix cloud, because the Playwright server will not run there.
+You must choose either `BrowserStack`, `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
 :::
 
 ### Prerequisites
