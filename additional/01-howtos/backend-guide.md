@@ -11,7 +11,7 @@ These step-by-step instructions will help new MTA users add and execute their fi
 To go through these steps, you need
 - to have access to a Licensed Mendix App which is running in a cloud environment or on your local machine,
 - to know the username of an Account on this environment,
-- to have finished the previous 2 walkthroughs: [prepare for using MTA](configure-mta/prepare-for-using-mta) and [access a Mendix model](configure-mta/access-mendix-model).
+- to [prepare for using MTA](configure-mta/prepare-for-using-mta)
 
 ## Goals
 
