@@ -23,7 +23,7 @@ You must choose either `BrowserStack`, `PlaywrightServer` or `Azure` if your Men
 ### Prerequisites
 
 - Make sure that the [MTA Plugin](../../../tools/mta-plugin) module is [imported and configured](import-plugin).
-- Download the driver-bundle jar file that is required to run Playwright. Currently, the required version is **1.53.0**: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.53.0/driver-bundle-1.53.0.jar <br/>**Do not download other versions than the required version!**
+- Download the driver-bundle jar file that is required to run Playwright. Currently, the required version is **1.53.0**: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.59.0/driver-bundle-1.59.0.jar <br/>**Do not download other versions than the required version!**
 - Move this jar file into your /userlib directory of the Mendix project.
 - Start by importing the [Playwright Connector](../../../tools/playwright-connector).
 - Then import the [Frontend Test Kit](../../../tools/playwright-testkit) to start testing the most common Mendix Widgets. 
