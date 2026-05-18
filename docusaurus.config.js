@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.0',
+              label: '3.1',
               path: '/',
             },
           },
@@ -96,7 +96,7 @@ const config = {
           { id: 'archive', content: 'mta/archive.md', versions: 'ALL' },
           { id: 'assert', content: 'mta/Assert/index.md', versions: 'ALL' },
           { id: 'assert-attribute', content: 'mta/Assert/assert-attribute.md', versions: 'ALL' },
-          { id: 'assert-exception', content: 'mta/Assert/assert-exception.md', versions: ['3.0'] },
+          { id: 'assert-exception', content: 'mta/Assert/assert-exception.md', versions: 'ALL' },
           { id: 'assert-microflow-output', content: 'mta/Assert/assert-microflow-output.md', versions: 'ALL' },
           { id: 'assert-object-count', content: 'mta/Assert/assert-object-count.md', versions: 'ALL' },
           { id: 'branch-subscription', content: 'mta/branch-subscription.md', versions: 'ALL' },
@@ -239,8 +239,8 @@ const config = {
             items: [
               {
                 type: 'docsVersion',
-                to: '/2.10.0',
-                label: '2.10 Reference guide',
+                to: '/2.11.0',
+                label: '2.11 Reference guide',
               }
             ]
           },
