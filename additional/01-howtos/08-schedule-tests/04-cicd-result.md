@@ -1,4 +1,4 @@
-# Handle the results of a Test Run
+# Handle Test Run Results
 
 ## Definition
 

@@ -1,19 +1,47 @@
-# Get started with the API
+# Simple Test Scheduling
 
-:::info
-If you're getting started using the MTA Public API, [let us know](mailto:support@menditect.com?subject=MTA%20Public%20API). 
+## Use Keys for Endpoint parameters
 
-Menditect has created a Scheduler Module that we can share with you to make the implementation easier. 
-:::
+The [MTA Public API](../../../api) uses Keys to uniquely refer to objects in the database, as an alternative to using the Mendix internal Object ID (which is very long and not exposed in MTA), or object names (which are not always unique). As a result, the best way to get started is by using the `Key` of the Test Configuration, Application and Application Instance, to call the endpoints that you need.
 
-## Getting started
+## Test Scheduling using Mendix Pipelines
 
-The [MTA Public API](../../../api) uses Keys to uniquely refer to objects in the database, as an alternative to using the Mendix internal Object ID (which is very long and not exposed in MTA), or object names (which are not always unique). As a result, the best way to get started is by using the Key of the Test Configuration, Application and Application Instance, to call the endpoints that you need.
+The fastest and preferred option to add Scheduling to your Test Configurations is by using [Mendix Pipelines](https://docs.mendix.com/developerportal/deploy/configuring-post-get-request-steps/). 
 
-For getting started, let's will assume that the goal is to:
-- download the latest revision of an App into MTA;
-- adapt a Test Configuration (with only 1 App) to this revision;
-- execute the Test Configuration.
+For this option, let's assume that the goal is to:
+- Execute one Test Configuration
+- Wait for the Test Run to complete
+- Pass the Pipeline Run if the Test Run result = `Pass`
+- Fail the Pipeline Run if the Test Run result = `Fail`
+
+Before starting, make sure to:
+- Add a [Branch Subscription](../../../mta/branch-subscription) with [Auto-Adapt enabled](../../../mta/branch-subscription#adapt-automatically) on the Test Configuration that you will be Executing, so you will always have the latest revision from that branch.
+- [Add a Variable](https://docs.mendix.com/developerportal/deploy/mendix-pipelines/#creating-a-new-variable) that you will use to Authorization of the API endpoints. Call it "Auth". Fill this Variable with your [Authorization string](cicd-config#create-an-authorization-string) and Enable Masking.
+
+Now follow these steps to create the Pipeline:
+- Add one POST Request
+- Fill the Base URL Path with a call to [POST execute testconfiguration](../../../api#post-execute-testconfiguration)
+- Fill the Header 1 Key with `Authorization`
+- Fill the Header 1 Value with `$Auth`
+- Fill the Request body as described in [POST execute testconfiguration](../../../api#post-execute-testconfiguration)
+- Fill the JQ Expression For Success Condition with `has("TestRunExecutionId")`
+- Fill the JQ Expression For Output_1 with `.TestRunExecutionId`
+- Add one GET Request
+- Fill the Base URL Path with a call to [GET testrun](../../../api#get-testrun)
+- Fill the Additional URL Path with `$POST Request.Output_1`
+- Fill the Header 1 Key with `Authorization`
+- Fill the Header 1 Value with `$Auth`
+- Fill the JQ Expression For Success Condition with `.Result == "Pass"`
+- Fill the JQ Expression For Failure Condition with `.Result == "Fail"`
+- Set a Polling delay, Interval and Duration fitting for the duration of your Test Run. Recommended settings are a Delay of 120 seconds, an Interval of 60 seconds, and a Duration of 3600 seconds (1 hour).
+- Save and Activate.
+
+## Test Scheduling using other tools
+
+For this option, let's assume that the goal is to:
+- Download the latest revision of an App into MTA;
+- Adapt a Test Configuration (with only 1 App) to this revision;
+- Execute the Test Configuration.
 
 ### Step 1
 To download the latest revision, you need the Application Key and branch name and commit ID of the revision. You can find the Application Key by opening the Applications page and [View Key and Project ID](../../../mta/application#view-key-and-project-id) of your App. Branch name and commit ID can be found in Mendix Sprintr or Studio Pro. You now have the information you need to call [POST download revision](../../../api#post-download-revision). Save the Application Revision Key that is returned by this endpoint.
@@ -33,4 +61,4 @@ Now you can execute the Test Configuration. You need the Application Instance Ke
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 3 July 2023
+Last updated 30 May 2026
