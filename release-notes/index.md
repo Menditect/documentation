@@ -37,6 +37,8 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 - For all Test Configurations marked for deletion, check if they were accidently marked, and if so, restore them.
 
 
+## New functionality
+
 | ID                    | MTA-2279                                                                                                                                                                                                                                                                                   |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. Check the Reference Guide for more information. |

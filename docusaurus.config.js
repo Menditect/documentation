@@ -239,8 +239,8 @@ const config = {
             items: [
               {
                 type: 'docsVersion',
-                to: '/2.11.0',
-                label: '2.11 Reference guide',
+                to: '/3.0.0',
+                label: '3.0 Reference guide',
               }
             ]
           },
