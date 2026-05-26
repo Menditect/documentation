@@ -27,7 +27,7 @@ There are two options to add a Change Object teststep. The first option is quick
 **Option 1:**
 
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Change output".
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object(s) that you want to change, and choose "<i class="fal fa-plus-circle"></i> Teststep: Change output".
 
 **Option 2:**
 
