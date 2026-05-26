@@ -32,6 +32,11 @@ The associated [Application](application) to execute the Test Case on.
 ### Execution user
 The associated [Execution User](execution-user).
 
+### Execution condition
+- `None`: The Test Case will be part of the [Test Run](test-run) if it, or the parent [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception). The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting.
+- `Skip`: The Test Case will NOT be part of the [Test Run](test-run) if it, or the parent [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed.
+- `Always`: The Test Case will be part of the [Test Run](test-run) if it, or the parent [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, even if a Teststep in a previous Test Case encounters an [Exception](teststep-exception). The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting.
+
 ### Apply security
 If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). 
 
@@ -63,6 +68,7 @@ A description of the expected result of a Test Case.
 ## Business rules
 
 - A Test Case is always about a single [Application](application).
+- It is not allowed to select the `Execution condition` = `Skip` setting on a Test Case that contains a [Teststep](Teststep/) that provides data to a Teststep in another Test Case.
 
 ## Actions on Test Case
 
@@ -86,7 +92,7 @@ A description of the expected result of a Test Case.
 
 ### Execute Test Case
 
-- Use the Execute test case button from the <i class="fas fa-ellipsis"></i> menu or inside a Test Case, to start a new [Test Run](test-run).
+- Use the `Execute` button from the <i class="fas fa-ellipsis"></i> menu on a Test Case, to start a new [Test Run](test-run) with the `Test Case` scope. 
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
@@ -141,4 +147,4 @@ Note that it is possible that due to deleting a Test Case and dependencies of Te
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 26 November 2025
+Last updated 26 May 2026
