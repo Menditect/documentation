@@ -44,7 +44,7 @@ A quicker way to retrieve from a previous Teststep is this:
 Binary attributes are not supported by MTA.
 :::
 
-### Include or exclude an Attribute filter
+### Set Fixed value
 - Click `Add attributes` to set attributes to filter on, or `Edit values` to change values for existing attributes.
 - Select one or more attributes.
 - For each attribute, choose an Operator (see below for the complete list).
@@ -68,12 +68,10 @@ The following Operators are supported for the Mendix data types:
 | Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
 
 
-
 ### Use the value from a former Teststep to set the Attribute filter
-- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click `Edit values` and select `Teststep`.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
-Note: you cannot choose to have a former Teststep set the value if you want to specify a Range of values. 
 
 ### Assign associations
 - Click `Add associations` to set associations to filter on.
