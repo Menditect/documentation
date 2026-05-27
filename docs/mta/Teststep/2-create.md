@@ -40,7 +40,7 @@ Binary attributes are not supported by MTA.
 For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
 Note that not including an Attribute Value in a Create Object Teststep will make the value default to what has been configured in the Mendix domain model (usually empty).
-Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
+Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (`''`). 
 
 ### Use a former Teststep to set an Attribute Value
 - Click `Edit values` and select `Teststep`.
@@ -65,11 +65,7 @@ You can choose to fill all the attributes and associations using existing values
 Because of performance reasons, the amount of associations retrieved is limited to 3.
 :::
 
-### Generate random values
-You can choose to fill attributes with random data, by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill attributes with random values". 
-
-
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 November 2025
+Last updated 27 May 2026

@@ -83,4 +83,4 @@ The following Operators are supported for the Mendix data types:
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 November 2025
+Last updated 27 May 2026
