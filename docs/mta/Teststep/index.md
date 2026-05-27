@@ -33,8 +33,8 @@ A description of the Teststep. [Edit](#edit-a-teststep) the teststep to change.
 
 ### Execution condition
 - `None`: The Teststep will be part of the [Test Run](test-run) if the parent [Test Case](test-case), [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception). The Teststep will NOT be part of the Test Run if the parent Test Suite or Test Case has the `Execution condition` = `Skip` setting.
-- `Skip`: The Teststep will NOT be part of the [Test Run](test-run) if the parent [Test Case](test-case), [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed.
-- `Always`: The Teststep will be part of the [Test Run](test-run) if the parent [Test Case](test-case), [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, even if a previous Teststep encounters an [Exception](teststep-exception). The Teststep will NOT be part of the Test Run if the parent Test Case or Test Suite has the `Execution condition` = `Skip` setting.
+- `Skip`: The Teststep will NOT be part of the Test Run if the parent Test Case, Test Suite or Test Configuration, is executed.
+- `Always`: The Teststep will be part of the Test Run if the parent Test Case, Test Suite or Test Configuration, is executed, even if a previous Teststep encounters an Exception. The Teststep will NOT be part of the Test Run if the parent Test Case or Test Suite has the `Execution condition` = `Skip` setting.
 
 ### Exception handling
 Determines if the [Test Run](test-run) will either `Continue`, or `Stop`, if a [Teststep Exception](teststep-exception) occurs in this Teststep, that is not handled by a Mendix [Error Handler](https://docs.mendix.com/refguide/error-handling-in-microflows/).
