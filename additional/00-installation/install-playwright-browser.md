@@ -16,7 +16,7 @@ Currently, there are 4 supported options to host a Playwright Browser:
 3. `PlaywrightServer`. Use this option for Docker or other cloud hosted Playwright services if your Mendix App is running in the cloud.
 
 :::caution Mendix Cloud
-You must choose either `BrowserStack`, `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
+You must choose either `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
 :::
 
 ### Prerequisites

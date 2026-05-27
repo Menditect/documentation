@@ -27,9 +27,12 @@ A description of the Test Suite.
 Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured.
 
 ### Execution condition
-- `None`: The Test Suite will be part of the [Test Run](test-run) if it, or the parent [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception).
-- `Skip`: The Test Suite will NOT be part of the Test Run if it, or the parent Test Configuration, is executed. Test Cases inside the Test Suite will also NOT be part of the Test Run, even if they are executed directly, and regardless of their own `Execution condition` setting.
-- `Always`: The Test Suite will be part of the Test Run if it, or the parent Test Configuration, is executed, even if a Teststep in a previous Test Suite encounters an Exception.
+
+| Setting | Result                                                                                                                                                                                                                                                                       |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| None    | The Test Suite will be part of the [Test Run](test-run) if it, or the parent [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception).                                                                             |
+| Skip    | The Test Suite will NOT be part of the Test Run if it, or the parent Test Configuration, is executed. Test Cases inside the Test Suite will also NOT be part of the Test Run, even if they are executed directly, and regardless of their own `Execution condition` setting. |
+| Always  | The Test Suite will be part of the Test Run if it, or the parent Test Configuration, is executed, even if a Teststep in a previous Test Suite encounters an Exception.                                                                                                       |
 
 ## Business rules
 

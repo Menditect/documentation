@@ -33,9 +33,13 @@ The associated [Application](application) to execute the Test Case on.
 The associated [Execution User](execution-user).
 
 ### Execution condition
-- `None`: The Test Case will be part of the [Test Run](test-run) if it, or the parent [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception). The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting.
-- `Skip`: The Test Case will NOT be part of the Test Run if it, or the parent Test Suite or Test Configuration, is executed.
-- `Always`: The Test Case will be part of the Test Run if it, or the parent Test Suite or Test Configuration, is executed, even if a Teststep in a previous Test Case encounters an Exception. The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting.
+
+| Setting | Result                                                                                                                                                                                                                                                                                                                                              |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| None    | The Test Case will be part of the [Test Run](test-run) if it, or the parent [Test Suite](test-suite) or [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception). The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting. |
+| Skip    | The Test Case will NOT be part of the Test Run if it, or the parent Test Suite or Test Configuration, is executed.                                                                                                                                                                                                                                  |
+| Always  | The Test Case will be part of the Test Run if it, or the parent Test Suite or Test Configuration, is executed, even if a Teststep in a previous Test Case encounters an Exception. The Test Case will NOT be part of the Test Run if the parent Test Suite has the `Execution condition` = `Skip` setting.                                          |
+
 
 ### Apply security
 If this is set to No, any restrictive permissions set by the Mendix security model for the execution user are ignored (the execution username is however still used for associated data). 
