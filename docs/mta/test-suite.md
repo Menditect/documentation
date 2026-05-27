@@ -24,7 +24,7 @@ The name of the Test Suite.
 A description of the Test Suite.
 
 ### Status
-Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured.
+Can be either `Changing` or `Ready`. If `Changing`, this means MTA is updating the Test Suite because the user applied a new revision. If `Ready`, this means the Test Suite can be configured.
 
 ### Execution condition
 

@@ -25,10 +25,14 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## Required actions before upgrading to this version
 
+:::caution
+Do not skip these steps!
+:::
+
 ### Check and fix (or delete) uneditable Test Configurations
 
-- For all Test Configurations, check if a Test Suite inside it can be opened.
-- If the Test Suite cannot be opened, the Test Configuration is somehow in an error state. This indicates a possible issue with database data. Because database data have to be migrated to MTA 3.1, the migration will fail.
+- For all Test Configurations, check that the Status of the Test Suite is `Ready`: simply click to open the Test Suite, if it does not open, the status is `Changing`. 
+- If (after some time) the Test Suite still cannot be opened, the Test Configuration is somehow in an error state. This indicates a possible issue with database data. Because database data need to be migrated to MTA 3.1, the data need to be repaired before upgrading to MTA 3.1.
 - Decide if the Test Configuration can be deleted, otherwise contact [Menditect support](mailto:support@menditect.com)
 
 ### Check deleted Test Configurations
@@ -39,10 +43,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality
 
-| ID                    | MTA-2279                                                                                                                                                                                                                                                                                   |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. Check the Reference Guide for more information. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                      |
+| ID                    | MTA-2279                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. Check the Reference Guide for more information. <br/> <br/>This change was implemented to speed up the processes of Adapting a Test Configuration to a revision, preparing a Test Run, and Test design in general. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 <br/>
 
