@@ -12,9 +12,8 @@ When executing a Frontend test, Playwright starts and hosts its own Browser. Thi
 
 Currently, there are 4 supported options to host a Playwright Browser:
 1. `Locally`. Use this option if the Mendix App is running from Studio Pro on your device.
-2. `BrowserStack`. Use this option if you have a BrowserStack subscription and your Mendix App is running in the cloud.
+2. `Azure`. This option is available for Microsoft Azure subscriptions. 
 3. `PlaywrightServer`. Use this option for Docker or other cloud hosted Playwright services if your Mendix App is running in the cloud.
-4. `Azure`. This option is available for Microsoft Azure subscriptions. Note you must use the `Start_Frontend_Test_With_Azure_Playwright_Workspaces` microflow from the [Playwright Connector](../../../tools/playwright-connector).
 
 :::caution Mendix Cloud
 You must choose either `BrowserStack`, `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
@@ -44,15 +43,6 @@ If you do not have local admin rights on your machine, you may run into errors w
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
-## BrowserStack
-
-One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
-
-Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
-Local Testing is currently only supported if Playwright is also running locally.
-[Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
-
-Read [Frontend test](../../mta/frontend-test#browserstack-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
 ## PlaywrightServer
 
