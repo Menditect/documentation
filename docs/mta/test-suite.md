@@ -55,7 +55,7 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Click anywhere in the row of the Test Suite you want to configure.
 
 ### Execute a Test Suite
-- Use the Execute inside a Test Suite, to start a new [Test Run](test-run) with the `Test Suite` scope.
+- Use the Execute inside a Test Suite, to start a new [Test Run](test-run) with the `Test Suite` Level.
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 

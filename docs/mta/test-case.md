@@ -96,7 +96,7 @@ A description of the expected result of a Test Case.
 
 ### Execute Test Case
 
-- Use the `Execute` button from the <i class="fas fa-ellipsis"></i> menu on a Test Case, to start a new [Test Run](test-run) with the `Test Case` scope. 
+- Use the `Execute` button from the <i class="fas fa-ellipsis"></i> menu on a Test Case, to start a new [Test Run](test-run) with the `Test Case` level. 
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 

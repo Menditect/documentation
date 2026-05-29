@@ -11,7 +11,7 @@ The Test Run contains the results of an executed [Test Case](test-case), [Test S
 
 The results are stored in subsequent Test Suite runs, Test Case runs and Teststep runs.
 
-Regardless of the Scope of a Test Run, Test Suite runs, Test Case runs and Teststep runs are always created.
+Regardless of the Level of a Test Run, Test Suite runs, Test Case runs and Teststep runs are always created.
 
 ## Properties
 
@@ -36,8 +36,8 @@ If a Test Run is pinned by a user it will not be deleted overnight. Recognizable
 ### Result
 The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). 
 
-### Scope 
-The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
+### Level 
+The level from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
 
 ### Status
 This indicates if the test is running or not; can be 'Running' or 'Finished'. 

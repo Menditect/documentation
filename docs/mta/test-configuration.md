@@ -54,8 +54,11 @@ A description of the Test Configuration.
 - Choose `Coverage` to create a new [Coverage Calculation](coverage-calculation) after the Test Run was executed.
 - Choose `Full output` to include all data values in the Test Run results. Not enabling `Full output` will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
-- Optionally enable `Run differences` under 'Smart execution' if you wish to only Execute Test Cases that have been changed since the last Test Run.
-- Optionally enable `Rerun failed` under 'Smart execution' if you wish to only Execute Test Cases that had not <font color="#5ec065"> <i class="fas fa-check"></i> Passed</font>  in the last Test Run.
+- Choose an option under `Execution scope`:
+  -  `All` to execute normally;
+  -  `Failed only` if you wish to only Execute Test Cases that had not <font color="#5ec065"> <i class="fas fa-check"></i> Passed</font>  in the last Test Run;
+  -  `Changed only` if you wish to only Execute Test Cases that have been changed since the last Test Run;
+  -  `Changed & failed` for both these options.
 
 ### Export a Test Configuration to file
 
