@@ -76,6 +76,20 @@ Do not skip these steps!
 
 <br/>
 
+| ID                    | N/A                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved flexibility of handling changed Pages and Widgets when importing or adapting a Test Configuration, leading to fewer construction errors. |
+| __Release actions__   | None.                                                                                                                                             |
+
+<br/>
+
+| ID                    | N/A                                                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Changed the implementation of URL's that are used when clicking `Share` on an item.                             |
+| __Release actions__   | Old URL's that are shared will still work but are deprecated. Preferred method is using the new implementation. |
+
+<br/>
+
 
 ## Bug fixes
 
