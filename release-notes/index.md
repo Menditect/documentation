@@ -48,14 +48,14 @@ Do not skip these steps!
 
 <br/>
 
-| ID                    | MTA-????                                                                                                                           |
+| ID                    | MTA-2377                                                                                                                           |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites. Check the Reference Guide for more information. |
 | __Release actions__   | None.                                                                                                                              |
 
 <br/>
 
-| ID                    | MTA-????                                                                                                                          |
+| ID                    | MTA-2396                                                                                                                          |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Added the Smart Execute option on a Test Configuration, allowing only changed Test Cases or Failed Test Case Runs to be (re-)run. |
 | __Release actions__   | None.                                                                                                                             |
