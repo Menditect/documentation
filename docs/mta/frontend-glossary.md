@@ -25,7 +25,7 @@ Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>
 
 An Element is a type of HTML (HyperText Markup Language) document component, one of several types of HTML nodes, on a single HTML webpage.
 An Element can contain one or more nested Elements.
-Technically an Element is defined by an opening and closing tag within the HTML source, for example <div\> and </div\>.
+Technically an Element is defined by an opening and closing tag within the HTML source, for example `<div>` and `</div>`.
 An Element can be visible on the [Page](#playwright-page).
 
 ## Filter
@@ -79,7 +79,7 @@ More info at: https://playwright.dev/java/docs/pages
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
 Any text that is visible on the Mendix [Page](#mendix-page) and that can be used for a [Filter](#filter). 
-Typically, Text is contained between an opening and closing HTML tag, for example <div\> and </div\>.
+Typically, Text is contained between an opening and closing HTML tag, for example `<div>` and `</div>`.
 
 ## Tracefile
 Context: <font face='Courier New' size='+1' color="#41a837">Playwright</font>

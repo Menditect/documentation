@@ -87,7 +87,7 @@ This is the password that is set for the Connection user in MTA [in the previous
 #### `MTAConnectionUrl`
 This is the URL that the app will use to connect to MTA. The URL is setup as follows:
 
-*wss://{URL to MTA}*
+`wss://url.to.mta`
 
 Example: wss://mta-mtatraining.mendixcloud.com
 
