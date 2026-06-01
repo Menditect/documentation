@@ -14,8 +14,6 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## Highlights in this release
 <iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>  
-<i class="fas fa-fire"></i>  <b>Menditect MCP service now generally available!</b> <br/>  
-- Use Maia inside Studio Pro to Generate and Execute Tests in MTA.<br/>  
 <i class="fas fa-fire"></i>  <b>Smart Test Run added!</b> <br/>  
 - Option added to only execute Test Cases that have changed.<br/>  
 - Option added to re-run only failed parts of a Test Run.<br/>  
