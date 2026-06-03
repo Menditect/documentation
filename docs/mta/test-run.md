@@ -36,6 +36,18 @@ If a Test Run is pinned by a user it will not be deleted overnight. Recognizable
 ### Result
 The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). 
 
+### Execution Scope
+
+| Setting          | Result                                                                                                                                 |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| All              | The Test Run was executed normally.                                                                                                    |
+| Failed only      | Only Test Cases that had not <font color="#5ec065"> <i class="fas fa-check"></i> Passed</font> in the previous Test Run were executed. |
+| Changed only     | Only Test Cases that were changed since the previous Test Run were executed.                                                           |
+| Changed & failed | Combination of both options.                                                                                                           |
+
+
+Note that `Changed` in this context means; only changes that were made to Teststeps or Test Cases *in MTA*, that may affect the [result](#result) of the Test Run. Other changes in MTA, and revision changes (in the Mendix model in Studio pro), are not included.
+
 ### Level 
 The level from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
 
