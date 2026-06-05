@@ -14,11 +14,19 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 ## Highlights in this release
 <iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <br/>  
-<i class="fas fa-fire"></i>  <b>Smart Test Run added!</b> <br/>  
+<i class="fas fa-fire"></i>  <b>Improved performance of adapt process</b> <br/> 
+- Speed of adapt process is improved with 2-30x (depending on datamodel).<br/>  
+<i class="fas fa-fire"></i>  <b>Smart Test Run added to improve run speed!</b> <br/>  
 - Option added to only execute Test Cases that have changed.<br/>  
 - Option added to re-run only failed parts of a Test Run.<br/>  
 <i class="fas fa-fire"></i>  <b>Conditional Run option added!</b> <br/>  
 - Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites.<br/>  
+- These options make it easier to create setup and teardown test suites and test cases<br/>  
+<i class="fas fa-fire"></i>  <b>Improved UX</b> <br/>  
+- Improved test suite overview.<br/> 
+- Easy addition of attributes and assocations to teststeps<br/> 
+- Create teststep for assocation<br/> 
+- Create object from application instance, with filter options<br/> 
 
 
 ## Required actions before upgrading to this version
@@ -41,17 +49,17 @@ Do not skip these steps!
 
 ## New functionality
 
-| ID                    | MTA-2279                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. Check the Reference Guide for more information. <br/> <br/>This change was implemented to speed up the processes of Adapting a Test Configuration to a revision, preparing a Test Run, and Test design in general. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ID                    | MTA-2279                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. When adding an assocation, a teststep can be directly created to provide the object for assocation. Check the Reference Guide for more information. <br/> <br/>This change was implemented to improve UX and speed up the processes of Adapting a Test Configuration to a revision, preparing a Test Run, and Test design in general. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 <br/>
 
-| ID                    | MTA-2377                                                                                                                           |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites. Check the Reference Guide for more information. |
-| __Release actions__   | None.                                                                                                                              |
+| ID                    | MTA-2377                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites. This allows for more options for building setup and teardown test suites and test cases. Check the Reference Guide for more information. |
+| __Release actions__   | None.                                                                                                                                                                                                                       |
 
 <br/>
 
