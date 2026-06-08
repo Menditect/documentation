@@ -16,35 +16,18 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>  
 <i class="fas fa-fire"></i>  <b>Improved performance of adapt process</b> <br/> 
 - Speed of adapt process is improved with 2-30x (depending on datamodel).<br/>  
-<i class="fas fa-fire"></i>  <b>Smart Test Run added to improve run speed!</b> <br/>  
-- Option added to only execute Test Cases that have changed.<br/>  
-- Option added to re-run only failed parts of a Test Run.<br/>  
-<i class="fas fa-fire"></i>  <b>Conditional Run option added!</b> <br/>  
-- Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites.<br/>  
-- These options make it easier to create setup and teardown test suites and test cases<br/>  
+<i class="fas fa-fire"></i>  <b>Additional execution options added to improve run speed!</b> <br/>  
+- Option added to only execute Test Suites and Test Cases that have **changed**.<br/>  
+- Option added to re-run only **failed** Test Cases of a Test Run.<br/>  
+<i class="fas fa-fire"></i>  <b>Execution conditions added!</b> <br/>  
+- Conditions can be to Skip or Always Run, and are applied to Teststeps, Test Cases or Test Suites.<br/>  
+- Use for example Skip to perform quick debugging.<br/>  
+- Or use Always Run to perform Test Setup/Teardown in Frontend tests.<br/>  
 <i class="fas fa-fire"></i>  <b>Improved UX</b> <br/>  
 - Improved test suite overview.<br/> 
 - Easy addition of attributes and assocations to teststeps<br/> 
 - Create teststep for assocation<br/> 
 - Create object from application instance, with filter options<br/> 
-
-
-## Required actions before upgrading to this version
-
-:::caution
-Do not skip these steps!
-:::
-
-### Check and fix (or delete) uneditable Test Configurations
-
-- For all Test Configurations, check that the Status of the Test Suite is `Ready`: simply click to open the Test Suite, if it does not open, the status is `Changing`. 
-- If (after some time) the Test Suite still cannot be opened, the Test Configuration is somehow in an error state. This indicates a possible issue with database data. Because database data need to be migrated to MTA 3.1, the data need to be repaired before upgrading to MTA 3.1.
-- Decide if the Test Configuration can be deleted, otherwise contact [Menditect support](mailto:support@menditect.com)
-
-### Check deleted Test Configurations
-
-- Test Configurations marked for deletion will be permanently deleted when migrating to MTA 3.1.
-- For all Test Configurations marked for deletion, check if they were accidently marked, and if so, restore them.
 
 
 ## New functionality
@@ -63,10 +46,10 @@ Do not skip these steps!
 
 <br/>
 
-| ID                    | MTA-2396                                                                                                                          |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added the Smart Execute option on a Test Configuration, allowing only changed Test Cases or Failed Test Case Runs to be (re-)run. |
-| __Release actions__   | None.                                                                                                                             |
+| ID                    | MTA-2396                                                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Added options on a Test Configuration, allowing only changed Test Cases / Test Suites or Failed Test Case Runs to be (re-)run. |
+| __Release actions__   | None.                                                                                                                          |
 
 <br/>
 
@@ -88,6 +71,14 @@ Do not skip these steps!
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Improved flexibility of handling changed Pages and Widgets when importing or adapting a Test Configuration, leading to fewer construction errors. |
 | __Release actions__   | None.                                                                                                                                             |
+
+<br/>
+
+| ID                    | MTA-2436                                                                                       |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| __New functionality__ | The name of the App that is linked to the Test Case is now shown when clicking the "eye" icon. |
+| __Release actions__   | None.                                                                                          |
+
 
 <br/>
 
@@ -118,6 +109,14 @@ Do not skip these steps!
 
 <br/>
 
+
+| ID                  | MTA-2311                                                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | The name of the Test Suite was not shown correctly in the dropdown (on top of the Test Suite page) when it is changed. |
+| __Solution__        | The name of the Test Suite is now shown correctly.                                                                     |
+| __Release actions__ | None.                                                                                                                  |
+
+<br/>
 
 | ID                  | MTA-2312                                                                                                                                                                                                                                            |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
