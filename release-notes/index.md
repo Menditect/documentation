@@ -10,24 +10,27 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
+<iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Highlights in this release
-<iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<br/>  
-<i class="fas fa-fire"></i>  <b>Improved performance of adapt process</b> <br/> 
-- Speed of adapt process is improved with 2-30x (depending on datamodel).<br/>  
-<i class="fas fa-fire"></i>  <b>Additional execution options added to improve run speed!</b> <br/>  
-- Option added to only execute Test Suites and Test Cases that have **changed**.<br/>  
-- Option added to re-run only **failed** Test Cases of a Test Run.<br/>  
-<i class="fas fa-fire"></i>  <b>Execution conditions added!</b> <br/>  
-- Conditions can be to Skip or Always Run, and are applied to Teststeps, Test Cases or Test Suites.<br/>  
-- Use for example Skip to perform quick debugging.<br/>  
-- Or use Always Run to perform Test Setup/Teardown in Frontend tests.<br/>  
-<i class="fas fa-fire"></i>  <b>Improved UX</b> <br/>  
-- Improved test suite overview.<br/> 
-- Easy addition of attributes and assocations to teststeps<br/> 
-- Create teststep for assocation<br/> 
-- Create object from application instance, with filter options<br/> 
+
+### Improved performance of adapt process
+- **Speed of adapt process** is improved with 2-30x (depending on datamodel).
+
+### Additional execution options added to improve run speed!
+- Option added to only execute Test Suites and Test Cases that have **changed**.
+- Option added to re-run only **failed** Test Cases of a Test Run.
+
+### Execution conditions added!
+- Conditions can be to `Skip` or `Always Run`, and are applied to Teststeps, Test Cases or Test Suites.
+- Use `Skip` for example to perform quick debugging.
+- Use `Always Run` to perform Test Setup/Teardown in Frontend tests.
+
+### Improved UX
+- Improved test suite overview.
+- Easy addition of attributes and assocations to teststeps.
+- Create teststep for assocation.
+- Create object from application instance, with filter options.
 
 
 ## New functionality
@@ -67,25 +70,34 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-| ID                    | N/A                                                                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Improved flexibility of handling changed Pages and Widgets when importing or adapting a Test Configuration, leading to fewer construction errors. |
-| __Release actions__   | None.                                                                                                                                             |
+
+| ID                    | MTA-2436                                                                          |
+| --------------------- | --------------------------------------------------------------------------------- |
+| __New functionality__ | The name of the App that is linked to the Test Case is now shown when clicking 👁️. |
+| __Release actions__   | None.                                                                             |
 
 <br/>
 
-| ID                    | MTA-2436                                                                                       |
-| --------------------- | ---------------------------------------------------------------------------------------------- |
-| __New functionality__ | The name of the App that is linked to the Test Case is now shown when clicking the "eye" icon. |
-| __Release actions__   | None.                                                                                          |
 
+| ID                    | MTA-2448                                                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | The `Description` field on Teststep and `Objective`, `Preconditions` and `Expected result` fields on Test Case now support Markdown format. When saving the field, the information is shown formatted as Markdown. |
+| __Release actions__   | None.                                                                                                                                                                                                              |
 
 <br/>
+
 
 | ID                    | N/A                                                                                                             |
 | --------------------- | --------------------------------------------------------------------------------------------------------------- |
 | __New functionality__ | Changed the implementation of URL's that are used when clicking `Share` on an item.                             |
 | __Release actions__   | Old URL's that are shared will still work but are deprecated. Preferred method is using the new implementation. |
+
+<br/>
+
+| ID                    | N/A                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved flexibility of handling changed Pages and Widgets when importing or adapting a Test Configuration, leading to fewer construction errors. |
+| __Release actions__   | None.                                                                                                                                             |
 
 <br/>
 
