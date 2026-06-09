@@ -11,27 +11,27 @@ Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/release
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
 <iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<br/><br/>
+:::tip Release Highlights
+<br/>
+**Improved performance of adapt process**
+- Speed of adapt process is improved with 2-30x (depending on datamodel).
 
-## Highlights in this release
-
-### Improved performance of adapt process
-- **Speed of adapt process** is improved with 2-30x (depending on datamodel).
-
-### Additional execution options added to improve run speed!
+**Additional execution options added to improve run speed!**
 - Option added to only execute Test Suites and Test Cases that have **changed**.
 - Option added to re-run only **failed** Test Cases of a Test Run.
 
-### Execution conditions added!
+**Execution conditions added!**
 - Conditions can be to `Skip` or `Always Run`, and are applied to Teststeps, Test Cases or Test Suites.
 - Use `Skip` for example to perform quick debugging.
 - Use `Always Run` to perform Test Setup/Teardown in Frontend tests.
 
-### Improved UX
+**Improved UX**
 - Improved test suite overview.
 - Easy addition of attributes and assocations to teststeps.
 - Create teststep for assocation.
 - Create object from application instance, with filter options.
-
+:::
 
 ## New functionality
 
@@ -86,6 +86,12 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
+| ID                    | N/A                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| __New functionality__ | Default `Apply Security` setting of a new Test Case will be changed from `TRUE` to `FALSE`. |
+| __Release actions__   | None.                                                                                       |
+
+<br/>
 
 | ID                    | N/A                                                                                                             |
 | --------------------- | --------------------------------------------------------------------------------------------------------------- |
