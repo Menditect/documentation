@@ -74,14 +74,13 @@ Only for Microflow Teststeps; Name of the microflow to be executed.
 
 ### View Teststeps in a Test Case
 - Navigate to the [Test Suite](test-suite) that the Teststeps are in.
-- Click on the [Test Case](test-case) to view the Teststeps.
-- Teststeps are shown in the middle pane.
+- Expand the [Test Case](test-case) to view the Teststeps.
+- Properties are shown on the right.
 
-### View Teststep details
-- Navigate to the Test Suite that the Teststeps are in.
-- Click on the Test Case to view the Teststeps.
-- Select the Teststep to view.
-- Details of the Teststep are shown on the right pane.
+### View Teststep Dependencies
+- Select the Teststep to view Dependencies.
+- If there are Teststep(s) above, that this Teststep depends on, there is a `Receiving` indicator. Clicking on it will allow to navigate to those Teststep(s).
+- If there are Teststep(s) below, that depend on this Teststep, there is a `Providing` indicator. Clicking on it will allow to navigate to those Teststep(s).
 
 ### Create a Teststep
 - Please consult the documentation for the respective Teststep type: [Microflow call](Teststep/microflow), [Create](Teststep/create), [Retrieve](Teststep/retrieve), [Change](Teststep/change), [Delete](Teststep/delete) or [Persist](Teststep/persist).
