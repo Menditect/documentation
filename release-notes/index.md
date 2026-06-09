@@ -10,10 +10,9 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
-<iframe src="https://player.vimeo.com/video/???????????" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<br/><br/>
 :::tip Release Highlights
 <br/>
+
 **Improved performance of adapt process**
 - Speed of adapt process is improved with 2-30x (depending on datamodel).
 
