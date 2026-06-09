@@ -70,6 +70,14 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
+| ID                    | N/A                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Dependencies between Teststeps are now visible. Teststeps that *Provide* data to other Teststeps contain a `Providing` indicator. Teststeps that *Receive* data to other Teststeps contain a `Receiving` indicator. Using these indicators, it's possible to navigate back and forth between dependent Teststeps. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                             |
+
+<br/>
+
+
 | ID                    | MTA-2436                                                                          |
 | --------------------- | --------------------------------------------------------------------------------- |
 | __New functionality__ | The name of the App that is linked to the Test Case is now shown when clicking 👁️. |
