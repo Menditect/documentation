@@ -45,7 +45,7 @@ The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Pa
 | Changed only     | Only Test Cases (or Teststeps inside) that were changed since the previous Test Run were executed.                                     |
 | Changed & failed | Combination of both options.                                                                                                           |
 
-Note that Test Cases with `Providing` Teststeps are always executed. See also [Teststep dependencies](Teststep#view-teststep-dependencies).
+Note that Test Cases with Teststeps that provide data are always executed. See also [Teststep dependencies](Teststep#view-teststep-dependencies).
 
 When choosing `Changed only`:
 - only changes that were made *in MTA* are considered, not revision changes (in the Mendix model in Studio pro).
