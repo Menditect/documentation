@@ -42,11 +42,18 @@ The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Pa
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | All              | The Test Run was executed normally.                                                                                                    |
 | Failed only      | Only Test Cases that had not <font color="#5ec065"> <i class="fas fa-check"></i> Passed</font> in the previous Test Run were executed. |
-| Changed only     | Only Test Cases that were changed since the previous Test Run were executed.                                                           |
+| Changed only     | Only Test Cases (or Teststeps inside) that were changed since the previous Test Run were executed.                                     |
 | Changed & failed | Combination of both options.                                                                                                           |
 
+Note that Test Cases with `Providing` Teststeps are always executed. See also [Teststep dependencies](Teststep#view-teststep-dependencies).
 
-Note that `Changed` in this context means; only changes that were made to Teststeps or Test Cases *in MTA*, that may affect the [result](#result) of the Test Run. Other changes in MTA, and revision changes (in the Mendix model in Studio pro), are not included.
+When choosing `Changed only`:
+- only changes that were made *in MTA* are considered, not revision changes (in the Mendix model in Studio pro).
+- only changes that may affect the [result](#result) of the Test Run are considered.
+- changes in a Teststep or Test Case without [Datavariation](datavariation) will execute the corresponding Test Case.
+- changes made in a Teststep or Test Case with [Datavariation](datavariation) that affect all variations, will execute all variations.
+- changes made in a Teststep or Test Case with [Datavariation](datavariation) that affect only a specific variation, will execute only that specific variation.
+
 
 ### Level 
 The level from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
