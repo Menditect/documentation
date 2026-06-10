@@ -49,10 +49,10 @@ Note that Test Cases with Teststeps that provide data are always executed. See a
 
 When choosing `Changed only`:
 - only changes that were made *in MTA* are considered, not revision changes (in the Mendix model in Studio pro).
-- only changes that may affect the [result](#result) of the Test Run are considered.
-- changes in a Teststep or Test Case without [Datavariation](datavariation) will execute the corresponding Test Case.
-- changes made in a Teststep or Test Case with [Datavariation](datavariation) that affect all variations, will execute all variations.
-- changes made in a Teststep or Test Case with [Datavariation](datavariation) that affect only a specific variation, will execute only that specific variation.
+- only changes that may affect the [result](#result) of the [Test Run](test-run) are considered.
+- if a change is made in a Teststep or Test Case *without* [Datavariation](datavariation), the corresponding [Test Case](test-case) will be included.
+- if a change is made in a Teststep or Test Case *with* Datavariation that affects *all variations*, they will all be included.
+- if a change is made in a Teststep or Test Case *with* Datavariation that affects only a *specific variation*, only that specific variation will be included.
 
 
 ### Level 
