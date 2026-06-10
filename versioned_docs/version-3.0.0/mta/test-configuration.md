@@ -16,7 +16,7 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Name
 The name of the Test Configuration. The name will be displayed in the Test Configuration overview.
@@ -28,7 +28,7 @@ A description of the Test Configuration.
 ## Business rules
 
 - The application revision of the [Test Suite](test-suite) must be equal to the application revision of the Test Configuration, with the same [Application](application) in order to be able to execute the Test Configuration.
-- You can [pin](#pin-a-test-run) a maximum of two [Test Runs](test-run) per Test Configuration.
+- You can pin a maximum of two [Test Runs](test-run) per Test Configuration.
 
 ## Actions on Test Configuration
 

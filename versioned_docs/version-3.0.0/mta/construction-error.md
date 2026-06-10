@@ -30,12 +30,12 @@ The element that the Construction Error is associated with, for example, a [Test
 
 ### Solve Construction Errors
 - A Construction Error contains a message that describes how it should be fixed.
-- A Construction Error related to a [Teststep](teststep) has a Solve button that will lead to the page where it can be fixed.
+- A Construction Error related to a [Teststep](Teststep) has a Solve button that will lead to the page where it can be fixed.
 
 ## Related topics
 - [Test Case](test-case)
 - [Test Configuration](test-configuration)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 - [Test Suite](test-suite) 
 
 

@@ -37,7 +37,7 @@ The Documentation of the Microflow as entered in Studio Pro.
 
 ## Related topics
 - [Application Revision](application-revision)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 
 
 ## Feedback?

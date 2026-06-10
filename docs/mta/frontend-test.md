@@ -22,7 +22,7 @@ For background information about Playwright Testing, make sure to checkout the K
 ## Properties
 
 ### Application
-The [Application](application) that will be used for generated [Test Cases](test-case#test-application).
+The [Application](application) that will be used for generated [Test Cases](test-case).
 
 ### Execution user
 The [Execution user](execution-user) that will be used for generated [Test Cases](test-case#execution-user).

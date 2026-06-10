@@ -14,7 +14,7 @@ See [Mendix documentation](https://docs.mendix.com/refguide/version-control/#rev
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Author 
 The creator of the revision (committer).  
@@ -67,7 +67,7 @@ Add a new Application revision to MTA by downloading it from teamserver. The onl
 
 There are two possible ways of achieving this:
 
-- [Add a new Test Configuration](test-configuration#create-a-new-test-configuration)
+- [Add a new Test Configuration](test-configuration#add-a-test-configuration)
 - [Change the Application revision for a Test Configuration](#change-the-application-revision-for-a-test-configuration)
 
 Note that downloading can take some time depending on the size of the Mendix project.

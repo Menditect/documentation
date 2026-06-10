@@ -27,7 +27,7 @@ There are 2 usecases for calling this endpoint:
 1. You know a Test Suite Key, and want to execute all it's Test Cases, one by one.
 2. You know a Test Suite Key, and want to execute specific Test Cases. You can determine which to run, by sequence or by name.
 
-If instead you want to execute a single Test Case, you can **find the Key** by [Editing the Test Case](../../../mta/test-suite#edit-a-test-case). The Key is shown in the header at the end of the title.
+If instead you want to execute a single Test Case, you can **find the Key** by [Editing the Test Case](../../../mta/test-case#edit-a-test-case). The Key is shown in the header at the end of the title.
 
 ### 4: get applications
 
@@ -35,7 +35,7 @@ There are 2 usecases for calling this endpoint:
 1. You know an Application name, and want to determine the Application Key by filtering from a list of Applications, so you can use it for other endpoints.
 2. You know a Test Configuration Key, and want to use this endpoint to determine the Keys of the Applications that are being tested in that Test Configuration.
 
-If instead you want to get the Application Key from MTA, you can **find the Key** by opening the Applications page and [View Key and Project ID](../../../mta/application#view-key-and-project-id). 
+If instead you want to get the Application Key from MTA, you can **find the Key** by opening the Applications page and [View Key and Project ID](../../../mta/application#view-information-about-the-application). 
 
 ### 5: get application instances
 

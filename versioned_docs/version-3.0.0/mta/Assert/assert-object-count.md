@@ -34,7 +34,7 @@ Asserts on object count can be defined either on Retrieve Object Teststeps or on
 
 ## Related topics
 - [Assert Attribute](assert-attribute)
-- [Teststep](../teststep)
+- [Teststep](../Teststep)
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

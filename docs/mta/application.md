@@ -11,7 +11,7 @@ A Mendix project that can be registered in MTA, enabling it to be tested.
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Name       
 The name of the Mendix App in the Mendix cloud.     

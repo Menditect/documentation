@@ -43,7 +43,7 @@ Learn more about creating Recordings in the How To and Best Practice sections.
 ## Related topics
 - [Application Instance](application-instance)
 - [Test Case](test-case)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 
 
 ## Feedback?

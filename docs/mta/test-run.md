@@ -16,7 +16,7 @@ Regardless of the Level of a Test Run, Test Suite runs, Test Case runs and Tests
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Application Instances 
 The [Application Instances](application-instance) that were used to execute the Test Run on.
@@ -55,7 +55,7 @@ The level from which the test was executed, if not Test Configuration ('Test Sui
 This indicates if the test is running or not; can be 'Running' or 'Finished'. 
 
 ### Retention period
-Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
+Only applicable for Test Runs triggered through the [Public API](../api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
 
 ### Trace files
 A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Suite Run.
@@ -110,7 +110,7 @@ For each Teststep run that has input, you can click on the input, to view which 
 In a Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
 
 #### Cleanup of API-triggered Test Runs 
-For Test Runs that are executed through the [Public API](api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the `Test runs` page.
+For Test Runs that are executed through the [Public API](../api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the `Test runs` page.
 
 #### Persisted dashboard data
 If a Test Run is cleaned up, the following information about the Test Run is stored for the statistics on the dashboard page:

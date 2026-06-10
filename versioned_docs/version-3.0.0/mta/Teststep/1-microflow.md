@@ -52,7 +52,7 @@ Make sure the selected teststep returns one object, and not multiple objects. <b
 
 ### Literal values
 
-Assigning values to an Object must be done [from former Teststep](#assign-value-from-former-teststep).
+Assigning values to an Object must be done [from former Teststep](#assign-from-former-teststep).
 
 #### Fixed value
 - Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.

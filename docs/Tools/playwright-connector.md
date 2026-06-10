@@ -21,7 +21,7 @@ The module enables the App to connect to a [Playwright Browser](../../additional
 Some relevant entities are explained here. Note that specific Entity and Attribute documentation is also shown in MTA.
 - `Browser`, this is the [Playwright Browser](https://playwright.dev/java/docs/browsers) definition that is created when starting the test with one of the `Start_Frontend_Test...` microflows. This allows for setting the `BrowserType` and the default waiting time between Playwright Actions, using the `LocalStartOptions` non persistable entity.
 - `BrowserContext`, this allows for setting a default timeout for Playwright Commands, using the `NewBrowserContextOptions` non persistable entity.
-- `Page`, this contains the definition for the [Playwright Page](../mta/frontend-glossary#page). The Page is in fact the Browser Tab that is created upon setup. Page Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Page to be used in subsequent Test Cases.
+- `Page`, this contains the definition for the [Playwright Page](../mta/frontend-glossary#playwright-page). The Page is in fact the Browser Tab that is created upon setup. Page Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Page to be used in subsequent Test Cases.
 - `Locator`, this contains the definition of the [Playwright Locator](../mta/frontend-glossary#locator). Locator Objects are persisted, for the duration of the Test, and deleted when stopping the test. This allows for a Locator to be used in subsequent Test Cases.
 
 

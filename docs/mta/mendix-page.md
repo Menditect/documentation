@@ -42,7 +42,7 @@ The Documentation of the Page as entered in Studio Pro.
 
 ## Related topics
 - [Application Revision](application-revision)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 
 
 ## Feedback?

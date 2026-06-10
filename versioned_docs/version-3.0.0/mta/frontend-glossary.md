@@ -78,7 +78,7 @@ More info at: https://playwright.dev/java/docs/pages
 ## Text  
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
-Any text that is visible on the Mendix [Page](#mendix-page) and that can be used for a [Filter](#filter). 
+Any text that is visible on the Mendix [Page](mendix-page) and that can be used for a [Filter](#filter). 
 Typically, Text is contained between an opening and closing HTML tag, for example `<div>` and `</div>`.
 
 ## Tracefile
@@ -92,13 +92,13 @@ More info at: https://playwright.dev/docs/trace-viewer#opening-the-trace
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
 The literal data, like a string, integer or date, being the result of [Input](#input).
-The Value does not have to be visible on the Mendix [Page](#mendix-page).
+The Value does not have to be visible on the Mendix [Page](mendix-page).
 Values can be stored to the database of the Mendix Application.
 
 ## Widget
 Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
-A Widget is a reusable, self-contained user interface element on a Mendix [Page](#mendix-page). It provides an interface that results in a corresponding HTML [Element](#element) (with possible child [Elements](#element)) when the Widget code is compiled and executed.
+A Widget is a reusable, self-contained user interface element on a Mendix [Page](mendix-page). It provides an interface that results in a corresponding HTML [Element](#element) (with possible child [Elements](#element)) when the Widget code is compiled and executed.
 
 
 <!-- 

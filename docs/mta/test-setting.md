@@ -12,7 +12,7 @@ The user that is logged in determines which Test Setting is to be selected when 
 
 :::info
 Test Settings are only relevant when [executing Test Configurations from within MTA](test-configuration#execute-a-test-configuration).<br/>
-When using MTA's [Public API](api#post-execute-testconfiguration), an [Application Instance](application-instance) must be specified.
+When using MTA's [Public API](../api#post-execute-testconfiguration), an [Application Instance](application-instance) must be specified.
 :::
 
 ## Properties

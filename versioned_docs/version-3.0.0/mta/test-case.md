@@ -8,7 +8,7 @@ sidebar_position: 26
 
 A Test Case is a collection of operations to execute on an [Application Instance](application-instance), that are assembled to test some specific aspect of system behaviour. A Test Case is always part of a [Test Suite](test-suite).
 
-The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a Test Suite to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](teststep) that run the underlying Mendix code.
+The Test Case is the third level of the 4-layer framework that is used in MTA. It allows for a Test Suite to be split up into different functional or technical aspects of the tested software, but it is also the level where to choose which app to test and which credentials to test with. From MTA 2.0, it is possible to define [Data Variation](datavariation) on the Test Case level. Test Cases are executable, and contain [Teststeps](Teststep) that run the underlying Mendix code.
 
 A Test Case is always executed on a Test Application and by an [Execution User](../../../mta/execution-user). The name of the execution user that is configured for the Test Case, must exactly match an existing, active and not blocked local user in the [Application Instance](application-instance) that is tested. Note that this is not the same user as the Mta Connection User that is used to communicate between the Application environment and MTA. 
 
@@ -24,7 +24,7 @@ MTA can only test Mendix Apps having [Production Security Level](https://docs.me
 The name of the Test Case.
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Application 
 The associated [Application](application) to execute the Test Case on. 
@@ -134,7 +134,7 @@ Note that it is possible that due to deleting a Test Case and dependencies of Te
 
 ## Related topics
 - [Test Setting](test-setting)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 - [Test Suite](test-suite)
 
 
