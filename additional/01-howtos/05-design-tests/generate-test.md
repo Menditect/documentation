@@ -67,10 +67,6 @@ A few notes:
 - If the object is nonpersistable, or if the database does not contain any objects of the necessary entity, MTA will use random values for the Object's attributes. 
 - *Primitive* microflow parameters will always be filled with random values.
 
-### Record Test
-
-It is possible to generate teststeps based on recorded user actions, by creating a [Recording](../../../mta/recording). By executing the resulting teststeps, the recorded actions are essentially replayed.
-
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

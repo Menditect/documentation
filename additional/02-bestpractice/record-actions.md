@@ -1,5 +1,9 @@
 # Record actions
 
+:::warning
+The Recorder function is deprecated and will be removed in MTA 3.2.
+:::
+
 ## Definition
 
 For many user actions performed in the [Application](../../mta/application), it is possible to record these actions in MTA, and have MTA convert them to either Object [Teststeps](../../mta/Teststep) or Microflow Teststeps, using the Recorder function. 
