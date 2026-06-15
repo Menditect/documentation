@@ -9,6 +9,10 @@ It is possible to automatically generate Teststeps by creating a recording. MTA 
 
 Recording user actions only works on Apps created in Mendix 9 LTS and Mendix 10 LTS versions. 
 
+:::warning
+The Recorder function is deprecated and will be removed in MTA 3.2.
+:::
+
 ## Properties
 
 ### Max. duration recording (s)
@@ -43,7 +47,7 @@ Learn more about creating Recordings in the How To and Best Practice sections.
 ## Related topics
 - [Application Instance](application-instance)
 - [Test Case](test-case)
-- [Teststep](teststep)
+- [Teststep](Teststep)
 
 
 ## Feedback?

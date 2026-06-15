@@ -4,7 +4,7 @@
 
 It is possible to add a Custom Frontend Testkit that allows you to add Frontend testing support for Widgets that are not added to the [MTA Mendix Frontend Testkit](../../../Tools/playwright-testkit) (yet).
 
-For all Widgets, Mendix will add the "mx-name-`widgetName`" property, so it is always possible to create a Locator for the surrounding [element](../../../mta/frontend-glossary#element). However in most cases you will need to append Locators to Locate a child element, for instance an <input\> element. See also the Mendix Docs: https://docs.mendix.com/refguide/common-widget-properties/#name
+For all Widgets, Mendix will add the "mx-name-`widgetName`" property, so it is always possible to create a Locator for the surrounding [element](../../../mta/frontend-glossary#element). However in most cases you will need to append Locators to Locate a child element, for instance an `<input>` element. See also the Mendix Docs: https://docs.mendix.com/refguide/common-widget-properties/#name
 
 In order to use the MTA Frontend Teststep generate [feature](../../../mta/frontend-test#generate-teststeps), it is advisable to create your own Testkit module, as an 'extension' to the MTA Mendix Frontend Testkit. 
 

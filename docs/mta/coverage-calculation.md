@@ -62,7 +62,7 @@ The absolute difference in coverage percentage of this Calculation, <br/> compar
 - Click `Calculated`.
 
 ### View Coverage Calculations on an Application Revision
-- [View downloaded Application revisions for an Application](application-revision#view-downloaded-application-revisions-for-an-application)
+- [View downloaded Application revisions for an Application](application-revision#view-application-revisions)
 - Select the Application Revision to view the Calculated Goals for.
 - Click on <i class="fal fa-umbrella"></i>.
 

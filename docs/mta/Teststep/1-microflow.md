@@ -26,7 +26,7 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 
 ## Add a Microflow Teststep
 - Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
-- Click <i class="fal fa-plus-circle"></i> and Click `Microflow teststep` to add a Microflow Teststep.
+- Click <i class="fal fa-plus-circle"></i> and Click `Teststep: Microflow call` to add a Microflow Teststep.
 - Select the [Microflow](../mendix-microflow) to execute. You can search by the module or microflow name, or by any of the input or output parameters.
 - [Set Microflow Parameters](#setting-microflow-parameters).
 - Click on the "Save" button. 
@@ -52,7 +52,7 @@ Make sure the selected teststep returns one object, and not multiple objects. <b
 
 ### Literal values
 
-Assigning values to an Object must be done [from former Teststep](#assign-value-from-former-teststep).
+Assigning values to an Object must be done [from former Teststep](#assign-from-former-teststep).
 
 #### Fixed value
 - Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.

@@ -11,8 +11,8 @@ Versions 9.6.0 and higher are not supported and need to be executed with the con
 
 ## Steps 
 
-1. [Create a new Test Configuration](../../../mta/test-configuration#create-a-new-test-configuration).
-2. Navigate to "Mendix Model" to use the [Test Case generation feature](../design-tests/generate-test#test-a-microflow). 
+1. [Create a new Test Configuration](../../../mta/test-configuration#add-a-test-configuration).
+2. Navigate to "Mendix Model" to use the [Test Case generation feature](../design-tests/generate-test#generate-test). 
 3. Use the "Microflow" filter textbox, to filter on microflows tested in the Mendix Unit Test Module. 
 4. Filter on "UT\_" or "TEST\_".
 5. Select all microflows that are visible, using the checkbox left of the filter.

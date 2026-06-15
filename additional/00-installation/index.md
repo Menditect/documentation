@@ -120,7 +120,7 @@ To make sure that Mendix System tables are correctly cleaned up, please make sur
 Preparation is recommended to make sure that your data will be migrated successfully.
 
 - Log in to MTA as a `Tester`
-- For all Test Configurations that have [Construction Errors](../../../mta/construction-error), either [fix these](../../../mta/construction-error#fix-construction-errors), or [Restore a Snapshot](../../../mta/snapshot#restore-a-snapshot)
+- For all Test Configurations that have [Construction Errors](../../../mta/construction-error), either [fix these](../../../mta/construction-error#solve-construction-errors), or [Restore a Snapshot](../../../mta/snapshot#restore-a-snapshot)
 - **Optionally**: [Permanently delete any remaining deleted Test Configurations](../../../mta/test-configuration#delete-a-test-configuration-permanently) to make sure they are not migrated unnecessarily.
 
 ### Upgrading

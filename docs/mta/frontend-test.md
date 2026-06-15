@@ -22,7 +22,7 @@ For background information about Playwright Testing, make sure to checkout the K
 ## Properties
 
 ### Application
-The [Application](application) that will be used for generated [Test Cases](test-case#test-application).
+The [Application](application) that will be used for generated [Test Cases](test-case).
 
 ### Execution user
 The [Execution user](execution-user) that will be used for generated [Test Cases](test-case#execution-user).
@@ -32,11 +32,11 @@ The hosting location of the Playwright Browser where the test will be executed i
 
 For installation instructions, please follow [this page](../../additional/installation/install-playwright-browser).
 
-| Start test location | Teststep will call Microflow                                              |
-| ------------------- | ------------------------------------------------------------------------- |
-| Locally             | `MenditectPlaywrightConnector.Start_Frontend_Test_Locally`                |
-| BrowserStack        | `MenditectPlaywrightConnector.Start_Frontend_Test_With_BrowserStack`      |
-| PlaywrightServer    | `MenditectPlaywrightConnector.Start_Frontend_Test_With_Playwright_Server` |
+| Start test location | Teststep will call Microflow                                                        |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| Locally             | `MenditectPlaywrightConnector.Start_Frontend_Test_Locally`                          |
+| Azure               | `MenditectPlaywrightConnector.Start_Frontend_Test_With_Azure_Playwright_Workspaces` |
+| PlaywrightServer    | `MenditectPlaywrightConnector.Start_Frontend_Test_With_Playwright_Server`           |
 
 ### BrowserType
 
@@ -118,29 +118,6 @@ An example of a working combination of parameters:
   - OperatingSystem: windows
   - PlaywrightServiceURL: *(fill in the browser endpoint)*
 
-#### BrowserStack option
-
-When choosing to use [BrowserStack Automate](https://automate.browserstack.com/) when generating the Test Cases, some additional information is required. The Microflow Parameters need to exactly match the supported combination of Platform, Browser and Playwright version as documented here: https://www.browserstack.com/docs/automate/playwright/browsers-and-os?fw-lang=java
-
-Lookup your BrowserStack Username and Access Key here: https://www.browserstack.com/accounts/profile/details
-
-An example of a working combination of parameters:
-- Teststep: Create BrowserPlatform object
-  - BrowserType: Chromium
-  - BrowserVersion: 138
-  - DesktopResolution: 1920x1080
-  - OS: Windows
-  - OSVersion: 11
-
-- Teststep: Call `Start_Frontend_Test_With_BrowserStack` microflow
-  - AccessKey: *(fill in your access key)*
-  - BrowserPlatform: *(use former Teststep)*
-  - Debug: True
-  - LocalTesting: False
-  - PlaywrightVersion: 1.53
-  - ProjectName: MTA
-  - Username: *(fill in your user name)*
-  - Video: True
 
 ### Generate Teststep(s)
 

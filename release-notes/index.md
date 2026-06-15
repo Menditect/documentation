@@ -1,8 +1,8 @@
-# Release 3.0
+# Release 3.1
 
 #### Release date
 
-17 December 2025
+?? ??????? 2026
 
 #### Supported Mendix versions
 
@@ -10,210 +10,161 @@ Menditect supports the Mendix Long-Term Support Version (LTS) and Medium-Term Su
 Read more about MTS/LTS versions at Mendix docs: https://docs.mendix.com/releasenotes/studio-pro/lts-mts. <br/>
 For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla). 
 
+:::tip Release Highlights
+<br/>
 
-## Highlights in this release
-<iframe src="https://player.vimeo.com/video/1146578844" height="300" width="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<br/>  
-<i class="fas fa-fire"></i>  <b>Frontend testing now generally available!</b> <br/>  
-- Just download the Connector and Test Kit modules from the Marketplace.<br/>  
-- MTA will show options to prepare the Frontend Test Case structure and Generate Frontend Teststeps!<br/> <br/>  
-<i class="fas fa-fire"></i>  <b>Test Suite pages completely redesigned!</b> <br/>  
-- Test Cases and Teststeps are now shown in collapsible treeview, on the left side.<br/>  
-- Change Test Case and Teststep Run Settings directly from the detail view, on the right side.<br/>  
-- Change Test Case and Teststep name directly from the detail view.<br/> <br/> 
-<i class="fas fa-fire"></i>  <b>Added Test Run Exception handling!</b> <br/>  
-- Choose to either Raise the Exception when it occurs, or just Continue with the Test Run.<br/>  
-- Option to add an Assert on an Exception.<br/> <br/>  
+**Improved performance of adapt process**
+- Speed of adapt process is improved with 2-30x (depending on datamodel).
 
+**Additional execution options added to improve run speed!**
+- Option added to only execute Test Suites and Test Cases that have **changed**.
+- Option added to re-run only **failed** Test Cases of a Test Run.
 
-## Required actions
+**Execution conditions added!**
+- Conditions can be to `Skip` or `Always Run`, and are applied to Teststeps, Test Cases or Test Suites.
+- Use `Skip` for example to perform quick debugging.
+- Use `Always Run` to perform Test Setup/Teardown in Frontend tests.
 
-### Update the MTA Plugin
-
-Some new functions will not work on the old version of the [MTA Plugin](../Tools/mta-plugin).
-- Make sure to update the [MTA Plugin from the Mendix Marketplace](https://marketplace.mendix.com/link/component/214717). 
-
-:::info changed versioning
-Because Menditect now hosts all Mendix Runtime versions (9, 10 and 11) in the same marketplace component, we have moved to a different versioning system. The major MTA Plugin version indicates the Mendix Runtime version. The remaining digits indicate the internal version of the MTA Plugin.
+**Improved UX**
+- Improved test suite overview.
+- Easy addition of attributes and assocations to teststeps.
+- Create teststep for assocation.
+- Create object from application instance, with filter options.
 :::
 
-:::caution delete before replace
-Start with `Clean your Deployment directory` in Studio Pro. Then, delete the existing MTA Plugin from your Mendix project, delete MTA Plugin related `JAR files` from `userlib`, and delete the MTA Plugin directory from `javasource` in your project directory. 
-:::
+## New functionality
 
-### Replace Page call by Microflow call
-
-The [MTA Plugin](../Tools/mta-plugin) is now an [Add-on module](https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/). Imported Add-on modules cannot contain Snippets or Pages. If you used a Page to establish the connection to MTA, you can download a Module with a Snippet from here: https://marketplace.mendix.com/link/component/252213
-
-### Re-create your PAT
-
-For Mendix Teams still using SVN repositories, it is required to re-create a Personal Access Token (PAT) in their Mendix profile, with the required scopes.
-- Follow the Steps in the [Access Mendix Model How-to](../additional/howtos/configure-mta/access-mendix-model#create-your-pat-in-your-mendix-account).
-
-## New functionality 
-
-
-| ID                    | MTA-2071                                                                                                                                                                                                                                  |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | After an Application is added to MTA, it is possible to Enable loading Pages and Widgets on that Application. When enabled, MTA now also downloads Page and Widget information when downloading a revision with Mendix model information. |
-| __Release actions__   | None.                                                                                                                                                                                                                                     |
+| ID                    | MTA-2279                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Restyled the pages to set Attributes and Associations for Create, Change and Retrieve Teststeps. Attributes and Associations now have to be added before they can be edited, but they can now be edited directly from the Test Suite page. When adding an assocation, a teststep can be directly created to provide the object for assocation. Check the Reference Guide for more information. <br/> <br/>This change was implemented to improve UX and speed up the processes of Adapting a Test Configuration to a revision, preparing a Test Run, and Test design in general. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 <br/>
 
-| ID                    | MTA-2126                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | MTA now fully supports frontend testing a Mendix Application. Menditect has made the required Playwright modules publicly available in the Mendix Marketplace. When these are downloaded into the Mendix model, it is possible to generate Frontend Test Cases in MTA. With the Frontend Test Case structure in place, it is possible to add Teststeps that consistently Locate any Platform Supported Mendix Widget on a Mendix Page, and perform subsequent Actions on it. |
-| __Release actions__   | Import [required Add-on modules](../Tools/) from the marketplace and Enable loading Pages and Widgets on the Application in MTA.                                                                                                                                                                                                                                                                                                                                             |
+| ID                    | MTA-2377                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Options added to either Skip, or Always-Run, Teststeps, Test Cases or Test Suites. This allows for more options for building setup and teardown test suites and test cases. Check the Reference Guide for more information. |
+| __Release actions__   | None.                                                                                                                                                                                                                       |
 
 <br/>
 
-| ID                    | MTA-2011                                                                                                                                                                                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Pages showing the Test Suite with Test Cases and Teststeps, and Pages showing Test Suite Run results, are completely redesigned, making it easier to add and edit Teststeps, set Asserts and Datavariation, and get a better overall user experience. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                 |
+| ID                    | MTA-2396                                                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | Added options on a Test Configuration, allowing only changed Test Cases / Test Suites or Failed Test Case Runs to be (re-)run. |
+| __Release actions__   | None.                                                                                                                          |
 
 <br/>
 
-| ID                    | MTA-2018                                                                                                                                                                                                                                                                                                                              |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added Test Case and Teststep Exception handling and Assert on Teststep Exception. It is now possible to continue with the next Teststep upon an Exception, or continue with the next Test Case. Additionally, it is possible to Assert that an Exception is expected, enabling the option to have a Test Run succeed with Exceptions. |
-| __Release actions__   | Import the latest MTA Plugin into your Mendix App. <br/>*Breaking change*: Test Runs that fail because of an Exception will now Continue with the next Test Case by default.                                                                                                                                                          |
+| ID                    | MTA-2425                                                                                                                           |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Removed support for Frontend testing with BrowserStack as the Playwright server; added (now preferred) option for Microsoft Azure. |
+| __Release actions__   | None.                                                                                                                              |
 
 <br/>
 
-| ID                    | MTA-2041                                                                                                                                                          |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Text Boxes to enter String values are now replaced by Text Areas to allow entering new lines. Additionally, String values can be shown as a JSON tree in a popup. |
-| __Release actions__   | None.                                                                                                                                                             |
+| ID                    | MTA-2002                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | The filter that is set on Application in the Test Configurations page is now saved for the duration of the session. |
+| __Release actions__   | None.                                                                                                               |
 
 <br/>
 
 
-| ID                    | MTA-2226                                                                                                                                                                                                               |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | When a Teststep returns a FileDocument with contents in a Test Run, the contents can now be downloaded. If the FileDocument is of the Playwright Tracefile type, it can also be (re-)played at the Playwright website. |
-| __Release actions__   | Import the latest MTA Plugin into your Mendix App and execute a test in MTA 3.0.                                                                                                                                       |
+| ID                    | N/A                                                                                                                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Dependencies between Teststeps are now visible. Teststeps that *Provide* data to other Teststeps contain a `Providing` indicator. Teststeps that *Receive* data to other Teststeps contain a `Receiving` indicator. Using these indicators, it's possible to navigate back and forth between dependent Teststeps. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                             |
 
 <br/>
 
 
-| ID                    | MTA-2017                                                                                                                                                     |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __New functionality__ | It is now possible to Export a Snapshot to a JSON file, if it was created before a Test Configuration was adapted to another Revision, and the adapt failed. |
-| __Release actions__   | None.                                                                                                                                                        |
+| ID                    | MTA-2436                                                                          |
+| --------------------- | --------------------------------------------------------------------------------- |
+| __New functionality__ | The name of the App that is linked to the Test Case is now shown when clicking 👁️. |
+| __Release actions__   | None.                                                                             |
 
 <br/>
 
 
-| ID                    | MTA-2204                                                                                                          |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The SAML SSO module in MTA was updated to 3.6.21 because of a security breach found at Siemens Security Advisory. |
-| __Release actions__   | None.                                                                                                             |
+| ID                    | MTA-2448                                                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| __New functionality__ | The `Description` field on Teststep and `Objective`, `Preconditions` and `Expected result` fields on Test Case now support Markdown format. When saving the field, the information is shown formatted as Markdown. |
+| __Release actions__   | None.                                                                                                                                                                                                              |
 
 <br/>
 
-
-| ID                    | MTA-2231                                                                                                                                                                                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | It is now possible to add a new Microflow Teststep "using output" from a Teststep that returns an Object. The Object Microflow parameter of the new Microflow Teststep will be filled with the output of the original Teststep. |
-| __Release actions__   | None.                                                                                                                                                                                                                           |
-
-<br/>
-
-| ID                    | MTA-1870                                                                                                                                                                                                                                                                                                             |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | MTA will no longer fail a Test Run if there are attributes returned that are unknown in the downloaded revision. The error message was that the model was not up to date, but because Add-on modules are now supported,  it is possible that these attributes are marked as Hidden, and therefore should be omitted. |
-| __Release actions__   | None.                                                                                                                                                                                                                                                                                                                |
+| ID                    | N/A                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| __New functionality__ | Default `Apply Security` setting of a new Test Case will be changed from `TRUE` to `FALSE`. |
+| __Release actions__   | None.                                                                                       |
 
 <br/>
 
-
-| ID                    | MTA-2178                                                                                                          |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | MTA can now download Add-on Modules in a Mendix project and use the elements from an Add-on module for Teststeps. |
-| __Release actions__   | Read https://docs.mendix.com/refguide/consume-add-on-modules-and-solutions/ for more information.                 |
-
-<br/>
-
-
-| ID                    | MTA-2196                                                                                                                                                                                             |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | The Support Form is now opened in a new browser tab instead of a popup. This is done to enable customers using MTA through a Mendix license, to contact Mendix Support instead of Menditect Support. |
-| __Release actions__   | Use the `MtaUtils.UrlSupportForm` constant to set the URL.                                                                                                                                           |
+| ID                    | N/A                                                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Changed the implementation of URL's that are used when clicking `Share` on an item.                             |
+| __Release actions__   | Old URL's that are shared will still work but are deprecated. Preferred method is using the new implementation. |
 
 <br/>
 
-
-
-| ID                    | MTA-2229                                                                                          |
-| --------------------- | ------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Released browser extensions for Chrome and Firefox that show the mx-names of Widgets on the Page. |
-| __Release actions__   | Download the browser extensions from the Chrome Web Store / Firefox Addon site.                   |
+| ID                    | N/A                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved flexibility of handling changed Pages and Widgets when importing or adapting a Test Configuration, leading to fewer construction errors. |
+| __Release actions__   | None.                                                                                                                                             |
 
 <br/>
 
-
-| ID                    | N/A                                                                                                                                   |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | If a Microflow, Entity or Attribute contains Documentation, it is now visible in MTA under the <i class="fal fa-book-open"></i> Icon. |
-| __Release actions__   | None.                                                                                                                                 |
-
-<br/>
-
-
-| ID                    | N/A                                                            |
-| --------------------- | -------------------------------------------------------------- |
-| __New functionality__ | It is now possible to manually delete an Application Revision. |
-| __Release actions__   | None.                                                          |
-
-<br/>
-
-
-| ID                    | N/A                                                            |
-| --------------------- | -------------------------------------------------------------- |
-| __New functionality__ | The Mendix Runtime version of MTA has been updated to 9.24.40. |
-| __Release actions__   | None.                                                          |
-
-<br/>
-
-
-| ID                    | MTA-2200                                                                                                                                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Included the Content Hash in the Microflow Usage CSV export on the Mendix Model page of a Test Configuration. The Content Hash of a Microflow can be used to determine whether a Microflow was changed between revisions. |
-| __Release actions__   | Download a new revision in MTA 3.0.                                                                                                                                                                                       |
-
-<br/>
 
 ## Bug fixes
 
-| ID                  | MTA-2140                                                                                                                             |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| __Problem__         | Count validation feedback message Asserts that are included in Test Suite datavariation are not copied when duplicating a Test Case. |
-| __Solution__        | Count validation feedback message Asserts that are included in Test Suite datavariation are now copied when duplicating a Test Case. |
-| __Release actions__ | None.                                                                                                                                |
+| ID                  | MTA-2287                                                                                                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Nightly [Data Validation](../additional/installation#data-validation) Runs always failed due to incorrect mutationdate check leading to incorrect record counts, and errors in the log file. |
+| __Solution__        | Nightly Data Validation Runs now run as expected.                                                                                                                                            |
+| __Release actions__ | None.                                                                                                                                                                                        |
 
 <br/>
 
-| ID                  | MTA-2149                                                                                                               |
+
+| ID                  | MTA-2302                                                                                           |
+| ------------------- | -------------------------------------------------------------------------------------------------- |
+| __Problem__         | Deleting a Frontend-action (in step 3 of the Generate Frontend Tests wizard) resulted in an error. |
+| __Solution__        | Deleting a Frontend-action (in step 3 of the Generate Frontend Tests wizard) works as expected.    |
+| __Release actions__ | None.                                                                                              |
+
+<br/>
+
+
+| ID                  | MTA-2311                                                                                                               |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | Generate by Recording feature results in an error popup when performed in a Test Case without any Teststeps.           |
-| __Solution__        | Generate by Recording feature no longer results in an error popup when performed in a Test Case without any Teststeps. |
+| __Problem__         | The name of the Test Suite was not shown correctly in the dropdown (on top of the Test Suite page) when it is changed. |
+| __Solution__        | The name of the Test Suite is now shown correctly.                                                                     |
 | __Release actions__ | None.                                                                                                                  |
 
 <br/>
 
-| ID                  | MTA-2166                                                                                                                |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| __Problem__         | String attribute values are not shown in the Test Run results of an executed Microflow Teststep that returns an Object. |
-| __Solution__        | String attribute values are now shown in the Test Run results of an executed Microflow Teststep that returns an Object. |
-| __Release actions__ | None.                                                                                                                   |
+| ID                  | MTA-2312                                                                                                                                                                                                                                            |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Copying a Test Suite to another Test Configuration on a different Application Revision where the Test Suite is using Datavariation, fails when microflow parameter was added and the microflow no longer exists in the target Application Revision. |
+| __Solution__        | Copying a Test Suite works as expected.                                                                                                                                                                                                             |
+| __Release actions__ | None.                                                                                                                                                                                                                                               |
 
 <br/>
 
-| ID                  | Plugin-4114                                                                                                                                                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| __Problem__         | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will always be empty, also of other Teststeps that were added to the List do not have an empty output. |
-| __Solution__        | If a Teststep results in empty output and it is used to fill a List type Microflow parameter, the parameter value will now be filled as expected, with only Teststeps that do not result in an empty value.              |
-| __Release actions__ | None.                                                                                                                                                                                                                    |
+
+| ID                  | MTA-2313                                                                                                                                      |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Problem__         | Nightly Test Run Cleanup with the error `Cannot delete assert exception run because a test suite variation run uses the assert exception run` |
+| __Solution__        | Nightly Test Run Cleanup works as expected.                                                                                                   |
+| __Release actions__ | None.                                                                                                                                         |
+
+<br/>
+
+
+| ID                  | MTA-2400                                                             |
+| ------------------- | -------------------------------------------------------------------- |
+| __Problem__         | Duplicating an empty Test Suite resulted in an error.                |
+| __Solution__        | Duplicating an empty Test Suite results in another empty Test Suite. |
+| __Release actions__ | None.                                                                |
 
 <br/>

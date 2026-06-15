@@ -12,7 +12,7 @@ Instead of successfully adapting the [Test Configuration](../../../mta/test-conf
 - <font color="#CA2834"><i class="fa-solid fa-exclamation-circle"></i></font> An error occured while adapting a revision. Please contact support
 
 When clicking the "Retry adapt to next revision" button, a popup message is displayed:
-- Cannot adapt the given test configuration, because test configuration {name} is being adapted. 
+- Cannot adapt the given test configuration, because test configuration ... is being adapted. 
 
 ## Possible causes and resolutions
 

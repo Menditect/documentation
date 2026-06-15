@@ -454,6 +454,8 @@ The `retentionPeriodInDays` parameter is optional and can be omitted. If provide
 
 The Coverage parameter in the body can be either `true` or `false`. This indicates whether to calculate coverage for applicable [Coverage Goals](mta/coverage-goal) after the test was executed.
 
+The ExecutionScope parameter in the body can be either `All`, `FailedOnly`, `ChangedOnly` or `Changed_Failed`. See [Execute Test Configuration](mta/test-configuration#execute-a-test-configuration) for an explanation of these options.
+
 :::note
 Make sure to include the Instance Keys in the body for *all* added Applications to the Test Configuration.
 :::
@@ -473,6 +475,7 @@ The request for this endpoint is made up of both a URL and a JSON body.
 ```json
 {
     "Coverage": true,
+    "ExecutionScope": "ChangedOnly",
     "ApplicationInstances": 
     [
         {

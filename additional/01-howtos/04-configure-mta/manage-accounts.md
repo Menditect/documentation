@@ -4,19 +4,15 @@ sidebar_position: 1
 
 # Manage Accounts
 
-To manage MTA accounts, login as [MTA Manager](#mtamanager) and navigate to MTA Management -> MTA Users.
+To manage MTA accounts, login as [MTA Manager](#mta-manager) and navigate to MTA Management -> MTA Users.
 
 Accounts in MTA are managed like most Mendix Apps: using the [Administration](https://docs.mendix.com/appstore/modules/administration/) module. 
 
 ## Time Zone
-When creating an account, make sure to set the Time zone according to where the user will log in. For [ApiUser](#apiuser) accounts, set the Time zone to the same Time zone as where MTA is hosted. 
+When creating an account, make sure to set the Time zone according to where the user will log in. For [ApiUser](#api-user) accounts, set the Time zone to the same Time zone as where MTA is hosted. 
 
 ## Password criteria
-Passwords have to meet the password policy criteria:
-- Length minimum of 6 characters.
-- Contain a digit.
-- Contain an uppercase character.
-- Contain non-alphanumeric characters.
+Passwords must have minimum length of 12 characters.
 
 ## MTA User Roles
 
@@ -50,9 +46,14 @@ This Role can manage [Applications](../../../mta/application), build [Test Confi
 This Role can call endpoints in the [Public API](../../../api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
-This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../../installation/import-plugin#configuring-connection-user-in-mta).
+:::caution 
+Make sure to regularly change the `MTAConnectionUser` password!
+:::
 
-Make sure to regularly change the `MTAConnectionUser` password. 
+This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../../installation/import-plugin#configure-connection-user-in-mta).
+
+### MTA Plugin User
+This Role should **not** be assigned to new Accounts. It is used for internal testing of MTA by Menditect.
 
 
 ## Feedback?

@@ -1,5 +1,9 @@
 # Record and complete teststeps
 
+:::warning
+The Recorder function is deprecated and will be removed in MTA 3.2.
+:::
+
 ## Definition
 
 This document describes how to complete the created teststeps after recording.

@@ -11,12 +11,12 @@ The Test Run contains the results of an executed [Test Case](test-case), [Test S
 
 The results are stored in subsequent Test Suite runs, Test Case runs and Teststep runs.
 
-Regardless of the Scope of a Test Run, Test Suite runs, Test Case runs and Teststep runs are always created.
+Regardless of the Level of a Test Run, Test Suite runs, Test Case runs and Teststep runs are always created.
 
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Application Instances 
 The [Application Instances](application-instance) that were used to execute the Test Run on.
@@ -36,14 +36,33 @@ If a Test Run is pinned by a user it will not be deleted overnight. Recognizable
 ### Result
 The test result (<font color="#5ec065"> <i class="fas fa-check"></i> </font> 'Passed' or <font color="#d30d2e"> <i class="fas fa-times"></i> </font> 'Failed'). 
 
-### Scope 
-The element from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
+### Execution Scope
+
+| Setting          | Result                                                                                                                                 |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| All              | The Test Run was executed normally.                                                                                                    |
+| Failed only      | Only Test Cases that had not <font color="#5ec065"> <i class="fas fa-check"></i> Passed</font> in the previous Test Run were executed. |
+| Changed only     | Only Test Cases (or Teststeps inside) that were changed since the previous Test Run were executed.                                     |
+| Changed & failed | Combination of both options.                                                                                                           |
+
+Note that Test Cases with Teststeps that provide data are always executed. See also [Teststep dependencies](Teststep#view-teststep-dependencies).
+
+When choosing `Changed only`:
+- only changes that were made *in MTA* are considered, not revision changes (in the Mendix model in Studio pro).
+- only changes that may affect the [result](#result) of the [Test Run](test-run) are considered.
+- if a change is made in a Teststep or Test Case *without* [Datavariation](datavariation), the corresponding [Test Case](test-case) will be included.
+- if a change is made in a Teststep or Test Case *with* Datavariation that affects *all variations*, they will all be included.
+- if a change is made in a Teststep or Test Case *with* Datavariation that affects only a *specific variation*, only that specific variation will be included.
+
+
+### Level 
+The level from which the test was executed, if not Test Configuration ('Test Suite' or 'Test Case') 
 
 ### Status
 This indicates if the test is running or not; can be 'Running' or 'Finished'. 
 
 ### Retention period
-Only applicable for Test Runs triggered through the [Public API](api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
+Only applicable for Test Runs triggered through the [Public API](../api). <br/>Sets the amount of days, after which the Test Run is permanently deleted. 
 
 ### Trace files
 A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Suite Run.
@@ -98,7 +117,7 @@ For each Teststep run that has input, you can click on the input, to view which 
 In a Test Configuration, only the last two executed Test Runs are persisted overnight, plus a maximum of two pinned Test Runs. The rest is cleaned up. Read the [Pin a Test Run](#pin-a-test-run) section in this page for more information.
 
 #### Cleanup of API-triggered Test Runs 
-For Test Runs that are executed through the [Public API](api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the `Test runs` page.
+For Test Runs that are executed through the [Public API](../api#post-execute-testconfiguration), instead of this, the Retention period applies. The date on which the Test Run will be deleted, is visible in the `Test runs` page.
 
 #### Persisted dashboard data
 If a Test Run is cleaned up, the following information about the Test Run is stored for the statistics on the dashboard page:

@@ -6,15 +6,15 @@ With this [Teststep](.) type, an object is created in-memory.
 
 To save it to the database, add a [Persist](persist) step.
 
-The object is created only if the [Execution Users](../execution-user) is allowed to based on the domain model access rules in the Mendix model.
+Depending on the [Apply security](../test-case#apply-security) setting on the Test Case, the object is created only if the [Execution User](../execution-user) is allowed to based on the domain model access rules in the Mendix model.
 
-Domain model events (Before and After Create), if configured, are triggered.
+[Domain model event handlers](https://docs.mendix.com/refguide/event-handlers/) (Before Create and After Create), if configured, are triggered.
 
 ## Entity Access
 
 ### Security applied
 
-If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the *Create* rights on the Entity, through the configured `Entity rights` will be evaluated by the MTA Plugin to check if the [Execution Users](../execution-user) may create a new object. If there are no *Create* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
+If the [Test Case](../test-case) that this teststep is in, has Apply Security enabled, the *Create* rights on the Entity, through the configured `Entity rights` will be evaluated by the MTA Plugin to check if the [Execution User](../execution-user) may create a new object. If there are no *Create* rights, an error will be shown on the [Test Run](../test-run), and the Test Run will stop. 
 
 ### Security not applied 
 
@@ -23,54 +23,49 @@ If the [Test Case](../test-case) that this teststep is in, does not have Apply S
 ## Add a Create Object Teststep
 
 - Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
-- Click <i class="fal fa-plus-circle"></i> and Click `Create teststep` to add a Create Teststep.
+- Click <i class="fal fa-plus-circle"></i> and Click `Teststep: Create object` to add a Create Teststep.
 - Select an entity. You can search by name.
-- [Set values](#setting-values).
-- Click on the "Save" button. 
 
-
-## Setting values
+## Set values
 
 :::info
 Binary attributes are not supported by MTA.
 :::
 
-### Include or exclude an Attribute Value
-- Toggle the checkbox next to the attribute to include or exclude it.
+### Set Fixed value
+- Click `Add attributes` to add them, or `Edit values` to change values for existing attributes.
+- Select one or more attributes.
+- Enter or select value(s).
+
+For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
 
 Note that not including an Attribute Value in a Create Object Teststep will make the value default to what has been configured in the Mendix domain model (usually empty).
-Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (''). 
-
-### Set a fixed Attribute Value 
-- Click <i class="fas fa-keyboard"></i> on the right of the attribute, indicating a fixed value should be set.
-- Enter or select a value for the attribute.
-
-Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
+Including an Attribute but not entering a value will make the value empty for all datatypes except the String datatype. A String attribute will be given the zero-length value (`''`). 
 
 ### Use a former Teststep to set an Attribute Value
-- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click `Edit values` and select `Teststep`.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
 ### Assign associations
-- Click "<i class="fal fa-plus-circle"></i> Add" for each association that you want to set. 
-- Use the "<i class="fal fa-empty-set"></i> Set empty" button to clear the association. 
+- Click `Add associations`. 
+- Select one or more associations.
+- Select an operator: either `Set` (the default), or `Add` / `Remove` (both only available for many-to-many associations).
+- Using `Edit`, Select a previous Teststep, or add a Create/Retrieve Teststep that provides one associated object. You can also set the association to `EMPTY`.
+- For many-to-many associations, you can add additional lines.
 
-Note that multiple values can only be set for both way reference set (many to many) associations.
+## Add a Create object Teststep by App Instance
+You can choose to fill all the attributes and associations using existing values in the database. 
 
-### Generate assignments from database
-You can choose to fill all the attributes and associations using existing values in the database, 
-by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill with stored data". 
-This will fill the attributes with values based on a random Object retrieved from the database, and fill associations where the that Object is the owner.
+- Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
+- Click <i class="fal fa-plus-circle"></i> and Click `Teststep: Create object by app instance` to add a Create Teststep.
+- Select an entity. You can search by name.
+- Select an object. You can filter by attribute value, by clicking `Find objects by attribute filters`.
 
 :::note
 Because of performance reasons, the amount of associations retrieved is limited to 3.
 :::
 
-### Generate random values
-You can choose to fill attributes with random data, by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill attributes with random values". 
-
-
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 November 2025
+Last updated 27 May 2026

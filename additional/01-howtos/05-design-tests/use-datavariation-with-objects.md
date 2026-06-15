@@ -5,8 +5,8 @@ The [Datavariation](../../../mta/datavariation) feature only allows for adding A
 If the requirement is to vary the amount of Objects between variations, or pass `Empty` in one variation, it is required to use a workaround.
 
 This example retrieves one object in the first variation, and `Empty` in the second. It passes that object as a Microflow parameter:
-- [Add a Teststep that retrieves the output of an existing Teststep](../../../mta/Teststep/retrieve#retrieve-from-former-teststep). 
-- [Include an Attribute Filter](../../../mta/Teststep/retrieve#include-or-exclude-an-attribute-filter) on an Attribute that can be used to drive the amount of objects retrieved.
+- [Add a Teststep that retrieves the output of an existing Teststep](../../../mta/Teststep/retrieve#teststep). 
+- [Include an Attribute Filter](../../../mta/Teststep/retrieve#set-filter-values) on an Attribute that can be used to drive the amount of objects retrieved.
 - Add the Atribute to a Datavariation.
 - In the respective Datavariation page, choose an attribute value for one [column](../../../mta/datavariation-column) that results in 1 object retrieved.
 - Add a variation, and choose an attribute value that results in `Empty` being retrieved.

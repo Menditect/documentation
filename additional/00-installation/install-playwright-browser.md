@@ -12,21 +12,20 @@ When executing a Frontend test, Playwright starts and hosts its own Browser. Thi
 
 Currently, there are 4 supported options to host a Playwright Browser:
 1. `Locally`. Use this option if the Mendix App is running from Studio Pro on your device.
-2. `BrowserStack`. Use this option if you have a BrowserStack subscription and your Mendix App is running in the cloud.
+2. `Azure`. This option is available for Microsoft Azure subscriptions. 
 3. `PlaywrightServer`. Use this option for Docker or other cloud hosted Playwright services if your Mendix App is running in the cloud.
-4. `Azure`. This option is available for Microsoft Azure subscriptions. Note you must use the `Start_Frontend_Test_With_Azure_Playwright_Workspaces` microflow from the [Playwright Connector](../../../tools/playwright-connector).
 
 :::caution Mendix Cloud
-You must choose either `BrowserStack`, `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
+You must choose either `PlaywrightServer` or `Azure` if your Mendix App is running in the Mendix cloud, because a `Locally` hosted Playwright server will not run there.
 :::
 
 ### Prerequisites
 
-- Make sure that the [MTA Plugin](../../../tools/mta-plugin) module is [imported and configured](import-plugin).
+- Make sure that the [MTA Plugin](../../../Tools/mta-plugin) module is [imported and configured](import-plugin).
 - Download the driver-bundle jar file that is required to run Playwright. Currently, the required version is **1.59.0**: https://repo1.maven.org/maven2/com/microsoft/playwright/driver-bundle/1.59.0/driver-bundle-1.59.0.jar <br/>**Do not download other versions than the required version!**
 - Move this jar file into your /userlib directory of the Mendix project.
-- Start by importing the [Playwright Connector](../../../tools/playwright-connector).
-- Then import the [Frontend Test Kit](../../../tools/playwright-testkit) to start testing the most common Mendix Widgets. 
+- Start by importing the [Playwright Connector](../../../Tools/playwright-connector).
+- Then import the [Frontend Test Kit](../../../Tools/playwright-testkit) to start testing the most common Mendix Widgets. 
 - Add both the Module Roles to the project's User Role(s) that will be used to execute Frontend Tests.
 
 
@@ -44,15 +43,6 @@ If you do not have local admin rights on your machine, you may run into errors w
 
 If this jar file is added to the Mendix project and the app is deployed to a local server that allows Playwright to load the dependencies it needs, this is sufficient for executing the Test Cases. Separate hosting of the Playwright browsers is not needed then. However, if the jar-file is not added and/or the local server is also limited in the access it requires for Playwright to load its dependencies, it is needed to host a Playwright server elsewhere. 
 
-## BrowserStack
-
-One alternative option to hosting Playwright locally is to use Browserstack. BrowserStack is a cloud-based testing platform that enables developers and QA teams to test applications across various browsers and devices. It offers native support for Playwright, allowing users to run automated end-to-end tests on real devices and browsers within its cloud infrastructure. 
-
-Currently, using Browserstack is only supported if the Mendix App is running in the cloud. 
-Local Testing is currently only supported if Playwright is also running locally.
-[Local Testing with Browserstack](https://www.browserstack.com/docs/local-testing) will be supported in a future release of the Playwright Connector.
-
-Read [Frontend test](../../mta/frontend-test#browserstack-option) in the Reference Guide to learn how to configure the generated Teststeps in MTA.
 
 ## PlaywrightServer
 

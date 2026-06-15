@@ -16,34 +16,27 @@ If the [Test Case](../test-case) that this teststep is in, has Apply Security en
 
 If the [Test Case](../test-case) that this teststep is in, does not have Apply Security enabled, all objects are included.
 
-## Retrieve from database
-
+## Add a Retrieve Object(s) teststep
 - Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
-- Click <i class="fal fa-plus-circle"></i> and Click `Retrieve teststep` to add a Retrieve Teststep.
+- Click <i class="fal fa-plus-circle"></i> and Click `Teststep: Retrieve object(s)` to add a Retrieve Teststep.
 - Select an entity. You can search by name.
-- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
-- Select "Retrieve from database" in the Retrieve options.
-- [Set filter values](#set-filter-values).
-- Click on the "Save" button. 
 
-## Retrieve by association
+## Retrieve using
+- Select either `Database`, `Association` or `Teststep`.
 
-- Navigate to the Test Suite and move the mouse to the position you want to create a Teststep in.
-- Click <i class="fal fa-plus-circle"></i> and Click `Retrieve teststep` to add a Retrieve Teststep.
-- Select an entity. You can search by name.
-- Select either "All objects" or "Only first object" in the Retrieve options. Note that when there are more than 1000 results, the Teststep will result in a [Construction Error](../construction-error), even if only retrieving the first object. In that case you need to filter using attributes and associations.
-- Select "Retrieve by association" in the Retrieve options.
-- [Set filter values](#set-filter-values).
-- Click on the "Save" button. 
+### Database
+This will retrieve persisted objects from the database.
 
-Note that when retrieving by association, data needs to exist either in database, or have been created in the same Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
+### Association
+This will retrieve objects in memory that were created in the same Test Case, or exist in the database. You must select a previous Teststep that provides one associated object. 
 
-## Retrieve from former Teststep
+### Teststep
+This will retrieve objects returned from a previous Teststep. You must select a previous Teststep. 
 
+A quicker way to retrieve from a previous Teststep is this:
 - Navigate to the Test Suite and select the Test Case that you want to create a Teststep in.
-- Choose <i class="fal fa-plus-circle"></i> **Retrieve output**
-
-Note that if you move the new Teststep to a lower Test Case, data needs to be saved to the database in the originating Test Case. Data created in a previous Test Case that is not saved to the database will be lost.
+- Click on the <i class="fas fa-ellipsis"></i> button on the Teststep that returns the object(s) that you want to change
+- Choose  `Teststep: Retrieve output`
 
 ## Set filter values
 
@@ -51,12 +44,10 @@ Note that if you move the new Teststep to a lower Test Case, data needs to be sa
 Binary attributes are not supported by MTA.
 :::
 
-### Include or exclude an Attribute filter
-- Toggle the <i class="fal fa-filter"></i> button next to the attribute to include or exclude it.
-
-### Manually set an Attribute filter
-- Click <i class="fas fa-keyboard"></i> on the right of the attribute, which indicates that a filter operation and value(s) will be entered manually.
-- Choose an Operator (see below for the complete list).
+### Set Fixed value
+- Click `Add attributes` to set attributes to filter on, or `Edit values` to change values for existing attributes.
+- Select one or more attributes.
+- For each attribute, choose an Operator (see below for the complete list).
 - Enter or select value(s) to be used as a filter on the attribute.
 
 Note: For datetime values you can either specify a date, or calculate the date with an offset from the current datetime.
@@ -77,29 +68,19 @@ The following Operators are supported for the Mendix data types:
 | Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | (Use Range)                  |                              |
 
 
-
 ### Use the value from a former Teststep to set the Attribute filter
-- Click <i class="fal fa-chevron-circle-right"></i> on the right of the attribute, indicating a former Teststep should be used to set the value.
+- Click `Edit values` and select `Teststep`.
 - Select the Teststep and (if the Teststep returns an Object) find the Attribute that should provide the value.
 
-Note: you cannot choose to have a former Teststep set the value if you want to specify a Range of values. 
 
 ### Assign associations
-- Click "<i class="fal fa-plus-circle"></i> Add" for each association that you want to set. 
-- Use the "<i class="fal fa-empty-set"></i> Set empty" button to clear the association. 
-
-Note that multiple values can only be set for both way reference set (many to many) associations.
-
-### Generate assignments from database
-You can choose to fill all the attributes and associations using existing values in the database, 
-by clicking "<i class="fas fa-database"></i> Fill teststep with data" and then "Fill with stored data". 
-This will fill the attributes with values based on a random Object retrieved from the database, and fill associations where the that Object is the owner.
-
-:::note
-Because of performance reasons, the amount of associations retrieved is limited to 3.
-:::
+- Click `Add associations` to set associations to filter on.
+- Select one or more associations.
+- Select an operator: either `Set` (the default), or `Add` / `Remove` (both only available for many-to-many associations).
+- Using `Edit`, Select a previous Teststep, or add a Create/Retrieve Teststep that provides one associated object. You can also set the association to `EMPTY`.
+- For many-to-many associations, you can add additional lines.
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 27 November 2025
+Last updated 27 May 2026

@@ -44,7 +44,7 @@ For this option, let's assume that the goal is to:
 - Execute the Test Configuration.
 
 ### Step 1
-To download the latest revision, you need the Application Key and branch name and commit ID of the revision. You can find the Application Key by opening the Applications page and [View Key and Project ID](../../../mta/application#view-key-and-project-id) of your App. Branch name and commit ID can be found in Mendix Sprintr or Studio Pro. You now have the information you need to call [POST download revision](../../../api#post-download-revision). Save the Application Revision Key that is returned by this endpoint.
+To download the latest revision, you need the Application Key and branch name and commit ID of the revision. You can find the Application Key by opening the Applications page and [View Key and Project ID](../../../mta/application#view-information-about-the-application) of your App. Branch name and commit ID can be found in Mendix Sprintr or Studio Pro. You now have the information you need to call [POST download revision](../../../api#post-download-revision). Save the Application Revision Key that is returned by this endpoint.
 
 ### Step 2
 You can choose to wait until the download finishes, or use the [GET revision download status](../../../api#get-revision-download-status) endpoint, to poll every so-many seconds and check if it is finished. For that you need the Application Revision Key from the previous step.

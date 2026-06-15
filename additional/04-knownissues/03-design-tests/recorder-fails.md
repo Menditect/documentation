@@ -1,5 +1,9 @@
 # Recorder fails
 
+:::warning
+The Recorder function is deprecated and will be removed in MTA 3.2.
+:::
+
 ## Issue summary
 
 After [recording](../../../mta/recording) user actions, when stopping the recording, the teststep generation fails with an error.

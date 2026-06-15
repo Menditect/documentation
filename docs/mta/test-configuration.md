@@ -16,7 +16,7 @@ The Test Configuration is the highest or first level of the 4-layer framework th
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Name
 The name of the Test Configuration. The name will be displayed in the Test Configuration overview.
@@ -28,7 +28,7 @@ A description of the Test Configuration.
 ## Business rules
 
 - The application revision of the [Test Suite](test-suite) must be equal to the application revision of the Test Configuration, with the same [Application](application) in order to be able to execute the Test Configuration.
-- You can [pin](#pin-a-test-run) a maximum of two [Test Runs](test-run) per Test Configuration.
+- You can pin a maximum of two [Test Runs](test-run) per Test Configuration.
 
 ## Actions on Test Configuration
 
@@ -54,6 +54,7 @@ A description of the Test Configuration.
 - Choose `Coverage` to create a new [Coverage Calculation](coverage-calculation) after the Test Run was executed.
 - Choose `Full output` to include all data values in the Test Run results. Not enabling `Full output` will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
+- Choose an [Execution scope](test-run#execution-scope).
 
 ### Export a Test Configuration to file
 
@@ -119,4 +120,4 @@ See [Snapshot](snapshot).
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 26 November 2025
+Last updated 26 May 2026

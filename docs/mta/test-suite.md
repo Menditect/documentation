@@ -15,7 +15,7 @@ The Test Suite is the second level of the 4-layer framework that is used in MTA.
 ## Properties
 
 ### Key
-The identifying number assigned by MTA that is used in the [MTA Public API](api) endpoints.
+The identifying number assigned by MTA that is used in the [MTA Public API](../api) endpoints.
 
 ### Name
 The name of the Test Suite.
@@ -24,8 +24,16 @@ The name of the Test Suite.
 A description of the Test Suite.
 
 ### Status
-Can be either Changing or Ready. If Changing, this means MTA is updating the Test Suite because the user applied a new revision. If Ready, this means the Test Suite can be configured.
-  
+Can be either `Changing` or `Ready`. If `Changing`, this means MTA is updating the Test Suite because the user applied a new revision. If `Ready`, this means the Test Suite can be configured.
+
+### Execution condition
+
+| Setting | Result                                                                                                                                                                                                                                                                       |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| None    | The Test Suite will be part of the [Test Run](test-run) if it, or the parent [Test Configuration](test-configuration), is executed, and does not stop due to an [Exception](teststep-exception).                                                                             |
+| Skip    | The Test Suite will NOT be part of the Test Run if it, or the parent Test Configuration, is executed. Test Cases inside the Test Suite will also NOT be part of the Test Run, even if they are executed directly, and regardless of their own `Execution condition` setting. |
+| Always  | The Test Suite will be part of the Test Run if it, or the parent Test Configuration, is executed, even if a Teststep in a previous Test Suite encounters an Exception.                                                                                                       |
+
 ## Business rules
 
 The [revision](application-revision) of all Applications used in the Test Suite must match the ones used in the Test Configuration.
@@ -47,7 +55,7 @@ The [revision](application-revision) of all Applications used in the Test Suite 
 - Click anywhere in the row of the Test Suite you want to configure.
 
 ### Execute a Test Suite
-- Use the Execute test suite button from the <i class="fal fa-link-simple"></i> menu or inside a Test Suite, to start a new [Test Run](test-run).
+- Use the Execute inside a Test Suite, to start a new [Test Run](test-run) with the `Test Suite` Level.
 - Choose "Full output" to include all data values in the Test Run results. Not enabling "Full output" will finish the Test Run sooner, but will only include data values for teststeps that are used in other teststeps in the Test Run results.
 - Choose a [Test Setting](test-setting) (the preferred Test Setting is pre-selected).
 
@@ -105,4 +113,4 @@ Note that deleting a Test Suite is permanent. Individual Test Suites cannot be r
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 26 November 2025
+Last updated 26 May 2026
