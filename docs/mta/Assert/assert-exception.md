@@ -18,7 +18,7 @@ When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep i
 - If an Assert on Exception exists on a Teststep, the Teststep [Exception handling](../Teststep#exception-handling) must be set to `Continue`.
 - If an Assert on Exception with Expected result `Raised Exception` exists on a Teststep, there can be no other Asserts on the same Teststep.
 
-## Actions on an Assert on Attribute 
+## Actions
 
 ### Add an Assert Exception
 - Select the [Teststep](../Teststep/) where you want to add the Assert.
@@ -27,7 +27,7 @@ When a Teststep uses [Data Variation](../datavariation) to manipulate Teststep i
 - Select `Exception`.
 - Add the Assert here.
 
-### Delete an Assert on Exception on Attribute 
+### Delete an Assert on Exception
 - Select the [Teststep](../Teststep/) where you want to delete the Assert.
 - Select the `Assert(s)` tab.
 - Click `Manage Asserts`.

@@ -42,7 +42,7 @@ The following Assert Compare types are supported for the Mendix data types:
 | Less than or Equal to    |                              | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |                              | <i class="fas fa-check"></i> |                              |
 
 
-## Actions on an Assert on Attribute 
+## Actions
 
 ### Add an Assert on Attribute 
 - Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.

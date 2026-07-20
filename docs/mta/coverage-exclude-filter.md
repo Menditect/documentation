@@ -30,7 +30,7 @@ The filter for the microflow name
 - Exclude Filters that are added to a Coverage Goal on a Test Configuration, will apply to microflows in the [Application Revision](application-revision) that was last applied to that Test Configuration. 
 - Exclude Filters that are added to a Coverage Goal on an Application, will apply to microflows in the *latest* [Application Revision](application-revision) found in the included Test Configurations. 
 
-## Actions on an Exclude Filter
+## Actions
 
 ### View Exclude Filters on a Coverage Goal
 - Navigate to `Coverage Goals` for the respective [Application](application) or [Test Configuration](test-configuration).

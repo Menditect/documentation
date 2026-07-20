@@ -33,7 +33,7 @@ The Mendix user linked to the Account that created the Branch Subscription, that
 - If multiple Test Configurations are subscribed to the same Application Branch, the last configured Polling frequency will apply.
 
 
-## Actions on an Application Instance
+## Actions
 
 ### View Branch Subscriptions
 

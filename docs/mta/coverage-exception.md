@@ -22,7 +22,7 @@ A Coverage Exception has the same properties as an [Exclude Filter](coverage-exc
 A Coverage Exception has the same business rules as an [Exclude Filter](coverage-exclude-filter#business-rules).
 
 
-## Actions on a Coverage Exception
+## Actions
 
 ### View Coverage Exceptions on an Exclude Filter
 - [Edit the Exclude Filter](coverage-exclude-filter#edit-an-exclude-filter) you want to view Exceptions for.

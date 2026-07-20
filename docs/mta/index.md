@@ -2,20 +2,33 @@
 sidebar_position: 2
 ---
 
-# MTA
+# Menditect Test Automation (MTA)
 
-Menditect Test Automation (MTA) is a Mendix App, developed and maintained by Menditect, that can be used for Automated Testing other Mendix Apps. MTA can be hosted by Menditect in the Mendix cloud, or hosted by the customer, either in the cloud or on-premises. MTA uses information about the Mendix model, like microflows and entities, for test design. Test scripts are defined inside MTA but executed on an Instance of the Mendix App under test. Test Run Results can be viewed inside MTA, or downloaded into a separate BI tool by using the MTA API. 
+Menditect Test Automation (MTA) is a specialized Mendix application developed and maintained by Menditect for automated testing of other Mendix apps. 
 
+### Key Capabilities
+*   **Model-Driven Test Design:** MTA leverages metadata from your Mendix model (such as microflows and entities) to design test cases.
+*   **Flexible Hosting:** MTA can be hosted by Menditect in the Mendix Cloud, or self-hosted by the customer (either in a private cloud or on-premise).
+*   **Local Execution:** Test scripts are designed and managed inside MTA but executed directly on an instance of your target Mendix application.
+*   **Results & Analytics:** Test results can be viewed directly within MTA or exported to external BI tools via the MTA API.
 
-# How to use
+---
 
-A page in the reference guide will always reference some element in MTA with that name.
-Referenced elements in MTA are accompanied by a <i class="fal fa-question-circle"></i> button, that links to the relevant page in this guide.
+## How to Use This Reference Guide
 
-Pages are structured in 4 segments:
-- Definition: a description defining the element, why it exists and what it does.
-- Properties: the attributes of the element in the MTA database, limited by how they occur in the MTA user interface.
-- Business rules: rules as defined in the MTA application that apply to this element, excluding regular validation messages.
-- Actions: actions that can be done with this element.
- 
-Actions are described with as few literal descriptions to page elements as possible. This means that sometimes buttons are visible on the page, but sometimes they are listed under a menu or overflow button.
+This reference guide describes each element in the MTA user interface. Pages are organized to match the elements found in the MTA application. 
+
+:::tip
+Look for the <i class="fal fa-question-circle"></i> button next to elements in the MTA interface to navigate directly to their corresponding documentation page.
+:::
+
+### Page Structure
+Each reference page is structured into four standard sections:
+*   **Definition:** A description of the element, its purpose, and how it fits into the testing workflow.
+*   **Properties:** A list of the element's database attributes as they appear in the MTA user interface.
+*   **Business Rules:** Operational rules and constraints enforced by MTA for this element (excluding basic validations).
+*   **Actions:** Step-by-step instructions on what you can perform with this element.
+
+:::note
+Actions are described abstractly to keep documentation stable. Buttons and controls may sometimes reside in menus or overflow dropdowns depending on your screen size.
+:::

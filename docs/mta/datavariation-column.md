@@ -22,7 +22,7 @@ The Description of the Datavariation Column.
 
 - It is **not possible** to delete a [Datavariation Column](datavariation-column) if there is only one.
 
-## Actions on Datavariation Column
+## Actions
 
 ### Execute a single Datavariation Column
 - Navigate to the Test Suite or Test Case Datavariations page.

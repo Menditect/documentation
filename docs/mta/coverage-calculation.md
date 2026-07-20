@@ -55,7 +55,7 @@ The absolute difference in coverage percentage of this Calculation, <br/> compar
 - Additionally, for any Application, the latest Coverage Calculation will also be kept, if the calculation was performed for a subset of included Test Configurations.
 - For any Test Configuration, details of the Coverage Calculations will be kept if the associated Test Runs are not yet deleted.
 
-## Actions on a Coverage Calculation
+## Actions
 
 ### View Coverage Calculations on an Application
 - [View Coverage Goals on an Application](coverage-goal#view-coverage-goals-on-an-application)

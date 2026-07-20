@@ -84,7 +84,7 @@ Enables setting the height and width of the browser window.
 - [Enable Loading Pages and Widgets](../mta/application#enable-loading-pages-and-widgets), to Frontend Test Mendix Apps.
 - The [Page Class](../mta/mendix-page#class-name) must be filled in in order to test Widgets on a Mendix Page.
 
-## Actions on Frontend Test
+## Actions
 
 ### Setup Frontend Test
 

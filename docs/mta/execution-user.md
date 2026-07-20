@@ -26,7 +26,7 @@ For Frontend tests, MTA will automatically assign the `MxAdmin` user as an Execu
 - An Execution user cannot be deleted, if a test case uses the Execution user.
 - Do NOT use the MTA Plugin User account on the Application as an Execution User.
 
-## Actions on Execution User
+## Actions
 
 ### Manage Execution users
 

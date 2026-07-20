@@ -21,7 +21,7 @@ The descriptive error message for the Construction Error.
 The element that the Construction Error is associated with, for example, a [Teststep](Teststep/).
 
 
-## Actions on Construction Errors
+## Actions
 
 ### View Construction Errors
 - Navigate to the relevant [Test Configuration](test-configuration).

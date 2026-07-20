@@ -21,7 +21,7 @@ The identifying number assigned by MTA that is used in the [MTA Public API](../a
 ### Name
 The name of the Test Configuration. The name will be displayed in the Test Configuration overview.
 
-## Description
+### Description
 A description of the Test Configuration.
 
 
@@ -30,7 +30,7 @@ A description of the Test Configuration.
 - The application revision of the [Test Suite](test-suite) must be equal to the application revision of the Test Configuration, with the same [Application](application) in order to be able to execute the Test Configuration.
 - You can pin a maximum of two [Test Runs](test-run) per Test Configuration.
 
-## Actions on Test Configuration
+## Actions
 
 ### View Test Configurations
 - Navigate to the `Test configurations` page to view a list of all the Test Configurations in MTA.

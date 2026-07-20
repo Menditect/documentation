@@ -49,7 +49,7 @@ The total number of widgets in application revision. Only shown if the associate
 ## Business rules
 - The Application revision information cannot be deleted from MTA if a Test Configuration is using the Application revision.
 
-## Actions on an Application revision
+## Actions
 
 ### View Application Revisions
 - Navigate to the `Applications` page to view all Applications that are used in MTA.

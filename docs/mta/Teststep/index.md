@@ -70,7 +70,7 @@ Only for Microflow Teststeps; Name of the microflow to be executed.
 - An 'Create', 'Change' or 'Retrieve' Object Teststep must have an entity selected in order to be able to execute the Test Configuration.
 - It is not allowed to select the `Execution condition` = `Skip` setting on a Teststep that provides data to another Teststep.
 
-## Actions on Teststep
+## Actions
 
 ### View Teststeps in a Test Case
 - Navigate to the [Test Suite](test-suite) that the Teststeps are in.

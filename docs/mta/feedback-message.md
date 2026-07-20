@@ -21,7 +21,7 @@ The message text.
 
 None.
 
-## Actions on Feedback Message
+## Actions
 
 ### View Feedback Messages
 
@@ -29,6 +29,11 @@ None.
 - Open the Test Suite Run by clicking on `Results`.
 - Click on the <i class="fal fa-message-check"></i> icon on the Test Case, which indicates that there were Validation feedback messages.
 - Click `Show validation feedback messages`.
+
+
+## Related topics
+- [Test Run](test-run)
+- [Assert on Validation feedback](Assert/assert-validation-feedback)
 
 
 ## Feedback?
