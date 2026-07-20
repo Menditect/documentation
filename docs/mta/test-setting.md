@@ -28,7 +28,7 @@ When yes, select this Test Setting to execute.
 - There must be at least one Test Setting per Test Configuration.
 - A Test Setting must be associated to exacly one Application Instance in order to Execute the Test Configuration.
 
-## Actions on Test Setting 
+## Actions
 
 ### View Test Settings
 - Navigate to the `Test configurations` page.

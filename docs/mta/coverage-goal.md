@@ -34,7 +34,7 @@ Defines which [Test Configurations](test-configuration) are included when calcul
 - Not including any Test Suites or Test Configurations on a Coverage Goal, will always lead to a 0 % coverage percentage.
 - Defining Exclude Filters leading to 0 microflows being included in the Coverage Goal, will always lead to a 0 % coverage percentage.
 
-## Actions on a Coverage Goal
+## Actions
 
 :::info
 After creating an Application or Test Configuration, a default Coverage Goal is created without Exclude Filters, <br/>including all microflows in the revision.

@@ -3,18 +3,21 @@ sidebar_position: 0
 slug: /
 ---
 
-# How-to's
+# How-To Guides
 
-These how-to pages give detailed, step-by-step instructions on how to achieve something with MTA.
+These guides provide detailed, step-by-step instructions to help you accomplish specific workflows and tasks in Menditect Test Automation (MTA).
 
-Click on one of the commonly used topics below, browse through the topics in the sidebar, or use `Ctrl+K` to search.
+You can browse all topics in the sidebar, press `Ctrl + K` to search, or jump directly into our most popular guides below:
 
-## Commonly read topics 
-<font color="#54a8f2" size="4">
-<div> <a href="howtos/configure-mta/prepare-for-using-mta"><i class="fa-solid fa-clipboard-list fa-fw"></i> Preparation</a></div> 
-<div> <a href="howtos/configure-mta/manage-accounts"><i class="fa-solid fa-user fa-fw"></i> Account management</a></div> 
-<div> <a href="howtos/design-tests/generate-test"><i class="fa-solid fa-wand-magic-sparkles fa-fw"></i> Test generation</a></div> 
-<div> <a href="howtos/design-tests/frontend-test-custom-testkit"><i class="fa-solid fa-masks-theater fa-fw"></i> Build a Custom Mendix Frontend Testkit</a></div> 
-<div> <a href="howtos/schedule-tests/cicd-get-started"><i class="fa-solid fa-clock fa-fw"></i> Test scheduling</a></div> 
-</font>
+### Popular Topics
 
+*   [**Preparation Guide**](howtos/configure-mta/prepare-for-using-mta) — Essential steps before configuring MTA.
+*   [**Account Management**](howtos/configure-mta/manage-accounts) — Set up and configure users and roles.
+*   [**Test Generation**](howtos/design-tests/generate-test) — Automatically generate test cases.
+*   [**Custom Testkits**](howtos/design-tests/frontend-test-custom-testkit) — Learn how to build a custom Frontend Testkit for Mendix.
+*   [**Test Scheduling & CI/CD**](howtos/schedule-tests/cicd-get-started) — Configure automation pipelines and test schedules.
+
+---
+
+## Feedback?
+Missing anything or need assistance? [Let us know!](mailto:support@menditect.com)

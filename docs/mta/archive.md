@@ -40,7 +40,7 @@ A list of downloadable FileDocuments that were created during the [Test Run](tes
 
 None.
 
-## Actions on an Application
+## Actions
 
 
 ### Toggle Archive in MTA

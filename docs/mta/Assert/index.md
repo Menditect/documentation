@@ -17,7 +17,7 @@ There are four types of Asserts, that are described in detail in separate pages:
 4. [Assert on Object Count](Assert/assert-object-count)
 5. [Assert on Validation feedback](Assert/assert-validation-feedback)
 
-## Actions on Assert
+## Actions
 
 Some actions are described in the pages shown above.
 

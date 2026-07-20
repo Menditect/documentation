@@ -26,7 +26,7 @@ It is also possible to [execute only one Datavariation Column](#execute-a-variat
 - It is **not possible** to delete a [Datavariation Column](datavariation-column) if there is only one.
 - It **is possible** to delete all [Datavariation Item Rows](datavariation-item-row). Executing the Test Case or Test Suite will then only run once.
 
-## Actions on Datavariations
+## Actions
 
 ### Navigate to Test Suite Datavariations
 

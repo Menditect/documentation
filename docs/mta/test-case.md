@@ -74,7 +74,7 @@ A description of the expected result of a Test Case.
 - A Test Case is always about a single [Application](application).
 - It is not allowed to select the `Execution condition` = `Skip` setting on a Test Case that contains a [Teststep](Teststep/) that provides data to a Teststep in another Test Case.
 
-## Actions on Test Case
+## Actions
 
 ### View Test Cases in a Test Suite
 - Navigate to the [Test Suite](test-suite) that the Test Cases are in.

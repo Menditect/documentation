@@ -38,7 +38,7 @@ Can be either `Changing` or `Ready`. If `Changing`, this means MTA is updating t
 
 The [revision](application-revision) of all Applications used in the Test Suite must match the ones used in the Test Configuration.
 
-## Actions on Test Suite
+## Actions
 
 ### Create a new Test Suite
 - Navigate to the Test configurations page in MTA and select the [Test Configuration](test-configuration) that you want to create the Test Suite in.

@@ -70,7 +70,7 @@ A collection of [Playwright Traces](frontend-glossary#tracefile) in the Test Sui
 ## Business rules
 - You can [pin](#pin-a-test-run) a maximum of two Test Runs per [Test Configuration](test-configuration).
 
-## Actions on Test Run
+## Actions
 
 ### View Test Runs
 - Navigate to the `Test configurations` page.

@@ -12,7 +12,7 @@ Before a Test Configuration is adapted, a Snapshot is created, to allow restorin
 
 Restoring a Snapshot will only restore [Test Suites](test-suite), the [Test Runs](test-run) will remain in the original Test Configuration.
 
-## Actions on Snapshot
+## Actions
 
 ### Create a Snapshot
 

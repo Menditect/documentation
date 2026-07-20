@@ -33,7 +33,7 @@ The identifying number assigned by MTA that is used in the [MTA Public API](../a
 ## Business rules
 - A [Test Setting](test-setting) must be associated to exacly one Application Instance in order to Execute the Test Configuration.
 
-## Actions on an Application Instance
+## Actions
 
 ### View Application Instances for an Application
 - Navigate to the `Applications` page to view all Applications that are used in MTA.

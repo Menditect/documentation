@@ -23,7 +23,7 @@ Asserts on Validation feedback can be added to [Data Variation](../datavariation
 | Comparison number   | The number of validation feedback messages to evaluate. <br /> Only for Count asserts.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
-## Actions on an Assert on Validation feedback 
+## Actions
 
 ### Add Count Assert 
 - Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.

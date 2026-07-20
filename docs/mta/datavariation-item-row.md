@@ -37,7 +37,7 @@ None.
 
 Note that not entering a value will be interpreted as `Empty`, except for String values, where it will be interpreted as '' (zero-length String).
 
-## Actions on Datavariation Item Row
+## Actions
 
 ### Create a Datavariation Item Row
 

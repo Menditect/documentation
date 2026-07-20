@@ -18,7 +18,7 @@ The Exception message text.
 
 None.
 
-## Actions on Teststep Exception
+## Actions
 
 ### View Teststep Exception
 

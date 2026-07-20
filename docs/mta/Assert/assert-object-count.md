@@ -14,7 +14,7 @@ An Assert on Object count is defined on a [Teststep](../Teststep) and exists of 
 
 Asserts on object count can be defined either on Retrieve Object Teststeps or on Microflow Teststeps that return a list of objects. 
 
-## Actions on Assert on Object Count
+## Actions
 
 ### Add an Assert on Object Count
 - Open the [Test Configuration](../test-configuration) and [Test Suite](../test-suite) that you want to design.

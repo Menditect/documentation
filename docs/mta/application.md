@@ -28,7 +28,7 @@ A Boolean setting that determines whether Pages and Widgets are loaded into MTA,
 
 To learn more about configuring an MTA user, read the How To section.
 
-## Actions on an Application
+## Actions
 
 ### View Applications in use by MTA
 - Navigate to the `Applications` page to view all Applications that are used in MTA.
