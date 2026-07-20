@@ -36,7 +36,7 @@ Assigning fewer resources will increase the chance of spontaneous App restarts d
 
 - You will receive information on how to download the MDA file that you need to set up MTA.
 - Deploy and transport it to the environment in your cloud. 
-- Check the value of the following environment variables (Constants) for the MTA application:
+- Check the value of the following environment variables (Constants) for the MTA application (only Constants shown below need to be checked):
 
 | Environment variable                                             | value                                                             |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -93,8 +93,8 @@ mtasdkapi-ws.menditect.com/*
 hsforms.com/*
 ```
 
-- Make sure the /rest path allows all access (in Mendix: Environment details -> Network -> Path Based Access Restrictions and set the path /rest/ on allow access).
-- Make sure the /rest-doc path denies all access (in Mendix: Environment details -> Network -> Path Based Access Restrictions and set the path /rest-doc/ on deny all access).
+- Make sure the /rest path allows all access (in Mendix: Environment details -> Connectivity -> Path Based Access Restrictions and set the path /rest/ on allow access).
+- Make sure the /rest-doc path denies all access (in Mendix: Environment details -> Connectivity -> Path Based Access Restrictions and set the path /rest-doc/ on deny all access).
 
 - Start the MTA application.
 - Change the MxAdmin password of the environment to your own MxAdmin password.
