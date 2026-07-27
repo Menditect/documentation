@@ -105,12 +105,12 @@ hsforms.com/*
 
 To make sure that Mendix System tables are correctly cleaned up, please make sure to add the following [Custom Runtime Settings](https://docs.mendix.com/refguide/custom-settings/):
 
-| Runtime Setting                                                                                                                                   | value  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| [com.mendix.core.ScheduledEventsCleanupAge](https://docs.mendix.com/refguide/custom-settings/#commendixcoreScheduledEventsCleanupAge)             | 7      |
-| [com.mendix.core.ScheduledEventsCleanupBatchSize](https://docs.mendix.com/refguide/custom-settings/#commendixcoreScheduledEventsCleanupBatchSize) | 100000 |
-| [com.mendix.core.ProcessedTasksCleanupAge](https://docs.mendix.com/refguide/custom-settings/#commendixcoreProcessedTasksCleanupAge)               | 7      |
-| [com.mendix.core.ProcessedTasksCleanupBatchSize](https://docs.mendix.com/refguide/custom-settings/#commendixcoreProcessedTasksCleanupBatchSize)   | 100000 |
+| Runtime Setting                                                                                                                                   | value     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| [com.mendix.core.ScheduledEventsCleanupAge](https://docs.mendix.com/refguide/custom-settings/#commendixcoreScheduledEventsCleanupAge)             | 604800000 |
+| [com.mendix.core.ScheduledEventsCleanupBatchSize](https://docs.mendix.com/refguide/custom-settings/#commendixcoreScheduledEventsCleanupBatchSize) | 100000    |
+| [com.mendix.core.ProcessedTasksCleanupAge](https://docs.mendix.com/refguide/custom-settings/#commendixcoreProcessedTasksCleanupAge)               | 604800000 |
+| [com.mendix.core.ProcessedTasksCleanupBatchSize](https://docs.mendix.com/refguide/custom-settings/#commendixcoreProcessedTasksCleanupBatchSize)   | 100000    |
 
 
 ## Upgrading an existing MTA implementation
