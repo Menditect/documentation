@@ -21,6 +21,8 @@ Passwords must have minimum length of 12 characters.
 This Role can: 
 - Manage other Administrator Accounts, or MTA Manager Accounts. 
 - View and logout active user sessions.
+- Trigger Scheduled Events for Cleaning up [Test Runs](/mta/test-run), [Test Configurations](/mta/test-configuration) and [Application Revisions](/mta/application-revision). 
+- View and trigger [Data Validation Runs](/additional/installation#data-validation).
 
 :::note Administrator Account
 Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../installation).<br/>
@@ -31,7 +33,7 @@ Do not combine this role with other (below) roles.
 This Role can:
 - Manage other MTA Manager Accounts, Tester Accounts, API User Accounts and the Connection User Account.
 - [Configure SAML SSO](configure-mta-saml).
-- [Toggle the Archive function](../../../mta/archive#toggle-archive-in-mta).
+- [Toggle the Archive function](/mta/archive#toggle-archive-in-mta).
 - View and logout active user sessions.
 
 ### Tester
@@ -40,17 +42,17 @@ This Role can:
 This is the standard Role for new Accounts.<br/>
 :::
 
-This Role can manage [Applications](../../../mta/application), build [Test Configurations](../../../mta/test-configuration) and [run tests](../../../mta/test-run). 
+This Role can manage [Applications](/mta/application), build [Test Configurations](/mta/test-configuration) and [run tests](/mta/test-run). 
 
 ### API User
-This Role can call endpoints in the [Public API](../../../api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
+This Role can call endpoints in the [Public API](/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### MTA Connection User
 :::caution 
 Make sure to regularly change the `MTAConnectionUser` password!
 :::
 
-This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](../../installation/import-plugin#configure-connection-user-in-mta).
+This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](/additional/installation/import-plugin#configure-connection-user-in-mta).
 
 ### MTA Plugin User
 This Role should **not** be assigned to new Accounts. It is used for internal testing of MTA by Menditect.
