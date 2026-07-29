@@ -105,14 +105,7 @@ Only for Microflow Teststeps; Name of the microflow to be executed.
 
 ### Edit a Teststep
 - Select the Teststep.
-- Make the changes in the Teststep details, shown on the right.
-
-Note that it not is possible to change the action or type of Teststep after creation, or change the entity or microflow that it is associated with.
-
-### Configure a Teststep
-- Click on <i class="fas fa-cog"></i> on the Teststep name to set the Attribute Values or Microflow Parameter Values.
-
-When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action. 
+- Make the changes in the Teststep details, shown on the right. When setting Attribute Values, always keep in mind that the meaning of the value is different for a Retrieve action.
 - For Create / Change Object actions and Microflow parameters, the Attribute will be *assigned* the entered value, and 'empty' if checked, but left blank.
 - For a Retrieve Object action, the resulting set of objects will be *filtered* by the entered value, and 'empty' if checked, but left blank.
 
