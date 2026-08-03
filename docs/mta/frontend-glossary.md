@@ -100,13 +100,6 @@ Context: <font face='Courier New' size='+1' color="#146FF4">Mendix</font>
 
 A Widget is a reusable, self-contained user interface element on a Mendix [Page](mendix-page). It provides an interface that results in a corresponding HTML [Element](#element) (with possible child [Elements](#element)) when the Widget code is compiled and executed.
 
-
-<!-- 
-- ELO (context: Test Kit) element locator (vs Locator_etc)
-- ACT (context: Test Kit) element action
-- ASR (context: Test Kit) assert 
-- -->
-
 ## Related topics
 - [Frontend Test](frontend-test)
 - [Teststep](Teststep/)
