@@ -11,22 +11,22 @@ Subscribing to a branch in a [Test Configuration](test-configuration) will make 
 ## Properties
 
 ### Application         
-The Application where the Branch Subscription is made on. This can be any published free or licensed Mendix App.                                                                                                             |
+The Application where the Branch Subscription is made on. This can be any published free or licensed Mendix App.
 
 ### Test Configuration  
-The Test Configuration where the Branch Subscription is created in.                                                                                                                                                          |
+The Test Configuration where the Branch Subscription is created in.
 
 ### Branch              
-The branch where MTA will poll for new revisions.                                                                                                                                                                            |
+The branch where MTA will poll for new revisions.
 
 ### Polling frequency   
-This how often the branch is checked for a new revision (High, Medium, Low).                                                                                                                                                 |
+This how often the branch is checked for a new revision (High, Medium, Low).
 
 ### Adapt automatically 
-Select `Latest application revision` to [adapt the Test Configuration](application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) automatically after the revision was downloaded. |
+Select `Latest application revision` to [adapt the Test Configuration](application-revision#adapt-test-suites-in-a-test-configuration-to-a-downloaded-application-revision) automatically after the revision was downloaded.
 
 ### Mendix user         
-The Mendix user linked to the Account that created the Branch Subscription, that is used to authorize when polling and downloading revisions from Mendix.                                                                    |
+The Mendix user linked to the Account that created the Branch Subscription, that is used to authorize when polling and downloading revisions from Mendix.
 
 ## Business rules
 - If the Account of the user that created the Branch Subscription is deleted, the subscription will be deactivated. The subscription can be [repaired](#repair-a-branch-subscription) by anyone having access to the same [Application](application).
