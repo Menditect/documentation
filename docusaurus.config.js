@@ -35,7 +35,7 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.1',
+              label: '3.2',
               path: '/',
             },
           },
@@ -239,8 +239,8 @@ const config = {
             items: [
               {
                 type: 'docsVersion',
-                to: '/3.0.0',
-                label: '3.0 Reference guide',
+                to: '/3.1.0',
+                label: '3.1 Reference guide',
               }
             ]
           },
