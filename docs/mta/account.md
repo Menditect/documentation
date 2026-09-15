@@ -1,18 +1,30 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Manage Accounts
+# Account
+
+## Definition
 
 To manage MTA accounts, login as [MTA Manager](#mta-manager) and navigate to MTA Management -> MTA Users.
 
 Accounts in MTA are managed like most Mendix Apps: using the [Administration](https://docs.mendix.com/appstore/modules/administration/) module. 
 
-## Time Zone
+## Properties
+
+### User name
+
+The user name of the MTA User.
+
+### Time Zone
 When creating an account, make sure to set the Time zone according to where the user will log in. For [ApiUser](#api-user) accounts, set the Time zone to the same Time zone as where MTA is hosted. 
 
-## Password criteria
+### Password criteria
 Passwords must have minimum length of 12 characters.
+
+## Business rules
+- The MTA Connection User can not be assigned to new Accounts. 
+- There is only one MTA Connection user.
 
 ## MTA User Roles
 
@@ -47,15 +59,41 @@ This Role can manage [Applications](/mta/application), build [Test Configuration
 ### API User
 This Role can call endpoints in the [Public API](/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
+### Service Account Manager
+
+This Role can Manage Service Accounts and issue Session Tokens, which are required to [Connect an LLM to MTA](../connect-mta/connect-llm-to-mta).
+
 ### MTA Connection User
+
 :::caution 
 Make sure to regularly change the `MTAConnectionUser` password!
 :::
 
-This Role can **not** be assigned to new Accounts. There is only one MTA Connection user, that should be configured for the [MTA Plugin](/additional/installation/import-plugin#configure-connection-user-in-mta).
+This Role is used to connect from a [Mendix App](application) to MTA, using the [MTA Plugin Module](../Tools/mta-plugin).
 
 ### MTA Plugin User
 This Role should **not** be assigned to new Accounts. It is used for internal testing of MTA by Menditect.
+
+## Service Account
+
+A Service Account is required to [Connect an LLM to MTA](../connect-mta/connect-llm-to-mta). It is created as an Account in MTA, but it cannot be used to login to MTA.
+
+### User name
+
+The user name of the Service Account.
+
+### Description
+
+This text should help remember for what tool this Service Account was created, by whom, or for what purpose.
+
+### Session Token
+
+Every Service Account can have one or more Session tokens. A Session token or Bearer token is displayed once upon creation, and must be entered as the Authorization for the MTA MCP server (for example, in the `mcp_config.json` file).
+
+### Scope
+
+Currently, a Service Account has a single scope that must be enabled, the `Call MCP primitive tools` scope. Additional scopes will be added in future releases of MTA.
+
 
 
 ## Feedback?
