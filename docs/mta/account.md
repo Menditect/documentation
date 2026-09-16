@@ -33,19 +33,19 @@ Passwords must have minimum length of 12 characters.
 This Role can: 
 - Manage other Administrator Accounts, or MTA Manager Accounts. 
 - View and logout active user sessions.
-- Trigger Scheduled Events for Cleaning up [Test Runs](/mta/test-run), [Test Configurations](/mta/test-configuration) and [Application Revisions](/mta/application-revision). 
-- View and trigger [Data Validation Runs](/additional/installation#data-validation).
+- Trigger Scheduled Events for Cleaning up [Test Runs](test-run), [Test Configurations](test-configuration) and [Application Revisions](application-revision). 
+- View and trigger Data Validation Runs.
 
 :::note Administrator Account
-Logging in as Administrator is only applicable for customers who [manage their own MTA Deployment](../../installation).<br/>
+Logging in as Administrator is only applicable for customers who manage their own MTA Deployment.<br/>
 Do not combine this role with other (below) roles.
 :::
 
 ### MTA Manager
 This Role can:
 - Manage other MTA Manager Accounts, Tester Accounts, API User Accounts and the Connection User Account.
-- [Configure SAML SSO](configure-mta-saml).
-- [Toggle the Archive function](/mta/archive#toggle-archive-in-mta).
+- Configure SAML SSO.
+- [Toggle the Archive function](archive#toggle-archive-in-mta).
 - View and logout active user sessions.
 
 ### Tester
@@ -54,14 +54,14 @@ This Role can:
 This is the standard Role for new Accounts.<br/>
 :::
 
-This Role can manage [Applications](/mta/application), build [Test Configurations](/mta/test-configuration) and [run tests](/mta/test-run). 
+This Role can manage [Applications](application), build [Test Configurations](test-configuration) and [run tests](test-run). 
 
 ### API User
 This Role can call endpoints in the [Public API](/api). To call any of the endpoints, this Role needs to be selected, as well as he `Tester` Role.
 
 ### Service Account Manager
 
-This Role can Manage Service Accounts and issue Session Tokens, which are required to [Connect an LLM to MTA](../connect-mta/connect-llm-to-mta).
+This Role can Manage Service Accounts and issue Session Tokens, which are required to Connect an LLM to MTA.
 
 ### MTA Connection User
 
@@ -76,7 +76,7 @@ This Role should **not** be assigned to new Accounts. It is used for internal te
 
 ## Service Account
 
-A Service Account is required to [Connect an LLM to MTA](../connect-mta/connect-llm-to-mta). It is created as an Account in MTA, but it cannot be used to login to MTA.
+A Service Account is required to Connect an LLM to MTA. It is created as an Account in MTA, but it cannot be used to login to MTA.
 
 ### User name
 
@@ -99,4 +99,4 @@ Currently, a Service Account has a single scope that must be enabled, the `Call 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
 
-Last updated 15 September 2025
+Last updated 15 September 2026

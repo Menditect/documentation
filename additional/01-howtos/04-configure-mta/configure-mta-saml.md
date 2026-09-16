@@ -60,7 +60,7 @@ Configure your IdP to use a SAML "Attribute" Assertion, as follows.
 
 When assigning the 'Administrator' role, MTA must be configured to [run on-premises](../../installation).
 
-More about User Roles can be found in the [Manage Accounts howto](manage-accounts#mta-user-roles).
+More about User Roles can be found in the Reference guide under [Account](/mta/account).
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)

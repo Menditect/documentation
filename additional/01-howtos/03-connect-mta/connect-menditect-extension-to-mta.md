@@ -10,7 +10,7 @@ This document describes how to connect the [Menditect Call Hierarchy extension](
 
 ## Prepare MTA
 
-- Make sure to create an Account in MTA having at least `Tester` and `ApiUser` [User Roles](../configure-mta/manage-accounts#mta-user-roles). 
+- Make sure to create an Account in MTA having at least `Tester` and `ApiUser` [User Roles](/mta/account#mta-user-roles). 
 - Login as that Account.
 - [Create a Test configuration](../../../mta/test-configuration#add-a-test-configuration) that is linked to the App that you want to test.
 - Create (or use an existing) [application instance](../../../mta/application-instance#create-an-application-instance) to be used for running locally from Studio Pro, and [set it as the preferred instance](../../../mta/test-setting#set-a-test-setting-as-preference).

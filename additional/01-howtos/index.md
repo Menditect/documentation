@@ -12,7 +12,6 @@ You can browse all topics in the sidebar, press `Ctrl + K` to search, or jump di
 ### Popular Topics
 
 *   [**Preparation Guide**](howtos/configure-mta/prepare-for-using-mta) — Essential steps before configuring MTA.
-*   [**Account Management**](howtos/configure-mta/manage-accounts) — Set up and configure users and roles.
 *   [**Test Generation**](howtos/design-tests/generate-test) — Automatically generate test cases.
 *   [**Custom Testkits**](howtos/design-tests/frontend-test-custom-testkit) — Learn how to build a custom Frontend Testkit for Mendix.
 *   [**Test Scheduling & CI/CD**](howtos/schedule-tests/cicd-get-started) — Configure automation pipelines and test schedules.

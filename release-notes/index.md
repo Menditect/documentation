@@ -19,10 +19,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality
 
-| ID                    | MTA-2399                                                                                                                                                                      |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added support for operating MTA by an agentic AI through MCP Tools. See the [MTA 3.2 Reference Guide](/mta_mcp_tools.md) for this version for a full list of available Tools. |
-| __Release actions__   | None.                                                                                                                                                                         |
+| ID                    | MTA-2399                                                                                                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added support for operating MTA by an agentic AI through MCP Tools. See the [MTA 3.2 Reference Guide](/mta_mcp_tools) for this version for a full list of available Tools. |
+| __Release actions__   | None.                                                                                                                                                                      |
 
 <br/>
 
