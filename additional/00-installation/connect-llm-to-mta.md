@@ -23,7 +23,8 @@ If you specifically want to connect Mendix Maia, checkout the Mendix documentati
 ## Setup MCP Connection
 
 - Open the configuration or edit the configuration file (for example, `mcp_config.json`) for the LLM that you are using.
-- Enter the URL to the MTA MCP Server, for example https://your-mta-installation.mendixcloud.com/primitivetools/mcp. Make sure it ends with `/primitivetools/mcp`
+- Enter the URL to the MTA MCP Server, typically https://your-mta-installation.mendixcloud.com/primitivetools/mcp. 
+- Make sure the URL to the MTA MCP Server ends with `/primitivetools/mcp`
 - Enter the Authorization bearer token (session token) that you created above.
 - When the connection is succesful, you should see some indication of this, including a list of MCP tools that are enabled.
 
