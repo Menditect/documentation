@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Purpose
 
-This document describes how to connect any LLM (AI conversational tool) to the MTA MCP Server.
+This document describes how to connect any LLM (AI agentic conversational tool) to the MTA MCP Server.
 
 If you specifically want to connect Mendix Maia, checkout the Mendix documentation at: https://docs.mendix.com/refguide/maia-mcp/
 
@@ -30,7 +30,7 @@ If you specifically want to connect Mendix Maia, checkout the Mendix documentati
 
 ## Loading MCP Skills
 
-Follow the instructions here: https://github.com/Menditect/agentic-test-skills#setup--usage-options
+Loading the Skill files can be done by importing the Menditect agentic test skills module from https://marketplace.mendix.com/link/component/305457 into your Mendix App, or by cloning the Agentic Test Skills Github repository. Follow the instructions here: https://github.com/Menditect/agentic-test-skills#setup--usage-options
 
 ## Feedback?
 Missing anything? [Let us know!](mailto:support@menditect.com)
