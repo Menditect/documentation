@@ -19,10 +19,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 ## New functionality
 
-| ID                    | MTA-2399                                                                                                                                                                   |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Added support for operating MTA by an agentic AI through MCP Tools. See the [MTA 3.2 Reference Guide](/mta_mcp_tools) for this version for a full list of available Tools. |
-| __Release actions__   | None.                                                                                                                                                                      |
+| ID                    | MTA-2399                                                                                                                                                                                                                                                                                                   |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Added support for operating MTA by an agentic AI through MCP Tools. See the [MTA 3.2 Reference Guide](/mta_mcp_tools) for this version for a full list of available Tools. Connecting to MTA must be done using a Session token, that can be created by an MTA User with the Service Account Manager role. |
+| __Release actions__   | None.                                                                                                                                                                                                                                                                                                      |
 
 <br/>
 
@@ -34,13 +34,9 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 <br/>
 
 
-
-## Bug fixes
-
-| ID                  | MTA-??? |
-| ------------------- | ------- |
-| __Problem__         | ???     |
-| __Solution__        | ???     |
-| __Release actions__ | None.   |
+| ID                    | N/A                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------- |
+| __New functionality__ | Renewed the Test Suite overview page allowing a new Test Suite to be created in a specific index. |
+| __Release actions__   | None.                                                                                             |
 
 <br/>
