@@ -95,10 +95,10 @@ For support levels on MTS/LTS and monthly releases, read the [SLA](../legal/sla)
 
 <br/>
 
-| ID                    | (none)                                                                                                                                                                 |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __New functionality__ | Improved scaling of the MTA pages that are shown in the [Menditect Call Hierarchy extension](../additional/howtos/connect-mta/use-microflow-call-hierarchy-extension). |  |
-| __Release actions__   | None (you do not need to update the Extension).                                                                                                                        |
+| ID                    | (none)                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| __New functionality__ | Improved scaling of the MTA pages that are shown in the Menditect Call Hierarchy extension. |  |
+| __Release actions__   | None (you do not need to update the Extension).                                             |
 
 <br/>
 
