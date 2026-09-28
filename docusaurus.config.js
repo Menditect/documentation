@@ -69,6 +69,10 @@ const config = {
           {
             id: 'microflow-call-hierarchy-extension',
             content: '@site/additional/01-howtos/03-connect-mta/use-microflow-call-hierarchy-extension.md',
+          },  
+          {
+            id: 'mta-exploratory-setup',
+            content: '@site/additional/00-installation/exploratory-testing-setup.md',
           },
           {
             id: 'pat',
