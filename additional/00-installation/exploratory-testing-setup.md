@@ -52,13 +52,15 @@ The **MTA Runtime Plugin** is required for all setups. You can choose how your A
 The MTA Plugin embeds a lightweight, secure Model Context Protocol (MCP) server directly inside your running Mendix application. This step is identical for both variants.
 
 ### 1. Download and Import the MTA Plugin Module
-1. Open the private marketplace link provided in your welcome email:
-   * **[MTA Plugin with MCP Server (Marketplace Component 305699)](https://marketplace.mendix.com/link/component/305699)**
-2. Add it to your Mendix project in Studio Pro (via **App > Add module from file...** or Marketplace).
-3. If prompted, ensure standard module dependencies (such as `CommunityCommons`) are updated.
+1. In Mendix Studio Pro, open the **Marketplace** (or visit the public [Menditect Test Automation Plugin component (Marketplace Component 214717)](https://marketplace.mendix.com/link/component/214717)).
+2. Download and import the MTA Plugin module into your Mendix project.
 
-> [!NOTE]
-> **Early Access vs. Public Release:** The private marketplace component **MTA Plugin with MCP Server** (305699) is currently used for the Early Access Program. On final release, the MTA Plugin MCP server will be officially included and released in the standard public [Menditect Test Automation Plugin component (Marketplace Component 214717)](https://marketplace.mendix.com/link/component/214717).
+   Ensure you are using a version that includes the embedded MCP server:
+   * **Mendix 9:** Version **`9.5.3`** or higher
+   * **Mendix 10:** Version **`10.5.3`** or higher
+   * **Mendix 11:** Version **`11.5.3`** or higher
+
+3. If prompted, ensure standard module dependencies (such as `CommunityCommons`) are updated.
 
 ### 2. Configure MTA Plugin Constants
 In Mendix Studio Pro App Explorer, open `App > Marketplace modules > MtaPluginModule > Constants` (or configure them under `Settings > Configurations > Edit > Constants`):
@@ -79,7 +81,7 @@ In Mendix Studio Pro App Explorer, open `App > Marketplace modules > MtaPluginMo
 ### 3. Verify Startup Microflow
 If your project already defines an *After Startup* microflow under **App > Settings > Runtime**:
 * Open your existing After Startup microflow.
-* Add a microflow call activity to execute `MtaPluginModule.AfterStartup`.
+* Add a microflow call activity to execute `MtaPluginModule.ASU_Setup_Connection_MTA`.
 
 ### 4. Start Your Application Locally
 * Press **F5** (or click **Run Locally**) in Studio Pro.
@@ -107,8 +109,8 @@ Use this setup to work **entirely inside Mendix Studio Pro (11.12+)** using the 
 ### 3. Configure MAIA Context and Directives (`AGENTS.md`)
 MAIA reads its custom project instructions exclusively from an **`AGENTS.md`** file located in the root directory of your Mendix project.
 
-1. Check your Mendix project root folder for `AGENTS.md`:
-   * **If `AGENTS.md` does not exist:** Create a new text file named `AGENTS.md` in your Mendix project root.
+1. Check your Mendix App explorer and look for MAIA at the App level (top level) for `AGENTS.md`:
+   * **If `AGENTS.md` does not exist:** Create a new text file named `AGENTS.md` in your Mendix project root by right clicking on MAIA and select "Agent Instructions". This will create an empty `AGENTS.md`file.
    * **If `AGENTS.md` already exists:** Open it and **append** the following block to the bottom of the file (preserving any existing rules or instructions).
 2. Add the Menditect operational directive block:
 
@@ -118,24 +120,21 @@ MAIA reads its custom project instructions exclusively from an **`AGENTS.md`** f
 - **IMMEDIATE ACTION REQUIRED:** You are strictly commanded to explore, read, and load the `AGENTS.md` and context of the [Menditect_AgenticTestSkills] module before answering testing prompts.
 - **NATIVE MCP TOOL EXECUTION MANDATE:** You MUST ALWAYS use the MTA Plugin MCP tool (`MTA_plugin.execute-testcase`) for all in-memory exploratory test executions.
 - **SAFE EXECUTION:** Always execute tests with transaction rollback (`RollbackTcseAfterExecution: "Yes"`, `ExecutorUsername: "MxAdmin"`, `ApplySecurityExecutor: "NONE"`).
+- **EXPLORATORY EXECUTION STRATEGY:** Default to `auto_execute` (draft Execution Plan and execute immediately in a single turn without pausing). If you prefer explicit sign-off before running, set to `prompt_approval`.
 ```
 
-> [!TIP]
-> **Custom Execution User:** By default, test execution runs under the `MxAdmin` user context. If `MxAdmin` is not present in your Mendix app's user database, you can specify a different existing administrator or test username (e.g. `ExecutorUsername: "Admin"` or `ExecutorUsername: "TestUser"`) in your `AGENTS.md` directives.
+3. Configure your **Execution User:** By default, test execution runs under the `MxAdmin` user  context. If `MxAdmin` is not present in your Mendix app's user database, you can specify a different existing administrator or test username (e.g. `ExecutorUsername: "Admin"` or `ExecutorUsername: "TestUser"`) in your `AGENTS.md` directives, see step 2 above.
 
 ### 4. Connect MAIA to the Local MTA Plugin MCP Server
-Configure MAIA's MCP tool settings in Studio Pro (or within your environment MCP configuration):
+Configure MAIA's MCP tool settings in Studio Pro (or within your environment MCP configuration), see https://docs.mendix.com/refguide/maia-mcp/#adding-server:
 
 * **Server Name:** `MTA_plugin`
-* **Transport:** `HTTP / SSE`
-* **URL:** `http://localhost:8081/plugin/mcp` *(or `http://localhost:[YourPort]/plugin/mcp`)*
-* **Headers:** 
-  ```json
-  {
-    "Authorization": "Bearer MySecretToken123"
-  }
-  ```
-  *(Replace `MySecretToken123` with the exact value set in `MtaPluginModule.McpServerAccessToken`)*
+* **URL:** `http://localhost:[YourPort]/plugin/mcp`)
+* **Connection type:** `HTTP`
+* **Authentication:** `Bearer Token`: use the exact value set in `MtaPluginModule.McpServerAccessToken`
+
+> [!TIP]
+> Don't forget to enable the `execute-testcase` tool in the MCP Settings pane.
 
 ### 5. Execute an Exploratory Test in MAIA
 1. Ensure your Mendix app is running (**F5**).
@@ -173,20 +172,32 @@ For in-depth architecture details and command references, see the **[agentic-tes
 * **Node.js (v18+)** installed.
 * **Git** installed.
 
-### 2. Clone the Workspace Template
-Open your terminal (PowerShell, Command Prompt, or Bash) and run:
+### 2. Create and open your workspace directory
+
+Create a dedicated folder for your workspace on your local disk and navigate into it:
+
+```
+# Create your workspace directory (replace 'C:\projects\your-workspace' with your preferred path)
+mkdir C:\projects\your-workspace
+
+# Navigate into the newly created workspace directory
+cd C:\projects\your-workspace
+```
+
+### 3. Clone the repository
+
+Clone the `agentic-test-workspace` repository inside your workspace directory:
 
 ```bash
-# 1. Create a workspace folder
-mkdir C:\projects\mta-workspace
-cd C:\projects\mta-workspace
-
-# 2. Clone the workspace template
 git clone https://github.com/Menditect/agentic-test-workspace.git
-
-# 3. Enter the tools directory
-cd agentic-test-workspace
 ```
+
+### 4. Go to agentic-test-workspace directory
+
+Navigate into the cloned repository folder:
+
+```bash
+cd agentic-test-workspace
 
 ### 3. Run the Setup Wizard
 Run the interactive setup script:
@@ -206,30 +217,45 @@ Follow the prompts step-by-step:
 7. **Application Name:** Press **Enter** to accept the detected project name.
 8. **MTA URL:** Default is `http://services.menditect.com`. *(Note: For free exploratory users, the cloud MTA URL is not relevant because all testing runs locally on your machine. You can safely press **Enter** to accept the default or leave it empty).*
 9. **Identification token for a service account:** **Press Enter to SKIP (leave blank).** *(You do not need an MTA Cloud license or service account token for exploratory testing).*
-10. **App Under Test Plugin URL:** Press **Enter** to accept `http://localhost:8081/plugin/mcp` (or enter your custom port if different).
+10. **App Under Test Plugin URL:** Press **Enter** to accept `http://localhost:[YourPort]/plugin/mcp` (or enter your custom port if different).
 11. **App Under Test Plugin Token:** Enter `Bearer ` followed by the secret token you chose in Studio Pro for `MtaPluginModule.McpServerAccessToken` (e.g. `Bearer MySecretToken123`).
+12. **Exploratory Execution Strategy (`exploratory_execution_mode`):**
+    * Choose `[1] auto_execute (recommended)`: High-velocity 1-turn testing. The AI writes the complete Execution Plan (`EP_*.md`) to disk and dispatches the test immediately in the **very same turn** (< 3 seconds total feedback). Transactions are safely rolled back in memory, and the test plan remains on disk ready for permanent promotion to MTA at any time.
+    * Choose `[2] prompt_approval`: Traditional governed flow. The AI drafts the Execution Plan and pauses at **Checkpoint 1**, waiting for your explicit approval before executing.
+13. **Review & Confirm Configuration:** The wizard displays your complete configuration summary. Type `9` if you wish to toggle the exploratory mode, or press **Enter** (`y`) to confirm and write `mta_config.json` and `.env`.
+14. **Verify the Setup:** The wizard automatically verifies the setup and configuration of the MTA Plugin MCP server as the final step.
 
-### 4. Verify the Setup
-Make sure your Mendix application is running in Studio Pro (**F5**), then execute:
+>[TIP!]
+> Make sure the app is running in StudioPro
+
+
+
+You can also  **Verify the Setup Manually** at any time. 
+ 
+ Execute from the agentic-test-workspace directory in your workspace:
 
 ```bash
 npm run verify
 ```
 
-The tool will confirm:
+The verify tool will confirm:
 * `mta_config.json` and `.env` are properly structured.
 * `mxcli` offline model inspection is active.
 * Local `MTA_plugin` MCP endpoint is reachable and authenticated.
 
+
 ### 5. Open Your AI IDE and Execute Your First Test
 1. Open the parent workspace directory (e.g. `C:\projects\mta-workspace`) in **Cursor**, **VS Code**, or **Antigravity** (or run `claude` in that directory).
-2. All MCP configurations (`.cursor/mcp.json`, `.vscode/mcp.json`, `.claude/settings.json`) and agent directives (`AGENTS.md`) are automatically loaded.
-3. Prompt your assistant in the chat:
+2. All MCP configurations (`.cursor/mcp.json`, `.vscode/mcp.json`, `.claude/settings.json`) and agent directives (`AGENTS.md`) are automatically loaded. 
+3. You can instruct your AI assistant to configure its own MCP server settings dynamically by using this prompt:
+```bash
+Read `mta_config.json` and `.env` in this workspace, and configure your MCP client settings to connect to the`mta_plugin` server (`plugin_mcp_url`) using the corresponding Bearer token.
+``` 
+4. Once the MTA Plugin MCP server is properly configured, prompt your assistant in the chat:
 
 ```text
-Read mta_config.json and .env in this workspace.
 Please inspect the microflow MyModule.SUB_CalculateDiscount using mxcli, 
-and execute an exploratory test on my running app using the MTA_plugin tool.
+and execute an exploratory unit test with all boundary values on my running app using the MTA_plugin tool.
 ```
 
 ---
@@ -250,7 +276,14 @@ sequenceDiagram
     User->>AI: "Test microflow SUB_CalculateDiscount"
     AI->>Model: Inspect parameters and return types
     Model-->>AI: Parameter: Order (OrderTotal: Decimal), Returns: Decimal
-    AI->>Plugin: call execute-testcase (TCEX_RQ payload with mock Order)
+    Note over AI: Writes EP_SUB_CalculateDiscount.md to disk
+    alt exploratory_execution_mode == auto_execute (Default)
+        AI->>Plugin: Immediate call execute-testcase (same turn)
+    else exploratory_execution_mode == prompt_approval
+        AI->>User: Present Checkpoint 1 (Pause for Approval)
+        User->>AI: "Approved / Proceed"
+        AI->>Plugin: call execute-testcase
+    end
     Plugin->>JVM: Open isolated transaction
     JVM->>JVM: Create mock Order in-memory
     JVM->>JVM: Execute SUB_CalculateDiscount
@@ -258,8 +291,14 @@ sequenceDiagram
     JVM->>JVM: Rollback transaction (Zero DB writes)
     JVM-->>Plugin: Return runtime telemetry (TCEX_RS)
     Plugin-->>AI: Return JSON result (Duration: 12ms, Output: 15.00)
-    AI-->>User: Formatted test report with telemetry
+    AI-->>User: Formatted test report + clickable plan link
 ```
+
+### Execution Strategy & Plan Governance (`exploratory_execution_mode`)
+Even in free exploratory testing, Menditect ensures complete testing hygiene through structured Execution Plans:
+* **The Universal Execution Plan Mandate:** Before executing any test via `execute-testcase`, the AI writes a complete, versioned Execution Plan (`EP_<Name>.md`) to disk containing the test scope, mock parameters, boundary variations, and expected assertions.
+* **`auto_execute` (Default / Recommended):** The AI writes the plan to disk and triggers execution in the **very same turn**. You get instant test feedback (< 3 seconds total roundtrip) without manual approval pauses. Because the test plan is stored on disk, you can promote it to a permanent MTA test case at any time (`PAT-57`, `PAT-106`).
+* **`prompt_approval`:** The AI writes the draft plan and halts at **Checkpoint 1**, requiring you to explicitly reply "Proceed" before it contacts the plugin MCP server.
 
 ### Key Request Safeguards in `TCEX_RQ`
 * **`ExecutorUsername: "MxAdmin"`**: Provides the execution user context to the Mendix runtime. *(Note: If `MxAdmin` is not present in your Mendix user database, you can specify a different username—such as `Admin` or a designated test user—in your `AGENTS.md` directives).*
